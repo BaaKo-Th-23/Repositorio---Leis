@@ -1,0 +1,7 @@
+# originais baixados (27 GB) e índices: reproduzíveis pelos scripts, não versionados
+_fonte/
+_indice/
+_log*.txt
+*.log
+.DS_Store
+scripts/bin/
