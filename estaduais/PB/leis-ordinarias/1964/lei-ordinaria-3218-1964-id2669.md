@@ -21,7 +21,7 @@ LEI N.° 3.218 , de 24 de Novembro de 19 64 Concede aumento de vencimentos e sal
 
 O GOVERNADOR DO ESTADO DA PARAIBAI Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Os vencimentos dos funcionários civis do Poder Executivo passam a ter os seguintes valores mensais: Niveis Valores mensais (CR$) F - 1 32.000,00 F - 2 33.000, 00Ś F - 3 34.000,00 F - 4 35.000,00łś F - 5 36.000,00 37.500,00 39. 000, 00ł 40,500,00 - 42.500,00 44. 500,0 47.000,00
+**Art. 1º** - Os vencimentos dos funcionários civis do Poder Executivo passam a ter os seguintes valores mensais: Niveis Valores mensais (CR$) F - 1 32.000,00 F - 2 33.000, 00Ś F - 3 34.000,00 F - 4 35.000,00łś F - 5 36.000,00 37.500,00 39. 000, 00ł 40,500,00 - 42.500,00 44. 500,0 47.000,00
 
 49. 500, 00ł
 
@@ -41,7 +41,7 @@ PUBLICADO NO D. OFICIAL DE: •¡A DATA En 25, 11 1964ŚŘŚ Rep em 8.72.64
 
 - 2 - Níveis Valores mensais (Cr$) F - 24 103. 000, 0ł 109.000,0ął F - 25 115. 000,00 F - 26 121.000,00 F - 27 F - 28 127.000,00 133. 000, 00 F - 29 140.000,00 F - 30
 
-**Art. 29** - Fica estabelecida a seguinte escala especial de símbo - los e valôres mensais, exclusivamente, para os cargos de Direção, sejam de provimento em comissao ou de provimento efetivo: Símbolos Valores mensais (Cr$) 150.000,00 CD - 1 180.000,00 CD - 2 CD - 3 210. 000, 00 ........ 250.000,00 CD - 4
+**Art. 2º** - Fica estabelecida a seguinte escala especial de símbo - los e valôres mensais, exclusivamente, para os cargos de Direção, sejam de provimento em comissao ou de provimento efetivo: Símbolos Valores mensais (Cr$) 150.000,00 CD - 1 180.000,00 CD - 2 CD - 3 210. 000, 00 ........ 250.000,00 CD - 4
 
 **Parágrafo único** - Ficam classificados:
 
@@ -53,7 +53,7 @@ c) - no símbolo CD-2, os cargos de Diretor de Repartições (... VETADO) não i
 
 d) - no símbolo CD-1, os cargos de Diretor de Divisão (... VE TADO).
 
-**Art. 39** - A escala de salários das séries funcionais e funções 1- soladas, integrantes da Tabela Numérica de Mensalistas, fica modificada pa - ra os valores mensais abaixo discriminados:
+**Art. 3º** - A escala de salários das séries funcionais e funções 1- soladas, integrantes da Tabela Numérica de Mensalistas, fica modificada pa - ra os valores mensais abaixo discriminados:
 
 - 3 - Níveis Valores mensais (CR$) 30.000,00 30.600,00
 
@@ -71,11 +71,11 @@ d) - no símbolo CD-1, os cargos de Diretor de Divisão (... VE TADO).
 
 35.400,00 36.000,0
 
-**Art. 49** - A escala de salarios dos extranumerários diaristas tera os seguintes valores diários : Valôres diários (CR$) Niveis D - 1 1.000,00 1. 010,00 D - 2 1.020,00 D - 3 1.030,00 D - 4 D - 5 1.040,00 D - 6 1.050,00 1.060,00 D - 7 1.070,00 D -
+**Art. 4º** - A escala de salarios dos extranumerários diaristas tera os seguintes valores diários : Valôres diários (CR$) Niveis D - 1 1.000,00 1. 010,00 D - 2 1.020,00 D - 3 1.030,00 D - 4 D - 5 1.040,00 D - 6 1.050,00 1.060,00 D - 7 1.070,00 D -
 
 D - 9 1.080,00 D - 10 1.090,00 1.100,00 D - 11 1,110,00 D - 12 D - 13 1.120,00 D - 14 1.130,00 1.140,00 D - 15 1.150,00 D - 16 1.160,00 D - 17 1.170,00 D - 18
 
-**Art. 59** - Os extranumerários-contratados terão os seus salá rios fixados nas seguintes bases : Valôres mensais (CRS) Até Cr$ 16.000,00 inclusive, para 30.000,00 30.400,00 16.400, 00 para De 30.700,00 De 16.600,00 para 31.000,00 De 16.800,00
+**Art. 5º** - Os extranumerários-contratados terão os seus salá rios fixados nas seguintes bases : Valôres mensais (CRS) Até Cr$ 16.000,00 inclusive, para 30.000,00 30.400,00 16.400, 00 para De 30.700,00 De 16.600,00 para 31.000,00 De 16.800,00
 
 17.400, 00ł 31.500,00 De
 
@@ -91,13 +91,13 @@ D - 9 1.080,00 D - 10 1.090,00 1.100,00 D - 11 1,110,00 D - 12 D - 13 1.120,00 D
 
 **Parágrafo único** - O atual salário do contratado compreendido entre dois valôres consecutivos, na sequência ascendente, estabelecida neste artigo e que nela não figura explícitamente deverá ser reajustado para a mé - dia aritmética entre os dois novos valôres correspondentes.
 
-**Art. 69** - Os extranumerários estáveis, mensalistas e diaris- tas, com regalias de funcionário, na forma da legislação em vigor, terão o s seus salários assim reajustados : Correspondência (F) Mensalistas e Diaristas M-1 a M-4 e D-1 a D-7 F - 1 F - 2 M -5 e D-8 a D-10 . ... M -6, M-7 e D-11 F - ął .......... M -8, M-9 e D-12 a D-17 F -ął ..... M -10 ......... F - 5 M -11 e D-18 . F -îłŚł
+**Art. 6º** - Os extranumerários estáveis, mensalistas e diaris- tas, com regalias de funcionário, na forma da legislação em vigor, terão o s seus salários assim reajustados : Correspondência (F) Mensalistas e Diaristas M-1 a M-4 e D-1 a D-7 F - 1 F - 2 M -5 e D-8 a D-10 . ... M -6, M-7 e D-11 F - ął .......... M -8, M-9 e D-12 a D-17 F -ął ..... M -10 ......... F - 5 M -11 e D-18 . F -îłŚł
 
-**Art. 79** - O servidor contratado estável, cujo salário não es - tá vinculado a níveis ou símbolos convencionais, terá reajustado o seu salário ao vencimento cujo valor lhe é imediatamente superior, na escala fixada pelo artigo 19 da presente Lei.
+**Art. 7º** - O servidor contratado estável, cujo salário não es - tá vinculado a níveis ou símbolos convencionais, terá reajustado o seu salário ao vencimento cujo valor lhe é imediatamente superior, na escala fixada pelo artigo 19 da presente Lei.
 
-**Art. 89** - A gratificação de representação dos Secretários de Estado e Chefe da Casa Civil do Governador é fixada em Cr$ 150. 000, 00 (cen- to e cinquenta mil cruzeiros) mensais; a do Subchefe da Casa Civil do Gover- nador, em Cr$ 100. 000, 00 (cem mil cruzeiros) mensais; e a dos Diretores de Departamentos em Cr$ 70. 000,00 (setenta mil cruzeiros) mensais, nos têr - mos da conceituação estabelecida pelo Decreto nº 3. 421, de 8 de novembro de 1963.
+**Art. 8º** - A gratificação de representação dos Secretários de Estado e Chefe da Casa Civil do Governador é fixada em Cr$ 150. 000, 00 (cen- to e cinquenta mil cruzeiros) mensais; a do Subchefe da Casa Civil do Gover- nador, em Cr$ 100. 000, 00 (cem mil cruzeiros) mensais; e a dos Diretores de Departamentos em Cr$ 70. 000,00 (setenta mil cruzeiros) mensais, nos têr - mos da conceituação estabelecida pelo Decreto nº 3. 421, de 8 de novembro de 1963.
 
-**Art. 99** - Fica atribuída aos Diretores e Vice-Diretores de es
+**Art. 9º** - Fica atribuída aos Diretores e Vice-Diretores de es
 
 - 6 - 28513 tabelecimentos de ensino de nível secundário (19 e 29 ciclos), a gratificação de representaçao, de respectivamente, Cr$ 70.000,00 e Cr$ 50.000,00 men- sais .
 

@@ -21,9 +21,9 @@ LEI N.° de 1979 setembro AUTORIZA O CHEFE DO PODER EXECUTI VO A CONTRATAR COM O
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica o Chefe do Poder Executivo autorizado a contratar com o Banco Nacional de Desenvolvimento Econômico - BNDE - operação de crédito até a importância de Cr$ 200.000.000,00 (duzentos milhões de cruzeiros), com prazo de 6 (seis) anos, inclusive carência, a juros compensatórios de 3% (três por cento) ao ano .
+**Art. 1º** - Fica o Chefe do Poder Executivo autorizado a contratar com o Banco Nacional de Desenvolvimento Econômico - BNDE - operação de crédito até a importância de Cr$ 200.000.000,00 (duzentos milhões de cruzeiros), com prazo de 6 (seis) anos, inclusive carência, a juros compensatórios de 3% (três por cento) ao ano .
 
-**Art. 29** - O crédito de que trata o artigo anterior se destinara à integralização do aumento de capital do Banco do Estado da Paraíba S/A - BEP - de valor equivalente ao da operação de crédito, na forma do que dispõe a Resolução n° 474, de 24 de abril de 1975, da Diretoria do Banco Nacional de Desenvolvimento Econô mico - BNDE.
+**Art. 2º** - O crédito de que trata o artigo anterior se destinara à integralização do aumento de capital do Banco do Estado da Paraíba S/A - BEP - de valor equivalente ao da operação de crédito, na forma do que dispõe a Resolução n° 474, de 24 de abril de 1975, da Diretoria do Banco Nacional de Desenvolvimento Econô mico - BNDE.
 
 **Art. 30** - Em garantia da operação autorizada por esta Lei, fica igualmente autorizado o Chefe do Poder Executivo a vincular recursos provenientes do Fundo de Participação dos Estados - FPE, até o montante do principal e encargos da referida operação.
 

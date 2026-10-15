@@ -19,7 +19,7 @@ LEI N° 3.459, de 31 de Dezembro de 1966 ESGOTOS PE E COMARACUAS E AGUAS E ESGOT
 
 O GOVERNADOR DO ESTADO DA PARAIBA, usando das atribuições que lhe confere o art. 52, inciso I da Constituição do Estado , combinado com o art. 59, do Ato Institucional n° 2, de 27 de outubro de 1965 e com o art. 32 $ 39, da Emenda Constitucional n° 1, de 22 de dezembro de 1965, sanciona e promulga a seguinte Lei:
 
-**Art. 19** - E instituído o FUNDO ESTADUAL DE AGUAS E ESGOTOS (FEAG), destinado a prover os meios financeiros necessários ao planejamento, implantação, modernização, complementação, ampliação e ope ração de serviços de saneamento básico no Estado, integrado pelos seguintes recursos:
+**Art. 1º** - E instituído o FUNDO ESTADUAL DE AGUAS E ESGOTOS (FEAG), destinado a prover os meios financeiros necessários ao planejamento, implantação, modernização, complementação, ampliação e ope ração de serviços de saneamento básico no Estado, integrado pelos seguintes recursos:
 
 a) até 5% (cinco por cento) do produto da arrecadação do imposto de circulação pelo Estado;
 
@@ -37,13 +37,13 @@ PIRE CADO NO D. OFICIAL DESTA DATA Em 0// / 1267 пер. ст 20/467
 
 **§ 29** - Os recurgos de que trata poderão ser incorporados, total ou parcialmente, ao capital da CAGEPA ou das emprêsas de água e esgô - to de que a mesma participar acionáriamente, mediante exposição fundamenta.- da do Secretário de Viação e Obras Públicas aprovada pelo Governador do Esta do e publicada no Diário Oficial.
 
-**Art. 29** - Fica o Poder Executivo autorizado a adotar todas e quaisquer providências necessárias à constituição, por escritura pública, da COMPANHIA DE AGUAS E ESGOTOS DA PARAIBA (CAGEPA), vinculada à Se - cretaria de Viação e Obras Públicas e estruturada sob a forma de sociedade de economia mista, com sede e foro na cidade de João Pessoa, jurisdição em todo o território da Paraíba e maioria do Estado no capital com direito a voto.
+**Art. 2º** - Fica o Poder Executivo autorizado a adotar todas e quaisquer providências necessárias à constituição, por escritura pública, da COMPANHIA DE AGUAS E ESGOTOS DA PARAIBA (CAGEPA), vinculada à Se - cretaria de Viação e Obras Públicas e estruturada sob a forma de sociedade de economia mista, com sede e foro na cidade de João Pessoa, jurisdição em todo o território da Paraíba e maioria do Estado no capital com direito a voto.
 
 **§ 19** - A CAGEPA poderá ser constituída com capital social inferior ao autorizado no Estatuto, na forma da legislação vigente.
 
 **§ 29** - O Estado será representado nos atos constitutivos e nas Assembléias Gerais da CAGEPA pelo Secretário de Viação e Obras Pública ao qual compete, também, idêntica representação junto às emprêsas de água e esgoto de que o Estado participe diretamente ou através de entidade autárquicas.
 
-**Art. 39** - A CAGEPA terá por finalidade:
+**Art. 3º** - A CAGEPA terá por finalidade:
 
 a) formular, para encaminhamento ao Conselho do Secreta- riado, a política geral de saneamento básico do Estado, sobretudo no que res - peita ao planejamento, implantação, modernização, complementação, ampliação e operação de serviços de água e esgoto;
 
@@ -65,11 +65,11 @@ h) contratar os serviços técnicos e administrativos neces - sários ao desenvo
 
 **Parágrafo único** - As operações financeiras a título onero. so que vierem a ser contratadas de acôrdo com a alínea "g", deste artigo, pode rão ser garantidas, isolada ou conjuntamente, pelo Tesouro do Estado, pelo Ban- co do Estado da Paraíba S/A (BEP), pelos recursos do FEAG e por outras for - mas de garantia permitidas em lei.
 
-**Art. 49** - A CAGEPA terá os órgãos essenciais às socieda des anônimas, definidos em lei e os órgãos administrativos indispensáveis à boa execução dos seus trabalhos, definidos nos respectivos Estatutos, e será administrada por uma Diretoria composta de três membros, eleitos em Assem
+**Art. 4º** - A CAGEPA terá os órgãos essenciais às socieda des anônimas, definidos em lei e os órgãos administrativos indispensáveis à boa execução dos seus trabalhos, definidos nos respectivos Estatutos, e será administrada por uma Diretoria composta de três membros, eleitos em Assem
 
 - 4 - bléia Geral, com mandato de três anos, renovável, e atribuições estatutariamen te fixadas.
 
-**Art. 59** - O Poder Executivo incorporará à CAGEPA, sob a forma de capital, de uma só vez ou progressivamente, o acêrvo constituído pelo patrimônio do Departamento de Obras e Saneamento do Estado (DOSE) e pe lo patrimônio dos serviços de água e esgoto implantados ou em implantação pe- lo Estado e não subordinados à administração de entidades autonomas.
+**Art. 5º** - O Poder Executivo incorporará à CAGEPA, sob a forma de capital, de uma só vez ou progressivamente, o acêrvo constituído pelo patrimônio do Departamento de Obras e Saneamento do Estado (DOSE) e pe lo patrimônio dos serviços de água e esgoto implantados ou em implantação pe- lo Estado e não subordinados à administração de entidades autonomas.
 
 **§ 19** - Serão igualmente incorporadas à CAGEPA, nos ter- mos dêste artigo, as ações de Emprêsas titulares da exploração de serviços de água e esgoto que tenham sido adquiridas ou venham a sê-lo pelo Estado ou por entidades autárquicas estaduais.
 
@@ -81,17 +81,17 @@ h) contratar os serviços técnicos e administrativos neces - sários ao desenvo
 
 ~- 5 -
 
-**Art. 69** - O pessoal recrutado pela CAGEPA para os seus serviços será disciplinado pela legislação trabalhista e, em nenhuma hipótese, poderá obter a condição e direitos inerentes ao servidor público.
+**Art. 6º** - O pessoal recrutado pela CAGEPA para os seus serviços será disciplinado pela legislação trabalhista e, em nenhuma hipótese, poderá obter a condição e direitos inerentes ao servidor público.
 
 **§ 19** - O sistema de remuneração do pessoal da CAGEPA bem como os honorários de sua Diretoria serão propostos à Assembléia Geral depois de aprovados pelo Governador do Estado, nos termos fixados pelo regi- mento interno da Empresa.
 
 **§ 29** - Aos servidores estaduais postos à sua disposição, me diante ato do Chefe do Poder Executivo, a CAGEPA poderá atribuir complemen tação salarial equivalente, no máximo, à diferença porventura existente entre o total dos vencimentos, direitos e vantagens que continuarem percebendo nos órgãos de origem e a remuneração fixada para igual função na CAGEPA, nos ter mos do parágrafo anterior.
 
-**Art. 79** - A CAGEPA é declarada de utilidade pública, goza rá dos favores de desapropriação por utilidade pública na forma da legislação vigente, e seus atos constitutivos e modificativos, assim como seus bens, recei tas, serviços, direitos e operações serão isentos de quaisquer tributos estadu- ais.
+**Art. 7º** - A CAGEPA é declarada de utilidade pública, goza rá dos favores de desapropriação por utilidade pública na forma da legislação vigente, e seus atos constitutivos e modificativos, assim como seus bens, recei tas, serviços, direitos e operações serão isentos de quaisquer tributos estadu- ais.
 
 **Parágrafo único** - As custas e emolumentos de qualquer na tureza a que estiver sujeita a CAGEPA em qualquer repartição do Estado, inclu sive as subordinadas ao Poder Judiciário, serão pagos com a redução de 50% (cinquenta por cento).
 
-**Art. 89** - Fica extinto o Departamento de Obras e Sanea - mento (DOSE) da Secretaria de Viação e Obras Públicas e incorporado à CAGEPA o respectivo acèrvo material, nos termos do art. 59.
+**Art. 8º** - Fica extinto o Departamento de Obras e Sanea - mento (DOSE) da Secretaria de Viação e Obras Públicas e incorporado à CAGEPA o respectivo acèrvo material, nos termos do art. 59.
 
 **§ 19** - As dotações orçamentárias e demais consignados ao DOSE serão incorporados ao FEAG;
 
@@ -101,6 +101,6 @@ h) contratar os serviços técnicos e administrativos neces - sários ao desenvo
 
 **§ 59** - O regime disciplinar do pessoal que optar pela per- manência do vínculo funcional referido no parágrafo anterior será o da legisla- ção estadual, constituindo-se a CAGEPA delegada da Secretaria de Viação Obras Públicas para efeito da respectiva aplicação.
 
-**Art. 99** - E autorizado o Poder Executivo a abrir, com vi- gência neste e no próximo exercício, crédito especial até o montante de Cr$... 500. 000. 000 (quinhentos milhões de cruzeiros), para ocorrer às despesas com a constituição e realização do capital inicial da CAGEPA.
+**Art. 9º** - E autorizado o Poder Executivo a abrir, com vi- gência neste e no próximo exercício, crédito especial até o montante de Cr$... 500. 000. 000 (quinhentos milhões de cruzeiros), para ocorrer às despesas com a constituição e realização do capital inicial da CAGEPA.
 
 **Art. 10** - Esta lei entrará em vigor na data de sua publica ção, revogadas as disposições em contrário. Palácio do Governo do Estado da Paraíba, em João Pessoa 31 de dezembro de 1966; 789 da Proclamação da República.

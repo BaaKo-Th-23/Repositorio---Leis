@@ -21,8 +21,8 @@ LEI N° 354 DE 27 DE Dispõe sobre o diagnóstico precoce da Fenilcetonúria e d
 
 O GOVERNADOR DO ESTADO DE RONDÔNIA, fa ço saber que a Assembléia Legislativa decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - E obrigatória nos hospitais e maternidades no Estado de Rondônia, quer na rede pública, quer, na rede privada, a realização de provas para o diagnós tico precoce da fenilcetonúria (FNC) e do Hipotireoidismo con gênito (HN) em todas as crianças nascidas em suas dependên cias.
+**Art. 1º** - E obrigatória nos hospitais e maternidades no Estado de Rondônia, quer na rede pública, quer, na rede privada, a realização de provas para o diagnós tico precoce da fenilcetonúria (FNC) e do Hipotireoidismo con gênito (HN) em todas as crianças nascidas em suas dependên cias.
 
-**Art. 29** - Esta Lei entra em vigor na data de sua publicação. Palácio do Governo do Estado de Rondô de dezembro de 1991, 103º da República. nia, em 27 ASSIS CANUTO Governador, em exercício
+**Art. 2º** - Esta Lei entra em vigor na data de sua publicação. Palácio do Governo do Estado de Rondô de dezembro de 1991, 103º da República. nia, em 27 ASSIS CANUTO Governador, em exercício
 
 Diário Oficial n° dia dia 271/21 9/ Pubicado no

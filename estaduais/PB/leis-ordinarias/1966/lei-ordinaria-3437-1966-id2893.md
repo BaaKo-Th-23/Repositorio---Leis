@@ -21,7 +21,7 @@ LEI N° 3,437 DE20 DE setembro DE 1966 Dispõe sôbre a transferência de terren
 
 O GOVERNADOR DO ESTADO DA PARAIBA, usando das atribuições que lhe confere o art. 33, da Constituição do Estado, combi nado com o art. 59, do Ato Institucional nº2, de 27 de outubro de 1865 com o art. 32, § 29, da Emenda Constitucional n° 1, de 22 de dezembro de 1965, sanciona e promulga a seguinte Lei:
 
-**Art. 19** - Ficam autorizados o Executivo Estadual e o Fundo de Desenvolvimento Agrícola e Industrial - FAGRIN - a alienar a Companhia Estadual de Habitação Popular - CEHAP - os terrenos de sua propriedade, localizados nesta Capital, e que têm as seguintes caracterís - ticas e confrontações:
+**Art. 1º** - Ficam autorizados o Executivo Estadual e o Fundo de Desenvolvimento Agrícola e Industrial - FAGRIN - a alienar a Companhia Estadual de Habitação Popular - CEHAP - os terrenos de sua propriedade, localizados nesta Capital, e que têm as seguintes caracterís - ticas e confrontações:
 
 I - Terreno a ser desmembrado da área do Distrito Industrial. Tomando por referência a Rodovia BR-11 (João Pes - soa/Recife) e acerca de 648m. do vértice formado pela estrada velha João Pessoa/Recife e a BR-11, tomamos o marco 1, ponto de encontro ds limtes da Gleba BI e a rodovia BR-11; daí, acompanhando paralelamente a BR-11 numa extensão de 777m. tomamos o marco II, vértice da Gleba "B', BR-11 e Av. das Indústrias (Projetada);daí, tomando a direção Sudeste acompanhando os limites da Gleba Bicom a av. das Indústrias numa extensão de 555m. en
 
@@ -33,6 +33,6 @@ II - Terreno a ser desmembrado da Fazenda São Rafael. Tomando por referência o
 
 - 8 - nos, numa distância de 70m. do marco 7; daí, tomando a direção Nordes- te e acompanhando a cêrca do Colégio Salesiano e numa distância de 15m. encontramos o marco 9; dal, tomando a direção Suleste e ainda acompanhan do a cêrca numa distância de 75m. encontramos o marco 10, ponto situado na margem da estrada de acesso ao Convento; dal, seguindo a direção Nor deste e acompanhando a estrada de acesso e numa extensão de 240m. encon tramos o marco 11; daí seguindo na direção Noroeste e acompanhando uma linha paralela ao curso do Rio Jaguaribe numa distância de 1.900m. encon- tramos o marco 1, origem, medindo ao todo uma área de, aproximadamen te, 67,87 ha.
 
-**Art. 29** - Os terrenos destinar-se-ão à edificação de conjuntos residenciais da CEHAP, para as finalidades previstas na Lei Estadual n° 3. 328, de 4 de junho de 1965.
+**Art. 2º** - Os terrenos destinar-se-ão à edificação de conjuntos residenciais da CEHAP, para as finalidades previstas na Lei Estadual n° 3. 328, de 4 de junho de 1965.
 
-**Art. 39** - Revogam-se as disposições em contrário. Palácio do Governo do Estado da Paraíba, em João Pessoa, 20 de setembro de 1966; 789 da Proclamação da República.
+**Art. 3º** - Revogam-se as disposições em contrário. Palácio do Governo do Estado da Paraíba, em João Pessoa, 20 de setembro de 1966; 789 da Proclamação da República.

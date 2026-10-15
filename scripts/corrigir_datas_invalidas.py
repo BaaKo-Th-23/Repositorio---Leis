@@ -52,11 +52,18 @@ MANUAL = {
         SEM_DIA, "a fonte não informa data alguma ('00/00/00')"),
     "estaduais/CE/leis-ordinarias/2007/lei-13894-2007-id4806.md": (
         SEM_DIA, "a fonte diz '31.06.07', dia que não existe em junho"),
+    "estaduais/RN/leis-ordinarias/2026/lei-12626-2026-12-31-lpn5p43zo2.md": (
+        "2025-12-31",
+        "o índice da Assembleia diz 31.12.2026, data futura; a epígrafe do texto diz '31 de "
+        "dezembro de 2025' e as leis 12.624, 12.625 e 12.627 são todas de 31/12/2025",
+    ),
 }
 
 
 def ano_ok(texto):
-    return bool(re.fullmatch(r"\d{4}", texto or "")) and 1800 <= int(texto) <= 2026
+    if not re.fullmatch(r"\d{4}", texto or ""):
+        return False
+    return 1800 <= int(texto) <= datetime.date.today().year
 
 
 def plausivel(data):
@@ -67,10 +74,11 @@ def plausivel(data):
     if not ano_ok(str(ano)):
         return False
     try:
-        datetime.date(ano, mes, dia)
+        d = datetime.date(ano, mes, dia)
     except ValueError:
         return False
-    return True
+    # lei promulgada não tem data no futuro; quando tem, é erro de digitação da fonte
+    return d <= datetime.date.today()
 
 
 def data_do_titulo(titulo):

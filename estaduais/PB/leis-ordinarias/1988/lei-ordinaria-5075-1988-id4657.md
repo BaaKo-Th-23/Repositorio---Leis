@@ -21,9 +21,9 @@ LEI N.° 5.075 , de 23 de de 19 88 agosto Reajusta vencimentos, gratificaçõ e 
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Os níveis de vencimentos e valores das gratifica- ções dos funcionários da Secretaria do Tribunal de Justiça do Estado, são reajustados para os constantes dos Anexos I a X, a esta Lei.
+**Art. 1º** - Os níveis de vencimentos e valores das gratifica- ções dos funcionários da Secretaria do Tribunal de Justiça do Estado, são reajustados para os constantes dos Anexos I a X, a esta Lei.
 
-**Art. 29** - Respeitados os critérios de identidade de catego- ria e/ou a equivalência de funções estabelecidos no parágrafo primeiro do artigo 73, da Constituição do Estado, os proventos dos inativos da Secreta ria do Tribunal de Justiça do Estado são reajustados nos mesmos percentuai aplicados aos funcionarios em atividades.
+**Art. 2º** - Respeitados os critérios de identidade de catego- ria e/ou a equivalência de funções estabelecidos no parágrafo primeiro do artigo 73, da Constituição do Estado, os proventos dos inativos da Secreta ria do Tribunal de Justiça do Estado são reajustados nos mesmos percentuai aplicados aos funcionarios em atividades.
 
 **Art. 30** - Fica transformado em Procurador Juridico, Código TJ-PJ-500, o cargo isolado de provimento efetivo de Assessor de Câmara, in- tegrante do Quadro Suplementar da Secretaria do Tribunal de Justiça do Es- tado, com a remuneração constante do Anexo XI, a esta Lei.
 

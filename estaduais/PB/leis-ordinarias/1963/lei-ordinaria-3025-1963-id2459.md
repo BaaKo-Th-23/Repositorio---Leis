@@ -21,8 +21,8 @@ LEI N.° 3.025 , de 23 de de 19 63 Abril Autoriza o Govêrno do Estado a abrir o
 
 O GOVERNADOR DO ESTADO DA PARAIBAI Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica o Govêrno do Estado autorizado a abrir o cré dito especial de Cr$ 500. 000, 00 (quinhentos mil cruzeiros), para a construção do prédio destinado à Coletoria Estadual de Antenor Navarro.
+**Art. 1º** - Fica o Govêrno do Estado autorizado a abrir o cré dito especial de Cr$ 500. 000, 00 (quinhentos mil cruzeiros), para a construção do prédio destinado à Coletoria Estadual de Antenor Navarro.
 
-**Art. 29** - O presente crédito terá vigência de dois exercícios financeiros.
+**Art. 2º** - O presente crédito terá vigência de dois exercícios financeiros.
 
-**Art. 39** - Esta Lei entrará em vigor na data de sua publica - ção, revogadas as disposições em contrário. Palácio do Govêrno do Estado da Paraíba, em João Pessoa, 23 de Abril de 1963; 75° da Proclamação da República.
+**Art. 3º** - Esta Lei entrará em vigor na data de sua publica - ção, revogadas as disposições em contrário. Palácio do Govêrno do Estado da Paraíba, em João Pessoa, 23 de Abril de 1963; 75° da Proclamação da República.

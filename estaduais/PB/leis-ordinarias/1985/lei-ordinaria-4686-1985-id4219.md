@@ -21,13 +21,13 @@ LEI N.º 4.686 , de 14 de fevereiro de 19 8 5 Autoriza o Poder Executivo a con -
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica o Poder Executivo Estadual autorizado a contratar, inclusive através de Órgãos de sua Administração Indireta e Dire ta Descentralizada, operações de crédito, até o limite máximo de US$ ...... 130,000,000 (cento e trinta milhões de dólares), em valores que poderão ser convertidos em qualquer outra moeda estrangeira ou nacional, na oportunida- de da concessão dos respectivos empréstimos.
+**Art. 1º** - Fica o Poder Executivo Estadual autorizado a contratar, inclusive através de Órgãos de sua Administração Indireta e Dire ta Descentralizada, operações de crédito, até o limite máximo de US$ ...... 130,000,000 (cento e trinta milhões de dólares), em valores que poderão ser convertidos em qualquer outra moeda estrangeira ou nacional, na oportunida- de da concessão dos respectivos empréstimos.
 
 **§ 19** - Os recursos das operações de crédito menciona - dos no presente artigo destinar-se-ão a investimentos prioritários, nas á- reas dos serviços públicos essenciais, bem como na execução de programas e projetos de desenvolvimento sócio-econômico do Estado.
 
 **§ 29** - No caso de empréstimo a realizar-se mediante as disposições da Resolução n° 63/67, o Órgão contratante renunciará à imunida de ao Imposto de Renda, consoante normas específicas estabelecidas pelo Ban co Central do Brasil.
 
-**Art. 29** - Os prazos e formas de amortização e de carên cia, taxas de juros, despesas de comissão e outros encargos relativos aos empréstimos previstos no artigo primeiro desta Lei, deverão atender aos li- mites estatuídos pelo Banco Central do Brasil.
+**Art. 2º** - Os prazos e formas de amortização e de carên cia, taxas de juros, despesas de comissão e outros encargos relativos aos empréstimos previstos no artigo primeiro desta Lei, deverão atender aos li- mites estatuídos pelo Banco Central do Brasil.
 
 **Art. 30** - Para viabilizar a celebração dos instrumen - tos relativos a operações de crédito de que trata esta Lei, o Poder Executi
 

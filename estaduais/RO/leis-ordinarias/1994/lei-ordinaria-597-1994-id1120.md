@@ -23,9 +23,9 @@ DE Autoriza o Poder Executivo a dobrar a jornada de trabalho dos médicos convoc
 
 O GOVERNADOR DO ESTADO DE RONDÔNIA, faço saber que a Assembléia Legislativa decreta e eu sanciono a se guinte Lei:
 
-**Art. 19** - Fica o Poder Executivo autoriza do a dobrar a jornada de trabalho dos médicos convocados atra vés do Edital nº 005, de 15 de julho de 1994, publicado no Diá rio Oficial do Estado n° 3062, de 15 de julho de 1994 e nomea dos pelo Decreto n° 6522, de 12 de setembro de 1994, publicado no Diário Oficial do Estado n° 3102, de 13 de setembro de 1994, com vencimentos proporcionais à jornada de trabalho.
+**Art. 1º** - Fica o Poder Executivo autoriza do a dobrar a jornada de trabalho dos médicos convocados atra vés do Edital nº 005, de 15 de julho de 1994, publicado no Diá rio Oficial do Estado n° 3062, de 15 de julho de 1994 e nomea dos pelo Decreto n° 6522, de 12 de setembro de 1994, publicado no Diário Oficial do Estado n° 3102, de 13 de setembro de 1994, com vencimentos proporcionais à jornada de trabalho.
 
-**Art. 29** - As despesas decorrentes da exe cução desta Lei, correrão à conta da verba própria do Orçamen to .
+**Art. 2º** - As despesas decorrentes da exe cução desta Lei, correrão à conta da verba própria do Orçamen to .
 
 **Art. 3º** - Esta Lei entra em vigor na data de sua publicação.
 

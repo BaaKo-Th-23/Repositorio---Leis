@@ -21,8 +21,8 @@ LEI N.° 4.036 , de 22 de de 19 78 dezembro Assegura preferências às empresas 
 
 O GOVERNADOR DO ESTADO DA PARAIBA I Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** -Fica assegurada preferência às empresas de construções e consultorias com sede no Estado da Paraíba, em caso de empate nos preços, nas concorrências públicas, licitações ou to madas de preços, para execuções de quaisquer serviços das Reparti- ções Públicas Estaduais, exigidas na forma do Decreto-Lei n9 200 de 25 de fevereiro de 1967.
+**Art. 1º** -Fica assegurada preferência às empresas de construções e consultorias com sede no Estado da Paraíba, em caso de empate nos preços, nas concorrências públicas, licitações ou to madas de preços, para execuções de quaisquer serviços das Reparti- ções Públicas Estaduais, exigidas na forma do Decreto-Lei n9 200 de 25 de fevereiro de 1967.
 
-**Art. 29** - A preferência assegurada por esta lei, de- verá constar em ítem próprio, em todos os editais a serem publica- dos por qualquer Repartição do Governo Estadual.
+**Art. 2º** - A preferência assegurada por esta lei, de- verá constar em ítem próprio, em todos os editais a serem publica- dos por qualquer Repartição do Governo Estadual.
 
 **Art. 30** - Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, 22 de dezembro de 1978; 909 da Proclamação da República. Derivas Acusa Neto GOVERNADOR ( Luiz Alberto Moreira Coutinho ) ( Homero Leai

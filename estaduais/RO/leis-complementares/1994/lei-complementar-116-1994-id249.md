@@ -21,7 +21,7 @@ LEI COMPLEMENTAR N° Cria cargos de Direção e Assessora mento Superiores no â
 
 O GOVERNADOR DO ESTADO DE RONDÔNIA, fa ço saber que a Assembléia Legislativa decreta e eu sanciono a seguinte Lei Complementar:
 
-**Art. 19** - O Anexo II, da Lei Complemen tar nº 42/91, substituido pelo Anexo Unico da Lei Complementar n° 87/93 e alterado pela Lei Complementar n° 99/93, que trata da estrutura organizacional da Secretaria de Estado da Justiça e Defesa da Cidadania-SEJUCI, passa a vigorar acrescido dos se guintes cargos de Direção e Assessoramento Superiores, ora cria dos : "SECRETARIA DE ESTADO DE JUSTIÇA E DEFESA DA CIDADANIA ÚNICO
+**Art. 1º** - O Anexo II, da Lei Complemen tar nº 42/91, substituido pelo Anexo Unico da Lei Complementar n° 87/93 e alterado pela Lei Complementar n° 99/93, que trata da estrutura organizacional da Secretaria de Estado da Justiça e Defesa da Cidadania-SEJUCI, passa a vigorar acrescido dos se guintes cargos de Direção e Assessoramento Superiores, ora cria dos : "SECRETARIA DE ESTADO DE JUSTIÇA E DEFESA DA CIDADANIA ÚNICO
 
 ANEXO ESTABELECIMENTO DE MEDIDAS SÓCIO-EDUCATIVAS UNIDADE DE ATENDIMENTO SÓCIO-EDUCATIVA DE INTERNAÇÃO MASCULINO E FEMININO CDS-3 DIRETOR GERAL
 
@@ -37,6 +37,6 @@ RrEGOrE VERROTHEAC 189 D5 DE BEVED BR 45 V01 122 anon/21E ou opera oLgia poptie 
 
 Gabinete do Governador
 
-**Art. 29** - Esta Lei Complementar entra em vigor na data de sua publicação.
+**Art. 2º** - Esta Lei Complementar entra em vigor na data de sua publicação.
 
 **Art. 30** - Revogam-se as disposições em contrário. Palácio do Governo do Estado de Rondô 1069 da República. nia, em 24 de outubro de 1994, OSWALDO PIANA FILHO Governador

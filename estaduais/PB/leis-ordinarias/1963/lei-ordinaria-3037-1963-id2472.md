@@ -21,8 +21,8 @@ LEI N.° 3.037 , de 17 de Maio de 19 63 Autoriza o Govêrno do Estado a abrir cr
 
 O GOVERNADOR DO ESTADO DA PARAIBAI Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica autorizado o Govêrno do Estado a abrir, no corrente exercício, com vigência no exercício vindouro, o crédito especial a té a importância de Cr$ 500.000,00 (quinhentos mil cruzeiros), destinado à construção de edifício para instalação da Coletoria Estadual de Princesa Isabel.
+**Art. 1º** - Fica autorizado o Govêrno do Estado a abrir, no corrente exercício, com vigência no exercício vindouro, o crédito especial a té a importância de Cr$ 500.000,00 (quinhentos mil cruzeiros), destinado à construção de edifício para instalação da Coletoria Estadual de Princesa Isabel.
 
-**Art. 29** - A presente Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário. Palácio do Govêrno do Estado da Paraíba, em João Pes- soa, 17 de Maio de 1963; 75º da Proclamação da República.
+**Art. 2º** - A presente Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário. Palácio do Govêrno do Estado da Paraíba, em João Pes- soa, 17 de Maio de 1963; 75º da Proclamação da República.
 
 FA182 5 ￾ 63

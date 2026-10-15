@@ -21,8 +21,8 @@ LEI N. 2.007, de 19 de Março de 1959 Abre o crédito especial de 0$ Serei del b
 
 O Governador do Estado da Paralba: Faço saber que o Poder Legislativo decreta e eu sanciono a se guinte Leis
 
-**Art. 19** - Fica aberto pela Secretaria da Agricultura, Indús - tria e Comércio, o crédito especial de 0$3.000.000, 00(três milhões de cruzei ros) para atender, no corrente exercício, às obrigações decorrentes do acôr- do celebrado entre o Estado da Paraíba, a Associação Nordestina de Credito e Assistência Rural (ANCAR) e outras entidades, aprovado e ratificado pela Lei nº 1.934, de 30 de Dezembro de 1958.
+**Art. 1º** - Fica aberto pela Secretaria da Agricultura, Indús - tria e Comércio, o crédito especial de 0$3.000.000, 00(três milhões de cruzei ros) para atender, no corrente exercício, às obrigações decorrentes do acôr- do celebrado entre o Estado da Paraíba, a Associação Nordestina de Credito e Assistência Rural (ANCAR) e outras entidades, aprovado e ratificado pela Lei nº 1.934, de 30 de Dezembro de 1958.
 
-**Art. 29** - A presente Lei entrara em vigor na data de sua pu - blicação, revogadas as disposições em contrário. Palácio do Govêrno do Estado da Paraíba, em João Pessoa, 19 de 1959, 713 da Proclamação da República. de Março sedia
+**Art. 2º** - A presente Lei entrara em vigor na data de sua pu - blicação, revogadas as disposições em contrário. Palácio do Govêrno do Estado da Paraíba, em João Pessoa, 19 de 1959, 713 da Proclamação da República. de Março sedia
 
 PUBLICADO NO D.O. ¡OTA LATA 1m 20/ 3 / 1959

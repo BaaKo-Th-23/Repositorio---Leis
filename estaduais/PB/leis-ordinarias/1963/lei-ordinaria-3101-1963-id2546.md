@@ -21,13 +21,13 @@ LEI N.° 3.101 , de 12 de de 19 63 novembro Abre crédito especial pela Secretar
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei :
 
-**Art. 19** - Fica aberto, pela Secretaria da Educação e Cul- tura o crédito especial de Cr$ 5.250. 000, 00 (cinco milhões, duzentos e cin - quenta mil cruzeiros) para atender a gratificação especial por prestação de serviços em horário além do normal, no período de janeiro a junho do exercí - cio de 1963, na forma do convênio assinado entre o Estado da Paraíba e o Insti tuto Nacional de Estudos Pedagógicos, do Ministério da Educação e Cultura.
+**Art. 1º** - Fica aberto, pela Secretaria da Educação e Cul- tura o crédito especial de Cr$ 5.250. 000, 00 (cinco milhões, duzentos e cin - quenta mil cruzeiros) para atender a gratificação especial por prestação de serviços em horário além do normal, no período de janeiro a junho do exercí - cio de 1963, na forma do convênio assinado entre o Estado da Paraíba e o Insti tuto Nacional de Estudos Pedagógicos, do Ministério da Educação e Cultura.
 
-**Art. 29** - A gratificação corresponderá ao nível inicial da carreira de Professor (F-6), do Quadro Permanente do Estado, e será pa- ga aos Professores com efetivo exercício nas Oficinas de Artes Industriais, a nexas aos Grupos Escolares e que tenham prestado, comprovadamente, naque- le período, serviço em regime de tempo especial de trabalho além dos limites fixados pelo Decreto nº 2. 449, de 13 de setembro de 1961.
+**Art. 2º** - A gratificação corresponderá ao nível inicial da carreira de Professor (F-6), do Quadro Permanente do Estado, e será pa- ga aos Professores com efetivo exercício nas Oficinas de Artes Industriais, a nexas aos Grupos Escolares e que tenham prestado, comprovadamente, naque- le período, serviço em regime de tempo especial de trabalho além dos limites fixados pelo Decreto nº 2. 449, de 13 de setembro de 1961.
 
-**Art. 39** - O crédito especial referido no artigo primeiro tem vigência limitada ao exercício de 1963.
+**Art. 3º** - O crédito especial referido no artigo primeiro tem vigência limitada ao exercício de 1963.
 
-**Art. 49** - Esta Lei entrará em vigor na data de sua publi -
+**Art. 4º** - Esta Lei entrará em vigor na data de sua publi -
 
 PUS 30.11.63
 

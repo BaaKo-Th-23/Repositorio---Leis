@@ -21,8 +21,8 @@ LEI N.° 4.839 , de 08 de de 1986 julho Que reconhece de Utilidade Pú blica a A
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica reconhecida como de Utilidade Pública a Associação dos Moradores do Conjunto Residencial "TANCREDO NEVES", do Município de João Pessoa.
+**Art. 1º** - Fica reconhecida como de Utilidade Pública a Associação dos Moradores do Conjunto Residencial "TANCREDO NEVES", do Município de João Pessoa.
 
-**Art. 29** - Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, 08 de julho de 1986; 989 da Proclamação da República. MILTON BEZERRA CABRAL GOVERNADOR Inácio Bento de Morais Secretário do Interior e Justiça
+**Art. 2º** - Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, 08 de julho de 1986; 989 da Proclamação da República. MILTON BEZERRA CABRAL GOVERNADOR Inácio Bento de Morais Secretário do Interior e Justiça
 
 Publicado no D. Oficial desta data

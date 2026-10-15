@@ -21,8 +21,8 @@ LEI N. 3.2011 , de 10 de Novembro de 194 Autoriza o Poder Executivo a subscrever
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica o Poder Executivo autorizado a subscrever o aumento de capital do Banco do Estado da Paraíba S/A, sediado nesta cidade, a té à importância de Cr$ 200. 000.000,00 (duzentos milhões de cruzeiros) e abrir o crédito especial respectivo em igual montante, com vigência de dois exercíci- Os.
+**Art. 1º** - Fica o Poder Executivo autorizado a subscrever o aumento de capital do Banco do Estado da Paraíba S/A, sediado nesta cidade, a té à importância de Cr$ 200. 000.000,00 (duzentos milhões de cruzeiros) e abrir o crédito especial respectivo em igual montante, com vigência de dois exercíci- Os.
 
-**Art. 29** - Constitui disponibilidade para a abertura do crédi- to a que alude o artigo anterior, a proveniente do excesso de arrecadação, neste e no próximo exercício financeiro, podendo, ainda, o Executivo, se necessário, para êsse fim, contrair empréstimo ou realizar operações de crédito até quantia fixada na presente Lei.
+**Art. 2º** - Constitui disponibilidade para a abertura do crédi- to a que alude o artigo anterior, a proveniente do excesso de arrecadação, neste e no próximo exercício financeiro, podendo, ainda, o Executivo, se necessário, para êsse fim, contrair empréstimo ou realizar operações de crédito até quantia fixada na presente Lei.
 
-**Art. 39** - Esta Lei entrará em vigor na data de sua publica - ção, revogadas as disposições em contrario. Palácio do Govêrno do Estado da Paraíba, em João Pessoa, de Novembro de 1964; ano 769 da Proclamação da Bepublica.
+**Art. 3º** - Esta Lei entrará em vigor na data de sua publica - ção, revogadas as disposições em contrario. Palácio do Govêrno do Estado da Paraíba, em João Pessoa, de Novembro de 1964; ano 769 da Proclamação da Bepublica.

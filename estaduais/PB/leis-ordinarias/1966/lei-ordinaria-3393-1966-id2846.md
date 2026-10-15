@@ -21,11 +21,11 @@ LEI N.° 3.393 , de 7 de Janeiro de 19 66 Concede pensão aos meno res José Rib
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica o Govêrno do Estado, autorizado a conceder uma pensão mensal de dez mil cruzeiros (Cr$ 10. 000) aos menores, Antonio Ri beiro da Silva Neto, Edmilson Ribeiro da Silva, Gilvan Ribeiro da Silva, Gilmar Ribeiro da Silva e Antônio Ribeiro da Silva Filho, filhos do ex-soldado da Polí - cia Militar do Estado, Antônio Ribeiro da Silva, assassinado tragicamente em Salgado de São Felix.
+**Art. 1º** - Fica o Govêrno do Estado, autorizado a conceder uma pensão mensal de dez mil cruzeiros (Cr$ 10. 000) aos menores, Antonio Ri beiro da Silva Neto, Edmilson Ribeiro da Silva, Gilvan Ribeiro da Silva, Gilmar Ribeiro da Silva e Antônio Ribeiro da Silva Filho, filhos do ex-soldado da Polí - cia Militar do Estado, Antônio Ribeiro da Silva, assassinado tragicamente em Salgado de São Felix.
 
-Art 29 - O Poder Executivo, fica igualmente autorizado a abrir crédito especial, no corrente exercício, pela Secretaria competente, para fazer jus às despesas decorrentes desta L ei.
+Art 2º - O Poder Executivo, fica igualmente autorizado a abrir crédito especial, no corrente exercício, pela Secretaria competente, para fazer jus às despesas decorrentes desta L ei.
 
-**Art. 39** - Esta Lei entrará em vigor na cata de sua publica - ção, revogadas as disposições em contrário. Palácio do Govêrno do Estado da Paraíba, em João Pessoa?,
+**Art. 3º** - Esta Lei entrará em vigor na cata de sua publica - ção, revogadas as disposições em contrário. Palácio do Govêrno do Estado da Paraíba, em João Pessoa?,
 
 PUBLICADO NO D. ORCIAL DESTA DATA 1 166 Em\_
 

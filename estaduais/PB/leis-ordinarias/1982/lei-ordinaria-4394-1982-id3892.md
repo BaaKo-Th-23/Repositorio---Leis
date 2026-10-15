@@ -21,8 +21,8 @@ LEI N.° 4.394 , de 02 de de 19 82 junho Reconhece de utilidade pú blica a Asso
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** Fica reconhecido de utilidade pública e As- sociação dos Mecânicos Profissionais de Auto-Carros da Paraíba "AMPAR" localizada nesta Capital.
+**Art. 1º** Fica reconhecido de utilidade pública e As- sociação dos Mecânicos Profissionais de Auto-Carros da Paraíba "AMPAR" localizada nesta Capital.
 
-**Art. 29** - Esta Lei entrará em vigor a partir da data de sua publicação, revogadas as disposições em contrário. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pes- soa, 02 de junho de 1982; 942 da Proclamação da República. ( Clóvis Bezerra Cavalcanti ) GOVERNADOR SECRETÁRIO DO INTERIOR E JUSTIÇA
+**Art. 2º** - Esta Lei entrará em vigor a partir da data de sua publicação, revogadas as disposições em contrário. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pes- soa, 02 de junho de 1982; 942 da Proclamação da República. ( Clóvis Bezerra Cavalcanti ) GOVERNADOR SECRETÁRIO DO INTERIOR E JUSTIÇA
 
 m08

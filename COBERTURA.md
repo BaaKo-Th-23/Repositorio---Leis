@@ -2,6 +2,10 @@
 
 Gerado por `scripts/relatorio.py`. Números de arquivos `.md` convertidos.
 
+## Constituição Federal
+
+A `constituicao.md` na raiz: texto vigente, do Planalto.
+
 ## Federal
 
 | Tipo | Normas |
@@ -43,4 +47,4 @@ Gerado por `scripts/relatorio.py`. Números de arquivos `.md` convertidos.
 | SP | 40203 | sim | 35157 | 1421 | 116 | 3507 | 0 | sem link de texto: 88; erro: 58; só PDF: 14 |
 | TO | 1282 | não | 1217 | 46 | 19 | 0 | 46 | sem arquivo: 120 |
 
-**Total: 323.848 normas em Markdown.**
+**Total: 323.849 normas em Markdown.**

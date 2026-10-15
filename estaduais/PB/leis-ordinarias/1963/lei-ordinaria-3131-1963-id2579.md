@@ -21,7 +21,7 @@ LEI N. 3.131 , de 31 de dezembro de 1963 Autoriza o Poder Execu tivo a abrir cr�
 
 O GOVERNADOR DO ESTADO DA PARAIBA I Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica o Govêrno do Estado autorizado a abrir o cré dito especial de Cr$ 50. 000. 000, 00 (cinquenta milhoes de cruzeiros), destinado aos encargos financeiros do plano com a recuperação dos serviços de abasteci - mento d'água dos município de Alagoa Grande, Catolé do Rocha, Antenor Navar- ro, Mamanguape e Guarabira, da seguinte forma:
+**Art. 1º** - Fica o Govêrno do Estado autorizado a abrir o cré dito especial de Cr$ 50. 000. 000, 00 (cinquenta milhoes de cruzeiros), destinado aos encargos financeiros do plano com a recuperação dos serviços de abasteci - mento d'água dos município de Alagoa Grande, Catolé do Rocha, Antenor Navar- ro, Mamanguape e Guarabira, da seguinte forma:
 
 a) ALAGOA GRANDE (Orçamento: Cr$ 5.000.000,00): 1 - Substituição parcial da linha de recalque 2 - Remanejamento da rede de Distribuição
 
@@ -39,4 +39,4 @@ e) GUARABIRA (Orçamento: Cr$ 15.000. 000, 00): 1 - Reforma geral do Escritório
 
 - З - 6 - Rede de distribuição para as ruas: José Bonifácio, De sembargador Pedro Bandeira, Sao Manoel, J. Gal - vão, Dr. Napoleão Laureano, Arame, Avenida Mi - randa, Cruzeiro, Av. Bela Vista e São Miguel 7 - Construção de chafariz à Av. Bela Vista 8 - Construção de um chafariz à Rua Des. Pedro Bandeira 9 - Instalação de um clorador 10 - Construção de um reservatório elevado (R-2) com ca pacidade para 250. 000 litros 11 - Implantação de novo recalque para as zonas altas da Cidade 12 - Desobstrução da linha adutora
 
-**Art. 29** - Esta Lei entrará em vigor na data de sua publica- ção, revogadas as disposições em contrário. Palácio do Govêrno do Estado da Paraíba, em João Pessoa, 31 de dezembro de 1963; 759 da Proclamação da República.
+**Art. 2º** - Esta Lei entrará em vigor na data de sua publica- ção, revogadas as disposições em contrário. Palácio do Govêrno do Estado da Paraíba, em João Pessoa, 31 de dezembro de 1963; 759 da Proclamação da República.

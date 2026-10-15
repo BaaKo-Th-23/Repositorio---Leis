@@ -25,9 +25,9 @@ Dispõe sobre o Fundo de Apoio Recuperação de Áreas Degradadas e Encapoeirada
 
 O GOVERNADOR DO ESTADO DE RONDÔNIA, fa ço saber que a Assembléia Legislativa decreta e eu sanciono a seguinte Lei Complementar:
 
-**Art. 19** - Esta Lei Complementar dispõe sobre o Fundo de Apoio à Recuperação de Áreas Degradas e Enca poeiradas no Estado de Rondônia - FUNDERCAP, em cumprimento ao que estabelece o art. 33, Das Disposições Constitucionais Tran sitórias da Constituição Estadual.
+**Art. 1º** - Esta Lei Complementar dispõe sobre o Fundo de Apoio à Recuperação de Áreas Degradas e Enca poeiradas no Estado de Rondônia - FUNDERCAP, em cumprimento ao que estabelece o art. 33, Das Disposições Constitucionais Tran sitórias da Constituição Estadual.
 
-**Art. 29** - O Fundo de Apoio à Recuperação e Encapoeiradas no Estado de Rondô de Áreas Degradadas nia - FUNDERCAP, tem por objetivo inibir o avanço sobre as áreas de vegetação primária a partir da oferta de tecnologia apropria da para o aproveitamento dessas áreas.
+**Art. 2º** - O Fundo de Apoio à Recuperação e Encapoeiradas no Estado de Rondô de Áreas Degradadas nia - FUNDERCAP, tem por objetivo inibir o avanço sobre as áreas de vegetação primária a partir da oferta de tecnologia apropria da para o aproveitamento dessas áreas.
 
 **§ 19** - Serão beneficiários do Fundo de Apoio à Recuperação de Áreas Degradadas e Encapoeiradas no Es tado de Rondônia - FUNDERCAP os micro e pequenos proprietários rurais. $ 20 - Anualmente, o Fundo de Apoio à Re cuperação de Áreas Degradadas e Encapoeiradas no Estado de Ron dônia - FUNDERCAP, financiará projetos envolvendo áreas, a se rem recuperadas, de até 5 ha (cinco hectares), por beneficiá rio.
 
@@ -39,7 +39,7 @@ GOVERNO DO ESTADO DE RONDÔNIA
 
 02. por cento) ao ano e atualização monetária reduzida em 50% (cin quenta por cento).
 
-**Art. 39** - Constituem-se recursos para viabilizar as ações do Fundo de Apoio à Recuperação de Áreas Degradadas e Encapoeiradas no Estado de Rondônia-FUNDERCAP:
+**Art. 3º** - Constituem-se recursos para viabilizar as ações do Fundo de Apoio à Recuperação de Áreas Degradadas e Encapoeiradas no Estado de Rondônia-FUNDERCAP:
 
 I - um por cento (18), do total de recei tas correntes do Estado de Rondônia;
 
@@ -49,7 +49,7 @@ III - recursos derivados de financiamentos internos ou externos;
 
 IV - recursos decorrentes da amortização de financiamentos efetuados pelo Fundo e da aplicação dos re cursos financeiros ao mesmo alocados.
 
-**Art. 49** - O Fundo de Apoio à Recuperação de Áreas Degradas e Encapoeiradas - FUNDERCAP será gerenciado pelo Conselho Estadual de Política Agrícola que aprovará o seu programa anual de trabalho e a respectiva prestação de contas movimentados através do Banco do Estado de e os seus recursos Rondônia S/A.
+**Art. 4º** - O Fundo de Apoio à Recuperação de Áreas Degradas e Encapoeiradas - FUNDERCAP será gerenciado pelo Conselho Estadual de Política Agrícola que aprovará o seu programa anual de trabalho e a respectiva prestação de contas movimentados através do Banco do Estado de e os seus recursos Rondônia S/A.
 
 **Art. 50** - O Poder Executivo regulamenta rá a presente Lei Complementar, no prazo de 60 (sessenta) dias, após sua publicação.
 

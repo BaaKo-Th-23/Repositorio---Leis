@@ -21,11 +21,11 @@ LEI N.º 4.683 , de 11 de fevereiro Cria a Procuradoria de Assistência Judiciá
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica criada na Estrutura Organizacional Bá- sica do Poder Executivo, a Procuradoria de Assistência Judiciária.
+**Art. 1º** - Fica criada na Estrutura Organizacional Bá- sica do Poder Executivo, a Procuradoria de Assistência Judiciária.
 
-**Art. 29** - A Procuradoria de Assistência Judiciária, se constitui, em órgão de assessoramento direto do Governador, integrante da estrutura básica da Governadoria e tem a seu cargo os Serviços de Assis tência Jurídica e Judiciária aos necessitados e Assessoramento Jurídico-Ad ministrativo às comunidades carentes, inclusive a proteção a família de ví timas de delitos.
+**Art. 2º** - A Procuradoria de Assistência Judiciária, se constitui, em órgão de assessoramento direto do Governador, integrante da estrutura básica da Governadoria e tem a seu cargo os Serviços de Assis tência Jurídica e Judiciária aos necessitados e Assessoramento Jurídico-Ad ministrativo às comunidades carentes, inclusive a proteção a família de ví timas de delitos.
 
-**Art. 39** - São objetivos da Procuradoria:
+**Art. 3º** - São objetivos da Procuradoria:
 
 I - centralizar o sistema de assistência judiciária do Estado, objetivando estabelecer orientação uniforme no tratamento das questões jurídicas de interesse de pessoas e comunidades carentes;
 
@@ -49,7 +49,7 @@ VIII - prestar assistência aos filiados de sindi- catos, órgãos de classe e a
 
 Parágrafo Único - As normas e disposições de prestação de Assistência Jurídica, administrativa, judiciária e de proteção as comunidades carentes e as vítimas de delitos serão fixa dos em regulamento.
 
-**Art. 49** - A Procuradoria de Assistência Judi - ciária tem a seguinte estrutura organizacional básica:
+**Art. 4º** - A Procuradoria de Assistência Judi - ciária tem a seguinte estrutura organizacional básica:
 
 I - Nível de Direção Especial Procurador de Assistência Judiciária Conselho Superior de Assistência Judici - aria
 
@@ -63,17 +63,17 @@ V - Nível de Execução Programática Coordenadoria de Assistência Judiciária
 
 VI - Nível de atuação Regional Núcleos de Assistência Judiciária.
 
-**Art. 59** - O detalhamento da Estrutura Básica, a competência dos Órgãos e as atribuições de seus dirigentes serão definidos em Regulamento aprovado por Decreto do Executivo.
+**Art. 5º** - O detalhamento da Estrutura Básica, a competência dos Órgãos e as atribuições de seus dirigentes serão definidos em Regulamento aprovado por Decreto do Executivo.
 
-**Art. 69** - O Conselho Superior de Assistência Judiciária, órgão consultivo e disciplinar terá a sua composição, competência e funcionamento disciplinados em Regimento Interno a ser aprovado por ato do Executivo.
+**Art. 6º** - O Conselho Superior de Assistência Judiciária, órgão consultivo e disciplinar terá a sua composição, competência e funcionamento disciplinados em Regimento Interno a ser aprovado por ato do Executivo.
 
-**Art. 79** - Para atender às necessidades de exe- cução dos objetivos e metas da Procuradoria de Assistência Judiciá- ria é criado, nos termos do artigo 20 combinado com o artigo 13 da
+**Art. 7º** - Para atender às necessidades de exe- cução dos objetivos e metas da Procuradoria de Assistência Judiciá- ria é criado, nos termos do artigo 20 combinado com o artigo 13 da
 
 Lei N° 3.900/77, o Grupo Ocupacional - SERVIÇO DE ASSISTÊNCIA JUDI- CIÁRIA, designado pelo código SAJ-1400 - compreendendo as catego - rias funcionais integradas de cargos de provimento efetivo, a que são inerentes atividades de assistência jurídica e administrativa, aos necessitados para as quais se exigem diploma de curso superior na graduação de bacharel em Direito.
 
-**Art. 89** - Os cargos integrantes das categorias funcionais do grupo referido nesta lei, distribuir-se-ão na forma do artigo 14 da Lei n° 3.900/77 em cinco (05) níveis de vencimentos de acordo com o Anexo II desta Lei.
+**Art. 8º** - Os cargos integrantes das categorias funcionais do grupo referido nesta lei, distribuir-se-ão na forma do artigo 14 da Lei n° 3.900/77 em cinco (05) níveis de vencimentos de acordo com o Anexo II desta Lei.
 
-**Art. 99** - A lotação dos ocupantes dos cargos do Grupo Serviço de Assistência Judiciária é fixada na Procuradoria de Assistência Judiciária, cabendo ao seu titular, na forma que dis puser o Regulamento, indicar as Entidades, Órgãos, Comarcas e loca- lidades onde devam ter exercicio.
+**Art. 9º** - A lotação dos ocupantes dos cargos do Grupo Serviço de Assistência Judiciária é fixada na Procuradoria de Assistência Judiciária, cabendo ao seu titular, na forma que dis puser o Regulamento, indicar as Entidades, Órgãos, Comarcas e loca- lidades onde devam ter exercicio.
 
 **Art. 10** - O número de cargos do Grupo Serviço de Assistência Judiciária e os respectivos vencimentos são os cons- tantes do Anexo I a esta Lei.
 

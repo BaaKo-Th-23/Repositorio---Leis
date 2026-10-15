@@ -21,10 +21,10 @@ LEI N.° 3.000 , de 10 de Abril de 19 63 Autoriza a instalação de Jardins de I
 
 O GOVERNADOR DO ESTADO DA PARAIBA I Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica o Govêrno do Estado autorizado a instalar dois Jardins de Infância, anexos aos Grupos Escolares "Antônio Gomes" e "Fausto Mei ra", das cidades de Brejo do Cruz e São Bento, respectivamente. Parágrafe único - As duas unidades de aprendizado infantil se- rão subordinadas diretamente ao Departamento de Educação.
+**Art. 1º** - Fica o Govêrno do Estado autorizado a instalar dois Jardins de Infância, anexos aos Grupos Escolares "Antônio Gomes" e "Fausto Mei ra", das cidades de Brejo do Cruz e São Bento, respectivamente. Parágrafe único - As duas unidades de aprendizado infantil se- rão subordinadas diretamente ao Departamento de Educação.
 
-**Art. 29** - Para ocorrer às despesas com a execução da presen te Lei, fica o Governador do Estado autorizado a abrir o crédito especial de Cr$ 100. 000, 00 (cem mil cruzeiros), com vigência em dois (2) exercícios.
+**Art. 2º** - Para ocorrer às despesas com a execução da presen te Lei, fica o Governador do Estado autorizado a abrir o crédito especial de Cr$ 100. 000, 00 (cem mil cruzeiros), com vigência em dois (2) exercícios.
 
-**Art. 39** - Revogadas as disposições em contrário, esta Lei en trará em vigor na data de sua publicação. Palácio do Govêrno do Estado da Paraíba, em Joao Pessoa, 10 de Abril de 1963; 759 da Proclamação da República. они
+**Art. 3º** - Revogadas as disposições em contrário, esta Lei en trará em vigor na data de sua publicação. Palácio do Govêrno do Estado da Paraíba, em Joao Pessoa, 10 de Abril de 1963; 759 da Proclamação da República. они
 
 PUBLICADO NO D. OFCIAL

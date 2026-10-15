@@ -17,9 +17,9 @@ baixado_em: 2026-10-13
 
 GABINETE DO GOVERNADOR LEIN° 6.064 DE 19 DE NOU embrO DE 1998 "CRIA SELO DE QUALIDADE PARA PRODUTOS AVICOLAS, E DISPÕE SOBRE PROGRAMAS DE MONITORAÇÃO E CONTROLE DA INCIDÊNCIA DE SALMONELOSE E OUTROS MICROORGANISMOS PATOGÊNICOS E DÁ OUTRAS PROVIDÊNCIASẠỊ Faço saber que a Assembléia Legislativa decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica criado o Selo de Qualidade para produtivos avícolas a ser outorgado pela Secretaria da Agricultura do Estado de Alagoas, em parceria com entidades representativas do setor, a lodos os estabelecimentos produtores de produtos de origem avicola que alen dam aos requisitos desta lei, bem como à sua regulamentação.
+**Art. 1º** - Fica criado o Selo de Qualidade para produtivos avícolas a ser outorgado pela Secretaria da Agricultura do Estado de Alagoas, em parceria com entidades representativas do setor, a lodos os estabelecimentos produtores de produtos de origem avicola que alen dam aos requisitos desta lei, bem como à sua regulamentação.
 
-**Art. 29** - Os programas de Monitoração e Controle da inci- dência de "SALMONELOSE" e outros microorganismos patogênicos, em pro- dutos avícolas, nas granjas e indústrias do ramo, contemplarão, obri- gatoriamente, os parâmetros estabelecidos nesta lei, fazendo jus Selo de Qualidade criado pela presente legislação.
+**Art. 2º** - Os programas de Monitoração e Controle da inci- dência de "SALMONELOSE" e outros microorganismos patogênicos, em pro- dutos avícolas, nas granjas e indústrias do ramo, contemplarão, obri- gatoriamente, os parâmetros estabelecidos nesta lei, fazendo jus Selo de Qualidade criado pela presente legislação.
 
 **Art. 3º** - Os programas de Monitoração e Controle da inci- dência de SALMONELOSE devem prever, principalmente, os aspectos refe- rentes à desinfecção, distribuição e refrigeração dos produtos avico- las.
 

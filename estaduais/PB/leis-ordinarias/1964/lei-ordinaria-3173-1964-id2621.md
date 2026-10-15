@@ -21,11 +21,11 @@ LEI N.° 3.173 , de 2 de Junho de 19 64 Autoriza o Poder Executi- vo a construir
 
 O GOVERNADOR DO ESTADO DA PARAIBA! Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica o Poder Executivo autorizado a construir u- ma linha telefônica estre as cidades de Campina Grande e a de Patos, neste Es- tado.
+**Art. 1º** - Fica o Poder Executivo autorizado a construir u- ma linha telefônica estre as cidades de Campina Grande e a de Patos, neste Es- tado.
 
 **Parágrafo único** - A instalação e manutenção do serviço te- lefônico de que trata o presente artigo poderão ser feitos pelo Govêrno do Esta- do, exclusivamente, ou em convênio com o Ministério da Viação e as Prefeitu - ras de Campina Grande e Patos, isolada ou conjuntamente.
 
-**Art. 29** - Fica igualmente, o Poder Executivo, autorizado a abrir, pela Secretaria da Viação e Obras Públicas, um crédito especial na impor tância de Cr$ 50.000.000, 00 (cinquenta milhões de cruzeiros), em dois exercí - cios, para ocorrer às despesas com o cumprimento desta Lei.
+**Art. 2º** - Fica igualmente, o Poder Executivo, autorizado a abrir, pela Secretaria da Viação e Obras Públicas, um crédito especial na impor tância de Cr$ 50.000.000, 00 (cinquenta milhões de cruzeiros), em dois exercí - cios, para ocorrer às despesas com o cumprimento desta Lei.
 
 **Art. 3º** - Revogadas as disposições em contrário, esta Lei entrará em vigor na data de sua públicação. Palácio do Govêrno do Estado da Paraíba, em Pão Pessoa ,
 

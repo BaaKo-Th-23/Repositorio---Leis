@@ -21,9 +21,9 @@ LEI N.° 4.031 Autoriza o Chefe do Executi vo a conceder garantia do Estado ao e
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica o Chefe do Executivo autorizado a ga rantir, junto ao Banco do Nordeste do Brasil S/A (BNB), operação de crédito até o montante de Cr$ 20.000.000,00 (vinte milhões de cru - zeiros), a ser contratado pela Empresa Paraiba Turismo S.A.(PB-TUR) por prazo nao superior a 10 (dez) anos, juros não superiores a 10% (dez por cento) ao ano, correção monetária e demais condições esta- belecidas pelo BNB.
+**Art. 1º** - Fica o Chefe do Executivo autorizado a ga rantir, junto ao Banco do Nordeste do Brasil S/A (BNB), operação de crédito até o montante de Cr$ 20.000.000,00 (vinte milhões de cru - zeiros), a ser contratado pela Empresa Paraiba Turismo S.A.(PB-TUR) por prazo nao superior a 10 (dez) anos, juros não superiores a 10% (dez por cento) ao ano, correção monetária e demais condições esta- belecidas pelo BNB.
 
-**Art. 29** - Os recursos oriundos da operação de crédi to a que se refere o artigo primeiro desta Lei serão aplícados na construção de Hotéis nas cidades de Piancó, Itaporanga, Princesa I- sabel, Taperoá e complementação do de Catolé do Rocha.
+**Art. 2º** - Os recursos oriundos da operação de crédi to a que se refere o artigo primeiro desta Lei serão aplícados na construção de Hotéis nas cidades de Piancó, Itaporanga, Princesa I- sabel, Taperoá e complementação do de Catolé do Rocha.
 
 **Art. 30** - Em garantia do financiamento, o Estado ce derá ao Banco do Nordeste do Brasil S/A, parcelas das quotas do Im- posto sobre Circulação de Mercadorias (ICM), as quais ficarao vin- culadas à operação de crédito em montantes anuais necessários para amortizar as prestações do principal e os acessórios da dívida, na forma da legislação em vigor.
 

@@ -21,8 +21,8 @@ LEI N.° 4.841 , de 11 de julho de 19 86 Reconhece de Utilidade Pública a ASSOC
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - É reconhecida de Utilidade Pública para todos os efeitos da Lei, a ASSOCIAÇÃO DE PAIS E MESTRES DO CONJUNTO "VALENTINA DE FIGUEIREDO", que objetiva, de acordo com o seu Estatu to Regimental, prestar assistência filantrópica, educacional e as sistencial aos habitantes do Conjunto Residencial "Valentina de Fi gueiredo", nesta cidade.
+**Art. 1º** - É reconhecida de Utilidade Pública para todos os efeitos da Lei, a ASSOCIAÇÃO DE PAIS E MESTRES DO CONJUNTO "VALENTINA DE FIGUEIREDO", que objetiva, de acordo com o seu Estatu to Regimental, prestar assistência filantrópica, educacional e as sistencial aos habitantes do Conjunto Residencial "Valentina de Fi gueiredo", nesta cidade.
 
-**Art. 29** - Revogadas as disposições em contrário, es ta Lei entrará em vigor na data de sua publicação. PALACIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, 11 de julho de 1986; 989 da Proclamação da República. MILTON BEZERRA CABRAL GOVERNADOR Sindulfo Guedes Santiago Secretário do Interior e Justiça
+**Art. 2º** - Revogadas as disposições em contrário, es ta Lei entrará em vigor na data de sua publicação. PALACIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, 11 de julho de 1986; 989 da Proclamação da República. MILTON BEZERRA CABRAL GOVERNADOR Sindulfo Guedes Santiago Secretário do Interior e Justiça
 
 Publicado no D. Ollela) desta data

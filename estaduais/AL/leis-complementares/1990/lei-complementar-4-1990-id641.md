@@ -21,11 +21,11 @@ LEI COMPLEMENTAR N° 04 DISPÕE SOBRE AS ELEIÇÕES DESTINADAS À FORMA- ÇÃO D
 
 O GOVERNADOR DO ESTADO DE ALAGOAS, Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei Complementar n° 04/90
 
-**Art. 19** - O Ministério Público tem por Chefe o Procurador- Geral de Justiça, nomeado pelo Governador do Estado, após prévia apro vação pela maioria absoluta dos membros da Assembléia Legislativa, e- leito dentre integrantes da carreira, maiores de trinta e cinco anos, indicado em lista tríplice elaborada na forma desta lei, para mandato de dois anos, permitida uma recondução por igual período, em que observara o mesmo processo.
+**Art. 1º** - O Ministério Público tem por Chefe o Procurador- Geral de Justiça, nomeado pelo Governador do Estado, após prévia apro vação pela maioria absoluta dos membros da Assembléia Legislativa, e- leito dentre integrantes da carreira, maiores de trinta e cinco anos, indicado em lista tríplice elaborada na forma desta lei, para mandato de dois anos, permitida uma recondução por igual período, em que observara o mesmo processo.
 
-**Art. 29** - Para a formação da lista tríplice, são eleitores os membros do Ministério Público em atividade, que não estejam cum- prindo sanção disciplinar.
+**Art. 2º** - Para a formação da lista tríplice, são eleitores os membros do Ministério Público em atividade, que não estejam cum- prindo sanção disciplinar.
 
-**Art. 39** - São elegíveis os integrantes vitalícios da car- reira, que preenchendo os demais requisitos exigidos na presente lei, tenham requerido sua inscrição como candidato até cinco dias, a con- tar da publicação na imprensa oficial do edital de chamamento a ser baixado pela Procuradoria-Geral de Justiça.
+**Art. 3º** - São elegíveis os integrantes vitalícios da car- reira, que preenchendo os demais requisitos exigidos na presente lei, tenham requerido sua inscrição como candidato até cinco dias, a con- tar da publicação na imprensa oficial do edital de chamamento a ser baixado pela Procuradoria-Geral de Justiça.
 
 **§ 19** - A lista dos candidatos inscritos será publicada no órgão oficial até três dias após o encerramento das inscrições.
 
@@ -33,7 +33,7 @@ O GOVERNADOR DO ESTADO DE ALAGOAS, Faço saber que o Poder Legislativo decreta e
 
 -2-
 
-**Art. 49** - Cabe ao Colégio de Procuradores, no prazo es- tabelecido no art. 39, "caput", desta lei, designar a Comissão E- leitoral, composta de três membros efetivos e três suplentes.
+**Art. 4º** - Cabe ao Colégio de Procuradores, no prazo es- tabelecido no art. 39, "caput", desta lei, designar a Comissão E- leitoral, composta de três membros efetivos e três suplentes.
 
 **§ 19** - Findo o prazo acima estabelecido sem que tenha o Colégio de Procuradores procedido na designação da Comissão Eleito ral, cumpre ao Procurador-Geral de Justiça fazê-lo.
 
@@ -41,7 +41,7 @@ O GOVERNADOR DO ESTADO DE ALAGOAS, Faço saber que o Poder Legislativo decreta e
 
 **§ 39** - O Presidente da Comissão Eleitoral será o mais antigo de seus membros na carreira.
 
-**Art. 59** - Compete à Comissão Eleitoral dirigir o proces so eleitoral, cumprindo-lhe para tanto:
+**Art. 5º** - Compete à Comissão Eleitoral dirigir o proces so eleitoral, cumprindo-lhe para tanto:
 
 I - homologar as inscrições dos postulantes ao cargo de Procurador-geral de Justiça;
 
@@ -51,15 +51,15 @@ III - receber e contar os votos, logo após o encerramento do pleito, proclamand
 
 IV - resolver os casos omissos.
 
-**Art. 69** - As decisões da Comissão Eleitoral serão sempre fundamentadas, delas cabendo recurso, no prazo de vinte e quatro ho ras, para o Colégio de Procuradores, que terá quarenta e oito horas para apreciá-lo, contado do seu recebimento.
+**Art. 6º** - As decisões da Comissão Eleitoral serão sempre fundamentadas, delas cabendo recurso, no prazo de vinte e quatro ho ras, para o Colégio de Procuradores, que terá quarenta e oito horas para apreciá-lo, contado do seu recebimento.
 
-**Art. 79** - Caberá à Procuradoria-Geral de Justiça forne - cer à Comissão Eleitoral, em tempo hábil, todo o material necessá - rio para o bom andamento das eleições, especialmente o material e- leitoral.
+**Art. 7º** - Caberá à Procuradoria-Geral de Justiça forne - cer à Comissão Eleitoral, em tempo hábil, todo o material necessá - rio para o bom andamento das eleições, especialmente o material e- leitoral.
 
-**Art. 89** - O material eleitoral destinado à votação, com- preenderá uma cédula e um envelope que o eleitor usará e depositará na urna própria.
+**Art. 8º** - O material eleitoral destinado à votação, com- preenderá uma cédula e um envelope que o eleitor usará e depositará na urna própria.
 
 Parágrafo Único - As cédulas serão rubricadas pelos mem- bros que compõem a Comissão Eleitoral.
 
-**Art. 99** - A cédula de votação conterá a relação dos can- didatos em ordem alfabética e ao lado de cada nome haverá lugar a- propriado para que o eleitor assinale os candidatos de sua preferên cia
+**Art. 9º** - A cédula de votação conterá a relação dos can- didatos em ordem alfabética e ao lado de cada nome haverá lugar a- propriado para que o eleitor assinale os candidatos de sua preferên cia
 
 - 3-
 

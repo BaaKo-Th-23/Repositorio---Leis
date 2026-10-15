@@ -21,23 +21,23 @@ LEI N.° 4.933 , de 01 de julho de 19 87 Dá cumprimento ao art. 78, § 18 da Co
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Esta Lei adota, no que lhe forem aplicáveis, os sistemas de classificação e níveis de vencimentos, entre a Secretaria do Tribunal de Justiça e a Secretaria da Assembléia Legislativa e as de Assessoramento e Apoio Direto ao Governador do Estado, na conformida de do art. 78, § 18, e art. 12, da Lei n° 3.900, de 28 de junho de 1977 e demais leis posteriores, que disciplinam a espécie.
+**Art. 1º** - Esta Lei adota, no que lhe forem aplicáveis, os sistemas de classificação e níveis de vencimentos, entre a Secretaria do Tribunal de Justiça e a Secretaria da Assembléia Legislativa e as de Assessoramento e Apoio Direto ao Governador do Estado, na conformida de do art. 78, § 18, e art. 12, da Lei n° 3.900, de 28 de junho de 1977 e demais leis posteriores, que disciplinam a espécie.
 
-**Art. 29** - Para efeito de implantação da estrutura organi zacional decorrente do disposto no artigo anterior, os cargos de Subse- cretário, Diretor de Departamento, Diretor de Divisão e Chefe da Unida- de de Apoio Administrativo, passam a denominar-se, respectivamente, Sub secretário Geral, Secretário e Coordenador, indicadas, nos Anexos I e II desta Lei, as nomenclaturas de cada cargo transformado, de acordo com as respectivas categorias funcionais.
+**Art. 2º** - Para efeito de implantação da estrutura organi zacional decorrente do disposto no artigo anterior, os cargos de Subse- cretário, Diretor de Departamento, Diretor de Divisão e Chefe da Unida- de de Apoio Administrativo, passam a denominar-se, respectivamente, Sub secretário Geral, Secretário e Coordenador, indicadas, nos Anexos I e II desta Lei, as nomenclaturas de cada cargo transformado, de acordo com as respectivas categorias funcionais.
 
-**Art. 39** - Os valores dos níveis de vencimentos, os símbo los, os códigos e as denominações dos cargos e funções do Quadro de Pes soal da Secretaria do Poder Judiciário e da Secretaria da Corregedoria da Justiça, passam a vigorar na forma dos Anexos I, II, III, IV, V, VI, VII, VIII, IX e X do presente diploma.
+**Art. 3º** - Os valores dos níveis de vencimentos, os símbo los, os códigos e as denominações dos cargos e funções do Quadro de Pes soal da Secretaria do Poder Judiciário e da Secretaria da Corregedoria da Justiça, passam a vigorar na forma dos Anexos I, II, III, IV, V, VI, VII, VIII, IX e X do presente diploma.
 
 PUBLICADO NO D. OFICIAL DESTA DATA Em021 07/ 1987 SECRETARIA DO GOVERNO
 
 Fls. 02
 
-**Art. 49** - O cargo de Técnico Judiciário, constan te do Grupo Direção e Assessoramento Superior, passará a denomi nar-se "Assessor Judiciário", asseguradas aos titulares a sua permanência como titulares dos cargos de nova nomenclatura, sem prejuízo do princípio do critério de confiança que lhes é ine - rente, como cargos comissionados.
+**Art. 4º** - O cargo de Técnico Judiciário, constan te do Grupo Direção e Assessoramento Superior, passará a denomi nar-se "Assessor Judiciário", asseguradas aos titulares a sua permanência como titulares dos cargos de nova nomenclatura, sem prejuízo do princípio do critério de confiança que lhes é ine - rente, como cargos comissionados.
 
-**Art. 59** - A Administração do Tribunal de Justiça elaborará Novo Regulamento para a Secretaria, compatibilizando a estrutura organizacional existente com as diretrizes traçadas pela presente Lei, estruturando as atividades fins e as ativida des meio da nova organização, atualizando os grupos ocupacio - nais, as classes funcionais, os cargos e funções, na conformida de com o Plano de Classificação de Cargos do Estado da Paraíba.
+**Art. 5º** - A Administração do Tribunal de Justiça elaborará Novo Regulamento para a Secretaria, compatibilizando a estrutura organizacional existente com as diretrizes traçadas pela presente Lei, estruturando as atividades fins e as ativida des meio da nova organização, atualizando os grupos ocupacio - nais, as classes funcionais, os cargos e funções, na conformida de com o Plano de Classificação de Cargos do Estado da Paraíba.
 
-**Art. 69** - As despesas com o cumprimento deste di ploma, no corrente exercício, correrão por conta dos recursos orçamentários próprios do Tribunal de Justiça do Estado.
+**Art. 6º** - As despesas com o cumprimento deste di ploma, no corrente exercício, correrão por conta dos recursos orçamentários próprios do Tribunal de Justiça do Estado.
 
-**Art. 79** - Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições que com ela se confli- tarem. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, 01 de julho de 1987; 999 da Proclamação da República. TARCÍSIO DE MIRANDA BURITY GOVERNADOR Waldyr Lira dos Santos Lima Secretario do Interior e Justiça ma gale. Sobrinho lanoe Secretario da Administração Luciano Mariz Maia Secretário do Governo
+**Art. 7º** - Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições que com ela se confli- tarem. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, 01 de julho de 1987; 999 da Proclamação da República. TARCÍSIO DE MIRANDA BURITY GOVERNADOR Waldyr Lira dos Santos Lima Secretario do Interior e Justiça ma gale. Sobrinho lanoe Secretario da Administração Luciano Mariz Maia Secretário do Governo
 
 N° DE CARGOS CODIGO DAE-1 DAE-2 DAE-2 DAE-2 DAE-2 DAE-2 DAE-2 Secretario Geral CATEGORIA FUNCIONAL Secretário Judiciário Secretário Financeiro Assessor Juridico Subsecretário Geral TOTAL DE CARGOS: 11 CARGOS DE PROVIMENTO EM COMISSAO CODIGO: TJ-DAE GRUPO: DIREÇÃO E ASSESSORAMENTO ESPECIAIS SECRETARIA DO TRIBUNAL DE JUSTIÇA
 

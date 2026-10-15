@@ -23,13 +23,13 @@ O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e
 
 #### CAPÍTULO I GRUPO OCUPACIONAL AUDITORIA E CONTROLE INTERNO
 
-**Art. 19** - E criado, no Serviço Civil da Administração Di- reta do Poder Executivo, o Grupo Ocupacional Auditoria e Controle Interno, de signado pelo código ACI-1800, integrado por Categorias Funcionais desdobra - das em classes compostas exclusivamente de cargos de provimento efetivo, des tinados ao desempenho das atividades específicas de auditoria e de controle interno previstas no artigo 49 da Constituição do Estado e Capitulo I, do Ti tulo X, da Lei n° 3.654, de 10 de fevereiro de 1971.
+**Art. 1º** - E criado, no Serviço Civil da Administração Di- reta do Poder Executivo, o Grupo Ocupacional Auditoria e Controle Interno, de signado pelo código ACI-1800, integrado por Categorias Funcionais desdobra - das em classes compostas exclusivamente de cargos de provimento efetivo, des tinados ao desempenho das atividades específicas de auditoria e de controle interno previstas no artigo 49 da Constituição do Estado e Capitulo I, do Ti tulo X, da Lei n° 3.654, de 10 de fevereiro de 1971.
 
-**Art. 29** - O Grupo Auditoria e Controle Interno é consti - tuído pela Categoria Funcional Técnico de Controle Interno, designada pelo códiço ACI-1801.
+**Art. 2º** - O Grupo Auditoria e Controle Interno é consti - tuído pela Categoria Funcional Técnico de Controle Interno, designada pelo códiço ACI-1801.
 
 Parágrafo Único - O Grupo Auditoria e Controle Interno é região, exclusivamente, pela Lei Complementar n° 39, de 26 de dezembro de 1985 (Estatuto dos Funcionários Públicos Civis do Estado da Paraiba).
 
-**Art. 39** - Os cargos que integran a Catecoria FuncionalTec nico de Controle Interno - ACI-1801 distribuir-se-ão en três (03) classes, compostas de sete (07) niveis de vencimento cada uma, com as seguintes ca - racterísticas dentro de cada especialidace:
+**Art. 3º** - Os cargos que integran a Catecoria FuncionalTec nico de Controle Interno - ACI-1801 distribuir-se-ão en três (03) classes, compostas de sete (07) niveis de vencimento cada uma, com as seguintes ca - racterísticas dentro de cada especialidace:
 
 PUBLICADO NO D. OFICIAL DESTA DATA Em28/07 / 1987 SECRETARIA DO GOVERNO REP 08.03.87
 
@@ -37,7 +37,7 @@ Fls. 02 Classe C - Atividades de planejamento, supervi são, controle e execuç�
 
 Fls. 03 classes e respectivos níveis de vencimento da Categoria Funcional Técnico de Controle Interno são os constantes do Anexo a esta Lei.
 
-**Art. 49** - O Grupo Ocupacional Auditoria e Con trole Interno - ACI-1800, destina-se a atender as necessidades de recursos humanos para a realização das atividades de Controle Inter no da Administração Direta do Poder Executivo, Direta Descentraliza da, e da Indireta.
+**Art. 4º** - O Grupo Ocupacional Auditoria e Con trole Interno - ACI-1800, destina-se a atender as necessidades de recursos humanos para a realização das atividades de Controle Inter no da Administração Direta do Poder Executivo, Direta Descentraliza da, e da Indireta.
 
 **§ 19** - Os titulares de Cargos da Categoria Fun cional Técnico de Controle Interno têm lotação fixada exclusivamen- te na Secretaria Especial de Controle Interno.
 
@@ -45,7 +45,7 @@ Fls. 03 classes e respectivos níveis de vencimento da Categoria Funcional Técn
 
 #### CAPÍTULO II COMPOSIÇÃO INICIAL DO GRUPO AUDITORIA E CONTROLE INTERNO
 
-**Art. 59** - A primeira composição da Categoria Fun cional a que alude o artigo 29, far-se-á de acordo con os seguintes critérios:
+**Art. 5º** - A primeira composição da Categoria Fun cional a que alude o artigo 29, far-se-á de acordo con os seguintes critérios:
 
 I - por Transposição: na Categoria Funcional Técnico de Controle Interno, Classe "C", os atuais titulares do cargo de provimento efetivo de Técnico de Controle Interno, Classe "B" ou "C";
 
@@ -53,17 +53,17 @@ II - por Transformação: na Categoria Funcional Técnico de Controle Interno Cl
 
 #### CAPÍTULO III INGRESSO
 
-**Art. 69** - Excetuado o disposto nos artigos 58 ,
+**Art. 6º** - Excetuado o disposto nos artigos 58 ,
 
 Fls. 04 10 e 12, desta Lei, o ingresso na Categoria Funcional Técnico de Con trole Interno - ACI-1801 far-se-á na classe e nível de vencimento ini cial, mediante concurso público de provas ou de provas e títulos complementado por curso de treinamento específico da área de Contro le Interno, em que serão avaliadas as qualificações essenciais exigi das nas rospectivas especificações para o desempenho das atividades inerentes à classe.
 
-**Art. 79** - O concurso público para ingresso na Ca tegoria Funcional Técnico de Controle Interno - ACI-1801 reali zar-se-a em duas etapas, constando, a primeira, de provas escritas de conhecimentos específicos e gerais e, a segunda, de treinamento específico da área de Controle Interno, na forma a ser definida
+**Art. 7º** - O concurso público para ingresso na Ca tegoria Funcional Técnico de Controle Interno - ACI-1801 reali zar-se-a em duas etapas, constando, a primeira, de provas escritas de conhecimentos específicos e gerais e, a segunda, de treinamento específico da área de Controle Interno, na forma a ser definida
 
 Decreto do Chefe do Poder Executivo e programa de treinamento.
 
-**Art. 89** - As provas de conhecimentos especificos e de conhecimentos gerais do concurso, para ingresso na Categoria Fun cional Técnico de Controle Interno - ACI-1801, serão eliminatórias para efeito de habilitação na primeira etapa do processo seletivo, e obedecerão as normas estabelecidas no edital do concurso.
+**Art. 8º** - As provas de conhecimentos especificos e de conhecimentos gerais do concurso, para ingresso na Categoria Fun cional Técnico de Controle Interno - ACI-1801, serão eliminatórias para efeito de habilitação na primeira etapa do processo seletivo, e obedecerão as normas estabelecidas no edital do concurso.
 
-**Art. 99** - A inscrição para o concurso público e o exercício do cargo de Técnico de Controle Interno exigem a comprovação de registro nos órgãos de fiscalização do exercicio pro fissional correspondentes a respectiva qualificação. Parágrafo Unico - Ficam ressalvados do disposto no "caput" deste artigo os candidatos e funcionários que estejam in compatibilizados ou impedidos legalmente de se inscreverem nos res pectivos órgãos de fiscalização do exercício profissional.
+**Art. 9º** - A inscrição para o concurso público e o exercício do cargo de Técnico de Controle Interno exigem a comprovação de registro nos órgãos de fiscalização do exercicio pro fissional correspondentes a respectiva qualificação. Parágrafo Unico - Ficam ressalvados do disposto no "caput" deste artigo os candidatos e funcionários que estejam in compatibilizados ou impedidos legalmente de se inscreverem nos res pectivos órgãos de fiscalização do exercício profissional.
 
 **Art. 10** - O provimento do cargo de Técnico de Controle Interno sera feito da seguinte forma:
 

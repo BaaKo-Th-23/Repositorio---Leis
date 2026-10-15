@@ -21,13 +21,13 @@ LEI N.° 3.616 , de 25 de maio de 19 70 Isenta do pagamento de custas e emo- lum
 
 O GOVERNADOR DO ESTADO DA PARAIBA I Faço saber qua o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - No período compreendido entre a data da publi- cação desta lei e o dia trinta (30) de junho do corrente ano, são isentos do pa- gamento de custas e emolumentos o registro de nascimento de pessoas maiores d e dezoito (18) anos e o fornecimento da respetiva certidão.
+**Art. 1º** - No período compreendido entre a data da publi- cação desta lei e o dia trinta (30) de junho do corrente ano, são isentos do pa- gamento de custas e emolumentos o registro de nascimento de pessoas maiores d e dezoito (18) anos e o fornecimento da respetiva certidão.
 
 **§ 10** - Durante o período referido neste artigo é devida, pelo Estado, ao Escrivão do Registro Civil das Pessoas Naturais, a título de com pensação da gratuidade do registro, gratificação de Cr$ 2,00 (dois cruzeiros) , por certidão fornecida, em duas (2) vias, uma das quais destinada, exclusivamen- te, para fins eleitorais.
 
 **§ 20** - O pagamento da gratificação de que trata o pará - grafo anterior, será efetuado pela repartição local da Secretaria das Finanças , mediante requerimento do interessado ao titular da Pasta, instrufdo com relação nominal das pessoas beneficiadas, visada pelo Juiz da Zona Eleitoral, em que conste a data da expedição da Certidão e o número e data da inscrição do eleitor.
 
-**Art. 29** - Até trinta (30) de junho de 1970, a fim de a- tender as despesas de transporte necessárias à qualificação e inscrição de novos eleitores, é atribuída ao Juíz e Escrivão Eleitorais, para cada grupo de quinhen
+**Art. 2º** - Até trinta (30) de junho de 1970, a fim de a- tender as despesas de transporte necessárias à qualificação e inscrição de novos eleitores, é atribuída ao Juíz e Escrivão Eleitorais, para cada grupo de quinhen
 
 TELICADO NO B. ORCIAL DESTA DATA n 261 CS 1970 Rep: 28 cs : 70
 

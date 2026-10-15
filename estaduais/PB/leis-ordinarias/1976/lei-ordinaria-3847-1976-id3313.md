@@ -21,13 +21,13 @@ LEI N.° 3.847, , de 11 de de 19 76 junho Autoriza a Secretaria das Fi nanças, 
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Para o fim de extinguir crédito tributário com a firma COMPANHIA DE TECIDOS PARAIBANA "FABRICA TIBIRI", de San ta Rita, fica a Secretaria das Finanças, na conformidade do dispos to nos arts. 170 e 171 do Código Tributário Nacional, autorizada a compensar a dívida fiscal apurada e inscrita em divida ativa, com o valor de um prédio do Grupo Escolar de propriedade da Companhia de avaliação Tecidos Paraibana, oferecido pela devedora e objeto da procedida na esfera administrativa no processo n° 19.518/75 -S.F.
+**Art. 1º** - Para o fim de extinguir crédito tributário com a firma COMPANHIA DE TECIDOS PARAIBANA "FABRICA TIBIRI", de San ta Rita, fica a Secretaria das Finanças, na conformidade do dispos to nos arts. 170 e 171 do Código Tributário Nacional, autorizada a compensar a dívida fiscal apurada e inscrita em divida ativa, com o valor de um prédio do Grupo Escolar de propriedade da Companhia de avaliação Tecidos Paraibana, oferecido pela devedora e objeto da procedida na esfera administrativa no processo n° 19.518/75 -S.F.
 
-**Art. 29** - Os órgãos competentes da Secretaria das Fi nanças promoverão medidas para a efetivação da operação autorizada no artigo anterior, de modo que termine o litigio, com a consequen te extinção do crédito tributário objeto da cobrança judicial.
+**Art. 2º** - Os órgãos competentes da Secretaria das Fi nanças promoverão medidas para a efetivação da operação autorizada no artigo anterior, de modo que termine o litigio, com a consequen te extinção do crédito tributário objeto da cobrança judicial.
 
-**Art. 39** - A Secretaria das Finanças, para o cumpri- mento do disposto na presente lei, é autorizada a tomar todas as providências cabíveis e necessárias à compensação do crédito da Fa zenda Pública Estadual.
+**Art. 3º** - A Secretaria das Finanças, para o cumpri- mento do disposto na presente lei, é autorizada a tomar todas as providências cabíveis e necessárias à compensação do crédito da Fa zenda Pública Estadual.
 
-**Art. 49** - Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.
+**Art. 4º** - Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.
 
 NE. D. ORCIAL ¡A LATA 06 / SIR moRIlias
 

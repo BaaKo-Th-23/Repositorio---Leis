@@ -21,10 +21,10 @@ LEI N.° 3.981 , de 18 de de 19 78 maio Eleva vencimentos dos integrantes das s�
 
 O GOVERNADOR DO ESTADO DA PARAIBA I Faço saber que o Podar Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Os padrões de vencimentos dos integrantes das séries de classes de Técnico de Controle Externo e de Auxiliar de Controle Externo do Tribunal de Contas do Estado ficam elevados para os valores constantes do Anexo Unico a esta Lei.
+**Art. 1º** - Os padrões de vencimentos dos integrantes das séries de classes de Técnico de Controle Externo e de Auxiliar de Controle Externo do Tribunal de Contas do Estado ficam elevados para os valores constantes do Anexo Unico a esta Lei.
 
-**Art. 29** - As vantagens decorrentes desta Lei são de- vidas a partir de 10 de janeiro de 1978.
+**Art. 2º** - As vantagens decorrentes desta Lei são de- vidas a partir de 10 de janeiro de 1978.
 
-**Art. 39** - Esta Lei entra em vigor na data de sua pu- blicação, revogando as disposições em contrário. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, 18 de maio de 1978; 909 da Proclamação da República. 9. Bile S Confuto
+**Art. 3º** - Esta Lei entra em vigor na data de sua pu- blicação, revogando as disposições em contrário. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, 18 de maio de 1978; 909 da Proclamação da República. 9. Bile S Confuto
 
 ANEXO a que se refere o artigo 19 da Lei n° 3.981 de 18 de maio de 1978. TRIBUNAL DE CONTAS DO ESTADO QUADRO PERMANENTE VENCIMENTO DENOMINAÇÃO CLASSE Cr$ Técnico de Controle Externo 13.660,00 Técnico de Controle Externo 16.392,00 B Auxiliar de Controle Externo 6.830,00 Auxiliar de Controle Externo B 8.196,00

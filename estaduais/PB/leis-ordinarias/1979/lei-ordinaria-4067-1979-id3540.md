@@ -21,9 +21,9 @@ LEI N. 4.067 junho , de 28 de de 1979 Institui o FUNDO DE DESENVOL VIMENTO DA PR
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica instituído o FUNDO DE DESENVOLVIMEN- TO DA PRODUÇÃO MINERAL - FDPM, com o objetivo de promover os meios para a execução de programas de desenvolvimento da exploração de recursos minerais e hídricos do subsolo paraibano.
+**Art. 1º** - Fica instituído o FUNDO DE DESENVOLVIMEN- TO DA PRODUÇÃO MINERAL - FDPM, com o objetivo de promover os meios para a execução de programas de desenvolvimento da exploração de recursos minerais e hídricos do subsolo paraibano.
 
-**Art. 29** - o FUNDO DE DESENVOLVIMENTO DA PRODUÇÃO MI NERAL - FDPM tera como finalidades basicas:
+**Art. 2º** - o FUNDO DE DESENVOLVIMENTO DA PRODUÇÃO MI NERAL - FDPM tera como finalidades basicas:
 
 I - custear a realização de estudos, projetos e pro pesquisas geologicas e prospecções de recursos minerais gramas de e hídricos, a serem exécutados pela Companhia de Desenvolvimento de Recursos Minerais da Paraíba - CDRM/PB referida no artigo 14 desta lei;
 
@@ -43,7 +43,7 @@ VII - custeio de programas de treinamento e atualiza- ção científica, promoç
 
 VIII - estudos de oportunidades de investimentos no se tor mineral, inclusive sua promoção e divulgação.
 
-**Art. 39** - Constituem recursos do Fundo de Desenvol- vimento da Produção Mineral - FDPM:
+**Art. 3º** - Constituem recursos do Fundo de Desenvol- vimento da Produção Mineral - FDPM:
 
 I - a cota-parte do Imposto Unico sobre Minerais, a- tribuída ao Estado, que será transferida ao FDPM através do Fundo de Desenvolvimento do Estado da Paraíba - FDE;
 
@@ -65,25 +65,25 @@ VII - os saldos de créditos, orçamentários ou não, exis tentes no Estado, em
 
 **§ 29** - Os recursos mencionados no "caput" deste ar tigo serão depositados no Banco do Estado da Paraíba S/A, em conta movimentada pela Companhia de Desenvolvimento de Recursos Minerais da Paraíba - CDRM/PB, em conformidade com o artigo 89 desta Lei.
 
-**Art. 49** - O Fundo de Desenvolvimento da Produção Mi neral - FDPM constituira uma subconta do Fundo de Desenvolvimento do Estado da Paraíba - FDE, nos termos do artigo 10, da Lei 3.916, de 14 de setembro de 1977.
+**Art. 4º** - O Fundo de Desenvolvimento da Produção Mi neral - FDPM constituira uma subconta do Fundo de Desenvolvimento do Estado da Paraíba - FDE, nos termos do artigo 10, da Lei 3.916, de 14 de setembro de 1977.
 
-**Art. 59** - A destinação de recursos do FDPM às diver sas linhas operacionais será fixada, anualmente, pelo Conselho de Desenvolvimento Estadual - CDE, mediante proposta elaborada pela Companhia de Desenvolvimento de Recursos Minerais da Paraíba-CDRM/ /PB e encaminhada através da Secretaria da Indústria e do Comércio.
+**Art. 5º** - A destinação de recursos do FDPM às diver sas linhas operacionais será fixada, anualmente, pelo Conselho de Desenvolvimento Estadual - CDE, mediante proposta elaborada pela Companhia de Desenvolvimento de Recursos Minerais da Paraíba-CDRM/ /PB e encaminhada através da Secretaria da Indústria e do Comércio.
 
-**Art. 69** - As operações de financiamento previstas nesta Lei serão realizadas através do Banco do Estado da Paraíba S/A, mediante convênio firmado com a CDRM/PB.
+**Art. 6º** - As operações de financiamento previstas nesta Lei serão realizadas através do Banco do Estado da Paraíba S/A, mediante convênio firmado com a CDRM/PB.
 
 Parágrafo Único - Nas operações poderá ser adotada uma clausula de risco, quando for o caso, mediante aprovação da CDRM/PB e de acordo com normas especificas emanadas do Conselho de Desenvolvimento Estadual - CDE.
 
-**Art. 79** - Correrão por conta do próprio Fundo as des pesas realizadas com a sua operação e administração, não podendo estas excederem, anualmente, a 10% (dez por cento) do total dos seus recursos financeiros.
+**Art. 7º** - Correrão por conta do próprio Fundo as des pesas realizadas com a sua operação e administração, não podendo estas excederem, anualmente, a 10% (dez por cento) do total dos seus recursos financeiros.
 
 **§ 19** - A taxa de administração referida neste arti- go poderá ser destacada mensalmente pela CDRM/PB, em duodécimos cal- culados à base de projeção de recursos do FDPM, aprovada pelo Go vernador do Estado.
 
 **§ 29** - Caso os recursos destacados pela CDRM/PB, na forma do paragrafo anterior, excedam o percentual fixado no'caput" deste artigo, a CDRM/PB, escriturará a diferença para fazer a com- pensação no exercício seguinte.
 
-**Art. 89** - Cabera à Companhia de Desenvolvimento de Recursos Minerais da Paraíba - CDRM/PB movimentar os recursos do Fundo, na qualidade de administradora do FDPM, que será dotado de
+**Art. 8º** - Cabera à Companhia de Desenvolvimento de Recursos Minerais da Paraíba - CDRM/PB movimentar os recursos do Fundo, na qualidade de administradora do FDPM, que será dotado de
 
 personalidade contabil, distinguindo-se a sua contabilidade da con tabilidade da empresa administradora, que escriturara em separado todos os recursos e operações relacionados com o FDPM, somente po- dendo movimentar a conta de que trata o § 29, do artigo 39 desta Lei, mediante cheques nominativos assinados por diretores da CDRM/PB.
 
-**Art. 99** - As operações de participação acionária em empresas públicas ou privadas só serão realizadas mediante prévia autorização do Conselho de Desenvolvimento Estadual - CDE.
+**Art. 9º** - As operações de participação acionária em empresas públicas ou privadas só serão realizadas mediante prévia autorização do Conselho de Desenvolvimento Estadual - CDE.
 
 **§ 19** - As ações integralizadas com recursos do FDPM serão emitidas em nome da CDRM/PB.
 

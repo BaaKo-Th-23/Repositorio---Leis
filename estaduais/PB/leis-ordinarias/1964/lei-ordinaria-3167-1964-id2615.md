@@ -21,13 +21,13 @@ LEI N.° 3.167 , de 27 de de 19 64 Abril Autoriza o Govêrno do Estado a concede
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica autorizado o Govêrno do Estado a conceder à Associação dos Sub-Tenentes e Sargentos da Polícia Militar da Paraíba, uma subvenção anual até a importância de Cr$ 200. 000, 00 (duzentos mil cruzeiros).
+**Art. 1º** - Fica autorizado o Govêrno do Estado a conceder à Associação dos Sub-Tenentes e Sargentos da Polícia Militar da Paraíba, uma subvenção anual até a importância de Cr$ 200. 000, 00 (duzentos mil cruzeiros).
 
-**Art. 29** - Fica igualmente autorizado o Gorêrno do Estado a abrir o crédito especial até a importância supra para fazer face às despesas de correntes da presente Lei, no corrente exercício, devendo fazer parte dos proxi- mos orçamentos, verba própria.
+**Art. 2º** - Fica igualmente autorizado o Gorêrno do Estado a abrir o crédito especial até a importância supra para fazer face às despesas de correntes da presente Lei, no corrente exercício, devendo fazer parte dos proxi- mos orçamentos, verba própria.
 
-**Art. 39** - Constitui recurso disponível para ecorrer com as despesas da presente Lei, o excedente da arrecadação estadual que se está ve rificando no corrente ano.
+**Art. 3º** - Constitui recurso disponível para ecorrer com as despesas da presente Lei, o excedente da arrecadação estadual que se está ve rificando no corrente ano.
 
-**Art. 49** - Esta Lei entrará em vigor na data de sua publi- cação, revogadas as disposições em contrário. Palácio do Govêrno do Estado da Paraíba, em João Pessoa,
+**Art. 4º** - Esta Lei entrará em vigor na data de sua publi- cação, revogadas as disposições em contrário. Palácio do Govêrno do Estado da Paraíba, em João Pessoa,
 
 ¡ PUBLICADO NO D. OFICIAL DESTA DATA Em29, 21
 

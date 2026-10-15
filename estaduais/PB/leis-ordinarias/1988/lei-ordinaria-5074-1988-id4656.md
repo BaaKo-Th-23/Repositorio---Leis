@@ -21,9 +21,9 @@ LEI N.° de 1988 5.074 , de 23 de agosto Reajusta vencimentos, gratificações e
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Os níveis de vencimento e valores das gratificaçõe dos funcionários da Secretaria do Tribunal de Contas do Estado são reajusta dos para os constantes dos Anexos I a X, a esta Lei.
+**Art. 1º** - Os níveis de vencimento e valores das gratificaçõe dos funcionários da Secretaria do Tribunal de Contas do Estado são reajusta dos para os constantes dos Anexos I a X, a esta Lei.
 
-**Art. 29** - Respeitados os critérios de identidade de categori e/ou equivalência de funções estabelecidas no parágrafo primeiro do artic 73, da Constituição do Estado, os proventos dos inativos da Secretaria ¿ Tribunal de Contas do Estado são reajustados nos mesmos percentuais aplica dos aos funcionários em atividade.
+**Art. 2º** - Respeitados os critérios de identidade de categori e/ou equivalência de funções estabelecidas no parágrafo primeiro do artic 73, da Constituição do Estado, os proventos dos inativos da Secretaria ¿ Tribunal de Contas do Estado são reajustados nos mesmos percentuais aplica dos aos funcionários em atividade.
 
 **Art. 30** - É reajustado em 100% (cem por cento), o valor c cada cota do Auxílio-Família.
 

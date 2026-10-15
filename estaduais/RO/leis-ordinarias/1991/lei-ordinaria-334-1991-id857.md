@@ -21,9 +21,9 @@ LEI N° 334 DE 19 DE 1991. DE NOVEMBRO Determina à Companhia de Águas e Esgo t
 
 O GOVERNADOR DO ESTADO DE RONDÔNIA, fa ço saber que a Assembléia Legislativa decreta e eu sanciono a se guinte Lei:
 
-**Art. 19** - Fica determinado à Companhia de Águas e Esgotos de Rondônia S/A - CAERD, que nos períodos de racionamento de água, sejam mantidos os fornecimentos de água com prioridade e de forma obrigatória, através dos meios que dis põe, às escolas de 1º e 2º Graus, às Unidades de Saúde e prisões.
+**Art. 1º** - Fica determinado à Companhia de Águas e Esgotos de Rondônia S/A - CAERD, que nos períodos de racionamento de água, sejam mantidos os fornecimentos de água com prioridade e de forma obrigatória, através dos meios que dis põe, às escolas de 1º e 2º Graus, às Unidades de Saúde e prisões.
 
-**Art. 29** - Para habilitar-se ao abasteci mento de água previsto nesta Lei, é necessário que as entidades interessadas procedam a competente inscrição junto à Companhia de Águas e Esgotos de Rondônia - CAERD.
+**Art. 2º** - Para habilitar-se ao abasteci mento de água previsto nesta Lei, é necessário que as entidades interessadas procedam a competente inscrição junto à Companhia de Águas e Esgotos de Rondônia - CAERD.
 
 **Parágrafo único** - O abastecimento será feito rigorosamente na conformidade da ordem de inscrição.
 

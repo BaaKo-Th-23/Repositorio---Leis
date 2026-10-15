@@ -21,8 +21,8 @@ LEI N.° 3.957 , de 10 de janeiro "Reconhece de Utilidade Pública a Associaçã
 
 O GOVERNADOR DO ESTADO DA PARAIBAI Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica reconhecida de Utilidade Pública a As sociação de Proteção e Assistência à Maternidade e à Infância, com sede na cidade de Cajazeiras, neste Estado,
+**Art. 1º** - Fica reconhecida de Utilidade Pública a As sociação de Proteção e Assistência à Maternidade e à Infância, com sede na cidade de Cajazeiras, neste Estado,
 
-**Art. 29** - Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrario. PALÁCIO DO GOVERNO DO ESTADO DA PARAIBA, em João Pessoa, 10 de Janeiro de 1978; 909 da Proclamação da República. 9 21 \_ S tifa
+**Art. 2º** - Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrario. PALÁCIO DO GOVERNO DO ESTADO DA PARAIBA, em João Pessoa, 10 de Janeiro de 1978; 909 da Proclamação da República. 9 21 \_ S tifa
 
 DE. OFICIAL LESIA DATA 1 79

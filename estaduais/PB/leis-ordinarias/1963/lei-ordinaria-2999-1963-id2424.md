@@ -21,9 +21,9 @@ LEI N.° 2.999 , de 10 de Abril de 19 63 Autoriza o Govêrno do Es- tado a abrir
 
 O GOVERNADOR DO ESTADO DA PARAIBA! Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica o Govêrno do Estado autorizado a abrir o crédi to especial de Cr$ 500. 000, 00 (quinhentos mil cruzeiros), para a construção do prédio destinado à Coletoria Estadual de S. José de Piranhas.
+**Art. 1º** - Fica o Govêrno do Estado autorizado a abrir o crédi to especial de Cr$ 500. 000, 00 (quinhentos mil cruzeiros), para a construção do prédio destinado à Coletoria Estadual de S. José de Piranhas.
 
-**Art. 29** - O presente crédito terá vigência de dois (2) exercí - cios financeiros.
+**Art. 2º** - O presente crédito terá vigência de dois (2) exercí - cios financeiros.
 
 **Art. 3º** - Esta Lei entrará em vigor na data de sua publica - ção, revogadas as disposições em contrário. Palácio do Govêrno do Estado da Paraíba, em João Pessoa, 10 de Abril de 1963; 75° da Proclamação da Republica
 

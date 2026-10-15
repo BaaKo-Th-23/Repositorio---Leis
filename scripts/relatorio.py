@@ -36,7 +36,10 @@ def falhas(base):
 
 def main():
     linhas = ["# Cobertura", "", "Gerado por `scripts/relatorio.py`. Números de arquivos `.md` convertidos.", ""]
-    total = 0
+    # a Constituição Federal fica na raiz, fora de federal/ e de estaduais/
+    total = 1 if os.path.exists(os.path.join(RAIZ, "constituicao.md")) else 0
+    linhas += ["## Constituição Federal", "",
+               "A `constituicao.md` na raiz: texto vigente, do Planalto.", ""]
     tipos, ocr = contar(os.path.join(RAIZ, "federal"))
     total += sum(tipos.values())
     linhas += ["## Federal", "", "| Tipo | Normas |", "| --- | ---: |"]

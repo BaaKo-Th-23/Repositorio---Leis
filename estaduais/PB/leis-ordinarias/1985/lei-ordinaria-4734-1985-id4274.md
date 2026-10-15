@@ -21,8 +21,8 @@ LEI N. 4.734 , de 17 de de 19 85 setembro Reconhece de Utilida de Pública a Ass
 
 O GOVERNADOR DO ESTADO DA PARAIBAI Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica reconhecida de utilidade públi ca a Associação Estudantes Secundaristas "Antonio Araújo Quinho"- ASESAQ, da cidade de Piancó, neste Estado.
+**Art. 1º** - Fica reconhecida de utilidade públi ca a Associação Estudantes Secundaristas "Antonio Araújo Quinho"- ASESAQ, da cidade de Piancó, neste Estado.
 
-**Art. 29** - Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, 17 de setembro de 1985; 979 da Proclamação da Re- pública. WILSON LEITE BRAGA GOVERNADORO Severino Judivan Cabral de Souza Secretário do Interior e Justiça José Loureiro Lopes Secretário da Educação
+**Art. 2º** - Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, 17 de setembro de 1985; 979 da Proclamação da Re- pública. WILSON LEITE BRAGA GOVERNADORO Severino Judivan Cabral de Souza Secretário do Interior e Justiça José Loureiro Lopes Secretário da Educação
 
 PUBLICADO N) L: (FICIAL D TA D TA Em 18 1 09 / 485 FC GOVERNO

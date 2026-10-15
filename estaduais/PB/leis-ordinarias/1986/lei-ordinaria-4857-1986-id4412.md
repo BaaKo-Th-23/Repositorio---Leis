@@ -23,11 +23,11 @@ LEI N° 4.857, DE 28 DE AGOSTO DE 1986. Autoriza o Poder Executivo a conceder pa
 
 O PRESIDENTE DA ASSEMBLEIA LEGISLATIVA FAZ SABER QUE O PODER LEGISLATIVO DO ESTADO DECRETA E PROMULGA A SEGUIN TE LEI:
 
-**Art. 19** - Fica o Poder Executivo autorizado a conceder , aos ex-combatentes da Força Expedicionária Brasilei ra, o direito de passe livre nas linhas estaduais regulares de ônibus ou de veículo assemelhado, cuja concessão ou fiscaliza ção dependa da atividade do Poder Público do Estado. Parágrafo Unico - As despesas decorrentes desta autorização, serão deduzidas da TAXA DE FISCALIZAÇÃO, cobradas pelo DER.
+**Art. 1º** - Fica o Poder Executivo autorizado a conceder , aos ex-combatentes da Força Expedicionária Brasilei ra, o direito de passe livre nas linhas estaduais regulares de ônibus ou de veículo assemelhado, cuja concessão ou fiscaliza ção dependa da atividade do Poder Público do Estado. Parágrafo Unico - As despesas decorrentes desta autorização, serão deduzidas da TAXA DE FISCALIZAÇÃO, cobradas pelo DER.
 
-**Art. 29** - Decreto estadual poderá definir a for ma de concessão do benefício e as medidas de controle da sua fruição. contrário,
+**Art. 2º** - Decreto estadual poderá definir a for ma de concessão do benefício e as medidas de controle da sua fruição. contrário,
 
-**Art. 39** - Revogadas as disposições em
+**Art. 3º** - Revogadas as disposições em
 
 CASA DE EPITACIO PESSOA
 

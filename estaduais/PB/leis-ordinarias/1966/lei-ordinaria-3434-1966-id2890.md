@@ -21,11 +21,11 @@ O GOVERNADOR DO ESTADO DA PARAÍBA, usando das atribuições que lhe confere o a
 
 Emenda Constitucional n° 1, de 22 de dezembro de 1965, sanciona e promulga a seguinte Lei:
 
-**Art. 19** - Fica o Poder Executivo autorizado a doar à Caixa Econômica Federal da Paraíba, o prédio e terreno situados na rua General Osó - rio n° 253, esquina com a rua Peregrino de Carvalho, desta Capital, medindo de zesseis metros (16 m) pela rua General Osório e trinta e quatro metros (34 m ) pela rua Peregrino de Carvalho.
+**Art. 1º** - Fica o Poder Executivo autorizado a doar à Caixa Econômica Federal da Paraíba, o prédio e terreno situados na rua General Osó - rio n° 253, esquina com a rua Peregrino de Carvalho, desta Capital, medindo de zesseis metros (16 m) pela rua General Osório e trinta e quatro metros (34 m ) pela rua Peregrino de Carvalho.
 
-**Art. 29** - No terreno objeto da presente doação, a Caixa E- conômica Federal da Paraíba se obriga a construir o seu edifício sede, no qual será reservada área suficiente à instalação da Biblioteca pública ou outra Re- partição Estadual.
+**Art. 2º** - No terreno objeto da presente doação, a Caixa E- conômica Federal da Paraíba se obriga a construir o seu edifício sede, no qual será reservada área suficiente à instalação da Biblioteca pública ou outra Re- partição Estadual.
 
-**Art. 39** - A Caixa Econômica Federal da Paraíba se obriga a iniciar a construção do edifício a que se refere o artigo anterior, no prazo de seis (6) meses, a partir da entrega do terreno e prédio.
+**Art. 3º** - A Caixa Econômica Federal da Paraíba se obriga a iniciar a construção do edifício a que se refere o artigo anterior, no prazo de seis (6) meses, a partir da entrega do terreno e prédio.
 
 **Parágrafo único** - Se, nêsse prazo, a construção não tiver início, a doação será havida como nula voltando os bens doados ao domínio, uso e gôzo do Estado.
 

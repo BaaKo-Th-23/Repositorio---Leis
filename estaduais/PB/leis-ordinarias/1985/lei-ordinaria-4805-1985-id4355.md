@@ -21,7 +21,7 @@ LEI N.° 4.805 de 1985 DEZEMBRO Reajusta vencimentos, salarios, gratificações 
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Ficam reajustados em 80% (oitenta por cen to) :
+**Art. 1º** - Ficam reajustados em 80% (oitenta por cen to) :
 
 I - O vencimento do nível das classes que compõem as categorias funcionais dos Grupos Ocupacionais:
 
@@ -57,24 +57,24 @@ A PA!A 24: /2 /1085 REFUB. RADO NO D. OFICIAL CESA DATA Em 91/24 … / 19c SECRE
 
 ESTADO DA PARAÍBA Fls. 02
 
-**Art. 29** - São fixados:
+**Art. 2º** - São fixados:
 
 I - Para os integrantes do Grupo Serviços Jurí dicos, código PL-SJ-300, em CR$ 3.800.000, o nível inicial de ven cimento.
 
 II - Os integrantes do Grupo Direção Especial (DE), os vencimentos de CR$ 1.000.000 e CR$ 800.000 para os símbo los DE-l e DE-2 respectivamente, e, a Gratificação do Exercício de função em CR$ 8.000.000 para ambos os símbolos.
 
-**Art. 39** - A gratificação de exercício dos car gos de que trata o ítem I do artigo 28 é fixada nos mesmos percen tuais da legislação anterior.
+**Art. 3º** - A gratificação de exercício dos car gos de que trata o ítem I do artigo 28 é fixada nos mesmos percen tuais da legislação anterior.
 
-**Art. 49** - A Progressão Funcional implicará no posicionamento automático do funcionário no nível de vencimento ime diatamente superior ao qual pertença dentro de sua classe, sendo fixado, para efeito de hierarquia salarial, um índice constante de 5% (cinco por cento) sobre o nível de vencimento antecedente , até o limite de 7 (sete).
+**Art. 4º** - A Progressão Funcional implicará no posicionamento automático do funcionário no nível de vencimento ime diatamente superior ao qual pertença dentro de sua classe, sendo fixado, para efeito de hierarquia salarial, um índice constante de 5% (cinco por cento) sobre o nível de vencimento antecedente , até o limite de 7 (sete).
 
-**Art. 59** - A partir da vigência desta Lei, valores dos padrões, referências, níveis e símbolos de vencimento, gratificações, proventos dos servidores da Secretaria da Assem bléia Legislativa serão reajustados semestralmente, nos meses de Maio e Novembro de cada ano.
+**Art. 5º** - A partir da vigência desta Lei, valores dos padrões, referências, níveis e símbolos de vencimento, gratificações, proventos dos servidores da Secretaria da Assem bléia Legislativa serão reajustados semestralmente, nos meses de Maio e Novembro de cada ano.
 
-**Art. 69** - Ficam revogados os artigos 49 e seu
+**Art. 6º** - Ficam revogados os artigos 49 e seu
 
 parágrafo único e 98, da Lei n° 4.715, de 20.06.85, cessando, con sequentemente, o pagamento de custas e honorários arbitrados em favor dos membros do Grupo Serviços Jurídicos - PL-SJ-300 e Grupo Direção Especial - DE.
 
-**Art. 79** - A Gratificação Natalina instituída pela Lei n° 4.649, de 29.11.84, fica extensiva aos ocupantes da ca tegoria funcional de Assessor de Gabinete, desde que o seu ocupan te não exerça cargo efetivo no Quadro de Pessoal da Secretaria da Assembléia Legislativa.
+**Art. 7º** - A Gratificação Natalina instituída pela Lei n° 4.649, de 29.11.84, fica extensiva aos ocupantes da ca tegoria funcional de Assessor de Gabinete, desde que o seu ocupan te não exerça cargo efetivo no Quadro de Pessoal da Secretaria da Assembléia Legislativa.
 
 Fls. 03 ESTADO DA PARAÍBA
 
-**Art. 89** - Esta Lei entra em vigor no dia 19 de janeiro de 1986. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, 20 de dezembro de 1985; 978 da Proclamação da Repú blica. NILSON LEITE BRAC GOVERNADOR Sevegino Judivan Cabral de Souza Secretário do Interior e Justiça
+**Art. 8º** - Esta Lei entra em vigor no dia 19 de janeiro de 1986. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, 20 de dezembro de 1985; 978 da Proclamação da Repú blica. NILSON LEITE BRAC GOVERNADOR Sevegino Judivan Cabral de Souza Secretário do Interior e Justiça

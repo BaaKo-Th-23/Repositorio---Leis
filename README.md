@@ -1,36 +1,74 @@
 # Legislação brasileira em Markdown
 
-Constituição Federal, legislação federal e legislação estadual/distrital convertidas para Markdown, a partir das fontes oficiais.
+**323.849 normas** — a Constituição Federal, a legislação federal e a de 25 estados e do Distrito
+Federal — convertidas de fontes oficiais para Markdown, com cabeçalho estruturado e link para a
+origem de cada texto.
 
-> **Aviso:** os textos têm caráter informativo e **não substituem a publicação no Diário Oficial**. Conversões
-> automáticas (e, em alguns casos, OCR de PDFs escaneados) podem conter erros. Confira sempre a fonte indicada em
-> cada arquivo.
+O histórico do git é a própria linha do tempo: **cada commit é uma norma**, assinada por quem a
+promulgou e datada do dia em que foi aprovada.
+
+> [!IMPORTANT]
+> Os textos têm caráter informativo e **não substituem a publicação no Diário Oficial**. São
+> conversões automáticas e, em 17.016 arquivos, OCR de PDF escaneado. Confira sempre a fonte
+> indicada no cabeçalho antes de citar.
+
+---
+
+## O que tem aqui
+
+| Esfera | Normas |
+| --- | ---: |
+| Constituição Federal | 1 |
+| Federal | 29.184 |
+| Estadual e distrital | 294.664 |
+| **Total** | **323.849** |
+
+Por tipo de instrumento:
+
+| Tipo | Normas | | Tipo | Normas |
+| --- | ---: | --- | --- | ---: |
+| Lei Ordinária | 289.684 | | Lei Promulgada | 434 |
+| Decreto-Lei | 18.366 | | Emenda à Lei Orgânica | 134 |
+| Lei Complementar | 12.598 | | Constituição Estadual | 26 |
+| Emenda Constitucional | 2.013 | | Decreto-Lei Complementar | 23 |
+| Lei Delegada | 550 | | Lei Constitucional | 19 |
+
+As contagens por estado, com o que ficou de fora e por quê, estão em **[COBERTURA.md](COBERTURA.md)**.
+
+---
 
 ## Estrutura
 
 ```
 constituicao.md                      Constituição Federal de 1988 (texto vigente, Planalto)
 federal/
-  leis-ordinarias/AAAA/*.md          Leis federais (1821–hoje)
+  leis-ordinarias/AAAA/*.md          Leis federais, de 1821 a hoje
   leis-complementares/AAAA/*.md
-  leis-delegadas/ leis-constitucionais/ decretos-lei/
-  _indice/  _fonte/  _falhas.jsonl   índices, HTML bruto (gzip) e registro do que não foi baixado
+  leis-delegadas/  decretos-lei/
 estaduais/UF/
-  constituicao/  emendas-constitucionais/  leis-ordinarias/  leis-complementares/
-  leis-delegadas/  decretos-lei/                             (quando a UF os tem)
-  _indice/  _fonte/  _falhas.jsonl
-scripts/                             código que baixa e converte tudo
-COBERTURA.md                         quantas normas há por esfera/tipo e o que ficou faltando
+  constituicao/                      Constituição estadual
+  emendas-constitucionais/
+  leis-ordinarias/  leis-complementares/  leis-delegadas/  decretos-lei/
+scripts/                             o código que baixa, converte e audita
+COBERTURA.md                         números por esfera e tipo, e as lacunas
 ```
 
-Os nomes de pasta são sempre os mesmos em todas as esferas. Algumas UFs têm pastas a mais, porque a
+Os nomes de pasta são os mesmos em todas as esferas. Algumas unidades têm pastas a mais, porque a
 fonte distingue instrumentos que as outras não têm: `leis-promulgadas` (AM, PB),
 `decretos-lei-complementares` (SP), `leis-constitucionais` (MG), `constituicoes-historicas` (BA),
 `lei-organica` e `emendas-lei-organica` (DF).
 
-Cada arquivo começa com um cabeçalho YAML, com os campos nesta ordem:
+Fora do versionamento, porque os scripts os reproduzem: `_fonte/` (27 GB com o HTML e os PDFs
+originais, comprimidos), `_indice/` (os índices de cada fonte) e os logs. Os `_falhas.jsonl`, que
+registram linha por linha o que não entrou, **estão** versionados.
 
-```yaml
+---
+
+## Formato dos arquivos
+
+Todo arquivo tem cabeçalho YAML e, no corpo, o título em `#` seguido do texto da norma:
+
+```markdown
 ---
 titulo: "Lei nº 10.406 de 10/01/2002"
 uf: "SP"                 # ausente nas normas federais
@@ -40,7 +78,7 @@ data: 2002-01-10         # sempre presente; vazia quando a fonte não informa
 ano: "2002"              # só quando a fonte dá apenas o ano (PA, PE)
 ementa: "Institui o Código Civil."
 situacao: "Em vigor"
-revogada: false          # federal: só marca true quando o portal registra a revogação
+revogada: false
 versao_texto: "compilada (texto vigente)"
 publicacao: "DOU de 11/01/2002"
 data_publicacao: 2002-01-11
@@ -49,14 +87,6 @@ fonte: "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2002-01-10;10406"
 arquivo: "https://…/lei10406.pdf"   # quando o texto veio de um PDF
 baixado_em: 2026-10-13
 ---
-```
-
-Depois do cabeçalho, o corpo sempre abre com o título em `#` e então o texto da norma:
-
-```markdown
----
-… cabeçalho …
----
 # Lei nº 10.406 de 10/01/2002
 
 LEI Nº 10.406, DE 10 DE JANEIRO DE 2002
@@ -64,103 +94,179 @@ LEI Nº 10.406, DE 10 DE JANEIRO DE 2002
 Institui o Código Civil.
 ```
 
-Cinco arquivos trazem, no lugar do texto, um aviso em citação: a fonte oficial serve um documento
-vazio para eles e só os metadados foram preservados (também registrados nos `_falhas.jsonl`). A
-`constituicao.md` na raiz é o único arquivo sem cabeçalho, por ser o documento único de topo.
+`titulo`, `tipo`, `numero`, `data`, `versao_texto`, `fonte` e `baixado_em` existem em **todos** os
+arquivos; os demais aparecem quando a fonte os fornece. Os campos saem sempre nessa ordem.
 
-`titulo`, `tipo`, `numero`, `data`, `versao_texto`, `fonte` e `baixado_em` existem em todos os
-arquivos; os demais aparecem quando a fonte os fornece. O campo `tipo` usa um vocabulário fechado de
-onze valores: `Constituição Estadual`, `Emenda Constitucional`, `Lei Ordinária`, `Lei Complementar`,
-`Lei Delegada`, `Lei Constitucional`, `Lei Promulgada`, `Decreto-Lei`, `Decreto-Lei Complementar`,
-`Lei Orgânica` e `Emenda à Lei Orgânica`.
+O campo `tipo` usa um vocabulário fechado de onze valores, definido em `CANONICO`, em
+`scripts/comum.py`. O mesmo mapa vale para quem baixa e para `scripts/normalizar.py`, que o reaplica
+ao acervo já gravado — por isso `lei-ordinaria` e `leis-ordinarias`, ou `Lei` e `LEI ORDINARIA`, não
+coexistem.
 
-O vocabulário vive em `CANONICO`, em `scripts/comum.py`, e vale tanto para quem baixa quanto para
-`scripts/normalizar.py`, que reaplica o mapa ao acervo já gravado.
+Duas exceções, ambas propositais: a `constituicao.md` na raiz é o único arquivo sem cabeçalho, por
+ser o documento único de topo; e cinco arquivos trazem, no lugar do texto, um aviso em citação —
+a fonte oficial serve um documento vazio para eles e só os metadados foram preservados.
+
+---
+
+## O histórico do git
+
+Cada commit é uma norma, em ordem cronológica, de 1800 até hoje. São **323.851 commits** e
+**5.414 autores**. Os que mais assinaram:
+
+| Normas | Signatário |
+| ---: | --- |
+| 4.247 | Marconi Ferreira Perillo Júnior |
+| 3.795 | Aécio Neves |
+| 3.457 | Geraldo Alckmin |
+| 3.097 | Ronaldo Caiado |
+| 2.654 | Getúlio Vargas |
+
+O autor sai do bloco de assinatura do próprio texto (`scripts/signatarios.py`). Em cerca de 48% dos
+casos a assinatura não está na camada de texto do PDF, ou o OCR a perdeu; nesses, o autor é a
+instituição — "Estado do Pará", "República Federativa do Brasil". **A mensagem do commit sempre diz
+de onde a autoria saiu**, na linha `Autoria:`. Os demais signatários entram como `Co-Authored-By`.
+
+Os e-mails são sintéticos, no formato `nome-sobrenome-NNNNN@exemplo.com`, com os cinco dígitos
+derivados do próprio nome — cada pessoa tem uma identidade só no histórico inteiro.
+
+> [!NOTE]
+> **Datas anteriores a 1970.** O git conta a data em segundos desde 1970; qualquer data anterior
+> vira timestamp negativo, que o `git fsck` reprova como `badDate` e o GitHub rejeita ao receber.
+> Como a maior parte do acervo é anterior a 1970, essas normas têm a data do commit fixada em
+> 01-01-1970 e a **data real no fim do título, depois de ` | `**, e repetida no corpo. Nos commits
+> com data representável o título fica limpo. A ordem cronológica se mantém pela sequência de
+> commits, que é linear.
+
+```
+Lei nº 86, de 21/04/1880 | 21-04-1880
+
+AUTORIZA O GOVERNO A DISPENSAR DE PROVAS DE CAPACIDADE PARA EXERCER O MAGISTÉRIO…
+
+Data da norma: 1880-04-21
+A data do commit está fixada em 01-01-1970: o git não representa data anterior a essa
+(vira timestamp negativo, que o GitHub rejeita). A data real da norma é a do título e
+a da linha acima.
+Autoria: signatário não identificado no texto; autoria institucional.
+Fonte: https://www.al.sp.gov.br/norma/139216
+```
+
+As 1.595 normas cuja data não existe em nenhuma fonte ficam no fim do histórico, com
+`| sem data na fonte` no título.
+
+---
 
 ## Fontes
 
-| Esfera | Fonte | Texto |
+| UF | Fonte | Texto |
 | --- | --- | --- |
-| Constituição Federal | Planalto | vigente, sem trechos revogados |
-| Federal | API de dados abertos do Senado (índice) + normas.leg.br (texto) | compilado vigente quando existe; senão a publicação original |
-| AC, AL, AM, PB, PI, RO, RR, TO | SAPL das Assembleias (API REST) | PDF anexado (OCR quando escaneado) |
-| AP | e-Legis da Assembleia | texto integral (PDF) + Constituição consolidada |
+| — | Planalto | Constituição Federal, texto vigente |
+| Federal | Dados abertos do Senado (índice) + normas.leg.br (texto) | compilado vigente quando existe; senão a publicação original |
+| AC, AL, AM, PB, PI, RO, RR, TO | SAPL das Assembleias (API REST) | PDF anexado, com OCR quando escaneado |
+| AP | e-Legis da Assembleia | texto integral em PDF + Constituição consolidada |
 | BA | Portal de Legislação (Casa Civil) | HTML |
-| CE | BELT – Banco Eletrônico de Leis Temáticas (Assembleia) | HTML |
+| CE | BELT – Banco Eletrônico de Leis Temáticas | HTML |
 | DF | SINJ-DF | texto compilado |
-| ES, SE | sistema de legislação das Assembleias | HTML (compilado quando disponível) |
+| ES, SE | sistema de legislação das Assembleias | HTML, compilado quando disponível |
 | GO | Legisla Goiás (Casa Civil) | HTML |
 | MA | GED da Assembleia | PDF |
 | MG | Dados abertos da ALMG | texto atualizado quando existe |
 | MS | Legislação da Governadoria (Lotus Notes) | HTML |
-| MT | Assembleia Legislativa | redação atual (PDF gerado pelo site) |
-| PA | Banco de Leis da ALEPA | PDF (OCR quando escaneado) |
+| MT | Assembleia Legislativa | redação atual, PDF gerado pelo site |
+| PA | Banco de Leis da ALEPA | PDF, com OCR quando escaneado |
 | PE | Alepe Legis | texto atualizado quando existe |
-| PR | Sistema Estadual de Legislação (Casa Civil) | compilado — ver pendências |
-| RJ | Legislação Estadual da ALERJ (Lotus Notes) | HTML — ver pendências |
-| RN | Assembleia Legislativa | PDF (acervo a partir de 1994) |
-| RS | Sistema LEGIS da Assembleia; Constituição no portal do DAL | PDF (recentes) ou HTML (antigas) |
+| PR | Sistema Estadual de Legislação | — ver pendências |
+| RJ | Legislação Estadual da ALERJ (Lotus Notes) | — ver pendências |
+| RN | Assembleia Legislativa | PDF, acervo a partir de 1994 |
+| RS | Sistema LEGIS da Assembleia; Constituição no portal do DAL | PDF nas recentes, HTML nas antigas |
 | SC | Legislação SC (ALESC) | texto anotado |
 | SP | ALESP (dados abertos + API) | texto atualizado quando existe |
 
-Os detalhes de cada fonte estão no cabeçalho de cada script em `scripts/estados/`.
+Cada script em `scripts/estados/` documenta no cabeçalho a API ou o caminho que usa.
+
+Todos limitam a taxa a 1–4 requisições por segundo, são retomáveis (pulam o que já existe) e
+guardam o original em `_fonte/`. **Bloqueios de acesso automatizado não são contornados.**
+
+---
 
 ## O que não está aqui
 
-- **Legislação municipal** (mais de 5.500 municípios, sem fonte centralizada).
-- Decretos, resoluções, portarias e atos infralegais — o foco são constituições, emendas e leis (ordinárias,
-  complementares, delegadas) e decretos-leis.
-- Normas cujo texto não existe na fonte oficial ou não pôde ser obtido: veja `COBERTURA.md` e os arquivos
-  `_falhas.jsonl` (cada linha explica o motivo).
+- **Legislação municipal.** Mais de 5.500 municípios, sem fonte centralizada.
+- **Decretos, resoluções, portarias e atos infralegais.** O foco são constituições, emendas e leis
+  (ordinárias, complementares, delegadas) e decretos-leis.
+- Normas cujo texto não existe na fonte ou não pôde ser obtido — cada caso tem uma linha, com o
+  motivo, no `_falhas.jsonl` da respectiva pasta.
 
-## Pendências
+### Pendências
 
-- **PR** — o WAF do `legislacao.pr.gov.br` responde 403 ao acesso automatizado: a primeira requisição passa e as
-  seguintes são bloqueadas. Não há tentativa de contornar o bloqueio. Pendente de outra fonte (p.ex. a Assembleia)
-  ou de autorização da Casa Civil.
-- **RJ** — o Lotus Notes da ALERJ (`alerjln1.alerj.rj.gov.br`) fecha a conexão ou leva mais de 60 s por página. O
-  script existe (`scripts/estados/rj.py`) e já tem retentativas longas; basta rodá-lo quando o servidor voltar.
-- **RS** — 5.569 leis antigas estão no índice do LEGIS, mas a página de texto responde "NORMA SEM TEXTO": a
-  Assembleia nunca as digitalizou.
-- **ES e SE** — 311 e 411 normas em que o servidor da Assembleia derruba a conexão de forma consistente, mesmo
-  após repescagem. Rodar o script de novo mais tarde tende a recuperar parte delas.
-- **RN** — o acervo da Assembleia só tem PDF a partir de 1994 (1.241 respostas 404 para normas anteriores).
-- **AC** (a partir de 2009) e **TO** (antes de 2020) — limites do próprio SAPL dessas Assembleias.
-- **OCR** — 13.520 arquivos vêm de PDF escaneado, via framework Vision do macOS. O texto é legível, mas erra a
-  ordem de leitura em digitalizações de duas colunas e confunde ordinais (`Art. 19` por `Art. 1º`).
+| O quê | Por quê |
+| --- | --- |
+| **PR** — nada coletado | o WAF de `legislacao.pr.gov.br` devolve 403 a partir da segunda requisição. Não contornado; precisa de outra fonte ou de autorização da Casa Civil |
+| **RJ** — nada coletado | o Lotus Notes da ALERJ fecha a conexão ou leva mais de 60 s por página. `scripts/estados/rj.py` está pronto para quando o servidor voltar |
+| **AC** — só até 2009 | limite do SAPL da Assembleia |
+| **TO** — a partir de 2020 | limite do SAPL da Assembleia |
+| **RN** — a partir de 1994 | o acervo da Assembleia não tem PDF anterior |
+| **RS** — 5.569 leis antigas | estão no índice, mas a página de texto responde "NORMA SEM TEXTO": nunca foram digitalizadas |
+| **ES e SE** — 311 e 411 normas | o servidor da Assembleia derruba a conexão nessas mesmas normas, de forma consistente |
 
-  O erro de ordinal foi corrigido em 1.393 arquivos por `scripts/corrigir_ocr.py`, que só reescreve a corrida
-  `19, 29, 39…` quando ela começa em 19, tem ao menos dois termos e a numeração resultante fica coerente —
-  assim um `Art. 19` legítimo, ou um `Art. 99` que cita outra lei, não é tocado. O erro de ordem de leitura
-  não tem correção automática: precisaria de um modelo com noção de layout.
+### Qualidade do OCR
 
-  `baidu/Unlimited-OCR` foi testado em Apple Silicon (M4, 16 GB) e **não serve localmente**. O código fixa
-  `.cuda()` e `autocast("cuda")`, mas isso se contorna redirecionando para MPS, e `use_flash_attn` já é `False`
-  por padrão. Os impedimentos reais são dois, ambos medidos:
+17.016 arquivos vêm de PDF escaneado, com OCR pelo framework Vision do macOS. O texto é legível,
+mas tem dois defeitos conhecidos:
 
-  - na resolução de treino (1024), o encoder de visão SAM precisa de ~21 GB porque, sem flash-attn, a atenção é
-    materializada densa — estoura os 16 GB;
-  - numa resolução que caiba (640), o caminho de visão roda, mas só o prefill de uma página leva 221 s (≈830 h
-    para o lote) e a saída vem vazia, porque a resolução está fora da especificação do modelo.
+- **ordem de leitura trocada** em digitalizações de duas colunas — não tem correção automática;
+  precisaria de um modelo com noção de layout;
+- **ordinais confundidos** (`Art. 19` por `Art. 1º`) — corrigido em 1.509 arquivos por
+  `scripts/corrigir_ocr.py`, que só reescreve a corrida `19, 29, 39…` quando ela começa em 19, tem
+  ao menos dois termos e a numeração resultante fica coerente. Assim um `Art. 19` legítimo, ou um
+  `Art. 99` que cita outra lei, não é tocado.
 
-  Não é instabilidade numérica: os logits são sãos (sem NaN/Inf). Reprocessar esse lote exige GPU NVIDIA, pelo
-  caminho oficial (vLLM ou SGLang).
+`baidu/Unlimited-OCR` foi testado em Apple Silicon e não serve localmente: na resolução de treino o
+encoder de visão pede ~21 GB, e numa resolução que caiba o prefill leva 221 s por página com saída
+vazia. Reprocessar o lote exige GPU NVIDIA.
 
-## Como atualizar
+---
 
-Requisitos: macOS com Python 3 e `pdftotext` (poppler). O OCR usa o framework Vision do macOS
-(`swiftc -O scripts/ocr.swift -o scripts/bin/ocr`).
+## Reproduzir e atualizar
+
+**Requisitos:** macOS, Python 3 (só biblioteca padrão), `pdftotext` (poppler) e, para o OCR, o
+framework Vision via `swiftc -O scripts/ocr.swift -o scripts/bin/ocr`.
 
 ```sh
-python3 -I scripts/baixar_federal.py            # federal (retomável: pula o que já existe)
-python3 -I scripts/estados/sp.py                # um estado (cada um tem seu script)
+# baixar — todos os scripts são retomáveis: pulam o que já existe
+python3 -I scripts/baixar_federal.py
+python3 -I scripts/estados/sp.py                # um estado por script
 python3 -I scripts/estados/sapl.py baixar PB    # estados com SAPL
 python3 -I scripts/estados/spl_agape.py ES      # ES e SE
-python3 -I scripts/reconverter.py [UF ...]      # regenera os .md a partir de _fonte após mudar o conversor
-python3 -I scripts/normalizar.py                # confere pastas/cabeçalhos canônicos (--aplicar grava)
-python3 -I scripts/corrigir_ocr.py              # simula a correção de ordinais do OCR (--aplicar grava;
-                                                #   repita até relatar 0: um arquivo pode ter várias corridas)
+
+# manter em ordem
+python3 -I scripts/reconverter.py [UF ...]      # regenera os .md a partir de _fonte
+python3 -I scripts/normalizar.py                # pastas, tipos e cabeçalhos canônicos
+python3 -I scripts/corrigir_ocr.py              # ordinais do OCR
+python3 -I scripts/corrigir_datas_invalidas.py  # datas que não existem no calendário
 python3 -I scripts/relatorio.py                 # atualiza COBERTURA.md
+
+# remontar o histórico do git
+python3 -I scripts/montar_repositorio.py --saida /caminho/do/repo
 ```
 
-Todos os scripts limitam a taxa de requisições (1–4 por segundo) para não sobrecarregar os servidores públicos.
+Os quatro scripts de manutenção são **idempotentes** e rodam em simulação por padrão: só gravam com
+`--aplicar`. Rodar de novo, depois de aplicado, relata zero mudanças.
+
+### Auditorias que o acervo passa
+
+| Verificação | Resultado |
+| --- | --- |
+| `git fsck --strict` | zero erros |
+| data em todos os arquivos | 323.848 de 323.848 (a Constituição não tem cabeçalho) |
+| data que existe no calendário e não está no futuro | 100% |
+| nomes de pasta canônicos | 100% |
+| `tipo` no vocabulário fechado | 100% |
+| cabeçalho + `# título` + texto | 323.843; 5 com aviso de ausência; 1 por desenho |
+
+---
+
+## Licença
+
+Os textos das normas são **atos oficiais do poder público** e, pelo art. 8º, I, da Lei nº 9.610/98,
+não são objeto de proteção autoral. Os scripts deste repositório estão sob a licença MIT — veja
+[LICENSE](LICENSE).

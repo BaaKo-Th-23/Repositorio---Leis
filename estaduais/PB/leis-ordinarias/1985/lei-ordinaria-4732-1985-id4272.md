@@ -19,8 +19,8 @@ para GOVÊRNO DA PARAIBA LEl N. 4.732 , de 17 de setembro de 19 85 Denomina de C
 
 O GOVERNADOR DO ESTADO DA PARAIBA! Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica denominado de "Ginásio Clotário de Paiva Gadelha Neto" o prédio em construção pelo Governo do Esta do e Ministério da Educação, na cidade de Sousa e destinado à prá tica de variadas atividades esportivas.
+**Art. 1º** - Fica denominado de "Ginásio Clotário de Paiva Gadelha Neto" o prédio em construção pelo Governo do Esta do e Ministério da Educação, na cidade de Sousa e destinado à prá tica de variadas atividades esportivas.
 
-**Art. 29** - Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, 17 de setembro de 1985; 97 da Proclamação da Repú - blica. WILSON LEITE GOVERNADOR Severino Judivan Cabral de Souza Secretário do Interior e Justiça Luiz Augusto da Franca Crispim Secretário da Cultura, Esportes e Turismo
+**Art. 2º** - Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, 17 de setembro de 1985; 97 da Proclamação da Repú - blica. WILSON LEITE GOVERNADOR Severino Judivan Cabral de Souza Secretário do Interior e Justiça Luiz Augusto da Franca Crispim Secretário da Cultura, Esportes e Turismo
 
 PUBLICADO NO D. OFICIAL DESTA DATA Em 18/ 09 / 1985 SECRETARIA CO GV RNO

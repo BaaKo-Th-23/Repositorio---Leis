@@ -19,9 +19,9 @@ A PRESIDENTE DA ASSEMBLEIA LEGISLATIVA DO ESTADO DE ALAGOAS, no uso das atribui�
 
 LEI Nº 6.121 de 22 de setembro de 1999. INSTITUI FAIXAS VENCIMENTAIS DE PAGAMENTO DOS SERVIDORES PÚBLICOS DO PODER EXECUTIVO ESTADU AL; CONCEDE ABONO AOS SERVIDORES QUE INTEGRAM AS TRES PRIMEIRAS FAIXAS INICIAIS; REAJUSTA O VENCIMENTO DOS CARGOS INTEGRANTES DA PARTE PER MANENTE DO QUADRO DE PESSOAL DA POLÍCIA CIVIL,
 
-**Art. 19** - Fica instituída a escala de faixas venci mentais dos servidores públicos do Poder Executivo Estadual, para efeito de cronograma de pagamento, conforme definido no anexo I des ta Lei, e respeitando o disposto no art. 49, inciso XI da Consti- tuição do Estado.
+**Art. 1º** - Fica instituída a escala de faixas venci mentais dos servidores públicos do Poder Executivo Estadual, para efeito de cronograma de pagamento, conforme definido no anexo I des ta Lei, e respeitando o disposto no art. 49, inciso XI da Consti- tuição do Estado.
 
-**Art. 29** - Concede-se abono aos servidores públicos do Poder Executivo Estadual, integrantes das três primeiras faixas vencimentais, da seguinte forma:
+**Art. 2º** - Concede-se abono aos servidores públicos do Poder Executivo Estadual, integrantes das três primeiras faixas vencimentais, da seguinte forma:
 
 I - aos ocupantes da primeira faixa, R$ 25,00 (vin te e cinco reais);
 
@@ -31,7 +31,7 @@ III- aos ocupantes da terceira faixa, R$ 20,00 (vin te reais).
 
 Parágrafo Único - O abono de que trata este artigo não integrará o vencimento-base, nem servirá de base de cálculo pa ra qualquer vantagem pecuniária que seja ou venha a ser percebida pelo servidor público estadual, sendo absorvido ao seu vencimento- base pelos reajustes que vierem a ser concedidos, posteriormente.
 
-**Art. 39** - O vencimento-base do policial civil, clas sificado entre os níveis PC-I a PC-IX, constantes do anexo VI da
+**Art. 3º** - O vencimento-base do policial civil, clas sificado entre os níveis PC-I a PC-IX, constantes do anexo VI da
 
 Lei Nº 5.624, de 26 de maio de 1994, é fixado de acordo com o ane- xo II desta Lei.
 

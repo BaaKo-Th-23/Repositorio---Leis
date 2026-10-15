@@ -21,9 +21,9 @@ LEI N.° 4.543 Dezembro Autoriza o Poder Executivo a contrair empréstimo junto 
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica o Poder Executivo autorizado à trair empréstimo junto ao Banco do Estado da Paraíba S/A, através de recursos do Banco Nacional da Habitação - BNH, até o montante Cr$ 1.600.000.000,00 (um bilhão e seiscentos milhões de cruzeiros).
+**Art. 1º** - Fica o Poder Executivo autorizado à trair empréstimo junto ao Banco do Estado da Paraíba S/A, através de recursos do Banco Nacional da Habitação - BNH, até o montante Cr$ 1.600.000.000,00 (um bilhão e seiscentos milhões de cruzeiros).
 
-**Art. 29** - Os recursos do empréstimo mencionado no ar tigo anterior serão destinados à cobertura de despesas da Companhia de Agua e Esgotos da Paraiba - CAGEPA, decorrentes da execução de obras de abastecimento de água do Setor Oeste da Região Metropolita na de João Pessoa (Alto da Boa Vista e Várzea Nova no Município de Bayeux e de Santa Rita), respectivamente e da cidade de Antenor Na varro, devendo ser repassados mediante aumento do capital da Empre sa.
+**Art. 2º** - Os recursos do empréstimo mencionado no ar tigo anterior serão destinados à cobertura de despesas da Companhia de Agua e Esgotos da Paraiba - CAGEPA, decorrentes da execução de obras de abastecimento de água do Setor Oeste da Região Metropolita na de João Pessoa (Alto da Boa Vista e Várzea Nova no Município de Bayeux e de Santa Rita), respectivamente e da cidade de Antenor Na varro, devendo ser repassados mediante aumento do capital da Empre sa.
 
 **Art. 38** - As condições do empréstimo no que diz res peito ao desembolso, prazos de carência, amortização e forma de paga mento, serão negociadas entre o Governo do Estado e o Banco do Esta do da Paraiba S/A, de acordo com as normas estabelecidas pelo Banco Nacional de Habitação - BNH.
 

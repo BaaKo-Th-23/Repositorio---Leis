@@ -21,9 +21,9 @@ LEI N.° de 1988 5.054 , de 06 de julho Reconhece de Utilidade Pública a ASSOCI
 
 O GOVERNADOR DO ESTADO DA PARAÍBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica reconhecida de Utilidade Pública a ASSOCIA ÇÃO DE AMPARO AOS MENORES DO MUNICÍPIO DE PEDRA BRANCA D. MARIA LAURENTI NO DE MEDEIROS CARVALHO, no Estado da Paraíba.
+**Art. 1º** - Fica reconhecida de Utilidade Pública a ASSOCIA ÇÃO DE AMPARO AOS MENORES DO MUNICÍPIO DE PEDRA BRANCA D. MARIA LAURENTI NO DE MEDEIROS CARVALHO, no Estado da Paraíba.
 
-**Art. 29** - Esta Lei entra em vigor na data de sua publicação.
+**Art. 2º** - Esta Lei entra em vigor na data de sua publicação.
 
 **Art. 30** - Revogam-se as disposições em contrário. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, 06, de julho de 1988; 1000 da Proclamação da República. TARCISIO DE MIRANDA BURITY GOVERNADOR Waldy Sabtos Vima da Justiça Secretário secretário Chete do Gabinete Cikil Solon Henrique e Benayides
 

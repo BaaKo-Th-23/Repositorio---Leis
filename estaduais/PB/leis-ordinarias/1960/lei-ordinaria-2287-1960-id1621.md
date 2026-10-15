@@ -21,6 +21,6 @@ LEI N.2.287 de 5 de Autoriza a abertura de credito especial para constra - gao d
 
 O Governador do Estado da Paraíba: Fgo saber que o Poder Legislativo decreta e eu sanci ono a seguinte Lei:
 
-**Art. 19** - Fica o Toder Executivo autorizado a abrir, rela Secretaria de Viação e Obras Públicas, o crédito especial a- té a importância de i 8.000.000,00 (oito milhões de cruzeiros), neste e no próximo exercício financeiro, para construção de u m prédio, na cidade de Campina Grande, destinado à instalação de una Policlínica.
+**Art. 1º** - Fica o Toder Executivo autorizado a abrir, rela Secretaria de Viação e Obras Públicas, o crédito especial a- té a importância de i 8.000.000,00 (oito milhões de cruzeiros), neste e no próximo exercício financeiro, para construção de u m prédio, na cidade de Campina Grande, destinado à instalação de una Policlínica.
 
-**Art. 29** - Revogadas as disposições em contrário, esta Dei entrará em vigor na data da sua publicação. Palácio do Govêrro do Estado da Paraíba, em João Pes- soa, 5 de Dezembro de 1960, 72º da Proclamação de República. Тиша
+**Art. 2º** - Revogadas as disposições em contrário, esta Dei entrará em vigor na data da sua publicação. Palácio do Govêrro do Estado da Paraíba, em João Pes- soa, 5 de Dezembro de 1960, 72º da Proclamação de República. Тиша

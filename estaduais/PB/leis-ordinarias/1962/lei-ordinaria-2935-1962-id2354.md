@@ -21,13 +21,13 @@ LEI N.° 2.935 , de 19 de de 1962 novembro Reestrutura as carreiras de Professor
 
 O GOVERNADOR DO ESTADO DA PARAIBAI Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - A carreira de Professor, integrante do Quadro Permanente do Estado, passa a ser reestruturada da seguinte forma: 40 cargos do nível F-10 "F-9
+**Art. 1º** - A carreira de Professor, integrante do Quadro Permanente do Estado, passa a ser reestruturada da seguinte forma: 40 cargos do nível F-10 "F-9
 
 M F - 8
 
 F-7 1820 " " " F-6 Parágrafo unico - Os atuais titulares dos cargos das clas ses "C, "D", "E, "F" e "G'"'inclusive os excedentes da classe inicial, "C% da carreira ora reestruturada, passarão a ocupar, automática e respectiva- mente, os cargos dos níveis F-6, F-7, F-8, F-9 e F-10.
 
-**Art. 29** - A carreira de Inspetor Técnico do Ensino, tam - bém integrante do Quadro Permanente do Estado, fica com a seguinte estrutu ra;
+**Art. 2º** - A carreira de Inspetor Técnico do Ensino, tam - bém integrante do Quadro Permanente do Estado, fica com a seguinte estrutu ra;
 
 PUBLi Em 21 - 12-62 Rep: 1
 
@@ -39,7 +39,7 @@ F -18
 
 **Parágrafo único** - Os atuais titulares dos cargos das clas - ses "L", "M", "N'# e "O"', da carreira ora reestruturada, passarão a ocupar, automática e respectivamente, os cargos dos níveis F-15, F-16, F-17 e F-18.
 
-**Art. 39** - Ficam classificados:
+**Art. 3º** - Ficam classificados:
 
 a) no nível F-26, os cargos de Delegado Regional do Ensino, isolados, de provimento em comissão, ora fixados no padrão "R'', lotados no Departamento de Educação;
 
@@ -51,7 +51,7 @@ d) no nível F-15, os cargos de Orientador Educacional, iso lados, de provimento
 
 e) ... (VETADO)
 
-**Art. 49** - As atuais funções de Regente de Classe, passam a denominar-se Auxiliar do Ensino Primário.
+**Art. 4º** - As atuais funções de Regente de Classe, passam a denominar-se Auxiliar do Ensino Primário.
 
 **Parágrafo único** - Ficam classificados:
 
@@ -59,11 +59,11 @@ a) no nível M-9, os atuais Regentes de Classe portadores de instrução de grau
 
 b) no nível Vi-5, os atuais Regentes de Classe portadores de instrução de grau primário.
 
-**Art. 59** - As despesas decorrentes desta Lei serão atendi das a conta das dotações próprias do Orçamento do Estado para o exercício de 1963.
+**Art. 5º** - As despesas decorrentes desta Lei serão atendi das a conta das dotações próprias do Orçamento do Estado para o exercício de 1963.
 
 - 3 -
 
-**Art. 69** - Esta Lei entrará em vigor a partir de 1º de janei ro de 1963, revogadas as disposições em contrário. Palácio do Govêrno do Estado da Paraíba, em João Pessoa , , 19 de novembro de 1962; 749 da Proclamação da República.
+**Art. 6º** - Esta Lei entrará em vigor a partir de 1º de janei ro de 1963, revogadas as disposições em contrário. Palácio do Govêrno do Estado da Paraíba, em João Pessoa , , 19 de novembro de 1962; 749 da Proclamação da República.
 
 VETO PARCIAL Com fundamento em prerrogativa que me é conferida pelo
 

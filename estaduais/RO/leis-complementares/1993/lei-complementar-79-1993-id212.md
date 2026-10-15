@@ -23,7 +23,7 @@ LEI COMPLEMENTAR N° 079 Estabelece horário de planejamento para professores de
 
 O GOVERNADOR DO ESTADO DE RONDÔNIA, faço saber que a Assembléia Legislativa decreta e eu sanciono a se guinte Lei Complementar:
 
-**Art. 19** - O professor de 12 e 29 graus que atua em sala de aula terá assegurado horário para planejamen to na seguinte forma:
+**Art. 1º** - O professor de 12 e 29 graus que atua em sala de aula terá assegurado horário para planejamen to na seguinte forma:
 
 I - docentes de la a 4a série, pré-esco lar e equivalentes:
 
@@ -45,11 +45,11 @@ GOVERNO DO ESTADO DE RONDONIA
 
 02. tanto computado na gratificação Hora-Atividade.
 
-**Art. 29** - VE TA D O . S 1º - VETADO . S 29 - VETADO .
+**Art. 2º** - VE TA D O . S 1º - VETADO . S 29 - VETADO .
 
-**Art. 39** - VE TA D O .
+**Art. 3º** - VE TA D O .
 
-**Art. 49** - VE TA D O .
+**Art. 4º** - VE TA D O .
 
 **Parágrafo único** - V E T A D O .
 

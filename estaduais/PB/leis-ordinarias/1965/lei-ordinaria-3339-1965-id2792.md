@@ -21,9 +21,9 @@ LEI N.° 3.339 , de 18 de de 19 65. Junho Reconhece de utilidade públi ca, auto
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Podar Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica reconhecida de utilidade pública a Associa - ção de Proteção à Maternidade, à Infância e à Velhice, de Teixeira.
+**Art. 1º** - Fica reconhecida de utilidade pública a Associa - ção de Proteção à Maternidade, à Infância e à Velhice, de Teixeira.
 
-**Art. 29** - Fica o Govêrno do Estado autorizado a conceder uma subvenção anual de Cr$ 200. 000 (duzentos mil cruzeiros), à referida asso ciação.
+**Art. 2º** - Fica o Govêrno do Estado autorizado a conceder uma subvenção anual de Cr$ 200. 000 (duzentos mil cruzeiros), à referida asso ciação.
 
 **Art. 3º** - Para ocorrer às despesas decorrentes da pre - sente Lei, fica o Govêrno do Estado autorizado a abrir o crédito especial neces sario.
 

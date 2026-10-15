@@ -21,9 +21,9 @@ LEI N.° 2.985 , de 11 de Março Autoriza a abertura do crédi to especial de Cr
 
 O GOVERNADOR DO ESTADO DA PARAIBA I Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - É autorizado o Govêrno do Estado a abrir, pela Se cretaria da Viação e Obras Públicas (S. V. O.P.), o crédito especial de ....... Cr$ 33. 370. 000, 00 (trinta e três milhões, trezentos e setenta mil cruzeiros), des tinado à execução, em caráer de urgência, de serviços de ampliação do Marés , integrantes do plano geral do abastecimento d'água de João Pessoa.
+**Art. 1º** - É autorizado o Govêrno do Estado a abrir, pela Se cretaria da Viação e Obras Públicas (S. V. O.P.), o crédito especial de ....... Cr$ 33. 370. 000, 00 (trinta e três milhões, trezentos e setenta mil cruzeiros), des tinado à execução, em caráer de urgência, de serviços de ampliação do Marés , integrantes do plano geral do abastecimento d'água de João Pessoa.
 
-**Art. 29** - Fica ratificado, em todos os seus têrmos, o De - creto nº 2.855, de 25 de maio do corrente ano, que abriu, pela mesma Secreta ria, 'ad referendum" da Assembléia Legislativa, com a mesma finalidade de que trata o artigo precedente, o crédito extraordinário de Cr$ 23. 000. 000, 00(vin te e três milhões de cruzeiros).
+**Art. 2º** - Fica ratificado, em todos os seus têrmos, o De - creto nº 2.855, de 25 de maio do corrente ano, que abriu, pela mesma Secreta ria, 'ad referendum" da Assembléia Legislativa, com a mesma finalidade de que trata o artigo precedente, o crédito extraordinário de Cr$ 23. 000. 000, 00(vin te e três milhões de cruzeiros).
 
 **Art. 3º** - Fica, ainda, autorizado o Poder Executivo a contra ir, com idêntico objetivo, empréstimos bancários até o valor de Cr$ 150. 000. 000, 00 (cento e cinquenta milhões de cruzeiros), satisfeitas as prescrições legais atinentes à matéria.
 

@@ -21,9 +21,9 @@ LEI N.° 4.759 , de 29 de de 1985 novembro Reconhece de Utilidade Públi ca a FU
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - É reconhecida de Utilidade Pública, para to- dos os efeitos da Lei, a FUNDAÇÃO "JUVINO PEREIRA NEPOMUCENO" que tem objetivo, de acordo com seus Estatutos, a criação e manutenção de unida - des Hospitalares, assistenciais, médicas e ambulatórias, destinados ao atendimento dos beneficiários da previdência social, rural, dependentes e o povo em geral.
+**Art. 1º** - É reconhecida de Utilidade Pública, para to- dos os efeitos da Lei, a FUNDAÇÃO "JUVINO PEREIRA NEPOMUCENO" que tem objetivo, de acordo com seus Estatutos, a criação e manutenção de unida - des Hospitalares, assistenciais, médicas e ambulatórias, destinados ao atendimento dos beneficiários da previdência social, rural, dependentes e o povo em geral.
 
-**Art. 29** - Revogadas as disposições em contrário esta
+**Art. 2º** - Revogadas as disposições em contrário esta
 
 Lei entra em vigor na data de sua publicação. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, 29 de novembro de 1985; 979 da Proclamação da República. JOSE CARLOS DA SILVA JUNIOR GOVERNADOR EM EXERCICIO Severíno Judivan Cabral de Souza Secretário do Interior e Justiça
 

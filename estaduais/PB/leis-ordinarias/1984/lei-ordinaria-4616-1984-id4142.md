@@ -21,8 +21,8 @@ LEI N.° 4.616 de 19 84 junho Que reconhece de utiliaa de pública a FILARMÔNIC
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica reconhecida de utilidade pública a Filarmônica das Espinharas, órgão da Fundação Educativa-Cultural "Miguel Motta", com séde e foro na cidade de Patos.
+**Art. 1º** - Fica reconhecida de utilidade pública a Filarmônica das Espinharas, órgão da Fundação Educativa-Cultural "Miguel Motta", com séde e foro na cidade de Patos.
 
-**Art. 29** - Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, 27 de junho de 1984; 969 da Proclamação da República. JOSE CARLOS DA SILVA JOÑIOR GOVERNADOR EM EXERCICIO Luiz Silvio Ramalho Secretário do Interior e Justiça
+**Art. 2º** - Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, 27 de junho de 1984; 969 da Proclamação da República. JOSE CARLOS DA SILVA JOÑIOR GOVERNADOR EM EXERCICIO Luiz Silvio Ramalho Secretário do Interior e Justiça
 
 PUBLICADO NO D. OFICIAL DESTA DATA Em 11 Julho 1 19.27

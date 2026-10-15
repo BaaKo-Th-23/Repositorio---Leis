@@ -21,9 +21,9 @@ LEI N° 3.899 , de 22 de de 19 77 junho Autoriza a contratação de emprés timo
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica o Governo do Estado da Paraiba autori zado a contratar empréstimos, no valor de Cr$ 70.000,000,00 (seten- ta milhões de cruzeiros), junto à Caixa Econômica Federal, através do Fundo de Apoio ao Desenvolvimento (FAS), destinado à aquisição de material e construção de estabelecimentos penais em diversas ci- dades do Estado.
+**Art. 1º** - Fica o Governo do Estado da Paraiba autori zado a contratar empréstimos, no valor de Cr$ 70.000,000,00 (seten- ta milhões de cruzeiros), junto à Caixa Econômica Federal, através do Fundo de Apoio ao Desenvolvimento (FAS), destinado à aquisição de material e construção de estabelecimentos penais em diversas ci- dades do Estado.
 
-**Art. 29** - As condições do financiamento, no que res- peita ao desembolso, prazos de carência e amortização e forma de pa gamento, serão negociados entre o Governo do Estado e a Caixa Econô mica Federal.
+**Art. 2º** - As condições do financiamento, no que res- peita ao desembolso, prazos de carência e amortização e forma de pa gamento, serão negociados entre o Governo do Estado e a Caixa Econô mica Federal.
 
 **Art. 38** - Os encargos do financiamento a ser contra- tado não poderão exceder os limites estabelecidos pelo Banco Cen - tral do Brasil para operações da espécie.
 

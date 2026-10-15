@@ -21,11 +21,11 @@ LEI N. 3.132 , de 31 de Autoriza o Poder Executivo a garantir obrigações a ser
 
 O GOVERNADOR DO ESTADO DA PARAIBA! Faço saber qua o Podar Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica o Poder Executivo autorizado a garantir solidariamente as obrigações a serem contraídas pelo Saneamento de Campi- na Grande S/A (SANESA), por fôrça de operação de abertura de crédito a ser contratada com o Banco do Nordeste do Brasil S/A, no montante de ........ US$ 2, 179, 793. 60 (dois milhões cento e setenta e nove mil setecentos e noven ta e três dólares norte-americanos e sessenta centésimos do dólar) conversí- veis à taxa de câmbio em vigor na data da utilização do crédito, pelo prazo má ximo de 30 (trinta) anos, a juros não excedentes a 2 e 3/4% (dois inteiros três quartos por cento) ao ano, comissões e outras condições de praxe.
+**Art. 1º** - Fica o Poder Executivo autorizado a garantir solidariamente as obrigações a serem contraídas pelo Saneamento de Campi- na Grande S/A (SANESA), por fôrça de operação de abertura de crédito a ser contratada com o Banco do Nordeste do Brasil S/A, no montante de ........ US$ 2, 179, 793. 60 (dois milhões cento e setenta e nove mil setecentos e noven ta e três dólares norte-americanos e sessenta centésimos do dólar) conversí- veis à taxa de câmbio em vigor na data da utilização do crédito, pelo prazo má ximo de 30 (trinta) anos, a juros não excedentes a 2 e 3/4% (dois inteiros três quartos por cento) ao ano, comissões e outras condições de praxe.
 
-**Art. 29** - A importância oriunda da abertura de crédito, referida no artigo anterior, é originária do repasse da operação creditícia con tratada pelo Banco do Nordeste do Brasil S/A com o Banco Interamericano do Desenvolvimento, e destina-se ao financiamento da ampliação do sistema d e abastecimento d'água da cidade de Campina Grande, dêste Estado.
+**Art. 2º** - A importância oriunda da abertura de crédito, referida no artigo anterior, é originária do repasse da operação creditícia con tratada pelo Banco do Nordeste do Brasil S/A com o Banco Interamericano do Desenvolvimento, e destina-se ao financiamento da ampliação do sistema d e abastecimento d'água da cidade de Campina Grande, dêste Estado.
 
-**Art. 39** - Para efetivação da garantia de que trata o ar -
+**Art. 3º** - Para efetivação da garantia de que trata o ar -
 
 PUELICADO NO D. CHICIAL DESTA DATA Em 5: 1 / 1264 Les. era 24.1. 64
 
@@ -39,13 +39,13 @@ PUELICADO NO D. CHICIAL DESTA DATA Em 5: 1 / 1264 Les. era 24.1. 64
 
 **§ 49** - O resgate das apólices far-se-á de acôrdo com o que preceitua o parágrafo 19 dêste artigo. As apólices não lançadas em circu- lação serão devolvidas ao Poder Executivo quando da líquidação total da opera - ção a que garantem.
 
-**Art. 49** - As apólices de que trata o artigo anterior serão caucionadas no Banco do Nordeste do Brasil S/A., ficando êste expressamente autorizado a lançá-las em circulação, no caso de inadimplemento de obrigações decorrentes do contrato referido no artigo 19.
+**Art. 4º** - As apólices de que trata o artigo anterior serão caucionadas no Banco do Nordeste do Brasil S/A., ficando êste expressamente autorizado a lançá-las em circulação, no caso de inadimplemento de obrigações decorrentes do contrato referido no artigo 19.
 
-**Art. 59** - Fica, ainda, o Poder Executivo autorizado a a - brir no exercício de 1964, crédito especial de Cr $ 5.000. 000, 00 (cinco milhões de cruzeiros), e a incluir no orçamento dos exercícios de 1965 a 1993, inclusi -
+**Art. 5º** - Fica, ainda, o Poder Executivo autorizado a a - brir no exercício de 1964, crédito especial de Cr $ 5.000. 000, 00 (cinco milhões de cruzeiros), e a incluir no orçamento dos exercícios de 1965 a 1993, inclusi -
 
 ve, em parcelas que bastem para satisfazer os compromissos previstos para ca da um désses exercícios, Cr$ 3.000.000.000,00 (três bilhões de cruzeiros). Es ses recursos destinar-se-ão à amortização do principal, pagamento de juro e co missões e demais despesas de contrato, bem assim a custear despesas com confecção das apólices.
 
-**Art. 69** - É, também, o Saneamento de Campina Grande S/A (SANESA), autorizado a contratar a operação referida nesta Lei no montan- te equivalente a US$ 2,179, 793.60 (dois milhões cento e setenta e nove mil sete- centos e noventa e três dólares norte-americanos e sessenta centésimos do dó - lar), conversíveis à taxa de câmbio, em vigor na data da autorização do crédito.
+**Art. 6º** - É, também, o Saneamento de Campina Grande S/A (SANESA), autorizado a contratar a operação referida nesta Lei no montan- te equivalente a US$ 2,179, 793.60 (dois milhões cento e setenta e nove mil sete- centos e noventa e três dólares norte-americanos e sessenta centésimos do dó - lar), conversíveis à taxa de câmbio, em vigor na data da autorização do crédito.
 
 **Parágrafo único** - Fica, igualmente, o Saneamento de Cam pina Grande S/A (SANESA), autorizado a vincular ao pagamento da dívida até à sua total liquidação, as taxas provenientes dos serviços financiados.
 

@@ -21,10 +21,10 @@ LEI N.° 4.864 , de 09 de de 19 86 outubro Reconhece de Utilidade Pública a ASS
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica reconhecida de Utilidade Pública a ASSO CIAÇÃO NACIONAL DOS VETERANOS DA FEB - SEÇÃO REGIONAL DE JOÃO PESSOA/PB, com sede e foro na Rua das Trincheiras n° 700, nesta Cidade.
+**Art. 1º** - Fica reconhecida de Utilidade Pública a ASSO CIAÇÃO NACIONAL DOS VETERANOS DA FEB - SEÇÃO REGIONAL DE JOÃO PESSOA/PB, com sede e foro na Rua das Trincheiras n° 700, nesta Cidade.
 
-**Art. 29** - Esta Lei entrará em vigor na data de sua pu blicação.
+**Art. 2º** - Esta Lei entrará em vigor na data de sua pu blicação.
 
-**Art. 39** - Revogam-se as disposições em contrário. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pes de outubro de 1986; 988 da Proclamação da República. soa, 09 MILTON BEZERRA CABRAL GOVERNADOR Sindulfo Guedes Santiago Secretário do Interior e Justiça
+**Art. 3º** - Revogam-se as disposições em contrário. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pes de outubro de 1986; 988 da Proclamação da República. soa, 09 MILTON BEZERRA CABRAL GOVERNADOR Sindulfo Guedes Santiago Secretário do Interior e Justiça
 
 PUBLICADO NO D. OFIAL DESTA DATA Em 11/ 10 / 1986 SECRETARIA DO GOVERNO вала

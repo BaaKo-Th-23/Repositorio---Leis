@@ -21,7 +21,7 @@ LEI N.° 2.993 , de 10 de Abril de 19 Autoriza o Govêrno do Es tado a criar Hos
 
 O GOVERNADOR DO ESTADO DA PARAIBAI Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica autorizado o Govêrno do Estado, a criar Hospi tais de Pronto Socôrro Odontológico, nas cidades de João Pessoa e Campina Grande e nas que se fizerem necessário.
+**Art. 1º** - Fica autorizado o Govêrno do Estado, a criar Hospi tais de Pronto Socôrro Odontológico, nas cidades de João Pessoa e Campina Grande e nas que se fizerem necessário.
 
 **§ 19** - O Govêrno do Estado, poderá fazê-lo isoladamente por conta do Estado, ou em acôrdos com as Prefeituras Municipais interessadas no assunto ou ainda, com instituições públicas em geral, e particulares.
 
@@ -35,7 +35,7 @@ PUBLICADO NO D. ORCIAL DESTA DATA / 1263 Ет АДІ.
 
 - 2
 
-**Art. 29** - Fica autorizado ainda, o Govêrno do Estado a abrir crédito especial, pela Secretaria competente, até a quantia de Cr$ 50. 000.000,00 (cinquenta milhões de cruzeiros), para custear as despesas decorrentes da exe - cução da presente Lei, no corrente exercício, devendo nos próximos orçamentos constar verbas próprias.
+**Art. 2º** - Fica autorizado ainda, o Govêrno do Estado a abrir crédito especial, pela Secretaria competente, até a quantia de Cr$ 50. 000.000,00 (cinquenta milhões de cruzeiros), para custear as despesas decorrentes da exe - cução da presente Lei, no corrente exercício, devendo nos próximos orçamentos constar verbas próprias.
 
 **Art. 3º** - O Govêrno do Estado regulamentará por Decreto as normas atinentes à presente Lei, devendo fazê-lo, no prazo de sessenta (60) días, após a sua publicação.
 

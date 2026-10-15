@@ -21,10 +21,10 @@ LEI N.° 4.843 , de 11 de de 19 86 julho Reconhece de Utilidade Pública a ASSOC
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica reconhecida de Utilidade Pública a ASSOCIAÇÃO COMUNITÁRIA DOS MORADORES DO CONJUNTO COSTA E SILVA, Com sede à Rua Heitor Gusmão, na cidade de João Pessoa, Estado da Paraí ba.
+**Art. 1º** - Fica reconhecida de Utilidade Pública a ASSOCIAÇÃO COMUNITÁRIA DOS MORADORES DO CONJUNTO COSTA E SILVA, Com sede à Rua Heitor Gusmão, na cidade de João Pessoa, Estado da Paraí ba.
 
-**Art. 29** - Esta Lei entrará em vigor na data de sua publicação.
+**Art. 2º** - Esta Lei entrará em vigor na data de sua publicação.
 
-**Art. 39** - Revogam-se as disposições em contrário. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, 11 de julho de 1986; 989 da Proclamação da República. MILTON BEZERRA CABRAL GOVERNADOR Sindulfo Guedes Santiago Secretário do Interior e Justiça
+**Art. 3º** - Revogam-se as disposições em contrário. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, 11 de julho de 1986; 989 da Proclamação da República. MILTON BEZERRA CABRAL GOVERNADOR Sindulfo Guedes Santiago Secretário do Interior e Justiça
 
 Publicado no D. Oficial desta data 0/51 07 1 198 - quedes

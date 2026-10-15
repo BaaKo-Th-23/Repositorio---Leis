@@ -21,9 +21,9 @@ LEI N.° 3.298 , de 20 de abril de 19 65 Autoriza o Govêrno do Es tado a conced
 
 O GOVERNADOR DO ESTADO DA PARAIBA I Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica o Govêro do Estado autorizado a conceder à Sociedade Mantenedora da "Casa de Saúde e Maternidade Francisca Ismael", de Ca içara, um auxílio de Cr$ 800.000 (oitocento mil cruzeiros) para construção da refe rida Casa de Saúde.
+**Art. 1º** - Fica o Govêro do Estado autorizado a conceder à Sociedade Mantenedora da "Casa de Saúde e Maternidade Francisca Ismael", de Ca içara, um auxílio de Cr$ 800.000 (oitocento mil cruzeiros) para construção da refe rida Casa de Saúde.
 
-**Art. 29** - Fica o Govêrno do Estado autorizado a abrir o crédi to especial necessário ao cumprimento desta Lei, o qual terá vigência em dois (2) exercícios.
+**Art. 2º** - Fica o Govêrno do Estado autorizado a abrir o crédi to especial necessário ao cumprimento desta Lei, o qual terá vigência em dois (2) exercícios.
 
 **Art. 3º** - Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário. Palácio do Govêrno do Estado da Paraíba, em João Pessoa, 20 de abril de 1965; ano 77° da Proclamação da República. 010 0 24
 

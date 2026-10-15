@@ -21,9 +21,9 @@ LEI N.° 3.323 , de 4 de junho de 19 65 Cria, no Departamento de Servi ço Socia
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Ficam criadas, no Departamento de Serviço Soci al (DSS), a Divisao de Combate à Mendicância Profissional e a Divisão de Ensi- no Profissional e Economia Doméstica.
+**Art. 1º** - Ficam criadas, no Departamento de Serviço Soci al (DSS), a Divisao de Combate à Mendicância Profissional e a Divisão de Ensi- no Profissional e Economia Doméstica.
 
-**Art. 29** - À Divisão de Combate à MendicânciaProfissional (DCMP) compete, especificamente, em entrosamento e convênio com as entida- des comunitárias, e recursos próprios do DSS, a identificação e triagem, para fins de readaptação social, de todos quantos falsos ou verdadeiros mendigos, vi vam esmolando na via pública.
+**Art. 2º** - À Divisão de Combate à MendicânciaProfissional (DCMP) compete, especificamente, em entrosamento e convênio com as entida- des comunitárias, e recursos próprios do DSS, a identificação e triagem, para fins de readaptação social, de todos quantos falsos ou verdadeiros mendigos, vi vam esmolando na via pública.
 
 **Art. 3º** - A Divisão de Ensino Profissional e Economia Do méstica (DEPED) incumbe manter contato direto e permanente com as entidades de ensino profissional e de economia doméstica, estimulando a instalação de no vos cursos, de iniciativa privada, para o fortalecimento da vida familiar daque les elementos integrantes das classes de baixo nível de subsistência.
 

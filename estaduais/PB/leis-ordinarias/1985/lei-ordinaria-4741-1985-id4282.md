@@ -21,8 +21,8 @@ LEI N.° 4.741 , de 25 de de 19 85 setembro Considera de Utilidade Pública a AS
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica reconhecida da Utilidade Pública a ASSOCIAÇÃO DE AMIGOS "CALULA LEITE BRAGA" DA TORRELÂNDIA E EXPEDICIO NÁRIOS, com sede e foro na cidade de João Pessoa, neste Estado.
+**Art. 1º** - Fica reconhecida da Utilidade Pública a ASSOCIAÇÃO DE AMIGOS "CALULA LEITE BRAGA" DA TORRELÂNDIA E EXPEDICIO NÁRIOS, com sede e foro na cidade de João Pessoa, neste Estado.
 
-**Art. 29** - Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA; em João Pessoa, 25 de setembro de 1985; 979 da Proclamação da República WILSON LEITE GOVERNADOR Severino Judivan Cabral de Souza Secretário do Interior e Justiça
+**Art. 2º** - Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA; em João Pessoa, 25 de setembro de 1985; 979 da Proclamação da República WILSON LEITE GOVERNADOR Severino Judivan Cabral de Souza Secretário do Interior e Justiça
 
 MUZECADO NO D. OFICIAL DESTA DITA 0211955 SECRETARIA : O G V RNO Hell.

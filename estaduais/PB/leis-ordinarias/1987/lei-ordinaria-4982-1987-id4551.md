@@ -21,9 +21,9 @@ LEI N.° 4.982 de 1987 novembro Reconhece de Utilidade Pública "O CENTRO DE PES
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica reconhecido de Utilidade Pública, "O CENTRO DE PESQUISA DA LINGUAGEM - CEPEL", com sede na cidade de Cajazeiras.
+**Art. 1º** - Fica reconhecido de Utilidade Pública, "O CENTRO DE PESQUISA DA LINGUAGEM - CEPEL", com sede na cidade de Cajazeiras.
 
-**Art. 29** - Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, de novembro de 1987; 999 da Proclamação da República.
+**Art. 2º** - Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, de novembro de 1987; 999 da Proclamação da República.
 
 Janni at TARCISIO DE MIRANDA BURITY GOVERNADOR Waldyr Lira dos Santos Lima SECRETÁRIO DO INTERIOR E JUSTIÇA Oucandhanthas Luciano Mariz Maia Secretario do Governo
 

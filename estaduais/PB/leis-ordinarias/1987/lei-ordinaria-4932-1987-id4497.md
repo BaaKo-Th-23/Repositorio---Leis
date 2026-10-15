@@ -21,9 +21,9 @@ LEI N.° 4.932 de 1987 , de 01 de julho Autoriza o Poder Executivo a contratar e
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica o Poder Executivo autorizado a contratar empréstimo junto ao Banco do Estado da Paraíba S/A, através de recur sos oriundos da Caixa Econômica Federal - CEF, até o montante de 32.458.000 Obrigações do Tesouro Nacional - OTN, correspondente, nesta data, a Cz$ 8.165.134.480,00 (oito bilhões, cento e sessenta e cinco milhões, cento e trinta e quatro mil quatrocentos e oitenta cruzados).
+**Art. 1º** - Fica o Poder Executivo autorizado a contratar empréstimo junto ao Banco do Estado da Paraíba S/A, através de recur sos oriundos da Caixa Econômica Federal - CEF, até o montante de 32.458.000 Obrigações do Tesouro Nacional - OTN, correspondente, nesta data, a Cz$ 8.165.134.480,00 (oito bilhões, cento e sessenta e cinco milhões, cento e trinta e quatro mil quatrocentos e oitenta cruzados).
 
-**Art. 29** - Os recursos do empréstimo mencionado no arti go anterior, destinar-se-ão a investimentos em obras de abastecimento de água e de esgoto sanitário em municípios do Estado, conforme progra mação estabelecida para o período 1987/1990.
+**Art. 2º** - Os recursos do empréstimo mencionado no arti go anterior, destinar-se-ão a investimentos em obras de abastecimento de água e de esgoto sanitário em municípios do Estado, conforme progra mação estabelecida para o período 1987/1990.
 
 **Art. 38** - As condições de empréstimo no que diz respei to ao desembolso, prazos, amortização e forma de pagamento, serão nego ciados entre o Governo do Estado e o Banco do Estado da Paraíba S/A , de acordo com as normas estabelecidas pela Caixa Econômica Federal-CEF.
 

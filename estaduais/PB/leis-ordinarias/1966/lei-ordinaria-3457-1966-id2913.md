@@ -21,9 +21,9 @@ O GOVERNADOR DO ESTADO DA PARAÍBA, usando das atri- buições que lhe confere o
 
 art. 32, § 39, da Emenda Constitucional n° 1, de 22 de dezembro de 1965, san- ciona e promulga a seguinte Lei:
 
-**Art. 19** - Fica instituido o Fundo Especial de Obras Públicas do Estado (FEOPE) destinado a financiar a execução de obras públicas de rele- vante interêsse econômico e social para o Estado.
+**Art. 1º** - Fica instituido o Fundo Especial de Obras Públicas do Estado (FEOPE) destinado a financiar a execução de obras públicas de rele- vante interêsse econômico e social para o Estado.
 
-**Art. 29** - O FEOPE será constituído pelos seguintes recursos:
+**Art. 2º** - O FEOPE será constituído pelos seguintes recursos:
 
 a) até 10% (dez por cento) da receita tributária estadual;
 
@@ -41,7 +41,7 @@ a) receitas de qualquer tipo que derivem da operação ou apli : cação dos rec
 
 **§ 3º** - Os depósitos de que se trata serão feitos, ordinaria - mente, em conta global do FEOPE, salvo disposição legal ou contratual em con trário.
 
-**Art. 39** - E criada a Superintendência de Obras do Plano de Desenvolvimento do Estado (SUPLAN), com personalidade jurídica, autonomia financeira e as seguintes finalidades:
+**Art. 3º** - E criada a Superintendência de Obras do Plano de Desenvolvimento do Estado (SUPLAN), com personalidade jurídica, autonomia financeira e as seguintes finalidades:
 
 a) administrar e operar o FEOPE, segundo normas aprovadas pelo Conselho do Secretariado;
 
@@ -65,7 +65,7 @@ h) assessorar o Govêrno do Estado na fiscalização de obras e serviços públi
 
 **§ 39** - Para os fins da alínea "c' dêste artigo, a SUPLAN po derá constituir comisaões locais destinadas a prover a manutenção e conserva- ção dos prédios públicos em cada comunidade.
 
-**Art. 49** - A SUPLAN sòmente elaborará e executará progra - mas e projetos que lhe tenham sido cometidos formalmente pelo Conselho do Se cretariado, ao qual compete aprovar o orçamento programa da autarquia,
+**Art. 4º** - A SUPLAN sòmente elaborará e executará progra - mas e projetos que lhe tenham sido cometidos formalmente pelo Conselho do Se cretariado, ao qual compete aprovar o orçamento programa da autarquia,
 
 **§ 19** - Os trabalhos de manutenção e conservação dos próprios públicos do Estado independem de qualquer autorização especial e serão condu - zidos pela SUPLAN de acórdo com os recursos consignados para essa finalida - de no Orçamento-Programa referido nêste artigo.
 
@@ -73,7 +73,7 @@ h) assessorar o Govêrno do Estado na fiscalização de obras e serviços públi
 
 - 4 -
 
-**Art. 59** - A SUPLAN será dirigida por um Superintendente de reconhecida idoneidade moral e profissional, livremente escolhido e nomeado pelo Governador do Estado, demissível "ad mutum", que exercerá as respecti- vas funções em regime de tempo integral e mediante a remuneração que lhe fôr fixada pelo Governador.
+**Art. 5º** - A SUPLAN será dirigida por um Superintendente de reconhecida idoneidade moral e profissional, livremente escolhido e nomeado pelo Governador do Estado, demissível "ad mutum", que exercerá as respecti- vas funções em regime de tempo integral e mediante a remuneração que lhe fôr fixada pelo Governador.
 
 **§ 19** - O superintendente da SUPLAN terá a assesoria de um Conselho Técnico constituído pelos Chefes dos Departamentos que integrarem a estrutura da autarquia,
 
@@ -81,11 +81,11 @@ h) assessorar o Govêrno do Estado na fiscalização de obras e serviços públi
 
 **§ 39** - O regime de nomeação, trabalho e remuneração dos Diretores de Departamento da SUPLAN será o mesmo estabelecido para o seu Deperintendente.
 
-**Art. 69** - A SUPLAN é vinculada à Secretaria de Viação e O - bras Públicas e será estruturada e regulamentada em Decreto do Poder Execu- tivo.
+**Art. 6º** - A SUPLAN é vinculada à Secretaria de Viação e O - bras Públicas e será estruturada e regulamentada em Decreto do Poder Execu- tivo.
 
 **Parágrafo único** - Trimestralmente, o Superintendeste d a SUPLAN apresentará relatório circunstanciado ao Secretário de Vaição e Obras Públicas sôbre as atividades da autarquia, inclusive demonstrativos detalhados acêrca da mobilização e aplicação dos recursos do FEOPE e da execução do or çamento programa da SUPLAN.
 
-**Art. 79** - Até o dia 15 de maio de cada exercício, o Superin - tendente da SUPLAN encaminhará, através do Secretário de Viação e Obras Pú- blicas, a prestação de contas de sua gestão no exercício anterior à Assembléia Legislativa ou ao órgão de contrôle financeiro que vier a ser instituído no Esta- do.
+**Art. 7º** - Até o dia 15 de maio de cada exercício, o Superin - tendente da SUPLAN encaminhará, através do Secretário de Viação e Obras Pú- blicas, a prestação de contas de sua gestão no exercício anterior à Assembléia Legislativa ou ao órgão de contrôle financeiro que vier a ser instituído no Esta- do.
 
 - 5 -
 
@@ -93,13 +93,13 @@ h) assessorar o Govêrno do Estado na fiscalização de obras e serviços públi
 
 § 2? - A falta de cumprimento do disposto nêste artigo impli- cará, automaticamente, na instauração de processo de tomada de contas pelo Secretário de Viação e Obras Públicas, que encaminhará o respectivo relatório ao Governador do Estado, para as providências que couberem.
 
-**Art. 89** - A SUPLAN utilizará, ordinariamente, para os seus serviços, servidores pertencentes a outros órgãos e entidades da administra - ção estadual, postos à sua disposição.
+**Art. 8º** - A SUPLAN utilizará, ordinariamente, para os seus serviços, servidores pertencentes a outros órgãos e entidades da administra - ção estadual, postos à sua disposição.
 
 **§ 19** - Aos servidores estaduais postos à disposição d a SUPLAN, nos têrmos deste artigo,. poderá ser atribuida complementação de vencimentos equivalente, no máximo, à diferença entre os mesmos vencimen - tos e os padrões de remuneração dos servidores próprios da SUPLAN, aprova- dos pelo Governador do Estado.
 
 **§ 29** - Os servidores que, nos têrmos do Quadro aprovado pe lo Governador do Estado, tiverem de ser admitidos pela SUPLAN, trabalharão sob o regime da Consolidação das Leis do Trabalho e, em tempo algum, adqui- rirão a categoria de servidores públicos.
 
-**Art. 99** - A aquisição e locação de bens e serviços pela SUPLAN serão feitas, através de concorrência pública, coleta de preços o u concorrência administrativa.
+**Art. 9º** - A aquisição e locação de bens e serviços pela SUPLAN serão feitas, através de concorrência pública, coleta de preços o u concorrência administrativa.
 
 **§ 1º** - A execução das obras e serviços será feita, via de re - gra, mediante contrato de empreitada com emprêsas especializadas, seleciona das de acôrdo com o "caput" dêste artigo.
 

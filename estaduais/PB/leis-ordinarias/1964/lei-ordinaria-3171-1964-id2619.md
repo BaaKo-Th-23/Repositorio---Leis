@@ -21,11 +21,11 @@ LEI N.°3.171 de 1964 maio Transforma o Serviço Espe cial de Assistência Técn
 
 O GOVERNADOR DO ESTADO DA PARAIBAI Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica reorganizado o Serviço Especial de Assistên cia Técnica aos Municípios (SETMA), criado pela Lei n° 2. 750, de 2 de Janei- ro de 1962, que passa a denominar-se Departamento de Assistência Técnica aos Municípios (DATM).
+**Art. 1º** - Fica reorganizado o Serviço Especial de Assistên cia Técnica aos Municípios (SETMA), criado pela Lei n° 2. 750, de 2 de Janei- ro de 1962, que passa a denominar-se Departamento de Assistência Técnica aos Municípios (DATM).
 
-**Art. 29** - O DATM, diretamente subordinado à Secretaria do Interior e Justiça, é o órgão de ligação entre o Govêrno Estadual e os Gover - nos Municipais e se destina a prestar às municipalidades paraibanas que a soli- citarem, a assistência técnica referida no art. 24, da Constituição Federal e no art. 83, da Constituição do Estado.
+**Art. 2º** - O DATM, diretamente subordinado à Secretaria do Interior e Justiça, é o órgão de ligação entre o Govêrno Estadual e os Gover - nos Municipais e se destina a prestar às municipalidades paraibanas que a soli- citarem, a assistência técnica referida no art. 24, da Constituição Federal e no art. 83, da Constituição do Estado.
 
-**Art. 39** - O Departamento de Assistência Técnica aos Muni- nicípios compreende:
+**Art. 3º** - O Departamento de Assistência Técnica aos Muni- nicípios compreende:
 
 a) Diretoria, com a atribuição de dirigir e coordenar as atividades do Departamento;
 
@@ -61,21 +61,21 @@ b) Secção de Assistência Contábil;
 
 c) Secção de Contabilidade Interna.
 
-**Art. 49** - O cargo de Superintendente do Serviço Especial de Assistência Técnica aos Municípios, criado, no Quadro Permanente do Estado, pe
+**Art. 4º** - O cargo de Superintendente do Serviço Especial de Assistência Técnica aos Municípios, criado, no Quadro Permanente do Estado, pe
 
 lo art. 89, da Lei n° 2. 750, de 2 de Janeiro de 1962, passa a denominar-se Dire- tor do Departamento de Assistência Técnica aos Municípios, também, isolado, de provimento em comissão e classificado no nível F-27.
 
 Parágrafo Único - O Diretor do DATM é considerado Assessor do Govêrno do Estado, para assuntos municipais.
 
-**Art. 59** - As chefias das Divisões componentes do DATM serão ocupadas por técnicos de reconhecida competência, selecionados pelo Diretor, e , para êsse fim, quando necessário, contratados.
+**Art. 5º** - As chefias das Divisões componentes do DATM serão ocupadas por técnicos de reconhecida competência, selecionados pelo Diretor, e , para êsse fim, quando necessário, contratados.
 
-**Art. 69** - Os serviços administrativos do DATM serão executa dos por servidores requisitados de outras repartições estaduais, por proposta do Diretor e a critério do Governador do Estado.
+**Art. 6º** - Os serviços administrativos do DATM serão executa dos por servidores requisitados de outras repartições estaduais, por proposta do Diretor e a critério do Governador do Estado.
 
-**Art. 79** - O DATM poderá contratar serviços de técnicos para realização de estudos e trabalhos que lhe estejam afetos, respeitados os precei - tos da legislação respectiva e os limites das dotações orçamentárias.
+**Art. 7º** - O DATM poderá contratar serviços de técnicos para realização de estudos e trabalhos que lhe estejam afetos, respeitados os precei - tos da legislação respectiva e os limites das dotações orçamentárias.
 
-**Art. 89** - O Departamento poderá realizar convênios com os Municípios visando a organização, ampliação ou prestação de serviços, e, dentro da órbita de sua competência, firmá-los, também, com órgãos governamentais ou instituições privadas, para melhor cumprimento dos seus objetivos.
+**Art. 8º** - O Departamento poderá realizar convênios com os Municípios visando a organização, ampliação ou prestação de serviços, e, dentro da órbita de sua competência, firmá-los, também, com órgãos governamentais ou instituições privadas, para melhor cumprimento dos seus objetivos.
 
-**Art. 99** - O DATM estimulará a formação de consércios entre Municípios, tendentes à solução de problemas comuns, nos têrmos do art. 81, da Constituição Estadual.
+**Art. 9º** - O DATM estimulará a formação de consércios entre Municípios, tendentes à solução de problemas comuns, nos têrmos do art. 81, da Constituição Estadual.
 
 **Art. 10** - Continua em vigor o art. 10 da Lei n° 2. 750, de 2 de Janeiro de 1962, referente à receita do DATM.
 

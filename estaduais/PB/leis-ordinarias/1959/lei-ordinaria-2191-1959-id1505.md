@@ -21,8 +21,8 @@ LEI N. 2.191 de 6 de Novembro de 1959 Autoriza o Poder Execu tivo a abrir pela S
 
 O Governador do Estado da Paraíba: Faço saber que o Foder Legislativo decreta e eu san- ciono a seguinte Lei:
 
-**Art. 19** - Fica o Poder Exccutivo autorizado a abrir, pela Secretaria do Interior e Segurança Pública, o crédito especi- al de 0 335.000,00 (trezentos e trinta e cinco mil cruzeiros), des tinado à aquisição de um veículo para a Colônia de Readaptação A - Grícola de Mangabeira.
+**Art. 1º** - Fica o Poder Exccutivo autorizado a abrir, pela Secretaria do Interior e Segurança Pública, o crédito especi- al de 0 335.000,00 (trezentos e trinta e cinco mil cruzeiros), des tinado à aquisição de um veículo para a Colônia de Readaptação A - Grícola de Mangabeira.
 
-**Art. 29** - Esta Lei entrará en vigor na data de suapu blicação, revogados as disposições em contrário. Palácio do Govêro do Estado da Paraíba, em João Peg soa, 6 de novembro de 1959; 71º da Proclamação da República. . SPP
+**Art. 2º** - Esta Lei entrará en vigor na data de suapu blicação, revogados as disposições em contrário. Palácio do Govêro do Estado da Paraíba, em João Peg soa, 6 de novembro de 1959; 71º da Proclamação da República. . SPP
 
 PUBLRALO NO D.O. TESTa FAlA & Em 10 / 14 / 1959

@@ -23,11 +23,11 @@ AUTORIZA O PODER EXECUTIVO A CON- CEDER GARANTIA DO ESTADO, AO EMPRESTIMO SER CO
 
 O GOVERNADOR DO ESTADO DA PARAIBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica o Poder Executivo, autorizado a garantir a Agentes Financeiros do BNDE, na forma da legislação pertinente, a operação de credito no valor de 189.801,33 ORIN correspondente a CR$ 103.753.000,00 (cento e três milhões, setecentos e cinqlenta e três mil cruzeiros), considerando o valor unitario de CR$ 546,64 ORIN, vigente em abril de 1980; reajustaveis à época da assinatura do respectivo contrato entre a SAELPA e o orgão financiador.
+**Art. 1º** - Fica o Poder Executivo, autorizado a garantir a Agentes Financeiros do BNDE, na forma da legislação pertinente, a operação de credito no valor de 189.801,33 ORIN correspondente a CR$ 103.753.000,00 (cento e três milhões, setecentos e cinqlenta e três mil cruzeiros), considerando o valor unitario de CR$ 546,64 ORIN, vigente em abril de 1980; reajustaveis à época da assinatura do respectivo contrato entre a SAELPA e o orgão financiador.
 
 PARÁGRAFO ÚNICO - Os recursos oriundos da operação de crédito, a que se refere o art. 19 desta lei, destinar-se-ão à aquisição de material elétrico, a ser utilizado em subestações 69/13.8kv, Seccionadoras 69 kv e Sistema de Comunicação.
 
-**Art. 29** - Em garantia do financiamento, o Estado cedera ao Agente Financeiro do BNDE, nas proporções ajustadas, a cota parte do IUEE (Imposto Único Sobre Energia Elétrica) devido à SAELPA, na forma da Legislação Federal.
+**Art. 2º** - Em garantia do financiamento, o Estado cedera ao Agente Financeiro do BNDE, nas proporções ajustadas, a cota parte do IUEE (Imposto Único Sobre Energia Elétrica) devido à SAELPA, na forma da Legislação Federal.
 
 **Art.30** - A partir da proposta orçamentária, referente ao exercício financeiro de 1981, o orçamento anual consignarã recursos para amortização, pela SAELPA, das prestações do principal e acessórios da dívida, relativas ao empréstimo contraído, na forma dos artigos anteriores, com a supervisão do Gabinete da Sécretaria dos Transportes e Obras.
 

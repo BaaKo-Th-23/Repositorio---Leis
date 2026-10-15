@@ -21,9 +21,9 @@ LEI N.° 3.147 , de 23 de de 19 64 março Reconhece de utilidade pú- blica e au
 
 O GOVERNADOR DO ESTADO DA PARAIBA! Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica reconhecida de utilidade pública a Associa - ção Proterora de Meninos Pobres com Vocação Sacerdotal, sediada nesta Capi- tal.
+**Art. 1º** - Fica reconhecida de utilidade pública a Associa - ção Proterora de Meninos Pobres com Vocação Sacerdotal, sediada nesta Capi- tal.
 
-**Art. 29** - E o Poder Executivo autorizado a conceder à Ins- tituição referida no artigo anterior uma subvenção mensal de Cr$ 30.000,00 ( trinta mil cruzeiros).
+**Art. 2º** - E o Poder Executivo autorizado a conceder à Ins- tituição referida no artigo anterior uma subvenção mensal de Cr$ 30.000,00 ( trinta mil cruzeiros).
 
 **Art. 3º** - Para o atendimento da despesa prevista nesta Lei, fica igualmente o Chefe do Poder Executivo autorizado a abrir o crédito especi- al necessário.
 

@@ -80,7 +80,9 @@ def main(aplicar):
             p = os.path.join(dp, f)
             with open(p, encoding="utf-8", errors="replace") as h:
                 texto = h.read()
-            if MARCA not in texto[:600]:
+            # o aviso vem depois do cabeçalho e do título; em ementa longa passa de 600
+            # caracteres, então a busca é no arquivo inteiro
+            if MARCA not in texto:
                 continue
             cont["ocr"] += 1
             nums = numeros(texto)

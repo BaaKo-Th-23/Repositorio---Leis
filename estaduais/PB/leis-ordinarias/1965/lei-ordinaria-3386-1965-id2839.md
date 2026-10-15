@@ -19,11 +19,11 @@ LEI N.° 3.386 , de 22 de dezembro de 19 65 Reestrutura a carreira de Inspetor T
 
 O GOVERNADOR DO ESTADO DA PARAIBAI Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - A carreira de Inspetor Técnico de Ensino, integrante, no setor do magistério primário, do Quadro Permanente do Esta - do, passa a ter a seguinte estrutura: 3 cargos do nível F-30 4 cargos do nível F-29 5 cargos do nível F-28 8 cargos do nível F-27
+**Art. 1º** - A carreira de Inspetor Técnico de Ensino, integrante, no setor do magistério primário, do Quadro Permanente do Esta - do, passa a ter a seguinte estrutura: 3 cargos do nível F-30 4 cargos do nível F-29 5 cargos do nível F-28 8 cargos do nível F-27
 
 **Parágrafo único** - Os atuais titulares dos cargos dos níveis F-15 a F-18, da carreira ora reestruturada, passam a ocupar, automá- tica e respectivamente, os dos níveis F-27 a F-30, da mesma carreira.
 
-**Art. 29** - O atual cargo de Inspetor Técnico do Ensi •no Médio e os cargos de Inspetor Regional do Ensino Médio, isolados, de pro - vimento efetivo, passam a ser classificados, respectivamente, nos níveis F-30 e F-27.
+**Art. 2º** - O atual cargo de Inspetor Técnico do Ensi •no Médio e os cargos de Inspetor Regional do Ensino Médio, isolados, de pro - vimento efetivo, passam a ser classificados, respectivamente, nos níveis F-30 e F-27.
 
 PUBLICADO NO D. OFCIAL DESTA DATA Em 28/ 12 / 1965
 

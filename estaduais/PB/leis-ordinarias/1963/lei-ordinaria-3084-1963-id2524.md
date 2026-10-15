@@ -21,19 +21,19 @@ LEI N.° 3.084 ‚ de 11 de outubro de 19 63 Concede aumento de vencimentos e sa
 
 O GOVERNADOR DO ESTADO DA PARAIBAI Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Os vencimentos dos funcionarios civis do Poder Exe cutivo passam a ter os seguintes valores mensais: Níveis Cr$ F-1 17.000,00 F-2 17.700,00 F-3 18. 500, 00 F-4 19.500,00 F-5 20.500,00 F-6 21.500,00 F-7 22.500,00 F -8 23.500,00 F-9 24.500,00 F-10 25.500,00 F-11 27.000,00 F -12 28.500,00
+**Art. 1º** - Os vencimentos dos funcionarios civis do Poder Exe cutivo passam a ter os seguintes valores mensais: Níveis Cr$ F-1 17.000,00 F-2 17.700,00 F-3 18. 500, 00 F-4 19.500,00 F-5 20.500,00 F-6 21.500,00 F-7 22.500,00 F -8 23.500,00 F-9 24.500,00 F-10 25.500,00 F-11 27.000,00 F -12 28.500,00
 
 PUBLICADO NO D. OFICIAL Em A DESTA DATA →0 / 106: e Repuc. ern 16-10: 0 3
 
 - 2 - Níveis Cr$ 31.000,00 F-13 33.500,00 F-14 36.000,00 F-15 .... F-16 38.500,00 41.000,00 F-17 F-18 43.500,00 F-19 46.000,00 F-20 48.500,00 F -21 52.000,00 F-22 55.600,00 F-23 59.200,00 62.800,00 F-24 F-25 66.400, 00ł 70.000,00 F-26 F - 27 73.600,00 F-28 77.200,00 80.800,00ł F-29 84.400,00 F-30 F-31 100.000,00
 
-**Art. 29** - A escala de salários das séries funcionais e fun- çoes isoladas, integrantes da Tabela Numérica de Mensalistas fica modificada para os valores mensais abaixo discriminados: Cr$ Níveis M - 1 16.000,00 M -2 16.400,00
+**Art. 2º** - A escala de salários das séries funcionais e fun- çoes isoladas, integrantes da Tabela Numérica de Mensalistas fica modificada para os valores mensais abaixo discriminados: Cr$ Níveis M - 1 16.000,00 M -2 16.400,00
 
 - З - Níveis Cr$ M -3 16.800,00 M -4 17.200,00 .... M -5 17.600,00 M -6 18.000,00 M -7 18.500,00 M -8 19. 000. 00 M -9 19.500,00 M-10 20.000,00 M -11 20.500,00
 
-**Art. 39** - A escala de salários dos extranumerários diaris- tas, terá os seguintes valores diários: Níveis Cr$ D-1 533, 00ł D-2 538, 0ął D-3 546, 00 D-4 554,00 D~5 562,00 D-6 570, 00 D-7 578, 0ź D-8 586,00 D-9 594,0 D-10 602, 0ął D-11 610, 0ął D-12 618,00 D-13 626,00
+**Art. 3º** - A escala de salários dos extranumerários diaris- tas, terá os seguintes valores diários: Níveis Cr$ D-1 533, 00ł D-2 538, 0ął D-3 546, 00 D-4 554,00 D~5 562,00 D-6 570, 00 D-7 578, 0ź D-8 586,00 D-9 594,0 D-10 602, 0ął D-11 610, 0ął D-12 618,00 D-13 626,00
 
-- 4 - Níveis Cr$ D-14 634,00 ..... D-15 642,00 D-16 650,00 D-17 658, 00 D-18 666,00 'Art. 49 - Os extranumerários-contratados terão os seus salários fixados, nas seguintes bases: Situaçao atual Valores mensais (Cr$) Até Cr$ 9.000, 00, inclusive, para 16.000,00 9.300, 00, para De Cr$ 16.400,00 9.400,00 De 16.600,00 para 9.600,00 De 16.800,00 para 10.000, 00 17.400,00 De para 10.500,00 De 18. 000, 00 para 10.600,00 De para 18.200,00 11.000,00 De 18.900,00 para 11. 100, 00 De 19. 000, 00 para 11.200,00 De para 19.200,00 11.350,00 De 19.400,00 para 11. 600, 00 19.800,00 De para 11.900,00 De 20.200,00 para 12. 100,00 De 20.600,00 para 12.270,00 De para 21.000,00 De 21.500,00 12.500,00 para De 12.900,00 para 22.000,00
+- 4 - Níveis Cr$ D-14 634,00 ..... D-15 642,00 D-16 650,00 D-17 658, 00 D-18 666,00 'Art. 4º - Os extranumerários-contratados terão os seus salários fixados, nas seguintes bases: Situaçao atual Valores mensais (Cr$) Até Cr$ 9.000, 00, inclusive, para 16.000,00 9.300, 00, para De Cr$ 16.400,00 9.400,00 De 16.600,00 para 9.600,00 De 16.800,00 para 10.000, 00 17.400,00 De para 10.500,00 De 18. 000, 00 para 10.600,00 De para 18.200,00 11.000,00 De 18.900,00 para 11. 100, 00 De 19. 000, 00 para 11.200,00 De para 19.200,00 11.350,00 De 19.400,00 para 11. 600, 00 19.800,00 De para 11.900,00 De 20.200,00 para 12. 100,00 De 20.600,00 para 12.270,00 De para 21.000,00 De 21.500,00 12.500,00 para De 12.900,00 para 22.000,00
 
 - 5 - Situação atual Valores mensais (Cr$) De Cr$ 13.200,00 para 22.300,00 13. 600, 00 De para 22.700,00 De 13. 800, 00 para 23.000,00 De 14.000,00 para 23.200,00 De 14.200, 00 para 23.400,00 De 14.620,00 para 24.000, 00ł De 14.700,00 para 24. 100,00 De 14.800,00 para 24.200,00 De 15.000,00 para 24.300,00 De 15.200,00 para 24.500,00 De 15.450,00 para 24.800,00 De 16.000,00 para 25.000,00 De para 16.300,00 25.400,00 De 16. 500, 00 para 25. 600, 00 De 17.000,00 para 26.000,00 De 17.200,00 para 26.500,00 De 17.600, 00 para 27.000,00 De 18.000,00 para 27.500,00 De 18.600,00 para 28.000, 00ł De 19.300,00 para 29.000,00 20.000,00 De para 30,000,00 De 20.400,00 para 31.000,00 De 21.300,00 para 33.000,00 De 21.600,00 para 33.300,00 De 22.000,00 para 34.500,00
 
@@ -41,7 +41,7 @@ PUBLICADO NO D. OFICIAL Em A DESTA DATA →0 / 106: e Repuc. ern 16-10: 0 3
 
 **Parágrafo único** - O atual salário de contratado, com - preendido entre dois valores consecutivos, na sequência ascendente estabeleci da neste artigo, e que nela não figure explícitamente, deverá ser reajustado para a média aritmética entre os dois novos valores correspondentes.
 
-**Art. 59** - Os extranumerários estáveis de qualquer ca- tegoria, com regalias de funcionário, na forma da legislação em vigor, terão os seus salários reajustados, com fundamento não na correspondência numéri- ca dos símbolos convencionais referentes aos diversos níveis da escala de vencimentos de que trata o artigo 1°, desta Lei, mas, com base nos valores mensala atribuidos a cada um dos aludidos níveis.
+**Art. 5º** - Os extranumerários estáveis de qualquer ca- tegoria, com regalias de funcionário, na forma da legislação em vigor, terão os seus salários reajustados, com fundamento não na correspondência numéri- ca dos símbolos convencionais referentes aos diversos níveis da escala de vencimentos de que trata o artigo 1°, desta Lei, mas, com base nos valores mensala atribuidos a cada um dos aludidos níveis.
 
 **§ 1º** - O enquadramento far-se-á, na prática, de modo
 
@@ -51,15 +51,15 @@ PUBLICADO NO D. OFICIAL Em A DESTA DATA →0 / 106: e Repuc. ern 16-10: 0 3
 
 **§ 3º** - Assegurar-se-á, no caso dos parágrafos precedentes, o pagamento da diferença de vencimentos respectiva, até que se verifique no - vo reajustamento, de caráter geral, dos níveis de retribuição do funcionalismo
 
-**Art. 69** - A gratificação de representação dos Secretários de Estado e Chefe da Casa Civil do Governador, é fixada em Cr$ 80. 000, 00 (oiten- ta mil cruzeiros) mensais; a do Sub-Chefe da Casa Civil do Governador, em Cr$ 50. 000, 00 (cinquenta mil cruzeiros); a dos Diretores de Departamento em Cr$ 40. 000, 00 (quarenta mil cruzeiros); ... (VETADO).
+**Art. 6º** - A gratificação de representação dos Secretários de Estado e Chefe da Casa Civil do Governador, é fixada em Cr$ 80. 000, 00 (oiten- ta mil cruzeiros) mensais; a do Sub-Chefe da Casa Civil do Governador, em Cr$ 50. 000, 00 (cinquenta mil cruzeiros); a dos Diretores de Departamento em Cr$ 40. 000, 00 (quarenta mil cruzeiros); ... (VETADO).
 
-**Art. 79** - Fica reajustado para Cr$ 10.000,00 (dez mil cru - zeiros) mensais a gratificação instituida pelo art. 49 da Lei n° 2.703, de 28 de Dezembro de 1961, a título de representação, em favor dos servidores lotados ou que tenham exercício na Casa Civil do Governador, integrante ou não do seu Quadro Especial, fixada em Cr$ 40.000,00 (quarenta mil cruzeiros) a gratifica ção atribuida ao respectivo Diretor de Expediente ... (VETADO).
+**Art. 7º** - Fica reajustado para Cr$ 10.000,00 (dez mil cru - zeiros) mensais a gratificação instituida pelo art. 49 da Lei n° 2.703, de 28 de Dezembro de 1961, a título de representação, em favor dos servidores lotados ou que tenham exercício na Casa Civil do Governador, integrante ou não do seu Quadro Especial, fixada em Cr$ 40.000,00 (quarenta mil cruzeiros) a gratifica ção atribuida ao respectivo Diretor de Expediente ... (VETADO).
 
-**Art. 89** - ... (VETADO) .
+**Art. 8º** - ... (VETADO) .
 
-**Art. 99** - ... (VETADO).
+**Art. 9º** - ... (VETADO).
 
-**Art. 109** - ... (VETADO) .
+**Art. 10º** - ... (VETADO) .
 
 **Art. 11** - ... (VETADO).
 

@@ -21,8 +21,8 @@ LEI N.° 4.953 de 19 8 7 agosto Dá nome de "JOCELYN VELLOSO BOR GES", a Escola 
 
 O GOVERNADOR DO ESTADO DA PARAÍBA: Faço saber que o Poder Legislativo decreta e eu sanciono a seguinte Lei:
 
-**Art. 19** - Fica denominada de "JOCELYN VELLOSO BORGES", a Escola Estadual de 19 Grau, sediada no Distrito Administrativo e Judicia rio de "São José", situado no Município de Pilar, neste Estado.
+**Art. 1º** - Fica denominada de "JOCELYN VELLOSO BORGES", a Escola Estadual de 19 Grau, sediada no Distrito Administrativo e Judicia rio de "São José", situado no Município de Pilar, neste Estado.
 
-**Art. 29** - Revogadas as disposições em contrário, esta Lei entra em vigor na data de sua publicação. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, 19 de agosto de 1987; 999 da Proclamação da República. Faminis Bi TARCISIO DE MIRANDA BURITY GOVERNADOR
+**Art. 2º** - Revogadas as disposições em contrário, esta Lei entra em vigor na data de sua publicação. PALÁCIO DO GOVERNO DO ESTADO DA PARAÍBA, em João Pessoa, 19 de agosto de 1987; 999 da Proclamação da República. Faminis Bi TARCISIO DE MIRANDA BURITY GOVERNADOR
 
 NO D. OFICIAL PUBLI PENTA DATA Em201 00/19.87 SECRETARIA DO GOVERNO
