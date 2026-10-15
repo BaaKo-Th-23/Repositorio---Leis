@@ -305,6 +305,12 @@ PLANO = [
          "Assembleias (SAPL e sistemas próprios)"),
     Item("Infralegal estadual", "Resoluções das Assembleias", "estaduais/*/resolucoes", 25000, 2,
          "Assembleias (SAPL e sistemas próprios)"),
+    Item("Infralegal estadual", "Portarias das administrações estaduais e distrital",
+         "estaduais/*/portarias", 60000, 2, "SINJ-DF, Legisla Goiás e sistemas equivalentes"),
+    Item("Infralegal estadual", "Deliberações, súmulas administrativas, provimentos e pareceres normativos",
+         "estaduais/*/deliberacoes, estaduais/*/sumulas, estaduais/*/provimentos,"
+         " estaduais/*/pareceres-normativos", 4000, 2,
+         "SINJ-DF, Legisla Goiás e sistemas equivalentes"),
 
     # --------------------------------------------------------------------------- Municipal
     Item("Legislação municipal", "Leis orgânicas municipais e suas emendas",

@@ -53,3 +53,17 @@
 {"id": 1419, "norma": "Lei Complementar nº 212, de 10 de dezembro de 1941", "motivo": "sem arquivo", "status": "sem_texto"}
 {"id": 6346, "url": "https://sapl.al.pb.leg.br/media/sapl/public/normajuridica/1936/6346/6346_texto_integral.pdf", "motivo": "PDF sem texto legível (nem por OCR)", "status": "sem_texto"}
 {"item": "{'id': 1805, '__str__': 'Lei Ordinária nº 245, de 03 de dezembro de 1948', 'metadata': {}, 'texto_integral': 'http://sapl.al.pb.leg.br/media/sapl/public/normajuridica/1948/1805/1805_texto_integral.pdf', 'numero': '245', 'ano': 1948, 'esfera_federacao': 'E', 'data': '1948-12-03', 'data_publicacao': '", "erro": "Command '['/Volumes/ExternalSSD/GitHub/constituicao/scripts/bin/ocr', '/var/folders/53/fh2kkl7d0qg99fzkyh0ygd3m0000gn/T/tmp311fp0iq/a.pdf']' timed out after 1800 seconds", "status": "erro"}
+{"id": 18964, "norma": "Resolução nº 2.750, de 03 de junho de 2026", "motivo": "sem arquivo", "status": "sem_texto"}
+{"id": 18963, "norma": "Resolução nº 2.749, de 03 de junho de 2026", "motivo": "sem arquivo", "status": "sem_texto"}
+{"id": 18962, "norma": "Resolução nº 2.748, de 03 de junho de 2026", "motivo": "sem arquivo", "status": "sem_texto"}
+{"id": 18961, "norma": "Resolução nº 2.747, de 03 de junho de 2026", "motivo": "sem arquivo", "status": "sem_texto"}
+{"id": 18960, "norma": "Resolução nº 2.746, de 03 de junho de 2026", "motivo": "sem arquivo", "status": "sem_texto"}
+{"id": 18959, "norma": "Resolução nº 2.745, de 03 de junho de 2026", "motivo": "sem arquivo", "status": "sem_texto"}
+{"id": 18958, "norma": "Resolução nº 2.744, de 03 de junho de 2026", "motivo": "sem arquivo", "status": "sem_texto"}
+{"id": 18957, "norma": "Resolução nº 2.743, de 03 de junho de 2026", "motivo": "sem arquivo", "status": "sem_texto"}
+{"id": 18956, "norma": "Resolução nº 2.742, de 03 de junho de 2026", "motivo": "sem arquivo", "status": "sem_texto"}
+{"id": 18955, "norma": "Resolução nº 2.741, de 03 de junho de 2026", "motivo": "sem arquivo", "status": "sem_texto"}
+{"id": 18954, "norma": "Resolução nº 2.740, de 02 de junho de 2026", "motivo": "sem arquivo", "status": "sem_texto"}
+{"id": 18953, "norma": "Resolução nº 2.739, de 02 de junho de 2026", "motivo": "sem arquivo", "status": "sem_texto"}
+{"id": 18625, "norma": "Lei Ordinária nº 14.316, de 20 de março de 2026", "motivo": "sem arquivo", "status": "sem_texto"}
+{"id": 18570, "norma": "Decreto Legislativo nº 327, de 10 de março de 2026", "motivo": "sem arquivo", "status": "sem_texto"}
