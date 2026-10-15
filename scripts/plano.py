@@ -300,8 +300,9 @@ PLANO = [
     Item("Infralegal estadual", "Regimentos internos das Assembleias", "estaduais/*/regimentos", 27, 2, "Assembleias"),
 
     # --------------------------------------------------------------------------- Municipal
-    Item("Legislação municipal", "Leis orgânicas municipais", "municipais/*/*/lei-organica", 5570, 3,
-         "portais municipais e Leis Municipais/LeisMunicipais"),
+    Item("Legislação municipal", "Leis orgânicas municipais e suas emendas",
+         "municipais/*/*/lei-organica, municipais/*/*/emendas-lei-organica", 5570, 3,
+         "diários das associações estaduais de municípios"),
     Item("Legislação municipal", "Planos diretores", "municipais/*/*/plano-diretor", 5570, 3, "portais municipais"),
     Item("Legislação municipal", "Códigos tributários municipais", "municipais/*/*/codigo-tributario", 5570, 3,
          "portais municipais"),
