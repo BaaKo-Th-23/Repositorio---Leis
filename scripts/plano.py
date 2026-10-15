@@ -234,6 +234,8 @@ PLANO = [
          "reguladores/mre", 800, 2, "Diário Oficial da União (in.gov.br)"),
     Item("Infralegal — justiça e controle", "Atos administrativos normativos do Poder Judiciário publicados no DOU",
          "reguladores/poder-judiciario", 1500, 2, "Diário Oficial da União (in.gov.br)"),
+    Item("Infralegal — justiça e controle", "Atos administrativos normativos do Poder Legislativo publicados no DOU",
+         "reguladores/poder-legislativo", 600, 2, "Diário Oficial da União (in.gov.br)"),
     Item("Infralegal — justiça e controle", "BNDES e demais estatais com poder normativo",
          "reguladores/bndes", 400, 2, "Diário Oficial da União (in.gov.br)"),
 
@@ -297,7 +299,12 @@ PLANO = [
          "Tribunais de Contas estaduais"),
     Item("Infralegal estadual", "Resoluções e provimentos dos TJ e das Corregedorias",
          "estaduais/*/resolucoes-tj", 8000, 2, "Tribunais de Justiça"),
-    Item("Infralegal estadual", "Regimentos internos das Assembleias", "estaduais/*/regimentos", 27, 2, "Assembleias"),
+    Item("Infralegal estadual", "Regimentos internos das Assembleias", "estaduais/*/regimentos", 27, 2,
+         "Assembleias"),
+    Item("Infralegal estadual", "Decretos legislativos estaduais", "estaduais/*/decretos-legislativos", 20000, 2,
+         "Assembleias (SAPL e sistemas próprios)"),
+    Item("Infralegal estadual", "Resoluções das Assembleias", "estaduais/*/resolucoes", 25000, 2,
+         "Assembleias (SAPL e sistemas próprios)"),
 
     # --------------------------------------------------------------------------- Municipal
     Item("Legislação municipal", "Leis orgânicas municipais e suas emendas",

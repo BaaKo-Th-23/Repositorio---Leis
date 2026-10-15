@@ -118,6 +118,8 @@ CANONICO = {
     # Executivo e Congresso: tipos que entraram com a esfera federal completa
     "decreto": ("decretos", "Decreto"),
     "decreto numerado": ("decretos", "Decreto"),
+    "decreto executivo": ("decretos", "Decreto"),
+    "decreto do executivo": ("decretos", "Decreto"),
     "decreto nao numerado": ("decretos-nao-numerados", "Decreto (não numerado)"),
     "decreto legislativo": ("decretos-legislativos", "Decreto Legislativo"),
     "decreto do poder legislativo": ("decretos-legislativos", "Decreto do Poder Legislativo"),

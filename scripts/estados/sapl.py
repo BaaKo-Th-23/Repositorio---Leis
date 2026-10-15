@@ -25,9 +25,14 @@ HOSTS = {
     "PI": "sapl.al.pi.leg.br",
     "TO": "sapl.al.to.leg.br",
 }
-# siglas/descrições de tipos que contam como "lei" (constituição, emendas, leis e decretos-lei)
-TIPO_LEI = re.compile(r"constitui|emenda|\blei\b|decreto[- ]lei", re.I)
-TIPO_EXCLUIR = re.compile(r"projeto|veto|resolu|regimento|decreto legislativo|portaria|ato da mesa", re.I)
+# Tipos do SAPL que são norma. A primeira versão do acervo só trouxe constituição, emendas, leis e
+# decretos-leis; o plano (scripts/plano.py) cobre também o infralegal estadual, e o próprio SAPL
+# serve parte dele: a PB publica "Decreto Executivo" ali, o PI publica "Decreto", e quase todas as
+# Assembleias publicam decreto legislativo, resolução e o regimento interno da Casa.
+TIPO_NORMA = re.compile(r"constitui|emenda|\blei\b|decreto|resolu|regimento", re.I)
+# O que fica de fora não é norma: proposição em tramitação, veto, ato interno de mesa diretora.
+TIPO_EXCLUIR = re.compile(r"projeto|proposta|veto|requerimento|indica[çc][ãa]o|mensagem"
+                          r"|portaria|ato da mesa|ato normativo da mesa", re.I)
 rede = Rede(rps=3)
 
 
@@ -45,17 +50,17 @@ def tipos_lei(uf):
         d = api(uf, f"norma/tiponormajuridica/?page_size=100&page={pag}")
         for t in d["results"]:
             desc = t["descricao"].strip()
-            if TIPO_LEI.search(desc) and not TIPO_EXCLUIR.search(desc):
+            if TIPO_NORMA.search(desc) and not TIPO_EXCLUIR.search(desc):
                 tipos[t["id"]] = desc
         if not d["pagination"].get("next_page"):
             return tipos
         pag += 1
 
 
-def indice(uf):
+def indice(uf, refazer=False):
     pasta = os.path.join(RAIZ_ESTADUAIS, uf, "_indice")
     arq = os.path.join(pasta, "sapl.json")
-    if os.path.exists(arq):
+    if os.path.exists(arq) and not refazer:
         return json.load(open(arq, encoding="utf-8"))
     tipos = tipos_lei(uf)
     normas = []
@@ -74,8 +79,8 @@ def indice(uf):
     return dados
 
 
-def cobertura(uf):
-    d = indice(uf)
+def cobertura(uf, refazer=False):
+    d = indice(uf, refazer)
     por_tipo = collections.defaultdict(lambda: [0, 0])
     for n in d["normas"]:
         t = d["tipos"][str(n["tipo"])]
@@ -131,10 +136,11 @@ def processar_factory(uf, tipos):
 
 if __name__ == "__main__":
     acao, uf = sys.argv[1], sys.argv[2].upper()
+    refazer = "--refazer" in sys.argv
     if acao == "indice":
-        cobertura(uf)
+        cobertura(uf, refazer)
     elif acao == "baixar":
-        d = indice(uf)
+        d = indice(uf, refazer)
         itens = sorted(d["normas"], key=lambda n: n.get("data") or "", reverse=True)
         if len(sys.argv) > 3:
             itens = itens[: int(sys.argv[3])]
