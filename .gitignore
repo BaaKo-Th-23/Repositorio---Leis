@@ -2,6 +2,6 @@
 _fonte/
 _indice/
 _log*.txt
-*.log
 .DS_Store
 scripts/bin/
+*.log

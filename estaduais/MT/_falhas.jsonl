@@ -1,0 +1,9 @@
+{"urn": "urn:lex:br;mato.grosso:estadual:lei.ordinaria:2024-10-23;12705", "http": 404, "status": "sem_texto"}
+{"urn": "urn:lex:br;mato.grosso:estadual:lei.ordinaria:2024-10-23;12708", "http": 404, "status": "sem_texto"}
+{"urn": "urn:lex:br;mato.grosso:estadual:lei.ordinaria:2024-10-10;12686", "http": 404, "status": "sem_texto"}
+{"urn": "urn:lex:br;mato.grosso:estadual:lei.ordinaria:2024-10-10;12680", "http": 404, "status": "sem_texto"}
+{"urn": "urn:lex:br;mato.grosso:estadual:lei.ordinaria:2024-10-04;12678", "http": 404, "status": "sem_texto"}
+{"urn": "urn:lex:br;mato.grosso:estadual:lei.ordinaria:2024-10-04;12677", "http": 404, "status": "sem_texto"}
+{"urn": "urn:lex:br;mato.grosso:estadual:lei.ordinaria:2024-10-04;12676", "http": 404, "status": "sem_texto"}
+{"urn": "urn:lex:br;mato.grosso:estadual:lei.ordinaria:2024-10-04;12674", "http": 404, "status": "sem_texto"}
+{"item": "{'urn': 'urn:lex:br;mato.grosso:estadual:lei.ordinaria:2013-12-30;10037', 'titulo': 'Lei Ordinária - 10037/2013', 'ementa': 'Estima a Receita e fixa a Despesa do Estado de Mato Grosso para o exercício financeiro de 2014.'}", "erro": "falhou após 4 tentativas: https://www.al.mt.gov.br/norma-juridica/urn:lex:br;mato.grosso:estadual:lei.ordinaria:2013-12-30;10037/gerar-pdf-redacao: HTTP Error 500: Internal Server Error", "status": "erro"}
