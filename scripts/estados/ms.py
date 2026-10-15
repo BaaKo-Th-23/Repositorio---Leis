@@ -21,6 +21,8 @@ VIEWS = {
     "Lei Complementar": ("leis-complementares", "Lei Complementar", "lc"),
     "Lei Estadual": ("leis-ordinarias", "Lei Ordinária", "lei"),
     "Decreto-Lei": ("decretos-lei", "Decreto-Lei", "dl"),
+    # a base do Lotus tem uma view "Decreto" com os decretos do governador, que ficava de fora
+    "Decreto": ("decretos", "Decreto", "dec"),
 }
 NAVEGACAO = {"Sair", "Editar", "Excluir", "Novo Anexo", "Sair | Editar | Excluir | Novo Anexo"}
 MESES = {m: i for i, m in enumerate(
@@ -28,10 +30,10 @@ MESES = {m: i for i, m in enumerate(
 rede = Rede(rps=3)
 
 
-def indice():
+def indice(refazer=False):
     pasta = os.path.join(RAIZ_ESTADUAIS, UF, "_indice")
     arq = os.path.join(pasta, "views.json")
-    if os.path.exists(arq):
+    if os.path.exists(arq) and not refazer:
         return json.load(open(arq, encoding="utf-8"))
     itens = []
     for view in VIEWS:
@@ -95,8 +97,9 @@ def processar(it):
 
 
 if __name__ == "__main__":
-    itens = indice()
+    itens = indice(refazer="--refazer" in sys.argv)
     print(f"[{UF}] {len(itens)} normas no índice", flush=True)
-    if len(sys.argv) > 1:
-        itens = itens[: int(sys.argv[1])]
+    limite = [a for a in sys.argv[1:] if a.isdigit()]
+    if limite:
+        itens = itens[: int(limite[0])]
     executar(UF, itens, processar, workers=3)

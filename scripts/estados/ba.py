@@ -24,14 +24,22 @@ CATEGORIAS = {
     "5": ("leis-complementares", "Lei Complementar"),
     "7": ("leis-ordinarias", "Lei Ordinária"),
     "6": ("leis-delegadas", "Lei Delegada"),
+    # o filtro do portal oferece também o infralegal da Casa Civil, que ficava inteiro de fora
+    "2": ("decretos", "Decreto"),
+    "1": ("decretos", "Decreto"),
+    "3": ("decretos", "Decreto"),
+    "19": ("portarias", "Portaria"),
+    "20": ("portarias", "Portaria"),
+    "26": ("portarias", "Portaria"),
+    "92": ("instrucoes-normativas", "Instrução Normativa"),
 }
 rede = Rede(rps=3)
 
 
-def indice():
+def indice(refazer=False):
     pasta = os.path.join(RAIZ_ESTADUAIS, UF, "_indice")
     arq = os.path.join(pasta, "documentos.json")
-    if os.path.exists(arq):
+    if os.path.exists(arq) and not refazer:
         return json.load(open(arq, encoding="utf-8"))
     itens, vistos = [], set()
 
@@ -116,8 +124,9 @@ def processar(it):
 
 
 if __name__ == "__main__":
-    itens = indice()
+    itens = indice(refazer="--refazer" in sys.argv)
     print(f"[{UF}] {len(itens)} normas no índice", flush=True)
-    if len(sys.argv) > 1:
-        itens = itens[: int(sys.argv[1])]
+    limite = [a for a in sys.argv[1:] if a.isdigit()]
+    if limite:
+        itens = itens[: int(limite[0])]
     executar(UF, itens, processar, workers=3)
