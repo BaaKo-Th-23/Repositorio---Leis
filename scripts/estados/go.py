@@ -2,6 +2,9 @@
 
 Índice: /api/v2/pesquisa/legislacoes?tipo_legislacao=N (15 por página).
 Texto: campo `conteudo` (HTML) do detalhe /api/v2/pesquisa/legislacoes/{id}.
+
+  python3 -I scripts/estados/go.py              # índice (em cache) e baixa o que falta
+  python3 -I scripts/estados/go.py --refazer    # refaz o índice antes de baixar
 """
 import json
 import os
@@ -12,6 +15,10 @@ from comum import RAIZ_ESTADUAIS, Rede, caminhos, executar, gravar, html_para_md
 
 UF = "GO"
 API = "https://legisla.casacivil.go.gov.br/api/v2/pesquisa/legislacoes"
+# id do tipo na API -> (pasta, tipo canônico, prefixo do arquivo). Os seis primeiros prefixos já
+# estão gravados no acervo e não mudam: é por eles que uma nova rodada reconhece o que já existe.
+# O decreto orçamentário e a portaria orçamentária abrem e remanejam crédito — são norma, e são
+# quase um terço do que o Legisla Goiás publica.
 TIPOS = {
     12: ("constituicao", "Constituição Estadual", "ce"),
     13: ("emendas-constitucionais", "Emenda Constitucional", "ec"),
@@ -19,14 +26,18 @@ TIPOS = {
     2: ("leis-ordinarias", "Lei Ordinária", "lei"),
     4: ("leis-delegadas", "Lei Delegada", "ld"),
     8: ("decretos-lei", "Decreto-Lei", "dl"),
+    3: ("decretos", "Decreto", "dec"),
+    5: ("decretos", "Decreto", "dec-orc"),
+    6: ("portarias", "Portaria", "port-orc"),
+    7: ("resolucoes", "Resolução", "res"),
 }
 rede = Rede(rps=4)
 
 
-def indice():
+def indice(refazer=False):
     pasta = os.path.join(RAIZ_ESTADUAIS, UF, "_indice")
     arq = os.path.join(pasta, "legislacoes.json")
-    if os.path.exists(arq):
+    if os.path.exists(arq) and not refazer:
         return json.load(open(arq, encoding="utf-8"))
     itens = []
     for tid in TIPOS:
@@ -81,9 +92,10 @@ def processar(it):
 
 
 if __name__ == "__main__":
-    itens = indice()
+    itens = indice(refazer="--refazer" in sys.argv)
     itens.sort(key=lambda i: (str(i["ano"]), i["data_legislacao"][3:5], i["data_legislacao"][:2]), reverse=True)
     print(f"[{UF}] {len(itens)} normas no índice", flush=True)
-    if len(sys.argv) > 1:
-        itens = itens[: int(sys.argv[1])]
+    limite = [a for a in sys.argv[1:] if a.isdigit()]
+    if limite:
+        itens = itens[: int(limite[0])]
     executar(UF, itens, processar)
