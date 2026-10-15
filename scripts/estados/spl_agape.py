@@ -31,6 +31,11 @@ CONFIG = {
             "4": ("leis-complementares", "Lei Complementar", ["LEC", "LC"]),
             "3": ("leis-ordinarias", "Lei Ordinária", ["LEI"]),
             "8": ("leis-delegadas", "Lei Delegada", ["LED", "LD"]),
+            # confirmados lendo a epígrafe de uma norma de cada tipo. O tipo 10 é "Ato
+            # Administrativo", ato interno da Casa, e fica de fora de propósito.
+            "5": ("decretos-legislativos", "Decreto Legislativo", ["DEL", "DL"]),
+            "12": ("decretos-legislativos", "Decreto Legislativo", ["DLG", "DEL"]),
+            "7": ("resolucoes", "Resolução", ["RES", "R"]),
         },
     },
     "SE": {
@@ -42,6 +47,7 @@ CONFIG = {
             "4": ("leis-ordinarias", "Lei Ordinária", ["L", "LEI"]),
             "7": ("decretos-lei", "Decreto-Lei", ["DL"]),
             "8": ("leis-delegadas", "Lei Delegada", ["LD"]),
+            "6": ("resolucoes", "Resolução", ["RES", "R"]),
         },
     },
 }
@@ -169,7 +175,7 @@ def processar(it):
 
 
 if __name__ == "__main__":
-    itens = indice()
+    itens = indice()  # o cache é por (tipo, ano): tipo novo entra sozinho, sem --refazer
     itens.sort(key=lambda i: (i.get("Ano") or "", int(re.sub(r"\D", "", i.get("Numero") or "0") or 0)), reverse=True)
     print(f"[{UF}] {len(itens)} normas no índice", flush=True)
     if len(sys.argv) > 2:

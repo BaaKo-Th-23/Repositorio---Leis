@@ -17,6 +17,8 @@ B = "https://www.al.rn.leg.br"
 LISTAS = {
     "leis-ordinarias": ("leis-ordinarias", "Lei Ordinária", "lei"),
     "leis-complementares": ("leis-complementares", "Lei Complementar", "lc"),
+    # a Assembleia publica também as resoluções da Casa nesta mesma forma de listagem
+    "resolucoes": ("resolucoes", "Resolução", "res"),
 }
 CONSTITUICAO = f"{B}/documentos/Constituicao_Estadual-2023 - 2024.pdf"
 ITEM = re.compile(r"<li class=\"list-group-item\">\s*<a href='([^']+)'[^>]*>\s*(?:<i[^>]*></i>)?\s*(.*?)</a>\s*(?:<br\s*/?>)?(.*?)</li>", re.S)
@@ -27,10 +29,10 @@ def limpar(s):
     return " ".join(htmllib.unescape(re.sub(r"<[^>]+>", " ", s)).split())
 
 
-def indice():
+def indice(refazer=False):
     pasta = os.path.join(RAIZ_ESTADUAIS, UF, "_indice")
     arq = os.path.join(pasta, "listas.json")
-    if os.path.exists(arq):
+    if os.path.exists(arq) and not refazer:
         return json.load(open(arq, encoding="utf-8"))
     itens = {}
     for lista in LISTAS:
@@ -92,8 +94,9 @@ def processar(it):
 
 
 if __name__ == "__main__":
-    itens = indice()
+    itens = indice(refazer="--refazer" in sys.argv)
     print(f"[{UF}] {len(itens)} normas no índice", flush=True)
-    if len(sys.argv) > 1:
-        itens = itens[: int(sys.argv[1])]
+    limite = [a for a in sys.argv[1:] if a.isdigit()]
+    if limite:
+        itens = itens[: int(limite[0])]
     executar(UF, itens, processar, workers=3)

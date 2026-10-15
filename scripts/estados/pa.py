@@ -18,6 +18,9 @@ TIPOS = {
     "Emendas Constitucionais Estaduais": ("emendas-constitucionais", "Emenda Constitucional", "ec"),
     "Lei Complementar": ("leis-complementares", "Lei Complementar", "lc"),
     "Lei Ordinária": ("leis-ordinarias", "Lei Ordinária", "lei"),
+    # a listagem do Banco de Leis traz também estes dois, que ficavam de fora
+    "Decreto Estadual": ("decretos", "Decreto", "dec"),
+    "Decreto Legislativo": ("decretos-legislativos", "Decreto Legislativo", "dlg"),
 }
 rede = Rede(rps=3)
 LINHA = re.compile(
@@ -27,10 +30,10 @@ LINHA = re.compile(
 )
 
 
-def indice():
+def indice(refazer=False):
     pasta = os.path.join(RAIZ_ESTADUAIS, UF, "_indice")
     arq = os.path.join(pasta, "banco.json")
-    if os.path.exists(arq):
+    if os.path.exists(arq) and not refazer:
         return json.load(open(arq, encoding="utf-8"))
     st, dados, _ = rede.get(f"{BASE}/index.php?p=1")
     ultima = max(int(p) for p in re.findall(r"[?&]p=(\d+)", decodificar(dados)))
@@ -118,8 +121,9 @@ def processar(it):
 
 
 if __name__ == "__main__":
-    itens = indice()
+    itens = indice(refazer="--refazer" in sys.argv)
     print(f"[{UF}] {len(itens)} leis no índice", flush=True)
-    if len(sys.argv) > 1:
-        itens = itens[: int(sys.argv[1])]
+    limite = [a for a in sys.argv[1:] if a.isdigit()]
+    if limite:
+        itens = itens[: int(limite[0])]
     executar(UF, itens, processar, workers=3)
