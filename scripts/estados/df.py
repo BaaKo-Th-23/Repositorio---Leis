@@ -1,8 +1,18 @@
 """Distrito Federal — SINJ-DF (Sistema Integrado de Normas Jurídicas do DF).
 
-Índice: ResultadoDePesquisaNormaDatatable.ashx filtrando por tipo (Lei, LC, Lei Orgânica, Emendas, Decreto-Lei).
+Índice: ResultadoDePesquisaNormaDatatable.ashx **sem filtro de tipo**, porque o próprio registro
+traz `nm_tipo_norma`. A primeira versão filtrava por código de tipo e só pedia as cinco espécies de
+lei; o SINJ tem 125 mil normas, das quais 49 mil decretos, 32 mil portarias e 5 mil resoluções —
+todo o infralegal distrital, que o plano (scripts/plano.py) cobre. Paginar a base inteira e
+classificar pelo nome do tipo é mais simples e não exige descobrir código nenhum.
+
 Texto: /sinj/Norma/{ch_norma}/{arquivo}, preferindo o texto compilado (ar_atualizado).
+
+  python3 -I scripts/estados/df.py              # índice (em cache) e baixa o que falta
+  python3 -I scripts/estados/df.py --refazer    # refaz o índice antes de baixar
+  python3 -I scripts/estados/df.py 50           # só as 50 normas mais recentes (teste)
 """
+import collections
 import json
 import os
 import sys
@@ -13,20 +23,45 @@ from comum import RAIZ_ESTADUAIS, Rede, caminhos, documento_para_md, executar, g
 
 UF = "DF"
 BASE = "https://www.sinj.df.gov.br/sinj"
+# nm_tipo_norma do SINJ -> (pasta, tipo canônico, prefixo do arquivo).
+# Os cinco primeiros prefixos são os que o acervo já gravou e não podem mudar: é por eles que uma
+# nova rodada reconhece o que já existe e pula.
 TIPOS = {
-    "48000000": ("lei-organica", "Lei Orgânica", "lodf"),
-    "36000000": ("emendas-lei-organica", "Emenda à Lei Orgânica", "elo"),
-    "47000000": ("leis-complementares", "Lei Complementar", "lc"),
-    "46000000": ("leis-ordinarias", "Lei Ordinária", "lei"),
-    "30000000": ("decretos-lei", "Decreto-Lei", "dl"),
+    "Lei Orgânica": ("lei-organica", "Lei Orgânica", "lodf"),
+    "Emenda à Lei Orgânica": ("emendas-lei-organica", "Emenda à Lei Orgânica", "elo"),
+    "Lei Complementar": ("leis-complementares", "Lei Complementar", "lc"),
+    "Lei": ("leis-ordinarias", "Lei Ordinária", "lei"),
+    "Decreto Lei": ("decretos-lei", "Decreto-Lei", "dl"),
+    "Decreto": ("decretos", "Decreto", "dec"),
+    "Decreto Executivo": ("decretos", "Decreto", "dec-exec"),
+    "Decreto Legislativo": ("decretos-legislativos", "Decreto Legislativo", "dlg"),
+    "Resolução": ("resolucoes", "Resolução", "res"),
+    "Resolução Normativa": ("resolucoes", "Resolução", "res-norm"),
+    "Resolução Administrativa": ("resolucoes", "Resolução", "res-adm"),
+    "Instrução Normativa": ("instrucoes-normativas", "Instrução Normativa", "in"),
+    "Portaria": ("portarias", "Portaria", "port"),
+    "Portaria Conjunta": ("portarias", "Portaria", "port-conj"),
+    "Portaria Normativa": ("portarias", "Portaria", "port-norm"),
+    "Deliberação": ("deliberacoes", "Deliberação", "delib"),
+    "Parecer Normativo": ("pareceres-normativos", "Parecer Normativo", "pn"),
+    "Súmula": ("sumulas", "Súmula", "sum"),
+    "Súmula Administrativa": ("sumulas", "Súmula", "sum-adm"),
+    "Regimento Interno": ("regimentos", "Regimento Interno", "ri"),
+    "Provimento": ("provimentos", "Provimento", "prov"),
 }
+# O que o SINJ guarda e não é norma de caráter geral: ordem de serviço, ato de mesa diretora,
+# despacho, decisão em processo, ata, edital, parecer em caso concreto, nota técnica, plano. E as
+# ações de controle concentrado (ADI, ADPF), que são processo judicial, não norma distrital.
 rede = Rede(rps=3)
 
 
 def post_datatable(ch_tipo, inicio, tamanho):
+    """Uma página do resultado. `ch_tipo` None traz a base inteira, de todos os tipos."""
     import urllib.request
 
-    url = f"{BASE}/ashx/Datatable/ResultadoDePesquisaNormaDatatable.ashx?tipo_pesquisa=norma&ch_tipo_norma={ch_tipo}"
+    url = f"{BASE}/ashx/Datatable/ResultadoDePesquisaNormaDatatable.ashx?tipo_pesquisa=norma"
+    if ch_tipo:
+        url += f"&ch_tipo_norma={ch_tipo}"
     corpo = urllib.parse.urlencode(
         {"bbusca": "sinj_norma", "sEcho": "1", "iDisplayStart": inicio, "iDisplayLength": tamanho}
     ).encode()
@@ -41,26 +76,31 @@ def post_datatable(ch_tipo, inicio, tamanho):
     return json.loads(dados)
 
 
-def indice():
+def indice(refazer=False):
     pasta = os.path.join(RAIZ_ESTADUAIS, UF, "_indice")
     arq = os.path.join(pasta, "sinj.json")
-    if os.path.exists(arq):
+    if os.path.exists(arq) and not refazer:
         return json.load(open(arq, encoding="utf-8"))
-    normas = {}
-    for ch, (_, nome, _) in TIPOS.items():
-        inicio = 0
-        while True:
-            d = post_datatable(ch, inicio, 1000)
-            lote = [x["_source"] for x in d.get("aaData") or []]
-            for s in lote:
-                if s.get("nm_tipo_norma") == nome:
-                    s["_ch_tipo"] = ch
-                    normas[s["ch_norma"]] = s
-            inicio += len(lote)
-            if not lote or inicio >= int(d.get("iTotalDisplayRecords") or 0):
-                break
-        print(f"[{UF}] índice {nome}: {sum(1 for s in normas.values() if s['_ch_tipo'] == ch)}", flush=True)
+    normas, inicio, total = {}, 0, None
+    while True:
+        d = post_datatable(None, inicio, 1000)
+        lote = [x["_source"] for x in d.get("aaData") or []]
+        if total is None:
+            total = int(d.get("iTotalDisplayRecords") or 0)
+            print(f"[{UF}] a base tem {total} normas", flush=True)
+        for s in lote:
+            if s.get("nm_tipo_norma") in TIPOS:
+                s["_ch_tipo"] = s["nm_tipo_norma"]
+                normas[s["ch_norma"]] = s
+        inicio += len(lote)
+        if not lote or inicio >= total:
+            break
+        if inicio % 10000 == 0:
+            print(f"[{UF}] índice {inicio}/{total}, {len(normas)} normas", flush=True)
     itens = list(normas.values())
+    por_tipo = collections.Counter(s["_ch_tipo"] for s in itens)
+    for t, n in por_tipo.most_common():
+        print(f"[{UF}]   {t}: {n}", flush=True)
     os.makedirs(pasta, exist_ok=True)
     with open(arq, "w", encoding="utf-8") as f:
         json.dump(itens, f, ensure_ascii=False)
@@ -118,9 +158,10 @@ def processar(s):
 
 
 if __name__ == "__main__":
-    itens = indice()
+    itens = indice(refazer="--refazer" in sys.argv)
     itens.sort(key=lambda s: "".join(reversed((s.get("dt_assinatura") or "").split("/"))), reverse=True)
     print(f"[{UF}] {len(itens)} normas no índice", flush=True)
-    if len(sys.argv) > 1:
-        itens = itens[: int(sys.argv[1])]
+    limite = [a for a in sys.argv[1:] if a.isdigit()]
+    if limite:
+        itens = itens[: int(limite[0])]
     executar(UF, itens, processar, workers=3)
