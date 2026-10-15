@@ -29,15 +29,35 @@ UA = "Mozilla/5.0 (compatible; constituicao-md/1.0)"
 API_NORMA = "https://normas.leg.br/api/public/normas?urn={}&tipo_documento=maior-detalhe"
 API_SENADO = "https://legis.senado.leg.br/dadosabertos/legislacao/{}.json"
 
-# tipo do Senado -> (pasta, prefixo do arquivo, tipo na URN LexML, nome legível)
+# tipo do Senado -> (pasta, prefixo do arquivo, autoridade e tipo na URN LexML, nome legível).
+# A autoridade quase sempre é `federal`, mas as resoluções pertencem à Casa que as editou — é o
+# que o próprio portal responde: `urn:lex:br:senado.federal:resolucao:2024-12-19;55`. Errar a
+# autoridade não perde a norma (há o recuo pela API do Senado, em `obter_metadados`), só gasta uma
+# requisição a mais por item.
 TIPOS = {
-    "LEI-n": ("leis-ordinarias", "lei", "lei", "Lei Ordinária"),
-    "LEI-sn": ("leis-ordinarias", "lei-sn", "lei", "Lei (não numerada)"),
-    "LCP": ("leis-complementares", "lcp", "lei.complementar", "Lei Complementar"),
-    "LDL": ("leis-delegadas", "ldl", "lei.delegada", "Lei Delegada"),
-    "LCT": ("leis-constitucionais", "lct", "lei.constitucional", "Lei Constitucional"),
-    "DEL": ("decretos-lei", "del", "decreto.lei", "Decreto-Lei"),
-    "DEL-mpv": ("decretos-lei", "del", "decreto.lei", "Decreto-Lei"),
+    "LEI-n": ("leis-ordinarias", "lei", "federal", "lei", "Lei Ordinária"),
+    "LEI-sn": ("leis-ordinarias", "lei-sn", "federal", "lei", "Lei (não numerada)"),
+    "LCP": ("leis-complementares", "lcp", "federal", "lei.complementar", "Lei Complementar"),
+    "LDL": ("leis-delegadas", "ldl", "federal", "lei.delegada", "Lei Delegada"),
+    "LCT": ("leis-constitucionais", "lct", "federal", "lei.constitucional", "Lei Constitucional"),
+    "DEL": ("decretos-lei", "del", "federal", "decreto.lei", "Decreto-Lei"),
+    "DEL-mpv": ("decretos-lei", "del", "federal", "decreto.lei", "Decreto-Lei"),
+    "EMC-n": ("emendas-constitucionais", "emc", "federal", "emenda.constitucional",
+              "Emenda Constitucional"),
+    "EMR": ("emendas-constitucionais", "emr", "federal", "emenda.constitucional.revisao",
+            "Emenda Constitucional de Revisão"),
+    "DEC-n": ("decretos", "dec", "federal", "decreto", "Decreto"),
+    "DEC-sn": ("decretos-nao-numerados", "dec-sn", "federal", "decreto", "Decreto (não numerado)"),
+    "DLG": ("decretos-legislativos", "dlg", "federal", "decreto.legislativo", "Decreto Legislativo"),
+    "DPL-n": ("decretos-legislativos", "dpl", "federal", "decreto.legislativo",
+              "Decreto do Poder Legislativo"),
+    "MPV-ss": ("medidas-provisorias", "mpv", "federal", "medida.provisoria", "Medida Provisória"),
+    "MPV-n": ("medidas-provisorias", "mpv", "federal", "medida.provisoria", "Medida Provisória"),
+    "RSF": ("resolucoes-senado", "rsf", "senado.federal", "resolucao", "Resolução do Senado Federal"),
+    "RCN": ("resolucoes-congresso", "rcn", "congresso.nacional", "resolucao",
+            "Resolução do Congresso Nacional"),
+    "RRC": ("resolucoes-congresso", "rrc", "congresso.nacional", "resolucao",
+            "Resolução da Revisão Constitucional"),
 }
 
 
@@ -97,15 +117,17 @@ def carregar_indice(tipos):
 
 
 def montar(d):
-    pasta, prefixo, tipo_urn, nome = TIPOS[d["tipo"]]
+    pasta, prefixo, autoridade, tipo_urn, nome = TIPOS[d["tipo"]]
     dia, mes, ano = d["dataassinatura"].split("/")
     data = f"{ano}-{mes}-{dia}"
-    if d["tipo"] == "LEI-sn":
+    # as séries "sem número" (lei e decreto não numerados) se identificam pela data mais um
+    # sequencial do próprio Senado, que entra na URN como `seq-sf-N`
+    if d["tipo"].endswith("-sn") or d["tipo"] == "LEI-sn":
         seq = d.get("sequencia", "0")
-        urn = f"urn:lex:br:federal:{tipo_urn}:{data};seq-sf-{seq}"
+        urn = f"urn:lex:br:{autoridade}:{tipo_urn}:{data};seq-sf-{seq}"
         slug = f"{prefixo}-{data}-s{seq}"
     else:
-        urn = f"urn:lex:br:federal:{tipo_urn}:{data};{d['numero']}"
+        urn = f"urn:lex:br:{autoridade}:{tipo_urn}:{data};{d['numero']}"
         slug = f"{prefixo}-{d['numero']}-{data}"
     md = os.path.join(RAIZ, pasta, ano, slug + ".md")
     fonte = os.path.join(RAIZ, "_fonte", pasta, ano, slug + ".html.gz")

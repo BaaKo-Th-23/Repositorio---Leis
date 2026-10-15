@@ -33,7 +33,7 @@ PLANO = [
          "https://www.planalto.gov.br"),
     Item("Constituição Federal", "Constituições históricas (1824, 1891, 1934, 1937, 1946, 1967, 1969)",
          "federal/constituicoes-historicas", 7, 1, "https://www.planalto.gov.br"),
-    Item("Constituição Federal", "Emendas constitucionais e de revisão", "federal/emendas-constitucionais", 143, 1,
+    Item("Constituição Federal", "Emendas constitucionais e de revisão", "federal/emendas-constitucionais", 172, 1,
          "https://normas.leg.br"),
 
     Item("Leis federais", "Leis ordinárias (1822–hoje)", "federal/leis-ordinarias", 16700, 1,
@@ -44,7 +44,7 @@ PLANO = [
          "normas.leg.br"),
 
     # ------------------------------------------------------------------------- Atos do Congresso
-    Item("Atos do Congresso", "Decretos legislativos", "federal/decretos-legislativos", 20000, 1,
+    Item("Atos do Congresso", "Decretos legislativos", "federal/decretos-legislativos", 15950, 1,
          "normas.leg.br"),
     Item("Atos do Congresso", "Medidas provisórias (originais e reedições)", "federal/medidas-provisorias", 3500, 1,
          "Planalto + normas.leg.br"),
@@ -52,7 +52,8 @@ PLANO = [
          "normas.leg.br"),
     Item("Atos do Congresso", "Resoluções da Câmara dos Deputados", "federal/resolucoes-camara", 1500, 1,
          "camara.leg.br"),
-    Item("Atos do Congresso", "Resoluções do Congresso Nacional", "federal/resolucoes-congresso", 300, 1,
+    Item("Atos do Congresso", "Resoluções do Congresso Nacional e da Revisão Constitucional",
+         "federal/resolucoes-congresso", 300, 1,
          "normas.leg.br"),
     Item("Atos do Congresso", "Regimentos internos (Senado, Câmara, Congresso)", "federal/regimentos", 3, 1,
          "senado.leg.br, camara.leg.br"),
@@ -62,7 +63,7 @@ PLANO = [
          "federal/decretos", 112500, 1, "normas.leg.br + Planalto"),
     Item("Decretos do Executivo federal", "Decretos não numerados", "federal/decretos-nao-numerados", 15000, 1,
          "Planalto"),
-    Item("Decretos do Executivo federal", "Regulamentos consolidados (RIR, RIPI, Aduaneiro, RPS, RGPS)",
+    Item("Decretos do Executivo federal", "Regulamentos consolidados (RIR, RIPI, Aduaneiro, RPS, PAF)",
          "federal/regulamentos", 20, 1, "Planalto"),
 
     # ------------------------------------------------------------------ Tratados internacionais

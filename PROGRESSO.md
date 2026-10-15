@@ -4,21 +4,21 @@ Gerado por `scripts/progresso.py` em 15/10/2026. O escopo está em
 `scripts/plano.py`; os números de **meta** são estimativas do tamanho de cada série, não
 contagens oficiais. Séries encerradas (decretos-leis, leis delegadas) marcam 100%.
 
-**323.849 de ~11.491.181 normas — 2.8%**
+**324.033 de ~11.487.160 normas — 2.8%**
 
 ![progresso](progresso.svg)
 
 ## Fase 1 — esfera federal completa
 
-Fonte única (normas.leg.br, Planalto, Senado). **323.849 de ~539.321 — 60.0%**
+Fonte única (normas.leg.br, Planalto, Senado). **324.033 de ~535.300 — 60.5%**
 
-### Constituição Federal — 1 / ~151 (1%)
+### Constituição Federal — 180 / ~180 (100%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
 | ✅ | Constituição de 1988 (texto vigente) | 1 | 1 | `constituicao.md` | https://www.planalto.gov.br |
-| ⬜️ | Constituições históricas (1824, 1891, 1934, 1937, 1946, 1967, 1969) | 0 | 7 | `federal/constituicoes-historicas` | https://www.planalto.gov.br |
-| ⬜️ | Emendas constitucionais e de revisão | 0 | 143 | `federal/emendas-constitucionais` | https://normas.leg.br |
+| ✅ | Constituições históricas (1824, 1891, 1934, 1937, 1946, 1967, 1969) | 7 | 7 | `federal/constituicoes-historicas` | https://www.planalto.gov.br |
+| ✅ | Emendas constitucionais e de revisão | 172 | 172 | `federal/emendas-constitucionais` | https://normas.leg.br |
 
 ### Leis federais — 29.184 / ~29.200 (100%)
 
@@ -29,24 +29,24 @@ Fonte única (normas.leg.br, Planalto, Senado). **323.849 de ~539.321 — 60.0%*
 | ✅ | Leis delegadas (série encerrada) | 13 | 13 | `federal/leis-delegadas` | normas.leg.br |
 | ✅ | Decretos-leis (série encerrada em 1988) | 12.250 | 12.250 | `federal/decretos-lei` | normas.leg.br |
 
-### Atos do Congresso — 0 / ~29.303 (0%)
+### Atos do Congresso — 0 / ~25.253 (0%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| ⬜️ | Decretos legislativos | 0 | 20.000 | `federal/decretos-legislativos` | normas.leg.br |
+| ⬜️ | Decretos legislativos | 0 | 15.950 | `federal/decretos-legislativos` | normas.leg.br |
 | ⬜️ | Medidas provisórias (originais e reedições) | 0 | 3.500 | `federal/medidas-provisorias` | Planalto + normas.leg.br |
 | ⬜️ | Resoluções do Senado Federal | 0 | 4.000 | `federal/resolucoes-senado` | normas.leg.br |
 | ⬜️ | Resoluções da Câmara dos Deputados | 0 | 1.500 | `federal/resolucoes-camara` | camara.leg.br |
-| ⬜️ | Resoluções do Congresso Nacional | 0 | 300 | `federal/resolucoes-congresso` | normas.leg.br |
+| ⬜️ | Resoluções do Congresso Nacional e da Revisão Constitucional | 0 | 300 | `federal/resolucoes-congresso` | normas.leg.br |
 | ⬜️ | Regimentos internos (Senado, Câmara, Congresso) | 0 | 3 | `federal/regimentos` | senado.leg.br, camara.leg.br |
 
-### Decretos do Executivo federal — 0 / ~127.520 (0%)
+### Decretos do Executivo federal — 5 / ~127.520 (0%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
 | ⬜️ | Decretos numerados (1889–hoje, as duas séries) | 0 | 112.500 | `federal/decretos` | normas.leg.br + Planalto |
 | ⬜️ | Decretos não numerados | 0 | 15.000 | `federal/decretos-nao-numerados` | Planalto |
-| ⬜️ | Regulamentos consolidados (RIR, RIPI, Aduaneiro, RPS, RGPS) | 0 | 20 | `federal/regulamentos` | Planalto |
+| 🟦 | Regulamentos consolidados (RIR, RIPI, Aduaneiro, RPS, PAF) | 5 | 20 | `federal/regulamentos` | Planalto |
 
 ### Tratados internacionais — 0 / ~5.680 (0%)
 
