@@ -63,7 +63,8 @@ MANUAL = {
 def ano_ok(texto):
     if not re.fullmatch(r"\d{4}", texto or ""):
         return False
-    return 1800 <= int(texto) <= datetime.date.today().year
+    # 1821 é o ano da norma mais antiga do acervo; nada anterior é data de lei brasileira
+    return 1821 <= int(texto) <= datetime.date.today().year
 
 
 def plausivel(data):

@@ -33,7 +33,11 @@ Por tipo de instrumento:
 | Emenda Constitucional | 2.013 | | Decreto-Lei Complementar | 23 |
 | Lei Delegada | 550 | | Lei Constitucional | 19 |
 
-As contagens por estado, com o que ficou de fora e por quê, estão em **[COBERTURA.md](COBERTURA.md)**.
+As contagens por estado, com o que ficou de fora e por quê, estão em
+**[COBERTURA.md](COBERTURA.md)**. Para ver em gráficos — normas por estado, por década, por tema,
+as palavras mais frequentes nas ementas e quem mais assinou — abra
+**[estatisticas.html](estatisticas.html)** no navegador. É um arquivo único, sem servidor nem
+dependência externa, gerado por `scripts/estatisticas.py`.
 
 ---
 
@@ -42,7 +46,7 @@ As contagens por estado, com o que ficou de fora e por quê, estão em **[COBERT
 ```
 constituicao.md                      Constituição Federal de 1988 (texto vigente, Planalto)
 federal/
-  leis-ordinarias/AAAA/*.md          Leis federais, de 1821 a hoje
+  leis-ordinarias/AAAA/*.md          Leis federais, de 1822 a hoje
   leis-complementares/AAAA/*.md
   leis-delegadas/  decretos-lei/
 estaduais/UF/
@@ -51,6 +55,7 @@ estaduais/UF/
   leis-ordinarias/  leis-complementares/  leis-delegadas/  decretos-lei/
 scripts/                             o código que baixa, converte e audita
 COBERTURA.md                         números por esfera e tipo, e as lacunas
+estatisticas.html                    página com gráficos sobre o acervo
 ```
 
 Os nomes de pasta são os mesmos em todas as esferas. Algumas unidades têm pastas a mais, porque a
@@ -110,7 +115,7 @@ a fonte oficial serve um documento vazio para eles e só os metadados foram pres
 
 ## O histórico do git
 
-Cada commit é uma norma, em ordem cronológica, de 1800 até hoje. São **323.851 commits** e
+Cada commit é uma norma, em ordem cronológica, de 1822 até hoje. São **323.851 commits** e
 **5.414 autores**. Os que mais assinaram:
 
 | Normas | Signatário |
@@ -244,6 +249,7 @@ python3 -I scripts/normalizar.py                # pastas, tipos e cabeçalhos ca
 python3 -I scripts/corrigir_ocr.py              # ordinais do OCR
 python3 -I scripts/corrigir_datas_invalidas.py  # datas que não existem no calendário
 python3 -I scripts/relatorio.py                 # atualiza COBERTURA.md
+python3 -I scripts/estatisticas.py              # atualiza estatisticas.html
 
 # remontar o histórico do git
 python3 -I scripts/montar_repositorio.py --saida /caminho/do/repo
