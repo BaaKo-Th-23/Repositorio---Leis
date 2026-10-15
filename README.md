@@ -7,6 +7,17 @@ origem de cada texto.
 O histórico do git é a própria linha do tempo: **cada commit é uma norma**, assinada por quem a
 promulgou e datada do dia em que foi aprovada.
 
+O objetivo é maior do que o que já está aqui: **todo o ordenamento jurídico brasileiro** — leis,
+decretos, atos infralegais das agências e órgãos reguladores, tratados internalizados,
+jurisprudência vinculante e o direito estadual e municipal — num lugar só, em texto simples, de
+graça, para qualquer pessoa.
+
+[![progresso](progresso.svg)](PROGRESSO.md)
+
+O escopo completo está em [`scripts/plano.py`](scripts/plano.py) e a medição item a item — o que
+já tem, o que falta, de que fonte vem e em qual pasta fica — em **[PROGRESSO.md](PROGRESSO.md)**,
+gerados por `scripts/progresso.py`.
+
 > [!IMPORTANT]
 > Os textos têm caráter informativo e **não substituem a publicação no Diário Oficial**. São
 > conversões automáticas e, em 17.016 arquivos, OCR de PDF escaneado. Confira sempre a fonte
@@ -53,8 +64,15 @@ estaduais/UF/
   constituicao/                      Constituição estadual
   emendas-constitucionais/
   leis-ordinarias/  leis-complementares/  leis-delegadas/  decretos-lei/
+reguladores/<orgao>/<tipo>/          atos infralegais federais (CONTRAN, ANVISA, RFB, CMN…)
+jurisprudencia/<tribunal>/           súmulas, temas vinculantes e controle concentrado
+tratados/                            tratados internacionais internalizados
+municipais/UF/<municipio>/           legislação municipal
 scripts/                             o código que baixa, converte e audita
+scripts/plano.py                     o escopo: todo tipo de norma que deve estar aqui
 COBERTURA.md                         números por esfera e tipo, e as lacunas
+PROGRESSO.md                         o plano medido contra o acervo, item a item
+progresso.svg                        a imagem de progresso do topo deste README
 estatisticas.html                    página com gráficos sobre o acervo
 ```
 
@@ -193,13 +211,19 @@ guardam o original em `_fonte/`. **Bloqueios de acesso automatizado não são co
 
 ---
 
-## O que não está aqui
+## O que ainda não está aqui
 
-- **Legislação municipal.** Mais de 5.500 municípios, sem fonte centralizada.
-- **Decretos, resoluções, portarias e atos infralegais.** O foco são constituições, emendas e leis
-  (ordinárias, complementares, delegadas) e decretos-leis.
-- Normas cujo texto não existe na fonte ou não pôde ser obtido — cada caso tem uma linha, com o
-  motivo, no `_falhas.jsonl` da respectiva pasta.
+O plano inteiro, com meta e fonte por tipo de norma, está em **[PROGRESSO.md](PROGRESSO.md)**. Em
+resumo, o que falta se organiza em três fases:
+
+| Fase | O quê | Por que nessa ordem |
+| --- | --- | --- |
+| **1** | Fechar a esfera federal: emendas constitucionais, decretos do Executivo (as duas séries), decretos legislativos, medidas provisórias, resoluções das Casas, regulamentos consolidados (RIR, RIPI, Aduaneiro, RPS) e tratados promulgados | fonte única e já conhecida — `normas.leg.br` e Planalto, a mesma infraestrutura do baixador federal |
+| **2** | O infralegal, onde mora a norma que de fato se aplica: CONTRAN e o Manual de Sinalização, NRs do trabalho, RDC da ANVISA, IN da Receita, resoluções do CMN e do Banco Central, CONAMA, CNE, CNJ, TSE, conselhos profissionais; a jurisprudência vinculante (súmulas, repercussão geral, repetitivos, controle concentrado); e o infralegal estadual, com destaque para os 27 RICMS | uma fonte por órgão, cada uma com seu formato — é trabalho de muitos raspadores pequenos |
+| **3** | Direito municipal: leis orgânicas, planos diretores, códigos tributários, de obras e de posturas, e as leis das câmaras — começando pelas 27 capitais | 5.570 fontes sem índice central; sozinho é maior que todo o resto somado |
+
+Além disso, ficam de fora as normas cujo texto não existe na fonte ou não pôde ser obtido — cada
+caso tem uma linha, com o motivo, no `_falhas.jsonl` da respectiva pasta.
 
 ### Pendências
 
@@ -249,6 +273,7 @@ python3 -I scripts/normalizar.py                # pastas, tipos e cabeçalhos ca
 python3 -I scripts/corrigir_ocr.py              # ordinais do OCR
 python3 -I scripts/corrigir_datas_invalidas.py  # datas que não existem no calendário
 python3 -I scripts/relatorio.py                 # atualiza COBERTURA.md
+python3 -I scripts/progresso.py                 # atualiza PROGRESSO.md e progresso.svg
 python3 -I scripts/estatisticas.py              # atualiza estatisticas.html
 
 # remontar o histórico do git
