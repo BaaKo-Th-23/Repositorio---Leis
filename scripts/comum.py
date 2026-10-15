@@ -148,10 +148,15 @@ _ACENTOS = str.maketrans("áàâãäéèêëíìîïóòôõöúùûüçÁÀÂÃ
                          "aaaaaeeeeiiiiooooouuuucAAAAAEEEEIIIIOOOOOUUUUC")
 
 
+def normalizar_chave(s):
+    """Minúsculas, sem acento e com um espaço entre palavras — a forma das chaves de CANONICO."""
+    return re.sub(r"[^a-z0-9]+", " ", (s or "").translate(_ACENTOS).lower()).strip()
+
+
 def canonico(bruto):
     """(pasta, tipo) canônicos a partir do nome que a fonte usa. Avisa quando não reconhece."""
     limpo = re.sub(r"\s*\(\d{4}\)\s*$", "", bruto)  # "Constituição Estadual (1891)"
-    chave = re.sub(r"[^a-z0-9]+", " ", limpo.translate(_ACENTOS).lower()).strip()
+    chave = normalizar_chave(limpo)
     if chave in CANONICO:
         return CANONICO[chave]
     print(f"[aviso] tipo fora do vocabulário canônico: {bruto!r}", flush=True)

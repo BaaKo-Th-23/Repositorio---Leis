@@ -11,8 +11,11 @@ MESES = {m: i + 1 for i, m in enumerate(
     "janeiro fevereiro março abril maio junho julho agosto setembro outubro novembro dezembro".split())}
 MESES.update({"marco": 3, "setembro": 9})
 
+# os tipos infralegais entraram com o acervo do Diário Oficial: a epígrafe de uma resolução ou
+# de uma portaria tem a mesma forma da de uma lei ("RESOLUÇÃO ANM Nº 249, DE 13 DE OUTUBRO DE 2026")
 TIPO_EPIGRAFE = re.compile(
-    r"\b(LEI|EMENDA|DECRETO|CONSTITUI[ÇC][ÃA]O|ATO)\b", re.I)
+    r"\b(LEI|EMENDA|DECRETO|CONSTITUI[ÇC][ÃA]O|ATO|RESOLU[ÇC][ÃA]O|PORTARIA|INSTRU[ÇC][ÃA]O"
+    r"|CIRCULAR|DELIBERA[ÇC][ÃA]O|PROVIMENTO|S[ÚU]MULA|PARECER)\b", re.I)
 # "Nº 38, DE 16 DE DEZEMBRO DE 2013" / "Nº 07, 29 de dezembro de 1993"
 POR_EXTENSO = re.compile(
     r"(?:DE\s+)?(\d{1,2})[º°]?\s+DE\s+([A-Za-zÀ-ÿ]+)\s+DE\s+(\d{4})", re.I)

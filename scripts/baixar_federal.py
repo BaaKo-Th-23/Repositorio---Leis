@@ -52,6 +52,7 @@ TIPOS = {
     "DPL-n": ("decretos-legislativos", "dpl", "federal", "decreto.legislativo",
               "Decreto do Poder Legislativo"),
     "MPV-ss": ("medidas-provisorias", "mpv", "federal", "medida.provisoria", "Medida Provisória"),
+    "MPV-cs": ("medidas-provisorias", "mpv", "federal", "medida.provisoria", "Medida Provisória"),
     "MPV-n": ("medidas-provisorias", "mpv", "federal", "medida.provisoria", "Medida Provisória"),
     "RSF": ("resolucoes-senado", "rsf", "senado.federal", "resolucao", "Resolução do Senado Federal"),
     "RCN": ("resolucoes-congresso", "rcn", "congresso.nacional", "resolucao",
@@ -127,8 +128,12 @@ def montar(d):
         urn = f"urn:lex:br:{autoridade}:{tipo_urn}:{data};seq-sf-{seq}"
         slug = f"{prefixo}-{data}-s{seq}"
     else:
-        urn = f"urn:lex:br:{autoridade}:{tipo_urn}:{data};{d['numero']}"
-        slug = f"{prefixo}-{d['numero']}-{data}"
+        # medida provisória reeditada: o número oficial carrega a reedição ("1.463-2"), e é assim
+        # que ela entra na URN. Antes da EC 32/2001 uma MP podia ser reeditada dezenas de vezes,
+        # e cada reedição é uma norma distinta, com texto próprio.
+        numero = d["numero"] + (f"-{d['reedicao']}" if d.get("reedicao") else "")
+        urn = f"urn:lex:br:{autoridade}:{tipo_urn}:{data};{numero}"
+        slug = f"{prefixo}-{numero}-{data}"
     md = os.path.join(RAIZ, pasta, ano, slug + ".md")
     fonte = os.path.join(RAIZ, "_fonte", pasta, ano, slug + ".html.gz")
     return {"urn": urn, "slug": slug, "md": md, "fonte": fonte, "data": data, "nome": nome}
