@@ -86,7 +86,7 @@ ORGAOS = {
     "superintendencia nacional de previdencia complementar": "previc",
     "secretaria especial da receita federal": "rfb",
     "receita federal do brasil": "rfb",
-    "procuradoria-geral da fazenda nacional": "pgfn",
+    "procuradoria geral da fazenda nacional": "pgfn",
     "secretaria do tesouro nacional": "stn",
     "conselho administrativo de recursos fiscais": "carf",
     "conselho nacional de politica fazendaria": "confaz",
@@ -105,8 +105,21 @@ ORGAOS = {
     "instituto do patrimonio historico": "iphan",
     "conselho administrativo de defesa economica": "cade",
     "conselho de controle de atividades financeiras": "coaf",
-    "controladoria-geral da uniao": "cgu",
+    "controladoria geral da uniao": "cgu",
     "servico florestal brasileiro": "sfb",
+    "conselho nacional do ministerio publico": "cnmp",
+    "tribunal de contas da uniao": "tcu",
+    "defensoria publica da uniao": "dpu",
+    "ministerio publico da uniao": "mpu",
+    "conselho federal de contabilidade": "cfc",
+    "conselho federal de medicina": "conselhos-profissionais",
+    "conselho federal de enfermagem": "conselhos-profissionais",
+    "conselho federal de engenharia": "conselhos-profissionais",
+    "entidades de fiscalizacao do exercicio das profissoes": "conselhos-profissionais",
+    "conselho nacional de recursos hidricos": "ana",
+    "conselho nacional de politica energetica": "mme",
+    "advocacia geral da uniao": "agu",
+    "agencia nacional de aguas e saneamento": "ana",
 }
 
 # Ministérios: a pasta de recuo quando nenhum órgão específico casa. Mantém o número de pastas
@@ -146,8 +159,12 @@ MINISTERIOS = {
     "ministerio do empreendedorismo": "empreendedorismo",
     "ministerio da pesca": "pesca",
     "presidencia da republica": "presidencia",
-    "advocacia-geral da uniao": "agu",
     "banco nacional de desenvolvimento": "bndes",
+    "ministerio da agricultura e pecuaria": "mapa",
+    "ministerio da pesca e aquicultura": "pesca",
+    "ministerio das cidades": "cidades",
+    "poder judiciario": "poder-judiciario",
+    "ministerio da fazenda": "fazenda",
 }
 
 

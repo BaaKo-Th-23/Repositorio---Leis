@@ -5,3 +5,4 @@ _log*.txt
 .DS_Store
 scripts/bin/
 *.log
+*.tmp
