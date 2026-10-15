@@ -4,8 +4,8 @@
 Federal — convertidas de fontes oficiais para Markdown, com cabeçalho estruturado e link para a
 origem de cada texto.
 
-O histórico do git é a própria linha do tempo: **cada commit é uma norma**, assinada por quem a
-promulgou e datada do dia em que foi aprovada.
+O histórico do git é a própria linha do tempo: as 323.849 normas da base entraram **uma por
+commit**, assinadas por quem as promulgou e datadas do dia em que foram aprovadas.
 
 O objetivo é maior do que o que já está aqui: **todo o ordenamento jurídico brasileiro** — leis,
 decretos, atos infralegais das agências e órgãos reguladores, tratados internalizados,
@@ -133,8 +133,19 @@ a fonte oficial serve um documento vazio para eles e só os metadados foram pres
 
 ## O histórico do git
 
-Cada commit é uma norma, em ordem cronológica, de 1822 até hoje. São **323.851 commits** e
-**5.414 autores**. Os que mais assinaram:
+A base do histórico é uma linha do tempo da legislação: **323.851 commits**, um por norma, em
+ordem cronológica de 1822 até hoje, cada um assinado por quem promulgou a norma — **5.414
+autores**. Foi montada de uma vez só por `scripts/montar_repositorio.py`, com `git fast-import`.
+
+> [!NOTE]
+> **As normas que chegam depois entram em commits de lote**, um por coleta — "153.637 decretos
+> federais (1889–2026)" —, não mais um commit por norma. Reconstruir a linha do tempo a cada lote
+> significaria reescrever e reenviar meio milhão de commits para acrescentar texto novo; o custo
+> não se paga. A linha do tempo norma a norma continua no histórico e continua verdadeira para o
+> que ela cobre, e `montar_repositorio.py` continua funcionando para quem quiser gerá-la de novo,
+> do acervo inteiro, num repositório à parte.
+
+Os autores que mais assinaram, na base:
 
 | Normas | Signatário |
 | ---: | --- |
