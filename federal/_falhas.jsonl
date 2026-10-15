@@ -260,3 +260,20 @@
 {"urn": "urn:lex:br:federal:lei:2012-08-06;12701", "status": "sem_texto", "motivo": "a fonte serve um documento vazio (só metadados preservados)"}
 {"urn": "urn:lex:br:federal:lei:2009-12-21;12140", "status": "sem_texto", "motivo": "a fonte serve um documento vazio (só metadados preservados)"}
 {"id": "589230", "norma": "RRC-1-1994-02-24", "urn": "urn:lex:br:congresso.nacional:resolucao:1994-02-24;1", "status": "sem_texto"}
+{"id": "43664973", "norma": "DLG-327-2026-08-10", "urn": "urn:lex:br:federal:decreto.legislativo:2026-08-10;327", "status": "sem_texto"}
+{"id": "43665110", "norma": "DLG-331-2026-08-10", "urn": "urn:lex:br:federal:decreto.legislativo:2026-08-10;331", "status": "sem_texto"}
+{"id": "43445402", "norma": "DLG-175-2026-06-22", "urn": "urn:lex:br:federal:decreto.legislativo:2026-06-22;175", "status": "sem_texto"}
+{"id": "43383974", "norma": "DLG-89-2026-06-08", "urn": "urn:lex:br:federal:decreto.legislativo:2026-06-08;89", "status": "sem_texto"}
+{"id": "43315418", "norma": "DLG-49-2026-05-21", "urn": "urn:lex:br:federal:decreto.legislativo:2026-05-21;49", "status": "sem_texto"}
+{"id": "42900666", "norma": "DLG-15-2026-03-13", "erro": "'NoneType' object has no attribute 'get'", "status": "erro"}
+{"id": "41122870", "norma": "DLG-184-2025-07-09", "urn": "urn:lex:br:federal:decreto.legislativo:2025-07-09;184", "status": "sem_texto"}
+{"id": "41116770", "norma": "DLG-180-2025-07-07", "urn": "urn:lex:br:federal:decreto.legislativo:2025-07-07;180", "status": "sem_texto"}
+{"id": "39699746", "norma": "DLG-255-2024-09-23", "urn": "urn:lex:br:federal:decreto.legislativo:2024-09-23;255", "status": "sem_texto"}
+{"id": "39700664", "norma": "DLG-196-2024-09-23", "urn": "urn:lex:br:federal:decreto.legislativo:2024-09-23;196", "status": "sem_texto"}
+{"id": "39483239", "norma": "MPV-1254-2024-08-21", "urn": "urn:lex:br:federal:medida.provisoria:2024-08-21;1254", "status": "sem_texto"}
+{"id": "38326435", "norma": "DLG-28-2024-04-11", "urn": "urn:lex:br:federal:decreto.legislativo:2024-04-11;28", "status": "sem_texto"}
+{"id": "37874486", "norma": "MPV-1198-2023-11-27", "urn": "urn:lex:br:federal:medida.provisoria:2023-11-27;1198", "status": "sem_texto"}
+{"id": "37713715", "norma": "DLG-110-2023-10-11", "urn": "urn:lex:br:federal:decreto.legislativo:2023-10-11;110", "status": "sem_texto"}
+{"id": "37525458", "norma": "DLG-88-2023-08-24", "urn": "urn:lex:br:federal:decreto.legislativo:2023-08-24;88", "status": "sem_texto"}
+{"id": "35672990", "norma": "DLG-14-2022-04-13", "urn": "urn:lex:br:federal:decreto.legislativo:2022-04-13;14", "status": "sem_texto"}
+{"id": "35313024", "norma": "DLG-38-2021-12-20", "urn": "urn:lex:br:federal:decreto.legislativo:2021-12-20;38", "status": "sem_texto"}

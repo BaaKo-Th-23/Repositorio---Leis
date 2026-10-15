@@ -161,3 +161,18 @@
 {"id": "32116", "url": "https://www.al.sp.gov.br/repositorio/legislacao/lei/1948/lei-233-24.12.1948.pdf", "motivo": "só PDF", "status": "sem_texto"}
 {"item": "{'Data': '1945-12-27T00:00:00-03:00', 'Ementa': 'Dispõe sobre a fixação de vencimentos de cargo na Prefeitura Sanitária de Socorro', 'IdNorma': '67760', 'IdTema': '551', 'CadDO': 'Poder Executivo', 'DataDO': '2023-05-05 16:38:32', 'Numero': '15418', 'PagDO': '4', 'IdTipo': '25', 'Promulg': 'E', 'Sit", "erro": "[Errno 2] No such file or directory: '/Volumes/ExternalSSD/GitHub/constituicao/estaduais/SP/decretos-lei/1945/dl-15418-1945-12-27-id67760.md.tmp' -> '/Volumes/ExternalSSD/GitHub/constituicao/estaduais/SP/decretos-lei/1945/dl-15418-1945-12-27-id67760.md'", "status": "erro"}
 {"url": "https://www.al.sp.gov.br/norma/47808", "status": "sem_texto", "motivo": "a fonte serve um documento vazio (só metadados preservados)"}
+{"id": "210579", "http": 404, "motivo": "api", "status": "sem_texto"}
+{"id": "210281", "http": 404, "motivo": "api", "status": "sem_texto"}
+{"item": "{'Data': '2024-09-12T00:00:00-03:00', 'Ementa': 'Homologa sumariamente, por 180 (cento e oi\\xadtenta) dias, o decreto do Pre\\xadfeito do Município de Barrinha, que declarou Situação de Emer\\xadgência em áreas do Município.', 'IdNorma': '209961', 'IdTema': '551', 'CadDO': 'DOESP Executivo Seção 1', '", "erro": "[Errno 2] No such file or directory: '/Volumes/ExternalSSD/GitHub/constituicao/estaduais/SP/decretos/2024/dec-68857-2024-09-12-id209961.md.tmp' -> '/Volumes/ExternalSSD/GitHub/constituicao/estaduais/SP/decretos/2024/dec-68857-2024-09-12-id209961.md'", "status": "erro"}
+{"id": "209739", "motivo": "sem link de texto", "status": "sem_texto"}
+{"id": "209739", "motivo": "sem link de texto", "status": "sem_texto"}
+{"id": "209003", "motivo": "sem link de texto", "status": "sem_texto"}
+{"id": "209003", "motivo": "sem link de texto", "status": "sem_texto"}
+{"id": "209003", "motivo": "sem link de texto", "status": "sem_texto"}
+{"id": "208305", "motivo": "sem link de texto", "status": "sem_texto"}
+{"id": "208305", "motivo": "sem link de texto", "status": "sem_texto"}
+{"id": "208305", "motivo": "sem link de texto", "status": "sem_texto"}
+{"id": "208305", "motivo": "sem link de texto", "status": "sem_texto"}
+{"id": "206480", "motivo": "sem link de texto", "status": "sem_texto"}
+{"id": "206480", "motivo": "sem link de texto", "status": "sem_texto"}
+{"id": "206480", "motivo": "sem link de texto", "status": "sem_texto"}
