@@ -17,7 +17,10 @@ from comum import RAIZ_ESTADUAIS, Rede, caminhos, decodificar, executar, gravar,
 UF = "SP"
 INDICE_URL = "https://www.al.sp.gov.br/repositorioDados/legislacao/legislacao_normas.zip"
 API = "https://baleg-api-prd.al.sp.gov.br/norma/{}"
-# IdTipo da ALESP -> (pasta, nome, prefixo)
+# IdTipo da ALESP -> (pasta, nome, prefixo). O XML do índice só traz o IdTipo; os rótulos foram
+# confirmados um a um na API baleg. Os seis primeiros prefixos já estão gravados e não mudam.
+# Fora ficam Ato da Mesa (21), Ato do Presidente (22) e Decisão da Mesa (12): são atos internos de
+# administração da Casa, não norma.
 TIPOS = {
     "59": ("constituicao", "Constituição Estadual", "ce"),
     "55": ("emendas-constitucionais", "Emenda Constitucional", "ec"),
@@ -25,17 +28,21 @@ TIPOS = {
     "9": ("leis-ordinarias", "Lei Ordinária", "lei"),
     "25": ("decretos-lei", "Decreto-Lei", "dl"),
     "1": ("decretos-lei-complementares", "Decreto-Lei Complementar", "dlc"),
+    "3": ("decretos", "Decreto", "dec"),
+    "28": ("decretos-legislativos", "Decreto Legislativo", "dlg"),
+    "14": ("resolucoes", "Resolução", "res"),
+    "19": ("resolucoes", "Resolução", "res-alesp"),
 }
 CABECALHO = {"Assembleia Legislativa do Estado de São Paulo", "Ficha informativa",
     "Assembleia Legislativa do Estado de São Paulo Ficha informativa"}
 rede = Rede(rps=4)
 
 
-def indice():
+def indice(refazer=False):
     pasta = os.path.join(RAIZ_ESTADUAIS, UF, "_indice")
     os.makedirs(pasta, exist_ok=True)
     arq = os.path.join(pasta, "legislacao_normas.zip")
-    if not os.path.exists(arq):
+    if not os.path.exists(arq) or refazer:
         st, dados, _ = rede.get(INDICE_URL, timeout=600)
         if st != 200:
             sys.exit(f"índice indisponível: HTTP {st}")
@@ -92,9 +99,10 @@ def processar(n):
 
 
 if __name__ == "__main__":
-    itens = indice()
+    itens = indice(refazer="--refazer" in sys.argv)
     itens.sort(key=lambda n: n["Data"], reverse=True)
     print(f"[{UF}] {len(itens)} normas no índice", flush=True)
-    if len(sys.argv) > 1:
-        itens = itens[: int(sys.argv[1])]
+    limite = [a for a in sys.argv[1:] if a.isdigit()]
+    if limite:
+        itens = itens[: int(limite[0])]
     executar(UF, itens, processar)
