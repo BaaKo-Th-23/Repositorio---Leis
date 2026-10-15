@@ -14,12 +14,18 @@ from comum import RAIZ_ESTADUAIS, Rede, caminhos, decodificar, documento_para_md
 
 UF = "MT"
 B = "https://www.al.mt.gov.br"
+# tipo na URN LexML -> (pasta, tipo canônico, prefixo do arquivo). Os cinco primeiros prefixos já
+# estão gravados e não mudam. Resolução é 44% do que a Assembleia publica e ficava toda de fora;
+# "ato" fica fora de propósito: é ato de administração interna da Casa ("Ato - 078/2026"), sem
+# ementa e sem efeito normativo geral.
 TIPOS = {
     "emenda.constitucional": ("emendas-constitucionais", "Emenda Constitucional", "ec"),
     "lei.complementar": ("leis-complementares", "Lei Complementar", "lc"),
     "lei.ordinaria": ("leis-ordinarias", "Lei Ordinária", "lei"),
     "lei.delegada": ("leis-delegadas", "Lei Delegada", "ld"),
     "decreto.lei": ("decretos-lei", "Decreto-Lei", "dl"),
+    "resolucao": ("resolucoes", "Resolução", "res"),
+    "decreto.legislativo": ("decretos-legislativos", "Decreto Legislativo", "dlg"),
 }
 CONSTITUICAO = "https://storage.al.mt.gov.br/api/v1/download/default/958660"
 CARD = re.compile(
@@ -30,10 +36,10 @@ CARD = re.compile(
 rede = Rede(rps=3)
 
 
-def indice():
+def indice(refazer=False):
     pasta = os.path.join(RAIZ_ESTADUAIS, UF, "_indice")
     arq = os.path.join(pasta, "normas.json")
-    if os.path.exists(arq):
+    if os.path.exists(arq) and not refazer:
         return json.load(open(arq, encoding="utf-8"))
     st, dados, ctype = rede.get(f"{B}/norma-juridica")
     ultima = max(int(p) for p in re.findall(r"norma-juridica\?page=(\d+)", decodificar(dados, ctype)))
@@ -97,8 +103,9 @@ def processar(it):
 
 
 if __name__ == "__main__":
-    itens = indice()
+    itens = indice(refazer="--refazer" in sys.argv)
     print(f"[{UF}] {len(itens)} normas no índice", flush=True)
-    if len(sys.argv) > 1:
-        itens = itens[: int(sys.argv[1])]
+    limite = [a for a in sys.argv[1:] if a.isdigit()]
+    if limite:
+        itens = itens[: int(limite[0])]
     executar(UF, itens, processar, workers=3)

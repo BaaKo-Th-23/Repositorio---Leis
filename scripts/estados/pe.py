@@ -17,11 +17,15 @@ from comum import RAIZ_ESTADUAIS, UA, Rede, caminhos, decodificar, executar, gra
 
 UF = "PE"
 BASE = "https://legis.alepe.pe.gov.br"
+# tiponorma do Alepe Legis -> (pasta, tipo canônico, prefixo). O tipo 6 é "Decreto do Executivo",
+# com acervo de 1996 a hoje, e ficava inteiro de fora. Os quatro primeiros prefixos já estão
+# gravados e não mudam.
 TIPOS = {
     "13": ("emendas-constitucionais", "Emenda Constitucional", "ec"),
     "2": ("leis-complementares", "Lei Complementar", "lc"),
     "1": ("leis-ordinarias", "Lei Ordinária", "lei"),
     "11": ("decretos-lei", "Decreto-Lei", "dl"),
+    "6": ("decretos", "Decreto", "dec"),
 }
 rede = Rede(rps=2)
 LINHA = re.compile(
@@ -59,10 +63,10 @@ def linhas(html, tipo):
         }
 
 
-def indice():
+def indice(refazer=False):
     pasta = os.path.join(RAIZ_ESTADUAIS, UF, "_indice")
     arq = os.path.join(pasta, "lista.json")
-    if os.path.exists(arq):
+    if os.path.exists(arq) and not refazer:
         return json.load(open(arq, encoding="utf-8"))
     itens = {}
     for tipo in TIPOS:
@@ -129,9 +133,10 @@ def processar(it):
 
 
 if __name__ == "__main__":
-    itens = indice()
+    itens = indice(refazer="--refazer" in sys.argv)
     itens.sort(key=lambda i: (i.get("ano") or "", int(i["id"])), reverse=True)
     print(f"[{UF}] {len(itens)} normas no índice", flush=True)
-    if len(sys.argv) > 1:
-        itens = itens[: int(sys.argv[1])]
+    limite = [a for a in sys.argv[1:] if a.isdigit()]
+    if limite:
+        itens = itens[: int(limite[0])]
     executar(UF, itens, processar, workers=2)

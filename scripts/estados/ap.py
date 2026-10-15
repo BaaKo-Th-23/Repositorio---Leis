@@ -14,9 +14,13 @@ from comum import RAIZ_ESTADUAIS, Rede, caminhos, decodificar, documento_para_md
 
 UF = "AP"
 B = "https://elegis.al.ap.leg.br/portal"
+# tipo_proposicao_id no e-Legis -> (pasta, tipo canônico, prefixo). O seletor da listagem oferece
+# quatro tipos; os dois primeiros prefixos já estão gravados e não mudam.
 TIPOS = {
     "2": ("leis-complementares", "Lei Complementar", "lc"),
     "1": ("leis-ordinarias", "Lei Ordinária", "lei"),
+    "9": ("resolucoes", "Resolução", "res"),
+    "10": ("decretos-legislativos", "Decreto Legislativo", "dlg"),
 }
 CONSTITUICAO = "http://silegis.al.ap.leg.br/proposicaopdf/2CEatualizadaeconsolidadaateEC071comSumario.pdf"
 LINHA = re.compile(
@@ -31,10 +35,10 @@ def limpar(s):
     return " ".join(htmllib.unescape(re.sub(r"<[^>]+>", " ", s)).split())
 
 
-def indice():
+def indice(refazer=False):
     pasta = os.path.join(RAIZ_ESTADUAIS, UF, "_indice")
     arq = os.path.join(pasta, "legislacao.json")
-    if os.path.exists(arq):
+    if os.path.exists(arq) and not refazer:
         return json.load(open(arq, encoding="utf-8"))
     itens = []
     for tipo in TIPOS:
@@ -98,8 +102,9 @@ def processar(it):
 
 
 if __name__ == "__main__":
-    itens = indice()
+    itens = indice(refazer="--refazer" in sys.argv)
     print(f"[{UF}] {len(itens)} normas no índice", flush=True)
-    if len(sys.argv) > 1:
-        itens = itens[: int(sys.argv[1])]
+    limite = [a for a in sys.argv[1:] if a.isdigit()]
+    if limite:
+        itens = itens[: int(limite[0])]
     executar(UF, itens, processar, workers=3)

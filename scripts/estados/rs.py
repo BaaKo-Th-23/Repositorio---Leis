@@ -21,11 +21,19 @@ from comum import (  # noqa: E402
 
 UF = "RS"
 B = "https://www.al.rs.gov.br/legis/M010/"
+# cboTipoNorma do LEGIS -> (pasta, tipo canônico, prefixo). O seletor oferece dez tipos e o
+# raspador pedia quatro. Ficam de fora "DIV - DIVERSOS", que é caixa de miscelânea sem espécie
+# definida, e "OSG - ORDEM DE SERVIÇO DO GOVERNADOR", que é ato de administração interna.
+# Os quatro primeiros prefixos já estão gravados e não mudam.
 TIPOS = {
     "23": ("emendas-constitucionais", "Emenda Constitucional", "ec"),
     "2": ("leis-complementares", "Lei Complementar", "lc"),
     "20": ("leis-ordinarias", "Lei Ordinária", "lei"),
     "26": ("decretos-lei", "Decreto-Lei", "dl"),
+    "3": ("decretos", "Decreto", "dec"),
+    "4": ("decretos-legislativos", "Decreto Legislativo", "dlg"),
+    "22": ("resolucoes", "Resolução", "res"),
+    "5": ("resolucoes", "Resolução", "res-mesa"),
 }
 CABECALHO = {"Assembleia Legislativa do Estado do Rio Grande do Sul", "Sistema LEGIS - Texto da Norma",
              "Carregando a página. Aguarde...", "Carregando a página. Aguarde ..."}
@@ -65,10 +73,10 @@ def abrir(op, caminho, dados=None, ref=None, tentativas=5):
             time.sleep(5 * (n + 1) ** 2)
 
 
-def indice():
+def indice(refazer=False):
     pasta = os.path.join(RAIZ_ESTADUAIS, UF, "_indice")
     arq = os.path.join(pasta, "legis.json")
-    if os.path.exists(arq):
+    if os.path.exists(arq) and not refazer:
         return json.load(open(arq, encoding="utf-8"))
     itens = []
     for tipo in TIPOS:
@@ -176,9 +184,10 @@ def constituicao():
 
 if __name__ == "__main__":
     constituicao()
-    itens = indice()
+    itens = indice(refazer="--refazer" in sys.argv)
     itens.sort(key=lambda i: "".join(reversed(i["data"].split("/"))), reverse=True)
     print(f"[{UF}] {len(itens)} normas no índice", flush=True)
-    if len(sys.argv) > 1:
-        itens = itens[: int(sys.argv[1])]
+    limite = [a for a in sys.argv[1:] if a.isdigit()]
+    if limite:
+        itens = itens[: int(limite[0])]
     executar(UF, itens, processar, workers=3)
