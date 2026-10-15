@@ -255,12 +255,22 @@ caso tem uma linha, com o motivo, no `_falhas.jsonl` da respectiva pasta.
 17.016 arquivos vêm de PDF escaneado, com OCR pelo framework Vision do macOS. O texto é legível,
 mas tem dois defeitos conhecidos:
 
-- **ordem de leitura trocada** em digitalizações de duas colunas — não tem correção automática;
-  precisaria de um modelo com noção de layout;
+- **ordem de leitura trocada** em digitalizações de duas colunas — **corrigido**, e sem precisar de
+  modelo nenhum: o Vision devolve a caixa de cada linha, então `scripts/ocr.swift` procura a calha
+  vertical entre as colunas e emite a da esquerda inteira antes da direita. A correção é
+  conservadora por desenho — só age quando há uma calha limpa, com os dois lados cheios e linhas
+  largas o bastante para serem prosa, o que afasta tabela de duas colunas, que se lê por linha e
+  não por coluna. Numa amostra de 120 PDFs escaneados (431 páginas) de sete estados, **uma página
+  tinha calha de prosa**: o defeito é real, e é raro. `scripts/bin/ocr --diagnostico arquivo.pdf`
+  relata, por página, se uma calha foi encontrada;
 - **ordinais confundidos** (`Art. 19` por `Art. 1º`) — corrigido em 1.509 arquivos por
   `scripts/corrigir_ocr.py`, que só reescreve a corrida `19, 29, 39…` quando ela começa em 19, tem
   ao menos dois termos e a numeração resultante fica coerente. Assim um `Art. 19` legítimo, ou um
   `Art. 99` que cita outra lei, não é tocado.
+
+Nenhum dos dois exigia um modelo de visão, afinal: o do ordinal saiu por regra de texto e o das
+colunas, por geometria. O que resta de OCR imperfeito é erro de reconhecimento de caractere em
+digitalização antiga, que é o limite do material, não do método.
 
 `baidu/Unlimited-OCR` foi testado em Apple Silicon e não serve localmente: na resolução de treino o
 encoder de visão pede ~21 GB, e numa resolução que caiba o prefill leva 221 s por página com saída
