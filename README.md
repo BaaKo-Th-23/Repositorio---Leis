@@ -240,7 +240,7 @@ caso tem uma linha, com o motivo, no `_falhas.jsonl` da respectiva pasta.
 
 | O quê | Por quê |
 | --- | --- |
-| **PR** — nada coletado | o WAF de `legislacao.pr.gov.br` devolve 403 a partir da segunda requisição. Não contornado; precisa de outra fonte ou de autorização da Casa Civil |
+| **PR** — destravado em 15/10/2026 | o WAF de `legislacao.pr.gov.br` devolvia 403 a partir da segunda requisição. Em novo teste, seis requisições seguidas responderam 200: o bloqueio saiu. `scripts/estados/pr.py` passou a coletar, com lei, lei complementar, emenda, Constituição, decreto, resolução e portaria |
 | **RJ** — nada coletado | o Lotus Notes da ALERJ fecha a conexão ou leva mais de 60 s por página. `scripts/estados/rj.py` está pronto para quando o servidor voltar |
 | **AC** — só até 2009 | limite do SAPL da Assembleia |
 | **TO** — a partir de 2020 | limite do SAPL da Assembleia |

@@ -18,13 +18,18 @@ from comum import RAIZ_ESTADUAIS, UA, Rede, caminhos, decodificar, executar, gra
 
 UF = "PR"
 B = "https://www.legislacao.pr.gov.br/legislacao"
+# codTipoAto do sistema da Casa Civil -> (pasta, tipo canônico, prefixo do arquivo). O seletor da
+# pesquisa oferece sete tipos; o infralegal entra junto, como nos demais estados.
 TIPOS = {
     "10": ("constituicao", "Constituição Estadual", "ce"),
     "9": ("emendas-constitucionais", "Emenda Constitucional", "ec"),
     "3": ("leis-complementares", "Lei Complementar", "lc"),
     "1": ("leis-ordinarias", "Lei Ordinária", "lei"),
+    "11": ("decretos", "Decreto", "dec"),
+    "13": ("resolucoes", "Resolução", "res"),
+    "14": ("portarias", "Portaria", "port"),
 }
-rede = Rede(rps=1)  # o servidor bloqueou (403) com ritmo maior
+rede = Rede(rps=1)  # o WAF já devolveu 403 a partir da segunda requisição; mantém-se devagar
 _sessao = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
 LINHA = re.compile(
     r"codAto=(\d+)&indice.*?_epigrafeAto\">(.*?)</div>.*?_descricaoItemAto\">(.*?)</div>.*?_dataPublicacao\">(.*?)</div>",
@@ -51,10 +56,10 @@ def post(caminho, dados, tentativas=4):
             time.sleep(30 * (n + 1))
 
 
-def indice():
+def indice(refazer=False):
     pasta = os.path.join(RAIZ_ESTADUAIS, UF, "_indice")
     arq = os.path.join(pasta, "atos.json")
-    if os.path.exists(arq):
+    if os.path.exists(arq) and not refazer:
         return json.load(open(arq, encoding="utf-8"))
     itens = {}
     for tipo in TIPOS:
@@ -123,9 +128,10 @@ def processar(it):
 
 
 if __name__ == "__main__":
-    itens = indice()
+    itens = indice(refazer="--refazer" in sys.argv)
     itens.sort(key=lambda i: (i.get("ano") or "", int(i["codAto"])), reverse=True)
     print(f"[{UF}] {len(itens)} normas no índice", flush=True)
-    if len(sys.argv) > 1:
-        itens = itens[: int(sys.argv[1])]
+    limite = [a for a in sys.argv[1:] if a.isdigit()]
+    if limite:
+        itens = itens[: int(limite[0])]
     executar(UF, itens, processar, workers=3)
