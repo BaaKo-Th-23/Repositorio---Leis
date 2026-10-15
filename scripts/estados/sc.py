@@ -15,12 +15,20 @@ UF = "SC"
 BASE = "https://leis.alesc.sc.gov.br"
 ID_MAX = 56000
 # (regex do título, pasta, nome, prefixo) — a ordem importa
+# Classificação pelo título, na ordem: o específico antes do geral, porque a primeira regra que
+# casar vence. Os decretos do Executivo chegam com título "DEC-000120" — é a convenção de nome do
+# arquivo Word de origem, e por isso escapavam de qualquer padrão que esperasse "DECRETO".
 TIPOS = [
     (r"^CONSTITUI", "constituicao", "Constituição Estadual", "ce"),
     (r"^EMENDA", "emendas-constitucionais", "Emenda Constitucional", "ec"),
     (r"^LEI COMPLEMENTAR", "leis-complementares", "Lei Complementar", "lc"),
     (r"^LEI DELEGADA", "leis-delegadas", "Lei Delegada", "ld"),
+    (r"^LEI PROMULGADA", "leis-promulgadas", "Lei Promulgada", "leip"),
     (r"^DECRETO[- ]LEI", "decretos-lei", "Decreto-Lei", "dl"),
+    (r"^DECRETO LEGISLATIVO", "decretos-legislativos", "Decreto Legislativo", "dlg"),
+    (r"^DEC-\d", "decretos", "Decreto", "dec"),
+    (r"^DECRETO\b", "decretos", "Decreto", "dec"),
+    (r"^RESOLU[ÇC][ÃA]O", "resolucoes", "Resolução", "res"),
     (r"^LEI\b", "leis-ordinarias", "Lei Ordinária", "lei"),
 ]
 MESES = {m: i for i, m in enumerate(
@@ -66,7 +74,8 @@ def processar(id_):
     texto_plano = re.sub(r"[*\\#]", "", corpo)
     data = data_do_texto(texto_plano)
     ano = data[:4] or "sem-ano"
-    num = re.search(r"N[º°o.]*\s*([\d.]+)", titulo, re.I)
+    # "LEI Nº 8.575" e "DEC-000120" são as duas formas em que o número aparece
+    num = re.search(r"N[º°o.]*\s*([\d.]+)", titulo, re.I) or re.search(r"^[A-Z]{3}-0*(\d+)", titulo)
     numero = num.group(1).replace(".", "") if num else ""
     slug = f"{prefixo}-{numero or 'sn'}-{ano}-id{id_}"
     md, fonte = caminhos(UF, pasta, ano, slug)

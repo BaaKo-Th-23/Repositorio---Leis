@@ -247,6 +247,7 @@ caso tem uma linha, com o motivo, no `_falhas.jsonl` da respectiva pasta.
 | **RN** — a partir de 1994 | o acervo da Assembleia não tem PDF anterior |
 | **RS** — 5.569 leis antigas | estão no índice, mas a página de texto responde "NORMA SEM TEXTO": nunca foram digitalizadas |
 | **ES e SE** — 311 e 411 normas | o servidor da Assembleia derruba a conexão nessas mesmas normas, de forma consistente |
+| **CE e MA** — só leis | o BELT do Ceará é um Banco Eletrônico de Leis e o GED do Maranhão só serve LEI, EC e LC: nenhuma das duas fontes carrega decreto ou ato infralegal. Precisam das Casas Civis estaduais |
 | **MG** — não atualiza mais | `dadosabertos.almg.gov.br/arquivo/legislacao-mineira/download` passou a responder 204 sem conteúdo para todo ano, e o serviço `ws/legislacao` não responde. As 26.733 normas já coletadas continuam no acervo; a atualização precisa de outro caminho na ALMG |
 
 ### Qualidade do OCR
