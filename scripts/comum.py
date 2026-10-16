@@ -198,6 +198,8 @@ def gravar(md_path, fonte_path, html_bruto, meta, corpo_md):
     for k, v in meta:
         if isinstance(v, bool):
             linhas.append(f"{k}: {'true' if v else 'false'}")
+        elif k == "revogada" and v is None:
+            linhas.append("revogada: null")
         elif k == "data" and re.fullmatch(r"\d{4}-\d{2}-\d{2}", v or ""):
             linhas.append(f"{k}: {v}")
         else:

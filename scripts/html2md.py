@@ -35,7 +35,7 @@ class Parser(HTMLParser):
         super().__init__(convert_charrefs=True)
         self.skip = 0
         self.fmt = []  # pilha de (tag, flags)
-        self.runs = []  # [(texto, bold, italic)]
+        self.runs = []  # [(texto, bold, italic, tachado)]
         self.block_center = False
         self.block_tag = None
         self.blocks = []  # (tipo, conteúdo, centralizado)
@@ -50,7 +50,7 @@ class Parser(HTMLParser):
             self.skip += 1
             return
         if tag in ("br",):
-            self.runs.append(("\n", False, False))
+            self.runs.append(("\n", False, False, False))
             return
         if tag == "img":
             return
@@ -61,6 +61,8 @@ class Parser(HTMLParser):
             flags["i"] = True
         if tag in ("s", "strike", "del"):
             flags["s"] = True
+        if tag in ("table", "tr", "td", "th") and flags["s"]:
+            self.fmt.append((tag, {"s": True}))
         if tag == "table":
             self.flush()
             self.tabelas.append({"linhas": [], "celula": None})
@@ -82,6 +84,11 @@ class Parser(HTMLParser):
         if tag in SKIP_TAGS:
             self.skip = max(0, self.skip - 1)
             return
+        # desempilha até a tag correspondente
+        for k in range(len(self.fmt) - 1, -1, -1):
+            if self.fmt[k][0] == tag:
+                del self.fmt[k:]
+                break
         if tag == "table" and self.tabelas:
             self.flush()
             self.fechar_tabela(self.tabelas.pop())
@@ -94,20 +101,15 @@ class Parser(HTMLParser):
             t["linhas"][-1].append(t["celula"])
             t["celula"] = None
             return
-        # desempilha até a tag correspondente
-        for k in range(len(self.fmt) - 1, -1, -1):
-            if self.fmt[k][0] == tag:
-                del self.fmt[k:]
-                break
         if tag in BLOCK_TAGS:
             self.flush()
 
     def handle_data(self, data):
-        if self.skip or self.cur("s"):
+        if self.skip:
             return
         # quebra de linha no fonte HTML é só espaço; quebras reais vêm de <br>
         data = data.replace("\r", " ").replace("\n", " ")
-        self.runs.append((data, self.cur("b"), self.cur("i")))
+        self.runs.append((data, self.cur("b"), self.cur("i"), self.cur("s")))
 
     def emitir(self, bloco):
         """Envia um bloco para a célula aberta da tabela externa, ou para o documento."""
@@ -146,23 +148,23 @@ class Parser(HTMLParser):
 def render_runs(runs):
     # junta runs com mesma formatação e aplica ** / * com espaços por fora dos marcadores
     merged = []
-    for text, b, i in runs:
+    for text, b, i, strike in runs:
         text = text.replace("﻿", "")
         text = re.sub(r"[ \t\r\f\v\xa0]+", " ", text.replace("\n", " \n "))
-        if merged and merged[-1][1] == b and merged[-1][2] == i:
+        if merged and merged[-1][1:] == [b, i, strike]:
             merged[-1][0] += text
         else:
-            merged.append([text, b, i])
+            merged.append([text, b, i, strike])
     out = []
-    for text, b, i in merged:
+    for text, b, i, strike in merged:
         core = text.strip(" ")
-        if not re.search(r"\w", core):
+        if not re.search(r"\w", core) and not (strike and core.strip()):
             # só espaço/pontuação: formatação não acrescenta nada
             out.append(escape_inline(text))
             continue
         lead = " " if text.startswith(" ") else ""
         trail = " " if text.endswith(" ") else ""
-        mark = ("**" if b else "") + ("*" if i else "")
+        mark = ("~~" if strike else "") + ("**" if b else "") + ("*" if i else "")
         core = escape_inline(core)
         out.append(f"{lead}{mark}{core}{mark[::-1]}{trail}" if mark else f"{lead}{core}{trail}")
     s = "".join(out)

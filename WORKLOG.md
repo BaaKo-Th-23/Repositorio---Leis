@@ -1,5 +1,75 @@
 # Continuação da coleta
 
+## Restauração SC170 e correções de delimitadores — 16/10/2026
+
+- Próximo envio:170SC restaurados do HTMLoficial com~~nas partes tachadas,
+  metadados byteiguais,fontes/backups conferidos;10SC com84tabelas retidos.
+  Manifesto estaduais/_reparo_tachado_sc_20261016.json d24f426b…;
+  prova estaduais/_auditoria_tachados_20261016.json. Formato170/0erros e3datas
+  desconhecidas anteriores. Diff-checkaponta3quebras GFMde2espaços combr
+  comprovado+1snapshot original; não são whitespaceacidental e foram mantidos.
+- Conversor5f175capturado noíndice;9fixtures,20HTMLreais de8UF byteiguais
+  semtachado,root repetiu20comparações e2casos críticos (sinal−/herança).
+  Root validou5casos de statusSC e3serializaçõesvigência(true/false/null),
+  preservando outroscamposNonecomo stringvazia. SC.py ecomum.py incluídos
+  para reproduzir o padrão devigência usado nesta restauração.
+- Agenteestados autorizadoimplementar tabelas semânticas na workingtree;
+  commit atualusa exclusivamente5f175 jástaged, não essa implementação nova.
+  Proposta preserva árvore/grade/rowspan/colspan e del explícito, testada em
+ 84tabelas dos10SC; conserva originais, não infere valores decélulas.
+- Auditoria50104 concluída sessão50339:resultado
+  estaduais/_fonte/auditorias/integralidade-snapshot-20261016.json,
+  SHA80a61a073bce08200a481bfb6dcc0ebf6514c0e00041e232657e5730ac351ee6.
+  Alertas:8146semartigo próprio detectado,8543resíduosHTML,1088tachados
+  descartados,6215remissõesexternas. São inventário, não aprovação/rejeição
+  automática. PDFs2308/OLE1 fora da inspeçãoHTML. BA/SC podem ter mudado
+  comledgers posteriores; consultar osSHAsde cada etapa, não misturar provas.
+- BA4506limpos,sempublicação,ledger8ad5bdd5… e
+  estaduais/_snapshot_ba4506_delimitacao_d79561f0.json 2e3feeeb…;
+  apenascaudasUI, semrestaurar tachado. Decreto21196/2022 temANEXOIsemcorpo,
+  continua pendente mesmoapós limpeza.4506originais preservados.
+- Root PE:novo limite divTexto balanceado e capturaHTTPraw byteexata,
+  SHA3413eeff…;6fixtures eprocessar real comHTTPfakecp1252 passaram.
+  Proposta4113/0retidos reextraída comconversor95aaddantigo imutável;
+  todoMD reproduz baseline e só remove'&lt;div', preserva header/títulos/URI.
+  Backup4113completoantes dequalquerescrita, manifesto pré-aplicação
+  estaduais/PE/_indice/_reparos-limite-20261016/manifesto-pre-aplicacao.json
+  SHA519c7e34…;aplicação/validação emexecução sessão79865. Não publicar
+  esses4113antes dosgatesindependentes detachado/tabelas/imagens/integralidade.
+- RSF69revisor completou9p;revisãoindependente municipal achou3ajustesna16,
+  emconferência completa.SemMDcanônicopublicado. Coletores preservados,
+  filaoffline94555seguepreparação semHTTP/aplicar. Objetivo100%ativo.
+
+## Checkpoint público e auditoria ampla ativa — 16/10/2026
+
+- HEAD2d5a919b3b8 publicado e conferido na API:698.966documentos,
+  698.942nas séries com meta(5,9%),24semmeta; blob PROGRESSO.md
+  00800d6c7b2cf3e67dd03da97a98bc99d53ba55f. Gráfico renderizado/inspecionado.
+  Três envios desta continuação:38beb4d724c(+12),482bcaab4da(+52líquidos),
+  2d5a919b3b8(+3),saldo+67. Índice vazio após últimoenvio.
+- Auditoria ampla50104ativa: sessão50339/PythonPID96625(wrapper96624),
+  /tmp/auditar-estaduais-integralidade-20261016.py. Ultimoretornou5000casos;
+  resultadofinal esperado estaduais/_fonte/auditorias/integralidade-snapshot-20261016.json.
+  Usa conversor deHEAD anterior à correção,registraSHA do conversor/cache/MD,
+  alertas detachado omitido/remissões externas/resíduoHTML/semartigo próprio;
+  nenhumalerta isolado aprovaou certifica documento. Verificarhandle antes
+  de retomar; nunca duplicar por timeout. BA pode mudar comledger de reparo,
+  inventário identifica SHAdivergente do snapshot original explicitamente.
+- Estados:DF13144tem6227remissões explícitas de anexos+896perdas emtachado;
+  SC1010tem180perdasem tachado,120fontecomArt/MDsemArt e45preâmbulossemcorpo.
+  Gate /tmp/gate-df-sc-integralidade.json, classificação aindaemrefino.
+  Há falsospositivos de artigos entreaspas e lei2555 inexistente/vetada;
+  DF19985/1998 é sóaviso TEXTOEMMANUTENÇÃO. Não publicar taiscapturas.
+- Estados implementa correção html2md para conservar histórico com~~ e
+  regressões semtachado; nenhum lotegrande estadual publicado. Municipal
+  reextraiBA4506 comlimite estrutural e backup, separado da recuperação
+  detachado. RootPE4113 ainda precisa delimitação correta e reparo do &lt;div.
+- Filaoffline94555seguepreparação semHTTP/aplicar;DEC76664,RFB40381,DPL58635,
+  DOU96622,ES80684,SAPL17034/espera34251preservados. Confirmarprocessosantes
+  de qualquerreplanejamento. RSF69 revisor concluiuPDF16–20;21–24pendentes.
+- Objetivo100%mantido ativo. Volume publicado não atesta fidelidade integral;
+  alterações de trabalho ainda pendentes não devem ser contadas como públicas.
+
 ## Qualidade estadual e terceiro envio — 16/10/2026
 
 - 482bcaab4da publicado:698.963documentos,698.939nas séries com meta,

@@ -64,8 +64,13 @@ def data_do_texto(texto, html=""):
 
 
 def norma_revogada(html, cabeca):
-    return bool(re.search(r'<(?:body|div)\b[^>]*(?:class|id)=["\'][^"\']*\blei-revogada\b', html, re.I)
-                or re.search(r"\bREVOGAD[AO] (PELA|PELO|INTEGRALMENTE)", cabeca))
+    partes = re.split(r"\nFONTE\b", cabeca, maxsplit=1)
+    notas = partes[0] if len(partes) > 1 else ""
+    if re.search(r"(?m)^\s*(?:REVOGAD[AO] PARCIALMENTE|RESTABELECID[AO])\b", notas):
+        return None
+    if re.search(r'<(?:body|div)\b[^>]*(?:class|id)=["\'][^"\']*\blei-revogada\b', html, re.I):
+        return True
+    return True if re.search(r"(?m)^\s*(?:CONSOLIDADA E )?REVOGAD[AO] (?:PELAS?|PELOS?|INTEGRALMENTE)\b", notas) else None
 
 
 def processar(id_):
@@ -100,7 +105,7 @@ def processar(id_):
         return "pulado", None
     if len(re.sub(r"\W", "", corpo)) < 40:
         return "sem_texto", {"id": id_, "motivo": "texto vazio"}
-    cabeca = texto_plano[:800].upper()
+    cabeca = texto_plano[:2000].upper()
     meta = [
         ("titulo", titulo),
         ("uf", UF),
