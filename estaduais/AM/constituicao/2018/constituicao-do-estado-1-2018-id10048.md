@@ -5,11 +5,12 @@ tipo: "Constituição Estadual"
 numero: "1"
 data: 1989-10-05
 ementa: "NÓS, REPRESENTANTES DO POVO AMAZONENSE, ELEITOS POR SUA VONTADE SOBERANA E INVESTIDO DE PODERES CONSTITUINTES, COM O PROPÓSITO DE ASSEGURAR A TRANSPARÊNCIA DOS PODERES, A ORDEM JURÍDICA E SOCIAL JUSTA, A LIBERDADE, O DIREITO DE TODOS À PLENA CIDADANIA E À PARTICIPAR POPULAR NA DEFESA INTRANSIGENTE DESSES PRINCÍPIOS E OBJETIVOS, CONSUBSTANCIANDO AS ASPIRAÇÕES DE UM ESTADO FIEL A SUA VOCAÇÃO HISTÓRICA DE GRANDEZA, INTERAÇÃO HUMANA E VALORES MORAIS, PROMULGAMOS, SOB A ÉGIDE DA JUSTIÇA E A PROTEÇÃO DE DEUS, A CONSTITUIÇÃO DO ESTADO DO AMAZONAS"
-versao_texto: "original (arquivo anexado ao SAPL)"
+versao_texto: "10ª edição, 2024; texto compilado até EC 137, de 26/06/2024"
 publicacao: ""
 fonte: "https://sapl.al.am.leg.br/norma/10048"
 arquivo: "https://sapl.al.am.leg.br/media/sapl/public/normajuridica/2018/10048/constituicao_atualizada_-_compilada_ate_a_ec_137.pdf"
 baixado_em: 2026-10-13
+limitacao_compilacao: "Edição compilada até EC 137/2024; há EC 144/2026 no acervo oficial, cuja incorporação não foi verificada."
 ---
 # Constituição do Estado nº 1, de 05 de outubro de 1989
 

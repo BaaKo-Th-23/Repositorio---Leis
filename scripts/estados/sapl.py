@@ -101,6 +101,10 @@ def processar_factory(uf, tipos):
             return "fora_escopo", None
         if pasta == "constituicao" and int(n["ano"]) < 1988:
             pasta = "constituicoes-historicas"
+        if pasta == "constituicao":
+            corrente = os.path.join(RAIZ_ESTADUAIS, uf, "constituicao")
+            if any(nome.endswith(".md") for _, _, nomes in os.walk(corrente) for nome in nomes):
+                return "pulado", None
         # o prefixo do nome do arquivo vem do nome que a Assembleia usa, não do canônico:
         # os arquivos já gravados se chamam lei-ordinaria-N-AAAA-idX.md e precisam ser
         # reconhecidos como existentes numa nova rodada.
@@ -128,7 +132,8 @@ def processar_factory(uf, tipos):
             ("data", n.get("data") or ""),
             ("ementa", " ".join((n.get("ementa") or "").split())),
             ("publicacao", n.get("veiculo_publicacao") or ""),
-            ("versao_texto", "original (arquivo anexado ao SAPL)"),
+            ("versao_texto", "arquivo anexado ao SAPL; edição e compilação não verificadas"
+             if pasta == "constituicao" else "original (arquivo anexado ao SAPL)"),
             ("fonte", f"https://{HOSTS[uf]}/norma/{n['id']}"),
             ("arquivo", url),
         ]

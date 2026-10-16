@@ -4,7 +4,7 @@ uf: "MA"
 tipo: "Emenda Constitucional"
 numero: "24"
 data: ""
-ementa: ""
+ementa: "Altera a redação do art. 33, do inciso I e § único do art. 64, do inciso II do art. 81 e do art. 110 da Constituição do Estado do Maranhão."
 versao_texto: "PDF do GED da Assembleia Legislativa"
 fonte: "https://arquivos.al.ma.leg.br:8443/ged/legislacao/EC_24"
 baixado_em: 2026-10-13

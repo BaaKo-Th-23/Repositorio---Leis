@@ -5,7 +5,7 @@ tipo: "Constituição Estadual"
 numero: ""
 data: 1989-10-05
 ementa: ""
-versao_texto: "texto do Portal de Legislação da Bahia"
+versao_texto: "Texto do Portal de Legislação da Bahia; anotações identificadas até EC 33, de 20/03/2024; data-limite global não declarada"
 publicacao: ""
 fonte: "https://www.legislabahia.ba.gov.br/documentos/constituicao-do-estado-da-bahia-de-05-de-outubro-de-1989"
 baixado_em: 2026-10-13

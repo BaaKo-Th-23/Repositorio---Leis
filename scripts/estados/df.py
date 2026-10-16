@@ -139,6 +139,7 @@ def processar(s):
     corpo, motivo = documento_para_md(bruto, url, ctype, {"Texto Compilado", "Texto Original"})
     if corpo is None:
         return "sem_texto", {"ch": s["ch_norma"], "url": url, "motivo": motivo}
+    corpo = corpo.replace("\x00", "")
     titulo = "Lei Orgânica do Distrito Federal" if nome == "Lei Orgânica" else f"{nome} nº {numero}, de {d}/{m}/{a}"
     situacao = s.get("nm_situacao") or ""
     meta = [

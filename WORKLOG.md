@@ -4,32 +4,34 @@ Objetivo: completar o escopo de `scripts/plano.py`, preservando as fontes oficia
 os originais, o vocabulário canônico e a publicação incremental por lote. Metas
 estimadas não comprovam cobertura integral; não reduzir metas para declarar 100%.
 
-## Estado atual verificado — 15/10/2026, lote federal/RFB/DOU
+## Estado atual verificado — 15/10/2026, terceiro lote estadual
 
-- Main anterior `cfffbe2a362`: 614.327 documentos. Próximo lote acrescenta
-  13.657 arquivos e consolida quatro duplicatas: saldo de 13.653, total 627.980.
-  PROGRESSO.md e progresso.svg são recalculados pelo hook a partir do índice Git.
-- Lote: 6.570 novos federais, 7.087 atos de reguladores e 782 federais corrigidos.
-  Auditoria anterior de 14.435 Markdown sem erros; quatro canônicos adicionais
-  validados com hash integral do manifesto, datas próprias e fontes preservadas.
-  Cinco scripts analisados sintaticamente; nenhuma pasta fora do plano.
-- RFB: 215 equivalências auditadas, 124 confirmadas, uma redirecionada e 90
-  textos recuperados por identidade não comprovada (não significa 90 normas
-  distintas). Vigência de 2.539 fontes conferida: 27 revogações globais explícitas
-  e 15 situações desconhecidas. Índice de 115.238 IDs em 227 partições validado.
-  Cinco avisos de OCR de imagens corrigidos sem alterar o texto normativo.
-- Câmara DLG: índice por 219 anos, 1808–2026, com 15.944 IDs/URNs exatamente
-  iguais ao primário Senado; 15.944 textos verificados. Quatro datas erradas nas
-  URLs consolidadas conforme fecho e Senado, com versões anteriores arquivadas.
-- Lei 10.151/2000: anexo oficial de dez páginas recuperado com OCR e aviso;
-  original preservado. Números com complementos e URNs federais corrigidos.
-- Processos confirmados vivos: DEC-n 33109, RFB 40381, DPL Câmara 42784,
-  DOU 96622 e fila 87017. RFB usa 4 rps; Câmara 2 rps, sem outro cliente Câmara.
-  Os textos novos após o staging ficam para o próximo lote.
-- Percentuais usam somente séries com meta. Decretos legislativos e resoluções
-  municipais permanecem sem universo nacional conhecido; não extrapolar amostras.
-- Estados e municípios continuam em agentes separados, sem operações Git.
-  Fontes bloqueadas e edições antigas continuam pendências explícitas.
+- Main publicado anterior: `517db958cd0`, 627.980 documentos, relatório GitHub
+  conferido por hash. Novo snapshot estadual: 36.694 Markdown adicionados,
+  24 removidos por substituição/migração/duplicação e 57 modificados; saldo
+  36.670, total 664.650 documentos. Nenhuma pasta fora do plano.
+- Constituições: uma edição selecionada para cada uma das 27 UFs, com fonte
+  institucional e original preservado. Fontes melhores de AL/MA/PB/PE/PI/RR/RJ;
+  RJ inclui 84 seções e ADCT. Edições anteriores da mesma constituição foram
+  arquivadas em _referencias, não contadas como constituições históricas.
+  Não afirmar atualização vigente em 2026 para edições antigas ou incertas.
+- MA: 54 emendas tiveram metadados próprios corrigidos com corpo verificado
+  por SHA; duas duplicatas mal datadas removidas, fontes preservadas. EC74
+  migrou de 2006 para 2016 pela assinatura, sem confundir citação de outra lei.
+- PR: recuperadas as sete emendas 55–61 por rota pública oficial com originais
+  preservados. Essas emendas e as recentes de outras UFs são atos separados;
+  incorporação às compilações antigas não foi comprovada.
+- Auditoria de 36.753 Markdown encontrou três defeitos: dois corpos vazios de
+  MG excluídos com pendências explícitas/cache preservado e dois NUL de cauda
+  no DF removidos. Reparos direcionados no índice passaram; seis scripts válidos.
+- Scripts estaduais MA/SAPL/SPL/PR/MG/DF corrigem identidade, data própria, calendário
+  e escolha da constituição já selecionada. Preservar os coletores ativos.
+- Próximo lote: municipal, scripts SAPL e seis súmulas TNU 84–89 conferidas no
+  manual oficial CJF, incluindo cancelamento da 86. Agentes continuam federal,
+  estadual e municipal/jurisprudência sem operações Git.
+- Percentuais usam somente séries com meta. Universo nacional de decretos
+  legislativos e resoluções municipais continua desconhecido. Índice completo
+  não prova texto completo, e metas estimadas não provam conclusão jurídica.
 
 ## Checkpoint de 15/10/2026
 

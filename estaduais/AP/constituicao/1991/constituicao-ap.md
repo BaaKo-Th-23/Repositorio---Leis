@@ -5,7 +5,7 @@ tipo: "Constituição Estadual"
 numero: ""
 data: 1991-12-20
 ementa: ""
-versao_texto: "consolidada"
+versao_texto: "Edição de 2025; atualizada até EC 71, de 17/06/2025"
 publicacao: ""
 fonte: "http://silegis.al.ap.leg.br/proposicaopdf/2CEatualizadaeconsolidadaateEC071comSumario.pdf"
 baixado_em: 2026-10-13

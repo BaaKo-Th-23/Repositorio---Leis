@@ -4,7 +4,7 @@ titulo: "Constituição do Estado do Rio Grande do Sul de 1989"
 uf: "RS"
 tipo: "Constituição Estadual"
 data: 1989-10-03
-versao_texto: "compilada (texto vigente)"
+versao_texto: "Texto compilado com alterações até EC 86, de 12/06/2026, conforme capa da Assembleia Legislativa"
 fonte: "https://www2.al.rs.gov.br/dal/Legisla%C3%A7%C3%A3o/Constitui%C3%A7%C3%A3oEstadual/tabid/3683/Default.aspx"
 arquivo: "https://www2.al.rs.gov.br/dal/LinkClick.aspx?fileticket=WQdIfqNoXO4%3d&tabid=3683&mid=5359"
 baixado_em: 2026-10-13

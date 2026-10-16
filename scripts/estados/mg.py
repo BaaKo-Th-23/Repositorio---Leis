@@ -137,6 +137,8 @@ def processar(r):
     if not conteudo.strip():
         return "sem_texto", {"norma": slug, "url": url, "motivo": "conteúdo vazio"}
     corpo = html_para_md(conteudo)
+    if len(re.sub(r"\W", "", corpo)) < 20:
+        return "sem_texto", {"norma": slug, "url": url, "motivo": "conteúdo sem texto normativo após conversão"}
     d, m, a = r["DataLegislacao"].split("/") if r["DataLegislacao"] else ("", "", "")
     try:
         data = dt.date(int(a), int(m), int(d))

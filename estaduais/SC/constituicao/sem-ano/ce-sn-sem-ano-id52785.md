@@ -3,9 +3,9 @@ titulo: "CONSTITUIÇÃO DO ESTADO DE SANTA CATARINA DE 1989"
 uf: "SC"
 tipo: "Constituição Estadual"
 numero: ""
-data: ""
+data: 1989-10-05
 revogada: false
-versao_texto: "texto anotado da ALESC"
+versao_texto: "Texto anotado da ALESC, atualizado até EC 101/2026, conforme declaração da fonte"
 fonte: "https://leis.alesc.sc.gov.br/ato-normativo/52785"
 baixado_em: 2026-10-15
 ---

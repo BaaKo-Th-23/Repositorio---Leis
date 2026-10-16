@@ -5,7 +5,7 @@ tipo: "Constituição Estadual"
 numero: ""
 data: 1989-10-03
 ementa: ""
-versao_texto: "PDF da Assembleia Legislativa"
+versao_texto: "Edição de 2024 da Assembleia Legislativa, atualizada até EC 24, de 06/03/2024; atualização vigente em 2026 não verificada"
 fonte: "https://www.al.rn.leg.br/documentos/Constituicao_Estadual-2023%20-%202024.pdf"
 baixado_em: 2026-10-13
 ---

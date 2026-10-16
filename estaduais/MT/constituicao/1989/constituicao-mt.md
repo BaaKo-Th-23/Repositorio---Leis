@@ -5,7 +5,7 @@ tipo: "Constituição Estadual"
 numero: ""
 data: 1989-10-05
 ementa: ""
-versao_texto: "redação atual (PDF gerado pela ALMT)"
+versao_texto: "Texto compilado da ALMT, atualizado até EC 122, D.O. de 08/04/2026"
 urn: ""
 fonte: "https://storage.al.mt.gov.br/api/v1/download/default/958660"
 baixado_em: 2026-10-13

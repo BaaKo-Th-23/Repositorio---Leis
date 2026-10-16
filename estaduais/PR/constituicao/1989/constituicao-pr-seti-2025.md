@@ -5,9 +5,10 @@ tipo: "Constituição Estadual"
 numero: ""
 data: 1989-10-05
 ementa: ""
-versao_texto: "PDF disponibilizado pela SETI em 26/06/2025; data-limite de atualização não declarada"
+versao_texto: "PDF disponibilizado pela SETI em 26/06/2025; anotações identificadas até EC 54, de 08/07/2024; data-limite global não declarada e atualização vigente em 2026 não verificada"
 fonte: "https://www.seti.pr.gov.br/sites/default/arquivos_restritos/files/documento/2025-06/Contitui%C3%A7%C3%A3oParan%C3%A1.pdf"
 baixado_em: 2026-10-15
+limitacao_compilacao: "A edição contém anotações até EC 54/2024; a fonte oficial do Paraná publica EC 61, de 30/06/2026, cuja incorporação não foi verificada."
 ---
 # Constituição do Estado do Paraná
 

@@ -9,6 +9,7 @@ Uso: python3 -I scripts/estados/spl_agape.py ES|SE [N]
 """
 import csv
 import html as htmllib
+import datetime as dt
 import http.cookiejar
 import io
 import json
@@ -21,6 +22,7 @@ import urllib.request
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 from comum import RAIZ_ESTADUAIS, UA, Rede, caminhos, decodificar, executar, gravar, html_para_md  # noqa: E402
+from datas import TIPO_EPIGRAFE, data_do_texto
 
 CONFIG = {
     "ES": {
@@ -156,13 +158,22 @@ def processar(it):
         return "sem_texto", {"cod": it["cod"], "url": url, "motivo": "texto vazio"}
     situacao = next((v for k, v in it.items() if k.startswith("Situa")), "")
     d = re.match(r"(\d{2})/(\d{2})/(\d{4})", it.get("Data") or "")
+    data_indice = f"{d[3]}-{d[2]}-{d[1]}" if d else ""
+    epigrafes = [re.sub(r"[*\\#]", "", ln).strip() for ln in corpo.splitlines() if ln.strip()][:6]
+    epigrafe = next((ln for ln in epigrafes if TIPO_EPIGRAFE.match(ln)), "")
+    data = data_do_texto(epigrafe, numero=numero) or data_indice
+    try:
+        if dt.date.fromisoformat(data) > dt.date.today():
+            data = ""
+    except ValueError:
+        data = ""
     titulo = f"{nome} nº {it.get('Numero')}/{ano}" if numero else nome
     meta = [
         ("titulo", titulo),
         ("uf", UF),
         ("tipo", nome),
         ("numero", it.get("Numero") or ""),
-        ("data", f"{d.group(3)}-{d.group(2)}-{d.group(1)}" if d else ""),
+        ("data", data),
         ("ementa", " ".join((it.get("Ementa") or "").split())),
         ("situacao", situacao),
         ("revogada", situacao.lower().startswith("revogad")),
@@ -170,6 +181,8 @@ def processar(it):
         ("fonte", f"{B}/norma.aspx?id={it['cod']}"),
         ("arquivo", url),
     ]
+    if data_indice and data != data_indice:
+        meta.append(("data_na_fonte", data_indice))
     gravar(md, fonte, bruto, meta, f"# {titulo}\n\n{corpo}")
     return "ok", None
 

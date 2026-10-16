@@ -3,6 +3,8 @@
 Índice: listarAtosAno.do?action=listarAtos&anoAto=AAAA (POST com codTipoAto), um ano por vez.
 Texto: pesquisarAto.do?action=exibir&codAto=N&tipoVisualizacao=compilado (texto compilado).
 """
+import datetime as dt
+import gzip
 import html as htmllib
 import http.cookiejar
 import json
@@ -104,7 +106,7 @@ def indice(refazer=False):
 
 def processar(it):
     pasta, nome, prefixo = TIPOS[it["tipo"]]
-    url = f"{B}/pesquisarAto.do?action=exibir&codAto={it['codAto']}&codTipoAto=&tipoVisualizacao=compilado"
+    url = f"{B}/exibirAto.do?action=iniciarProcesso&codAto={it['codAto']}"
     epi = it.get("epigrafe") or ""
     num = re.search(r"([\d.]+)\s*-\s*(\d{1,2}) de (\w+) de (\d{4})", epi)
     ano = it.get("ano") or (num.group(4) if num else "sem-ano")
@@ -113,9 +115,16 @@ def processar(it):
     md, fonte = caminhos(UF, pasta, ano, slug)
     if os.path.exists(md):
         return "pulado", None
-    st, bruto, ctype = rede.get(url, timeout=300)
+    cache = os.path.join(RAIZ_ESTADUAIS, UF, "_indice", "documentos", it["codAto"] + ".html.gz")
+    if os.path.exists(cache):
+        st, bruto, ctype = 200, gzip.decompress(open(cache, "rb").read()), "text/html;charset=UTF-8"
+    else:
+        st, bruto, ctype = rede.get(url, timeout=60, tentativas=1)
     if st != 200:
         return "sem_texto", {"codAto": it["codAto"], "http": st}
+    os.makedirs(os.path.dirname(cache), exist_ok=True)
+    with open(cache, "wb") as f:
+        f.write(gzip.compress(bruto))
     html = decodificar(bruto, ctype)
     ini = html.find("<h3>")
     fim = html.find("</form>", ini)
@@ -130,6 +139,12 @@ def processar(it):
     m = re.search(r"(\d{1,2}) de (\w+) de (\d{4})", titulo)
     if m and m.group(2).lower() in MESES:
         data = f"{m.group(3)}-{MESES[m.group(2).lower()]:02d}-{int(m.group(1)):02d}"
+    if data:
+        try:
+            if dt.date.fromisoformat(data) > dt.date.today():
+                data = ""
+        except ValueError:
+            data = ""
     meta = [
         ("titulo", titulo),
         ("uf", UF),

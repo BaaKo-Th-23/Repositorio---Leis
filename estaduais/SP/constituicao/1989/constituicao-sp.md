@@ -5,7 +5,7 @@ tipo: "Constituição Estadual"
 numero: ""
 data: 1989-10-05
 ementa: ""
-versao_texto: "Última atualização: ADI - STF n° 7436, de 23/08/2023"
+versao_texto: "Texto anotado da ALESP; anotações identificadas até EC 55, de 27/11/2024; cabeçalho menciona ADI-STF 7436, de 23/08/2023; data-limite global de atualização não declarada"
 fonte: "https://www.al.sp.gov.br/repositorio/legislacao/constituicao/1989/constituicao-0-05.10.1989.html"
 baixado_em: 2026-10-15
 ---

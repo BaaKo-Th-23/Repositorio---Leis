@@ -1,10 +1,10 @@
 # Progresso
 
-Gerado em 15/10/2026 23:50:48 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 16/10/2026 00:03:33 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**627.980 documentos · 627.980 / ~11.768.663 nas séries com meta (5.3%) · 0 sem meta**
+**664.650 documentos · 664.650 / ~11.768.663 nas séries com meta (5.6%) · 0 sem meta**
 
 ![progresso](progresso.svg)
 
@@ -12,7 +12,7 @@ Percentuais usam somente documentos e metas das séries com universo estimado ou
 
 Planalto, Senado, Câmara e assembleias.
 
-373.122 / ~574.766 documentos (64.9%)
+373.307 / ~574.766 documentos (64.9%)
 
 ### Constituição Federal
 
@@ -73,23 +73,23 @@ Planalto, Senado, Câmara e assembleias.
 
 ### Leis estaduais e distritais
 
-295.927 / ~347.467 documentos (85.2%)
+296.112 / ~347.467 documentos (85.2%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Constituições estaduais e Lei Orgânica do DF | 25 | 27 | `estaduais/*/constituicao`, `estaduais/*/lei-organica` | Assembleias e Casas Civis |
-| 🟦 | Constituições estaduais históricas | 10 | 40 | `estaduais/*/constituicoes-historicas` | Assembleias |
-| 🟦 | Emendas constitucionais estaduais | 2.095 | 2.200 | `estaduais/*/emendas-constitucionais` | Assembleias |
-| 🟦 | Leis ordinárias estaduais | 274.147 | 330.000 | `estaduais/*/leis-ordinarias` | 19 scripts, uma fonte por UF |
-| 🟦 | Leis complementares estaduais | 12.386 | 14.000 | `estaduais/*/leis-complementares` | 19 scripts, uma fonte por UF |
+| ✅ | Constituições estaduais e Lei Orgânica do DF | 27 | 27 | `estaduais/*/constituicao`, `estaduais/*/lei-organica` | Assembleias e Casas Civis |
+| 🟦 | Constituições estaduais históricas | 9 | 40 | `estaduais/*/constituicoes-historicas` | Assembleias |
+| 🟦 | Emendas constitucionais estaduais | 2.105 | 2.200 | `estaduais/*/emendas-constitucionais` | Assembleias |
+| 🟦 | Leis ordinárias estaduais | 274.210 | 330.000 | `estaduais/*/leis-ordinarias` | 19 scripts, uma fonte por UF |
+| 🟦 | Leis complementares estaduais | 12.387 | 14.000 | `estaduais/*/leis-complementares` | 19 scripts, uma fonte por UF |
 | ✅ | Decretos-leis e leis delegadas estaduais | 6.676 | 600 | `estaduais/*/decretos-lei`, `estaduais/*/leis-delegadas`, `estaduais/*/decretos-lei-complementares` | Assembleias |
-| 🟦 | Leis promulgadas, constitucionais e emendas à Lei Orgânica | 588 | 600 | `estaduais/*/leis-promulgadas`, `estaduais/*/leis-constitucionais`, `estaduais/*/emendas-lei-organica` | Assembleias |
+| ✅ | Leis promulgadas, constitucionais e emendas à Lei Orgânica | 698 | 600 | `estaduais/*/leis-promulgadas`, `estaduais/*/leis-constitucionais`, `estaduais/*/emendas-lei-organica` | Assembleias |
 
 ## Fase 2 — infralegal e jurisprudência
 
 Diários oficiais e portais de órgãos e tribunais.
 
-243.697 / ~861.184 documentos (28.3%)
+280.182 / ~861.184 documentos (32.5%)
 
 ### Infralegal — tributário
 
@@ -258,20 +258,20 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal estadual
 
-189.168 / ~577.054 documentos (32.8%)
+225.653 / ~577.054 documentos (39.1%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Decretos dos governadores (27 UF) | 121.931 | 400.000 | `estaduais/*/decretos`, `estaduais/*/decretos-nao-numerados` | Casas Civis e diários oficiais estaduais |
+| 🟦 | Decretos dos governadores (27 UF) | 149.288 | 400.000 | `estaduais/*/decretos`, `estaduais/*/decretos-nao-numerados` | Casas Civis e diários oficiais estaduais |
 | ⬜️ | Regulamentos do ICMS (RICMS das 27 UF) | 0 | 27 | `estaduais/*/regulamentos` | Secretarias de Fazenda |
-| 🟦 | Instruções normativas e portarias das SEFAZ | 1.145 | 50.000 | `estaduais/*/instrucoes-normativas` | Secretarias de Fazenda |
+| 🟦 | Instruções normativas e portarias das SEFAZ | 1.350 | 50.000 | `estaduais/*/instrucoes-normativas` | Secretarias de Fazenda |
 | ⬜️ | Resoluções e decisões normativas dos TCE | 0 | 10.000 | `estaduais/*/resolucoes-tce` | Tribunais de Contas estaduais |
 | ⬜️ | Resoluções e provimentos dos TJ e das Corregedorias | 0 | 8.000 | `estaduais/*/resolucoes-tj` | Tribunais de Justiça |
-| 🟦 | Regimentos internos das Assembleias | 14 | 27 | `estaduais/*/regimentos` | Assembleias |
-| 🟦 | Decretos legislativos estaduais | 12.943 | 20.000 | `estaduais/*/decretos-legislativos` | Assembleias (SAPL e sistemas próprios) |
-| ✅ | Resoluções das Assembleias | 26.424 | 25.000 | `estaduais/*/resolucoes` | Assembleias (SAPL e sistemas próprios) |
-| 🟦 | Portarias das administrações estaduais e distrital | 26.002 | 60.000 | `estaduais/*/portarias` | SINJ-DF, Legisla Goiás e sistemas equivalentes |
-| 🟦 | Deliberações, súmulas administrativas, provimentos e pareceres normativos | 709 | 4.000 | `estaduais/*/deliberacoes`, `estaduais/*/sumulas`, `estaduais/*/provimentos`, `estaduais/*/pareceres-normativos` | SINJ-DF, Legisla Goiás e sistemas equivalentes |
+| 🟦 | Regimentos internos das Assembleias | 18 | 27 | `estaduais/*/regimentos` | Assembleias |
+| 🟦 | Decretos legislativos estaduais | 15.211 | 20.000 | `estaduais/*/decretos-legislativos` | Assembleias (SAPL e sistemas próprios) |
+| ✅ | Resoluções das Assembleias | 28.722 | 25.000 | `estaduais/*/resolucoes` | Assembleias (SAPL e sistemas próprios) |
+| 🟦 | Portarias das administrações estaduais e distrital | 30.043 | 60.000 | `estaduais/*/portarias` | SINJ-DF, Legisla Goiás e sistemas equivalentes |
+| 🟦 | Deliberações, súmulas administrativas, provimentos e pareceres normativos | 1.021 | 4.000 | `estaduais/*/deliberacoes`, `estaduais/*/sumulas`, `estaduais/*/provimentos`, `estaduais/*/pareceres-normativos` | SINJ-DF, Legisla Goiás e sistemas equivalentes |
 
 ## Fase 3 — direito municipal
 
