@@ -1,0 +1,32 @@
+{
+  "reparos": [
+    {
+      "old": "municipais/RS/butia/decretos/2025/decreto-0344-2025-9c325b05.md",
+      "new": "municipais/RS/butia/decretos/2025/decreto-0344-2025-477e4651.md",
+      "snapshot": "municipais/_fonte/reparos-colunas/famurs/decreto-0344-2025-9c325b05.md",
+      "column": "municipais/_fonte/reparos-colunas/famurs/decreto-0344-2025-477e4651.coluna.txt",
+      "old_sha256": "0cac407156dd37af131ef0ccc47f12db2e25e453547d0f86a0b20687faa0d75e",
+      "new_sha256": "6039e05ff8bb1d0a83c452aa6f31994ee7e5fa1b5f41d8b1816a405e992bbcc5",
+      "body_sha256": "a9806b7b73ffc2b9ab85c7930b43edd4c08efe38fb3dd89f255dbc80b036d94b",
+      "articles": 4,
+      "fonte": "https://www-storage.voxtecnologia.com.br/?m=sigpub.publicacao&f=159&i=publicado_110045_2025-12-31_40b8ae0996483314e8d5894679ff676b.pdf",
+      "pagina_pdf": 5,
+      "edicao": "FAMURS 4238",
+      "motivo": "Ordem de colunas trocava corpo e código; reextração da coluna oficial conferida visualmente."
+    },
+    {
+      "old": "municipais/PE/gloria-do-goita/decretos/2025/decreto-097-2025-942e5d62.md",
+      "new": "municipais/PE/gloria-do-goita/decretos/2025/decreto-097-2025-252de922.md",
+      "snapshot": "municipais/_fonte/reparos-colunas/amupe/decreto-097-2025-942e5d62.md",
+      "column": "municipais/_fonte/reparos-colunas/amupe/decreto-097-2025-252de922.coluna.txt",
+      "old_sha256": "9fd8aeb12835b7377c0a2db37f5f66fcd8c6b4c46ee027e7cc30317f8cbb103f",
+      "new_sha256": "f2afca525bffb5c2211b9db839ba4982a6d6cb843a3cdeca28851465111723b5",
+      "body_sha256": "5c7efb032223873b165ca9098e3bd4f3fc1f8bea70c68634c7276e6d6ac558b2",
+      "articles": 3,
+      "fonte": "https://www-storage.voxtecnologia.com.br/?m=sigpub.publicacao&f=365&i=publicado_108005_2025-12-31_20c8273a0e9a7b123b4c6593863e132e.pdf",
+      "pagina_pdf": 18,
+      "edicao": "AMUPE 4004",
+      "motivo": "Ordem de colunas trocava corpo e código; reextração da coluna oficial conferida visualmente."
+    }
+  ]
+}

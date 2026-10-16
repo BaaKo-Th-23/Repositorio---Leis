@@ -23,6 +23,7 @@ Requer `pdftotext` (poppler), o mesmo que o resto do acervo já usa.
 import argparse
 import csv
 import html
+import hashlib
 import datetime as dt
 import json
 import os
@@ -325,6 +326,44 @@ def tnu_sumulas(limite, refazer=False):
     return cont
 
 
+def tnu_sumulas_complementares(limite, refazer=False):
+    pasta = os.path.join(RAIZ, "_fonte", "tnu")
+    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "dados", "tnu-sumulas-manual2026.json"), encoding="utf-8") as f:
+        dados = json.load(f)
+    pdf = os.path.join(pasta, "manual-admissibilidade-recursal.pdf")
+    baixar_pdf(dados["fonte"], pdf, limite)
+    with open(pdf, "rb") as f:
+        if hashlib.sha256(f.read()).hexdigest() != dados["sha256"]:
+            raise RuntimeError("PDF CJF mudou; transcrição manual precisa ser novamente conferida")
+    if [n["numero"] for n in dados["sumulas"]] != list(range(84, 90)):
+        raise RuntimeError("complemento TNU sem sequência 84–89")
+    cont = {"ok": 0, "pulado": 0}
+    for n in dados["sumulas"]:
+        destino = os.path.join(RAIZ, "tnu", "sumulas", f"sumula-{n['numero']}.md")
+        if os.path.exists(destino) and not refazer:
+            cont["pulado"] += 1
+            continue
+        titulo = f"Súmula nº {n['numero']} da TNU"
+        meta = {"titulo": titulo, "tribunal": "TNU", "tipo": "Súmula", "numero": str(n["numero"]),
+                "data": n.get("data", ""), "data_publicacao": n["data_publicacao"],
+                "versao_texto": "enunciado no Manual de Admissibilidade Recursal TNU, 11ª edição, junho de 2026",
+                "fonte": dados["fonte"], "pagina_pdf": str(n["pagina_pdf"]),
+                "baixado_em": dt.date.today().isoformat()}
+        if n.get("data_cancelamento"):
+            meta["data_cancelamento"] = n["data_cancelamento"]
+        cab = ["---"] + [f"{k}: {yaml_str(v)}" for k, v in meta.items()]
+        if n.get("data_cancelamento"):
+            cab.append("revogada: true")
+        cab.extend(["---", "", f"# {titulo}", "", n["texto"], ""])
+        os.makedirs(os.path.dirname(destino), exist_ok=True)
+        with open(destino + ".tmp", "w", encoding="utf-8") as f:
+            f.write("\n".join(cab))
+        os.replace(destino + ".tmp", destino)
+        cont["ok"] += 1
+    print("tnu/sumulas (complemento 2026):", cont, flush=True)
+    return cont
+
+
 def regimentos(limite, refazer=False):
     fontes = [
         ("tst", "Tribunal Superior do Trabalho", "2017-11-20",
@@ -565,6 +604,9 @@ def main():
     if a.somente in (None, "tnu-sumulas"):
         try:
             resultado = tnu_sumulas(limite, a.refazer)
+            for chave in cont:
+                cont[chave] += resultado[chave]
+            resultado = tnu_sumulas_complementares(limite, a.refazer)
             for chave in cont:
                 cont[chave] += resultado[chave]
         except Exception as e:

@@ -4,6 +4,79 @@ Objetivo: completar o escopo de `scripts/plano.py`, preservando as fontes oficia
 os originais, o vocabulário canônico e a publicação incremental por lote. Metas
 estimadas não comprovam cobertura integral; não reduzir metas para declarar 100%.
 
+## Snapshot SAPL/TNU e reparos — 16/10/2026
+
+- Último publicado `34144cc9715`: 664.650 documentos. Índice preparado:
+  1.168 novos SAPL, seis TNU e dois reparos de diários (duas adições/duas
+  remoções); saldo 1.174, total 665.824. São 665.821 nas séries com meta
+  e três sem meta. Nenhuma pasta órfã; diff-check sem erros.
+- Dois erros publicados reparados com leitura visual da coluna oficial:
+  Butiá/RS, Decreto 344/2025, código 477E4651, artigos 1–4; Glória do
+  Goitá/PE, Decreto 97/2025, código 252DE922, artigos 1–3 e dotação.
+  Manifesto versionável municipais/_reparos_colunas.json; snapshots antigos
+  conferem byte a byte com HEAD, originais PDF preservados.
+- Formato dos documentos SAPL/TNU já auditado no snapshot anterior sem erros;
+  dois reparos adicionais validados no índice por SHA/artigos/metadados.
+  Auditor IBGE do índice separado encerrado (53119): 12.329 municipais,
+  1.281 SAPL, zero problemas e zero avisos. Relatório em
+  /tmp/auditoria-municipal-index-separado.json. Quatro scripts com sintaxe válida.
+- Os 27.963 diários novos permanecem em disco fora do índice, manifesto de
+  blobs em _log_snapshot_diarios_suspensos.json. Remoção do índice concluída
+  por update-index com caminhos exatos; tentativa restore com milhares de
+  pathspecs substituída por custo de varredura, não por falha de coletor.
+- Fila municipal 12292 e filho 12301 encerrados controladamente por defeito
+  comprovado de integridade; ambos ausentes. Checkpoint confirmado FAMURS
+  06/03/2026, edições 4282/4282a; registro em
+  municipais/_indice/_checkpoint-integridade-colunas.json. SAPL 17034 e
+  aguardador 34251 preservados; demais coletas continuam.
+- Extrator geométrico novo ainda experimental, não integrar/publicar como
+  validado antes de testar tabelas, largura inteira e continuação de atos.
+  Agente federal liberou 208 RSFs de coletâneas após revalidar limites,
+  identidade, corpo/SHA e tokens numéricos; permanecem para o próximo lote.
+
+## Bloqueio de publicação dos diários — 16/10/2026
+
+- Não publicar os diários municipais do snapshot atual apenas por formato/IBGE.
+  PDF AROM publicado_116172_2026-10-14_dba3624201051063de23d63a79d638b5.pdf
+  tem ordem de colunas trocada no pdftotext: páginas 55–56 misturam três atos
+  e seus códigos. Município errado e duplicatas são sintomas, não toda a causa.
+- Códigos corretos conferidos visualmente pelo agente: decreto 12164 termina
+  071373EE, decreto 12165 termina 68BAA13F, lei 1984 termina 4D4D9BB9.
+  Código 225EDA8C pertence a Alto Alegre dos Parecis, página 5, corpo íntegro.
+- municipal_juris trata extração geométrica, reparos e cobertura com tabelas;
+  estados audita amostra independente de outras edições/associações, só leitura.
+  Preservar cache e versões anteriores. Verificar abrangência no corpus já
+  publicado; não afirmar fidelidade integral com auditor de formato.
+- Auditor IBGE sessão 37368 terminou: 40.292 municipais, 1.281 SAPL,
+  quatro identidades repetidas, cinco avisos de código reutilizado. Os oito
+  caminhos dos quatro pares suspeitos estão no snapshot novo, não no HEAD.
+- Retirada do índice (sem apagar disco) de 27.963 novos diários em preparação;
+  manifesto de paths/blobs em _log_snapshot_diarios_suspensos.json, paths em
+  /tmp/municipal-diarios-suspensos.paths, sessão 98111. Próximo comando após
+  término: git restore --staged --pathspec-from-file desse arquivo, NUL.
+  Restarão 1.168 novos SAPL e seis TNU, antes de revalidar IBGE do índice.
+  SAPL e TNU são fontes independentes e podem ser publicados quando validados.
+
+## Continuação em curso — 16/10/2026
+
+- Lote estadual publicado em `34144cc9715`: 664.650 documentos, 5,6% das
+  séries com meta; hash do PROGRESSO.md público confirmado pela API GitHub.
+- Snapshot municipal/TNU preparado no índice Git, incluindo correção de merge
+  concorrente por submodo no registro SAPL. Agente reproduziu perda com snapshot
+  antigo e testou preservação de submodos e oito merges simultâneos sem HTTP.
+- Snapshot contém 29.131 novos municipais e seis TNU, total futuro 693.787:
+  693.784 nas séries com meta e três sem meta. Auditoria de formato encerrada
+  (sessão 33556): 29.137 arquivos, zero erros, 12.583 datas ausentes explícitas.
+  Diff-check só apontou linha literal ======= em cabeçalho do diário Tapauá,
+  Lei 373/2026, não conflito de merge. Conferência IBGE do snapshot pendente.
+  Log: _log_diff_municipal_tnu_lote2.txt. Não repetir auditoria integral sem mudança.
+- Seis enunciados TNU 84–89 conferidos contra transcrição versionável e SHA do
+  PDF CJF; súmula 86 cancelada preservada. TRF4 separado ainda não staged:
+  136 enunciados oficiais, requer item próprio no plano e validação do lote.
+- Federal continua DPL dirigido/RFB; sete migrações RSF e novos textos ficam
+  para próximo lote. Coletânea pública histórica do Senado em investigação.
+- Não considerar estes checkpoints como prova de conclusão integral.
+
 ## Estado atual verificado — 15/10/2026, terceiro lote estadual
 
 - Main publicado anterior: `517db958cd0`, 627.980 documentos, relatório GitHub

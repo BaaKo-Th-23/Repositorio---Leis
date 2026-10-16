@@ -1,10 +1,10 @@
 # Progresso
 
-Gerado em 16/10/2026 00:03:33 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 16/10/2026 00:19:40 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**664.650 documentos · 664.650 / ~11.768.663 nas séries com meta (5.6%) · 0 sem meta**
+**665.824 documentos · 665.821 / ~11.768.663 nas séries com meta (5.7%) · 3 sem meta**
 
 ![progresso](progresso.svg)
 
@@ -89,7 +89,7 @@ Planalto, Senado, Câmara e assembleias.
 
 Diários oficiais e portais de órgãos e tribunais.
 
-280.182 / ~861.184 documentos (32.5%)
+280.188 / ~861.184 documentos (32.5%)
 
 ### Infralegal — tributário
 
@@ -241,7 +241,7 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Jurisprudência vinculante
 
-11.534 / ~14.667 documentos (78.6%)
+11.540 / ~14.667 documentos (78.7%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -252,7 +252,7 @@ Diários oficiais e portais de órgãos e tribunais.
 | ✅ | Súmulas do STJ | 649 | 649 | `jurisprudencia/stj/sumulas` | stj.jus.br |
 | ✅ | Temas de recursos repetitivos (STJ) | 1.474 | 1.474 | `jurisprudencia/stj/repetitivos` | STJ — dados abertos, Temas.csv (números únicos) |
 | ✅ | Súmulas e orientações jurisprudenciais do TST | 1.157 | 1.157 | `jurisprudencia/tst` | tst.jus.br |
-| 🟦 | Súmulas do TCU, TNU, STM e TSE | 377 | 700 | `jurisprudencia/outros-tribunais`, `jurisprudencia/tnu/sumulas` | tcu.gov.br, cjf.jus.br, stm.jus.br, tse.jus.br |
+| 🟦 | Súmulas do TCU, TNU, STM e TSE | 383 | 700 | `jurisprudencia/outros-tribunais`, `jurisprudencia/tnu/sumulas` | tcu.gov.br, cjf.jus.br, stm.jus.br, tse.jus.br |
 | 🟦 | Regimentos internos dos tribunais superiores | 2 | 6 | `jurisprudencia/regimentos` | portais dos tribunais |
 | ✅ | Temas de uniformização da TNU, incluindo cancelados | 394 | 394 | `jurisprudencia/tnu/uniformizacao` | CNJ — Pangea/BNP (precedentes da TNU) |
 
@@ -277,22 +277,22 @@ Diários oficiais e portais de órgãos e tribunais.
 
 5.571 municípios no cadastro do IBGE, sem índice legislativo central.
 
-11.161 documentos · 11.161 / ~10.332.713 nas séries com meta (0.1%) · 0 sem meta
+12.329 documentos · 12.326 / ~10.332.713 nas séries com meta (0.1%) · 3 sem meta
 
 ### Legislação municipal
 
-11.161 documentos · 11.161 / ~10.332.713 nas séries com meta (0.1%) · 0 sem meta
+12.329 documentos · 12.326 / ~10.332.713 nas séries com meta (0.1%) · 3 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Leis orgânicas municipais e suas emendas | 208 | 5.571 | `municipais/*/*/lei-organica`, `municipais/*/*/emendas-lei-organica` | diários das associações estaduais de municípios |
+| 🟦 | Leis orgânicas municipais e suas emendas | 1.370 | 5.571 | `municipais/*/*/lei-organica`, `municipais/*/*/emendas-lei-organica` | diários das associações estaduais de municípios |
 | ⬜️ | Planos diretores | 0 | 5.571 | `municipais/*/*/plano-diretor` | portais municipais |
 | ⬜️ | Códigos tributários municipais | 0 | 5.571 | `municipais/*/*/codigo-tributario` | portais municipais |
 | ⬜️ | Códigos de obras, posturas e zoneamento | 0 | 16.000 | `municipais/*/*/codigos` | portais municipais |
 | 🟦 | Leis ordinárias e complementares municipais (27 capitais primeiro) | 4.357 | 8.300.000 | `municipais/*/*/leis-ordinarias`, `municipais/*/*/leis-complementares` | Câmaras municipais |
-| — | Decretos legislativos municipais | 0 | desconhecida | `municipais/*/*/decretos-legislativos` | SAPL/Interlegis; universo nacional ainda desconhecido |
+| — | Decretos legislativos municipais | 3 | desconhecida | `municipais/*/*/decretos-legislativos` | SAPL/Interlegis; universo nacional ainda desconhecido |
 | — | Resoluções municipais | 0 | desconhecida | `municipais/*/*/resolucoes` | SAPL/Interlegis; universo nacional ainda desconhecido |
-| 🟦 | Decretos municipais | 6.596 | 2.000.000 | `municipais/*/*/decretos` | prefeituras e diários oficiais |
+| 🟦 | Decretos municipais | 6.599 | 2.000.000 | `municipais/*/*/decretos` | prefeituras e diários oficiais |
 
 ---
 

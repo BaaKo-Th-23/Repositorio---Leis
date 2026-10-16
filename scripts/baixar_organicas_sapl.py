@@ -2,6 +2,7 @@
 import argparse
 import datetime as dt
 import hashlib
+import fcntl
 import json
 import re
 from pathlib import Path
@@ -19,6 +20,62 @@ FONTES = [("Lapa", "PR", "sapl.lapa.pr.leg.br"),
           ("Igarapava", "SP", "sapl.igarapava.sp.leg.br")]
 
 
+TRAVAS_HOST = {}
+REDES_HOST = {}
+
+
+def rede_host(host, rps):
+    if host not in TRAVAS_HOST:
+        pasta = RAIZ / "_indice/organicas-sapl/travas"
+        pasta.mkdir(parents=True, exist_ok=True)
+        trava = (pasta / (host + ".lock")).open("a")
+        fcntl.flock(trava, fcntl.LOCK_EX)
+        TRAVAS_HOST[host] = trava
+    if host not in REDES_HOST:
+        REDES_HOST[host] = Rede(rps=rps)
+    return REDES_HOST[host]
+
+
+def salvar_registro(caminho, registro, codigo, host, modo=None):
+    with caminho.with_suffix(".lock").open("a") as trava:
+        fcntl.flock(trava, fcntl.LOCK_EX)
+        atual = json.loads(caminho.read_text()) if caminho.exists() else registro
+        linha = atual.setdefault(str(codigo), registro[str(codigo)])
+        linha["estado_descoberta"] = registro[str(codigo)]["estado_descoberta"]
+        destino = linha.setdefault("fontes", {}).setdefault(host, {})
+        recebido = registro[str(codigo)]["fontes"][host]
+        for campo in ("identidade", "estado"):
+            if campo in recebido:
+                destino[campo] = recebido[campo]
+        if modo is not None:
+            destino.setdefault(modo, {}).update(recebido.get(modo, {}))
+        escrever(caminho, json.dumps(atual, ensure_ascii=False).encode())
+
+
+def categoria_norma(tipo, norma=None):
+    t = normalizar_chave(tipo)
+    if re.search(r"projeto|proposta|requerimento|indicacao|veto|mensagem|parecer", t):
+        return None
+    if "organica" in t:
+        return ("emendas-lei-organica", "Emenda à Lei Orgânica") if "emenda" in t else ("lei-organica", "Lei Orgânica")
+    if "decreto legislativo" in t:
+        return "decretos-legislativos", "Decreto legislativo"
+    if "decreto" in t:
+        return "decretos", "Decreto"
+    if "resolucao" in t:
+        return "resolucoes", "Resolução"
+    if re.search(r"\blei\b|codigo", t):
+        e = normalizar_chave((norma or {}).get("ementa", ""))
+        if re.match(r"(?:institui|aprova|dispoe sobre) (?:o |a |um |uma )?(?:novo )?plano diretor", e):
+            return "plano-diretor", "Plano diretor"
+        if re.match(r"(?:institui|aprova|dispoe sobre) (?:o |a |um |uma )?(?:novo )?codigo tributario", e):
+            return "codigo-tributario", "Código tributário"
+        if re.match(r"(?:institui|aprova|dispoe sobre) (?:o |a |um |uma )?(?:novo )?codigo (?:de obras|de posturas|de zoneamento)", e):
+            return "codigos", "Código municipal"
+        return ("leis-complementares", "Lei complementar") if "complementar" in t else ("leis-ordinarias", "Lei ordinária")
+    return None
+
+
 def escrever(p, b):
     p.parent.mkdir(parents=True, exist_ok=True)
     tmp = p.with_name(p.name + ".tmp")
@@ -26,7 +83,7 @@ def escrever(p, b):
     tmp.replace(p)
 
 
-def executar(fontes, rps):
+def executar(fontes, rps, modo="organicas", max_documentos=0):
     ibge = json.loads((RAIZ / "_indice/ibge-municipios.json").read_text())
     registro_path = RAIZ / "_indice/organicas-sapl/municipios.json"
     registro = json.loads(registro_path.read_text()) if registro_path.exists() else {
@@ -34,7 +91,7 @@ def executar(fontes, rps):
                        "estado_descoberta": "fonte ainda não localizada", "fontes": {}} for x in ibge}
     erros = 0
     for nome, uf, host in fontes:
-        rede = Rede(rps=rps)
+        rede = rede_host(host, rps)
         cache = RAIZ / "_indice/organicas-sapl" / host
         def obter(url, destino):
             if destino.exists():
@@ -61,15 +118,17 @@ def executar(fontes, rps):
                        for c in casa["results"]):
                 raise RuntimeError("identidade da casa SAPL diverge do município IBGE")
             registro[str(codigo)]["estado_descoberta"] = "fonte oficial identificada"
-            registro[str(codigo)]["fontes"][host] = {"identidade": f"https://{host}/api/base/casalegislativa/",
-                                                  "estado": "índice em processamento"}
-            escrever(registro_path, json.dumps(registro, ensure_ascii=False).encode())
+            registro[str(codigo)]["fontes"].setdefault(host, {"identidade": f"https://{host}/api/base/casalegislativa/",
+                                                  "estado": "índice em processamento"})
+            salvar_registro(registro_path, registro, codigo, host)
             tipos = []
+            tipos_reais = []
             page = 1
             while True:
                 d = api(f"norma/tiponormajuridica/?page_size=100&page={page}")
-                tipos += [t for t in d["results"] if "organica" in normalizar_chave(t["descricao"]) and
-                          not re.search("projeto|proposta", t["descricao"], re.I)]
+                tipos_reais.extend(d["results"])
+                tipos += [t for t in d["results"] if categoria_norma(t["descricao"]) and
+                          (modo == "legislacao" or "organica" in normalizar_chave(t["descricao"]))]
                 if not d["pagination"].get("next_page"):
                     break
                 page += 1
@@ -80,17 +139,23 @@ def executar(fontes, rps):
             pasta_municipio = RAIZ / uf / normalizar_chave(nome).replace(" ", "-")
             for tipo in tipos:
                 page = 1
+                vistos = set()
                 while True:
                     d = api(f"norma/normajuridica/?tipo={tipo['id']}&page_size=100&page={page}")
+                    if any(n["tipo"] != tipo["id"] for n in d["results"]):
+                        raise RuntimeError("API ignorou o filtro de tipo; índice não confiável")
+                    vistos.update(n["id"] for n in d["results"])
                     indice.extend(d["results"])
                     for n in d["results"]:
                         try:
                             emenda = "emenda" in tipo["descricao"].lower()
-                            categoria = "emendas-lei-organica" if emenda else "lei-organica"
+                            categoria, tipo_canonico = categoria_norma(tipo["descricao"], n)
                             identity = f"https://{host}/norma/{n['id']}"
-                            existentes = list(pasta_municipio.glob(f"{categoria}/**/*.md"))
+                            existentes = list(pasta_municipio.glob("**/*.md"))
                             if any(f"fonte: {yaml_str(identity)}\n" in x.read_text() for x in existentes):
                                 pulado += 1
+                                continue
+                            if max_documentos and ok >= max_documentos:
                                 continue
                             url = n.get("texto_integral")
                             if not url:
@@ -133,7 +198,7 @@ def executar(fontes, rps):
                             ano = data[:4] if data else ano_documento
                             numero = str(n["numero"])
                             titulo = n["__str__"]
-                            meta = {"titulo": titulo, "tipo": "Emenda à Lei Orgânica" if emenda else "Lei Orgânica",
+                            meta = {"titulo": titulo, "tipo": tipo_canonico, "tipo_na_fonte": tipo["descricao"],
                                     "numero": numero, "data": data, "municipio": nome, "uf": uf,
                                     "codigo_ibge": str(codigo), "versao_texto": "texto integral anexado no SAPL municipal; " + n.get("observacao", ""),
                                     "fonte": identity, "fonte_texto": url,
@@ -156,20 +221,23 @@ def executar(fontes, rps):
                                 f.write(json.dumps({"id": n["id"], "erro": str(e), "quando": dt.datetime.now().isoformat()}) + "\n")
                             print(host, n["id"], "FALHA", e, flush=True)
                     if not d["pagination"].get("next_page"):
+                        if len(vistos) != d["pagination"]["total_entries"]:
+                            raise RuntimeError("contagem do índice diverge do total oficial")
                         break
                     page += 1
-            escrever(cache / "indice.json", json.dumps({"fonte": f"https://{host}/api/norma/normajuridica/",
-                     "municipio": nome, "uf": uf, "codigo_ibge": codigo, "tipos": tipos,
+            escrever(cache / ("indice.json" if modo == "organicas" else "indice-legislacao.json"), json.dumps({"fonte": f"https://{host}/api/norma/normajuridica/",
+                     "municipio": nome, "uf": uf, "codigo_ibge": codigo, "modo": modo, "tipos_reais": tipos_reais, "tipos": tipos,
                      "normas": indice, "consultado_em": dt.date.today().isoformat()}, ensure_ascii=False).encode())
             presentes = {n["id"] for n in indice if any(
                 "fonte: " + yaml_str("https://" + host + "/norma/" + str(n["id"])) + "\n" in x.read_text()
                 for x in pasta_municipio.glob("**/*sapl*.md"))}
-            registro[str(codigo)]["fontes"][host].update({"estado": "índice orgânico completo capturado",
+            registro = json.loads(registro_path.read_text())
+            registro[str(codigo)]["fontes"][host].setdefault(modo, {}).update({"estado": "índice de tipos normativos completo capturado", "limite_textos": max_documentos,
                 "registros": len(indice), "textos_md": len(presentes), "ids_equivalentes": list(equivalencias), "ids_sem_md": [n["id"] for n in indice if n["id"] not in presentes and str(n["id"]) not in equivalencias], "normas_distintas": len({(n["tipo"], n["numero"], n["ano"]) for n in indice}),
                 "leis_organicas_distintas": len({(n["numero"], n["ano"]) for n in indice if not
                     any(t["id"] == n["tipo"] and "emenda" in t["descricao"].lower() for t in tipos)}),
                 "consultado_em": dt.date.today().isoformat()})
-            escrever(registro_path, json.dumps(registro, ensure_ascii=False).encode())
+            salvar_registro(registro_path, registro, codigo, host, modo)
             print(host, "IBGE", codigo, "novos", ok, "já existentes", pulado, flush=True)
         except Exception as e:
             erros += 1
@@ -225,9 +293,13 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--catalogo-sigi", action="store_true", help="captura catálogo oficial de candidatos, sem baixar normas")
     ap.add_argument("--rps", type=float, default=1)
+    ap.add_argument("--modo", choices=["organicas", "legislacao"], default="organicas")
+    ap.add_argument("--max-documentos", type=int, default=0, help="limita novas conversões; índice permanece completo")
     ap.add_argument("--host", help="reexecuta uma fonte já identificada")
     ap.add_argument("--descobrir", metavar="HOST", help="valida um SAPL oficial e registra sua identidade IBGE")
     a = ap.parse_args()
+    if a.max_documentos < 0:
+        ap.error("max-documentos deve ser não negativo")
     if not 0 < a.rps <= 4:
         ap.error("rps deve ser maior que zero e no máximo 4")
     if a.catalogo_sigi:
@@ -242,7 +314,7 @@ if __name__ == "__main__":
         if not re.fullmatch(r"[a-z0-9.-]+\.leg\.br", a.descobrir):
             ap.error("informe um host legislativo oficial .leg.br")
         url = f"https://{a.descobrir}/api/base/casalegislativa/"
-        st, bruto, _ = Rede(rps=a.rps).get(url, tentativas=1)
+        st, bruto, _ = rede_host(a.descobrir, a.rps).get(url, tentativas=1)
         if st != 200:
             ap.error(f"fonte indisponível: HTTP {st}")
         casas = json.loads(bruto)["results"]
@@ -254,4 +326,4 @@ if __name__ == "__main__":
     fontes = list(dict.fromkeys(fontes))
     if a.host and not any(f[2] == a.host for f in fontes):
         ap.error("host não identificado; use --descobrir")
-    raise SystemExit(executar([f for f in fontes if not a.host or f[2] == a.host], a.rps))
+    raise SystemExit(executar([f for f in fontes if not a.host or f[2] == a.host], a.rps, a.modo, a.max_documentos))
