@@ -1,10 +1,10 @@
 # Progresso
 
-Gerado em 16/10/2026 00:31:24 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 16/10/2026 00:41:00 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**688.323 documentos · 688.320 / ~11.768.663 nas séries com meta (5.8%) · 3 sem meta**
+**688.459 documentos · 688.456 / ~11.768.799 nas séries com meta (5.8%) · 3 sem meta**
 
 ![progresso](progresso.svg)
 
@@ -89,7 +89,7 @@ Planalto, Senado, Câmara e assembleias.
 
 Diários oficiais e portais de órgãos e tribunais.
 
-296.954 / ~861.184 documentos (34.5%)
+297.090 / ~861.320 documentos (34.5%)
 
 ### Infralegal — tributário
 
@@ -255,6 +255,14 @@ Diários oficiais e portais de órgãos e tribunais.
 | 🟦 | Súmulas do TCU, TNU, STM e TSE | 383 | 700 | `jurisprudencia/outros-tribunais`, `jurisprudencia/tnu/sumulas` | tcu.gov.br, cjf.jus.br, stm.jus.br, tse.jus.br |
 | 🟦 | Regimentos internos dos tribunais superiores | 2 | 6 | `jurisprudencia/regimentos` | portais dos tribunais |
 | ✅ | Temas de uniformização da TNU, incluindo cancelados | 394 | 394 | `jurisprudencia/tnu/uniformizacao` | CNJ — Pangea/BNP (precedentes da TNU) |
+
+### Súmulas do TRF4
+
+136 / ~136 documentos (100.0%)
+
+| | Tipo de norma | Tem | Meta | Pasta | Fonte |
+| :-: | --- | ---: | ---: | --- | --- |
+| ✅ | Súmulas, incluindo canceladas | 136 | 136 | `jurisprudencia/trf4/sumulas` | https://www.trf4.jus.br/trf4/controlador.php?acao=sumulas_trf4 |
 
 ### Infralegal estadual
 

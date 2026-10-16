@@ -4,6 +4,32 @@ Objetivo: completar o escopo de `scripts/plano.py`, preservando as fontes oficia
 os originais, o vocabulário canônico e a publicação incremental por lote. Metas
 estimadas não comprovam cobertura integral; não reduzir metas para declarar 100%.
 
+## TRF4 e próxima reconciliação — 16/10/2026
+
+- `39239e708b0` publicado e conferido na API GitHub: 688.323 documentos,
+  688.320 nas séries com meta (5,8%) e três sem meta. PROGRESSO.md e SVG
+  incluídos no commit pelo hook, medindo exatamente o índice.
+- Snapshot TRF4 preparado: 136 súmulas (1–136), incluindo as cinco canceladas
+  14/52/61/62/122. Todos os corpos e links de precedentes conferem com HTML
+  oficial preservado, SHA d2e9fd03ca930b26d8f6c34a46b097415a6e0732ab3c512df7cea3929b8203bc.
+  Formato de 136 MD, sintaxe de dois scripts e diff-check válidos. Relatório
+  com setor específico "Súmulas do TRF4" renderizado e inspecionado, sem cortes.
+  Total futuro 688.459: 688.456 nas séries com meta, três sem meta.
+- AROM foi reconstruído no disco após revisão independente: 71 antigos
+  preservados, 68 candidatos aplicados; 39 caminhos retirados, 36 novos e
+  32 substituídos. Isso é diff lógico do working tree, não saldo publicado.
+  Não staged; calcular diff contra HEAD antes de publicar. Manifestos/backups
+  versionados localmente em municipais/_indice/_reconciliacao-geometria e
+  municipais/_referencias/reconciliacao-geometria; formato/IBGE/digest passaram.
+- Fila offline de preparação (nunca aplica) criada, sessão25905/PID63979, mas
+  pausada para corrigir reconhecimento de LEI ORDINÁRIA5080 no piloto FAMURS.
+  Trava de retirada impediu exclusão indevida. Exigir hash do classificador
+  nas preparações e revalidar resultados antigos após correção. Não retomar
+  coleta HTTP de diários; SAPL17034/aguardador34251 preservados.
+- Estados revisa quatro pilotos antes de novas aplicações. Federal recuperou
+  14 RSFs adicionais, ainda fora do snapshot; restam22. Índice CâmaraRSF
+  agora6370/6370 por82totais anuais, ID faltante já tinha texto (não norma nova).
+
 ## Lote federal/RFB/DOU validado — 16/10/2026
 
 - Snapshot do índice: 5.740 novos federais, 16.766 novos atos de reguladores,

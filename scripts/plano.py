@@ -273,6 +273,8 @@ PLANO = [
          "jurisprudencia/regimentos", 6, 2, "portais dos tribunais"),
     Item("Jurisprudência vinculante", "Temas de uniformização da TNU, incluindo cancelados",
          "jurisprudencia/tnu/uniformizacao", 394, 2, "CNJ — Pangea/BNP (precedentes da TNU)"),
+    Item("Súmulas do TRF4", "Súmulas, incluindo canceladas", "jurisprudencia/trf4/sumulas", 136, 2,
+         "https://www.trf4.jus.br/trf4/controlador.php?acao=sumulas_trf4"),
 
     # ----------------------------------------------------------- Estadual: leis (já coletado)
     Item("Leis estaduais e distritais", "Constituições estaduais e Lei Orgânica do DF", "estaduais/*/constituicao, estaduais/*/lei-organica", 27,
