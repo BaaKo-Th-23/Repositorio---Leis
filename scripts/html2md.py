@@ -1,5 +1,6 @@
 """Converte o HTML de normas (exportado do Word, como servido pelo normas.leg.br) em Markdown."""
 import re
+import html
 from html.parser import HTMLParser
 
 BLOCK_TAGS = {"p", "h1", "h2", "h3", "h4", "h5", "h6", "li", "div", "blockquote"}
@@ -30,6 +31,93 @@ def style_flags(attrs):
     }
 
 
+class TableParser(HTMLParser):
+    TAGS = {"table", "caption", "colgroup", "col", "thead", "tbody", "tfoot", "tr", "th", "td",
+            "p", "div", "br", "ul", "ol", "li", "blockquote", "sup", "sub"}
+    VOID = {"br", "col", "img", "hr", "input", "meta", "link", "wbr"}
+    VISUAL = {"img", "svg", "object", "embed", "iframe", "canvas", "input", "math"}
+
+    def __init__(self, inherited):
+        super().__init__(convert_charrefs=True)
+        self.root = {"tag": None, "children": [], "flags": inherited, "skip": False}
+        self.stack = [self.root]
+
+    def handle_starttag(self, tag, attrs):
+        if (tag in self.VISUAL or tag.startswith("v:")) and not self.stack[-1]["skip"]:
+            raise ValueError(f"elemento visual não extraído na tabela: {tag}")
+        if tag in ("colgroup", "thead", "tbody", "tfoot", "caption"):
+            for k in range(len(self.stack) - 1, 0, -1):
+                if self.stack[k]["tag"] == "table":
+                    del self.stack[k + 1:]
+                    break
+        if tag == "tr":
+            for k in range(len(self.stack) - 1, 0, -1):
+                if self.stack[k]["tag"] == "table":
+                    break
+                if self.stack[k]["tag"] in ("colgroup", "caption"):
+                    del self.stack[k:]
+                    break
+        # Fechamentos opcionais de HTML não podem criar células aninhadas.
+        if tag in ("td", "th", "tr", "p"):
+            targets = {"td", "th"} if tag in ("td", "th") else {tag}
+            for k in range(len(self.stack) - 1, 0, -1):
+                if self.stack[k]["tag"] == "table":
+                    break
+                if self.stack[k]["tag"] in targets:
+                    del self.stack[k:]
+                    break
+        flags = style_flags(attrs)
+        flags["b"] |= tag in ("b", "strong")
+        flags["i"] |= tag in ("i", "em")
+        flags["s"] |= tag in ("s", "strike", "del")
+        flags = {k: flags[k] or self.stack[-1]["flags"].get(k, False) for k in ("b", "i", "s")}
+        safe = {}
+        for key, value in attrs:
+            if key in ("rowspan", "colspan", "span") and tag in ("td", "th", "col", "colgroup"):
+                if not re.fullmatch(r"[0-9]+", value or ""):
+                    raise ValueError(f"{key} inválido na tabela")
+                safe[key] = value
+            elif key == "scope" and tag == "th" and value in ("row", "col", "rowgroup", "colgroup"):
+                safe[key] = value
+            elif key in ("id", "headers") and re.fullmatch(r"[\w .:-]+", value or ""):
+                safe[key] = value
+        node = {"tag": tag, "attrs": safe, "children": [], "flags": flags,
+                "skip": self.stack[-1]["skip"] or tag in SKIP_TAGS}
+        self.stack[-1]["children"].append(node)
+        if tag not in self.VOID:
+            self.stack.append(node)
+
+    def handle_endtag(self, tag):
+        for k in range(len(self.stack) - 1, 0, -1):
+            if self.stack[k]["tag"] == tag:
+                del self.stack[k:]
+                break
+
+    def handle_data(self, data):
+        if not self.stack[-1]["skip"]:
+            self.stack[-1]["children"].append((data, self.stack[-1]["flags"]))
+
+    def render(self, node=None):
+        node = self.root if node is None else node
+        if isinstance(node, tuple):
+            text, flags = node
+            text = html.escape(text.replace("\r", " ").replace("\n", " "), quote=False)
+            if not text.strip():
+                return text
+            for key, tag in (("i", "em"), ("b", "strong"), ("s", "del")):
+                if flags.get(key):
+                    text = f"<{tag}>{text}</{tag}>"
+            return text
+        if node["skip"]:
+            return ""
+        content = "".join(self.render(child) for child in node["children"])
+        tag = node["tag"]
+        if tag not in self.TAGS:
+            return content
+        attrs = "".join(f' {k}="{html.escape(v, quote=True)}"' for k, v in node["attrs"].items())
+        return f"<{tag}{attrs}>" if tag in self.VOID else f"<{tag}{attrs}>{content}</{tag}>"
+
+
 class Parser(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
@@ -39,13 +127,31 @@ class Parser(HTMLParser):
         self.block_center = False
         self.block_tag = None
         self.blocks = []  # (tipo, conteúdo, centralizado)
-        self.tabelas = []  # pilha de tabelas abertas: {"linhas": [[célula, ...]], "celula": [parágrafos] | None}
+        self.source = ""
+        self.table_depth = 0
+
+    def feed(self, data):
+        self.source += data
+        super().feed(data)
+
+    def source_offset(self):
+        line, column = self.getpos()
+        return sum(len(s) + 1 for s in self.source.split("\n")[:line - 1]) + column
 
     # --- formatação inline herdada ---
     def cur(self, key):
         return any(f.get(key) for _, f in self.fmt)
 
     def handle_starttag(self, tag, attrs):
+        if self.table_depth:
+            self.table_depth += tag == "table"
+            return
+        if tag == "table" and not self.skip:
+            self.flush()
+            self.table_depth = 1
+            self.table_start = self.source_offset()
+            self.table_inherited = {k: self.cur(k) for k in ("b", "i", "s")}
+            return
         if tag in SKIP_TAGS:
             self.skip += 1
             return
@@ -61,19 +167,6 @@ class Parser(HTMLParser):
             flags["i"] = True
         if tag in ("s", "strike", "del"):
             flags["s"] = True
-        if tag in ("table", "tr", "td", "th") and flags["s"]:
-            self.fmt.append((tag, {"s": True}))
-        if tag == "table":
-            self.flush()
-            self.tabelas.append({"linhas": [], "celula": None})
-            return
-        if tag == "tr" and self.tabelas:
-            self.tabelas[-1]["linhas"].append([])
-            return
-        if tag in ("td", "th") and self.tabelas:
-            self.flush()
-            self.tabelas[-1]["celula"] = []
-            return
         if tag in BLOCK_TAGS:
             self.flush()
             self.block_tag = tag
@@ -81,6 +174,16 @@ class Parser(HTMLParser):
         self.fmt.append((tag, flags))
 
     def handle_endtag(self, tag):
+        if self.table_depth:
+            if tag == "table":
+                self.table_depth -= 1
+                if not self.table_depth:
+                    end = self.source.find(">", self.source_offset()) + 1
+                    parser = TableParser(self.table_inherited)
+                    parser.feed(self.source[self.table_start:end])
+                    parser.close()
+                    self.emitir(("html_table", parser.render(), False))
+            return
         if tag in SKIP_TAGS:
             self.skip = max(0, self.skip - 1)
             return
@@ -89,61 +192,24 @@ class Parser(HTMLParser):
             if self.fmt[k][0] == tag:
                 del self.fmt[k:]
                 break
-        if tag == "table" and self.tabelas:
-            self.flush()
-            self.fechar_tabela(self.tabelas.pop())
-            return
-        if tag in ("td", "th") and self.tabelas and self.tabelas[-1]["celula"] is not None:
-            self.flush()
-            t = self.tabelas[-1]
-            if not t["linhas"]:
-                t["linhas"].append([])
-            t["linhas"][-1].append(t["celula"])
-            t["celula"] = None
-            return
         if tag in BLOCK_TAGS:
             self.flush()
 
     def handle_data(self, data):
-        if self.skip:
+        if self.skip or self.table_depth:
             return
         # quebra de linha no fonte HTML é só espaço; quebras reais vêm de <br>
         data = data.replace("\r", " ").replace("\n", " ")
         self.runs.append((data, self.cur("b"), self.cur("i"), self.cur("s")))
 
     def emitir(self, bloco):
-        """Envia um bloco para a célula aberta da tabela externa, ou para o documento."""
-        if self.tabelas and self.tabelas[-1]["celula"] is not None:
-            self.tabelas[-1]["celula"].append(bloco)
-        else:
-            self.blocks.append(bloco)
+        self.blocks.append(bloco)
 
     def flush(self):
         text = render_runs(self.runs)
         self.runs = []
         if text:
             self.emitir((self.block_tag or "p", text, self.block_center))
-
-    def fechar_tabela(self, t):
-        if t["celula"] is not None:  # </td> ausente
-            t["linhas"].append([t["celula"]]) if not t["linhas"] else t["linhas"][-1].append(t["celula"])
-        linhas = [ln for ln in t["linhas"] if any(c for c in ln)]
-        if not linhas:
-            return
-        texto = lambda cel: " ".join(b[1] if b[0] != "table" else " ".join(" ".join(r) for r in b[1]) for b in cel)
-        colunas = max(len(ln) for ln in linhas)
-        # tabela de diagramação (comum em páginas antigas e no Lotus Notes): vira parágrafos
-        diagramacao = colunas <= 1 or len(linhas) == 1 or any(
-            len(texto(c)) > 300 or sum(1 for b in c if b[0] != "table") > 3 for ln in linhas for c in ln
-        )
-        if diagramacao:
-            for ln in linhas:
-                for c in ln:
-                    for b in c:
-                        self.emitir(b)
-        else:
-            self.emitir(("table", [[texto(c).replace("\n", " ").strip() for c in ln] for ln in linhas], False))
-
 
 def render_runs(runs):
     # junta runs com mesma formatação e aplica ** / * com espaços por fora dos marcadores
@@ -222,6 +288,8 @@ def convert(html_text):
     p = Parser()
     p.feed(html_text)
     p.close()
+    if p.table_depth:
+        raise ValueError("tabela HTML sem fechamento")
     p.flush()
     blocks = p.blocks
     # parágrafos com vários dispositivos separados só por <br>: cada dispositivo vira um parágrafo
@@ -232,7 +300,7 @@ def convert(html_text):
     )
     expandidos = []
     for b in blocks:
-        if b[0] != "table" and "\n" in b[1]:
+        if b[0] not in ("table", "html_table") and "\n" in b[1]:
             partes = [p.strip() for p in inicio_dispositivo.split(b[1]) if p.strip()]
             expandidos += [(b[0], p, b[2]) for p in partes]
         else:
@@ -249,8 +317,8 @@ def convert(html_text):
     i = 0
     while i < len(blocks):
         kind, content, center = blocks[i]
-        if kind == "table":
-            out.append(table_md(content))
+        if kind in ("table", "html_table"):
+            out.append(content if kind == "html_table" else table_md(content))
             i += 1
             continue
         plain = strip_md(content)

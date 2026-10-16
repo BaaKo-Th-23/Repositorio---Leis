@@ -13,6 +13,7 @@ import tempfile
 import shutil
 import urllib.request
 import unicodedata
+from html.parser import HTMLParser
 
 EQUIVALENTES = {}
 DOU = {}
@@ -153,6 +154,46 @@ def extrair(doc, rede=None):
 
 
 def assinatura(corpo):
+    class Tabelas(HTMLParser):
+        def __init__(self, texto):
+            super().__init__(convert_charrefs=True)
+            self.texto = texto
+            self.offsets = [0]
+            self.offsets.extend(m.end() for m in re.finditer("\n", texto))
+            self.nivel = 0
+            self.trechos = []
+            self.partes = []
+
+        def posicao(self):
+            linha, coluna = self.getpos()
+            return self.offsets[linha - 1] + coluna
+
+        def handle_starttag(self, tag, attrs):
+            if tag == "table":
+                if not self.nivel:
+                    self.inicio = self.posicao()
+                    self.partes = []
+                self.nivel += 1
+            if self.nivel and tag in {"table", "tr", "td", "th", "p", "div", "br", "li", "caption"}:
+                self.partes.append("\n")
+
+        def handle_endtag(self, tag):
+            if self.nivel and tag in {"table", "tr", "td", "th", "p", "div", "li", "caption"}:
+                self.partes.append("\n")
+            if tag == "table" and self.nivel:
+                self.nivel -= 1
+                if not self.nivel:
+                    fim = self.texto.index(">", self.posicao()) + 1
+                    self.trechos.append((self.inicio, fim, "".join(self.partes)))
+
+        def handle_data(self, data):
+            if self.nivel:
+                self.partes.append(data)
+
+    tabelas = Tabelas(corpo)
+    tabelas.feed(corpo)
+    for inicio, fim, texto in reversed(tabelas.trechos):
+        corpo = corpo[:inicio] + texto + corpo[fim:]
     linhas = corpo.splitlines()
     while linhas and (not linhas[0].strip() or linhas[0].startswith("#")):
         linhas.pop(0)
@@ -226,6 +267,76 @@ def encontrar_equivalente(doc, corpo):
     return None, None
 
 
+def estrutura_tabelas(corpo):
+    class Estrutura(HTMLParser):
+        def __init__(self):
+            super().__init__(convert_charrefs=True)
+            self.nivel = 0
+            self.eventos = []
+
+        def handle_starttag(self, tag, attrs):
+            if tag == "table":
+                self.nivel += 1
+            if self.nivel:
+                self.eventos.append(("inicio", tag, sorted(attrs)))
+
+        def handle_endtag(self, tag):
+            if self.nivel:
+                self.eventos.append(("fim", tag))
+                if tag == "table":
+                    self.nivel -= 1
+
+        def handle_data(self, texto):
+            if self.nivel:
+                self.eventos.append(("texto", texto))
+
+    parser = Estrutura()
+    parser.feed(corpo)
+    return parser.eventos if not parser.nivel else None
+
+
+def scripts_processamento():
+    return {p.name: hashlib.sha256(p.read_bytes()).hexdigest()
+            for p in (Path(__file__), *(Path(__file__).with_name(n) for n in ("html2md.py", "comum.py", "datas.py")))}
+
+
+def reter_estrutura(doc, corpo, existente, criterio, url):
+    ident = doc["idAto"]
+    pendencia = RAIZ / "_indice/sijut/pendencias-estrutura" / f"{ident}.json"
+    estrutura = estrutura_tabelas(corpo)
+    canonico = existente.read_bytes()
+    estrutura_anterior = estrutura_tabelas(canonico.decode())
+    if estrutura is None or (estrutura and estrutura != estrutura_anterior):
+        cache = RAIZ / "_fonte/sijut" / (hashlib.sha256(url.encode()).hexdigest() + ".json.gz")
+        registro = {"estado": "pendente_estrutura", "id_rfb": ident, "fonte_api": url,
+                    "arquivo": str(existente.relative_to(RAIZ)), "criterio_vinculo_textual": criterio,
+                    "identidade_oficial": identidade(doc), "metadata_fonte": doc["epigrafe"],
+                    "sourcecache": str(cache.relative_to(RAIZ)),
+                    "sourcecache_gzip_sha256": hashlib.sha256(cache.read_bytes()).hexdigest(),
+                    "source_sha256": hashlib.sha256(gzip.decompress(cache.read_bytes())).hexdigest(),
+                    "canonico_sha256": hashlib.sha256(canonico).hexdigest(), "snapshot_canonico": canonico.decode(),
+                    "corpo_candidato": corpo, "bodycandidate_sha256": hashlib.sha256(corpo.encode()).hexdigest(),
+                    "estrutura_candidata": estrutura, "estrutura_canonica": estrutura_anterior,
+                    "scripts_sha256": scripts_processamento(),
+                    "fundamento": "Vínculo de identidade/texto não comprova árvore de tabelas; GFM anterior exige revisão explícita. Canônico preservado."}
+        if pendencia.exists():
+            anterior = pendencia.read_bytes()
+            salvar(pendencia.parent / "originais" / f"{ident}-{hashlib.sha256(anterior).hexdigest()}.json", anterior)
+        salvar(pendencia, json.dumps(registro, ensure_ascii=False, indent=2).encode())
+        referencia = RAIZ / "_indice/sijut/equivalentes" / f"{ident}.json"
+        if referencia.exists():
+            anterior = referencia.read_bytes()
+            snapshot = referencia.parent.parent / "equivalencias-originais" / f"{ident}-{hashlib.sha256(anterior).hexdigest()}.json"
+            salvar(snapshot, anterior)
+            ref = json.loads(anterior)
+            ref.update(estado="pendente_estrutura", integralidade_confirmada=False,
+                       pendencia_estrutura=str(pendencia.relative_to(RAIZ)),
+                       snapshot_referencia_anterior=str(snapshot.relative_to(RAIZ)))
+            salvar(referencia, json.dumps(ref, ensure_ascii=False, indent=2).encode())
+        return True
+    return False
+
+
 def revogacao(doc):
     if doc.get("vigente") is True:
         return False, "vigente:true"
@@ -281,11 +392,32 @@ def processar(rede, item):
     path = RAIZ / ano / f"rfb-sijut-{ident}.md"
     if path.exists():
         return "skip"
+    pendencia = RAIZ / "_indice/sijut/pendencias-estrutura" / f"{ident}.json"
+    doc_pendente = None
+    if pendencia.exists():
+        registro = json.loads(pendencia.read_text())
+        cache = RAIZ / registro["sourcecache"]
+        canonico = RAIZ / registro["arquivo"]
+        if (cache.exists() and canonico.exists()
+                and hashlib.sha256(cache.read_bytes()).hexdigest() == registro["sourcecache_gzip_sha256"]
+                and hashlib.sha256(canonico.read_bytes()).hexdigest() == registro["canonico_sha256"]
+                and hashlib.sha256(registro["corpo_candidato"].encode()).hexdigest() == registro["bodycandidate_sha256"]
+                and registro.get("scripts_sha256") == scripts_processamento()):
+            return "pendente_estrutura"
+        if not cache.exists():
+            raise ValueError("pendência estrutural exige cache original para reavaliação offline; HTTP recusado")
+        doc_pendente = json.loads(gzip.decompress(cache.read_bytes()))
     url = CORPO + str(ident) + "/visao/original"
-    doc = obter(rede, url)
+    doc = doc_pendente if doc_pendente is not None else obter(rede, url)
     if doc.get("idAto") != ident:
         raise ValueError("identificador do texto difere do índice")
-    corpo = extrair(doc, rede)
+    if doc_pendente is not None:
+        class Offline:
+            def get(self, *args, **kwargs):
+                raise ValueError("anexo ausente no cache durante reavaliação de pendência; HTTP recusado")
+        corpo = extrair(doc, Offline())
+    else:
+        corpo = extrair(doc, rede)
     ep = doc["epigrafe"]
     tipo = ep["tipoAto"]
     if tipo["idTipoAto"] not in TIPOS:
@@ -293,6 +425,8 @@ def processar(rede, item):
     hash_corpo = assinatura(corpo)
     existente, criterio = encontrar_equivalente(doc, corpo)
     if existente:
+        if reter_estrutura(doc, corpo, existente, criterio, url):
+            return "pendente_estrutura"
         salvar(RAIZ / "_indice" / "sijut" / "equivalentes" / f"{ident}.json",
                json.dumps({"id_rfb": ident, "fonte_api": url, "arquivo": str(existente.relative_to(RAIZ)),
                            "criterio": criterio, "identidade_oficial": identidade(doc), "sha256_normalizado": hash_corpo}, ensure_ascii=False).encode())
@@ -329,7 +463,7 @@ def auditar_equivalencias():
     originais = [json.loads(p.read_text()) for p in arquivos]
     snapshot = RAIZ / "_fonte" / "sijut" / "auditorias" / ("equivalencias-originais-" + dt.datetime.now().strftime("%Y%m%d-%H%M%S") + ".json.gz")
     salvar(snapshot, gzip.compress(json.dumps(originais, ensure_ascii=False, indent=2).encode()))
-    contagem = {"confirmadas": 0, "recuperadas": 0, "redirecionadas": 0, "erros": 0}
+    contagem = {"confirmadas": 0, "recuperadas": 0, "redirecionadas": 0, "pendentes_estrutura": 0, "erros": 0}
     offline = Offline()
     diario = RAIZ / "_equivalencias_auditoria.jsonl"
     for path in arquivos:
@@ -343,11 +477,15 @@ def auditar_equivalencias():
             registro["identidade_oficial"] = identidade(doc)
             registro["metadados_anterior"] = {k: METAS.get(anterior, {}).get(k) for k in ("tipo", "numero", "data", "orgao", "titulo", "fonte")}
             if existente:
-                novo = {"id_rfb": doc["idAto"], "fonte_api": original["fonte_api"], "arquivo": str(existente.relative_to(RAIZ)),
-                        "criterio": criterio, "identidade_oficial": identidade(doc), "sha256_normalizado": assinatura(corpo)}
-                salvar(path, json.dumps(novo, ensure_ascii=False).encode())
-                estado = "confirmadas" if existente == anterior else "redirecionadas"
-                registro["arquivo_confirmado"] = novo["arquivo"]
+                if reter_estrutura(doc, corpo, existente, criterio, original["fonte_api"]):
+                    estado = "pendentes_estrutura"
+                    registro["motivo"] = "Vínculo textual conservado; integralidade estrutural pendente, canônico preservado."
+                else:
+                    novo = {"id_rfb": doc["idAto"], "fonte_api": original["fonte_api"], "arquivo": str(existente.relative_to(RAIZ)),
+                            "criterio": criterio, "identidade_oficial": identidade(doc), "sha256_normalizado": assinatura(corpo)}
+                    salvar(path, json.dumps(novo, ensure_ascii=False).encode())
+                    estado = "confirmadas" if existente == anterior else "redirecionadas"
+                    registro["arquivo_confirmado"] = novo["arquivo"]
             else:
                 rejeitado = pasta.parent / "equivalencias_rejeitadas" / path.name
                 salvar(rejeitado, path.read_bytes())
@@ -495,7 +633,7 @@ def main():
         print("FIM ÍNDICE", estado["documentos_unicos"], "/", estado["total_fonte"], "completo", estado["completo"], flush=True)
         return int(not estado["completo"])
     equivalentes()
-    contagem, erros = {"ok": 0, "skip": 0, "equivalente": 0}, 0
+    contagem, erros = {"ok": 0, "skip": 0, "equivalente": 0, "pendente_estrutura": 0}, 0
     docs = sorted(estado["documentos"], key=lambda d: (dt.datetime.strptime(d["dataPublicacao"], "%d/%m/%Y").date(), int(d["idAto"])), reverse=True)
     for item in docs:
         try:

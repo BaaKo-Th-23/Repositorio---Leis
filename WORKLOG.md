@@ -1,5 +1,98 @@
 # Continuação da coleta
 
+## Publicação SC9 e conversão de tabelas — 16/10/2026
+
+- Diff-check:80ocorrências intencionais preservadas(79em snapshot original
+  byteidêntico e1quebra GFM2espaços combr comprovado). Prova própria
+  estaduais/_whitespace_preservado_sc9_20261016.json4355a3dd…; nãoapagar
+  essasquebras ou modificaroriginais para forçarcheckverde.
+
+- Raiz aprovou9normas SC após comparação independente e metadados corrigidos:
+ 83tabelas/2.295células. Coorte10tem84tabelas/2.388células;LEIP1120/1991
+  fica retida porVolumesI/II próprios ausentes, sem alteração da meta.
+- Corebb853717… preserva tabelasHTMLsemânticas/spans/formatos e recusa imagens
+  nãoextraídas;8fixturescomparadosHTML5libpassaram. Raiz reconferiu todas10
+  fontesvsMDs com modeloDOMindependente ecorpo do core atual:0diferenças.
+  GFM preservou as84árvores/atributos/textos;visualGitHub ainda nãoverificado.
+- CorrigidosLC128data1994-10-09/rota1994 e11178revogada:true comsnapshots
+  ebodybyteigual. Fontes/backups/metadadosprovas incluídos no envio.
+- Integração70db2e58…/metadadosade9b11…/revisãoindependente14dfa08…;
+  decisão raiz emestaduais/_publicacao_tabelas_sc9_20261016.json.
+  Scripts históricos de testes requerem caches/contexto local; não se afirma
+  execução automática de todos eles emclone limpo.
+- RFBimpede equivalência textual de esconder tabelas:preserva candidato/raw,
+  dependências e referência antiga explicitamentependentes. Raiz repetiu caso
+  PDFsemcacheemreavaliação:0HTTP,erroexpresso,canon/ledgerintactos.
+- Próximo envio inclui9documentosnovos e5scripts comcorreções/consumidores,
+  PROGRESSO.md/progresso.svggeradospeloíndice. Publicaçãoaindapendente decommit/push.
+
+## Perfil final SC9/tabelas aguardando revisão raiz — 16/10/2026
+
+- Agenteestados concluiu duasmetacorreções descritas abaixo:LC128agora1994,
+  LEIP11178revogada:true;corpos/títulos/URI/outrosheaders idênticos. Ledger
+  estaduais/_correcoes_metadados_sc10_20261016.json preserva snapshots/sourceSHA.
+- ManifestoSC10 e568a0343fb3227378a10c9c8ccf29500f27938845a15026fef89d3939114daa:
+ 10estruturais,9publicáveis,1120retidaporVolumesI/II ausentes. Integração
+ 70db2e58fa3bcf5e96533fa70642bb0ba69d84abe45f915f384ff77fad034a3c.
+- RFB final91f5eb8e6d86d4ffaea2de085f4ab236eb34a0c2922161f8f28d90909c42faea:
+  pendência reextraída via redeOffline; PDFtipo6semcache comprovou0HTTP e
+  erroexpresso comcanon/ledgerintactos;12guardas/8dependências/4refs passaram.
+- NÃO staged/publicados ainda. Lista83ações/tmp/integracao-tabelas-publicar-paths.txt
+  contémremoçãoLCantiga, fontes/snapshots/provas:inspecionar formato antesde
+  usarhash-object; não passarpathausentecomosearquivo. Retidoslistados em
+ /tmp/integracao-tabelas-retidos-paths.txt. Raizdevevalidarperfilatual,diffs,
+  fontes/metadados eprovaindependente municipalfinalantesdeliberar/publicar9.
+  RepetirprovaGFMraizsomentepara refletirnovopath/header/corebb (nãoaprovadovisualbrowser).
+- Agente federalprepara6candidatosDOU. DCA37data própria24/07/2025,
+  DCA36data21/07/2025, publicação comum29/07:nãoherdardata entreblocos.
+
+## ES12 publicadas e próximos lotes sob revisão — 16/10/2026
+
+- Último envio112ce2d60b3 (inclui60ede08f59f):12resoluções ES novas,
+  fontes/metadados/texto+tachado conferidos pela raiz e revisor independente.
+  PROGRESSO.md naAPI pública confirmado, blob10ecdefd8d0a52169905641d5fa732802aaf6861:
+ 699.149 documentos;699.125/~11.768.799 com meta(5,9%);24semmeta.
+  SVG renderizado/visto em/tmp/progresso-es12.png; pushlog_log_push_es12_20261016.txt.
+- Nesta continuação:0119e0f4a6e corrigiu delimitadoresGFM e10SC jápublicados;
+ 60ede08f59f+112ce2d60b3 adicionaram12ES eprovaindependente. Todos com
+  PROGRESSO.md/progresso.svg gerados pelo hook. Goal100%continuaativo.
+- ES14manifesto atuale516d0c7…;12publicados,3943/2015 e5296/2018 retidos
+  poranexos/imagem404. Ambosrestauradoslocalmente, sempublicação. Prova
+  independentecb37e8e5…;baseline14backup preservado. Fonte5128imprime
+  DPL06/10/2017 anterioràassinatura31/10;4675preâmbuloembaralhado éoriginal.
+- Integração de tabelas ainda NÃOpublicada: corebb85371750359042…corrige
+  fechamentos opcionais além dfde.8fixtures HTML5lib+84tabelas/2388células
+  passaram; raiz cmarkGFM tambémconferiu84árvores/atributos/textos doMDdfde
+  (estaduais/_auditoria_gfm_tabelas_sc10_20261016.json), sembrowservisual.
+- Revisão independente SC10 em andamento,base imutável/tmp/revisao-independente-sc10-base.
+  Jáaprovou84tabelas/2388células(0diferençasincluindoestilos/sup/sub/br/spans/grade),
+  mas1120/1991 remeteVolumesI/II próprios ausentes:reteríntegra.9publicáveis
+  condicionadosaosoutrosgates. Divergência1120epígrafe15vsfecho16abrilpreservada.
+- Agenteestados aplica2correções metadata reversíveis:LC128/11179data1994-10-09
+  epath1994 (títulooficial+fechocorroboram);11178/12738 revogada:true conforme
+  notaprópria. Corpos/título/URI preservados, snapshots+ledgers eperfilfinal
+  emreconciliação. ScriptSCee7a1bb… corrige futurasextrações dessesdoiscasos.
+- RFBguardanovaaindanãopublicada:preserva fontes/candidatos/tabelas, retém
+  equivalências GFMnãoestruturalmentecomprovadas, marcandoreferências antigas;
+  fingerprints RFB/html2md/comum/datas invalidam pendênciaobsoleta. Rootreviu
+  diff eexigiu Offlineemextrair para pendências comanexoPDFcacheausente;
+  agenteestados corrige/testa0HTTP. Manifestos versionadosporSHA, nãoreutilizar
+ 0893/64f6/2653comoaprovaçãofinalsemreconciliação posterior.
+- Agente municipal ampliaRS3 àreprodução deTODAS40páginas(18+4+18), pois
+ 27imagenssódeanexos deixavam tabelaart10§1/54083 eúltimapágina53969fora.
+  Ledgerf7b28b7… anterior éparcial, não publicar41pathsantigoscomoíntegros.
+- Agente federal completouDOU328:2124fragmentos conferidos/0erros;
+  revisao-individual.jsonl9db0f720… efontes-precisam-separacao.json40a97d9e…
+  emreguladores/_fonte/auditorias/dou328-identidade-20261016/.206fontes pedem
+  separação contextual;ígrafesexternas/atosindividuais/anexoIIIreservado MRE605
+  explícitos. Novo trabalho:preparar6candidatosde3fontes ANATEL460/461,
+  ANVISA2404/2403,ALFDCA36/37,semHTTP/aplicar/Git,corecongeladoSHAexato.
+- Liveverificado:DEC76664,RFB40381,ES80684,SAPL17034/espera34251,filaoffline94555.
+  DPL58635terminou:logFIMPENDENCIAS4876ok/467errosdeclassificaçãopromulgação,
+  nãoafrouxargate. DOU96622/2025terminou eparent87017avançounaturalmente para
+ 2024,PID10422,mesmo4workers/3rps. NovosMDscontinuamsempublicação/gates.
+  Não houve reinício de coletor nesta continuação.
+
 ## Prova independente ES12 e conferência do envio — 16/10/2026
 
 - Commit60ede08f59f contém12MDs ES aprovados e manifesto2116d635… com

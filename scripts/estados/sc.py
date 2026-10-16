@@ -5,12 +5,15 @@ documento (Word convertido, com anotações de alterações) e classifica pelo t
 """
 import html as htmllib
 import datetime as dt
+import gzip
+import hashlib
 import os
 import re
 import sys
+import tempfile
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
-from comum import Rede, caminhos, decodificar, executar, gravar, html_para_md  # noqa: E402
+from comum import RAIZ_ESTADUAIS, Rede, caminhos, decodificar, executar, gravar, html_para_md  # noqa: E402
 from datas import data_do_texto as data_da_epigrafe
 
 UF = "SC"
@@ -47,7 +50,7 @@ def classificar(titulo):
     return None
 
 
-def data_do_texto(texto, html=""):
+def data_do_texto(texto, html="", titulo=""):
     m = re.search(r'<meta\s+name="Emissao"\s+content="(\d{4})/(\d{2})/(\d{2})"', html, re.I)
     if m:
         try:
@@ -60,6 +63,9 @@ def data_do_texto(texto, html=""):
     data = data_da_epigrafe(primeira, linhas=1)
     if data and dt.date.fromisoformat(data) <= dt.date.today():
         return data
+    data = data_da_epigrafe(titulo, linhas=1)
+    if data and dt.date.fromisoformat(data) <= dt.date.today():
+        return data
     return ""
 
 
@@ -70,7 +76,7 @@ def norma_revogada(html, cabeca):
         return None
     if re.search(r'<(?:body|div)\b[^>]*(?:class|id)=["\'][^"\']*\blei-revogada\b', html, re.I):
         return True
-    return True if re.search(r"(?m)^\s*(?:CONSOLIDADA E )?REVOGAD[AO] (?:PELAS?|PELOS?|INTEGRALMENTE)\b", notas) else None
+    return True if re.search(r"(?m)^\s*(?:CONSOLIDADA E )?REVOGAD[AO] (?:PELAS?|PELOS?|INTEGRALMENTE|TOTALMENTE)\b", notas) else None
 
 
 def processar(id_):
@@ -80,6 +86,18 @@ def processar(id_):
         return "inexistente", None
     if st != 200 or not bruto:
         return "sem_texto", {"id": id_, "http": st}
+    captura = os.path.join(RAIZ_ESTADUAIS, UF, "_fonte", "respostas", str(id_), hashlib.sha256(bruto).hexdigest() + ".html.gz")
+    os.makedirs(os.path.dirname(captura), exist_ok=True)
+    try:
+        with gzip.open(captura, "rb") as f:
+            integra = hashlib.sha256(f.read()).digest() == hashlib.sha256(bruto).digest()
+    except (OSError, EOFError):
+        integra = False
+    if not integra:
+        with tempfile.NamedTemporaryFile(dir=os.path.dirname(captura), delete=False) as f:
+            temporario = f.name
+            f.write(gzip.compress(bruto))
+        os.replace(temporario, captura)
     html = decodificar(bruto, ctype)
     # a ALESC usa <s> para o "º/°" sobrescrito, não para texto riscado
     html = re.sub(r"<s>\s*(&deg;|&ordm;|&ordf;|°|º|ª|o|a)\s*</s>", r"\1", html)
@@ -93,7 +111,7 @@ def processar(id_):
         return "fora_escopo", None
     pasta, nome, prefixo = tipo
     texto_plano = re.sub(r"[*\\#]", "", corpo)
-    data = data_do_texto(texto_plano, html)
+    data = data_do_texto(texto_plano, html, titulo=titulo)
     ano = data[:4] or "sem-ano"
     # "LEI Nº 8.575" e "DEC-000120" são as duas formas em que o número aparece
     num = re.search(r"N[º°o.]*\s*([\d.]+)", titulo, re.I) or re.search(r"^[A-Z]{3}-0*(\d+)", titulo)

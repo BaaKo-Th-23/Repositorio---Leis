@@ -6,12 +6,16 @@ Texto: texto.aspx?id=N&tipo=TEXTOATUALIZADO (quando existe) ou TEXTOORIGINAL; co
 import html as htmllib
 import http.cookiejar
 import datetime as dt
+import gzip
+import hashlib
 import json
 import os
 import re
 import sys
+import tempfile
 import urllib.parse
 import urllib.request
+from html.parser import HTMLParser
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 from comum import RAIZ_ESTADUAIS, UA, Rede, caminhos, decodificar, executar, gravar, html_para_md  # noqa: E402
@@ -93,6 +97,53 @@ def indice(refazer=False):
     return lista
 
 
+class _LimiteTexto(HTMLParser):
+    def __init__(self, html, fragmento):
+        super().__init__(convert_charrefs=False)
+        self.inicio = 0 if fragmento else None
+        self.fim = None
+        self.profundidade = 1 if fragmento else 0
+        self.linhas = [0] + [m.end() for m in re.finditer("\n", html)]
+
+    def posicao(self):
+        linha, coluna = self.getpos()
+        return self.linhas[linha - 1] + coluna
+
+    def handle_starttag(self, tag, attrs):
+        if tag != "div" or self.fim is not None:
+            return
+        if self.inicio is None:
+            if dict(attrs).get("id") == "divTexto":
+                self.inicio = self.posicao() + len(self.get_starttag_text())
+                self.profundidade = 1
+        else:
+            self.profundidade += 1
+
+    def handle_startendtag(self, tag, attrs):
+        pass
+
+    def handle_endtag(self, tag):
+        if tag == "div" and self.inicio is not None and self.fim is None:
+            self.profundidade -= 1
+            if self.profundidade == 0:
+                self.fim = self.posicao()
+
+
+def limites_texto_html(html, fragmento=False):
+    limite = _LimiteTexto(html, fragmento)
+    limite.feed(html)
+    if limite.inicio is None:
+        return None
+    if limite.fim is None:
+        raise ValueError("divTexto sem fechamento comprovado; extração recusada")
+    return limite.inicio, limite.fim
+
+
+def texto_html(html):
+    limites = limites_texto_html(html)
+    return html[limites[0]:limites[1]] if limites else ""
+
+
 def processar(it):
     pasta, nome, prefixo = TIPOS[it["tipo"]]
     num = re.search(r"n[°º]\s*([\d.]+)", it["nome"])
@@ -107,12 +158,22 @@ def processar(it):
     st, bruto, ctype = rede.get(url, timeout=180)
     if st != 200:
         return "sem_texto", {"id": it["id"], "http": st}
+    captura = os.path.join(RAIZ_ESTADUAIS, UF, "_fonte", "respostas", str(it["id"]), tipo_txt, hashlib.sha256(bruto).hexdigest() + ".html.gz")
+    os.makedirs(os.path.dirname(captura), exist_ok=True)
+    try:
+        with gzip.open(captura, "rb") as f:
+            integra = hashlib.sha256(f.read()).digest() == hashlib.sha256(bruto).digest()
+    except (OSError, EOFError):
+        integra = False
+    if not integra:
+        with tempfile.NamedTemporaryFile(dir=os.path.dirname(captura), delete=False) as f:
+            temporario = f.name
+            f.write(gzip.compress(bruto))
+        os.replace(temporario, captura)
     html = decodificar(bruto, ctype)
-    ini = html.find('id="divTexto"')
-    if ini < 0:
+    trecho = texto_html(html)
+    if not trecho:
         return "sem_texto", {"id": it["id"], "motivo": "sem divTexto"}
-    fim = html.find('id="nota"', ini)
-    trecho = html[html.find(">", ini) + 1 : fim if fim > 0 else None]
     corpo = html_para_md(trecho)
     if len(re.sub(r"\W", "", corpo)) < 40:
         return "sem_texto", {"id": it["id"], "motivo": "texto vazio"}
@@ -143,12 +204,13 @@ def processar(it):
         ("ementa", it["ementa"]),
         ("publicacao", it["publicacao"]),
         ("data_publicacao", data_publicacao),
+        ("revogada", None),
         ("versao_texto", "atualizada" if tipo_txt == "TEXTOATUALIZADO" else "original"),
         ("fonte", url),
     ]
     if data and not data_publicacao:
         meta.append(("data_publicacao_na_fonte", "/".join(data.groups())))
-    gravar(md, fonte, trecho, meta, f"# {titulo}\n\n{corpo}")
+    gravar(md, fonte, bruto, meta, f"# {titulo}\n\n{corpo}")
     return "ok", None
 
 

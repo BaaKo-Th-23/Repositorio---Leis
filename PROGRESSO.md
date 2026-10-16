@@ -1,10 +1,10 @@
 # Progresso
 
-Gerado em 16/10/2026 03:04:35 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 16/10/2026 03:18:37 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**699.149 documentos · 699.125 / ~11.768.799 nas séries com meta (5.9%) · 24 sem meta**
+**699.158 documentos · 699.134 / ~11.768.799 nas séries com meta (5.9%) · 24 sem meta**
 
 ![progresso](progresso.svg)
 
@@ -12,7 +12,7 @@ Percentuais usam somente documentos e metas das séries com universo estimado ou
 
 Planalto, Senado, Câmara e assembleias.
 
-384.611 / ~574.766 documentos (66.9%)
+384.620 / ~574.766 documentos (66.9%)
 
 ### Constituição Federal
 
@@ -73,7 +73,7 @@ Planalto, Senado, Câmara e assembleias.
 
 ### Leis estaduais e distritais
 
-296.282 / ~347.467 documentos (85.3%)
+296.291 / ~347.467 documentos (85.3%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -81,9 +81,9 @@ Planalto, Senado, Câmara e assembleias.
 | 🟦 | Constituições estaduais históricas | 9 | 40 | `estaduais/*/constituicoes-historicas` | Assembleias |
 | 🟦 | Emendas constitucionais estaduais | 2.105 | 2.200 | `estaduais/*/emendas-constitucionais` | Assembleias |
 | 🟦 | Leis ordinárias estaduais | 274.230 | 330.000 | `estaduais/*/leis-ordinarias` | 19 scripts, uma fonte por UF |
-| 🟦 | Leis complementares estaduais | 12.388 | 14.000 | `estaduais/*/leis-complementares` | 19 scripts, uma fonte por UF |
+| 🟦 | Leis complementares estaduais | 12.390 | 14.000 | `estaduais/*/leis-complementares` | 19 scripts, uma fonte por UF |
 | ✅ | Decretos-leis e leis delegadas estaduais | 6.676 | 600 | `estaduais/*/decretos-lei`, `estaduais/*/leis-delegadas`, `estaduais/*/decretos-lei-complementares` | Assembleias |
-| ✅ | Leis promulgadas, constitucionais e emendas à Lei Orgânica | 847 | 600 | `estaduais/*/leis-promulgadas`, `estaduais/*/leis-constitucionais`, `estaduais/*/emendas-lei-organica` | Assembleias |
+| ✅ | Leis promulgadas, constitucionais e emendas à Lei Orgânica | 854 | 600 | `estaduais/*/leis-promulgadas`, `estaduais/*/leis-constitucionais`, `estaduais/*/emendas-lei-organica` | Assembleias |
 
 ## Fase 2 — infralegal e jurisprudência
 

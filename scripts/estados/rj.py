@@ -15,6 +15,7 @@ import re
 import sys
 import threading
 import urllib.parse
+from html.parser import HTMLParser
 from pathlib import Path
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
@@ -67,6 +68,24 @@ def corpo_normativo(pagina):
     fim = re.search(r'<a\s+name=["\']_Section2["\']|<a[^>]+id="A2"', trecho, re.I)
     if fim:
         trecho = trecho[:fim.start()]
+    def remover_interface(m):
+        class Imagem(HTMLParser):
+            def handle_starttag(self, tag, attrs):
+                self.attrs = dict(attrs)
+        parser = Imagem()
+        parser.feed(m[0])
+        attrs = parser.attrs
+        # Ícones Notes comprovados no fragmento oficial; outras imagens permanecem.
+        if attrs == {"width": attrs.get("width"), "height": "1",
+                     "src": "http://alerjln1.alerj.rj.gov.br/icons/ecblank.gif",
+                     "border": "0", "alt": ""} and attrs["width"] in {"1", "76", "113", "151"}:
+            return ""
+        if attrs == {"width": "16", "height": "16", "border": "0",
+                     "src": "http://alerjln1.alerj.rj.gov.br/icons/collapse.gif",
+                     "alt": "Hide details for Texto da Lei   [ Em Vigor ]"}:
+            return ""
+        return m[0]
+    trecho = re.sub(r"<img\b[^>]*>", remover_interface, trecho, flags=re.I)
     return html_para_md(trecho)
 
 
@@ -108,7 +127,7 @@ def processar(it):
     raw = obter(it["form"], it["href"])
     pagina = decodificar(raw, "text/html; charset=utf-8")
     corpo = corpo_normativo(pagina)
-    plano = re.sub(r"[*\\#]", "", corpo)
+    plano = re.sub(r"[*\\#]", "", limpar(corpo))
     num_rx = r"\b" + r"\.?".join(numero) + r"\b"
     if (len(re.sub(r"\W", "", corpo)) < 80
             or not re.search(num_rx, plano[:1000])
@@ -129,7 +148,7 @@ def processar(it):
     titulo = f"{nome} nº {it['numero']}/{it['ano']}"
     meta = [("titulo", titulo), ("uf", UF), ("tipo", nome), ("numero", it["numero"]),
             ("data", data), ("ementa", it["ementa"]), ("situacao", it["situacao"]),
-            ("revogada", it["situacao"].lower().startswith("revogad")),
+            ("revogada", {"revogada": True, "revogado": True, "vigente": False, "em vigor": False}.get(it["situacao"].strip().lower())),
             ("versao_texto", "texto da base de legislação da ALERJ"),
             ("fonte", url_publica(it["form"], it["href"])),
             ("fonte_original", "http://alerjln1.alerj.rj.gov.br" + it["href"])]
