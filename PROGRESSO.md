@@ -5,7 +5,7 @@ Gerado por `scripts/progresso.py` em 15/10/2026. O escopo está em
 contagens oficiais. O percentual mede volume diante das metas; não comprova integralidade
 das fontes nem qualidade de cada conversão. Lacunas continuam abertas até verificação.
 
-**381.906 de ~11.672.228 normas — 3.3%**
+**384.288 de ~11.672.473 normas — 3.3%**
 
 ![progresso](progresso.svg)
 
@@ -73,7 +73,7 @@ Fonte única (normas.leg.br, Planalto, Senado). **336.806 de ~574.432 — 58.6%*
 
 ## Fase 2 — infralegal e jurisprudência
 
-Uma fonte por órgão, agência ou tribunal. **44.540 de ~765.086 — 5.8%**
+Uma fonte por órgão, agência ou tribunal. **46.922 de ~765.331 — 6.1%**
 
 ### Infralegal — tributário — 185 / ~38.600 (0.5%)
 
@@ -203,19 +203,19 @@ Uma fonte por órgão, agência ou tribunal. **44.540 de ~765.086 — 5.8%**
 | 🟦 | Ministério dos Povos Indígenas | 27 | 300 | `reguladores/mpi` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério do Desenvolvimento Agrário e Agricultura Familiar | 272 | 1.200 | `reguladores/mda` | Diário Oficial da União (in.gov.br) |
 
-### Jurisprudência vinculante — 2.542 / ~14.007 (18.1%)
+### Jurisprudência vinculante — 4.924 / ~14.252 (34.5%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| ⬜️ | Súmulas vinculantes do STF | 0 | 59 | `jurisprudencia/stf/sumulas-vinculantes` | stf.jus.br — caderno ainda não localizado |
+| ✅ | Súmulas vinculantes do STF | 62 | 62 | `jurisprudencia/stf/sumulas-vinculantes` | CNJ — Pangea/BNP (precedentes do STF) |
 | ✅ | Súmulas do STF | 736 | 736 | `jurisprudencia/stf/sumulas` | stf.jus.br |
-| ⬜️ | Temas de repercussão geral | 0 | 1.400 | `jurisprudencia/stf/repercussao-geral` | stf.jus.br |
+| 🟦 | Temas de repercussão geral | 550 | 1.468 | `jurisprudencia/stf/repercussao-geral` | CNJ — Pangea/BNP (precedentes do STF) |
 | ⬜️ | Controle concentrado com eficácia erga omnes (ADI, ADC, ADPF, ADO) | 0 | 8.000 | `jurisprudencia/stf/controle-concentrado` | stf.jus.br |
 | ✅ | Súmulas do STJ | 649 | 649 | `jurisprudencia/stj/sumulas` | stj.jus.br |
-| ⬜️ | Temas de recursos repetitivos (STJ) | 0 | 1.300 | `jurisprudencia/stj/repetitivos` | stj.jus.br |
+| ✅ | Temas de recursos repetitivos (STJ) | 1.474 | 1.474 | `jurisprudencia/stj/repetitivos` | STJ — dados abertos, Temas.csv (números únicos) |
 | ✅ | Súmulas e orientações jurisprudenciais do TST | 1.157 | 1.157 | `jurisprudencia/tst` | tst.jus.br |
-| ⬜️ | Súmulas do TCU, TNU, STM e TSE | 0 | 700 | `jurisprudencia/outros-tribunais` | tcu.gov.br, cjf.jus.br, stm.jus.br, tse.jus.br |
-| ⬜️ | Regimentos internos dos tribunais superiores | 0 | 6 | `jurisprudencia/regimentos` | portais dos tribunais |
+| 🟦 | Súmulas do TCU, TNU, STM e TSE | 294 | 700 | `jurisprudencia/outros-tribunais` | tcu.gov.br, cjf.jus.br, stm.jus.br, tse.jus.br |
+| 🟦 | Regimentos internos dos tribunais superiores | 2 | 6 | `jurisprudencia/regimentos` | portais dos tribunais |
 
 ### Infralegal estadual — 31.579 / ~577.054 (5.5%)
 
