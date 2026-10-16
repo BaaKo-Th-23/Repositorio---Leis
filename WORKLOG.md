@@ -1,5 +1,46 @@
 # Continuação da coleta
 
+## Qualidade estadual e terceiro envio — 16/10/2026
+
+- 482bcaab4da publicado:698.963documentos,698.939nas séries com meta,
+  24semmeta; PROGRESSO.md público7aca6d44ef16901f50b3a602e89397701acb6355
+  confirmado. A consulta iniciada antes do término do push viu blob anterior;
+  nova consulta após término confirmouHEAD. Não confundir com falha de push.
+- Lote estadual50104 NÃO PUBLICADO: root descobriu4506BA com resíduosUI
+  (4430fragmentoHTML+76footer),4113PE comcaudaHTML, DF22508/2001 remete
+  anexos aoDODF; SC15532 perdeuarticulado pelo html2md descartar<s>.
+  Gates anteriores deSHA/formato não provam essas dimensões de integralidade.
+  Estados revisaDF/SC e conversor de tachado;municipal corrigeBA offline;
+  root deve revisarPE e inventariar perdas emtodosUF antes de qualquer lote.
+- Stage50122 interrompido por mudança concreta de coorte/defeitos; Git94026
+  sample demonstrou scan quadrático de pathspec. Índice voltou vazio semlock,
+  nenhumdocumento estadual daquele lote entrou emHEAD. Para futuro lote grande,
+  usar hash-object/index-info com caminhos/modos exatos, evitando esse scan.
+- Próximo envio isolado:RSF48/1967 comdata desconhecida e conflito índice/fecho
+  explícito, original transcrito visualmente18nomes;2BA comPNG oficiaisexatos
+  restaurados no lugar dos anexos omitidos. Root conferiu pixels/base64/SHA,
+  posições/links/texto, ausência de tachados; tabelanumeral não transcrita.
+  Manifestos _lote_rsf48_data_incerta e BA/_reparos_visuais_aplicados_20261016.
+  Formato3/0erros/1data desconhecida explícita;diff-checksemfalhas.
+- Filaoffline municipal94555(wrapper94554),2workers, semHTTP/aplicar:
+  handle em municipais/_indice/_reconciliacao-geometria/fila-offline/
+  handle-20261016-020611.json;log_log_reconciliacao_municipal_offline_20261016-020611.txt.
+  Guard antes/depois de cadafilho recusa mudança3SHAs;2negativos isolados
+  passaram. Prova pública municipais/_auditoria_fila_fingerprints_20261016.json.
+- DOU146MD corrigidos sólinha data(80próprias+66desconhecidas),183snapshots
+  preservados;33coletivos intocados comidentidade pendente. Ledger
+  reguladores/_correcoes_datas_dou183.json ba90f0e4c19c704f3621385e7cddfca359a5ab6f47d4e972feeb4963c85d159f.
+  Inventário7425encontrou328alertas deidentidade, emrevisão(separar atos vs
+  citações); não publicar restantes sópela ausência dealerta. Provas/tmp/
+  dou7425-identidades-inventario.json e dou328-paragrafos-completos.json.
+- GeradorDOUrootnão publicado:1d379a1685792d05627152d23eff7829bf7f14207176f721b1df9b9ef3b2f1b2;
+  teste8gatessemHTTP em reguladores/_fonte/auditorias/dou-gerador-validacao-20261016.json;
+  captura raw porhash preserva duasrespostas da mesmaURL, índiceimutável;
+  semvigência/data inventadas, imagens/íntegra externa retidas.
+- Federal continuaRSF69 literal:PDF16–18 concluídas,19–24pendentes;
+  ledger federal/_revisao_rsf69_anexos.jsonl. NenhumOCRinexato publicado.
+  Objetivo completo permanece ativo; não reduzir escopo/metas.
+
 ## Reconciliação municipal validada e publicação RSF — 16/10/2026
 
 - 38beb4d724c publicado e confirmado pela API:698.911documentos; blob

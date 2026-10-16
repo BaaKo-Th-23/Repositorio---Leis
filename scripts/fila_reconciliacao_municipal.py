@@ -22,7 +22,11 @@ def salvar(path,dados):
     tmp.replace(path)
 
 
-def executar(edicao,chave,raiz,saida):
+def executar(edicao,chave,raiz,saida,fingerprints):
+    def conferir_pipeline():
+        if any(sha(REPO/"scripts"/nome)!=valor for nome,valor in fingerprints.items()):
+            raise RuntimeError("pipeline mudou durante a fila; candidato não aprovado, retomar com novos SHAs")
+    conferir_pipeline()
     log=saida/"logs"/(chave+".txt")
     log.parent.mkdir(parents=True,exist_ok=True)
     comando=["rtk","proxy",sys.executable,"-I",str(REPO/"scripts/reconciliar_diarios_municipais.py"),
@@ -30,6 +34,7 @@ def executar(edicao,chave,raiz,saida):
              "--raiz",str(raiz),"--saida",str(saida/"candidatos")]
     with log.open("w") as f:
         r=subprocess.run(comando,stdout=f,stderr=subprocess.STDOUT)
+    conferir_pipeline()
     resultado={"pdf":edicao["pdf"],"fonte":edicao["fonte"],"sha256_pdf":edicao["sha256_pdf"],
                "exit_code":r.returncode,"log":str(log),"verificado_em":dt.datetime.now().isoformat()}
     try:
@@ -61,9 +66,10 @@ def main():
         checkpoint=a.saida/"checkpoint.json"
         dados=json.loads(checkpoint.read_text()) if checkpoint.exists() else {}
         inventario=json.loads(a.inventario.read_text())
-        versao="".join(sha(REPO/"scripts"/p) for p in
-                       ("baixar_municipal.py","extrair_diario_municipal.py","reconciliar_diarios_municipais.py"))
-        classificador=sha(REPO/"scripts/baixar_municipal.py")
+        fingerprints={p:sha(REPO/"scripts"/p) for p in
+                      ("baixar_municipal.py","extrair_diario_municipal.py","reconciliar_diarios_municipais.py")}
+        versao="".join(fingerprints.values())
+        classificador=fingerprints["baixar_municipal.py"]
         tarefas=[]
         falhas_preflight=0
         for e in inventario["edicoes"]:
@@ -86,12 +92,14 @@ def main():
             tarefas.append((e,chave))
         if a.max_pdfs:tarefas=tarefas[:a.max_pdfs]
         with concurrent.futures.ThreadPoolExecutor(max_workers=a.trabalhadores) as pool:
-            pendentes={pool.submit(executar,e,c,a.raiz,a.saida):c for e,c in tarefas}
+            pendentes={pool.submit(executar,e,c,a.raiz,a.saida,fingerprints):c for e,c in tarefas}
             for futuro in concurrent.futures.as_completed(pendentes):
                 chave=pendentes[futuro]
                 try:registro=futuro.result()
                 except Exception as erro:registro={"estado":"falha de preparação","erro":str(erro)}
                 registro["sha256_classificador"]=classificador
+                registro["sha256_extrator"]=fingerprints["extrair_diario_municipal.py"]
+                registro["sha256_reconciliador"]=fingerprints["reconciliar_diarios_municipais.py"]
                 registro["sha256_pipeline"]=hashlib.sha256(versao.encode()).hexdigest()
                 dados[chave]=registro
                 salvar(checkpoint,dados)
