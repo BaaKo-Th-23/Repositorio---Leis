@@ -1,5 +1,19 @@
 # Continuação da coleta
 
+## Coletaneas3 aplicadas pela raiz — 16/10/2026
+
+- Raiz aprovou3atos/18páginas lidas e re-renderizadas doPDForiginal e derivado comPNG byteidêntico;2deltasadicionais(4743Art24§3de;5515Art13ponto) emV3. Prova e0555938…cb002. Identidade própria/índice/data/fecho/tipo/formato/GFMcaracteres/pontuação conferidos3,0erros/avisos.
+- OriginaisHTML/MD/v1/v2 preservados;5488usav2inalterado;5515/4743v3. Fontetextualagora coletâneaoficial declarada, mantendoHTMLalternativo, páginas eproveniência. Originais2PDFs29MB incluídos. Nãoéfac-símileDOU/certificaçãojurídica.
+- Aplicados3canônicos novos;índice3SHAexatos/formato3zeroerros/avisos. Whitespace de hardbreaks GFM e contextos/EOF de unifieddiff preservado comprova;commit/pushpendentes,PROGRESSOviahook. Lista/tmp/coletaneas3-publicacao-paths.txt.
+
+## DPL106 publicados — 16/10/2026
+
+- Commit c292fcbf724454c72cfd73100745159b0b782c26 enviado à main; push51843 exit0. API pública PROGRESSO.md SHA941b2f2c307cb948076d9fd27d0c468e6f7e8833 conferido igualHEAD. Total702.535 documentos;702.510/~11.768.799 nas séries com meta(6,0%);25semmeta.
+- Lote106:527tabelas/2080células, renderGitHub4lotes confirmoutodos106. Formato106zeroerros/avisos;1233whitespace exclusivamente2espaçosGFM(836snapshots/397canônicos), prova whitespace-gfm.json e diffgz publicadas. Índice vazio apóscommit.
+- MGcontextual216/216 e2582eventos concluído; final14691propostos/32novosretidos(2120total), manifesto c57efc89…2ed20. Agentefaz fechamento físico/lista explícita; rootaindaaprovaçãofinal, nadaMGpublicadonestelote.
+- RaizleuTODAS18páginas3coletâneas(5488:155–156;5515:175–180;4743:188–197). Doisnovosdeltas concretos:4743Art24§3 falta de em com o prazo de dez dias;5515Art13 impresso ponto após delicto, candidato-v2vírgula. V2preservado;rootpreparaV3/prova re-render original+derivado sessão49374, /tmp/verificar-coletaneas3-raiz.py; nãocanônico/stage.176renderoriginalbyteigualPNG, cropart13em/tmp/leis-5515-raiz176-art13.png. Ainda faltamGFM/formatofinal/identidade/aprovação/apply.
+- Federal13fontesvisuais27páginas localizadas, inventáriof17b80a9…ba5d27. Retidos:5173temparágrafoúnicopróprioausenteHTML,5597incluitabelaeparágrafoIIapósassinatura. Agentecoteja13semGit/canon. Municipalv3segueisoladosemfilavivaalterada. Goal100%ativo.
+
 ## Lote106 tabelas aplicado e conferido — 16/10/2026
 
 - Raizconcluiu106fontes/headers/índiceprimário/datas/links/status/versões;527tabelas/2080células modeloDOMricoHTML5independente+GFM,0diferenças. Listascomcontadoresol/start/valuecomparadas;negrito/itálico/tachado/sup/subpreservados,semU/visuaispendentes. Prova b4026613…
