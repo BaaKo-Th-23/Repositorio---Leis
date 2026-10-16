@@ -1,5 +1,23 @@
 # Continuação da coleta
 
+## SP24 índice e formato conferidos — 16/10/2026
+
+- Stage37672exit0;auditoria10585exit0:24canônicos,0erros/avisos. Verificação35808exit0:168blobs/20.581.705bytes iguais ao disco,24SHAiguaisàaprovação;165pathsalterados,3fontes/provasjáHEADiguais. Sempathinesperado;whitespacecanonicosóhardbreaks/EOF,fontescongeladaspreservadas. Provas/helper somadosàlista172;commit/pushaindapendentes.
+- Municipal gate V4:16/25PDFs,456/796páginas;0recusasnovas/falhas. AGM114/114comdelta exige separar cabeçalho/corpo;revisão integralemcurso,sem aplicação.
+
+## SP24 aprovado e aplicado — 16/10/2026
+
+-24resoluções SP:20corposbyteiguais+4restaurados805/808/822/829.25fontes integralmente lidas;821retida por U real perdido, nenhum ins substituto. Fonte24texto/máscaraspreservados;3Bextra só§2º807;4restauradosmáscarasexatas. Fontes HTML semtabelas/imagens/controles;GitHub20+4DOMtexto/marcas iguais. XML44+10relações,identidade/datas/tipo19/HEADsemduplicatas.808epígrafedata18out/fecho03maio preservados;811nota republicação preservada.20fontecapturada+4compilada(ediçãocapturada),24null.
+-Navegação69glifos nos5candidatos agente diagnosticada e removida só nos4publicáveis;ementa822HTMLliteral corrigida com H3próprio;overlay agente badd52bb…b6ff retrata coberturaampla.821congelados/fontes/provas mantidos fora canônicos. Aprovaçãoa7a48250d9ac9cb416204577d338261deef3df6a388cabbdb602fd9e60b9eb18;lista/tmp/SP24-publicacao-paths.txt. Índice/commit/push pendentes,PROGRESSO viahook.
+- Federal overlaycontextual2000 5955ace8…320f:1951semalertaadicional+49retençõesconservadoras(41variantesliterais,8instrumentos/pósassinatura),semaceitehumano/raiz. Nadafederalaplicado.
+
+## SP71 publicado e progresso confirmado — 16/10/2026
+
+- Commit fb687f302f8454a449c2cf8f4aa7f28d8e2a12ce concluído: sessão91275exit0; push22879exit0, log _log_push_SP71_20261016.txt. API pública PROGRESSO.md SHA c222c5f5abc9c87e7157f72375b2ca01cf44bd1f igual HEAD;717.320docs,717.295/~11.768.799(6,1%),25semmeta.330paths no commit incluindo PROGRESSO.md e progresso.svg atualizados pelo hook.71novosatos,nenhumcore/coletores/metas alterados. Meta100% segue ativa.
+- DEC2000 manifesto3f5dab56…8c487 não aprovado pela raiz. Raiz leu inventariar_producao_dec.py e verificar_extras_coorte_dec.py; ampliação contextual solicitada ao agente federal. Verificador antigo permissivo para data/assinaturas; novo overlay exige fecho terminal/data própria/Ernesto Geisel e registra cobertura automática sem alegar leitura humana integral. Não publicar2000 sem revisão do novo overlay e gates raiz.
+- Municipal V4 checkpoint:10/25PDFs,252/796páginas,zero novas recusas/falhas,63deltas;35 renders AMR/AAM/AMA cotejados pelo agente. PID81761/session48272 vivos;fila94555/canônicos preservados. Gate global e revisão raiz pendentes.
+- Estados correção:DF45–55 AUSENTES emHEAD6593,apesar da inferência anterior de publicados;workingtree fora lista50104 não é publicação. Prova df45-55-observacao-fora-v2-head.json SHA0ccffd5690b0cd6b6e91b23bcf4a8efd6939c9e92bfdec8fb2aa626a904f5102. DF56–66 manifesto8096499071e6877e468dc6b544041fa7fef77571870d00ffa3658eb3a2e2cf0e,37arquivos/201916bytes,aguarda final agente e raiz. Nenhum DF aplicado.
+
 ## SP71 índice conferido — 16/10/2026
 
 - Stage93587exit0; auditoria15390exit0:71 canônicos,0erros/avisos. Verificador46344exit0:324blobs/20.585.726bytes idênticos ao disco;71SHA256 iguais à aprovação;scope exato,nenhum path extra. Whitespace preservado em fontes/provas congeladas;canônicos somente hardbreaks/EOF. Provas e helper duráveis na revisão raiz. Commit/push pendentes;PROGRESSO.md e progresso.svg serão recalculados do índice pelo hook ativo.
