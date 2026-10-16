@@ -82,7 +82,7 @@ def resumo_indice(total, docs, paginas, totais=None):
 @lru_cache(maxsize=None)
 def equivalencias(tipo):
     """URN do índice Senado aponta ao mesmo arquivo, incluindo reedições e séries DPL/DLG."""
-    fontes = {"mpv": ("MPV",), "dlg": ("DLG", "DPL"), "dpl": ("DLG", "DPL"),
+    fontes = {"senado": ("RSF",), "congresso": ("RCN",), "mpv": ("MPV",), "dlg": ("DLG", "DPL"), "dpl": ("DLG", "DPL"),
               "lei": ("LEI",), "lcp": ("LCP",), "del": ("DEL",), "lct": ("LCT",)}
     if tipo not in fontes:
         return {}
@@ -231,9 +231,10 @@ def corpo_pdf(rede, url):
     return corpo
 
 
-def conferir_data_propria(info, corpo, titulo=None):
+def conferir_data_propria(info, corpo, titulo=None, tipo="dlg"):
     if titulo is not None:
-        numero = re.search(r"^Decreto Legislativo\s+n[º°o.]?\s*([\d.]+(?:-[a-z0-9]+)?)", titulo, re.I)
+        prefixo = {"dlg": r"Decreto Legislativo", "dpl": r"Decreto", "senado": r"Resolução(?: do Senado Federal)?", "congresso": r"Resolução(?: do Congresso Nacional)?"}[tipo]
+        numero = re.search(prefixo + r"\s+n[º°o.]?\s*([\d.]+(?:-[a-z0-9]+)?)", titulo, re.I)
         if not numero or numero[1].replace(".", "").lower() != info["numero"].lower():
             raise ValueError("epígrafe oficial não comprova tipo/número primário")
     normal = unicodedata.normalize("NFKD", corpo).encode("ascii", "ignore").decode().lower()
@@ -243,14 +244,14 @@ def conferir_data_propria(info, corpo, titulo=None):
             datas.add(dt.date(int(ano), MESES[mes], int(dia)).isoformat())
     if not datas or datas != {info["data"]}:
         raise ValueError("data própria do fecho não comprova identidade primária: " + str(sorted(datas)))
-    if not equivalencias("dlg").get(info["urn"]):
-        raise ValueError("identidade do decreto legislativo ausente do índice primário")
+    if not equivalencias(tipo).get(info["urn"]):
+        raise ValueError("identidade do ato ausente do índice primário")
 
 
 def tipo_legislativo_comprovado(corpo):
     cabeca = re.split(r"\bArt(?:igo)?[*.\s]{0,8}(?:1|[úu]nico)\b", corpo, maxsplit=1, flags=re.I)[0][:5000]
     normal = re.sub(r"[^a-z]", "", unicodedata.normalize("NFKD", cabeca).lower())
-    return bool(re.search(r"(?:faco|faz)saber.{0,80}que.{0,80}congressonacional.{0,80}(?:decret|resolv)|congressonacional(?:decreta|decretou).{0,20}(?:sanccio|sancio|promulg)", normal))
+    return bool(re.search(r"(?:faco|faz)saber.{0,80}que.{0,80}congressonacional.{0,80}(?:decret|resolv)|congressonacional(?:decreta|decretou).{0,20}(?:sanccio|sancio|promulg)|heiporbem(?:sanccion|sancion)aremandarqueseexecute.{0,40}(?:resolucao|decreto).{0,20}assemble(?:i)?ageral", normal))
 
 
 def processar(rede, d, tipo="camara"):
@@ -282,7 +283,12 @@ def processar(rede, d, tipo="camara"):
         raise ValueError(f"texto insuficiente: {url_texto}")
     if tipo == "dlg":
         conferir_data_propria(info, corpo, d["titulo"])
+    if tipo == "senado":
+        conferir_data_propria(info, corpo, d["titulo"], "senado")
+        if not (re.search(r"Senado Federal,?\s*(?:em\s*)?\d", corpo[-2500:], re.I) or re.search(r"Presidente do Senado Federal", corpo[-800:], re.I)):
+            raise ValueError("autoria Senado não comprovada no fecho próprio")
     if tipo == "dpl":
+        conferir_data_propria(info, corpo, d["titulo"], "dpl")
         if not tipo_legislativo_comprovado(corpo):
             raise ValueError("tipo legislativo não comprovado na fórmula de promulgação")
     valores = {"titulo": d["titulo"], "tipo": nome_tipo, "numero": numero,
@@ -341,7 +347,7 @@ def coletar_pendencias(rede, tipo, limite=0):
                 f.write(json.dumps({"fonte": "camara-" + tipo, "id_senado": d["id"], "norma": d["norma"],
                                     "urn": esperado["urn"], "erro": str(exc)}, ensure_ascii=False) + "\n")
             print("erro", d["norma"], str(exc), flush=True)
-            if "403" in str(exc) or "401" in str(exc):
+            if re.search(r"\bHTTP\s+(?:401|403|429)\b", str(exc)) or "bloqueio da fonte" in str(exc):
                 break
         gravar_json(RAIZ / "_indice" / ("camara-" + tipo + "-pendencias") / "indice.json",
                     {"fonte": BUSCA, "recorte": sorted(recorte[tipo]), "completo": False, "consultas": consultas})

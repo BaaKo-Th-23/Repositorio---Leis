@@ -20,7 +20,7 @@ METAS = {}
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from comum import AVISO_OCR_IMAGEM, OCR_BIN, Rede, yaml_str, texto_pdf_para_md
+from comum import AVISO_OCR, AVISO_OCR_IMAGEM, OCR_BIN, Rede, yaml_str, texto_pdf_para_md
 from html2md import convert
 
 RAIZ = Path(__file__).resolve().parent.parent / "reguladores" / "rfb"
@@ -72,8 +72,20 @@ def anexo_pdf(rede, doc, anexo):
         path.write_bytes(bruto)
         proc = subprocess.run(["rtk", "proxy", "pdftotext", "-q", "-layout", "-enc", "UTF-8", str(path), "-"], capture_output=True, timeout=60, check=True)
         texto = proc.stdout.decode("utf-8")
-    if len(texto.strip()) < 200:
-        raise ValueError("anexo PDF sem texto extraível; OCR pendente")
+        paginas = max(1, texto.count("\f"))
+        extraidas = [p for p in texto.split("\f") if p.strip()]
+        if len(extraidas) < paginas or any(len(p.strip()) < 80 for p in extraidas):
+            ocr_cache = cache.with_name(cache.name.replace(".pdf.gz", ".ocr.txt.gz"))
+            if ocr_cache.exists():
+                texto = gzip.decompress(ocr_cache.read_bytes()).decode("utf-8")
+            else:
+                proc = subprocess.run(["rtk", "proxy", OCR_BIN, str(path)], capture_output=True, timeout=300, check=True)
+                texto = proc.stdout.decode("utf-8")
+                salvar(ocr_cache, gzip.compress(texto.encode()))
+            doc["_ocr_pdf"] = True
+            extraidas = [p for p in texto.split("\f") if p.strip()]
+        if len(extraidas) < paginas or any(len(p.strip()) < 80 for p in extraidas) or "\x00" in texto:
+            raise ValueError("anexo PDF sem texto suficiente em todas as páginas; original preservado")
     return texto_pdf_para_md(texto)
 
 
@@ -90,11 +102,16 @@ def imagem_segmento(doc, anexo):
     proc = subprocess.run(["rtk", "proxy", programa, "stdin", "stdout", "--tessdata-dir", str(dados), "-l", "por", "--oem", "1", "--psm", "6"],
                           input=bruto, capture_output=True, timeout=60, check=True, env={**os.environ, "OMP_THREAD_LIMIT": "1"})
     texto = proc.stdout.decode("utf-8").strip()
-    if len(re.sub(r"\W", "", texto)) < 80:
-        raise ValueError("imagem anexa sem texto suficiente no OCR")
-    doc["_ocr"] = True
     fonte = CORPO + str(doc["idAto"]) + "/anexo/" + str(anexo["idArquivoBinario"])
-    return "![Anexo original da fonte](" + fonte + ")\n\n" + texto
+    if len(re.sub(r"\W", "", texto)) < 80:
+        verificados = json.loads((RAIZ / "_anexos_graficos_verificados.json").read_text())
+        prova = verificados.get(str(doc["idAto"]) + ":" + str(anexo["idArquivoBinario"]), {})
+        if prova.get("sha256_original") != hashlib.sha256(bruto).hexdigest():
+            raise ValueError("OCR insuficiente em imagem anexa sem comprovação visual; original preservado")
+        doc.setdefault("_anexos_graficos", []).append(fonte)
+    if texto:
+        doc["_ocr"] = True
+    return "![Anexo original da fonte](" + fonte + ")" + ("\n\n" + texto if texto else "")
 
 
 def extrair(doc, rede=None):
@@ -122,8 +139,14 @@ def extrair(doc, rede=None):
         if texto:
             partes.append(convert(texto).strip())
     corpo = "\n\n".join(partes)
+    if doc.get("_anexos_graficos"):
+        texto_base = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", corpo)
+        if len(texto_base) < 200 or not re.search(r"(?m)^(?:\*\*)?Art(?:igo)?[*.\s]{0,8}(?:\d|[úu]nico)", texto_base, re.I):
+            raise ValueError("anexo gráfico sem corpo normativo textual comprovado")
     if doc.get("_ocr"):
         corpo = AVISO_OCR_IMAGEM + corpo
+    if doc.get("_ocr_pdf"):
+        corpo = AVISO_OCR + corpo
     if len(corpo) < 100 or "\x00" in corpo or not doc.get("outrosSegmentos"):
         raise ValueError("texto integral insuficiente")
     return corpo
@@ -284,6 +307,11 @@ def processar(rede, item):
             "sha256_texto": hashlib.sha256(corpo.encode()).hexdigest(), "baixado_em": dt.date.today().isoformat()}
     if doc.get("_ocr"):
         meta["ocr"] = "Tesseract português; anexo original preservado na fonte e no cache"
+    if doc.get("_ocr_pdf"):
+        meta["ocr_pdf"] = "Vision macOS português; todas as páginas do anexo conferidas quanto à presença de texto"
+    if doc.get("_anexos_graficos"):
+        meta["anexos_graficos"] = "; ".join(doc["_anexos_graficos"])
+        meta["observacao_anexos"] = "Anexo gráfico original preservado; OCR parcial não substitui a representação visual"
     cab = "---\n" + "".join(f"{k}: {'null' if v is None else str(v).lower() if isinstance(v, bool) else yaml_str(str(v))}\n" for k, v in meta.items()) + "---\n"
     salvar(path, (cab + "# " + doc["epigrafeCompleta"] + "\n\n" + corpo + "\n").encode())
     EQUIVALENTES.setdefault(hash_corpo, []).append(path)

@@ -4,6 +4,58 @@ Objetivo: completar o escopo de `scripts/plano.py`, preservando as fontes oficia
 os originais, o vocabulário canônico e a publicação incremental por lote. Metas
 estimadas não comprovam cobertura integral; não reduzir metas para declarar 100%.
 
+## Lote federal/RFB/DOU validado — 16/10/2026
+
+- Snapshot do índice: 5.740 novos federais, 16.766 novos atos de reguladores,
+  sete remoções por migração RSF; saldo 22.499, total futuro 688.323.
+  São 688.320 nas séries com meta e três sem meta. Zero pastas órfãs.
+- Auditoria de formato de 22.506 MD: zero erros, cinco datas ausentes explícitas.
+  Diff-check passou. Quatro scripts com AST válida e sem NUL/backspace;
+  9.107 registros JSONL e JSONs do lote válidos.
+- 208 RSFs das coletâneas: corpo do índice conferido independentemente contra
+  extração integral e SHA de 18 PDFs oficiais; vinte tomos consultados no total.
+  Sete datas/caminhos RSF migrados com corpo idêntico ao HEAD anterior;
+  manifesto agora registra a linha de assinatura real. Onze identidades totais
+  do manifesto (sete RSF e quatro DLG anteriores) conferidas por SHA.
+- Corrigida falsa parada DPL por número 40168 em URL confundido com HTTP401.
+  Testes na função real com rede fake: URLs 40168/40399 percorrem a fila;
+  HTTP401/403/429 reais interrompem após uma tentativa. Corrigidos caracteres
+  backspace introduzidos na primeira regex; cliente antigo 58094 encerrado
+  sozinho e retomado PID58635, sessão68452, 2rps e log append preservado.
+- RFB: OCR PDF valida presença de texto por página, com original/cache.
+  OCR curto de imagens só aceita anexo gráfico visualmente comprovado por
+  idAto:idArquivoBinario e SHA em allowlist versionada; casos não comprovados
+  permanecem pendentes. Guard testado com ID/SHA certo, ID errado e bytes
+  alterados. RFB40381, DEC33109 e DOU96622 preservados.
+- Municipal: nova extração passou amostra independente de 25 associações,
+  796 páginas, 643.241 tokens e 2.171 marcadores. Não prova semântica de todas
+  tabelas nem corpus integral; reconciliação AROM ainda em preparação, sem
+  retomar rede. Estados revisa casos tabulares e manifesto sem editar MDs.
+- Próxima ação: commit deste snapshot com progresso do índice e push normal;
+  confirmar hash do PROGRESSO.md publicado. Manter objetivo global ativo.
+
+## Última publicação confirmada — 16/10/2026
+
+- `34144cc9715` e `f0c65e67873` publicados: 665.824 documentos, saldo de
+  37.844 desde 517db958cd0. PROGRESSO.md público conferido por hash pela API;
+  665.821 nas séries com meta (5,7%) e três sem meta. Ambos os commits
+  incluem PROGRESSO.md e progresso.svg recalculados do índice Git.
+- Reparos de Butiá e Glória do Goitá já publicados, artigos completos,
+  códigos/rotas corretos e snapshots anteriores preservados. Auditoria do
+  índice completo municipal: 12.329 documentos, zero problemas/avisos.
+- Os 27.963 diários novos NÃO foram publicados. Permanecem em disco fora do
+  índice até validação do extrator geométrico e reconciliação dos corpos.
+  Fila 12292 e filho 12301 terminais por falha comprovada; checkpoint FAMURS
+  06/03/2026 (4282/4282a). SAPL 17034 e aguardador 34251 preservados.
+- municipal_juris corrige extração; estados valida amostra independente sem
+  editar os mesmos arquivos. Federal tem 208 RSFs de coletâneas liberadas para
+  próximo lote, sete migrações RSF, novos DPL/RFB e scripts a revisar.
+- TRF4: 136 textos oficiais ainda não staged, requer grupo próprio no plano e
+  auditoria. PI: metadados constitucionais confirmam EC72 já incorporada,
+  corpo inalterado, mudança ainda não publicada.
+- Continuar o objetivo completo; estes volumes não provam 100% de fidelidade
+  nem de cobertura do ordenamento. Não marcar concluído.
+
 ## Snapshot SAPL/TNU e reparos — 16/10/2026
 
 - Último publicado `34144cc9715`: 664.650 documentos. Índice preparado:
