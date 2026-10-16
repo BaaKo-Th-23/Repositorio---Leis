@@ -1,5 +1,39 @@
 # Continuação da coleta
 
+## Coorte federal final3266 +315 — 16/10/2026
+
+- Aprovaçãofinal raiz3266novos+315metadadosjápublicados; índice3581canônicos. Daaplicaçãooriginal3273,7retidosporcolunas/quadroslineares/U:5099,5116,5173,5368,5585,5636,5745. Nenhumapagadoworktree, apenasretiradoíndice. Fonte/snapshots/provaspreservados.
+- Revisão15dfcadcc9…/manifesto9655daf5…resolvem8falsospositivoscomcontexto:prosa,unitário+total,labelspontilhados,lapsosnuméricosliteraisnaementa/valorcitado. Nãoinferircorreções.
+- Relatóriofinalfederal/_publicacao_dpl3266_triestado315_final_20261016.json delimitaescopodepublicaçãodaproposta3273, comSHApor3581arquivos;formato3588incluiesses3581semalteração,0erro/aviso.
+- Whitespace11577anterioré2espaçosGFM/snapshotspreservados; novasfontesHTMLtambémpreservamoriginais. API/renderGithubremoveULiteralem2contextos, provapreservada.
+- Stagefinal eíndice3581SHAexatosconferidos. Verificaçãode48novasprovastem658whitespaceexclusivamente emfragmentosHTMLoriginais(SHA9655), preservadosliteralmente;nenhumcanônico. Aguarda commit/push. PROGRESSO.mdrecalculadopelohook; totalprevisto702429documentos, metaestimadapreservada.
+
+## Lote DPL3273 + triestado315 em finalização — 16/10/2026
+
+- Gateadicionalantescommit:2Ufora<table> (5585/5636),9quadroslineares e9anomaliasdevaloresadjacentes; agenterevisandouniãodecaminhosprioritáriosantesenvio. GitHubAPI/render200 REMOVEuemdadosetabelas; nãoassumirCmarkunsafecomouexibiçãofinalnemsubstituirporins. Provaemgithub-render-underline-prova.json.
+- Formatoindex3588zeroerros/avisos;diffcheck11577ocorrências:todasexatamente2espaçosGFMincluindolinhasvaziasBR. Snapshot5981/canônicos5596, fontes/corposiguaiscore/HEAD;provaFULLgz ewhitespace-gfm-preservado-raiz.json, nãostriparoriginais.
+- Staging raiz sessão79472 confirmado vivo:10752snapshots+manifestosjáSHAconferidos, hash-objectPID33540escrevendo18607objetosdepaths. NãoiniciarcommitantesdeSTAGED/exit0. Verificaçãoextra3273bold/italicterminou30749semperdas; arquivosnovosdeprovadevemsersomadosaoíndiceapós79472.
+- Coberturaraizadicionalnegrito/itálicoconcluída3273/3273semperdadecaracteresformatados; negritoeditorialemArt/§adicionado pelocore nãoéperda. Fontes/snapshots10752e3manifestoscongeladosSHAconferidosemsessão79472(stagingemcurso).
+- Raiz concluiuidentidade3273: índiceprimário5831comcomplementosA/Bdistintos, buscadafontesuaprópriaidentidade/título/situação; linksdepróprioID, versãooriginal/compilada, fórmulalegislativa efecha/data próprios.3273ausentesHEAD14baa; provab1efb56f687738e02325cefd7e70691caf3e10b76cbb162a9603a05bbb84c582.
+- Verificação315jáHEADab8b0c27…: corpo+headersbyteiguais, único false→null comliteralNão consta revogação expressa emmetadadospróprios, snapshotsanterioresiguaisHEAD.
+- AplicaçãoraizCONCLUÍDA sessão83483, /tmp/aplicar-dpl3273-315-raiz.py; todasprecondições antesdewrite;3273novos(3268flagsnull+5semalteração),315metadata-onlyjápublicados. Doisilegíveis5488/5515retidos+115anteriores/467pendências. Nadaforçapara100%.
+- Manifesto depublicaçãofederal/_publicacao_dpl3273_triestado315_20261016.json conteráSHAsdetodos3588arquivos; listaexplicitadeenvio/tmp/dpl3273-315-publicacao-paths.txt. Aplicaçãoconferida3588SHA;aguardaformato/stage/commit/push; hookPROGRESSOíndice ativo. Provas/scriptsdepreparaçãodescrevemestadohistóricoanterioràaplicação; reexecuçãorequerrestauraroriginaisemcópiaisolada.
+- MGpermaneceporevidênciaemrevisão: agenteachoureticências/códigos/descriçõestruncadasemfontes, mesmosendoGFMexato. Nãoaprovartodo14723. Municipalpatchisoladosegue796pcomregra deponteuação,bboxsem alterarfilaviva.
+
+## Checkpoint raiz3275 DPL — 16/10/2026
+
+- Sessão67442concluída:3275snapshots/backups/corpos e3270deltasfalse→null idênticos;0diferenças de caracteres/pontuação/strikes/sup/sub emGFM. Script/resultadoduráveis emfederal/_fonte/auditorias/dpl-auditoria-20261016/verificar-raiz-3275.py,verificacao-raiz-3275.jsonl e resumo.
+- RetençõesREAIS adicionais:5488/1928art1 e5515/1928art26 contêm(ilegível) nasfontes, portantonãopublicaros2comoíntegros. Agenteavisado;3268triestado+5semalteração=3273restantesCONDICIONAIS à revisãofinalidentidade/tipo/data/versão/metadados, apply/stage/formato/push. Nadaaplicadofederalnesterun.
+- Dossêsfederalfrozen:d8c469c9…;triestado52ecd68b…;ledgerb0f86edc…;agenteprépara315jáHEAD eoverlaydas2retenções. MG14723fullproof0erros,agenterevisa873+39contextos. MunicipalcorefixISOLADO6d6f682a…emteste, livefingerprintsintactos.
+- Últimopúblico14baa2980a9,699.163docs/5,9%;PROGRESSO.mdAPIed4b42a65846ce34f69dd162eedfae814d52f4db. Indexvaziodepoiscommit. Goal100%permaneceativo.
+
+## Dois atos municipais publicados — 16/10/2026
+
+- Federalverificaçãoraiz3275 TERMINADA0falhasdesnapshot/deltas/corpo;2retençõescontextuais/GFM: sessão67442, script/tmp/verificar-dpl3275-raiz.py; retornaráfederal/_fonte/auditorias/dpl-auditoria-20261016/verificacao-raiz-3275.jsonl. Primeiroensaio3245terminouSIGABRT134noCmarkporregistroglobalconcorrente; novaexecuçãoserializarendercomthreading.Lock (escopo/dados/padrõesiguais),4threadsapenasI/O/confrontos. Nãoaplicar3270antesderevisarretencoesdessaexecução.
+- Commit14baa2980a949190634489f634d217c85e6a4041enviado/conferidonaAPI pública. PROGRESSO.mdblobed4b42a65846ce34f69dd162eedfae814d52f4db;699.163documentos;699.138/~11.768.799com meta(5,9%);25semmeta. Amboscanônicosnovosnohistóricopúblico.
+- Doiscanônicossemformatoerros/avisos;9espaçosemdiffs/snapshotshistóricos preservadoscomSHA. Raizviu3rendersintegrais evalidou44travessões/datas/cabeçalhoextraviado. Pipelinevivo94555intacto.
+- PróximosMG14723 dependemclassificaçãocontextual873+39alertas; agentetrabalhando. Federal3270+5preparadossemapply, raizvalidaGFM/backup/deltas;3ºdossiêmunicipal14p/36atos,anexoMendesprecisareferênciavisual, semMDnovo.
+
 ## Dois atos municipais aprovados pela raiz — 16/10/2026
 
 - Aplicados isoladamente resolução011/2026CMASItacoatiara e decreto757/2026EngenheiroPauloFrontin: localA1/M1, maspúblicoA2 poisambasrotas ausentesHEAD00c389. Originais/PDF/renders/snapshots/ledgeranterior preservados.
