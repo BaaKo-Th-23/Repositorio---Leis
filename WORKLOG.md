@@ -1,5 +1,27 @@
 # Continuação da coleta
 
+## ES14 restauradas, publicação de 12 — 16/10/2026
+
+- Correção GFM publicada0119e0f4a6e; PROGRESSO.md público confirmado,
+  blobf5a6b8aede7d75ae00bd50c6ef7741514a5feef6;699.137 documentos.
+- ES14 reextraídas dos HTML originais CP1252 com conversor c279: texto
+  integral e alcance do tachado conferidos caractere a caractere sem brancos
+  contra a fonte no cmarkgfm,14/14 idênticos. Zero tabelas nessas fontes.
+  Header/título/URI preservados; próprio número/data confirmados em epígrafe;
+  situação/revogação vinculadas aos registros e hashes do índice oficial.
+- Fontes14: único elemento visual éIMG antes de qualquer texto. TrêsURLs
+  forneceram o mesmoPNG480164ab…, visto pela raiz como brasão da República.
+  QuartaURL retorna404. Não houve substituição inferida da imagem ausente.
+- Publicar12, reter3943/2015 por referência explícita a Ofício/Decretoanexos
+  sem comprovação da íntegra, e5296/2018 pela imagem de cabeçalho404.
+  DoisMDs também restaurados localmente, sem estágio/publicação neste lote.
+- Manifestoestaduais/_reparo_tachado_es_20261016.json2116d635…;
+  backup14 completo emES/_indice/_reparos-tachado-20261016/md-antes.jsonl.gz,
+  anterior a qualquer escrita. Não se afirma inspeção visual deGFMno navegador.
+- Integração tabelas retida: agente estados corrigindo offsetsCR/RFB e
+  impedindo equivalência textual de esconder estruturas tabulares ausentes
+  no canônico antigo; fontes/candidatos ficam preservados em pendência.
+
 ## Correção GFM de tachados adjacentes — 16/10/2026
 
 - cmarkgfm confirmou quatro tildes literais na junção entre trechos tachados

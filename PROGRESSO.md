@@ -1,10 +1,10 @@
 # Progresso
 
-Gerado em 16/10/2026 02:53:33 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 16/10/2026 03:01:52 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**699.137 documentos · 699.113 / ~11.768.799 nas séries com meta (5.9%) · 24 sem meta**
+**699.149 documentos · 699.125 / ~11.768.799 nas séries com meta (5.9%) · 24 sem meta**
 
 ![progresso](progresso.svg)
 
@@ -89,7 +89,7 @@ Planalto, Senado, Câmara e assembleias.
 
 Diários oficiais e portais de órgãos e tribunais.
 
-302.145 / ~861.320 documentos (35.1%)
+302.157 / ~861.320 documentos (35.1%)
 
 ### Infralegal — tributário
 
@@ -266,7 +266,7 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal estadual
 
-225.655 / ~577.054 documentos (39.1%)
+225.667 / ~577.054 documentos (39.1%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -277,7 +277,7 @@ Diários oficiais e portais de órgãos e tribunais.
 | ⬜️ | Resoluções e provimentos dos TJ e das Corregedorias | 0 | 8.000 | `estaduais/*/resolucoes-tj` | Tribunais de Justiça |
 | 🟦 | Regimentos internos das Assembleias | 18 | 27 | `estaduais/*/regimentos` | Assembleias |
 | 🟦 | Decretos legislativos estaduais | 15.211 | 20.000 | `estaduais/*/decretos-legislativos` | Assembleias (SAPL e sistemas próprios) |
-| ✅ | Resoluções das Assembleias | 28.722 | 25.000 | `estaduais/*/resolucoes` | Assembleias (SAPL e sistemas próprios) |
+| ✅ | Resoluções das Assembleias | 28.734 | 25.000 | `estaduais/*/resolucoes` | Assembleias (SAPL e sistemas próprios) |
 | 🟦 | Portarias das administrações estaduais e distrital | 30.043 | 60.000 | `estaduais/*/portarias` | SINJ-DF, Legisla Goiás e sistemas equivalentes |
 | 🟦 | Deliberações, súmulas administrativas, provimentos e pareceres normativos | 1.021 | 4.000 | `estaduais/*/deliberacoes`, `estaduais/*/sumulas`, `estaduais/*/provimentos`, `estaduais/*/pareceres-normativos` | SINJ-DF, Legisla Goiás e sistemas equivalentes |
 
