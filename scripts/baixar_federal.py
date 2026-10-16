@@ -132,7 +132,8 @@ def montar(d):
         # medida provisória reeditada: o número oficial carrega a reedição ("1.463-2"), e é assim
         # que ela entra na URN. Antes da EC 32/2001 uma MP podia ser reeditada dezenas de vezes,
         # e cada reedição é uma norma distinta, com texto próprio.
-        numero = d["numero"] + (f"-{d['reedicao']}" if d.get("reedicao") else "")
+        numero = (d["numero"] + (f"-{d['complemento'].lower()}" if d.get("complemento") else "")
+                  + (f"-{d['reedicao']}" if d.get("reedicao") else ""))
         urn = f"urn:lex:br:{autoridade}:{tipo_urn}:{data};{numero}"
         slug = f"{prefixo}-{numero}-{data}"
     md = os.path.join(RAIZ, pasta, ano, slug + ".md")
@@ -143,7 +144,7 @@ def montar(d):
 def obter_metadados(urn, id_senado):
     st, corpo = http_get(API_NORMA.format(urllib.parse.quote(urn, safe=":;@!~$-.")), "application/json")
     meta = json.loads(corpo) if st == 200 and corpo.strip() else {}
-    if meta.get("encoding"):
+    if meta.get("encoding") and meta.get("legislationIdentifier") == urn:
         return urn, meta
     # URN montada não bateu: pergunta ao Senado qual é a URN oficial
     st, corpo = http_get(API_SENADO.format(id_senado), "application/json")
@@ -154,8 +155,8 @@ def obter_metadados(urn, id_senado):
             urn2 = urllib.parse.unquote(url.split("urn=", 1)[1])
             st, corpo = http_get(API_NORMA.format(urllib.parse.quote(urn2, safe=":;@!~$-.")), "application/json")
             meta = json.loads(corpo) if st == 200 and corpo.strip() else {}
-            return urn2, meta
-    return urn, meta
+            return urn2, meta if meta.get("legislationIdentifier") == urn2 else {}
+    return urn, meta if meta.get("legislationIdentifier") == urn else {}
 
 
 def como_lista(v):
@@ -188,6 +189,9 @@ def processar(d):
     if os.path.exists(info["md"]):
         return "pulado", info["slug"], None
     urn, meta = obter_metadados(info["urn"], d["id"])
+    if urn != info["urn"]:
+        return "sem_texto", info["slug"], {"id": d["id"], "norma": d["norma"], "urn": urn,
+                                           "urn_esperada": info["urn"], "motivo": "URN oficial divergente; equivalência requer revisão"}
     enc = escolher_texto(meta)
     if not enc:
         return "sem_texto", info["slug"], {"id": d["id"], "norma": d["norma"], "urn": urn}
@@ -216,6 +220,9 @@ def processar(d):
             corpo = texto_pdf_para_md(texto)
     else:
         corpo = convert(html.decode("utf-8", errors="replace"))
+    if not corpo.strip() or "\x00" in corpo:
+        return "sem_texto", info["slug"], {"id": d["id"], "norma": d["norma"], "urn": urn,
+                                           "url": url, "motivo": "corpo vazio ou contém NUL; fonte preservada"}
     versao = {"Current": "compilada (texto vigente)", "Original": "original", "Intermediate": "republicação/retificação"}
     # o portal só marca explicitamente as normas revogadas (NotInForce)
     revogada = "NotInForce" in como_lista(meta.get("legislationLegalForce"))

@@ -4,6 +4,7 @@ import datetime as dt
 import gzip
 import hashlib
 import html
+import http.client
 import json
 from pathlib import Path
 import re
@@ -72,7 +73,7 @@ def baixar_pdf(rede, url, parcial):
                 if e.code in (400, 401, 403, 404, 410):
                     raise ValueError(f"HTTP {e.code}: {url}") from e
                 ultimo = e
-            except (OSError, EOFError) as e:
+            except (OSError, EOFError, http.client.IncompleteRead) as e:
                 ultimo = e
         else:
             raise RuntimeError(f"PDF não pôde ser retomado em {offset}: {url}: {ultimo}")

@@ -15,6 +15,7 @@ import re
 import sys
 import urllib.parse
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from functools import lru_cache
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from comum import Rede, decodificar, yaml_str
@@ -30,6 +31,13 @@ TIPOS = {
     "camara": ("Resolução da Câmara dos Deputados", "resolucoes-camara", "rcd", "resolucaodacamaradosdeputados"),
     "senado": ("Resolução do Senado Federal", "resolucoes-senado", "rsf", "resolucao"),
     "congresso": ("Resolução do Congresso Nacional", "resolucoes-congresso", "rcn", "resolucao"),
+    "mpv": ("Medida Provisória", "medidas-provisorias", "mpv", "medidaprovisoria"),
+    "dlg": ("Decreto Legislativo", "decretos-legislativos", "dlg", "decretolegislativo"),
+    "dpl": ("Decreto do Poder Legislativo", "decretos-legislativos", "dpl", "decreto"),
+    "lei": ("Lei", "leis-ordinarias", "lei", "lei"),
+    "lcp": ("Lei Complementar", "leis-complementares", "lcp", "leicomplementar"),
+    "del": ("Decreto-Lei", "decretos-lei", "del", "decreto-lei"),
+    "lct": ("Lei Constitucional", "leis-constitucionais", "lct", "leiconstitucional"),
 }
 
 
@@ -42,6 +50,84 @@ def gravar_json(path, valor):
     tmp = path.with_suffix(path.suffix + ".tmp")
     tmp.write_text(json.dumps(valor, ensure_ascii=False), encoding="utf-8")
     tmp.replace(path)
+
+
+def id_camara(d):
+    m = re.search(r"-(\d+)-norma(?:-|\.)", d["url"])
+    return m[1] if m else None
+
+
+def resumo_indice(total, docs, paginas, totais=None):
+    unicos, vistos, sem_id = [], set(), 0
+    for d in docs:
+        ident = id_camara(d)
+        chave = ident or d["url"]
+        if chave in vistos:
+            continue
+        vistos.add(chave)
+        sem_id += ident is None
+        unicos.append({**d, "id_camara": ident})
+    totais = sorted(set(totais or [total]))
+    completo = (paginas == math.ceil(total / 20) and len(unicos) == total and sem_id == 0
+                and len(totais) == 1)
+    return {"total_fonte": total, "totais_observados": totais, "paginas_coletadas": paginas,
+            "documentos_unicos": len(unicos), "faltantes_indice": max(0, total - len(unicos)),
+            "sem_identificador": sem_id, "completo": completo,
+            "estado": "completo" if completo else "parcial", "documentos": unicos}
+
+
+@lru_cache(maxsize=None)
+def equivalencias(tipo):
+    """URN do índice Senado aponta ao mesmo arquivo, incluindo reedições e séries DPL/DLG."""
+    fontes = {"mpv": ("MPV",), "dlg": ("DLG", "DPL"), "dpl": ("DLG", "DPL"),
+              "lei": ("LEI",), "lcp": ("LCP",), "del": ("DEL",), "lct": ("LCT",)}
+    if tipo not in fontes:
+        return {}
+    from baixar_federal import montar
+    tipos = fontes[tipo]
+    por_urn = {}
+    for nome in tipos:
+        path = RAIZ / "_indice" / (nome + ".json")
+        for d in json.loads(path.read_text(encoding="utf-8"))["ListaDocumento"]["documentos"]["documento"]:
+            info = montar(d)
+            if d.get("complemento") and not Path(info["md"]).exists():
+                legado = dict(d)
+                legado.pop("complemento")
+                caminho_antigo = Path(montar(legado)["md"])
+                if caminho_antigo.exists():
+                    with caminho_antigo.open(encoding="utf-8") as f:
+                        cab = f.read(8192).split("---", 2)[1]
+                    m = re.search(r"^urn: (.+)$", cab, re.M)
+                    if m and json.loads(m[1]) == info["urn"]:
+                        info["md"] = str(caminho_antigo)
+            por_urn.setdefault(info["urn"], []).append(info)
+    return por_urn
+
+
+def identificar(d, tipo):
+    nome_tipo, pasta, prefixo, prefixo_url = TIPOS[tipo]
+    m = re.search(re.escape(prefixo_url) + r'-([\w.-]+?)-(\d+)-([a-z]+)-(\d{4})-(\d+)-norma', d["url"])
+    if not m:
+        raise ValueError(f"data/número ausentes da URL: {d['url']}")
+    numero, dia, mes, ano, ident = m.groups()
+    numero = numero.replace(".", "")
+    data = dt.date(int(ano), MESES[mes], int(dia)).isoformat()
+    slug = f"{prefixo}-{numero}-{data}" + (f"-{ident}" if tipo == "camara" else "")
+    info = {"numero": numero, "data": data, "md": RAIZ / pasta / ano / (slug + ".md"), "nome": nome_tipo}
+    if tipo in ("senado", "congresso"):
+        autoridade = "senado.federal" if tipo == "senado" else "congresso.nacional"
+        info["urn"] = f"urn:lex:br:{autoridade}:resolucao:{data};{numero}"
+    if tipo in ("mpv", "dlg", "dpl", "lei", "lcp", "del", "lct"):
+        lex = {"mpv": "medida.provisoria", "dlg": "decreto.legislativo", "dpl": "decreto.legislativo",
+               "lei": "lei", "lcp": "lei.complementar", "del": "decreto.lei", "lct": "lei.constitucional"}[tipo]
+        info["urn"] = f"urn:lex:br:federal:{lex}:{data};{numero}"
+        iguais = equivalencias(tipo).get(info["urn"], [])
+        if tipo in ("dpl", "lei", "lcp", "del", "lct") and not iguais:
+            raise ValueError("norma fora da série primária esperada: " + info["urn"])
+        if iguais:
+            canonico = next((i for i in iguais if Path(i["md"]).exists()), iguais[0])
+            info.update({"md": Path(canonico["md"]), "nome": canonico["nome"]})
+    return info
 
 
 def obter(rede, url):
@@ -63,9 +149,10 @@ def obter(rede, url):
     return s
 
 
-def pagina(rede, numero, tipo="camara"):
-    url = BUSCA + "?" + urllib.parse.urlencode({"tipo": TIPOS[tipo][0],
-                                                "ordenacao": "data:DESC", "pagina": numero})
+def pagina(rede, numero, tipo="camara", filtros=None):
+    params = {"tipo": TIPOS[tipo][0], "ordenacao": "data:DESC", "pagina": numero}
+    params.update(filtros or {})
+    url = BUSCA + "?" + urllib.parse.urlencode(params)
     s = obter(rede, url)
     total = re.search(r"Exibindo resultados de\s+[\d.]+\s+a\s+[\d.]+\s+de\s+([\d.]+)", s)
     if not total:
@@ -103,18 +190,14 @@ def corpo_norma(s):
 
 
 def processar(rede, d, tipo="camara"):
-    nome_tipo, pasta, prefixo, prefixo_url = TIPOS[tipo]
-    m = re.search(re.escape(prefixo_url) + r'-([\w.-]+?)-(\d+)-([a-z]+)-(\d{4})-(\d+)-norma', d["url"])
-    if not m:
-        raise ValueError(f"data/número ausentes da URL: {d['url']}")
-    numero, dia, mes, ano, ident = m.groups()
-    data = dt.date(int(ano), MESES[mes], int(dia)).isoformat()
-    slug = f"{prefixo}-{numero}-{data}" + (f"-{ident}" if tipo == "camara" else "")
-    path = RAIZ / pasta / ano / (slug + ".md")
+    info = identificar(d, tipo)
+    path, numero, data, nome_tipo = info["md"], info["numero"], info["data"], info["nome"]
     if path.exists():
         return "pulado"
     s = obter(rede, d["url"])
     links = [html.unescape(u) for u in re.findall(r'href=["\']([^"\']+)["\']', s)]
+    ident = id_camara(d)
+    links = [u for u in links if f"-{ident}-" in u]
     candidatos = [u for u in links if "-normaatualizada-" in u and u.endswith(".html")]
     compilada = bool(candidatos)
     if not candidatos:
@@ -123,13 +206,15 @@ def processar(rede, d, tipo="camara"):
         raise ValueError(f"norma sem texto HTML: {d['url']}")
     url_texto = urllib.parse.urljoin(d["url"], candidatos[0])
     corpo = convert(corpo_norma(obter(rede, url_texto)))
-    if len(corpo.strip()) < 80:
+    if len(corpo.strip()) < 80 or (tipo in ("lei", "lcp", "del", "lct", "dpl") and not re.search(r"\bArt(?:igo)?[*.\s]{0,8}(?:\d|[úu]nico)", corpo, re.I)):
         raise ValueError(f"texto insuficiente: {url_texto}")
     valores = {"titulo": d["titulo"], "tipo": nome_tipo, "numero": numero,
                "data": data, "ementa": d["ementa"], "situacao": d["situacao"],
                "revogada": d["situacao"].lower() == "revogada",
                "versao_texto": "compilada" if compilada else "original", "fonte": url_texto,
                "url_metadados": d["url"], "baixado_em": dt.date.today().isoformat()}
+    if info.get("urn"):
+        valores["urn"] = info["urn"]
     linhas = ["---"]
     for k, v in valores.items():
         linhas.append(f"{k}: {str(v).lower() if isinstance(v, bool) else v if k in ('data', 'baixado_em') else yaml_str(v)}")
@@ -141,33 +226,141 @@ def processar(rede, d, tipo="camara"):
     return "ok"
 
 
+def coletar_pendencias(rede, tipo):
+    from baixar_federal import carregar_indice, montar
+    recorte = {"lei": {"LEI-n"}, "lcp": {"LCP"}, "del": {"DEL"}, "lct": {"LCT"},
+               "dlg": {"DLG"}, "dpl": {"DPL-n"}, "mpv": {"MPV-cs", "MPV-ss"}}
+    if tipo not in recorte:
+        raise ValueError("tipo sem índice primário para pendências")
+    alvos = [d for d in carregar_indice(recorte[tipo]) if not Path(montar(d)["md"]).exists()]
+    cont = {"ok": 0, "pulado": 0, "erro": 0}
+    consultas = []
+    for d in alvos:
+        esperado = montar(d)
+        numero = d["numero"] + ("-" + d["complemento"] if d.get("complemento") else "")
+        try:
+            total, lote = pagina(rede, 1, tipo, {"numero": numero, "ano": esperado["data"][:4]})
+            consultas.append({"id_senado": d["id"], "urn": esperado["urn"], "total_fonte": total, "documentos": lote})
+            candidatos = []
+            for item in lote:
+                try:
+                    if identificar(item, tipo).get("urn") == esperado["urn"]:
+                        candidatos.append(item)
+                except ValueError:
+                    continue
+            if len(candidatos) != 1:
+                raise ValueError(f"consulta não identificou norma única: {len(candidatos)}/{total}")
+            st = processar(rede, candidatos[0], tipo)
+            cont[st] += 1
+            print(st, d["norma"], cont, flush=True)
+        except Exception as exc:
+            cont["erro"] += 1
+            with (RAIZ / "_falhas_camara.jsonl").open("a") as f:
+                f.write(json.dumps({"fonte": "camara-" + tipo, "id_senado": d["id"], "norma": d["norma"],
+                                    "urn": esperado["urn"], "erro": str(exc)}, ensure_ascii=False) + "\n")
+            print("erro", d["norma"], str(exc), flush=True)
+            if "403" in str(exc) or "401" in str(exc):
+                break
+        gravar_json(RAIZ / "_indice" / ("camara-" + tipo + "-pendencias") / "indice.json",
+                    {"fonte": BUSCA, "recorte": sorted(recorte[tipo]), "completo": False, "consultas": consultas})
+    print("FIM PENDENCIAS", tipo, cont, flush=True)
+    return int(bool(cont["erro"]))
+
+
+def completar_urns():
+    from baixar_federal import carregar_indice, montar
+    primarios = {montar(d)["urn"]: montar(d) for d in carregar_indice({"RSF", "RCN"})}
+    atualizados, conflitos = [], []
+    for tipo in ("senado", "congresso"):
+        indice = RAIZ / "_indice" / ("camara-" + tipo) / "indice.json"
+        if not indice.exists():
+            continue
+        for d in json.loads(indice.read_text())["documentos"]:
+            try:
+                info = identificar(d, tipo)
+            except ValueError:
+                continue
+            if info["urn"] not in primarios or Path(primarios[info["urn"]]["md"]) != info["md"] or not info["md"].exists():
+                continue
+            path = info["md"]
+            bruto = path.read_bytes()
+            partes = bruto.split(b"---", 2)
+            if len(partes) != 3 or d["url"].encode() not in partes[1]:
+                continue
+            cab = partes[1].decode()
+            urn = re.search(r"^urn:\s*(.+)$", cab, re.M)
+            if urn:
+                if json.loads(urn[1]) != info["urn"]:
+                    conflitos.append(str(path))
+                continue
+            corpo_hash = hashlib.sha256(partes[2]).hexdigest()
+            partes[1] += ("urn: " + yaml_str(info["urn"]) + "\n").encode()
+            tmp = path.with_suffix(".tmp")
+            tmp.write_bytes(b"---".join(partes))
+            tmp.replace(path)
+            assert hashlib.sha256(path.read_bytes().split(b"---", 2)[2]).hexdigest() == corpo_hash
+            atualizados.append({"arquivo": str(path.relative_to(RAIZ)), "urn": info["urn"], "fonte_indice": d["url"], "sha256_corpo": corpo_hash})
+    cache = RAIZ / "_fonte" / "auditorias" / ("urns-completadas-" + dt.datetime.now().strftime("%Y%m%d-%H%M%S") + ".json.gz")
+    cache.parent.mkdir(parents=True, exist_ok=True)
+    cache.write_bytes(gzip.compress(json.dumps({"atualizados": atualizados, "conflitos": conflitos}, ensure_ascii=False).encode()))
+    print("URNs completadas", len(atualizados), "conflitos", len(conflitos), flush=True)
+    return int(bool(conflitos))
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--rps", type=float, default=2)
     ap.add_argument("--workers", type=int, default=4)
+    ap.add_argument("--completar-urns", action="store_true")
+    ap.add_argument("--pendencias", action="store_true")
+    ap.add_argument("--pagina-inicial", type=int, default=1)
     ap.add_argument("--paginas", type=int, default=0, help="limita páginas para amostra")
     ap.add_argument("--tipo", choices=TIPOS, default="camara")
+    ap.add_argument("--auditar-indices", action="store_true", help="corrige cobertura dos índices em cache sem rede")
     a = ap.parse_args()
+    if a.completar_urns:
+        return completar_urns()
+    if a.auditar_indices:
+        for path in (RAIZ / "_indice").glob("camara*/indice.json"):
+            j = json.loads(path.read_text(encoding="utf-8"))
+            if not {"total_fonte", "documentos", "paginas_coletadas"}.issubset(j):
+                continue
+            resumo = resumo_indice(j["total_fonte"], j["documentos"], j["paginas_coletadas"], j.get("totais_observados"))
+            gravar_json(path, resumo)
+            print(path.parent.name, resumo["documentos_unicos"], "/", resumo["total_fonte"], resumo["estado"], flush=True)
+        return
     if not 0 < a.rps <= 4 or a.workers < 1:
         ap.error("rps deve estar entre 0 e 4; workers deve ser positivo")
     rede = Rede(a.rps)
+    if a.pendencias:
+        return coletar_pendencias(rede, a.tipo)
     cont = {"ok": 0, "pulado": 0, "erro": 0}
-    docs, vistos, n, paginas = [], set(), 1, 1
+    docs, vistos, n, paginas, totais = [], set(), 1, 1, set()
     indice = INDICE if a.tipo == "camara" else INDICE.with_name("camara-" + a.tipo)
     indice.mkdir(parents=True, exist_ok=True)
+    if a.pagina_inicial > 1:
+        anterior = json.loads((indice / "indice.json").read_text())
+        if anterior["paginas_coletadas"] < a.pagina_inicial - 1:
+            ap.error("índice anterior não cobre as páginas omitidas")
+        docs = anterior["documentos"]
+        vistos = {id_camara(d) or d["url"] for d in docs}
+        n = a.pagina_inicial
+        paginas = math.ceil(anterior["total_fonte"] / 20)
+        totais = set(anterior.get("totais_observados", [anterior["total_fonte"]]))
     with ThreadPoolExecutor(a.workers) as ex, (RAIZ / "_falhas_camara.jsonl").open("a", encoding="utf-8") as falhas:
         while n <= paginas:
             total, lote = pagina(rede, n, a.tipo)
+            totais.add(total)
             paginas = math.ceil(total / 20)
             if a.paginas:
                 paginas = min(paginas, a.paginas)
             for d in lote:
-                if d["url"] not in vistos:
-                    vistos.add(d["url"])
+                ident = id_camara(d) or d["url"]
+                if ident not in vistos:
+                    vistos.add(ident)
                     docs.append(d)
             gravar_json(indice / f"pagina-{n:04}.json", {"total_fonte": total, "documentos": lote})
-            gravar_json(indice / "indice.json", {"total_fonte": total, "paginas_coletadas": n,
-                                                 "completo": n == math.ceil(total / 20), "documentos": docs})
+            gravar_json(indice / "indice.json", resumo_indice(total, docs, n, totais))
             futs = {ex.submit(processar, rede, d, a.tipo): d for d in lote}
             for fut in as_completed(futs):
                 try:
@@ -181,7 +374,8 @@ def main():
             print(f"{a.tipo} página {n}/{paginas}, índice {len(docs)}/{total}: {cont}", flush=True)
             n += 1
     print("FIM", cont, flush=True)
+    return int(bool(cont["erro"]))
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

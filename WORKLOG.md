@@ -88,7 +88,42 @@ O último relatório disponível é antigo e será regenerado após a auditoria 
   janela de deltas desativada e log `_log_push_lotes.txt`, sessão 34699. Confirmar
   conclusão/remoto antes de repetir qualquer envio; não usar force-push.
 
+## Publicação confirmada — 15/10/2026
+
+- `5fd5a8b4e83`, `d23aac7a94a` e `6e5a9d618c9` enviados normalmente ao main.
+  Primeiro retry concluiu até jurisprudência; envio incremental municipal concluiu
+  depois. API GitHub confirmou PROGRESSO idêntico ao blob do HEAD
+  `b218aa489221a6c14ad3deecdbfefbc2c301fbdb`: 565.197 / ~11.768.329 (4,8%).
+  Os três commits contêm PROGRESSO.md e progresso.svg. Nenhuma reescrita publicada.
+- Coletas verificadas vivas após publicação: municipal 12292, orgânicas 17034,
+  MG 17384, RJ constitucional 15868 e RFB 20649. Revalidar antes de retomar.
+- RFB agora indexa partições anuais, uso exclusivo de 4 rps; mais de 61 mil IDs
+  únicos no snapshot, ainda sem comprovar todos os 115.238. Não declarar completo.
+- Federal: relatório durável mais recente
+  `federal/_fonte/auditorias/falhas-federais-20261015-224658.json.gz` registra 5.992
+  pendências reais naquele snapshot. LCP e LCT resolvidas; lote ainda não publicado.
+- Próximo passo de publicação: federal/RFB novos, correções de URN, oito decretos
+  MA e novos lotes MG/SP/SC e municipais, sempre auditoria do index antes do commit.
+  Agentes continuam em RFB/federal, RJ/estados e legislação municipal via SAPL.
+
 ## Publicação e progresso
+
+### Lote federal seguinte — 15/10/2026
+
+- Preparado acréscimo líquido de 14.642 Markdown: federal 14.692 adicionados,
+  756 alterados e 78 caminhos antigos removidos; tratados 28 adicionados. Auditoria
+  de 15.476 documentos passou, com 28 datas ausentes explícitas. Diff passou e seis
+  scripts preparados têm sintaxe válida; nenhum caminho fora do plano.
+- Leis constitucionais da Carta de 1937 incluídas no plano com meta oficial 21:
+  catálogo Planalto Quadro_Lct.htm contém exatamente LCT001–LCT021 e coincide com
+  o índice Senado. Não é meta reduzida ao volume coletado.
+- DOU segue no PID 96622; saída atual é sessão 17222, não `_log_dou.txt` antigo.
+  Poll confirmado até 23/02/2025, 1.645 novos e zero erros naquele snapshot.
+  O log antigo tem mtime anterior ao processo e não serve para diagnosticar parada.
+- RFB índice anual ainda em progresso, mais de 74 mil IDs únicos; não confundir
+  resultado parcial com cobertura completa de 115.238. Corpo já salvo é publicável.
+- Próxima correção de metadados federais: explicitar complemento/reedição no número
+  oficial sem alterar corpos. Publicação atual conserva títulos/URNs corretos.
 
 A pedido do usuário, todo commit deve regenerar `PROGRESSO.md` e `progresso.svg`
 contando o index do Git (`scripts/progresso.py --git-index`), para não contabilizar

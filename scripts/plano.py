@@ -42,6 +42,8 @@ PLANO = [
          "Senado (índice) + normas.leg.br (texto)"),
     Item("Leis federais", "Leis complementares", "federal/leis-complementares", 237, 1, "normas.leg.br"),
     Item("Leis federais", "Leis delegadas (série encerrada)", "federal/leis-delegadas", 13, 1, "normas.leg.br"),
+    Item("Leis federais", "Leis constitucionais da Carta de 1937 (1938–1946)", "federal/leis-constitucionais", 21, 1,
+         "https://www.planalto.gov.br/ccivil_03/LEIS/LCT/Quadro_Lct.htm"),
     Item("Leis federais", "Decretos-leis (série encerrada em 1988)", "federal/decretos-lei", 12250, 1,
          "normas.leg.br"),
 
