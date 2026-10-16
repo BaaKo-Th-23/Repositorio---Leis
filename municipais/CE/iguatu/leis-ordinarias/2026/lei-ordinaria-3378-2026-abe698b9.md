@@ -8,8 +8,10 @@ data: 2026-10-14
 ano: "2026"
 revogada: false
 versao_texto: "publicação original"
-publicacao: "Diário Oficial de 14/10/2026"
-data_publicacao: 2026-10-14
+publicacao: "Diário Oficial de 15/10/2026"
+data_publicacao: 2026-10-15
+data_publicacao_na_url: "2026-10-14"
+observacao_publicacao: "Data de circulação confirmada no cabeçalho da edição; a data do nome do PDF é diferente."
 codigo_identificador: "ABE698B9"
 fonte: "https://www-storage.voxtecnologia.com.br/?m=sigpub.publicacao&f=764&i=publicado_116934_2026-10-14_096ba62cb75b9a4a7571a4e0afe1f4bb.pdf"
 baixado_em: 2026-10-15

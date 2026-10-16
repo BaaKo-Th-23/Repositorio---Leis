@@ -26,11 +26,9 @@ vem do cabeçalho de seção mais recente.
 `-layout` entrelaça as colunas: a epígrafe de uma lei sai na mesma linha do "Publicado por:" da
 outra. Sem ele, o pdftotext respeita a ordem de leitura do próprio PDF e o texto sai correto.
 
-**Limitação de origem: só a edição do dia é alcançável.** A página de cada associação expõe o link
-da edição corrente; o acervo retroativo existe, mas só pela busca do site, que é montada por
-JavaScript, e os PDFs antigos ficam atrás de uma URL com hash por edição. Então este script
-acumula para a frente: rodado todo dia, constrói o acervo municipal a partir de hoje. O retroativo
-exige automação de navegador, que não está no ferramental deste repositório.
+O calendário público permite consultar edições históricas por data. `--de` e `--ate`
+consultam esse formulário, preservando cookie e token CSRF, e guardam os resultados para retomar
+sem repetir consultas. Também são incluídas as edições extraordinárias do dia.
 
     python3 -I scripts/baixar_municipal.py              # a edição de hoje de todas as associações
     python3 -I scripts/baixar_municipal.py --listar     # só mostra as associações e o que acharia
@@ -39,6 +37,9 @@ exige automação de navegador, que não está no ferramental deste repositório
 import argparse
 import datetime as dt
 import html
+import gzip
+import hashlib
+from http.cookiejar import CookieJar
 import json
 import os
 import re
@@ -46,6 +47,7 @@ import subprocess
 import sys
 import tempfile
 import urllib.request
+import urllib.parse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from comum import CANONICO, Limitador, normalizar_chave, slugify, yaml_str  # noqa: E402
@@ -128,6 +130,131 @@ def link_da_edicao(url_assoc, limite):
     return None
 
 
+def limites_da_pagina(slug, url, pagina):
+    """Só o calendário e o card explicitamente chamado 'ultima-edicao' definem limites."""
+    anos = re.search(r'<select[^>]*name="calendar\[year\]"[^>]*>(.*?)</select>', pagina, re.S)
+    valores = [int(a) for a in re.findall(r'<option value="(\d{4})"', anos.group(1))] if anos else []
+    card = re.search(r'<figure[^>]*id="ultima-edicao"[^>]*>(.*?)</figure>', pagina, re.S)
+    ultima = fonte = None
+    if card:
+        data = re.search(r'<span[^>]*>\s*(\d{2})/(\d{2})/(\d{4})\s*</span>', card.group(1))
+        link = re.search(r'<a[^>]*href="([^"]+)"', card.group(1))
+        if data:
+            try:
+                ultima = dt.date(int(data.group(3)), int(data.group(2)), int(data.group(1))).isoformat()
+            except ValueError:
+                pass
+        if link:
+            fonte = html.unescape(link.group(1))
+    return {"assoc": slug, "fonte": url, "primeiro_ano_calendario": min(valores) if valores else None,
+            "ultima_circulacao": ultima, "pdf_ultima_edicao": fonte,
+            "evidencia": 'select calendar[year] e figure id="ultima-edicao"',
+            "pagina_sha256": hashlib.sha256(pagina.encode()).hexdigest(),
+            "consultado_em": dt.date.today().isoformat()}
+
+
+def guardar_limites(slug, limites):
+    destino = os.path.join(RAIZ, "_indice", "_limites", slug + ".json")
+    os.makedirs(os.path.dirname(destino), exist_ok=True)
+    with open(destino + ".tmp", "w", encoding="utf-8") as f:
+        json.dump(limites, f, ensure_ascii=False, indent=2)
+    os.replace(destino + ".tmp", destino)
+
+
+def intervalo_disponivel(slug, inicio, fim, limites):
+    """O índice local confirmado nunca é invalidado por um card mais antigo do portal."""
+    ano = limites.get("primeiro_ano_calendario")
+    ultima = limites.get("ultima_circulacao")
+    inicio_disponivel = dt.date(ano, 1, 1) if ano else inicio
+    fim_disponivel = dt.date.fromisoformat(ultima) if ultima else fim
+    conhecidos = []
+    pasta = os.path.join(RAIZ, "_indice", slug)
+    if os.path.isdir(pasta):
+        for arquivo in os.listdir(pasta):
+            if not re.fullmatch(r"\d{4}-\d{2}-\d{2}\.json", arquivo):
+                continue
+            with open(os.path.join(pasta, arquivo), encoding="utf-8") as f:
+                edicoes = json.load(f)
+            conhecidos.extend(dt.date.fromisoformat(e["data"]) for e in edicoes)
+    if conhecidos:
+        inicio_disponivel = min(inicio_disponivel, min(conhecidos))
+        if max(conhecidos) > fim_disponivel:
+            # O card contradiz uma edição efetivamente localizada: o limite superior é incerto.
+            fim_disponivel = fim
+    return max(inicio, inicio_disponivel), min(fim, fim_disponivel)
+
+
+def edicoes_historicas(slug, url, inicio, fim, limite, total=None):
+    """Consulta o mesmo formulário e os mesmos endpoints usados pelo calendário público."""
+    limites_cache = os.path.join(RAIZ, "_indice", "_limites", slug + ".json")
+    if os.path.exists(limites_cache):
+        with open(limites_cache, encoding="utf-8") as f:
+            limites_anteriores = json.load(f)
+        if limites_anteriores.get("consultado_em") == dt.date.today().isoformat():
+            de, ate = intervalo_disponivel(slug, inicio, fim, limites_anteriores)
+            if de > ate:
+                print(f"{slug}: intervalo fora dos limites oficiais conhecidos; sem consultas diárias", flush=True)
+                return
+    opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(CookieJar()))
+    limite.esperar()
+    with opener.open(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=90) as r:
+        pagina = r.read().decode("utf-8", errors="replace")
+    token = re.search(r'name="calendar\[_token\]"[^>]*value="([^"]+)"', pagina)
+    if not token:
+        raise RuntimeError("formulário do calendário sem token CSRF")
+    limites = limites_da_pagina(slug, url, pagina)
+    guardar_limites(slug, limites)
+    inicio, fim = intervalo_disponivel(slug, inicio, fim, limites)
+    if inicio > fim:
+        print(f"{slug}: intervalo fora dos limites oficiais conhecidos; sem consultas diárias", flush=True)
+        return
+    n_falhas = 0
+    dia = inicio
+    while dia <= fim:
+        cache = os.path.join(RAIZ, "_indice", slug, dia.isoformat() + ".json")
+        if os.path.exists(cache):
+            with open(cache, encoding="utf-8") as f:
+                edicoes = json.load(f)
+        else:
+            edicoes = []
+            consulta_completa = True
+            dados = urllib.parse.urlencode({"calendar[day]": dia.day, "calendar[month]": dia.month,
+                    "calendar[year]": dia.year, "calendar[_token]": html.unescape(token.group(1))}).encode()
+            for sufixo in ("", "/extra"):
+                limite.esperar()
+                req = urllib.request.Request(url.rstrip("/") + "/materia/calendario" + sufixo,
+                                             data=dados, headers={"User-Agent": UA})
+                try:
+                    with opener.open(req, timeout=90) as r:
+                        resultado = json.load(r)
+                except Exception as e:
+                    resultado = {"error": str(e)}
+                if resultado.get("error") or "edicao" not in resultado:
+                    consulta_completa = False
+                    n_falhas += 1
+                    if total is not None:
+                        total["erro"] += 1
+                    os.makedirs(RAIZ, exist_ok=True)
+                    with open(os.path.join(RAIZ, "_calendario_falhas.jsonl"), "a", encoding="utf-8") as f:
+                        f.write(json.dumps({"assoc": slug, "data": dia.isoformat(), "endpoint": sufixo,
+                                            "resposta": resultado}, ensure_ascii=False) + "\n")
+                    continue
+                for edicao in resultado["edicao"]:
+                    link = resultado["url_arquivos"] + edicao["link_diario"] + ".pdf"
+                    edicoes.append({"fonte": link, "data": edicao.get("data_circulacao", dia.isoformat()),
+                                    "numero": edicao["numero_edicao"]})
+            if consulta_completa:
+                os.makedirs(os.path.dirname(cache), exist_ok=True)
+                with open(cache + ".tmp", "w", encoding="utf-8") as f:
+                    json.dump(edicoes, f, ensure_ascii=False)
+                os.replace(cache + ".tmp", cache)
+        for edicao in edicoes:
+            yield edicao["fonte"], dt.date.fromisoformat(edicao["data"]), edicao["numero"]
+        dia += dt.timedelta(days=1)
+    if n_falhas:
+        print(f"{slug}: {n_falhas} consultas de calendário inconclusivas; ver _calendario_falhas.jsonl", flush=True)
+
+
 def data_do_link(link):
     m = re.search(r"_(\d{4}-\d{2}-\d{2})_", link)
     return dt.date.fromisoformat(m.group(1)) if m else dt.date.today()
@@ -146,6 +273,49 @@ def texto_do_pdf(caminho):
         os.unlink(saida)
 
 
+MUNICIPIOS = {}
+IBGE_URL = "https://servicodados.ibge.gov.br/api/v1/localidades/municipios?orderBy=nome"
+
+
+def municipios_ibge():
+    """Vocabulário oficial por UF, baixado uma vez e reutilizado nas retomadas."""
+    if MUNICIPIOS:
+        return MUNICIPIOS
+    cache = os.path.join(RAIZ, "_indice", "ibge-municipios.json")
+    if os.path.exists(cache):
+        with open(cache, encoding="utf-8") as f:
+            dados = json.load(f)
+    else:
+        with urllib.request.urlopen(IBGE_URL, timeout=90) as r:
+            bruto = r.read()
+        if bruto.startswith(b"\x1f\x8b"):
+            bruto = gzip.decompress(bruto)
+        dados = json.loads(bruto)
+        if not isinstance(dados, list) or len(dados) < 5000:
+            raise RuntimeError("IBGE não devolveu o cadastro esperado de municípios")
+        os.makedirs(os.path.dirname(cache), exist_ok=True)
+        with open(cache + ".tmp", "w", encoding="utf-8") as f:
+            json.dump(dados, f, ensure_ascii=False)
+        os.replace(cache + ".tmp", cache)
+    for registro in dados:
+        regiao = registro.get("microrregiao")
+        uf = regiao["mesorregiao"]["UF"]["sigla"] if regiao else registro["regiao-imediata"]["regiao-intermediaria"]["UF"]["sigla"]
+        MUNICIPIOS.setdefault(uf, {})[normalizar_chave(registro["nome"].replace("'", "").replace("’", ""))] = registro["nome"].upper()
+    return MUNICIPIOS
+
+
+def municipio_oficial(uf, candidato, prefixo=False):
+    nomes = municipios_ibge().get(uf, {})
+    chave = normalizar_chave(SUFIXO_UF.sub("", candidato).replace("'", "").replace("’", ""))
+    if chave in nomes:
+        return nomes[chave]
+    if prefixo:
+        candidatos = [n for n in nomes if chave.startswith(n + " ")]
+        if candidatos:
+            return nomes[max(candidatos, key=len)]
+    return None
+
+
 def atos(texto):
     """Divide a edição em atos, carregando a UF e o município da seção corrente."""
     uf = municipio = None
@@ -153,13 +323,16 @@ def atos(texto):
     for m in CODIGO.finditer(texto):
         bloco = texto[pos:m.start()]
         pos = m.end()
-        # os cabeçalhos de seção que aparecerem dentro deste bloco valem a partir daqui
-        for e in ESTADO.finditer(bloco):
+        # Uma citação dentro da própria norma não pode mudar o município da seção.
+        titulo, _, inicio = epigrafe(bloco)
+        cabecalho = bloco[:inicio] if titulo else bloco
+        for e in ESTADO.finditer(cabecalho):
             uf = UFS.get(normalizar_chave(e.group(1))) or uf
-        for e in ENTIDADE.finditer(bloco):
-            nome = SUFIXO_UF.sub("", e.group(1).strip())
-            if 2 < len(nome) <= 60:
-                municipio = nome
+        for e in ENTIDADE.finditer(cabecalho):
+            candidato = e.group(1)
+            proxima = cabecalho[e.end():].lstrip("\n").split("\n", 1)[0].strip()
+            nome = municipio_oficial(uf, candidato + " " + proxima) if proxima else None
+            municipio = nome or municipio_oficial(uf, candidato, prefixo=True)
         yield uf, municipio, bloco, m.group(1)
 
 
@@ -210,11 +383,37 @@ def data_da_epigrafe(linha, ano_padrao):
 
 
 def gravar(uf, municipio, titulo, chave, bloco, codigo, data_edicao, link):
+    municipio = municipio_oficial(uf, municipio)
+    if not municipio:
+        raise RuntimeError("município sem correspondência exata no cadastro IBGE da UF")
     pasta, tipo_nome = CANONICO[chave]
     num = NUMERO.search(titulo)
     numero = num.group(1).replace(".", "") if num else ""
     data = data_da_epigrafe(titulo, data_edicao.year)
-    ano = (data[:4] if data else str(data_edicao.year))
+    data_na_fonte = ""
+    observacao_data = ""
+    if data:
+        try:
+            invalida = dt.date.fromisoformat(data) > data_edicao
+        except ValueError:
+            invalida = True
+        if invalida:
+            data_na_fonte = data
+            data = ""
+            for assinatura in DATA_EXTENSO.finditer(bloco):
+                prefixo = bloco[max(0, assinatura.start() - 80):assinatura.start()]
+                if assinatura.start() < len(bloco) / 2 or not re.search(r"(?:\bEm|,)\s*$", prefixo, re.I):
+                    continue
+                candidata = data_da_epigrafe(assinatura.group(0), data_edicao.year)
+                try:
+                    if candidata and dt.date.fromisoformat(candidata) <= data_edicao:
+                        data = candidata
+                except ValueError:
+                    pass
+            observacao_data = "Data da epígrafe posterior à publicação ou inválida; " + (
+                "data registrada conforme assinatura no corpo." if data else "data não determinada.")
+    ano_citado = DATA_BARRA.search(titulo)
+    ano = data[:4] if data else (ano_citado.group(2) if ano_citado else data_na_fonte[:4] or str(data_edicao.year))
     # o nome do arquivo sai da chave canônica ("lei ordinaria"), não da pasta no plural; e o
     # nome do município perde o acento, para que o caminho seja o mesmo em qualquer sistema
     slug = slugify(f"{slugify(chave)}-{numero or codigo}-{ano}-{codigo}")[:110]
@@ -230,6 +429,9 @@ def gravar(uf, municipio, titulo, chave, bloco, codigo, data_edicao, link):
            f"data_publicacao: {data_edicao.isoformat()}",
            f"codigo_identificador: {yaml_str(codigo)}", f"fonte: {yaml_str(link)}",
            f"baixado_em: {dt.date.today().isoformat()}", "---", ""]
+    if data_na_fonte:
+        cab[-2:-2] = [f"data_na_epigrafe: {yaml_str(data_na_fonte)}",
+                      f"observacao_data: {yaml_str(observacao_data)}"]
     os.makedirs(os.path.dirname(md), exist_ok=True)
     tmp = md + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
@@ -243,8 +445,17 @@ def main():
     ap.add_argument("--assoc", default="", help="só estas associações (ex.: famurs,amm-mg)")
     ap.add_argument("--listar", action="store_true")
     ap.add_argument("--rps", type=float, default=1, help="o portal é lento; uma por segundo basta")
+    ap.add_argument("--de", type=dt.date.fromisoformat, help="início do calendário histórico (AAAA-MM-DD)")
+    ap.add_argument("--ate", type=dt.date.fromisoformat, help="fim do calendário histórico (AAAA-MM-DD)")
     a = ap.parse_args()
+    if not 0 < a.rps <= 4:
+        ap.error("--rps deve ser maior que zero e no máximo 4")
+    if a.ate and not a.de:
+        ap.error("--ate exige --de")
+    if a.de and (a.ate or dt.date.today()) < a.de:
+        ap.error("--ate deve ser igual ou posterior a --de")
 
+    municipios_ibge()
     limite = Limitador(a.rps)
     alvo = {s.strip() for s in a.assoc.split(",") if s.strip()}
     lista = [(s, u) for s, u in associacoes(limite) if not alvo or s in alvo]
@@ -258,47 +469,54 @@ def main():
     with open(falhas_path, "a", encoding="utf-8") as falhas:
         for slug, url in lista:
             try:
-                link = link_da_edicao(url, limite)
+                edicoes = edicoes_historicas(slug, url, a.de or dt.date.today(), a.ate or dt.date.today(), limite, total)
+                for link, data_circulacao, numero_edicao in edicoes:
+                    try:
+                        if not link:
+                            total["sem_edicao"] += 1
+                            falhas.write(json.dumps({"assoc": slug, "status": "sem_edicao",
+                                                     "data": dt.date.today().isoformat()}, ensure_ascii=False) + "\n")
+                            print(f"{slug}: sem edição publicada hoje", flush=True)
+                            continue
+                        data_edicao = data_circulacao or data_do_link(link)
+                        pdf = os.path.join(RAIZ, "_fonte", slug, f"{data_edicao.isoformat()}{'-' + slugify(numero_edicao) if numero_edicao else ''}.pdf")
+                        if not os.path.exists(pdf):
+                            st, dados = http(link, limite)
+                            if not dados.startswith(b"%PDF"):
+                                raise RuntimeError("a edição não veio como PDF")
+                            os.makedirs(os.path.dirname(pdf), exist_ok=True)
+                            with open(pdf + ".tmp", "wb") as f:
+                                f.write(dados)
+                            os.replace(pdf + ".tmp", pdf)
+
+                        n_ok = n_pulado = n_sem = 0
+                        for uf, municipio, bloco, codigo in atos(texto_do_pdf(pdf)):
+                            titulo, chave, inicio = epigrafe(bloco)
+                            if not titulo or not uf or not municipio:
+                                n_sem += 1
+                                continue
+                            if gravar(uf, municipio, titulo, chave, bloco[inicio:], codigo, data_edicao, link):
+                                n_ok += 1
+                            else:
+                                n_pulado += 1
+                        total["ok"] += n_ok
+                        total["pulado"] += n_pulado
+                        total["sem_norma"] += n_sem
+                        print(f"{slug} {data_edicao}: {n_ok} normas novas, {n_pulado} já tinha, "
+                              f"{n_sem} atos que não são norma", flush=True)
+                    except Exception as e:
+                        total["erro"] += 1
+                        falhas.write(json.dumps({"assoc": slug, "fonte": link, "erro": str(e)}, ensure_ascii=False) + "\n")
+                        falhas.flush()
+                        print(f"{slug}: edição falhou: {str(e)[:120]}", flush=True)
             except Exception as e:
                 total["erro"] += 1
-                print(f"{slug}: erro na página: {str(e)[:110]}", flush=True)
-                continue
-            if not link:
-                total["sem_edicao"] += 1
-                falhas.write(json.dumps({"assoc": slug, "status": "sem_edicao",
-                                         "data": dt.date.today().isoformat()}, ensure_ascii=False) + "\n")
-                print(f"{slug}: sem edição publicada hoje", flush=True)
-                continue
-            data_edicao = data_do_link(link)
-            pdf = os.path.join(RAIZ, "_fonte", slug, f"{data_edicao.isoformat()}.pdf")
-            if not os.path.exists(pdf):
-                st, dados = http(link, limite)
-                if not dados.startswith(b"%PDF"):
-                    total["erro"] += 1
-                    print(f"{slug}: a edição não veio como PDF", flush=True)
-                    continue
-                os.makedirs(os.path.dirname(pdf), exist_ok=True)
-                with open(pdf + ".tmp", "wb") as f:
-                    f.write(dados)
-                os.replace(pdf + ".tmp", pdf)
-
-            n_ok = n_pulado = n_sem = 0
-            for uf, municipio, bloco, codigo in atos(texto_do_pdf(pdf)):
-                titulo, chave, inicio = epigrafe(bloco)
-                if not titulo or not uf or not municipio:
-                    n_sem += 1
-                    continue
-                if gravar(uf, municipio, titulo, chave, bloco[inicio:], codigo, data_edicao, link):
-                    n_ok += 1
-                else:
-                    n_pulado += 1
-            total["ok"] += n_ok
-            total["pulado"] += n_pulado
-            total["sem_norma"] += n_sem
-            print(f"{slug} {data_edicao}: {n_ok} normas novas, {n_pulado} já tinha, "
-                  f"{n_sem} atos que não são norma", flush=True)
-    print("FIM", total, flush=True)
+                falhas.write(json.dumps({"assoc": slug, "erro": str(e)}, ensure_ascii=False) + "\n")
+                falhas.flush()
+                print(f"{slug}: calendário falhou: {str(e)[:120]}", flush=True)
+    print("FIM PARCIAL" if total["erro"] else "FIM", total, flush=True)
+    return 1 if total["erro"] else 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

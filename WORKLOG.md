@@ -71,6 +71,22 @@ O último relatório disponível é antigo e será regenerado após a auditoria 
   de 175 URLs é recorte histórico, não prova cobertura dos 5.831 DPL do índice.
 - Próximo lote jurisprudência inclui BNP com decisões variantes preservadas e
   83 súmulas TNU da edição oficial histórica de 2016; situação atual não inferida.
+- Jurisprudência commitada em `d23aac7a94a`, relatório de 554.596 documentos,
+  sem pastas órfãs. Os 7.048 Markdown novos/alterados passaram no auditor.
+- Lote municipal preparado: 10.736 Markdown adicionados, 419 alterados e 135
+  caminhos antigos removidos; acréscimo líquido de 10.601. Os 11.155 documentos
+  passaram em formato/datas e confronto de município/rota/código com IBGE.
+- MG retomado PID 17384, sessão 62271: catálogo de 101.777 atos únicos, quatro
+  duplicatas do CSV identificadas; XML bruto e HTML preservados, sem duplicata de
+  coletor. Orgânicas SAPL: fila PID 17034, sessão 89650, catálogo SIGI de 1.155
+  serviços em 1.151 municípios, identidade IBGE validada antes da coleta.
+- RFB revelou limite de janela da API: 1.153 páginas retornaram apenas 50.000 IDs
+  únicos de 115.238. Índice segue incompleto; particionar por ano antes de afirmar
+  cobertura. Coletor bulk mantém uso exclusivo da quota do host.
+- Primeiro push estadual caiu durante preparação do pack; remoto continuava em
+  `808531961dd`. Tentativa encerrada e substituída por envio com keepalive SSH,
+  janela de deltas desativada e log `_log_push_lotes.txt`, sessão 34699. Confirmar
+  conclusão/remoto antes de repetir qualquer envio; não usar force-push.
 
 ## Publicação e progresso
 
