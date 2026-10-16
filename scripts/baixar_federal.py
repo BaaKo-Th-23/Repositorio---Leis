@@ -104,7 +104,27 @@ def http_get(url, accept="*/*", tentativas=4):
     raise RuntimeError(f"falhou após {tentativas} tentativas: {url}: {ultimo}")
 
 
+def expandir_tipos(tipos):
+    if not tipos:
+        return set(TIPOS)
+    if isinstance(tipos, str):
+        tipos = tipos.split(",")
+    selecionados = set()
+    for valor in tipos:
+        tipo = valor.strip()
+        if not tipo:
+            raise ValueError("seleção de tipos vazia")
+        if tipo in {"LEI", "MPV", "DPL", "EMC", "DEC", "DEL"}:
+            selecionados.update(t for t in TIPOS if t == tipo or t.startswith(tipo + "-"))
+        elif tipo in TIPOS:
+            selecionados.add(tipo)
+        else:
+            raise ValueError("tipo/alias desconhecido: " + tipo)
+    return selecionados
+
+
 def carregar_indice(tipos):
+    selecionados = expandir_tipos(tipos)
     itens = []
     for arq in sorted(os.listdir(os.path.join(RAIZ, "_indice"))):
         if not arq.endswith(".json"):
@@ -112,10 +132,21 @@ def carregar_indice(tipos):
         docs = json.load(open(os.path.join(RAIZ, "_indice", arq), encoding="utf-8"))
         docs = docs["ListaDocumento"]["documentos"]["documento"]
         for d in docs if isinstance(docs, list) else [docs]:
-            if d["tipo"] not in TIPOS or (tipos and d["tipo"] not in tipos):
+            if d["tipo"] not in selecionados:
                 continue
             itens.append(d)
+    if not itens:
+        raise ValueError("seleção de tipos sem documentos no índice oficial")
     return itens
+
+
+def numero_oficial(d):
+    numero = str(d.get("numero") or "")
+    if d.get("complemento"):
+        numero += "-" + str(d["complemento"]).upper()
+    if d.get("reedicao"):
+        numero += "-" + str(d["reedicao"])
+    return numero
 
 
 def montar(d):
@@ -132,8 +163,7 @@ def montar(d):
         # medida provisória reeditada: o número oficial carrega a reedição ("1.463-2"), e é assim
         # que ela entra na URN. Antes da EC 32/2001 uma MP podia ser reeditada dezenas de vezes,
         # e cada reedição é uma norma distinta, com texto próprio.
-        numero = (d["numero"] + (f"-{d['complemento'].lower()}" if d.get("complemento") else "")
-                  + (f"-{d['reedicao']}" if d.get("reedicao") else ""))
+        numero = numero_oficial(d).lower()
         urn = f"urn:lex:br:{autoridade}:{tipo_urn}:{data};{numero}"
         slug = f"{prefixo}-{numero}-{data}"
     md = os.path.join(RAIZ, pasta, ano, slug + ".md")
@@ -230,7 +260,7 @@ def processar(d):
         "---",
         f"titulo: {yaml_str(d['normaNome'].strip())}",
         f"tipo: {yaml_str(info['nome'])}",
-        f"numero: {yaml_str(d.get('numero', ''))}",
+        f"numero: {yaml_str(numero_oficial(d))}",
         f"data: {info['data']}",
         f"ementa: {yaml_str((d.get('ementa') or '').strip())}",
         f"revogada: {'true' if revogada else 'false'}",
@@ -253,18 +283,82 @@ def processar(d):
     return "ok", info["slug"], None
 
 
+def completar_numeros(aplicar=False):
+    import hashlib
+    mudancas, conflitos = [], []
+    for d in carregar_indice(set()):
+        if not d.get("complemento") and not d.get("reedicao"):
+            continue
+        info = montar(d)
+        if not os.path.exists(info["md"]):
+            continue
+        bruto = open(info["md"], "rb").read()
+        partes = bruto.split(b"---", 2)
+        if len(partes) != 3:
+            conflitos.append({"arquivo": info["md"], "motivo": "frontmatter ausente"})
+            continue
+        cab = partes[1].decode("utf-8")
+        urn = re.search(r"^urn:\s*(.+)$", cab, re.M)
+        numero = re.search(r"^numero:\s*(.+)$", cab, re.M)
+        if not urn or not numero or json.loads(urn[1]) != info["urn"]:
+            conflitos.append({"arquivo": info["md"], "urn_esperada": info["urn"], "motivo": "URN não confere com índice"})
+            continue
+        atual = str(json.loads(numero[1]))
+        esperado = numero_oficial(d)
+        if atual == esperado:
+            continue
+        sha = hashlib.sha256(partes[2]).hexdigest()
+        registro = {"arquivo": os.path.relpath(info["md"], RAIZ), "id_senado": d["id"], "urn": info["urn"],
+                    "numero_anterior": atual, "numero_oficial": esperado, "complemento": d.get("complemento", ""),
+                    "reedicao": d.get("reedicao", ""), "sha256_corpo": sha}
+        mudancas.append(registro)
+        if aplicar:
+            partes[1] = re.sub(r"^numero:.*$", lambda _: "numero: " + yaml_str(esperado), cab, count=1, flags=re.M).encode()
+            tmp = info["md"] + ".tmp"
+            open(tmp, "wb").write(b"---".join(partes))
+            os.replace(tmp, info["md"])
+            assert hashlib.sha256(open(info["md"], "rb").read().split(b"---", 2)[2]).hexdigest() == sha
+    resultado = {"aplicado": aplicar, "criterio": "URN exata do índice oficial; altera apenas numero no frontmatter",
+                 "mudancas": mudancas, "conflitos": conflitos}
+    if aplicar:
+        destino = os.path.join(RAIZ, "_fonte", "auditorias", "numeros-completados-" + dt.datetime.now().strftime("%Y%m%d-%H%M%S") + ".json.gz")
+        os.makedirs(os.path.dirname(destino), exist_ok=True)
+        with gzip.open(destino, "wb") as f:
+            f.write(json.dumps(resultado, ensure_ascii=False, indent=2).encode())
+    else:
+        destino = "/tmp/constituicao-numeros-manifesto.json"
+        with open(destino, "w", encoding="utf-8") as f:
+            json.dump(resultado, f, ensure_ascii=False, indent=2)
+    print("Números", len(mudancas), "conflitos", len(conflitos), "aplicado", aplicar, "manifesto", destino, flush=True)
+    return int(bool(conflitos))
+
+
 def main():
     global LIMITE
     ap = argparse.ArgumentParser()
+    ap.add_argument("--auditar-numeros", action="store_true")
+    ap.add_argument("--completar-numeros", action="store_true")
     ap.add_argument("--limite", type=int, default=0)
-    ap.add_argument("--tipos", default="")
+    ap.add_argument("--tipos", default=None)
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--rps", type=float, default=4)
     ap.add_argument("--amostra", default="", help="lista de normas do Senado (ex.: LEI-10406-2002-01-10,...)")
     a = ap.parse_args()
+    if not 0 < a.rps <= 4 or a.workers <= 0:
+        ap.error("rps deve estar entre0 e4; workers deve ser positivo")
+    try:
+        tipos = set(a.tipos.split(",")) if a.tipos is not None else set()
+        expandir_tipos(tipos)
+    except ValueError as exc:
+        ap.error(str(exc))
+    if a.auditar_numeros or a.completar_numeros:
+        return completar_numeros(a.completar_numeros)
     LIMITE = Limitador(a.rps)
 
-    itens = carregar_indice(set(filter(None, a.tipos.split(","))))
+    try:
+        itens = carregar_indice(tipos)
+    except ValueError as exc:
+        ap.error(str(exc))
     if a.amostra:
         alvo = set(a.amostra.split(","))
         itens = [d for d in itens if d["norma"] in alvo]
@@ -297,4 +391,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

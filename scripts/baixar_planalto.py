@@ -158,6 +158,56 @@ def baixar(limite, pasta, nome, rel, titulo, tipo, numero, data, ementa, refazer
     return "ok"
 
 
+def extrair_anexos(html, url, rede):
+    import hashlib
+    import subprocess
+    import tempfile
+    import urllib.parse
+    from html import unescape
+    from pathlib import Path
+    from comum import OCR_BIN, AVISO_OCR, texto_pdf_para_md
+    links = re.findall(r'<a\b[^>]*href=["\']([^"\']+)["\'][^>]*>\s*Download\s+para\s+(?:o\s+)?anexo\s*</a>', html, re.I)
+    if not links:
+        raise ValueError("anexo externo sem link reconhecível")
+    partes, fontes, usou_ocr = [], [], False
+    for href in dict.fromkeys(links):
+        fonte = urllib.parse.urljoin(url, unescape(href))
+        if urllib.parse.urlparse(fonte).hostname != "www.planalto.gov.br" or not fonte.lower().endswith(".pdf"):
+            raise ValueError("formato ou fonte de anexo não suportados: " + fonte)
+        chave = hashlib.sha256(fonte.encode()).hexdigest()
+        cache = Path(RAIZ) / "_fonte/planalto-pendencias" / (chave + ".pdf.gz")
+        if cache.exists():
+            bruto = gzip.decompress(cache.read_bytes())
+        else:
+            status, bruto, _ = rede.get(fonte, timeout=45, tentativas=1)
+            if status != 200 or not bruto.startswith(b"%PDF"):
+                raise ValueError(f"anexo PDF inválido HTTP {status}: {fonte}")
+            cache.parent.mkdir(parents=True, exist_ok=True)
+            cache.write_bytes(gzip.compress(bruto))
+        with tempfile.TemporaryDirectory() as tmp:
+            pdf = Path(tmp) / "anexo.pdf"
+            pdf.write_bytes(bruto)
+            proc = subprocess.run(["rtk", "proxy", "pdftotext", "-q", "-layout", "-enc", "UTF-8", str(pdf), "-"], capture_output=True, timeout=60, check=True)
+            texto = proc.stdout.decode("utf-8")
+            paginas = max(1, texto.count("\f"))
+            aviso = ""
+            if len(texto.strip()) < 200:
+                ocr_cache = cache.with_name(chave + ".ocr.txt.gz")
+                if ocr_cache.exists():
+                    texto = gzip.decompress(ocr_cache.read_bytes()).decode("utf-8")
+                else:
+                    proc = subprocess.run(["rtk", "proxy", OCR_BIN, str(pdf)], capture_output=True, timeout=1800, check=True)
+                    texto = proc.stdout.decode("utf-8")
+                    ocr_cache.write_bytes(gzip.compress(texto.encode()))
+                usou_ocr, aviso = True, AVISO_OCR
+            extraidas = [p for p in texto.split("\f") if p.strip()]
+            if len(extraidas) < paginas or any(len(p.strip()) < 80 for p in extraidas) or "\x00" in texto:
+                raise ValueError("anexo sem texto suficiente em todas as páginas: " + fonte)
+        partes.append("## Anexo\n\n" + aviso + texto_pdf_para_md(texto))
+        fontes.append(fonte)
+    return "\n\n".join(partes), fontes, usou_ocr
+
+
 def complementar_pendencias(rps, maximo=0, tipos=None):
     import hashlib
     import unicodedata
@@ -165,7 +215,7 @@ def complementar_pendencias(rps, maximo=0, tipos=None):
     from html import unescape
     from pathlib import Path
     from comum import Rede
-    from baixar_federal import carregar_indice, montar
+    from baixar_federal import carregar_indice, montar, numero_oficial
     rede = Rede(rps)
     tipos = tipos or {"LEI-n", "LCP"}
     lct_urls = {}
@@ -237,20 +287,25 @@ def complementar_pendencias(rps, maximo=0, tipos=None):
                             and re.search(r"leino?4de18desetembrode1940", normal) and "riodejaneiro20desetembrode1940" in normal)
             if not re.search(identidade, normal) and not excecao_lct4:
                 raise ValueError("número/data do título oficial não conferem com índice")
+            anexos, fontes_anexos, ocr_anexos = "", [], False
             if re.search(r"Download\s+para\s+(?:o\s+)?anexo", texto, re.I):
-                raise ValueError("anexo externo exige extração; corpo parcial não publicado")
+                anexos, fontes_anexos, ocr_anexos = extrair_anexos(html, url, rede)
             cabeca = re.split(r"\bArt(?:igo)?\.?\s*1\b", texto, maxsplit=1, flags=re.I)[0]
             revogada = bool(re.search(r"Revogad[oa]\s+pel[oa]\s+(?:Decreto|Lei)", cabeca, re.I))
             if revogada:
                 html = re.sub(r"</?(?:strike|del|s)\b[^>]*>", "", html, flags=re.I)
                 html = re.sub(r"text-decoration\s*:\s*line-through", "", html, flags=re.I)
-            corpo = convert(html)
+            corpo = convert(html) + ("\n\n" + anexos if anexos else "")
             if "\x00" in corpo or len(corpo) < 150 or (not re.search(r"\bArt(?:igo)?[*.\s]{0,8}(?:\d|[úu]nico)", corpo, re.I)
                                and not (excecao_lct4 and re.search(r"Par[áa]grafo\s+[úu]nico", corpo, re.I))):
                 raise ValueError("fonte sem corpo normativo extraível")
-            valores = {"titulo": d["normaNome"], "tipo": info["nome"], "numero": d["numero"], "data": info["data"],
+            valores = {"titulo": d["normaNome"], "tipo": info["nome"], "numero": numero_oficial(d), "data": info["data"],
                        "ementa": d.get("ementa", ""), "revogada": revogada, "versao_texto": "texto histórico da fonte oficial" if revogada else "texto da fonte oficial",
                        "urn": info["urn"], "fonte": url, "id_senado": d["id"], "baixado_em": dt.date.today().isoformat()}
+            if fontes_anexos:
+                valores["fontes_anexos"] = "; ".join(fontes_anexos)
+                if ocr_anexos:
+                    valores["ocr"] = "Anexo PDF escaneado; OCR Vision; original preservado"
             if d["tipo"] == "LCT":
                 valores["fonte_indice"] = indice_lct
             if excecao_lct4:

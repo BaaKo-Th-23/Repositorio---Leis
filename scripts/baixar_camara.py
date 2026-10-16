@@ -13,12 +13,15 @@ import os
 from pathlib import Path
 import re
 import sys
+import subprocess
+import tempfile
 import urllib.parse
+import unicodedata
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from functools import lru_cache
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from comum import Rede, decodificar, yaml_str
+from comum import Rede, decodificar, yaml_str, texto_pdf_para_md
 from html2md import convert
 
 RAIZ = Path(__file__).resolve().parent.parent / "federal"
@@ -104,6 +107,12 @@ def equivalencias(tipo):
     return por_urn
 
 
+@lru_cache(maxsize=1)
+def identidades_conferidas():
+    path = RAIZ / "_identidades_camara.json"
+    return json.loads(path.read_text()) if path.exists() else {}
+
+
 def identificar(d, tipo):
     nome_tipo, pasta, prefixo, prefixo_url = TIPOS[tipo]
     m = re.search(re.escape(prefixo_url) + r'-([\w.-]+?)-(\d+)-([a-z]+)-(\d{4})-(\d+)-norma', d["url"])
@@ -112,6 +121,12 @@ def identificar(d, tipo):
     numero, dia, mes, ano, ident = m.groups()
     numero = numero.replace(".", "")
     data = dt.date(int(ano), MESES[mes], int(dia)).isoformat()
+    alias = identidades_conferidas().get(ident)
+    if alias:
+        if alias["url"] != d["url"] or alias["tipo"] != tipo or alias["numero"] != numero:
+            raise ValueError("identidade auditada da Câmara não corresponde ao documento")
+        data = alias["data"]
+        ano = data[:4]
     slug = f"{prefixo}-{numero}-{data}" + (f"-{ident}" if tipo == "camara" else "")
     info = {"numero": numero, "data": data, "md": RAIZ / pasta / ano / (slug + ".md"), "nome": nome_tipo}
     if tipo in ("senado", "congresso"):
@@ -189,6 +204,55 @@ def corpo_norma(s):
     raise ValueError("textoNorma incompleto")
 
 
+def corpo_pdf(rede, url):
+    if urllib.parse.urlparse(url).hostname not in {"www.camara.leg.br", "www2.camara.leg.br"}:
+        raise ValueError(f"fonte não autorizada: {url}")
+    path = CACHE / (hashlib.sha256(url.encode()).hexdigest() + ".pdf.gz")
+    if path.exists():
+        bruto = gzip.decompress(path.read_bytes())
+    else:
+        status, bruto, _ = rede.get(url, timeout=60)
+        if status in (401, 403):
+            raise RuntimeError(f"HTTP {status}: {url}")
+        if status != 200 or not bruto.startswith(b"%PDF"):
+            raise ValueError(f"PDF inválido HTTP {status}: {url}")
+        CACHE.mkdir(parents=True, exist_ok=True)
+        tmp = path.with_suffix(".tmp")
+        tmp.write_bytes(gzip.compress(bruto))
+        tmp.replace(path)
+    with tempfile.TemporaryDirectory() as pasta:
+        pdf = Path(pasta) / "norma.pdf"
+        pdf.write_bytes(bruto)
+        proc = subprocess.run(["rtk", "proxy", "pdftotext", "-q", "-layout", "-enc", "UTF-8", str(pdf), "-"],
+                              capture_output=True, timeout=60, check=True)
+    corpo = texto_pdf_para_md(proc.stdout.decode("utf-8"))
+    if len(corpo.strip()) < 200 or "\x00" in corpo or not re.search(r"\bArt(?:igo)?[*.\s]{0,8}(?:\d|[úu]nico)", corpo, re.I):
+        raise ValueError(f"PDF sem texto normativo extraível: {url}")
+    return corpo
+
+
+def conferir_data_propria(info, corpo, titulo=None):
+    if titulo is not None:
+        numero = re.search(r"^Decreto Legislativo\s+n[º°o.]?\s*([\d.]+(?:-[a-z0-9]+)?)", titulo, re.I)
+        if not numero or numero[1].replace(".", "").lower() != info["numero"].lower():
+            raise ValueError("epígrafe oficial não comprova tipo/número primário")
+    normal = unicodedata.normalize("NFKD", corpo).encode("ascii", "ignore").decode().lower()
+    datas = set()
+    for dia, mes, ano in re.findall(r"(?:senado federal|congresso nacional|rio de janeiro|brasilia|capital federal),?\s*(?:em\s*)?(\d{1,2})\s+de\s+([a-z]+)\s+de\s*(\d{4})", normal):
+        if mes in MESES:
+            datas.add(dt.date(int(ano), MESES[mes], int(dia)).isoformat())
+    if not datas or datas != {info["data"]}:
+        raise ValueError("data própria do fecho não comprova identidade primária: " + str(sorted(datas)))
+    if not equivalencias("dlg").get(info["urn"]):
+        raise ValueError("identidade do decreto legislativo ausente do índice primário")
+
+
+def tipo_legislativo_comprovado(corpo):
+    cabeca = re.split(r"\bArt(?:igo)?[*.\s]{0,8}(?:1|[úu]nico)\b", corpo, maxsplit=1, flags=re.I)[0][:5000]
+    normal = re.sub(r"[^a-z]", "", unicodedata.normalize("NFKD", cabeca).lower())
+    return bool(re.search(r"(?:faco|faz)saber.{0,80}que.{0,80}congressonacional.{0,80}(?:decret|resolv)|congressonacional(?:decreta|decretou).{0,20}(?:sanccio|sancio|promulg)", normal))
+
+
 def processar(rede, d, tipo="camara"):
     info = identificar(d, tipo)
     path, numero, data, nome_tipo = info["md"], info["numero"], info["data"], info["nome"]
@@ -198,16 +262,29 @@ def processar(rede, d, tipo="camara"):
     links = [html.unescape(u) for u in re.findall(r'href=["\']([^"\']+)["\']', s)]
     ident = id_camara(d)
     links = [u for u in links if f"-{ident}-" in u]
-    candidatos = [u for u in links if "-normaatualizada-" in u and u.endswith(".html")]
-    compilada = bool(candidatos)
+    candidatos = [(u, compilada) for marcador, compilada in (("-normaatualizada-", True), ("-publicacaooriginal-", False))
+                  for extensao in (".html", ".pdf") for u in links if marcador in u and u.lower().endswith(extensao)]
     if not candidatos:
-        candidatos = [u for u in links if "-publicacaooriginal-" in u and u.endswith(".html")]
-    if not candidatos:
-        raise ValueError(f"norma sem texto HTML: {d['url']}")
-    url_texto = urllib.parse.urljoin(d["url"], candidatos[0])
-    corpo = convert(corpo_norma(obter(rede, url_texto)))
+        raise ValueError(f"norma sem texto HTML/PDF: {d['url']}")
+    erros = []
+    for candidato, compilada in candidatos:
+        url_texto = urllib.parse.urljoin(d["url"], candidato)
+        try:
+            corpo = corpo_pdf(rede, url_texto) if candidato.lower().endswith(".pdf") else convert(corpo_norma(obter(rede, url_texto)))
+            if len(corpo.strip()) < 80 or "\x00" in corpo:
+                raise ValueError("texto insuficiente")
+            break
+        except ValueError as exc:
+            erros.append(str(exc))
+    else:
+        raise ValueError("nenhum texto íntegro HTML/PDF: " + "; ".join(erros))
     if len(corpo.strip()) < 80 or (tipo in ("lei", "lcp", "del", "lct", "dpl") and not re.search(r"\bArt(?:igo)?[*.\s]{0,8}(?:\d|[úu]nico)", corpo, re.I)):
         raise ValueError(f"texto insuficiente: {url_texto}")
+    if tipo == "dlg":
+        conferir_data_propria(info, corpo, d["titulo"])
+    if tipo == "dpl":
+        if not tipo_legislativo_comprovado(corpo):
+            raise ValueError("tipo legislativo não comprovado na fórmula de promulgação")
     valores = {"titulo": d["titulo"], "tipo": nome_tipo, "numero": numero,
                "data": data, "ementa": d["ementa"], "situacao": d["situacao"],
                "revogada": d["situacao"].lower() == "revogada",
@@ -226,20 +303,25 @@ def processar(rede, d, tipo="camara"):
     return "ok"
 
 
-def coletar_pendencias(rede, tipo):
+def coletar_pendencias(rede, tipo, limite=0):
     from baixar_federal import carregar_indice, montar
     recorte = {"lei": {"LEI-n"}, "lcp": {"LCP"}, "del": {"DEL"}, "lct": {"LCT"},
                "dlg": {"DLG"}, "dpl": {"DPL-n"}, "mpv": {"MPV-cs", "MPV-ss"}}
     if tipo not in recorte:
         raise ValueError("tipo sem índice primário para pendências")
     alvos = [d for d in carregar_indice(recorte[tipo]) if not Path(montar(d)["md"]).exists()]
+    if limite:
+        alvos = alvos[:limite]
     cont = {"ok": 0, "pulado": 0, "erro": 0}
     consultas = []
     for d in alvos:
         esperado = montar(d)
         numero = d["numero"] + ("-" + d["complemento"] if d.get("complemento") else "")
         try:
-            total, lote = pagina(rede, 1, tipo, {"numero": numero, "ano": esperado["data"][:4]})
+            filtros = {"numero": d["numero"] if tipo == "dpl" else numero, "ano": esperado["data"][:4]}
+            if tipo == "dpl":
+                filtros["tipo"] = "Decreto"
+            total, lote = pagina(rede, 1, tipo, filtros)
             consultas.append({"id_senado": d["id"], "urn": esperado["urn"], "total_fonte": total, "documentos": lote})
             candidatos = []
             for item in lote:
@@ -264,6 +346,31 @@ def coletar_pendencias(rede, tipo):
         gravar_json(RAIZ / "_indice" / ("camara-" + tipo + "-pendencias") / "indice.json",
                     {"fonte": BUSCA, "recorte": sorted(recorte[tipo]), "completo": False, "consultas": consultas})
     print("FIM PENDENCIAS", tipo, cont, flush=True)
+    return int(bool(cont["erro"]))
+
+
+def reparar_falhas(rede, tipo):
+    alvos = {}
+    for linha in (RAIZ / "_falhas_camara.jsonl").read_text().splitlines():
+        registro = json.loads(linha)
+        if registro.get("fonte") == tipo and registro.get("url"):
+            alvos[registro["url"]] = registro
+    cont = {"ok": 0, "pulado": 0, "erro": 0}
+    for d in alvos.values():
+        registro = {"fonte": "camara-" + tipo, "url": d["url"], "erro_anterior": d.get("erro"), "verificado_em": dt.datetime.now().isoformat()}
+        try:
+            estado = processar(rede, d, tipo)
+            cont[estado] += 1
+            registro["resultado"] = estado
+        except Exception as exc:
+            cont["erro"] += 1
+            registro.update(resultado="erro", erro=str(exc))
+        with (RAIZ / "_reparos_camara.jsonl").open("a") as f:
+            f.write(json.dumps(registro, ensure_ascii=False) + "\n")
+        print(registro, flush=True)
+        if registro.get("erro") and any(c in registro["erro"] for c in ("HTTP 401", "HTTP 403", "HTTP 429", "bloqueio da fonte")):
+            break
+    print("FIM REPAROS", tipo, cont, flush=True)
     return int(bool(cont["erro"]))
 
 
@@ -313,6 +420,8 @@ def main():
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--completar-urns", action="store_true")
     ap.add_argument("--pendencias", action="store_true")
+    ap.add_argument("--limite", type=int, default=0, help="limita apenas a fila de pendências")
+    ap.add_argument("--reparar-falhas", action="store_true")
     ap.add_argument("--pagina-inicial", type=int, default=1)
     ap.add_argument("--paginas", type=int, default=0, help="limita páginas para amostra")
     ap.add_argument("--tipo", choices=TIPOS, default="camara")
@@ -332,8 +441,10 @@ def main():
     if not 0 < a.rps <= 4 or a.workers < 1:
         ap.error("rps deve estar entre 0 e 4; workers deve ser positivo")
     rede = Rede(a.rps)
+    if a.reparar_falhas:
+        return reparar_falhas(rede, a.tipo)
     if a.pendencias:
-        return coletar_pendencias(rede, a.tipo)
+        return coletar_pendencias(rede, a.tipo, a.limite)
     cont = {"ok": 0, "pulado": 0, "erro": 0}
     docs, vistos, n, paginas, totais = [], set(), 1, 1, set()
     indice = INDICE if a.tipo == "camara" else INDICE.with_name("camara-" + a.tipo)

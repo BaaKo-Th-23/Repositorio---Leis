@@ -11,6 +11,7 @@ lista vazia, para não ser pedido de novo.
     python3 -I scripts/indice_federal.py                      # todos os tipos, 1808–hoje
     python3 -I scripts/indice_federal.py --tipos EMC,DEC       # só alguns
     python3 -I scripts/indice_federal.py --refazer             # ignora o cache de anos
+    python3 -I scripts/indice_federal.py --de 2026 --refazer   # atualiza2026 e preserva anos anteriores
 
 O parâmetro `tipo` casa por prefixo: `DEC` devolve `DEC-n` (numerado) e `DEC-sn` (não numerado),
 `MPV` devolve `MPV-ss`. A separação em pastas acontece depois, em `baixar_federal.py`.
@@ -18,6 +19,8 @@ O parâmetro `tipo` casa por prefixo: `DEC` devolve `DEC-n` (numerado) e `DEC-sn
 import argparse
 import datetime as dt
 import json
+import gzip
+import hashlib
 import os
 import sys
 import time
@@ -57,6 +60,8 @@ def http_json(url, limite, tentativas=4):
                 corpo = r.read()
             return json.loads(corpo) if corpo.strip() else {}
         except urllib.error.HTTPError as e:
+            if e.code in (401, 403, 429):
+                raise RuntimeError(f"fonte recusou HTTP {e.code}: {url}") from e
             if e.code in (400, 404):
                 return {}
             ultimo = e
@@ -82,7 +87,16 @@ def buscar_ano(tipo, ano, limite, refazer):
     if os.path.exists(caminho) and not refazer:
         with open(caminho, encoding="utf-8") as f:
             return json.load(f), True
-    docs = documentos(http_json(LISTA.format(tipo, ano), limite))
+    resposta = http_json(LISTA.format(tipo, ano), limite)
+    docs = documentos(resposta)
+    if not isinstance(resposta, dict) or (resposta and "ListaDocumento" not in resposta):
+        raise ValueError(f"resposta sem estrutura ListaDocumento: {tipo}/{ano}")
+    evidencia = os.path.join(CACHE, "_fontes", f"{tipo}-{ano}-" + dt.datetime.now().strftime("%Y%m%d-%H%M%S") + ".json.gz")
+    os.makedirs(os.path.dirname(evidencia), exist_ok=True)
+    with gzip.open(evidencia, "wt", encoding="utf-8") as f:
+        json.dump({"fonte": LISTA.format(tipo, ano), "consultado_em": dt.datetime.now().isoformat(), "resposta": resposta}, f, ensure_ascii=False)
+    if os.path.exists(caminho):
+        snapshot(caminho, tipo + "-" + str(ano))
     os.makedirs(CACHE, exist_ok=True)
     tmp = caminho + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
@@ -91,8 +105,39 @@ def buscar_ano(tipo, ano, limite, refazer):
     return docs, False
 
 
-def gravar_indice(tipo, docs):
+def snapshot(caminho, nome):
+    bruto = open(caminho, "rb").read()
+    pasta = os.path.join(INDICE, "_snapshots")
+    os.makedirs(pasta, exist_ok=True)
+    destino = os.path.join(pasta, nome + "-" + dt.datetime.now().strftime("%Y%m%d-%H%M%S") + "-" + hashlib.sha256(bruto).hexdigest()[:12] + ".json.gz")
+    with gzip.open(destino, "wb") as f:
+        f.write(bruto)
+    return destino
+
+
+def ano_documento(doc):
+    return str(doc.get("dataassinatura", ""))[-4:]
+
+
+def gravar_indice(tipo, docs, anos=None):
     """Grava no formato ListaDocumento que `baixar_federal.carregar_indice` espera."""
+    caminho = os.path.join(INDICE, f"{tipo}.json")
+    anteriores, preservados = [], []
+    anos = {str(a) for a in anos} if anos is not None else None
+    copia = None
+    if os.path.exists(caminho):
+        with open(caminho, encoding="utf-8") as f:
+            anteriores = documentos(json.load(f))
+        copia = snapshot(caminho, tipo)
+        if anos is not None:
+            preservados = [d for d in anteriores if ano_documento(d) not in anos]
+    novos = {d["id"]: d for d in docs}
+    anteriores_recorte = {d["id"]: d for d in anteriores if anos is None or ano_documento(d) in anos}
+    auditoria = {"tipo": tipo, "anos_consultados": sorted(anos or []), "snapshot_anterior": copia,
+                 "historicos_preservados": len(preservados), "recorte_anterior": len(anteriores_recorte), "recorte_atual": len(novos),
+                 "adicionados": sorted(set(novos) - set(anteriores_recorte)), "retirados_da_fonte": sorted(set(anteriores_recorte) - set(novos)),
+                 "alterados": sorted(i for i in set(novos) & set(anteriores_recorte) if novos[i] != anteriores_recorte[i])}
+    docs = preservados + docs
     # a mesma norma pode aparecer em mais de um ano quando a fonte corrige a data; o id é único
     unicos, vistos = [], set()
     for d in docs:
@@ -106,7 +151,7 @@ def gravar_indice(tipo, docs):
         "ListaDocumento": {
             "noNamespaceSchemaLocation": "https://legis.senado.leg.br/dadosabertos/dados/ListaDocumentov3.xsd",
             "Metadados": {"Versao": dt.datetime.now().strftime("%d/%m/%Y %H:%M:%S"), "VersaoServico": "3",
-                          "DescricaoDataSet": f"Índice de {tipo}, montado por scripts/indice_federal.py"},
+                          "DescricaoDataSet": f"Índice de {tipo}, montado por scripts/indice_federal.py", "AtualizacaoIncremental": auditoria},
             "documentos": {"documento": unicos},
         }
     }
@@ -115,6 +160,10 @@ def gravar_indice(tipo, docs):
     with open(tmp, "w", encoding="utf-8") as f:
         json.dump(saida, f, ensure_ascii=False)
     os.replace(tmp, caminho)
+    relatorio = os.path.join(INDICE, "_snapshots", tipo + "-atualizacao-" + dt.datetime.now().strftime("%Y%m%d-%H%M%S") + ".json")
+    os.makedirs(os.path.dirname(relatorio), exist_ok=True)
+    with open(relatorio, "w", encoding="utf-8") as f:
+        json.dump(auditoria, f, ensure_ascii=False, indent=2)
     return len(unicos)
 
 
@@ -128,6 +177,10 @@ def main():
     ap.add_argument("--refazer", action="store_true", help="ignora o cache por ano e busca tudo de novo")
     a = ap.parse_args()
 
+    if not 0 < a.rps <= 4 or a.workers <= 0:
+        ap.error("rps deve ser positivo e no máximo4; workers deve ser positivo")
+    if a.ate > dt.date.today().year or (a.de and a.de > a.ate):
+        ap.error("intervalo de anos inválido")
     tipos = [t.strip().upper() for t in a.tipos.split(",") if t.strip()] or list(TIPOS)
     desconhecidos = [t for t in tipos if t not in TIPOS]
     if desconhecidos:
@@ -146,7 +199,7 @@ def main():
                 cache += veio_do_cache
                 if n % 25 == 0:
                     print(f"  {tipo}: {n}/{len(futs)} anos, {len(docs)} normas", flush=True)
-        total = gravar_indice(tipo, docs)
+        total = gravar_indice(tipo, docs, anos)
         print(f"{tipo}: {total} normas em {len(anos)} anos ({cache} do cache, "
               f"{time.time() - inicio:.0f}s) -> _indice/{tipo}.json", flush=True)
 
