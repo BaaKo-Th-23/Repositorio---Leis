@@ -3,7 +3,9 @@ titulo: "PORTARIA Nº 1.626, DE 23 DE DEZEMBRO DE 2026"
 orgao: "Ministério da Agricultura e Pecuária/Secretaria Executiva/Subsecretaria de Governança das Superintendências/Superintendência de Agricultura e Pecuária do Estado de Minas Gerais/Divisão de Defesa Agropecuária/Serviço de Fiscalização de Insumos e Saúde Animal"
 tipo: "Portaria"
 numero: "1626"
-data: 2026-12-23
+data: ""
+data_na_fonte: 2026-12-23
+observacao_data: "A data declarada na fonte é posterior à publicação; assinatura não confirmada."
 revogada: false
 versao_texto: "publicação original"
 publicacao: "DOU de 27/02/2026, seção 1, p. 8"

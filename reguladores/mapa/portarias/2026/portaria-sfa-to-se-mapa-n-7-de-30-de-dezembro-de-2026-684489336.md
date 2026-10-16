@@ -3,7 +3,9 @@ titulo: "PORTARIA SFA-TO/SE/MAPA Nº 7, DE 30 DE DEZEMBRO DE 2026"
 orgao: "Ministério da Agricultura e Pecuária/Secretaria Executiva/Subsecretaria de Governança das Superintendências/Superintendência Federal de Agricultura e Pecuária do Estado do Tocantins"
 tipo: "Portaria"
 numero: "7"
-data: 2026-12-30
+data: ""
+data_na_fonte: 2026-12-30
+observacao_data: "A data declarada na fonte é posterior à publicação; assinatura não confirmada."
 revogada: false
 versao_texto: "publicação original"
 publicacao: "DOU de 02/02/2026, seção 1, p. 34"

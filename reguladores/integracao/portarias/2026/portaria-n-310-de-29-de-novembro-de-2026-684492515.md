@@ -3,7 +3,9 @@ titulo: "Portaria nº 310, de 29 de novembro de 2026"
 orgao: "Ministério da Integração e do Desenvolvimento Regional/Secretaria Nacional de Proteção e Defesa Civil"
 tipo: "Portaria"
 numero: "310"
-data: 2026-11-29
+data: ""
+data_na_fonte: 2026-11-29
+observacao_data: "A data declarada na fonte é posterior à publicação; assinatura não confirmada."
 revogada: false
 versao_texto: "publicação original"
 publicacao: "DOU de 02/02/2026, seção 1, p. 66"

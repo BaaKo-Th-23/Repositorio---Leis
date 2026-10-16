@@ -3,7 +3,9 @@ titulo: "PORTARIA FBN Nº 10, DE 16 DE DEZEMBRO DE 2026"
 orgao: "Ministério da Cultura/Fundação Biblioteca Nacional"
 tipo: "Portaria"
 numero: "10"
-data: 2026-12-16
+data: ""
+data_na_fonte: 2026-12-16
+observacao_data: "A data declarada na fonte é posterior à publicação; assinatura não confirmada."
 revogada: false
 versao_texto: "publicação original"
 publicacao: "DOU de 22/01/2026, seção 1, p. 11"
