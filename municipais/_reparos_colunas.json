@@ -4396,6 +4396,84 @@
       "fingerprints_historicos_ausentes": [],
       "sha256_texto_pdf": "956259ec18cfec6094c79c983f1ee617e7d9334c1233c8cfdbc275b0a4b4663a",
       "id": "c2272a4f944ebb240acf0e848104260a934d138598b1d294cc5321458ac50114"
+    },
+    {
+      "fonte": "https://www-storage.voxtecnologia.com.br/?m=sigpub.publicacao&f=251&i=publicado_120475_2026-07-03_c8fc704764384f02ad62a9ea4aff54bc.pdf",
+      "data_circulacao": "2026-07-03",
+      "sha256_pdf": "aa69b7a88e04dbe8d616f77737f5173851f677b68ce562e1d483ba7274c2cd2e",
+      "extrator": "geometria-colunas-v2",
+      "sha256_extrator": "3d954c48700d49328c6d71f3d841cfc40394642e81e338c23d7c27cae175dcd5",
+      "sha256_classificador": "6ad567935722b5e8b846d6eb306fcbb0cb2df93552e1c90fe6e930211c5a3df7",
+      "pdf": "municipais/_indice/_revisoes-fila-offline/20261016-primeiras-3/02-2026-07-03-4141a/1-2026-07-03-4141a.pdf",
+      "cache_metadados": "municipais/_indice/_revisoes-fila-offline/20261016-primeiras-3/02-2026-07-03-4141a/3-2026-07-03-4141a.pdf.geometria-colunas-v2.3d954c48700d4932.json",
+      "manifesto": "municipais/_indice/_revisoes-fila-offline/20261016-primeiras-3/overlay-travessoes/proposta.json",
+      "sha256_manifesto": "4ca49e37c561fd074d12e4b205c5049b55fbf9b57aae3be31368558d51b9486f",
+      "destinos": [
+        {
+          "acao": "novo",
+          "acao_publica": "novo",
+          "arquivo": "municipais/AM/itacoatiara/resolucoes/2026/resolucao-011-2026-40e46327.md",
+          "codigo": "40E46327",
+          "sha256": "268101a1278604d0b768d5c5e3754a1f98e454d41c7d66ab829b65785dd42249",
+          "sha256_bloco": "d8f92b20e0b64cc302b6f6805dca12fc4cf107dab0daeb4d94c867822af85c76",
+          "cobertura": null
+        }
+      ],
+      "snapshots": [],
+      "referencias_parciais": [],
+      "revisao": {
+        "arquivo": "municipais/_indice/_revisoes-fila-offline/20261016-primeiras-3/revisao.json",
+        "sha256": "e70732d9a413c3835eb3030784b4773aca7a080b3f0b2f7a9bbb55dc68b654a4"
+      },
+      "correcoes_manuais": {
+        "proposta": "municipais/_indice/_revisoes-fila-offline/20261016-primeiras-3/overlay-travessoes/proposta.json",
+        "sha256": "4ca49e37c561fd074d12e4b205c5049b55fbf9b57aae3be31368558d51b9486f",
+        "descricao": "Datas próprias e pontuação/cabeçalho conferidos nos três renders; newline final única. Não atribuir overlays ao extrator."
+      },
+      "aplicado_em": "2026-10-16T03:39:15.561291",
+      "id": "c19d8947c00c1689459d3ec7d770f040ecd518e7c8afabdf6f5ed2a1d7139e53"
+    },
+    {
+      "fonte": "https://www-storage.voxtecnologia.com.br/?m=sigpub.publicacao&f=265&i=publicado_119311_2026-01-08_6c57aafa86497f18b745b0981a5fa4fa.pdf",
+      "data_circulacao": "2026-01-08",
+      "sha256_pdf": "dd680860043650643b59aebd3410f3d4de92d4a9180f525a7783a86d827a0541",
+      "extrator": "geometria-colunas-v2",
+      "sha256_extrator": "3d954c48700d49328c6d71f3d841cfc40394642e81e338c23d7c27cae175dcd5",
+      "sha256_classificador": "6ad567935722b5e8b846d6eb306fcbb0cb2df93552e1c90fe6e930211c5a3df7",
+      "pdf": "municipais/_indice/_revisoes-fila-offline/20261016-primeiras-3/03-2026-01-08-4036a/1-2026-01-08-4036a.pdf",
+      "cache_metadados": "municipais/_indice/_revisoes-fila-offline/20261016-primeiras-3/03-2026-01-08-4036a/3-2026-01-08-4036a.pdf.geometria-colunas-v2.3d954c48700d4932.json",
+      "manifesto": "municipais/_indice/_revisoes-fila-offline/20261016-primeiras-3/overlay-travessoes/proposta.json",
+      "sha256_manifesto": "4ca49e37c561fd074d12e4b205c5049b55fbf9b57aae3be31368558d51b9486f",
+      "destinos": [
+        {
+          "acao": "modificado",
+          "acao_publica": "novo",
+          "arquivo": "municipais/RJ/engenheiro-paulo-de-frontin/decretos/2026/decreto-757-2026-20351d69.md",
+          "codigo": "20351D69",
+          "sha256": "5b6aa121a9450b7383069edfaeae93c59338da0641eb7a1c9fe10c6c18e4453e",
+          "sha256_bloco": "cbb269c6a02446387a4b22dad8f8b73552b1ac36a76f2cf7595b88142316a9b9",
+          "cobertura": null
+        }
+      ],
+      "snapshots": [
+        {
+          "arquivo_anterior": "municipais/RJ/engenheiro-paulo-de-frontin/decretos/2026/decreto-757-2026-20351d69.md",
+          "snapshot": "municipais/_referencias/revisao-manual-20261016-primeiras-3/20351D69-antes-canonico.md.gz",
+          "sha256": "680d0e540af69b8898a2b2aa0b1559c19f4a4920f589564263ae7ea6a7ef66ca"
+        }
+      ],
+      "referencias_parciais": [],
+      "revisao": {
+        "arquivo": "municipais/_indice/_revisoes-fila-offline/20261016-primeiras-3/revisao.json",
+        "sha256": "e70732d9a413c3835eb3030784b4773aca7a080b3f0b2f7a9bbb55dc68b654a4"
+      },
+      "correcoes_manuais": {
+        "proposta": "municipais/_indice/_revisoes-fila-offline/20261016-primeiras-3/overlay-travessoes/proposta.json",
+        "sha256": "4ca49e37c561fd074d12e4b205c5049b55fbf9b57aae3be31368558d51b9486f",
+        "descricao": "Datas próprias e pontuação/cabeçalho conferidos nos três renders; newline final única. Não atribuir overlays ao extrator."
+      },
+      "aplicado_em": "2026-10-16T03:39:15.562322",
+      "id": "ca117f869849142eb26f73ddb1cdc5565333fa05680bd5f4e39fe4651e077555"
     }
   ]
 }

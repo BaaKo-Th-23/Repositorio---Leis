@@ -1,5 +1,29 @@
 # Continuação da coleta
 
+## Dois atos municipais aprovados pela raiz — 16/10/2026
+
+- Aplicados isoladamente resolução011/2026CMASItacoatiara e decreto757/2026EngenheiroPauloFrontin: localA1/M1, maspúblicoA2 poisambasrotas ausentesHEAD00c389. Originais/PDF/renders/snapshots/ledgeranterior preservados.
+- Datas próprias03/07/2026 e05/01/2026; 21travessõesAM/23RJ reposicionadosconformePDF; removidoExtraordinária doart7. Raizreleu3rendersintegrais evalidou patchesreversíveis, metadados/cifras/fechos/fronteiras. CanonEOFúnico; propostaoverlay4ca49e37…preservada.
+- Dossiê55arquivos congelados, decisão/aplicação emmunicipais/_referencias/revisao-manual-20261016-primeiras-3. LedgerantesbyteigualHEAD; adicionaapenas2registrosdemanualreview. Pipeline/filaintactos. Formatoindex2/2sem erros/avisos;9whitespaceem snapshots/diffsoriginais preservadoscomprova; aguarda commit/push.
+- Correção dopontoMGanterior: DEC35694/1994dePARTESUPRIMIDA NÃOestavaadmitido; amostra43contémtambémretidos, eestejáretidoporfecho. Complementaremosfundamentoexplícitolacuna. Triagemraiz terminou14723/873alertascontextuais; agenterevisa37marcadoreslexicais+836reticências.
+- Verificaçãoindependenteraiz14723concluída0erros: CSV/XML/MD/source/snapshots/vigência/versão eGFMtextopontuação; relatório a09fe6ad… Semaprovaçãoíntegrasozinho.
+
+## Revisão MG e preparação federal/municipal — 16/10/2026
+
+- Turno anterior teve progresso autoritativo: publicaçãoRS3 confirmada noGitHub. Objetivo100% ativo.
+- Agenteestados propôsMG14723/16811,2088retidos, manifesto089373979c0ce0c3c072592c34ce7ec560698033e9f24689bb179320999651c3. Raizencontrou `[PARTE SUPRIMIDA]` emDEC35694/1994 admitido; coorte NÃOaprovada atétriagem global.
+- Triagem41630/PID24256terminada143depoisdeconfirmarcustoregexcontextoprévio. Substituição5717terminou14723/873alertas, padrõesiguais/contextoviaslice; agenteclassifica contextualmentelacunas.
+- Verificação independente raiz14723 concluída0erros sessão7652/PID24732, script/tmp/verificar-mg14723-raiz.py; validaCSV/XML/source/snapshots, headers/vigência/versão ecaracteresGFM; saída `verificacao-raiz-14723.jsonl` e resumo. Não constitui integridade porausênciaalerta.
+- DOU6: rootconfirmou tabelas mascomparação literalGFM detectou régua80hífens2403→hr; agenteestados modela separadores explícitos/revisãodedup2403, semaplicar.
+- Municipal2: proposta07893f54 corrigiudatas/header/title masrootdetectou travessões deementa/incisosforaordem; agente preparaoverlaycompleto conformePDF. Nãopublicarpropostaanteriorcomoíntegra. Próximas3congeladas, renderhandle18845.
+- Federalprepara3270candidatoscom únicaflagfalse→null respaldadaNão consta revogação expressa;5semalteração;115retidos. Semaplicação/Git.
+
+## RS3 publicadas — 16/10/2026
+
+- Commit `00c389afb30df7ef009c09fe92d9b2e530d4e8bf` enviado ao main.
+- PROGRESSO.md público conferido via API: blob `ac65eadf422648f69e96272a6c2cf6d453847f62`; 699.161 documentos, 699.137/~11.768.799 nas séries com meta (5,9%), 24 sem meta. Hook ativo `.githooks/pre-commit` recalcula relatório e SVG pelo índice a cada commit.
+- Três decretos RS com fontes integrais em 40 páginas, snapshots e provas preservados. Próximos lotes MG/DPL/municipais em revisão; objetivo 100% continua ativo.
+
 ## SC9 publicadas e RS3 em envio — 16/10/2026
 
 - Finalização raizRS: removida uma única linha vaziaEOFextra emcadaumdos3MDs;
