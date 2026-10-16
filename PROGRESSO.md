@@ -1,6 +1,6 @@
 # Progresso
 
-Gerado por `scripts/progresso.py` em 15/10/2026. O escopo está em
+Gerado por `scripts/progresso.py` em 15/10/2026 21:37:14 (America/Recife). O escopo está em
 `scripts/plano.py`; os números de **meta** são estimativas do tamanho de cada série, não
 contagens oficiais. O percentual mede volume diante das metas; não comprova integralidade
 das fontes nem qualidade de cada conversão. Lacunas continuam abertas até verificação.

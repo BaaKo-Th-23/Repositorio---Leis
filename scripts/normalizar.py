@@ -30,6 +30,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from datas import data_do_texto  # noqa: E402
+from comum import CANONICO, normalizar_chave  # noqa: E402
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -76,6 +77,7 @@ TIPOS_CANONICOS = {
     "Lei Delegada", "Lei Constitucional", "Lei Promulgada", "Decreto-Lei",
     "Decreto-Lei Complementar", "Lei Orgânica", "Emenda à Lei Orgânica",
 }
+TIPOS_CANONICOS.update(tipo for _, tipo in CANONICO.values())
 
 ORDEM_CAMPOS = [
     "titulo", "uf", "tipo", "numero", "data", "ano", "ementa", "situacao", "revogada",
@@ -92,8 +94,8 @@ def renomear_pastas(aplicar, cont):
         if not os.path.isdir(d):
             continue
         for sub in sorted(os.listdir(d)):
-            novo = PASTAS.get(sub)
-            if not novo or not os.path.isdir(os.path.join(d, sub)):
+            novo = PASTAS.get(sub) or CANONICO.get(normalizar_chave(sub), (None, None))[0]
+            if not novo or novo == sub or not os.path.isdir(os.path.join(d, sub)):
                 continue
             origem, destino = os.path.join(d, sub), os.path.join(d, novo)
             if os.path.exists(destino):
@@ -143,7 +145,8 @@ def normalizar_cabecalho(texto):
     if "tipo" in d:
         bruto = d["tipo"].strip().strip('"')
         bruto = ANO_NO_TIPO.sub(r"\1", bruto)
-        d["tipo"] = ' "%s"' % TIPOS.get(bruto, bruto)
+        tipo = CANONICO.get(normalizar_chave(bruto), (None, TIPOS.get(bruto, bruto)))[1]
+        d["tipo"] = ' "%s"' % tipo
     if d.get("ano", "").strip().strip('"') in ("sem-ano", ""):
         d.pop("ano", None)
     if "data" not in d:

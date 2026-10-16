@@ -28,12 +28,14 @@ da edição, que é outro problema (ver as pendências de OCR no README).
 import argparse
 import datetime as dt
 import gzip
+import hashlib
 import json
 import os
 import re
 import sys
 import urllib.error
 import urllib.request
+from zoneinfo import ZoneInfo
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -61,6 +63,9 @@ TIPOS_NORMATIVOS = {
     "parecer normativo": "parecer normativo",
     "súmula": "sumula",
     "decreto": "decreto",
+    "solução de consulta": "solucao de consulta",
+    "ato normativo": "ato normativo",
+    "recomendação": "recomendacao",
 }
 
 # Órgãos que têm identidade normativa própria e merecem pasta própria, mesmo aparecendo sob um
@@ -78,6 +83,8 @@ ORGAOS = {
     "agencia nacional de aguas": "ana",
     "agencia nacional do cinema": "ancine",
     "agencia nacional de mineracao": "anm",
+    "agencia brasileira de promocao internacional do turismo": "turismo",
+    "embratur": "turismo",
     "agencia nacional de telecomunicac": "anatel",
     "banco central do brasil": "bcb",
     "conselho monetario nacional": "bcb",
@@ -164,6 +171,13 @@ MINISTERIOS = {
     "ministerio da pesca e aquicultura": "pesca",
     "ministerio das cidades": "cidades",
     "poder judiciario": "poder-judiciario",
+    "poder legislativo": "poder-legislativo",
+    "atos do senado federal": "poder-legislativo",
+    "atos da camara dos deputados": "poder-legislativo",
+    "senado federal": "poder-legislativo",
+    "camara dos deputados": "poder-legislativo",
+    "congresso nacional": "poder-legislativo",
+    "tribunal de contas da uniao": "tcu",
     "ministerio da fazenda": "fazenda",
 }
 
@@ -206,36 +220,70 @@ def http(url, limite, accept="text/html", tentativas=4):
     raise RuntimeError(f"falhou após {tentativas} tentativas: {url}: {ultimo}")
 
 
+def extrair_indice(bruto):
+    html = bruto.decode("utf-8", errors="replace")
+    m = re.search(r'<script\b[^>]*\bid=[\"\']params[\"\'][^>]*>(.*?)</script>', html, re.S | re.I)
+    if not m:
+        raise ValueError("índice sem script params; não comprova dia sem edição")
+    dados = json.loads(m.group(1))
+    if not isinstance(dados, dict) or not isinstance(dados.get("jsonArray"), list):
+        raise ValueError("índice sem lista jsonArray")
+    if any(not isinstance(ato, dict) or not ato.get("urlTitle") for ato in dados["jsonArray"]):
+        raise ValueError("índice contém ato sem urlTitle")
+    return dados["jsonArray"]
+
+
 def atos_do_dia(data, limite):
-    """Lista de atos publicados na Seção 1 em `data` (date), do JSON embutido na página."""
+    """Lista validada da Seção 1; falha de página não é dia sem edição."""
     st, bruto = http(DIA.format(data.strftime("%d-%m-%Y")), limite)
     if st != 200 or not bruto:
-        return []
-    html = bruto.decode("utf-8", errors="replace")
-    m = re.search(r'<script[^>]+id="params"[^>]*>(.*?)</script>', html, re.S)
-    if not m:
-        return []
-    try:
-        return json.loads(m.group(1)).get("jsonArray") or []
-    except json.JSONDecodeError:
-        return []
+        raise ValueError(f"HTTP {st} ou resposta vazia no índice do dia")
+    return extrair_indice(bruto)
+
+
+def tipo_de(ato):
+    titulo = normalizar_chave(ato.get("title"))
+    # Convênios administrativos não são os convênios tributários do CONFAZ.
+    for inicio, chave in (("convenio icms ", "convenio icms"),
+                          ("protocolo icms ", "protocolo icms"),
+                          ("ajuste sinief ", "ajuste sinief"),
+                          ("ato declaratorio interpretativo ", "ato declaratorio interpretativo"),
+                          ("ato declaratorio normativo ", "ato declaratorio normativo")):
+        if titulo.startswith(inicio):
+            return chave
+    return TIPOS_NORMATIVOS.get((ato.get("artType") or "").strip().lower())
+
+
+def caminho_do_ato(ato, orgao, pasta, ano):
+    slug = slugify(ato["urlTitle"])
+    antigo = os.path.join(RAIZ, orgao, pasta, ano, slug[:120] + ".md")
+    if len(slug) <= 120:
+        return antigo
+    # As URLs terminam no identificador do DOU; truncar esse trecho fundia atos distintos.
+    if os.path.isfile(antigo):
+        with open(antigo, encoding="utf-8") as f:
+            if f"fonte: {yaml_str(ATO.format(ato['urlTitle']))}\n" in f.read():
+                return antigo
+    identificador = re.search(r"-(\d+)$", slug)
+    sufixo = identificador.group(1) if identificador else hashlib.sha256(slug.encode()).hexdigest()[:16]
+    return os.path.join(RAIZ, orgao, pasta, ano, slug[:100] + "-" + sufixo + ".md")
 
 
 NUMERO = re.compile(r"n[ºo°]\s*([\d.]+)", re.I)
 
 
 def processar(ato, data, limite, orgaos_alvo):
-    tipo_bruto = (ato.get("artType") or "").strip().lower()
-    if tipo_bruto not in TIPOS_NORMATIVOS:
+    tipo_chave = tipo_de(ato)
+    if not tipo_chave:
         return "ignorado", None
     orgao = orgao_de(ato.get("hierarchyList"))
     if orgaos_alvo and orgao not in orgaos_alvo:
         return "ignorado", None
 
-    pasta, tipo_nome = CANONICO[TIPOS_NORMATIVOS[tipo_bruto]]
+    pasta, tipo_nome = CANONICO[tipo_chave]
     ano = data.strftime("%Y")
-    slug = slugify(ato["urlTitle"])[:120]
-    md = os.path.join(RAIZ, orgao, pasta, ano, slug + ".md")
+    md = caminho_do_ato(ato, orgao, pasta, ano)
+    slug = os.path.basename(md)[:-3]
     if os.path.exists(md):
         return "pulado", None
 
@@ -258,14 +306,22 @@ def processar(ato, data, limite, orgaos_alvo):
     # o título do DOU é a própria epígrafe, e traz a data de assinatura — que não é a da
     # publicação: um ato assinado no dia 13 costuma sair no dia 14. O acervo data a norma pela
     # assinatura, como nas leis; a publicação fica nos campos `publicacao`/`data_publicacao`.
-    assinatura = data_do_texto(titulo, linhas=1) or data.isoformat()
     corpo = convert(m.group(0))
+    if not corpo.strip():
+        return "sem_texto", {"urlTitle": ato["urlTitle"], "motivo": "bloco texto-dou vazio"}
+    assinatura = data_do_texto(titulo, linhas=1) or data_do_texto(corpo) or data.isoformat()
+    data_na_fonte = assinatura if assinatura > data.isoformat() else None
+    if data_na_fonte:
+        assinatura = ""
     cab = ["---", f"titulo: {yaml_str(titulo)}", f"orgao: {yaml_str(ato.get('hierarchyStr') or '')}",
            f"tipo: {yaml_str(tipo_nome)}", f"numero: {yaml_str(num.group(1).replace('.', '') if num else '')}",
-           f"data: {assinatura}", "revogada: false", 'versao_texto: "publicação original"',
+           f"data: {assinatura or yaml_str('')}", "revogada: false", 'versao_texto: "publicação original"',
            f"publicacao: {yaml_str('DOU de ' + data.strftime('%d/%m/%Y') + ', seção 1, p. ' + str(ato.get('numberPage') or ''))}",
            f"data_publicacao: {data.isoformat()}", f"edicao: {yaml_str(ato.get('editionNumber') or '')}",
            f"fonte: {yaml_str(url)}", f"baixado_em: {dt.date.today().isoformat()}", "---", ""]
+    if data_na_fonte:
+        cab[-2:-2] = [f"data_na_fonte: {data_na_fonte}",
+                       'observacao_data: "A data declarada na fonte é posterior à publicação; assinatura não confirmada."']
     os.makedirs(os.path.dirname(md), exist_ok=True)
     tmp = md + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
@@ -292,7 +348,9 @@ def main():
     a = ap.parse_args()
 
     de = dt.date.fromisoformat(a.de)
-    ate = dt.date.fromisoformat(a.ate)
+    ate = min(dt.date.fromisoformat(a.ate), dt.datetime.now(ZoneInfo("America/Recife")).date())
+    if de > ate or not 0 < a.rps <= 4 or a.workers < 1:
+        ap.error("intervalo de datas inválido; rps deve estar entre 0 e 4 e workers ser positivo")
     alvo = {s.strip() for s in a.orgaos.split(",") if s.strip()}
     limite = Limitador(a.rps)
     os.makedirs(RAIZ, exist_ok=True)
@@ -307,10 +365,14 @@ def main():
             except Exception as e:
                 print(f"{data} erro no índice do dia: {str(e)[:120]}", flush=True)
                 cont["erro"] += 1
+                falhas.write(json.dumps({"status": "indice", "data": data.isoformat(),
+                                         "url": DIA.format(data.strftime("%d-%m-%Y")),
+                                         "erro": str(e)[:300]}, ensure_ascii=False) + "\n")
+                falhas.flush()
                 continue
             if a.listar:
                 for ato in lista:
-                    if (ato.get("artType") or "").strip().lower() in TIPOS_NORMATIVOS:
+                    if tipo_de(ato):
                         o = orgao_de(ato.get("hierarchyList"))
                         if not alvo or o in alvo:
                             por_orgao[o] = por_orgao.get(o, 0) + 1
@@ -337,7 +399,8 @@ def main():
         for o, n in sorted(por_orgao.items(), key=lambda x: -x[1]):
             print(f"  {n:6} {o}")
     print("FIM", cont, flush=True)
+    return 1 if cont["erro"] or cont["sem_texto"] else 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

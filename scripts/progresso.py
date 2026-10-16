@@ -19,6 +19,7 @@ import glob
 import os
 import sys
 import subprocess
+from zoneinfo import ZoneInfo
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from plano import FASES, PLANO, por_setor  # noqa: E402
@@ -219,7 +220,8 @@ def markdown(medidas, achadas):
     total_a = sum(n for _, n in medidas)
     total_m = sum(i.meta for i in PLANO)
     L = ["# Progresso", "",
-         f"Gerado por `scripts/progresso.py` em {dt.date.today():%d/%m/%Y}. O escopo está em",
+         f"Gerado por `scripts/progresso.py` em {dt.datetime.now(ZoneInfo('America/Recife')):%d/%m/%Y %H:%M:%S}"
+         " (America/Recife). O escopo está em",
          "`scripts/plano.py`; os números de **meta** são estimativas do tamanho de cada série, não",
          "contagens oficiais. O percentual mede volume diante das metas; não comprova integralidade",
          "das fontes nem qualidade de cada conversão. Lacunas continuam abertas até verificação.", "",

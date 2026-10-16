@@ -1,8 +1,8 @@
 # Legislação brasileira em Markdown
 
-**323.849 normas** — a Constituição Federal, a legislação federal e a de 25 estados e do Distrito
-Federal — convertidas de fontes oficiais para Markdown, com cabeçalho estruturado e link para a
-origem de cada texto.
+A Constituição Federal e normas federais, estaduais, distritais e municipais, convertidas de
+fontes oficiais para Markdown, com cabeçalho estruturado e link para a origem de cada texto.
+As contagens do acervo publicado são atualizadas a cada commit em **[PROGRESSO.md](PROGRESSO.md)**.
 
 O histórico do git é a própria linha do tempo: as 323.849 normas da base entraram **uma por
 commit**, assinadas por quem as promulgou e datadas do dia em que foram aprovadas.
@@ -25,7 +25,10 @@ gerados por `scripts/progresso.py`.
 
 ---
 
-## O que tem aqui
+## Base inicial do histórico
+
+As tabelas abaixo registram as 323.849 normas da base inicial; as coletas posteriores estão
+contabilizadas em **[PROGRESSO.md](PROGRESSO.md)**.
 
 | Esfera | Normas |
 | --- | ---: |
@@ -120,7 +123,7 @@ Institui o Código Civil.
 `titulo`, `tipo`, `numero`, `data`, `versao_texto`, `fonte` e `baixado_em` existem em **todos** os
 arquivos; os demais aparecem quando a fonte os fornece. Os campos saem sempre nessa ordem.
 
-O campo `tipo` usa um vocabulário fechado de onze valores, definido em `CANONICO`, em
+O campo `tipo` usa o vocabulário canônico definido em `CANONICO`, em
 `scripts/comum.py`. O mesmo mapa vale para quem baixa e para `scripts/normalizar.py`, que o reaplica
 ao acervo já gravado — por isso `lei-ordinaria` e `leis-ordinarias`, ou `Lei` e `LEI ORDINARIA`, não
 coexistem.
@@ -306,7 +309,10 @@ python3 -I scripts/montar_repositorio.py --saida /caminho/do/repo
 Os quatro scripts de manutenção são **idempotentes** e rodam em simulação por padrão: só gravam com
 `--aplicar`. Rodar de novo, depois de aplicado, relata zero mudanças.
 
-### Auditorias que o acervo passa
+### Auditorias da base inicial
+
+Os resultados abaixo são da base inicial. Os lotes posteriores exigem validação própria;
+`scripts/auditar.py --staged` verifica os arquivos exatamente como entrarão no próximo commit.
 
 | Verificação | Resultado |
 | --- | --- |

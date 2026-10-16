@@ -5,7 +5,9 @@ texto abre com a epígrafe oficial — "EMENDA CONSTITUCIONAL Nº 38, DE 16 DE D
 A data é lida só dessa linha: solta, a busca casaria com a data de publicação no Diário Oficial
 ou com a primeira lei citada no corpo.
 """
+import datetime as dt
 import re
+from zoneinfo import ZoneInfo
 
 MESES = {m: i + 1 for i, m in enumerate(
     "janeiro fevereiro março abril maio junho julho agosto setembro outubro novembro dezembro".split())}
@@ -15,7 +17,8 @@ MESES.update({"marco": 3, "setembro": 9})
 # de uma portaria tem a mesma forma da de uma lei ("RESOLUÇÃO ANM Nº 249, DE 13 DE OUTUBRO DE 2026")
 TIPO_EPIGRAFE = re.compile(
     r"\b(LEI|EMENDA|DECRETO|CONSTITUI[ÇC][ÃA]O|ATO|RESOLU[ÇC][ÃA]O|PORTARIA|INSTRU[ÇC][ÃA]O"
-    r"|CIRCULAR|DELIBERA[ÇC][ÃA]O|PROVIMENTO|S[ÚU]MULA|PARECER)\b", re.I)
+    r"|CIRCULAR|DELIBERA[ÇC][ÃA]O|PROVIMENTO|S[ÚU]MULA|PARECER|SOLU[ÇC][ÃA]O"
+    r"|CONV[ÊE]NIO|PROTOCOLO|AJUSTE|RECOMENDA[ÇC][ÃA]O)\b", re.I)
 # "Nº 38, DE 16 DE DEZEMBRO DE 2013" / "Nº 07, 29 de dezembro de 1993"
 POR_EXTENSO = re.compile(
     r"(?:DE\s+)?(\d{1,2})[º°]?\s+DE\s+([A-Za-zÀ-ÿ]+)\s+DE\s+(\d{4})", re.I)
@@ -24,9 +27,12 @@ NUMERICA = re.compile(r"\b(\d{1,2})[./](\d{1,2})[./](\d{4})\b")
 
 def _iso(dia, mes, ano):
     # a legislação federal começa em 1821; nada fora disso é data de norma
-    if not (1 <= mes <= 12 and 1 <= dia <= 31 and 1800 <= ano <= 2026):
+    if not 1800 <= ano <= dt.datetime.now(ZoneInfo("America/Recife")).year:
         return None
-    return f"{ano:04d}-{mes:02d}-{dia:02d}"
+    try:
+        return dt.date(ano, mes, dia).isoformat()
+    except ValueError:
+        return None
 
 
 def data_do_texto(corpo, numero=None, linhas=6):

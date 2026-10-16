@@ -7,6 +7,7 @@ Não certifica a completude jurídica nem a fidelidade da conversão à fonte.
 """
 import argparse
 import collections
+import contextlib
 import datetime as dt
 import json
 from pathlib import Path
@@ -110,19 +111,27 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("alvos", nargs="*")
     ap.add_argument("--staged", action="store_true")
+    ap.add_argument("--falhas", help="grava todos os caminhos com erro em JSONL")
     a = ap.parse_args()
     if a.staged and a.alvos:
         ap.error("use --staged ou caminhos, sem combinar os dois")
     hoje = dt.datetime.now(ZoneInfo("America/Recife")).date()
     cont, avisos, motivos, exemplos = collections.Counter(), collections.Counter(), collections.Counter(), []
-    for nome, texto in documentos(a.alvos, a.staged):
-        erros, alertas = validar(texto, nome, hoje)
-        cont["arquivos"] += 1
-        cont["com_erros"] += bool(erros)
-        avisos.update(alertas)
-        motivos.update(erros)
-        if erros and len(exemplos) < 25:
-            exemplos.append({"arquivo": nome, "erros": erros})
+    destino = open(a.falhas, "w", encoding="utf-8") if a.falhas else contextlib.nullcontext()
+    with destino as registro:
+        for nome, texto in documentos(a.alvos, a.staged):
+            erros, alertas = validar(texto, nome, hoje)
+            cont["arquivos"] += 1
+            cont["com_erros"] += bool(erros)
+            avisos.update(alertas)
+            motivos.update(erros)
+            if erros:
+                caso = {"arquivo": nome, "erros": erros}
+                if len(exemplos) < 25:
+                    exemplos.append(caso)
+                if registro:
+                    registro.write(json.dumps(caso, ensure_ascii=False) + "\n")
+                    registro.flush()
     print(json.dumps({"origem": "index Git" if a.staged else "disco", "contagens": cont,
                       "avisos": avisos, "erros": motivos, "exemplos": exemplos}, ensure_ascii=False))
     return 1 if cont["com_erros"] or not cont["arquivos"] else 0
