@@ -1,5 +1,34 @@
 # Continuação da coleta
 
+## SC9 publicadas e RS3 em envio — 16/10/2026
+
+- Finalização raizRS: removida uma única linha vaziaEOFextra emcadaumdos3MDs;
+  conteúdo/headers/links/assets byteiguais. Novos snapshotsgzantesEOF e
+  ledger-final-raiz.json encadeiam959447…; imagensnãoforamrerenderizadas
+  porquepermanecem exatamenteas40jáconferidas.6ocorrênciasEOFde snapshots
+  históricos ficamintactas, nãohánecessidade de alterarevidênciaoriginal.
+
+- SC9 publicadasb87168ecd03:699.158 documentos;699.134/~11.768.799com
+  meta(5,9%);24semmeta. PROGRESSO.md público conferidoblob
+  d2fb80510f127ef7dc50f953108409972037f307.
+- PreviewGitHubLC356inspecionadopela raiz após push:7tabelas/304células,
+ 8rowspan+3colspan preservados,tachadocomputadoline-through;overflowXauto
+  e rolagemhorizontal exibiuquantidadedevagas/30. Abaencerrada. Prova
+  estaduais/_verificacao_github_sc9_20261016.json030644d4…; amostra1de9,
+  não aprovação visual de todos83quadros ou9normas.
+- RS3agoraaprovadosparaenvio:3PDFs exatos às fontes e40PNGs (18+4+18),
+  reproduções integrais,incluindo tabelaart10§1/54083 eúltimapágina53969.
+  Raiz rerenderizou TODAS40p com pdftoppm ecomparoubytesPNG,0diferenças;
+  headers/prefixos/40links/dimensões2600 conferidos. Vistos53894p2,
+ 54083p4,53969p18; agente jáhaviarevisto os40 contatos/páginas relevantes.
+- LedgerRS959447f8…encadeiaf7b28b7…,fontes/snapshotsanteriorespreservados;
+  relatório verificacao-raiz-integral.json vincularesultado. Não seafirma
+  transcrição literal perfeita de cada célula anterior; fontevisual integral
+  está disponível. Rótulo nãoalegaDiáriooriginal, poisPDFALRS podecompilar.
+- Mudançastextuais53894:restauradas3unidades/3notas impressas e marcadores
+  ¹/²; outrasduasnormasprefixo literaloriginalintacto. Progressoexpected+3
+  nesteenvio,geradopelohook; aindaaguarda commit/pushverificados.
+
 ## Publicação SC9 e conversão de tabelas — 16/10/2026
 
 - Diff-check:80ocorrências intencionais preservadas(79em snapshot original
