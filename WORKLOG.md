@@ -1,5 +1,29 @@
 # Continuação da coleta
 
+## DF11: índice e auditoria aprovados — 16/10/2026
+
+- Stage 68639 terminou com 73 arquivos exatos. Auditoria 45798: 11 documentos, zero erros e avisos. Verificação 4281: 73 blobs/38.701.608 bytes iguais ao disco, ao payload e à aprovação; 72 caminhos alterados, pois uma prova já coincide com HEAD. Nenhum caminho inesperado. Whitespace 1786 terminou sem alertas.
+- Seis provas finais e WORKLOG seguem para o índice; lista permitida com 79 arquivos, 78 alterações previstas antes do hook. Nenhum canônico mudou após a verificação. Commit e envio ainda pendentes; PROGRESSO.md/progresso.svg serão recalculados pelo hook.
+
+## DF11 aprovado e aplicado para publicação — 16/10/2026
+
+-11cópias exatas doscandidatos aprovados SHA09f380cf47b337bd3e7213644cb830a67f85e6edbd63d8cef2e6e55c04906345:DLG56–66/1995,fontecapturada,revogada null. Normativos/rodapés conforme fonte integral lida11;sem inferir datas ausentes58–61. Baselinesintegrais preservados. Aplicação/provas em revisao-raiz-df11;lista/tmp/DF11-publicacao-paths.txt. HEADbase7ab,DFtree5c8d81dbd24c14d50652b555663c6c84d57fb649 confirmado;index estava vazio. Stage/auditoria/commit/pushpendentes.
+-SINJ primário integral106683 agora comprimido e congelado na revisão raiz, rawSHAfd4d1652e2db6eb53fade3ebeb83d398fc0a3df9d563d748cdfd5533c52496c5, sem novoHTTP. Subsets11/925 e mapa65976fontesHEAD preservadosjuntoàs37provasoriginais/overlays/revisãoraiz. Não importar restante925 ou canônicos semaprovação. Publicação1946jáconfirmada719290docs;goal100%ativo.
+
+## DEC1946 PUBLICADO e progresso público confirmado — 16/10/2026
+
+-7abcccab19ed386a0fa3c0ba6f4c8af97e851e50 público:1946novosdocumentos;719290total,719265/~11768799nassériescommeta(6,1%),25semmeta. Commit70872/push19467TERMINAL0;6049paths incluindoPROGRESSO.md/progresso.svg. API pública17:18:29UTC confirmoublob73990928f72776f192df77bef0972bb0223df0e5 exatamenteigualHEAD. Prova/tmp/DEC1946-publicacao-confirmada.json e revisão raiz/publicacao-confirmada-DEC1946-raiz.json. Index vazio após publicação;nenhumestágio/commit/pushpendente. Turno com progresso real; goal100% continua ativo.
+-Próximo loteDF11:aprovados09f380cf47b337bd3e7213644cb830a67f85e6edbd63d8cef2e6e55c04906345 em revisao-raiz-df11/aprovacao-DF11-raiz.json, ainda NÃOaplicados. Fonte11integrallida,HTML5/GFM/máscaras/GitHub/formato,índiceprimário106683streaming/925exatos e65976fontesHEADdedup conferidos. ConferirDFtree5c8d81dbd24c14d50652b555663c6c84d57fb649 e baselineSHA antesdecopiar candidatos; preservar37fontes/provas+subsets925/mapaHEAD+overlays/revisãoraiz/WORKLOG,semstageamplo.
+-Câmara5 originaisnãoforampublicados em1946:75906/77443/77544/77620/78587 recuperadosintegralmentesem enxerto. Manifesto5 21d5bc43fa47d6443e199a33f98418e80606f80d965da3d6db13a700bf460e0a,54arquivos605068bytes verificadosraiz. Checkpoint parcialem revisao-raiz-camara5;raízaindarevisarCSSperfil0128dc930ee04400877843ee4fc73893fb9770e8ed3ec01554a759e71aaccd4e43arquivos26030770bytes,computedStyleChromeporcaractere/cascata5passadoagente. Perfisbaixar_camara/comum/corepreservados;semfacsímile/fontmetricsCSS externo remotoGitHub não alegadosiguais. Raizleufragmentos4textosintegrais+77443textointegral,4tabelas77620alíneasa-d preservadas;faltagateindependenteraiz/GitHub5/identidade/status/cobertura. Dedupforward5:basef5b1951ausentes156376HEAD;commit7abapenas1946IDsdisjuntos,verificardiffao invésrevarrertodoHEAD.
+-Trêsagentesvivos:Federalreconstruçãointegral3tratados/76424;EstadospropostaP925+regressãoconsumidores(144estaduais/12federaisreais,1RJlei11291deltaaindaemcotejo);MunicipalV4 202/277deltasrevistos,75pendentes,796gateestruturalcom2recusashistóricas/0novas. Nenhumcore/coletor/fila94555 alterado. Browsertodosencerrados;CâmaraCSS5terminado,umapáginaporvez.
+
+## DEC1946 commit local concluído; envio em curso — 16/10/2026
+
+- Commit7abcccab19ed386a0fa3c0ba6f4c8af97e851e50 terminal0sessão70872:6049paths,1946novoscanônicos,PROGRESSO.md/progresso.svg nomesmo commit. Gate42008terminal0 confirmouparentf5b,paths6049exatos,indexvazio,PROGRESSO físico=blob73990928f72776f192df77bef0972bb0223df0e5.719290docs;719265/~11768799(6,1%);25semmeta.
+- Push19467 executa keepalive/packwindow0/threads2,gcauto0;log _log_push_DEC1946_20261016.txt. Aguardar terminaleAPIpública antesdealegarpublicado; não duplicarpush. Localconfirmado em/tmp/DEC1946-local-confirmado.json.
+- PróximoDF11aprovadoSHA09f380cf47b337bd3e7213644cb830a67f85e6edbd63d8cef2e6e55c04906345; aindaNÃOaplicado. DFtree5c8d81dbd24c14d50652b555663c6c84d57fb649 permanecebase; conferirantesaplicar.
+- Câmara5CSSperfilcongelado0128dc930ee04400877843ee4fc73893fb9770e8ed3ec01554a759e71aaccd4e,43arquivos/26030770bytes. AgenterenderChrome5:seismáscarascomcascatareais,semoculto/pseudo;semfontbinária/fontmetrics. RaizaindanãoreviuCSSperfil/gate5,sempublicação5. Estadosbrowserencerrado;exceção998B/H2UAvalidadaapenaslocal,nãoCSSGitHub. Municipal202/277deltasrevistos;75pendentes.
+
 ## DEC1946 índice aprovado; commit e envio pendentes — 16/10/2026
 
 -Stageexato24048TERMINAL0:6041paths,semstageranterior,blobs+update-indexNUL concluídos. Métodoeliminou varreduraquadrática comprovada por sample; coletores não foram interrompidos. Lista de registrosSHA e2eb71abf7123427a4f82d4c88b88756d317285218f04fd9ff13c53e5b582f5c.
