@@ -295,14 +295,14 @@ def processar(rede, d, tipo="camara"):
             raise ValueError("tipo legislativo não comprovado na fórmula de promulgação")
     valores = {"titulo": d["titulo"], "tipo": nome_tipo, "numero": numero,
                "data": data, "ementa": d["ementa"], "situacao": d["situacao"],
-               "revogada": d["situacao"].lower() == "revogada",
+               "revogada": True if d["situacao"].strip().lower() == "revogada" else False if d["situacao"].strip().lower() in ("vigente", "em vigor") else None,
                "versao_texto": "compilada" if compilada else "original", "fonte": url_texto,
                "url_metadados": d["url"], "baixado_em": dt.date.today().isoformat()}
     if info.get("urn"):
         valores["urn"] = info["urn"]
     linhas = ["---"]
     for k, v in valores.items():
-        linhas.append(f"{k}: {str(v).lower() if isinstance(v, bool) else v if k in ('data', 'baixado_em') else yaml_str(v)}")
+        linhas.append(f"{k}: {'null' if v is None else str(v).lower() if isinstance(v, bool) else v if k in ('data', 'baixado_em') else yaml_str(v)}")
     linhas += ["---", "", "# " + d["titulo"], "", corpo]
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(".tmp")

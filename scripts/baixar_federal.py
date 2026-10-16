@@ -9,11 +9,13 @@ Uso: python3 -I scripts/baixar_federal.py [--limite N] [--tipos LEI,LCP,...] [--
 import argparse
 import datetime as dt
 import gzip
+import hashlib
 import json
 import os
 import re
 import sys
 import threading
+import tempfile
 import time
 import urllib.error
 import urllib.parse
@@ -171,9 +173,31 @@ def montar(d):
     return {"urn": urn, "slug": slug, "md": md, "fonte": fonte, "data": data, "nome": nome}
 
 
+class MetadadosFonte(dict):
+    pass
+
+
+def registrar_metadados(urn, bruto):
+    sha = hashlib.sha256(bruto).hexdigest()
+    pasta = os.path.join(RAIZ, "_fonte", "metadados-normas", hashlib.sha256(urn.encode()).hexdigest())
+    os.makedirs(pasta, exist_ok=True)
+    path = os.path.join(pasta, sha + ".json.gz")
+    if not os.path.exists(path):
+        with tempfile.NamedTemporaryFile(dir=pasta, suffix=".tmp", delete=False) as f:
+            f.write(gzip.compress(bruto))
+            tmp = f.name
+        os.replace(tmp, path)
+    with gzip.open(path, "rb") as f:
+        if hashlib.sha256(f.read()).hexdigest() != sha:
+            raise ValueError("captura imutável de metadados corrompida")
+    return {"path": path, "sha256": sha}
+
+
 def obter_metadados(urn, id_senado):
     st, corpo = http_get(API_NORMA.format(urllib.parse.quote(urn, safe=":;@!~$-.")), "application/json")
-    meta = json.loads(corpo) if st == 200 and corpo.strip() else {}
+    meta = MetadadosFonte(json.loads(corpo)) if st == 200 and corpo.strip() else MetadadosFonte()
+    if meta.get("legislationIdentifier") == urn:
+        meta.captura = registrar_metadados(urn, corpo)
     if meta.get("encoding") and meta.get("legislationIdentifier") == urn:
         return urn, meta
     # URN montada não bateu: pergunta ao Senado qual é a URN oficial
@@ -184,7 +208,9 @@ def obter_metadados(urn, id_senado):
         if "urn=" in url and url.split("urn=", 1)[1] and url.split("urn=", 1)[1] != urn:
             urn2 = urllib.parse.unquote(url.split("urn=", 1)[1])
             st, corpo = http_get(API_NORMA.format(urllib.parse.quote(urn2, safe=":;@!~$-.")), "application/json")
-            meta = json.loads(corpo) if st == 200 and corpo.strip() else {}
+            meta = MetadadosFonte(json.loads(corpo)) if st == 200 and corpo.strip() else MetadadosFonte()
+            if meta.get("legislationIdentifier") == urn2:
+                meta.captura = registrar_metadados(urn2, corpo)
             return urn2, meta if meta.get("legislationIdentifier") == urn2 else {}
     return urn, meta if meta.get("legislationIdentifier") == urn else {}
 
@@ -254,8 +280,12 @@ def processar(d):
         return "sem_texto", info["slug"], {"id": d["id"], "norma": d["norma"], "urn": urn,
                                            "url": url, "motivo": "corpo vazio ou contém NUL; fonte preservada"}
     versao = {"Current": "compilada (texto vigente)", "Original": "original", "Intermediate": "republicação/retificação"}
-    # o portal só marca explicitamente as normas revogadas (NotInForce)
-    revogada = "NotInForce" in como_lista(meta.get("legislationLegalForce"))
+    forca = como_lista(meta.get("legislationLegalForce"))
+    revogada = False if forca == ["InForce"] else None
+    with gzip.open(meta.captura["path"], "rb") as f:
+        metadados_brutos = f.read()
+    if hashlib.sha256(metadados_brutos).hexdigest() != meta.captura["sha256"]:
+        raise ValueError("hash da captura de metadados diverge da resposta associada")
     cab = [
         "---",
         f"titulo: {yaml_str(d['normaNome'].strip())}",
@@ -263,7 +293,10 @@ def processar(d):
         f"numero: {yaml_str(numero_oficial(d))}",
         f"data: {info['data']}",
         f"ementa: {yaml_str((d.get('ementa') or '').strip())}",
-        f"revogada: {'true' if revogada else 'false'}",
+        f"revogada: {'false' if revogada is False else 'null'}",
+        f"forca_legal_fonte: {yaml_str(json.dumps(forca, ensure_ascii=False))}",
+        f"fonte_metadados: {yaml_str(API_NORMA.format(urllib.parse.quote(urn, safe=':;@!~$-.')))}",
+        f"sha256_metadados_fonte: {yaml_str(hashlib.sha256(metadados_brutos).hexdigest())}",
         f"versao_texto: {yaml_str(versao.get(enc.get('version'), enc.get('version')))}",
         f"urn: {yaml_str(urn)}",
         f"fonte: {yaml_str('https://normas.leg.br/?urn=' + urn)}",

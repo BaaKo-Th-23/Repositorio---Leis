@@ -1,10 +1,10 @@
 # Progresso
 
-Gerado em 16/10/2026 01:03:01 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 16/10/2026 01:25:26 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**688.476 documentos · 688.473 / ~11.768.799 nas séries com meta (5.8%) · 3 sem meta**
+**698.899 documentos · 698.896 / ~11.768.799 nas séries com meta (5.9%) · 3 sem meta**
 
 ![progresso](progresso.svg)
 
@@ -12,7 +12,7 @@ Percentuais usam somente documentos e metas das séries com universo estimado ou
 
 Planalto, Senado, Câmara e assembleias.
 
-379.057 / ~574.766 documentos (65.9%)
+384.427 / ~574.766 documentos (66.9%)
 
 ### Constituição Federal
 
@@ -38,11 +38,11 @@ Planalto, Senado, Câmara e assembleias.
 
 ### Atos do Congresso
 
-32.850 / ~38.248 documentos (85.9%)
+34.380 / ~38.248 documentos (89.9%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Decretos legislativos | 16.433 | 21.775 | `federal/decretos-legislativos` | normas.leg.br |
+| 🟦 | Decretos legislativos | 17.963 | 21.775 | `federal/decretos-legislativos` | normas.leg.br |
 | 🟦 | Medidas provisórias (originais e reedições) | 7.488 | 7.497 | `federal/medidas-provisorias` | Planalto + normas.leg.br |
 | 🟦 | Resoluções do Senado Federal | 6.558 | 6.578 | `federal/resolucoes-senado` | normas.leg.br |
 | 🟦 | Resoluções da Câmara dos Deputados | 2.280 | 2.300 | `federal/resolucoes-camara` | camara.leg.br |
@@ -51,11 +51,11 @@ Planalto, Senado, Câmara e assembleias.
 
 ### Decretos do Executivo federal
 
-20.321 / ~153.657 documentos (13.2%)
+24.161 / ~153.657 documentos (15.7%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Decretos numerados (1889–hoje, as duas séries) | 5.794 | 139.127 | `federal/decretos` | normas.leg.br + Planalto |
+| 🟦 | Decretos numerados (1889–hoje, as duas séries) | 9.634 | 139.127 | `federal/decretos` | normas.leg.br + Planalto |
 | 🟦 | Decretos não numerados | 14.507 | 14.510 | `federal/decretos-nao-numerados` | Planalto |
 | ✅ | Regulamentos consolidados (RIR, RIPI, Aduaneiro, RPS, PAF) | 20 | 20 | `federal/regulamentos` | Planalto |
 
@@ -89,15 +89,15 @@ Planalto, Senado, Câmara e assembleias.
 
 Diários oficiais e portais de órgãos e tribunais.
 
-297.090 / ~861.320 documentos (34.5%)
+302.143 / ~861.320 documentos (35.1%)
 
 ### Infralegal — tributário
 
-12.098 / ~134.038 documentos (9.0%)
+17.151 / ~134.038 documentos (12.8%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Receita Federal: instruções normativas, portarias, atos declaratórios, soluções de consulta e pareceres normativos | 11.328 | 115.238 | `reguladores/rfb` | RFB — Sijut (23 espécies normativas) e Diário Oficial da União |
+| 🟦 | Receita Federal: instruções normativas, portarias, atos declaratórios, soluções de consulta e pareceres normativos | 16.381 | 115.238 | `reguladores/rfb` | RFB — Sijut (23 espécies normativas) e Diário Oficial da União |
 | 🟦 | CONFAZ: convênios, protocolos e ajustes SINIEF | 328 | 12.000 | `reguladores/confaz` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Tesouro Nacional: portarias e instruções | 75 | 2.000 | `reguladores/stn` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Procuradoria-Geral da Fazenda Nacional | 40 | 1.500 | `reguladores/pgfn` | Diário Oficial da União (in.gov.br) |

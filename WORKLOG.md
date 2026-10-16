@@ -1,5 +1,46 @@
 # Continuação da coleta
 
+## Próximo lote federal e revisão de metadados — 16/10/2026
+
+- Lote federal fixo10423:DEC3840+DPL1530+RFB5053, manifesto público
+  federal/_snapshot_coletas_20261016.json. Fontes5370DEC/DPL reextraídas e
+  identidade primária/fecho/fórmula próprios conferidos; RFB5053 JSONraw,
+  identidade/vigência/hash íntegros. DOU7425 fora deste lote.
+- DEC3840 sem captura raw dos metadados anteriores agora revogada:null;
+  DPL1529 sem revogação expressa:null e1Revogada explícita:true. Snapshots
+  anteriores e ledger preservam os corpos sem alteração. Não confundir
+  NotInForce com revogação. Novo gerador guarda JSON exato por URN/SHA e
+  associa cada captura à resposta correta, inclusive duas versões concorrentes.
+- Teste offline reproduzível scripts/verificar_metadados_federal.py passou;
+  nenhum HTTP. Reinício DEC autorizado por perda concreta da evidência:
+  33109 confirmado encerrado antes do novo76664/sessão49798,mesma taxa3rps
+  e4workers; lognovo _log_decretos_metadados_20261016.txt,antigo preservado.
+- DOU root:7425 revogada:null com backup integral e ledgers,10datas próprias
+  recuperadas por fecho+cache e2números recuperados,corpos iguais. Gates
+  retêm239 casos de íntegra externa e66 títulos fora do recorte para revisão;
+  amplo rastreio427alertas inclui falsos positivos e não é aprovação/rejeição
+  jurídica automática. Não publicar DOU sem fechar a conferência do lote.
+- Estadual53089 em nova revisão de vigência;99ES eramPDFbinário convertido
+  comoHTML, agora reextraídos dosPDFs textuais com identidade99/99. MG1784
+  semtexto fica pendente,snapshot/cache preservados. Aguardar manifesto final.
+- Municipal:extrator continua em revisão de grades/tabelas conservadoras;
+  nenhuma aplicação nova,HTTP e fila offline parados; amostras porSHA.
+
+## Publicação federal confirmada — 16/10/2026
+
+- cd660a5dcba enviado para origin/main:16 RSFs+DEL2289. PROGRESSO.md
+  público na API GitHub tem o mesmo blob de HEAD, b1a452d1b29776646de82d68a30f924d86ed83f1.
+  Total688.476,688.473 nas séries com meta(5,8%),três sem meta.
+  Commit contém relatório e SVG; gráfico renderizado sem cortes.
+- Root reextraiu15 fontesHTML e DELdo cache; corpo comparado normalizado
+  por strip, preservandoSHA da fonte semH1. DSF17/2023PDF e hash conferidos.
+  Auditoria do índice17documentos/0erros/0avisos;diff-check passou.
+- Independente municipal detectou mais um caso sem régua com coluna direita
+  ligeiramente descentrada: não liberar extrator enquanto não recusar com
+  prova local e passar as tabelas reais. Nenhuma aplicação nova nem HTTP.
+- README ajusta dependência real pypdf dos diários; .gitignore pycache
+  ainda pendente para o lote municipal, junto dos scripts reconciliadores.
+
 ## Lote federal de 17 documentos validado — 16/10/2026
 
 - Próxima publicação isolada:16 resoluções do Senado e DEL2289/1986,
