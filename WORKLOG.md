@@ -1,5 +1,28 @@
 # Continuação da coleta
 
+## MG14691 índice/formato aprovados — 16/10/2026
+
+- Stage48922exit0:58.932arquivos,14.691canônicos;TODOSblobsGitSHA256exatos incluindoCRLFfontes. Formatoíndice18678:14691,0erros/avisos.
+- Diffcheck84871:102.473ocorrências exclusivamenteCRLF deCSVfontes;zeroemcanônicos. LinhaaporlinhaigualCSVcongeladoSHA,semnormalização. Provaswhitespace-CSV-CRLF-MG14691.json/diffcheckgz/verificacao-indice-MG14691-raiz.json somadasaocheckpoint;WORKLOGfinalatualizado.
+- Commit/push/APIaindapendentes;aguardarcheckpointexato. Não reexecutarrender14ksemnovacausa. Metaoriginalintacta.
+- Municipalraiz22PNGdoPDForiginalbyteiguais,8bboxconfirmados e24fixtures;aprovaçãogeom0d447f38…2e210,SEMvivoaplicado. Nova falha adjunta–adequação/–inclusão emFonteBoa0A95F62F fica paraV4isolada. Agentecoteja85atos/157p,novasretençõesporordem/tabelas/anexosanteriores.
+- Federal13aindapendentes:raizleu5018PDF45–47 epropôsV5isolado0ce123a5…c5f5a(pontuaçãoMaterial,doisChauffeuritálicos,g)itálico);valor2:889$250confirmadoSEMmudança. Faltaaprovar12atos/24p+GFM/identidade/versãofontes. Agente13frozenv2e3+4recuperações467separadas. MGagente220propostasfooter+escapes,preservaoráculocorrigidoparacontadoresol;fora14691.
+
+## MG14691 em preparação do índice — 16/10/2026
+
+- Raiz conferiu novamente58.924SHA físicos e encadeou aprovação571489cb…f060b aoHEADc6dd4f2372a. Payload14691MD/14691snapshots/14691rawgzip/14691XML+80CSV+80provas;58924arquivos/560MB,maior98MB. Controles ehelper/publicação/WORKLOG adicionais explícitos.
+- Stageúnico /tmp/stage-MG14691-raiz.py emexecução; aguardarSTAGED/exit0 antesformato/commit. O script confere tambémSHA256 deTODOSblobs doíndiceapóshash-object/update-index, preservandoCRLF/fontes. NadaMGcommitado/enviadoainda.
+- Original14723menos32retenções;2120pendências permanecemfora. Provas anteriorescorpo/texto/identidade/status e revisão contextual encadeadas semnovacorreçãoeditorial. Meta100%original segueativa.
+
+## Coletaneas3 publicadas;MG14691 aprovado raiz — 16/10/2026
+
+- Commit c6dd4f2372ac23f00db298159b3759c68f333824 enviado main;push79070exit0,log_log_push_coletaneas3_20261016.txt. APIpública PROGRESSO.mdSHA10ae99003f816b8540b7a89c12fe36560e680821 igualHEAD. Total702.538docs;702.513/~11.768.799meta(6,0%);25semmeta.
+- Trêsatos recuperadospublicados:5488v2,5515/4743v3. Todos18rendersoriginais/derivados byteiguais, leitura visualraiz integral;GFM/formato3semfalhas,2novosdeltasrootdocumentados.324whitespace (265contextosdiff/GFM+4EOFdiff+55MDhardbreak)preservadoscomprova. Fontes2PDFcompletos29MB incluídos.
+- MGpreflightRAIZ78140 concluído:58.924arquivos560.478.395bytes físicosSHAexatos,max100MB;controles3+23MB. Coorte14691exatamente14723menos32retidos;cada admitido encadeado prova raiz14723(SHAa09fe6ad…) comMD/fonte/XML;absenteHEAD c6dd4f2372a comprovada. Aprovaçãoestaduais/MG/_indice/_auditoria-mg16811-20261016/aprovacao-publicacao14691-raiz.json SHA571489cb793f046856ecbfa73257f7408a7c8792cf23c23909c743f8db3f060b. SemstageMG ainda;usarlista-publicacao-14691.jsonl e paths(58.924)+3controles+aprovaçãoraiz/helper/WORKLOG, stageeficientehash-object/update-index,depoisformato/índiceSHA/whitespace/commit/push/API. Esperado717.229docsapósMG,hookautoritativo. Não repetirrender14723semnovacausa.
+- Município:raizreproduziu24fixturesv3BYTEiguais SHA8b5c194b76ca3b8d80e6e30abc8e265ed3533ab55e4655392fdbb9577e781f9a. Provaemmunicipais/_indice/_revisao-raiz-v3-20261016; runtimepypdf /Users/joaodavisn/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -I. PrimeiroensaioPythondefaultsem pypdf foi limitaçãoambiente, resolvida noenvexistente. Diffv3revisado, falta aprovação raiz22páginas/geometry/casosnegativos.
+- Município173proposta f6e70827…c7df071/manifestod338691a…f7d2b:503p3PDF,88corposiguais,81propostas(73MD/8refs),4retidos AM7DE93EC4/43D6B4FA eRO36D0648C/D60FB958. Nenhumcanônico/vivoalterado. Agenteagoracoteja81+4individualmente integralmente.
+- Federal13rascunhos27páginasaindarevisão célulaa célula independente doparser;5018v1retiradoporabsorverpontilhados,v2isolado. 5745temdivergênciadeversão(coletâneanãotem2entradasHTML);5585valorescontraditóriosimpressospreservados,nãoinferirporsoma. Nada13aplicado. MGagenterecupera212footerindividualmente;12propostasantecessorasfora14691,semapply. Goal100%ativo,semreduçãodemetas.
+
 ## Coletaneas3 aplicadas pela raiz — 16/10/2026
 
 - Raiz aprovou3atos/18páginas lidas e re-renderizadas doPDForiginal e derivado comPNG byteidêntico;2deltasadicionais(4743Art24§3de;5515Art13ponto) emV3. Prova e0555938…cb002. Identidade própria/índice/data/fecho/tipo/formato/GFMcaracteres/pontuação conferidos3,0erros/avisos.
