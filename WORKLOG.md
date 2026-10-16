@@ -1,5 +1,43 @@
 # Continuação da coleta
 
+## Correção GFM de tachados adjacentes — 16/10/2026
+
+- cmarkgfm confirmou quatro tildes literais na junção entre trechos tachados
+  com negrito diferente. Correção mínima une somente delimitadores gerados
+  adjacentes; conserva espaços, conteúdo, negrito/itálico e o alcance do tachado.
+- Candidato c279938417256fe46782d45df2884aad8ecd2973b266f9629cbf15011e2efb93
+  sobre o conversor publicado5f175. Validado com10fixtures,170SC reais no
+  GFM (caracteres e estilos),20HTML semtachado byteiguais;10SC afetados
+  corrigidos, metadados byteiguais e snapshot íntegro antes da escrita.
+- Prova estaduais/_auditoria_tachado_adjacente_20261016.json; backup10
+  estaduais/SC/_indice/_reparos-tachado-adjacente-20261016/md-antes.jsonl.gz.
+  Staging do core usa exclusivamente blob c279; workingtree mantém tabelas
+  do agente estados, combinado dfde44b…, sem publicar tabelas ainda.
+- Sem adição de normas neste envio; relatório de progresso regenerado no
+  commit por hook. Inspeção GFM aqui é semântica, não teste visual no navegador.
+
+## Confirmação pública RSF69 — 16/10/2026
+
+- Publicado deee7311161, RSF69 completa e documentação de revisão/replay.
+  PROGRESSO.md confirmado pela API do GitHub, blob
+  9af7dc46174bc7a6b14d9e05ed7f43bf7288321b: 699.137 documentos,
+  699.113/~11.768.799 com meta (5,9%), 24 sem meta. Índice vazio confirmado.
+  SVG renderizado em /tmp/progresso-rsf69.png e visto sem cortes.
+- Root validou 36 hashes do manifesto, helper --auditar, AST, formato do
+  único MD e diff-check. Push concluído em _log_push_rsf69_20261016.txt.
+- Levantamento inicial ES14 tachados: todos reproduzem byte exato do corpo
+  antigo com conversor95aadd e crescem ao restaurar tachado com5f175; zero
+  tabelas, uma imagem Brasao/brasao por fonte. Charset decodificado por comum,
+  sem mojibake da auditoria antiga. Nenhum desses14 foi alterado ou liberado;
+  ainda exige contexto integral, referências/anexos e prova da imagem.
+- Municipal achou perdas visuais concretas em RS53969/2018 p3 (medalhas),
+  RS53894/2018 p2 (tabela e nota de cifras ocultas), RS54083/2018 p16
+  (formulário vetorial). Reparo offline autorizado após inventário, sem Git.
+- Critérios DOU328 aprovados para dossiê individual de limites/SHAs, ressalva
+  de que ausência de assinatura/artigos exige contexto, não rejeição automática.
+  Estados mantém core/tabelas retidos até resolver integração RJ sem liberar
+  imagens normativas por referência remota. Objetivo 100% segue ativo.
+
 ## RSF 69/1978 revisada e progresso por commit — 16/10/2026
 
 - SC170 publicado em deea03bfc8f: 699.136 documentos; PROGRESSO.md público

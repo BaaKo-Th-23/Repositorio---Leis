@@ -156,17 +156,24 @@ def render_runs(runs):
         else:
             merged.append([text, b, i, strike])
     out = []
+    previous_strike = False
     for text, b, i, strike in merged:
         core = text.strip(" ")
         if not re.search(r"\w", core) and not (strike and core.strip()):
             # só espaço/pontuação: formatação não acrescenta nada
             out.append(escape_inline(text))
+            previous_strike = False
             continue
         lead = " " if text.startswith(" ") else ""
         trail = " " if text.endswith(" ") else ""
         mark = ("~~" if strike else "") + ("**" if b else "") + ("*" if i else "")
         core = escape_inline(core)
-        out.append(f"{lead}{mark}{core}{mark[::-1]}{trail}" if mark else f"{lead}{core}{trail}")
+        rendered = f"{lead}{mark}{core}{mark[::-1]}{trail}" if mark else f"{lead}{core}{trail}"
+        if previous_strike and strike and out[-1].endswith("~~") and rendered.startswith("~~"):
+            out[-1] = out[-1][:-2] + rendered[2:]
+        else:
+            out.append(rendered)
+        previous_strike = strike
     s = "".join(out)
     s = re.sub(r" *\n *", "\n", s)
     s = re.sub(r" {2,}", " ", s).strip()
