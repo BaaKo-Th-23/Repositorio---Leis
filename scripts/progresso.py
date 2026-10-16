@@ -14,9 +14,11 @@ planejar. As duas coisas precisam de correção humana, por isso aparecem no fim
 import argparse
 import collections
 import datetime as dt
+import fnmatch
 import glob
 import os
 import sys
+import subprocess
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from plano import FASES, PLANO, por_setor  # noqa: E402
@@ -56,6 +58,42 @@ def medir():
             cobertas.add(os.path.relpath(alvo, RAIZ))
         medidas.append((item, n))
     return medidas, cobertas
+
+
+def medir_git():
+    """Conta o index que será publicado, sem incluir downloads ainda não adicionados."""
+    saida = subprocess.check_output(["rtk", "proxy", "git", "ls-files", "--cached", "-z"], cwd=RAIZ)
+    arquivos = {p for p in saida.decode().split("\0") if p.endswith(".md")
+                and not any(c.startswith(("_", ".")) for c in p.split("/"))}
+    contagem = collections.Counter()
+    for path in arquivos:
+        partes = path.split("/")
+        contagem[path] += 1
+        for n in range(1, len(partes)):
+            contagem["/".join(partes[:n])] += 1
+    por_profundidade = collections.defaultdict(list)
+    for path in contagem:
+        por_profundidade[path.count("/")].append(path)
+    medidas, cobertas = [], set()
+    for item in PLANO:
+        alvos = set()
+        for padrao in item.caminho.split(","):
+            padrao = padrao.strip()
+            if "*" in padrao:
+                alvos.update(p for p in por_profundidade[padrao.count("/")]
+                             if fnmatch.fnmatchcase(p, padrao))
+            elif padrao in contagem:
+                alvos.add(padrao)
+        medidas.append((item, sum(contagem[p] for p in alvos)))
+        cobertas.update(alvos)
+    achadas = collections.Counter()
+    for path in arquivos:
+        partes = path.split("/")
+        if len(partes) == 1:
+            continue
+        if not any("/".join(partes[:n]) in cobertas for n in range(1, len(partes))):
+            achadas["/".join(partes[:-1][:3])] += 1
+    return medidas, achadas
 
 
 def orfas(cobertas):
@@ -98,7 +136,7 @@ def esc(s):
 def cor(atual, meta):
     if atual == 0:
         return VAZIO
-    return CHEIO if atual >= meta * 0.995 else PARCIAL
+    return CHEIO if atual >= meta else PARCIAL
 
 
 def barra(y, atual, meta, altura=9):
@@ -183,7 +221,8 @@ def markdown(medidas, achadas):
     L = ["# Progresso", "",
          f"Gerado por `scripts/progresso.py` em {dt.date.today():%d/%m/%Y}. O escopo está em",
          "`scripts/plano.py`; os números de **meta** são estimativas do tamanho de cada série, não",
-         "contagens oficiais. Séries encerradas (decretos-leis, leis delegadas) marcam 100%.", "",
+         "contagens oficiais. O percentual mede volume diante das metas; não comprova integralidade",
+         "das fontes nem qualidade de cada conversão. Lacunas continuam abertas até verificação.", "",
          f"**{mil(total_a)} de ~{mil(total_m)} normas — {100 * total_a / total_m:.1f}%**", "",
          "![progresso](progresso.svg)", ""]
     atual_item = {id(i): n for i, n in medidas}
@@ -198,12 +237,12 @@ def markdown(medidas, achadas):
             if not do_fase:
                 continue
             a, m = sum(atual_item[id(i)] for i in do_fase), sum(i.meta for i in do_fase)
-            L += [f"### {setor} — {mil(a)} / ~{mil(m)} ({100 * a / m:.0f}%)", "",
+            L += [f"### {setor} — {mil(a)} / ~{mil(m)} ({100 * a / m:.1f}%)", "",
                   "| | Tipo de norma | Tem | Meta | Pasta | Fonte |",
                   "| :-: | --- | ---: | ---: | --- | --- |"]
             for i in do_fase:
                 n = atual_item[id(i)]
-                marca = "✅" if n >= i.meta * 0.995 else ("🟦" if n else "⬜️")
+                marca = "✅" if n >= i.meta else ("🟦" if n else "⬜️")
                 pasta = ", ".join(f"`{p.strip()}`" for p in i.caminho.split(","))
                 L.append(f"| {marca} | {i.nome} | {mil(n)} | {mil(i.meta)} | {pasta} | {i.fonte} |")
             L.append("")
@@ -221,10 +260,14 @@ def markdown(medidas, achadas):
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--conferir", action="store_true", help="só imprime o resumo, não grava arquivos")
+    ap.add_argument("--git-index", action="store_true", help="mede somente arquivos adicionados ao próximo commit")
     args = ap.parse_args()
 
-    medidas, cobertas = medir()
-    achadas = orfas(cobertas)
+    if args.git_index:
+        medidas, achadas = medir_git()
+    else:
+        medidas, cobertas = medir()
+        achadas = orfas(cobertas)
     total_a = sum(n for _, n in medidas)
     total_m = sum(i.meta for i in PLANO)
 

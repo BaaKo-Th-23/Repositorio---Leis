@@ -8,8 +8,9 @@ O campo `meta` passa por três estados, nesta ordem. Começa como **estimativa**
 universo de cada tipo, montada a partir da numeração mais recente da série e da ordem de grandeza
 que a fonte declara — serve para dimensionar a barra, não para afirmar um número oficial. Quando o
 índice da fonte é baixado, vira o **tamanho real do índice**: é o caso das séries federais, todas
-contadas em `federal/_indice/`. Quando a coleta termina, vira a **contagem do acervo** — por isso
-as séries encerradas (decretos-leis, leis delegadas) marcam 100%.
+contadas em `federal/_indice/`. O fim de uma execução não reduz a meta ao volume coletado:
+falhas e itens sem texto continuam sendo lacunas. Alterar a meta exige evidência do índice
+oficial, com duplicatas e recortes identificados.
 
 `caminho` é relativo à raiz do repositório, aceita `*` (um nível) para varrer as 27 unidades
 federativas ou os municípios, e aceita vários caminhos separados por vírgula quando um mesmo item
@@ -51,7 +52,7 @@ PLANO = [
          "Planalto + normas.leg.br"),
     Item("Atos do Congresso", "Resoluções do Senado Federal", "federal/resolucoes-senado", 6578, 1,
          "normas.leg.br"),
-    Item("Atos do Congresso", "Resoluções da Câmara dos Deputados", "federal/resolucoes-camara", 1500, 1,
+    Item("Atos do Congresso", "Resoluções da Câmara dos Deputados", "federal/resolucoes-camara", 2300, 1,
          "camara.leg.br"),
     Item("Atos do Congresso", "Resoluções do Congresso Nacional e da Revisão Constitucional",
          "federal/resolucoes-congresso", 95, 1,
