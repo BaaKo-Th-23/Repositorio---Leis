@@ -1,5 +1,32 @@
 # Continuação da coleta
 
+## SP71 índice conferido — 16/10/2026
+
+- Stage93587exit0; auditoria15390exit0:71 canônicos,0erros/avisos. Verificador46344exit0:324blobs/20.585.726bytes idênticos ao disco;71SHA256 iguais à aprovação;scope exato,nenhum path extra. Whitespace preservado em fontes/provas congeladas;canônicos somente hardbreaks/EOF. Provas e helper duráveis na revisão raiz. Commit/push pendentes;PROGRESSO.md e progresso.svg serão recalculados do índice pelo hook ativo.
+
+## SP71 aprovado e aplicado pela raiz — 16/10/2026
+
+- Aprovaçãod08a4667e4217a0d77907c4a25e03359c81d7ea18f94bbafa47f5d9f16b12f3f;71atos705–775novos,corpos/fechosintegralmentelidos. XMLoficial71IDs/163relações(nãonormasextras),número/data/tipo/URL/header/fechoconferidos,zeroHEADduplicados. ZIP10MB+recorteXMLpreservados. Fontecapturada/71null,semJSONseletor/sematualidadejurídicainferida.
+- Formato71zero/GitHubDOMigual/carácteresfontesiguais/máscarasfontesincluídas;105Bextrasapenasrótulosconvencionais.68corposbyteiguais,705rawstrong°foradoB e772/775pontoBrestaurado. Notas716/742corrigidasemoverlay. Nenhumcore/colletor/metageralalterado.
+-71canônicoscopiadosSHAexatosapóscheckbaselines/snapshots. Lista/tmp/SP71-publicacao-paths.txt;stage/índice/formato/commit/pushpendentes,PROGRESSOviahook.
+- RFBcorreçãocontrato:frontendoficialenumeraoriginal/exclusiva/conjuntacomoOriginal(provae9649ce3…e52e);conjuntanãocontradizrótulooriginalsozinho. Retificações/anexos/segmentoscontinuamretidosporfidelidadeprópria. DEC2000manifestofinal3f5dab56…8c487aguardaraiz;V4municipal796emcurso.
+
+## SP71 raiz cotejado; primários em execução — 16/10/2026
+
+- Todas71fontes705–775 integralmente lidas;720–775 parseHTML5independente igualperfil. Balanços/contratos/processos são objetos externos, não anexos próprios novos. Notas716/742corrigidasoverlay3a7d5d0d…39b00 semalterarnormas.
+- SemJSONseletor,versãooriginalnãoéprovada;overlay70sóversãofontecapturada,71null. Root705710a90af…994b9usaHTMLstrongArtigo1./2.com°foraigualfonte;772/775restauram2pontosB. Manifestomínimo0997fb47d28e3e3e67bc2dc8c8beeecf5f3288188c9c5b12d9800f82a7294e81:68corposbyteiguais+3alterados,ensaioexato26abb5nãoadotado.
+- DiagnósticoCSSrefinado:0itálicoperdido,2pontosBfaltantes+105Bextraemrótulosnormativos(convençãorepo),nãoeraomissãoCSSgeneralizada. NÃOremover105Bparaigualdadecega. RootCSS90233exit0final:71textosiguais,0máscarasfontesperdidas,105Bsórótulospermitidos. GitHub68002exit0:71formatos0erros/avisos,POST103117bytes,DOMtexto/B/I/del/u/sup/sub/títulos/listas/tabelasigualGFM.
+- Primários21031ativo(script/tmp/primarios-sp71-raiz.py),aguardarterminalantesaprovar/aplicar. Diagnósticosanteriores:IdNormarepeteporrelacionamento(nãoatoextra);713/714assinaturasSIDNEYsemrótuloPresidente;scriptcorrigidosemnormalizarfonte. ZIP10.226.190bytesnãoHEAD,serápreservadocomrecorteXML. Canônicos/índiceintactos. Helpers/provasemrevisao-raiz-sp71.
+- FederalDEC2000fechamento;municipalV4gate796PID81761/sessão48272emcurso,fila/canônicosintactos;estadosSP20rescongeladoeavançaDFv2.
+
+## Recuperação7 publicada — 16/10/2026
+
+- Commit6593c56e63f354ed269b1ed818cfe3e990c8e945,73649exit0,push12870exit0(log_log_push_recuperacao7_20261016.txt). APIpúblicaPROGRESSO.mdSHAa146e16f111042a0ba031fcd4933d9958931830bigualHEAD. Total717.249docs/717.224/~11.768.799(6,1%),25semmeta. Índice72paths+PROGRESSO/progressoSVGviahook;7novosatos,nenhumhistóricoreescrito. Goal100%ativo.
+- RootMGfooter:1atoDSN1780/2006lidointegralmente,3snapshotsSHA/sourceconteúdoexatos,notaautoral2002preservada. revisao-raiz-footer-parcial-20261016.json. Outros40186/44031nãointegralmentelidospoisoutputtruncou;formulários44031pedemrevisãoestrutural,nãoconclusãodelacuna. SemaplicarMG. MG220+81propostasaguardamraiz.
+- Municipal85/85concluídos,44pontuação/coberturalimitada+41pendências;revisão29f2521810bf0f02027c76723236008d28d7883d64f99279459f806fb4e7eb80/manifesto07ede84eac9a27bf48fd8fe35a42afd3e37c4da05b261971560549a4141e0ebc. V4isoladacompostos/estilosemcurso,preservandoV3/proposta173/fila/canônicos.
+- FederalagentefrenteamplaDEC/RFB:coletoresreaisDEC76664/RFB40381/DOU10422ativos,semreinício.DEC139127índice/~37450processados;RFB115238índicecompletoapenasíndice/~49kcorpos. RFB131856éretificação2023depigrafeADE67/2002apesarintegro:true/visaooriginal;retidonãopromoverflagscomoíntegra. AuditoriacoorteDECofflineemcurso,209primeiros195gates/14retenções(nãoaprovaçãopúblicaainda).
+- Estadosfrenteampla50104inventárioHEADfixoemcurso,71DLGSP705–775contextualmentelidosaguardamXML/data/HEAD/GFM/fechamento;HTMLpreservadosemJSONdeescolhaurlIntegraOriginal,limitaçãoexplícita. ColetoresSP10350/PE28521/RJ35842/RS75566observadosvivos,nãotocados.
+
 ## Recuperação7 índice/formato verificados — 16/10/2026
 
 - Stage21883exit0;formato3102:7canônicos,0erros/avisos. Verificação63603:75blobsíndicebytesexatos,68pathsnovos/modificados+7gzipfontesjápúblicasHEADbytesexatos;nenhumpathinesperado. Scopeinicialexigiratodos75nodifferaestritoemexcesso;resolvidocomprovabyteHEADpara7fontesinalteradas.
