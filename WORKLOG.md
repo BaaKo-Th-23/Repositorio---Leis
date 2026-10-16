@@ -1,5 +1,30 @@
 # Continuação da coleta
 
+## RSF 69/1978 revisada e progresso por commit — 16/10/2026
+
+- SC170 publicado em deea03bfc8f: 699.136 documentos; PROGRESSO.md público
+  conferido pela API, blob c11230fa1d05aadd222ee0d84b317c0be1598b5a.
+- Hook pre-commit ativo em .githooks: gera PROGRESSO.md e progresso.svg a partir
+  do índice Git e os inclui em todo commit, conforme pedido permanente.
+- Próximo envio: RSF69/1978, data própria 19/09/1978; PDF oficial DSF8017,
+  páginas 16–24, transcrição integral revisada por dois agentes e conferência
+  raiz da identidade e das fronteiras inicial/final. Auditoria offline passou;
+  manifesto federal/_lote_rsf69_1978_20261016.json, 34b97d459b181792…;
+  documento eae9aca9d2cc4cdd…, corpo 301b5a850c830350…; sem ambiguidades
+  restantes conhecidas. Preservadas grafias e falhas impressas do original.
+- PE4113 aplicado e não publicado: remove apenas cauda HTML estranha, backups
+  completos anteriores, metadados/identidade/corpo normativo preservados;
+  formato 0 erros, 16 datas desconhecidas anteriores. Ledger
+  estaduais/PE/_correcoes_limite_html_20261016.json, 86983c3fc4190df2….
+- Tabelas semânticas e SC10 permanecem retidos: replay RJ133 identificou
+  imagens decorativas em tabelas de layout; corrigir escopo do caller com
+  evidência antes de liberar. Não há aprovação visual GFM por navegador.
+- Agente federal revisa 328 alertas DOU individualmente; agente municipal
+  inventaria 2.308 PDFs/6.729 páginas e 1 OLE offline, sem nova coleta HTTP.
+  Fila municipal 94555 prepara candidatos, sem aplicação automática.
+- Objetivo 100% continua ativo; volume publicado não prova integralidade
+  de todo o acervo. Lotes amplos BA/PE/DOU/estaduais aguardam seus gates.
+
 ## Restauração SC170 e correções de delimitadores — 16/10/2026
 
 - Próximo envio:170SC restaurados do HTMLoficial com~~nas partes tachadas,
