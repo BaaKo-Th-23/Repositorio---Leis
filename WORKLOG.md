@@ -125,6 +125,26 @@ O último relatório disponível é antigo e será regenerado após a auditoria 
 - Próxima correção de metadados federais: explicitar complemento/reedição no número
   oficial sem alterar corpos. Publicação atual conserva títulos/URNs corretos.
 
+### Lote estadual seguinte e catálogo RFB
+
+- Federal publicado em `6b9308d1da3`, push confirmado até esse SHA.
+- Lote estadual preparado: 34.488 Markdown novos e quatro com data de obtenção
+  atualizada; auditoria de 34.492 encontrou somente a publicação 02/03/2054 no
+  cadastro PE 76732. Valor bruto/publicação original preservados, data_publicacao
+  vazia sem inferir 2024; caso corrigido revalidado. Diff passou; parsers preparados
+  têm sintaxe válida, incluindo proteção PE contra calendário inválido/futuro.
+- Metas federais atualizadas pelos registros e URNs únicos dos índices oficiais:
+  LEI 16.883 (16.749 numeradas + 134 não numeradas), LCP 239, DEL 12.378
+  (12.369 DEL + nove DEL-mpv). Não usar estimativas antigas inferiores ao acervo.
+- RFB índice anual agora cobre 115.238 IDs únicos em 227 anos e declara completo;
+  isso é índice, não 115.238 textos convertidos. Publicação do lote de textos está
+  retida para revisar deduplicação: exige identidade oficial além de corpo/DOU
+  da publicação própria. URL meramente citada no corpo não prova equivalência.
+- Novas categorias municipais (decretos legislativos e resoluções) precisam de
+  suporte a universo nacional desconhecido no progresso; não extrapolar de duas
+  Câmaras nem baixar as metas existentes. Próximo ciclo espera orgânicas 17034,
+  PID 28620/sessão 37711, abortando se os caminhos ainda não estiverem no plano.
+
 A pedido do usuário, todo commit deve regenerar `PROGRESSO.md` e `progresso.svg`
 contando o index do Git (`scripts/progresso.py --git-index`), para não contabilizar
 downloads que ainda não entraram no lote publicado. O hook `.githooks/pre-commit`

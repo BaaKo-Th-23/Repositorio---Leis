@@ -5,9 +5,14 @@ Texto: API v2 da ALMG; XML com o HTML da norma em <conteudo>.
 """
 import csv
 import datetime as dt
+import gzip
 import os
+import re
 import sys
+import threading
+import urllib.parse
 import xml.etree.ElementTree as ET
+from html.parser import HTMLParser
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 from comum import RAIZ_ESTADUAIS, Rede, caminhos, executar, gravar, html_para_md  # noqa: E402
@@ -31,6 +36,36 @@ TIPOS = {
     "DLB": ("deliberacoes", "Deliberação"),
 }
 rede = Rede(rps=4)
+bloqueado = threading.Event()
+
+
+class TextoNorma(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=False)
+        self.nivel = 0
+        self.partes = []
+
+    def handle_starttag(self, tag, attrs):
+        if self.nivel or (tag == "span" and "textNorma" in dict(attrs).get("class", "").split()):
+            if tag == "span":
+                self.nivel += 1
+            self.partes.append(self.get_starttag_text())
+
+    def handle_endtag(self, tag):
+        if self.nivel:
+            self.partes.append(f"</{tag}>")
+            if tag == "span":
+                self.nivel -= 1
+
+    def handle_data(self, texto):
+        if self.nivel:
+            self.partes.append(texto)
+
+    def handle_entityref(self, nome):
+        self.handle_data(f"&{nome};")
+
+    def handle_charref(self, nome):
+        self.handle_data(f"&#{nome};")
 
 
 def indice():
@@ -49,7 +84,7 @@ def indice():
             for r in csv.DictReader(f):
                 if r["Tipo"] in TIPOS:
                     itens.append(r)
-    return itens
+    return list({(r["Tipo"], r["Numero"], r["Ano"], r["Complemento"]): r for r in itens}.values())
 
 
 def processar(r):
@@ -61,17 +96,53 @@ def processar(r):
     md, fonte = caminhos(UF, pasta, r["Ano"], slug)
     if os.path.exists(md):
         return "pulado", None
+    if bloqueado.is_set():
+        return "fonte_bloqueada", None
     url = r["LinkTextoAtualizado"] or r["LinkTextoOriginal"]
     if not url:
         return "sem_texto", {"norma": slug, "motivo": "sem link"}
-    st, dados, _ = rede.get(url, "application/xml")
-    if st != 200 or not dados:
-        return "sem_texto", {"norma": slug, "url": url, "http": st}
-    conteudo = ET.fromstring(dados).findtext(".//conteudo") or ""
+    cache = os.path.join(RAIZ_ESTADUAIS, UF, "_indice", "documentos", slug + ".xml.gz")
+    os.makedirs(os.path.dirname(cache), exist_ok=True)
+    if os.path.exists(cache):
+        with gzip.open(cache, "rb") as f:
+            dados = f.read()
+        st = 200
+    else:
+        st, dados, _ = rede.get(url, "application/xml")
+        if st in (401, 403, 429):
+            bloqueado.set()
+            return "sem_texto", {"norma": slug, "url": url, "http": st}
+        if st == 200 and dados:
+            with gzip.open(cache, "wb") as f:
+                f.write(dados)
+    try:
+        conteudo = ET.fromstring(dados).findtext(".//conteudo") or "" if st == 200 and dados else ""
+    except ET.ParseError:
+        conteudo = ""
+    # A página HTML oficial também serve o original; nunca trocar uma compilação por original.
+    if not conteudo.strip() and not r["LinkTextoAtualizado"]:
+        url_html = f"https://www.almg.gov.br/legislacao-mineira/texto/{r['Tipo']}/{r['Numero']}/{r['Ano']}/"
+        if r["Complemento"]:
+            url_html += "?comp=" + urllib.parse.quote(r["Complemento"])
+        sh, pagina, _ = rede.get(url_html)
+        if sh in (401, 403, 429):
+            bloqueado.set()
+        if sh == 200:
+            with gzip.open(cache.replace(".xml.gz", ".pagina.html.gz"), "wb") as f:
+                f.write(pagina)
+            parser = TextoNorma()
+            parser.feed(pagina.decode("utf-8", errors="replace"))
+            conteudo = "".join(parser.partes)
+            url = url_html
     if not conteudo.strip():
         return "sem_texto", {"norma": slug, "url": url, "motivo": "conteúdo vazio"}
     corpo = html_para_md(conteudo)
     d, m, a = r["DataLegislacao"].split("/") if r["DataLegislacao"] else ("", "", "")
+    try:
+        data = dt.date(int(a), int(m), int(d))
+        data = data.isoformat() if data <= dt.date.today() else ""
+    except ValueError:
+        data = ""
     numero = r["Numero"] + (f"-{r['Complemento']}" if r["Complemento"] else "")
     titulo = f"{nome} nº {numero}, de {r['DataLegislacao']}" if r["Tipo"] != "CON" else f"Constituição do Estado de Minas Gerais ({r['Ano']})"
     situacao = (r.get("Situacao") or "").strip()
@@ -80,13 +151,15 @@ def processar(r):
         ("uf", UF),
         ("tipo", nome),
         ("numero", numero),
-        ("data", f"{a}-{m}-{d}" if a else ""),
+        ("data", data),
         ("ementa", " ".join((r["Ementa"] or "").split())),
         ("situacao", situacao.capitalize()),
         ("revogada", situacao.upper().startswith("REVOGAD")),
         ("versao_texto", "atualizada" if r["LinkTextoAtualizado"] else "original"),
         ("fonte", url.replace("conteudo=true&", "")),
     ]
+    if r["DataLegislacao"] and not data:
+        meta.append(("data_na_fonte", r["DataLegislacao"]))
     gravar(md, fonte, conteudo, meta, f"# {titulo}\n\n{corpo}")
     return "ok", None
 

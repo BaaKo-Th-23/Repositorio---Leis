@@ -1,113 +1,168 @@
-"""Rio de Janeiro — Legislação Estadual da ALERJ (Lotus Notes, alerjln1.alerj.rj.gov.br/contlei.nsf).
+"""Rio de Janeiro — wrapper público oficial da ALERJ, com cache e lotes por página.
 
-O servidor é muito lento (≈1 min por página) e instável: timeouts longos, poucas requisições em paralelo,
-índice salvo página a página para retomar.
-Índice: formulários LeiOrdInt / LeiCompInt / EmendaInt com Start/Count.
-Texto: documento ?OpenDocument (texto da lei com situação).
+Segue os links reais de paginação Lotus Notes. Cada página é coletada antes da próxima;
+assim, uma interrupção não exige reconstruir o índice inteiro para salvar os textos.
 """
+import base64
+import datetime as dt
+import fcntl
+import gzip
+import hashlib
 import html as htmllib
 import json
 import os
 import re
 import sys
-import time
+import threading
+import urllib.parse
+from pathlib import Path
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
-from comum import RAIZ_ESTADUAIS, Rede, caminhos, decodificar, executar, gravar, html_para_md  # noqa: E402
+from comum import RAIZ_ESTADUAIS, Rede, caminhos, decodificar, executar, gravar, html_para_md
+from datas import data_do_texto
 
 UF = "RJ"
-H = "http://alerjln1.alerj.rj.gov.br"
-B = f"{H}/contlei.nsf"
+BASE = "https://www3.alerj.rj.gov.br/lotus_notes/default.asp"
 FORMS = {
-    "EmendaInt": ("emendas-constitucionais", "Emenda Constitucional", "ec"),
-    "LeiCompInt": ("leis-complementares", "Lei Complementar", "lc"),
-    "LeiOrdInt": ("leis-ordinarias", "Lei Ordinária", "lei"),
+    "LeiOrdInt": (53, "leis-ordinarias", "Lei Ordinária", "lei"),
+    "LeiCompInt": (52, "leis-complementares", "Lei Complementar", "lc"),
+    "EmendaInt": (51, "emendas-constitucionais", "Emenda Constitucional", "ec"),
 }
-POR_PAGINA = 30  # páginas maiores derrubam a conexão
-LINHA = re.compile(r'href="(/contlei\.nsf/[0-9a-f]+/[0-9a-f]+\?OpenDocument)"[^>]*>(.*?)</a>(.*?)</tr>', re.S | re.I)
-rede = Rede(rps=1)
+CACHE = Path(RAIZ_ESTADUAIS) / UF / "_indice" / "paginas-wrapper"
+rede = Rede(rps=3)
+bloqueado = threading.Event()
 
 
 def limpar(s):
     return " ".join(htmllib.unescape(re.sub(r"<[^>]+>", " ", s)).split())
 
 
-def indice():
-    pasta = os.path.join(RAIZ_ESTADUAIS, UF, "_indice", "paginas")
-    os.makedirs(pasta, exist_ok=True)
+def url_publica(form, route):
+    codigo = FORMS[form][0]
+    return f"{BASE}?id={codigo}&url=" + urllib.parse.quote(base64.b64encode(route.encode()).decode(), safe="")
+
+
+def obter(form, route):
+    cache = CACHE / form / (hashlib.sha256(route.encode()).hexdigest() + ".html.gz")
+    if cache.exists():
+        return gzip.decompress(cache.read_bytes())
+    if bloqueado.is_set():
+        raise RuntimeError("ALERJ bloqueou o acesso; retomar somente após verificar disponibilidade")
+    st, raw, ct = rede.get(url_publica(form, route), tentativas=2, timeout=180)
+    if st in (401, 403, 429):
+        bloqueado.set()
+    if st != 200 or not raw:
+        raise RuntimeError(f"ALERJ HTTP {st}: {route}")
+    cache.parent.mkdir(parents=True, exist_ok=True)
+    cache.write_bytes(gzip.compress(raw))
+    return raw
+
+
+def corpo_normativo(pagina):
+    # O HTML legado contém divs desbalanceadas; os marcadores Notes delimitam o texto.
+    inicio = re.search(r'<a\s+name\s*=\s*["\']TOPO["\']', pagina, re.I)
+    if not inicio:
+        return ""
+    trecho = pagina[inicio.start():]
+    fim = re.search(r'<a\s+name=["\']_Section2["\']|<a[^>]+id="A2"', trecho, re.I)
+    if fim:
+        trecho = trecho[:fim.start()]
+    return html_para_md(trecho)
+
+
+def pagina_indice(form, route):
+    raw = obter(form, route)
+    pagina = decodificar(raw, "text/html; charset=utf-8")
     itens = {}
-    for form in FORMS:
-        inicio = 1
-        while True:
-            cache = os.path.join(pasta, f"{form}-{inicio}.json")
-            if os.path.exists(cache):
-                linhas = json.load(open(cache, encoding="utf-8"))
-            else:
-                for rodada in range(10):  # servidor instável: espera e tenta de novo
-                    try:
-                        st, dados, ctype = rede.get(f"{B}/{form}?OpenForm&Start={inicio}&Count={POR_PAGINA}", timeout=900, tentativas=3)
-                        if st == 200:
-                            break
-                    except RuntimeError:
-                        pass
-                    time.sleep(300)
-                else:
-                    raise RuntimeError(f"{form} Start={inicio}: indisponível")
-                linhas = []
-                for href, numero, resto in LINHA.findall(decodificar(dados, ctype)):
-                    cels = [limpar(c) for c in re.findall(r"<td[^>]*>(.*?)</td>", resto, re.S)]
-                    linhas.append({"form": form, "href": href, "numero": limpar(numero), "colunas": cels})
-                json.dump(linhas, open(cache, "w", encoding="utf-8"), ensure_ascii=False)
-            for ln in linhas:
-                itens[ln["href"]] = ln
-            print(f"[{UF}] índice {form} a partir de {inicio}: +{len(linhas)} (total {len(itens)})", flush=True)
-            if len(linhas) < POR_PAGINA:
-                break
-            inicio += POR_PAGINA
-    return list(itens.values())
+    for tr in re.findall(r"<tr[^>]*>(.*?)</tr>", pagina, re.S | re.I):
+        m = re.search(r'data-role="(/contlei\.nsf/[0-9a-f]+/[0-9a-f]+\?OpenDocument)"[^>]*>(.*?)</a>', tr, re.S | re.I)
+        if not m:
+            continue
+        cols = [limpar(c) for c in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S | re.I)]
+        if len(cols) < 5 or not re.fullmatch(r"\d{4}", cols[1]):
+            raise RuntimeError(f"linha de índice desconhecida: {form} {route}")
+        href = htmllib.unescape(m[1])
+        itens[href] = {"form": form, "href": href, "numero": limpar(m[2]),
+                       "ano": cols[1], "situacao": cols[3], "ementa": cols[4]}
+    links = [htmllib.unescape(x) for x in re.findall(r'data-role="([^"]+)"[^>]*shape=', pagina)]
+    atuais = re.search(r"[?&]Start=(\d+)", route)
+    inicio = int(atuais[1]) if atuais else 1
+    proximos = [(int(m[1]), x) for x in links
+                if (m := re.search(r"[?&]Start=(\d+)", x)) and int(m[1]) > inicio]
+    proximo = min(proximos)[1] if proximos else None
+    registro = {"rota": route, "itens": list(itens.values()), "proximo": proximo}
+    destino = CACHE / form / (hashlib.sha256(route.encode()).hexdigest() + ".json")
+    destino.write_text(json.dumps(registro, ensure_ascii=False))
+    return registro
 
 
 def processar(it):
-    pasta, nome, prefixo = FORMS[it["form"]]
-    cols = it["colunas"]
-    ano = next((c for c in cols if re.fullmatch(r"(18|19|20)\d\d", c)), "sem-ano")
+    _, pasta, nome, prefixo = FORMS[it["form"]]
     numero = re.sub(r"\D", "", it["numero"])
-    unid = it["href"].split("/")[-1].split("?")[0]
-    md, fonte = caminhos(UF, pasta, ano, f"{prefixo}-{numero or 'sn'}-{ano}-{unid[:10]}")
+    uid = it["href"].split("/")[-1].split("?")[0]
+    md, fonte = caminhos(UF, pasta, it["ano"], f"{prefixo}-{numero}-{it['ano']}-{uid[:10]}")
     if os.path.exists(md):
         return "pulado", None
-    url = H + it["href"]
-    st, bruto, ctype = rede.get(url, timeout=900, tentativas=6)
-    if st != 200 or not bruto:
-        return "sem_texto", {"url": url, "http": st}
-    html = decodificar(bruto, ctype)
-    corpo = html_para_md(html)
-    if len(re.sub(r"\W", "", corpo)) < 40:
-        return "sem_texto", {"url": url, "motivo": "texto vazio"}
+    if bloqueado.is_set():
+        return "fonte_bloqueada", None
+    raw = obter(it["form"], it["href"])
+    pagina = decodificar(raw, "text/html; charset=utf-8")
+    corpo = corpo_normativo(pagina)
     plano = re.sub(r"[*\\#]", "", corpo)
-    situacao = re.search(r"\[\s*([^\]]{3,40})\s*\]", plano[:1500])
-    data = re.search(r"Data da Lei\s*(\d{2})/(\d{2})/(\d{4})", plano)
-    ementa = next((c for c in cols if len(c) > 30), "")
-    titulo = f"{nome} nº {it['numero']}" + (f"/{ano}" if ano != "sem-ano" else "")
-    meta = [
-        ("titulo", titulo),
-        ("uf", UF),
-        ("tipo", nome),
-        ("numero", it["numero"]),
-        ("data", f"{data.group(3)}-{data.group(2)}-{data.group(1)}" if data else ""),
-        ("ementa", ementa),
-        ("situacao", situacao.group(1).strip() if situacao else ""),
-        ("revogada", bool(situacao and situacao.group(1).strip().lower().startswith("revogad"))),
-        ("versao_texto", "texto da base de legislação da ALERJ"),
-        ("fonte", url),
-    ]
-    gravar(md, fonte, bruto, meta, f"# {titulo}\n\n{corpo}")
+    num_rx = r"\b" + r"\.?".join(numero) + r"\b"
+    if (len(re.sub(r"\W", "", corpo)) < 80
+            or not re.search(num_rx, plano[:1000])
+            or not re.search(r"\bArt(?:\.|igo)\s*\d", plano, re.I)):
+        return "sem_texto", {"url": url_publica(it["form"], it["href"]), "motivo": "texto normativo não reconhecido"}
+    m = re.search(r"Data da (?:Lei|Emenda(?: Constitucional)?)\s*(\d{2})/(\d{2})/(\d{4})", plano)
+    data = ""
+    raw_data = ""
+    if m:
+        raw_data = "/".join(m.groups())
+        try:
+            d = dt.date(int(m[3]), int(m[2]), int(m[1]))
+            data = d.isoformat() if d <= dt.date.today() else ""
+        except ValueError:
+            pass
+    else:
+        data = data_do_texto(corpo, numero) or ""
+    titulo = f"{nome} nº {it['numero']}/{it['ano']}"
+    meta = [("titulo", titulo), ("uf", UF), ("tipo", nome), ("numero", it["numero"]),
+            ("data", data), ("ementa", it["ementa"]), ("situacao", it["situacao"]),
+            ("revogada", it["situacao"].lower().startswith("revogad")),
+            ("versao_texto", "texto da base de legislação da ALERJ"),
+            ("fonte", url_publica(it["form"], it["href"])),
+            ("fonte_original", "http://alerjln1.alerj.rj.gov.br" + it["href"])]
+    if raw_data and not data:
+        meta.append(("data_na_fonte", raw_data))
+    gravar(md, fonte, raw, meta, f"# {titulo}\n\n{corpo}")
     return "ok", None
 
 
+def main():
+    limite = int(sys.argv[1]) if len(sys.argv) > 1 else None
+    for form in FORMS:
+        route = f"/contlei.nsf/{form}?OpenForm"
+        vistos, documentos = set(), set()
+        while route and route not in vistos:
+            vistos.add(route)
+            pagina = pagina_indice(form, route)
+            itens = [it for it in pagina["itens"] if it["href"] not in documentos]
+            documentos.update(it["href"] for it in itens)
+            if not pagina["itens"]:
+                raise RuntimeError(f"índice sem normas: {form} {route}")
+            if limite is not None:
+                itens = itens[:limite]
+                limite -= len(itens)
+            print(f"[RJ] {form}: página {len(vistos)}, {len(documentos)} atos indexados", flush=True)
+            executar(UF, itens, processar, workers=3)
+            if bloqueado.is_set() or limite == 0:
+                return
+            route = pagina["proximo"]
+
+
 if __name__ == "__main__":
-    itens = indice()
-    print(f"[{UF}] {len(itens)} normas no índice", flush=True)
-    if len(sys.argv) > 1:
-        itens = itens[: int(sys.argv[1])]
-    executar(UF, itens, processar, workers=3)
+    CACHE.parent.mkdir(parents=True, exist_ok=True)
+    trava = (CACHE.parent / "rj-coleta.lock").open("w")
+    fcntl.flock(trava, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    main()

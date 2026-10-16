@@ -117,11 +117,20 @@ def processar(it):
     if len(re.sub(r"\W", "", corpo)) < 40:
         return "sem_texto", {"id": it["id"], "motivo": "texto vazio"}
     data = re.search(r"(\d{2})/(\d{2})/(\d{4})", it["publicacao"])
+    data_publicacao = ""
+    if data:
+        try:
+            publicada = dt.date(int(data[3]), int(data[2]), int(data[1]))
+            if publicada <= dt.date.today():
+                data_publicacao = publicada.isoformat()
+        except ValueError:
+            pass
     titulo = it["nome"]
     data_norma = data_do_texto(corpo, numero=numero) or ""
     if data_norma:
         try:
-            dt.date.fromisoformat(data_norma)
+            if dt.date.fromisoformat(data_norma) > dt.date.today():
+                data_norma = ""
         except ValueError:
             data_norma = ""
     meta = [
@@ -133,10 +142,12 @@ def processar(it):
         ("ano", ano),
         ("ementa", it["ementa"]),
         ("publicacao", it["publicacao"]),
-        ("data_publicacao", f"{data.group(3)}-{data.group(2)}-{data.group(1)}" if data else ""),
+        ("data_publicacao", data_publicacao),
         ("versao_texto", "atualizada" if tipo_txt == "TEXTOATUALIZADO" else "original"),
         ("fonte", url),
     ]
+    if data and not data_publicacao:
+        meta.append(("data_publicacao_na_fonte", "/".join(data.groups())))
     gravar(md, fonte, trecho, meta, f"# {titulo}\n\n{corpo}")
     return "ok", None
 

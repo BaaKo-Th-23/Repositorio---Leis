@@ -38,13 +38,13 @@ PLANO = [
     Item("Constituição Federal", "Emendas constitucionais e de revisão", "federal/emendas-constitucionais", 172, 1,
          "https://normas.leg.br"),
 
-    Item("Leis federais", "Leis ordinárias (1822–hoje)", "federal/leis-ordinarias", 16700, 1,
+    Item("Leis federais", "Leis ordinárias, numeradas e não numeradas (1822–hoje)", "federal/leis-ordinarias", 16883, 1,
          "Senado (índice) + normas.leg.br (texto)"),
-    Item("Leis federais", "Leis complementares", "federal/leis-complementares", 237, 1, "normas.leg.br"),
+    Item("Leis federais", "Leis complementares", "federal/leis-complementares", 239, 1, "normas.leg.br"),
     Item("Leis federais", "Leis delegadas (série encerrada)", "federal/leis-delegadas", 13, 1, "normas.leg.br"),
     Item("Leis federais", "Leis constitucionais da Carta de 1937 (1938–1946)", "federal/leis-constitucionais", 21, 1,
          "https://www.planalto.gov.br/ccivil_03/LEIS/LCT/Quadro_Lct.htm"),
-    Item("Leis federais", "Decretos-leis (série encerrada em 1988)", "federal/decretos-lei", 12250, 1,
+    Item("Leis federais", "Decretos-leis (série encerrada em 1988)", "federal/decretos-lei", 12378, 1,
          "normas.leg.br"),
 
     # ------------------------------------------------------------------------- Atos do Congresso
