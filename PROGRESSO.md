@@ -1,10 +1,10 @@
 # Progresso
 
-Gerado em 16/10/2026 00:41:00 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 16/10/2026 01:03:01 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**688.459 documentos · 688.456 / ~11.768.799 nas séries com meta (5.8%) · 3 sem meta**
+**688.476 documentos · 688.473 / ~11.768.799 nas séries com meta (5.8%) · 3 sem meta**
 
 ![progresso](progresso.svg)
 
@@ -12,7 +12,7 @@ Percentuais usam somente documentos e metas das séries com universo estimado ou
 
 Planalto, Senado, Câmara e assembleias.
 
-379.040 / ~574.766 documentos (65.9%)
+379.057 / ~574.766 documentos (65.9%)
 
 ### Constituição Federal
 
@@ -26,7 +26,7 @@ Planalto, Senado, Câmara e assembleias.
 
 ### Leis federais
 
-29.432 / ~29.534 documentos (99.7%)
+29.433 / ~29.534 documentos (99.7%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -34,17 +34,17 @@ Planalto, Senado, Câmara e assembleias.
 | ✅ | Leis complementares | 239 | 239 | `federal/leis-complementares` | normas.leg.br |
 | ✅ | Leis delegadas (série encerrada) | 13 | 13 | `federal/leis-delegadas` | normas.leg.br |
 | ✅ | Leis constitucionais da Carta de 1937 (1938–1946) | 21 | 21 | `federal/leis-constitucionais` | https://www.planalto.gov.br/ccivil_03/LEIS/LCT/Quadro_Lct.htm |
-| 🟦 | Decretos-leis (série encerrada em 1988) | 12.375 | 12.378 | `federal/decretos-lei` | normas.leg.br |
+| 🟦 | Decretos-leis (série encerrada em 1988) | 12.376 | 12.378 | `federal/decretos-lei` | normas.leg.br |
 
 ### Atos do Congresso
 
-32.834 / ~38.248 documentos (85.8%)
+32.850 / ~38.248 documentos (85.9%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
 | 🟦 | Decretos legislativos | 16.433 | 21.775 | `federal/decretos-legislativos` | normas.leg.br |
 | 🟦 | Medidas provisórias (originais e reedições) | 7.488 | 7.497 | `federal/medidas-provisorias` | Planalto + normas.leg.br |
-| 🟦 | Resoluções do Senado Federal | 6.542 | 6.578 | `federal/resolucoes-senado` | normas.leg.br |
+| 🟦 | Resoluções do Senado Federal | 6.558 | 6.578 | `federal/resolucoes-senado` | normas.leg.br |
 | 🟦 | Resoluções da Câmara dos Deputados | 2.280 | 2.300 | `federal/resolucoes-camara` | camara.leg.br |
 | 🟦 | Resoluções do Congresso Nacional e da Revisão Constitucional | 88 | 95 | `federal/resolucoes-congresso` | normas.leg.br |
 | ✅ | Regimentos internos (Senado, Câmara, Congresso) | 3 | 3 | `federal/regimentos` | senado.leg.br, camara.leg.br |

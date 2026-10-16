@@ -1,8 +1,49 @@
 # Continuação da coleta
 
+## Lote federal de 17 documentos validado — 16/10/2026
+
+- Próxima publicação isolada:16 resoluções do Senado e DEL2289/1986,
+  caminhos/SHA/fontes em federal/_lote_rsf_del_20261016.json. Nenhuma
+  coleta viva incluída implicitamente. Formato17/0erros; três scripts AST;
+  hashes de documentos/helpers/ledgers/provas conferidos. H1 editorial
+  corrigido antes do lote; SHA do texto fonte exclui H1 e espaços externos.
+- Correção durável Câmara reconhece textopublicacaooriginal e tenta PDF
+  quando HTML não tem artigos. DEL com corpo original integral preservado;
+  testes reais offline recusam identidade divergente. Fontes preservadas.
+- Diários HTTP/fila offline continuam parados. Extratorv2 em correção após
+  sintéticos independentes acharem mistura em duas colunas curtas sem régua
+  e inversão em rotação180. Não aplicar nem publicar versões ambíguas.
+- Coletores comprovados vivos:DEC33109/RFB40381/DPL58635/DOU96622;
+  SAPL17034 e espera34251 preservados. Sem reinício nem duplicação.
+
 Objetivo: completar o escopo de `scripts/plano.py`, preservando as fontes oficiais,
 os originais, o vocabulário canônico e a publicação incremental por lote. Metas
 estimadas não comprovam cobertura integral; não reduzir metas para declarar 100%.
+
+## Publicação confirmada e retomada — 16/10/2026
+
+- Publicados `39239e708b0` (+22.499 líquidos) e `bd189b2b37c` (+136 TRF4),
+  total 688.459. São 688.456 nas séries com meta (5,8%) e três sem meta.
+  PROGRESSO.md público confere por hash com HEAD; ambos os commits incluem
+  relatório e SVG. TRF4:136 corpos/precedentes iguais ao catálogo oficial,
+  cinco canceladas preservadas, categoria específica no gráfico renderizada.
+- Índice vazio após commits, salvo novas mudanças a conferir. Não incluir em
+  novo lote os diários ainda não reconciliados. AROM68 aplicado no working
+  tree ainda não publicado; classificador novo pode acrescentar Parecis1389,
+  requer nova preparação e revisão sem reintroduzir falso Buritis2274.
+- Quatro pilotos revisados: FAMEP/AMUPE/AAM têm corpos/vínculos conferidos;
+  FAMURS não pode aplicar versão antiga: Lei Ordinária5080/5083/5084 omitidas,
+  Osório7092/7089/7090 são extratos, LC5082/5085 têm ano2025 em epígrafe
+  quebrada. Nova preparação com SHA do classificador em validação. Erratas
+  e extratos devem preservar caráter e pendência de integralidade/anexos.
+- Fila offline de preparação parou para carregar correção e invalidar provas
+  antigas; revalidar PID/checkpoint antes de retomar. Nunca aplica sozinha.
+  HTTP de diários segue parado; SAPL e demais coletores preservados.
+- Federal:14 RSFs adicionais fora deste lote, restam22; índice CâmaraRSF
+  6370/6370 fechado por82totais anuais, sem contar IDnovo como norma nova.
+  DPL58635, sessão68452, usa guard HTTP corrigido e comprovado na função real.
+- Manter objetivo completo ativo: volume e metas não provam fidelidade nem
+  cobertura de100%. Prosseguir reconciliação e fontes oficiais pendentes.
 
 ## TRF4 e próxima reconciliação — 16/10/2026
 

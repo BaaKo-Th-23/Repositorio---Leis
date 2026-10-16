@@ -233,7 +233,7 @@ def corpo_pdf(rede, url):
 
 def conferir_data_propria(info, corpo, titulo=None, tipo="dlg"):
     if titulo is not None:
-        prefixo = {"dlg": r"Decreto Legislativo", "dpl": r"Decreto", "senado": r"Resolução(?: do Senado Federal)?", "congresso": r"Resolução(?: do Congresso Nacional)?"}[tipo]
+        prefixo = {"dlg": r"Decreto Legislativo", "dpl": r"Decreto", "senado": r"Resolução(?: do Senado Federal)?", "congresso": r"Resolução(?: do Congresso Nacional)?", "lei": r"Lei", "lcp": r"Lei Complementar", "del": r"Decreto-Lei", "lct": r"Lei Constitucional", "mpv": r"Medida Provisória"}[tipo]
         numero = re.search(prefixo + r"\s+n[º°o.]?\s*([\d.]+(?:-[a-z0-9]+)?)", titulo, re.I)
         if not numero or numero[1].replace(".", "").lower() != info["numero"].lower():
             raise ValueError("epígrafe oficial não comprova tipo/número primário")
@@ -263,7 +263,7 @@ def processar(rede, d, tipo="camara"):
     links = [html.unescape(u) for u in re.findall(r'href=["\']([^"\']+)["\']', s)]
     ident = id_camara(d)
     links = [u for u in links if f"-{ident}-" in u]
-    candidatos = [(u, compilada) for marcador, compilada in (("-normaatualizada-", True), ("-publicacaooriginal-", False))
+    candidatos = [(u, compilada) for marcador, compilada in (("-normaatualizada-", True), ("-publicacaooriginal-", False), ("-textopublicacaooriginal-", False))
                   for extensao in (".html", ".pdf") for u in links if marcador in u and u.lower().endswith(extensao)]
     if not candidatos:
         raise ValueError(f"norma sem texto HTML/PDF: {d['url']}")
@@ -272,7 +272,7 @@ def processar(rede, d, tipo="camara"):
         url_texto = urllib.parse.urljoin(d["url"], candidato)
         try:
             corpo = corpo_pdf(rede, url_texto) if candidato.lower().endswith(".pdf") else convert(corpo_norma(obter(rede, url_texto)))
-            if len(corpo.strip()) < 80 or "\x00" in corpo:
+            if len(corpo.strip()) < 80 or "\x00" in corpo or (tipo in ("lei", "lcp", "del", "lct", "dpl") and not re.search(r"\bArt(?:igo)?[*.\s]{0,8}(?:\d|[úu]nico)", corpo, re.I)):
                 raise ValueError("texto insuficiente")
             break
         except ValueError as exc:
@@ -281,6 +281,8 @@ def processar(rede, d, tipo="camara"):
         raise ValueError("nenhum texto íntegro HTML/PDF: " + "; ".join(erros))
     if len(corpo.strip()) < 80 or (tipo in ("lei", "lcp", "del", "lct", "dpl") and not re.search(r"\bArt(?:igo)?[*.\s]{0,8}(?:\d|[úu]nico)", corpo, re.I)):
         raise ValueError(f"texto insuficiente: {url_texto}")
+    if "-textopublicacaooriginal-" in candidato and tipo in ("lei", "lcp", "del", "lct", "mpv"):
+        conferir_data_propria(info, corpo, d["titulo"], tipo)
     if tipo == "dlg":
         conferir_data_propria(info, corpo, d["titulo"])
     if tipo == "senado":
