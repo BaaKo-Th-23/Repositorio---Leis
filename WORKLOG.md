@@ -1,5 +1,29 @@
 # Continuação da coleta
 
+## Coletâneas13 índice verificado — 16/10/2026
+
+- Stage77539exit0,285paths/93.832.540bytes. Auditoria40790:13canônicos,0erros/avisos. Verificação86002:285blobsbytesexatos,143whitespaceexclusivamentehardbreak/EOF/fontescongeladasSHA; HTMLoficialcomlinhasem branco preservado. Primeira classificação sóhardbreak rejeitou HTMLcongelado e foi corrigida com provaSHA; nenhum dadofonte normalizado.
+- Provas revisao-raiz13/verificacao-indice-whitespace-raiz.json/diffcheck-raiz.txt.gz somadasaoíndice,WORKLOGatualizado. Commit/pushaindapendentes.
+
+## Coletâneas13 aplicadas após aprovação raiz — 16/10/2026
+
+- Aprovação27af0ec43fb4a0432511c55441997fd5529590421c5905992417db5a65892f38:13atos/27páginas integralmente lidas,239fontesSHA+27PNGoriginaisexatos; identidadeprimáriaH1/data/número/origemlegislativa/linkID/fechopróprio,tri-state13null/versãocoletânea conferidos. Formato13zero/23tabelas/GitHubDOMigual;fonte/alternativas preservadas.
+-13canônicos aplicados exatamente candidatos aprovados, backupsbaselineSHAverificados;4versõesraizcorrigidas5018V5/5585V2/5597V2/5745V4,demaisV1.5745restaura2linhas antesomitidas;nome reMesquitaliteral. Não inferir completude pelooracle324agenteretratado. Lista/tmp/coletaneas13-publicacao-paths.txt. Commit/pushpendentes;hookatualizaPROGRESSO.
+
+## MG14691 publicado; federal13 cotejado — 16/10/2026
+
+- Push42721exit0:14c2e34ce7418d40e605efee0cc5b5175e4f94a7 emmain. APIpúblicaPROGRESSO.mdSHAbcca66e32298f66dfdbd54a8f178ff4c5c76d427 igualHEAD;717.229docs/717.204meta/~11.768.799(6,1%),25semmeta. Avisos50MBdecontrolesnãoimpediramenvio.
+- Raizleutodas27páginasdos13atos. Fontes239SHAe27rendersdoPDForiginalbyteexatos, prova revisao-raiz13/verificacao-fontes-renders-raiz.json/helperdurável. GFM13formatoszero/23tabelas, GitHubPOSTtexto/células/spans/itálicos/negritos/listas/títulos idênticoslocal; verificacao-GFM-GitHub13-raiz.json. Gatesidentidade/versionamentoefechamentoaindapendentes,semapply.
+- AchadoCRÍTICO5745:impressoPDF110contémMiguelCazelli254$000eJoséFerreirareMesquita240$000;V3omitira2linhas. Alegaçãoanterior“diferençadeversão”falsa,agentereconheceuhelperremoviaexplicitamenteeoráculo324nãoindependentedecompletude. Congeladospreservados,retraçãooverlay6957c9ac…3624d. RaizV4d25b919b57402263fbfc4020f225680b82a0dd82b1e7fbb3fc54e662fc6468b0restaura2linhasenome“re”literal,comPNG4000crop.
+- Outrascorreçõesraizisoladas:5585V2308bf43d…14ab7(ponto1928/minúsculosserviços),5597V265a159ab…20afc(ordinal107º),5018V5anterior. Arquivosoriginais/canônicosintactos.
+
+## MG14691 commitado; envio em andamento — 16/10/2026
+
+- Commit14c2e34ce7418d40e605efee0cc5b5175e4f94a7 concluído, sessão96736exit0; hook ativo .githooks/pre-commit atualizou PROGRESSO.md/progresso.svg no mesmo commit (diff-tree confirmado). Total717.229;717.204/~11.768.799(6,1%);25semmeta.
+- Push único sessão42721 em andamento, log _log_push_MG14691_20261016.txt; NÃO iniciar duplicado nem tratar timeout como falha. API pública ainda pendente após terminal. WORKLOG deste checkpoint não está nesse commit.
+- Federal13 cobertura raiz parcial registrada em revisao-raiz13/cobertura-parcial-raiz.json:5018+2168,4/27páginas lidas,11atos/23páginas restantes; não aprovação de publicação.5018V5 isolado preservaV4.
+- Agentes continuam:municipal62/85revisados,23restantes;MG33novos candidatos isolados+220anteriores,oráculo661concluído;federal11recuperações propostas/456semcandidato,13visuais aguardamraiz. Nenhum desses lotes aplicado.
+
 ## MG14691 índice/formato aprovados — 16/10/2026
 
 - Stage48922exit0:58.932arquivos,14.691canônicos;TODOSblobsGitSHA256exatos incluindoCRLFfontes. Formatoíndice18678:14691,0erros/avisos.
