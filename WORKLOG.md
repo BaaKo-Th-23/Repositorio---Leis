@@ -4,6 +4,33 @@ Objetivo: completar o escopo de `scripts/plano.py`, preservando as fontes oficia
 os originais, o vocabulário canônico e a publicação incremental por lote. Metas
 estimadas não comprovam cobertura integral; não reduzir metas para declarar 100%.
 
+## Estado atual verificado — 15/10/2026, após o segundo lote estadual
+
+- Main publicado em `eb530911c16`: 614.327 documentos. `6b9308d1da3` acrescentou
+  14.642 federais/tratados e `eb530911c16` acrescentou 34.488 estaduais.
+- Relatório passa a aceitar `meta=None`: total inclui todas as categorias;
+  percentuais usam apenas numerador/denominador das séries com meta. Decretos
+  legislativos e resoluções municipais têm universo nacional desconhecido,
+  sem extrapolação de duas Câmaras. Testes de cálculo/índice/órfãs/zeros passaram;
+  SVG real e cenários misto/desconhecido renderizados e inspecionados.
+- RFB corrigido, pronto para próximo lote: 215 equivalências auditadas, 124
+  confirmadas, uma redirecionada e 90 textos recuperados por identidade não
+  comprovada (não significa 90 normas distintas). Vigência de 2.539 fontes
+  conferida: 27 revogações globais explícitas e 15 situações desconhecidas.
+  Índice de 115.238 IDs validado contra 227 partições; corpos em PID 31432,
+  sessão 43909. Não confundir índice completo com textos completos.
+- Índices federais atualizados por consulta oficial de 15/10, mesclando somente
+  2026; 14 tipos sem mudança de IDs e históricos intactos. Prova no cache
+  `federal/_fonte/auditorias/indices-atualizacao-20261015.json.gz`.
+- DEC-n segue PID 33109 a 3 rps; Câmara MPV 7196 e pendências DEL 33762
+  compartilham quota de 4 rps. DOU sessão 17222; confirmar processo atual.
+- SAPL orgânicas PID 17034 preservado. Próxima fila legislação PID 34251,
+  sessão 11780, espera 17034 e usará até quatro hosts, 1 rps/host e travas
+  exclusivas. Substituiu apenas o aguardador 28620, sem interromper HTTP ativo.
+- Próxima publicação: RFB/DOU, reparos de números/URNs federais e scripts de
+  índices; depois novas constituições estaduais com edições melhores. Arquivos
+  e processos continuam mudando; revalidar estado antes de coletar/retomar.
+
 ## Checkpoint de 15/10/2026
 
 - Início desta continuação em `ce6ebc92fb6`, com arquivos coletados ainda sem commit.

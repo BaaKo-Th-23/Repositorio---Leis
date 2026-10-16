@@ -4,7 +4,8 @@ Este arquivo é a única fonte de verdade sobre o escopo. `scripts/progresso.py`
 já existe em disco e gera `progresso.svg` e `PROGRESSO.md`. Um tipo de norma que não está nesta
 lista não é medido; um que está e tem zero arquivos aparece como lacuna aberta.
 
-O campo `meta` passa por três estados, nesta ordem. Começa como **estimativa** do tamanho do
+`meta=None` indica universo ainda desconhecido e fica fora dos percentuais.
+O campo `meta` numérico passa por três estados, nesta ordem. Começa como **estimativa** do tamanho do
 universo de cada tipo, montada a partir da numeração mais recente da série e da ordem de grandeza
 que a fonte declara — serve para dimensionar a barra, não para afirmar um número oficial. Quando o
 índice da fonte é baixado, vira o **tamanho real do índice**: é o caso das séries federais, todas
@@ -20,12 +21,10 @@ import collections
 
 Item = collections.namedtuple("Item", "setor nome caminho meta fase fonte")
 
-# As fases são a ordem de ataque, não uma hierarquia jurídica: 1 fecha a esfera federal, que tem
-# fonte única e boa; 2 ataca o infralegal e a jurisprudência, onde mora a norma que de fato se
-# aplica; 3 é o direito municipal, maior que todo o resto somado e sem fonte centralizada.
+# As fases organizam a coleta por escopo e fontes disponíveis.
 FASES = {
-    1: ("Fase 1 — esfera federal completa", "fonte única (normas.leg.br, Planalto, Senado)"),
-    2: ("Fase 2 — infralegal e jurisprudência", "uma fonte por órgão, agência ou tribunal"),
+    1: ("Fase 1 — legislação federal e leis estaduais", "Planalto, Senado, Câmara e assembleias"),
+    2: ("Fase 2 — infralegal e jurisprudência", "diários oficiais e portais de órgãos e tribunais"),
     3: ("Fase 3 — direito municipal", "5.571 municípios no cadastro do IBGE, sem índice legislativo central"),
 }
 
@@ -329,6 +328,10 @@ PLANO = [
     Item("Legislação municipal", "Leis ordinárias e complementares municipais (27 capitais primeiro)",
          "municipais/*/*/leis-ordinarias, municipais/*/*/leis-complementares", 8300000, 3,
          "Câmaras municipais"),
+    Item("Legislação municipal", "Decretos legislativos municipais", "municipais/*/*/decretos-legislativos", None, 3,
+         "SAPL/Interlegis; universo nacional ainda desconhecido"),
+    Item("Legislação municipal", "Resoluções municipais", "municipais/*/*/resolucoes", None, 3,
+         "SAPL/Interlegis; universo nacional ainda desconhecido"),
     Item("Legislação municipal", "Decretos municipais", "municipais/*/*/decretos", 2000000, 3,
          "prefeituras e diários oficiais"),
 ]

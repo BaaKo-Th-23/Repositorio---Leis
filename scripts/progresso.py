@@ -135,6 +135,8 @@ def esc(s):
 
 
 def cor(atual, meta):
+    if meta is None:
+        return FRACO
     if atual == 0:
         return VAZIO
     return CHEIO if atual >= meta else PARCIAL
@@ -142,7 +144,7 @@ def cor(atual, meta):
 
 def barra(y, atual, meta, altura=9):
     frac = min(atual / meta, 1.0) if meta else 0.0
-    larg = max(round(LARG_BARRA * frac), 2 if atual else 0)
+    larg = max(round(LARG_BARRA * frac), 2 if atual else 0) if meta is not None else 0
     r = altura / 2
     partes = [f'<rect x="{X_BARRA}" y="{y}" width="{LARG_BARRA}" height="{altura}" rx="{r}" fill="{TRILHA}"/>']
     if larg:
@@ -153,106 +155,109 @@ def barra(y, atual, meta, altura=9):
 
 def linha(y, rotulo, atual, meta, destaque=False):
     peso, tam, cl = ("600", 13, TEXTO) if destaque else ("400", 12, FRACO)
-    pct = f"{min(100 * atual / meta, 100):.0f}%" if meta else "—"
+    pct = percentual(atual, meta)
+    numeros = f"{mil(atual)} / {mil(meta)}" if meta is not None else "sem meta"
     return (
         f'<text x="{X_ROTULO}" y="{y + 9}" font-size="{tam}" font-weight="{peso}" fill="{cl}">'
         f'{esc(rotulo)}</text>'
         + barra(y, atual, meta)
         + f'<text x="{X_NUM}" y="{y + 9}" font-size="11" fill="{FRACO}" font-family="ui-monospace,monospace">'
-          f'{mil(atual)} / {mil(meta)}</text>'
+          f'{numeros}</text>'
         + f'<text x="{X_PCT}" y="{y + 9}" font-size="11.5" text-anchor="end" font-weight="600" '
           f'fill="{cor(atual, meta)}" font-family="ui-monospace,monospace">{pct}</text>'
     )
 
 
-def desenhar(medidas):
-    setores = por_setor()
-    atual_item = {id(i): n for i, n in medidas}
-    total_a = sum(n for _, n in medidas)
-    total_m = sum(i.meta for i in PLANO)
+def totais(medidas):
+    """Total, numerador conhecido, denominador conhecido e documentos sem meta."""
+    return (sum(n for _, n in medidas),
+            sum(n for i, n in medidas if i.meta is not None),
+            sum(i.meta for i, _ in medidas if i.meta is not None),
+            sum(n for i, n in medidas if i.meta is None))
 
-    corpo, y = [], 150
+
+def percentual(atual, meta):
+    if not meta:
+        return "—"
+    valor = 100 * atual / meta
+    return f"{min(valor, 99.9) if atual < meta else valor:.1f}%"
+
+
+def resumo(medidas):
+    total, conhecido, meta, desconhecido = totais(medidas)
+    if not meta:
+        return f"{mil(total)} documentos · universo desconhecido"
+    if not any(i.meta is None for i, _ in medidas):
+        return f"{mil(total)} / ~{mil(meta)} documentos ({percentual(conhecido, meta)})"
+    return (f"{mil(total)} documentos · {mil(conhecido)} / ~{mil(meta)} nas séries com meta "
+            f"({percentual(conhecido, meta)}) · {mil(desconhecido)} sem meta")
+
+
+def desenhar(medidas):
+    atual_item = {id(i): n for i, n in medidas}
+    total, conhecido, meta, desconhecido = totais(medidas)
+    corpo, y = [], 174
     for fase in sorted(FASES):
-        itens = [i for i in PLANO if i.fase == fase]
-        fa, fm = sum(atual_item[id(i)] for i in itens), sum(i.meta for i in itens)
+        itens = [(i, n) for i, n in medidas if i.fase == fase]
+        _, fa, fm, fu = totais(itens)
         titulo, nota = FASES[fase]
         corpo.append(f'<rect x="0" y="{y - 22}" width="{LARG}" height="1" fill="{BORDA}"/>')
-        corpo.append(f'<text x="{X_ROTULO}" y="{y}" font-size="12.5" font-weight="700" fill="{TEXTO}" '
-                     f'letter-spacing="0.3">{esc(titulo.upper())}</text>')
+        corpo.append(f'<text x="{X_ROTULO}" y="{y}" font-size="12.5" font-weight="700" fill="{TEXTO}">{esc(titulo.upper())}</text>')
         corpo.append(f'<text x="{X_BARRA}" y="{y}" font-size="11" fill="{FRACO}">{esc(nota)}</text>')
-        corpo.append(f'<text x="{X_PCT}" y="{y}" font-size="12.5" text-anchor="end" font-weight="700" '
-                     f'fill="{cor(fa, fm)}" font-family="ui-monospace,monospace">'
-                     f'{min(100 * fa / fm, 100):.1f}%</text>')
+        corpo.append(f'<text x="{X_PCT}" y="{y}" font-size="12.5" text-anchor="end" fill="{PARCIAL}">{percentual(fa, fm)}</text>')
         y += 20
-        for setor, itens_do_setor in setores.items():
-            do_fase = [i for i in itens_do_setor if i.fase == fase]
-            if not do_fase:
+        for setor, itens_setor in por_setor().items():
+            pares = [(i, atual_item[id(i)]) for i in itens_setor if i.fase == fase]
+            if not pares:
                 continue
-            a, m = sum(atual_item[id(i)] for i in do_fase), sum(i.meta for i in do_fase)
-            corpo.append(linha(y, setor, a, m, destaque=True))
+            _, a, m, u = totais(pares)
+            corpo.append(linha(y, setor, a, m if any(i.meta is not None for i, _ in pares) else None, destaque=True))
             y += 22
+            if any(i.meta is None for i, _ in pares):
+                corpo.append(f'<text x="{X_BARRA}" y="{y}" font-size="11" fill="{FRACO}">{mil(u)} documentos em séries sem meta</text>')
+                y += 16
         y += 24
-
     altura = y + 34
-    cab = [
-        f'<rect width="{LARG}" height="{altura}" fill="{FUNDO}"/>',
-        f'<text x="{X_ROTULO}" y="44" font-size="21" font-weight="700" fill="{TEXTO}">'
-        'Acervo da legislação brasileira</text>',
-        f'<text x="{X_ROTULO}" y="66" font-size="12.5" fill="{FRACO}">'
-        f'{mil(total_a)} normas em Markdown de um universo estimado em {mil(total_m)}</text>',
-        f'<rect x="{X_ROTULO}" y="88" width="{LARG - 48}" height="16" rx="8" fill="{TRILHA}"/>',
-        f'<rect x="{X_ROTULO}" y="88" width="{max(round((LARG - 48) * total_a / total_m), 3)}" '
-        f'height="16" rx="8" fill="{PARCIAL}"/>',
-        f'<text x="{X_PCT}" y="78" font-size="13" text-anchor="end" font-weight="700" fill="{PARCIAL}" '
-        f'font-family="ui-monospace,monospace">{100 * total_a / total_m:.1f}%</text>',
-    ]
-    pe = (f'<text x="{X_ROTULO}" y="{altura - 14}" font-size="10.5" fill="{FRACO}">'
-          f'scripts/progresso.py · {dt.date.today():%d/%m/%Y} · as metas são estimativas do tamanho '
-          'de cada série; as séries encerradas marcam 100%</text>')
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{LARG}" height="{altura}" '
-            f'viewBox="0 0 {LARG} {altura}" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif">'
-            + "".join(cab) + "".join(corpo) + pe + "</svg>\n")
+    frac = min(conhecido / meta, 1) if meta else 0
+    base_percentual = f"Percentuais: somente séries com meta · {mil(conhecido)} / ~{mil(meta)}" if meta else "Percentual indisponível: universo desconhecido"
+    cab = [f'<rect width="{LARG}" height="{altura}" fill="{FUNDO}"/>',
+           f'<text x="{X_ROTULO}" y="40" font-size="21" font-weight="700" fill="{TEXTO}">Acervo da legislação brasileira</text>',
+           f'<text x="{X_ROTULO}" y="62" font-size="12.5" fill="{TEXTO}">{mil(total)} documentos em Markdown · {mil(desconhecido)} em séries sem meta</text>',
+           f'<text x="{X_ROTULO}" y="82" font-size="12" fill="{FRACO}">{base_percentual}</text>',
+           f'<text x="{X_PCT}" y="82" font-size="13" text-anchor="end" fill="{PARCIAL}">{percentual(conhecido, meta)}</text>',
+           f'<rect x="{X_ROTULO}" y="98" width="{LARG - 48}" height="16" rx="8" fill="{TRILHA}"/>']
+    if frac:
+        cab.append(f'<rect x="{X_ROTULO}" y="98" width="{round((LARG - 48) * frac)}" height="16" rx="8" fill="{PARCIAL}"/>')
+    pe = f'<text x="{X_ROTULO}" y="{altura - 14}" font-size="10.5" fill="{FRACO}">Atualizado em {dt.date.today():%d/%m/%Y} · metas estimadas ou contadas nos índices oficiais</text>'
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{LARG}" height="{altura}" viewBox="0 0 {LARG} {altura}" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif">'
+            + "".join(cab + corpo) + pe + "</svg>\n")
 
-
-# ----------------------------------------------------------------------------------- PROGRESSO.md
 
 def markdown(medidas, achadas):
-    total_a = sum(n for _, n in medidas)
-    total_m = sum(i.meta for i in PLANO)
-    L = ["# Progresso", "",
-         f"Gerado por `scripts/progresso.py` em {dt.datetime.now(ZoneInfo('America/Recife')):%d/%m/%Y %H:%M:%S}"
-         " (America/Recife). O escopo está em",
-         "`scripts/plano.py`; os números de **meta** são estimativas do tamanho de cada série, não",
-         "contagens oficiais. O percentual mede volume diante das metas; não comprova integralidade",
-         "das fontes nem qualidade de cada conversão. Lacunas continuam abertas até verificação.", "",
-         f"**{mil(total_a)} de ~{mil(total_m)} normas — {100 * total_a / total_m:.1f}%**", "",
-         "![progresso](progresso.svg)", ""]
+    L = ["# Progresso", "", f"Gerado em {dt.datetime.now(ZoneInfo('America/Recife')):%d/%m/%Y %H:%M:%S} (America/Recife). Escopo: `scripts/plano.py`.", "",
+         "Percentuais usam somente documentos e metas das séries com universo estimado ou contado. "
+         "Séries sem meta ficam fora do cálculo. Volume não comprova integralidade das fontes ou qualidade das conversões.", "",
+         f"**{resumo(medidas)}**", "", "![progresso](progresso.svg)", ""]
     atual_item = {id(i): n for i, n in medidas}
     for fase in sorted(FASES):
-        itens = [i for i in PLANO if i.fase == fase]
-        fa, fm = sum(atual_item[id(i)] for i in itens), sum(i.meta for i in itens)
+        itens = [(i, n) for i, n in medidas if i.fase == fase]
         titulo, nota = FASES[fase]
-        L += [f"## {titulo}", "", f"{nota[0].upper() + nota[1:]}. "
-              f"**{mil(fa)} de ~{mil(fm)} — {100 * fa / fm:.1f}%**", ""]
-        for setor, itens_do_setor in por_setor().items():
-            do_fase = [i for i in itens_do_setor if i.fase == fase]
-            if not do_fase:
+        L += [f"## {titulo}", "", nota[0].upper() + nota[1:] + ".", "", resumo(itens), ""]
+        for setor, itens_setor in por_setor().items():
+            pares = [(i, atual_item[id(i)]) for i in itens_setor if i.fase == fase]
+            if not pares:
                 continue
-            a, m = sum(atual_item[id(i)] for i in do_fase), sum(i.meta for i in do_fase)
-            L += [f"### {setor} — {mil(a)} / ~{mil(m)} ({100 * a / m:.1f}%)", "",
-                  "| | Tipo de norma | Tem | Meta | Pasta | Fonte |",
-                  "| :-: | --- | ---: | ---: | --- | --- |"]
-            for i in do_fase:
-                n = atual_item[id(i)]
-                marca = "✅" if n >= i.meta else ("🟦" if n else "⬜️")
+            L += [f"### {setor}", "", resumo(pares), "",
+                  "| | Tipo de norma | Tem | Meta | Pasta | Fonte |", "| :-: | --- | ---: | ---: | --- | --- |"]
+            for i, n in pares:
+                marca = "—" if i.meta is None else ("✅" if n >= i.meta else ("🟦" if n else "⬜️"))
                 pasta = ", ".join(f"`{p.strip()}`" for p in i.caminho.split(","))
-                L.append(f"| {marca} | {i.nome} | {mil(n)} | {mil(i.meta)} | {pasta} | {i.fonte} |")
+                meta = "desconhecida" if i.meta is None else mil(i.meta)
+                L.append(f"| {marca} | {i.nome} | {mil(n)} | {meta} | {pasta} | {i.fonte} |")
             L.append("")
     L += ["---", "", "## Pastas fora do plano", ""]
     if achadas:
-        L += ["Pastas com `.md` que nenhum item de `scripts/plano.py` cobre. Cada uma é nome fora do",
-              "padrão ou tipo de norma não planejado — as duas coisas pedem correção.", "",
-              "| Pasta | Arquivos |", "| --- | ---: |"]
+        L += ["| Pasta | Arquivos |", "| --- | ---: |"]
         L += [f"| `{p}` | {mil(n)} |" for p, n in achadas.most_common()]
     else:
         L.append("Nenhuma: todo arquivo do repositório está sob um item do plano.")
@@ -270,13 +275,9 @@ def main():
     else:
         medidas, cobertas = medir()
         achadas = orfas(cobertas)
-    total_a = sum(n for _, n in medidas)
-    total_m = sum(i.meta for i in PLANO)
-
     for setor, itens in por_setor().items():
-        a, m = sum(dict((id(i), n) for i, n in medidas)[id(i)] for i in itens), sum(i.meta for i in itens)
-        print(f"{100 * a / m:5.1f}%  {mil(a):>9} / {mil(m):<10} {setor}")
-    print(f"\n{100 * total_a / total_m:5.1f}%  {mil(total_a):>9} / {mil(total_m):<10} TOTAL")
+        print(setor + ": " + resumo([(i, n) for i, n in medidas if i in itens]))
+    print("\nTOTAL: " + resumo(medidas))
     for pasta, n in achadas.most_common():
         print(f"fora do plano: {pasta} ({mil(n)} arquivos)")
 

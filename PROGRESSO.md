@@ -1,19 +1,22 @@
 # Progresso
 
-Gerado por `scripts/progresso.py` em 15/10/2026 23:08:55 (America/Recife). O escopo está em
-`scripts/plano.py`; os números de **meta** são estimativas do tamanho de cada série, não
-contagens oficiais. O percentual mede volume diante das metas; não comprova integralidade
-das fontes nem qualidade de cada conversão. Lacunas continuam abertas até verificação.
+Gerado em 15/10/2026 23:23:21 (America/Recife). Escopo: `scripts/plano.py`.
 
-**614.327 de ~11.768.663 normas — 5.2%**
+Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Volume não comprova integralidade das fontes ou qualidade das conversões.
+
+**614.327 documentos · 614.327 / ~11.768.663 nas séries com meta (5.2%) · 0 sem meta**
 
 ![progresso](progresso.svg)
 
-## Fase 1 — esfera federal completa
+## Fase 1 — legislação federal e leis estaduais
 
-Fonte única (normas.leg.br, Planalto, Senado). **366.556 de ~574.766 — 63.8%**
+Planalto, Senado, Câmara e assembleias.
 
-### Constituição Federal — 180 / ~180 (100.0%)
+366.556 / ~574.766 documentos (63.8%)
+
+### Constituição Federal
+
+180 / ~180 documentos (100.0%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -21,7 +24,9 @@ Fonte única (normas.leg.br, Planalto, Senado). **366.556 de ~574.766 — 63.8%*
 | ✅ | Constituições históricas (1824, 1891, 1934, 1937, 1946, 1967, 1969) | 7 | 7 | `federal/constituicoes-historicas` | https://www.planalto.gov.br |
 | ✅ | Emendas constitucionais e de revisão | 172 | 172 | `federal/emendas-constitucionais` | https://normas.leg.br |
 
-### Leis federais — 29.308 / ~29.534 (99.2%)
+### Leis federais
+
+29.308 / ~29.534 documentos (99.2%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -31,7 +36,9 @@ Fonte única (normas.leg.br, Planalto, Senado). **366.556 de ~574.766 — 63.8%*
 | ✅ | Leis constitucionais da Carta de 1937 (1938–1946) | 21 | 21 | `federal/leis-constitucionais` | https://www.planalto.gov.br/ccivil_03/LEIS/LCT/Quadro_Lct.htm |
 | 🟦 | Decretos-leis (série encerrada em 1988) | 12.267 | 12.378 | `federal/decretos-lei` | normas.leg.br |
 
-### Atos do Congresso — 28.810 / ~38.248 (75.3%)
+### Atos do Congresso
+
+28.810 / ~38.248 documentos (75.3%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -42,7 +49,9 @@ Fonte única (normas.leg.br, Planalto, Senado). **366.556 de ~574.766 — 63.8%*
 | 🟦 | Resoluções do Congresso Nacional e da Revisão Constitucional | 88 | 95 | `federal/resolucoes-congresso` | normas.leg.br |
 | ✅ | Regimentos internos (Senado, Câmara, Congresso) | 3 | 3 | `federal/regimentos` | senado.leg.br, camara.leg.br |
 
-### Decretos do Executivo federal — 12.170 / ~153.657 (7.9%)
+### Decretos do Executivo federal
+
+12.170 / ~153.657 documentos (7.9%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -50,7 +59,9 @@ Fonte única (normas.leg.br, Planalto, Senado). **366.556 de ~574.766 — 63.8%*
 | 🟦 | Decretos não numerados | 12.150 | 14.510 | `federal/decretos-nao-numerados` | Planalto |
 | ✅ | Regulamentos consolidados (RIR, RIPI, Aduaneiro, RPS, PAF) | 20 | 20 | `federal/regulamentos` | Planalto |
 
-### Tratados internacionais — 161 / ~5.680 (2.8%)
+### Tratados internacionais
+
+161 / ~5.680 documentos (2.8%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -60,7 +71,9 @@ Fonte única (normas.leg.br, Planalto, Senado). **366.556 de ~574.766 — 63.8%*
 | ✅ | Acordos de bitributação | 51 | 40 | `tratados/bitributacao` | RFB |
 | ⬜️ | Normas do Mercosul internalizadas | 0 | 1.500 | `tratados/mercosul` | mercosur.int |
 
-### Leis estaduais e distritais — 295.927 / ~347.467 (85.2%)
+### Leis estaduais e distritais
+
+295.927 / ~347.467 documentos (85.2%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -74,9 +87,13 @@ Fonte única (normas.leg.br, Planalto, Senado). **366.556 de ~574.766 — 63.8%*
 
 ## Fase 2 — infralegal e jurisprudência
 
-Uma fonte por órgão, agência ou tribunal. **236.610 de ~861.184 — 27.5%**
+Diários oficiais e portais de órgãos e tribunais.
 
-### Infralegal — tributário — 1.114 / ~134.038 (0.8%)
+236.610 / ~861.184 documentos (27.5%)
+
+### Infralegal — tributário
+
+1.114 / ~134.038 documentos (0.8%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -87,7 +104,9 @@ Uma fonte por órgão, agência ou tribunal. **236.610 de ~861.184 — 27.5%**
 | 🟦 | CARF: súmulas e resoluções | 9 | 300 | `reguladores/carf` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério da Fazenda: demais atos normativos | 201 | 3.000 | `reguladores/fazenda` | Diário Oficial da União (in.gov.br) |
 
-### Infralegal — trânsito e transportes — 2.747 / ~12.857 (21.4%)
+### Infralegal — trânsito e transportes
+
+2.747 / ~12.857 documentos (21.4%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -99,7 +118,9 @@ Uma fonte por órgão, agência ou tribunal. **236.610 de ~861.184 — 27.5%**
 | 🟦 | Ministério dos Transportes: demais atos normativos | 231 | 2.000 | `reguladores/transportes` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério de Portos e Aeroportos | 118 | 800 | `reguladores/portos-aeroportos` | Diário Oficial da União (in.gov.br) |
 
-### Infralegal — saúde — 8.868 / ~34.400 (25.8%)
+### Infralegal — saúde
+
+8.868 / ~34.400 documentos (25.8%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -108,7 +129,9 @@ Uma fonte por órgão, agência ou tribunal. **236.610 de ~861.184 — 27.5%**
 | 🟦 | Conselho Nacional de Saúde: resoluções | 13 | 700 | `reguladores/cns` | Diário Oficial da União (in.gov.br) |
 | 🟦 | ANS: resoluções normativas | 145 | 600 | `reguladores/ans` | Diário Oficial da União (in.gov.br) |
 
-### Infralegal — trabalho e previdência — 676 / ~4.498 (15.0%)
+### Infralegal — trabalho e previdência
+
+676 / ~4.498 documentos (15.0%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -117,7 +140,9 @@ Uma fonte por órgão, agência ou tribunal. **236.610 de ~861.184 — 27.5%**
 | 🟦 | Secretaria de Previdência: instruções normativas e portarias | 79 | 900 | `reguladores/sprev` | Diário Oficial da União (in.gov.br) |
 | 🟦 | PREVIC: resoluções e instruções | 375 | 400 | `reguladores/previc` | Diário Oficial da União (in.gov.br) |
 
-### Infralegal — meio ambiente — 3.468 / ~10.720 (32.4%)
+### Infralegal — meio ambiente
+
+3.468 / ~10.720 documentos (32.4%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -130,7 +155,9 @@ Uma fonte por órgão, agência ou tribunal. **236.610 de ~861.184 — 27.5%**
 | 🟦 | Ministério do Meio Ambiente: demais atos normativos | 114 | 1.500 | `reguladores/mma` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério da Pesca e Aquicultura | 532 | 600 | `reguladores/pesca` | Diário Oficial da União (in.gov.br) |
 
-### Infralegal — financeiro — 1.721 / ~19.550 (8.8%)
+### Infralegal — financeiro
+
+1.721 / ~19.550 documentos (8.8%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -144,7 +171,9 @@ Uma fonte por órgão, agência ou tribunal. **236.610 de ~861.184 — 27.5%**
 | 🟦 | Ministério do Desenvolvimento, Indústria, Comércio e Serviços | 500 | 3.000 | `reguladores/mdic` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério do Empreendedorismo e da Microempresa | 38 | 400 | `reguladores/empreendedorismo` | Diário Oficial da União (in.gov.br) |
 
-### Infralegal — infraestrutura e energia — 5.335 / ~8.000 (66.7%)
+### Infralegal — infraestrutura e energia
+
+5.335 / ~8.000 documentos (66.7%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -157,7 +186,9 @@ Uma fonte por órgão, agência ou tribunal. **236.610 de ~861.184 — 27.5%**
 | 🟦 | Ministério das Cidades | 296 | 800 | `reguladores/cidades` | Diário Oficial da União (in.gov.br) |
 | ✅ | Ministério da Integração e do Desenvolvimento Regional | 2.616 | 800 | `reguladores/integracao` | Diário Oficial da União (in.gov.br) |
 
-### Infralegal — educação e cultura — 4.700 / ~12.300 (38.2%)
+### Infralegal — educação e cultura
+
+4.700 / ~12.300 documentos (38.2%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -172,7 +203,9 @@ Uma fonte por órgão, agência ou tribunal. **236.610 de ~861.184 — 27.5%**
 | 🟦 | Ministério do Turismo | 38 | 600 | `reguladores/turismo` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério da Ciência, Tecnologia e Inovação | 531 | 1.500 | `reguladores/mcti` | Diário Oficial da União (in.gov.br) |
 
-### Infralegal — justiça e controle — 5.377 / ~27.700 (19.4%)
+### Infralegal — justiça e controle
+
+5.377 / ~27.700 documentos (19.4%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -193,7 +226,9 @@ Uma fonte por órgão, agência ou tribunal. **236.610 de ~861.184 — 27.5%**
 | 🟦 | Atos administrativos normativos do Poder Legislativo publicados no DOU | 70 | 600 | `reguladores/poder-legislativo` | Diário Oficial da União (in.gov.br) |
 | ⬜️ | BNDES e demais estatais com poder normativo | 0 | 400 | `reguladores/bndes` | Diário Oficial da União (in.gov.br) |
 
-### Infralegal — direitos e desenvolvimento social — 1.902 / ~5.400 (35.2%)
+### Infralegal — direitos e desenvolvimento social
+
+1.902 / ~5.400 documentos (35.2%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -204,7 +239,9 @@ Uma fonte por órgão, agência ou tribunal. **236.610 de ~861.184 — 27.5%**
 | 🟦 | Ministério dos Povos Indígenas | 88 | 300 | `reguladores/mpi` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério do Desenvolvimento Agrário e Agricultura Familiar | 964 | 1.200 | `reguladores/mda` | Diário Oficial da União (in.gov.br) |
 
-### Jurisprudência vinculante — 11.534 / ~14.667 (78.6%)
+### Jurisprudência vinculante
+
+11.534 / ~14.667 documentos (78.6%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -219,7 +256,9 @@ Uma fonte por órgão, agência ou tribunal. **236.610 de ~861.184 — 27.5%**
 | 🟦 | Regimentos internos dos tribunais superiores | 2 | 6 | `jurisprudencia/regimentos` | portais dos tribunais |
 | ✅ | Temas de uniformização da TNU, incluindo cancelados | 394 | 394 | `jurisprudencia/tnu/uniformizacao` | CNJ — Pangea/BNP (precedentes da TNU) |
 
-### Infralegal estadual — 189.168 / ~577.054 (32.8%)
+### Infralegal estadual
+
+189.168 / ~577.054 documentos (32.8%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -236,9 +275,13 @@ Uma fonte por órgão, agência ou tribunal. **236.610 de ~861.184 — 27.5%**
 
 ## Fase 3 — direito municipal
 
-5.571 municípios no cadastro do IBGE, sem índice legislativo central. **11.161 de ~10.332.713 — 0.1%**
+5.571 municípios no cadastro do IBGE, sem índice legislativo central.
 
-### Legislação municipal — 11.161 / ~10.332.713 (0.1%)
+11.161 documentos · 11.161 / ~10.332.713 nas séries com meta (0.1%) · 0 sem meta
+
+### Legislação municipal
+
+11.161 documentos · 11.161 / ~10.332.713 nas séries com meta (0.1%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -247,6 +290,8 @@ Uma fonte por órgão, agência ou tribunal. **236.610 de ~861.184 — 27.5%**
 | ⬜️ | Códigos tributários municipais | 0 | 5.571 | `municipais/*/*/codigo-tributario` | portais municipais |
 | ⬜️ | Códigos de obras, posturas e zoneamento | 0 | 16.000 | `municipais/*/*/codigos` | portais municipais |
 | 🟦 | Leis ordinárias e complementares municipais (27 capitais primeiro) | 4.357 | 8.300.000 | `municipais/*/*/leis-ordinarias`, `municipais/*/*/leis-complementares` | Câmaras municipais |
+| — | Decretos legislativos municipais | 0 | desconhecida | `municipais/*/*/decretos-legislativos` | SAPL/Interlegis; universo nacional ainda desconhecido |
+| — | Resoluções municipais | 0 | desconhecida | `municipais/*/*/resolucoes` | SAPL/Interlegis; universo nacional ainda desconhecido |
 | 🟦 | Decretos municipais | 6.596 | 2.000.000 | `municipais/*/*/decretos` | prefeituras e diários oficiais |
 
 ---
