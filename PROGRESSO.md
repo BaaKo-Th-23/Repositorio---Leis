@@ -1,10 +1,10 @@
 # Progresso
 
-Gerado em 16/10/2026 07:28:26 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 16/10/2026 07:56:41 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**717.242 documentos · 717.217 / ~11.768.799 nas séries com meta (6.1%) · 25 sem meta**
+**717.249 documentos · 717.224 / ~11.768.799 nas séries com meta (6.1%) · 25 sem meta**
 
 ![progresso](progresso.svg)
 
@@ -12,7 +12,7 @@ Percentuais usam somente documentos e metas das séries com universo estimado ou
 
 Planalto, Senado, Câmara e assembleias.
 
-388.008 / ~574.766 documentos (67.5%)
+388.015 / ~574.766 documentos (67.5%)
 
 ### Constituição Federal
 
@@ -38,11 +38,11 @@ Planalto, Senado, Câmara e assembleias.
 
 ### Atos do Congresso
 
-37.782 / ~38.248 documentos (98.8%)
+37.789 / ~38.248 documentos (98.8%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Decretos legislativos | 21.351 | 21.775 | `federal/decretos-legislativos` | normas.leg.br |
+| 🟦 | Decretos legislativos | 21.358 | 21.775 | `federal/decretos-legislativos` | normas.leg.br |
 | 🟦 | Medidas provisórias (originais e reedições) | 7.488 | 7.497 | `federal/medidas-provisorias` | Planalto + normas.leg.br |
 | 🟦 | Resoluções do Senado Federal | 6.572 | 6.578 | `federal/resolucoes-senado` | normas.leg.br |
 | 🟦 | Resoluções da Câmara dos Deputados | 2.280 | 2.300 | `federal/resolucoes-camara` | camara.leg.br |

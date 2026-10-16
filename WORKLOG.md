@@ -1,5 +1,32 @@
 # Continuação da coleta
 
+## Recuperação7 índice/formato verificados — 16/10/2026
+
+- Stage21883exit0;formato3102:7canônicos,0erros/avisos. Verificação63603:75blobsíndicebytesexatos,68pathsnovos/modificados+7gzipfontesjápúblicasHEADbytesexatos;nenhumpathinesperado. Scopeinicialexigiratodos75nodifferaestritoemexcesso;resolvidocomprovabyteHEADpara7fontesinalteradas.
+-2226whitespaceexclusivamenteHTML/fontescongeladasSHA/hardbreaks/EOFpreservados;provas/helper/formatoacrescentados. Commit/pushpendentes.
+- Municipal85/85leituraconcluída:44pontuação/coberturalimitada,41pendências,semaceitegenérico;revisãoSHA29f2521810bf0f02027c76723236008d28d7883d64f99279459f806fb4e7eb80. AgenteiniciaV4isoladaparacompostos/estilos;fila/canônicosintactos.
+- FederalagentepreparacoorteamplaDEC/RFBcomcacheatualsemreiniciar;estadoscongelou81MG eavançafrenteampla,nenhumaaprovaçãoautomática.
+
+## Recuperação7 aprovada e aplicada — 16/10/2026
+
+- Aprovação raiz0be9b64284732d1053beeb64150f3001018b8f140529f02fffd84ab1583c18e5,7atos263/3029/4970+1107/2967/395/4115,corposprimáriosHTMLintegralmentelidos,GFMwholetextidêntico,GitHubrendertexto/formatação/listas/tabelasigual. IdentidadeH1/número/data/tipo/linkID/statusnull/fechopróprio/SHAprimáriosconferidos;HEADediscoausentesantes.
+-4atossemartigosnumeradospreservadossemfabricarArtigoúnico;3referênciasaartigosnaementanãoinvalidampreâmbulopróprio.4115preserva2outubroementa/3outubrodispositivocomnota,assinatura27agosto1920. Nenhumgategeralalterado.
+-7canônicosnovoscopiadosSHAexatos;candidatos/fontesoriginais/gzip/metadados/provaspreservados. Lista/tmp/recuperacao7-publicacao-paths.txt;stage/formato/commit/pushpendentes,PROGRESSOviahook. Metaoriginal100%ativa.
+
+## Coletâneas13 publicadas — 16/10/2026
+
+- Commitb60074348043741c45f88e278b0ddb8eacea8362 final17725exit0,push94684exit0(log_log_push_coletaneas13_20261016.txt). API públicaPROGRESSO.mdSHAb037cbe9aaf7933869915dadb53e016b6b6e38ffigualHEAD;717.242docs/717.217/~11.768.799(6,1%),25semmeta. Trezeatosnovos,23tabelas,27páginasraizcotejadas. Goal100%continuaativo.
+- Root3preambulo(263/3029/4970)corposintegraisHTMLlidos,DOM→GFMtextoexato,metadadosprimáriosH1/PoderLegislativo/statusnull/linkID/SHAconferidos. Provasisoladasrevisao-raiz-parcial3.json/verificacao-raiz3-DOM-metadados.json;faltadataepígrafexheaderestruturada/GitHub/aprovaçãofinal. Semaplicar3.
+- Próximos:MG219footer+escapes/75propostasaguardamraiz;municípios83/85doisatoslongosaindaemrevisão;federal11+8recuperaçõesseparadassemapply. Semmetasreduzidas/semrestartdecoletores.
+
+## Commit coletâneas13 em execução — 16/10/2026
+
+- Scopefinal97919exit0:288pathsexatos. Commitúnico sessão17725 (mensagem/tmp/commit-coletaneas13.txt) aindaativo,últimopollsemterminal;HEADainda14c2e34ce7418d40e605efee0cc5b5175e4f94a7. NÃO iniciar outrocommit/push antesconfirmar17725exit0. Nada13enviadoainda,esperado717242masPROGRESSOviahookautoritativo.
+- MG14691push42721exit0 eAPIpúblicaSHAconferidobcca66e32298f66dfdbd54a8f178ff4c5c76d427;717229publicados.
+- Root3recuperações263/3029/4970:corposprimáriosHTMLintegralmentelidos,candidatos+gzip+HTMLSHAexatos;revisao-raiz-parcial3.json emcandidatos3-preambulo. AindaSEM aprovaçãofinal/metadados/GFM/GitHub/apply.
+- Estadoscheckpoint70e55650bd…84d53;agentecontinuapróximos661;federal8novoscheckpointaa3e701a…ccfb3f/448semproposta,nenhumaplicado;municipal83/85leitura,doisextensosCaapirangaPPA23p eNovaMamoré03427p continuam.
+- Estecheckpointposteriorao stage está apenasnotrabalhodisco,nãonoíndice288do commitativo.
+
 ## Coletâneas13 índice verificado — 16/10/2026
 
 - Stage77539exit0,285paths/93.832.540bytes. Auditoria40790:13canônicos,0erros/avisos. Verificação86002:285blobsbytesexatos,143whitespaceexclusivamentehardbreak/EOF/fontescongeladasSHA; HTMLoficialcomlinhasem branco preservado. Primeira classificação sóhardbreak rejeitou HTMLcongelado e foi corrigida com provaSHA; nenhum dadofonte normalizado.
