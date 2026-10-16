@@ -1,7 +1,30 @@
 # Continuação da coleta
 
+## Lote106 tabelas aplicado e conferido — 16/10/2026
+
+- Raizconcluiu106fontes/headers/índiceprimário/datas/links/status/versões;527tabelas/2080células modeloDOMricoHTML5independente+GFM,0diferenças. Listascomcontadoresol/start/valuecomparadas;negrito/itálico/tachado/sup/subpreservados,semU/visuaispendentes. Prova b4026613…
+- GitHubAPIoficial/render em4lotes37+25+39+5 confirmaTODOS106corpos e527tabelas/células, contadores eformatossemperdaapóssanitização. SemaprovaçãoCSS/browserde106páginas.
+- Aplicados106MDsnovosnoshistóricos,backupsgzipintegraisjácongelados; candidatos105null+1true conforme statuspróprios. Oitos retidos docoorte114continuampendentes.
+- Relatório federal/_publicacao_dpl106_tabelas_20261016.json; lista/tmp/dpl106-publicacao-paths.txt. Stage474arquivosconferido106SHAcanônicos+ambosmanifestoscongelados. Formato106:0erros/avisos. Diffcheck1233ocorrências exclusivamente dois espaços GFM preservadoscomprova; commit/pushpendentes, PROGRESSO.mdgeradopelohook.
+
+## DPL3266 publicados — 16/10/2026
+
+- Commit9177714c047cd5395632094df0754e1ed0a3736f enviadoàmain;push74405exit0, log_log_push_dpl3266_triestado315_20261016.txt confirmafastforward. APIpúblicaPROGRESSO.md conferidablobd9d3fb6e8614d3588b4bff667a0ee435ffd74ac0.
+- Total702.429documentos;702.404/~11.768.799com meta(6,0%);25semmeta. Incremento3266documentos e315metadadosjápublicadoscorrigidosnull,Fontes/snapshots/provaspreservados.
+- Índiceapóscommitsemnovosstageesperados. WORKLOGeSC10Unegativoprovaestãoapenasworktreepara próximocheckpoint. Não repetirtestespublicadossemnovacausa.
+- Próximos: MG216contextosagentesequencial86+; municipalv2isoladacorrigindo32recusas/1regressãotabelar; federal106tabelascondicionais+3normasilegíveiscom18pvisuaisintegraisagenterevisa. ManterretidosUpoisGitHubAPIremoveu. Objetivo100%segueativo,semreduçãodemetas.
+
+## DPL3266 commitado, envio emcurso — 16/10/2026
+
+- Commit9177714c047cd5395632094df0754e1ed0a3736f concluído(46358exit0). HookPROGRESSO.md/progresso.svg:702.429documentos;702.404/~11.768.799com meta(6,0%);25semmeta.
+- Push emcurso sessão74405, log_log_push_dpl3266_triestado315_20261016.txt; aguardarterminalantesdeconferirAPIpública. Não declararpushconcluídoporsócommitexistir.
+- Lote3266novos+315metadataonly conferidoíndice3581SHA,3588format0erro/aviso(subconjuntoinalterado).11577hardbreak2espaçosprévio+658whitespaceHTMLnovospreservadosemprovas. Doisilegíveis+7quadros+115anteriores retidos.
+- RaiztriouUemSC10publicaçãoanterior:0marcadoresu/CSSunderline, provaestaduais/_auditoria_sublinhado_sc10_raiz_20261016.json(nãostagednestecommit).
+- Federalpesquisa3ilegíveis jáachoupalavrasque/feitas/escandalo ealeivosiaemcoletâneasoficiais;18páginasintegraispreparadas, agenteconfrontatodoato/variantes,soucenãopretendeDOUoriginal. Nãoaplicado. MG130casosaindarevisadosagoraagentesequencial86/216;overlayliteralretiraretençõespormeroslapsoslegais, mantémlacunas. Municipalv1regrediu32recusas+1célulatabelar;vivointacto,agentepreparav2isolada.
+
 ## Coorte federal final3266 +315 — 16/10/2026
 
+- Commit emcurso sessão46358; NÃOiniciaroutrocommitantesdeexit0. Índice3581SHAconferidos e15fragmentosHTMLtambémbyteiguaisGit,CRLFintacto. Fontesadicionais658whitespaceoriginais preservecomprova. PublicaçãoaguardaenvioeAPI.
 - Aprovaçãofinal raiz3266novos+315metadadosjápublicados; índice3581canônicos. Daaplicaçãooriginal3273,7retidosporcolunas/quadroslineares/U:5099,5116,5173,5368,5585,5636,5745. Nenhumapagadoworktree, apenasretiradoíndice. Fonte/snapshots/provaspreservados.
 - Revisão15dfcadcc9…/manifesto9655daf5…resolvem8falsospositivoscomcontexto:prosa,unitário+total,labelspontilhados,lapsosnuméricosliteraisnaementa/valorcitado. Nãoinferircorreções.
 - Relatóriofinalfederal/_publicacao_dpl3266_triestado315_final_20261016.json delimitaescopodepublicaçãodaproposta3273, comSHApor3581arquivos;formato3588incluiesses3581semalteração,0erro/aviso.
