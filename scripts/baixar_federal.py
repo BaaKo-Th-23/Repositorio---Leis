@@ -11,6 +11,7 @@ import datetime as dt
 import gzip
 import json
 import os
+import re
 import sys
 import threading
 import time
@@ -20,7 +21,7 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from comum import AVISO_SEM_TEXTO  # noqa: E402
+from comum import AVISO_OCR, AVISO_SEM_TEXTO, extrair_texto, ocr_pdf, texto_pdf_para_md  # noqa: E402
 from html2md import convert  # noqa: E402
 
 RAIZ = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "federal")
@@ -200,7 +201,21 @@ def processar(d):
     with gzip.open(info["fonte"], "wb") as f:
         f.write(html)
 
-    corpo = convert(html.decode("utf-8", errors="replace"))
+    # Algumas publicações vêm em PDF apesar do encoding anunciado como HTML pela API.
+    if html.startswith(b"%PDF"):
+        _, texto = extrair_texto(html, url)
+        if not re.search(r"\bArt\.?\s*\d", texto, re.I):
+            reconhecido = ocr_pdf(html)
+            if re.search(r"\bArt\.?\s*\d", reconhecido, re.I):
+                texto = reconhecido
+                corpo = AVISO_OCR + texto_pdf_para_md(texto)
+            else:
+                return "sem_texto", info["slug"], {"id": d["id"], "norma": d["norma"], "urn": urn,
+                                                   "url": url, "motivo": "PDF sem corpo normativo extraível; OCR não recuperou artigos"}
+        else:
+            corpo = texto_pdf_para_md(texto)
+    else:
+        corpo = convert(html.decode("utf-8", errors="replace"))
     versao = {"Current": "compilada (texto vigente)", "Original": "original", "Intermediate": "republicação/retificação"}
     # o portal só marca explicitamente as normas revogadas (NotInForce)
     revogada = "NotInForce" in como_lista(meta.get("legislationLegalForce"))

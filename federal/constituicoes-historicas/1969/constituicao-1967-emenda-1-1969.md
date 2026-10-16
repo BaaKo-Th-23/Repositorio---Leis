@@ -4,8 +4,8 @@ tipo: "Constituição"
 numero: ""
 data: 1969-10-17
 ementa: "Texto constitucional de 1967 com a redação dada pela Emenda Constitucional nº 1, de 17 de outubro de 1969."
-revogada: false
-versao_texto: "compilada (texto vigente)"
+revogada: true
+versao_texto: "texto histórico"
 fonte: "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao67emc69.htm"
 baixado_em: 2026-10-15
 ---

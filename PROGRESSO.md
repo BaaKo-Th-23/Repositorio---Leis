@@ -1,17 +1,17 @@
 # Progresso
 
-Gerado por `scripts/progresso.py` em 15/10/2026 21:37:14 (America/Recife). O escopo está em
+Gerado por `scripts/progresso.py` em 15/10/2026 21:40:55 (America/Recife). O escopo está em
 `scripts/plano.py`; os números de **meta** são estimativas do tamanho de cada série, não
 contagens oficiais. O percentual mede volume diante das metas; não comprova integralidade
 das fontes nem qualidade de cada conversão. Lacunas continuam abertas até verificação.
 
-**384.288 de ~11.672.473 normas — 3.3%**
+**398.178 de ~11.672.473 normas — 3.4%**
 
 ![progresso](progresso.svg)
 
 ## Fase 1 — esfera federal completa
 
-Fonte única (normas.leg.br, Planalto, Senado). **336.806 de ~574.432 — 58.6%**
+Fonte única (normas.leg.br, Planalto, Senado). **350.696 de ~574.432 — 61.1%**
 
 ### Constituição Federal — 180 / ~180 (100.0%)
 
@@ -30,33 +30,33 @@ Fonte única (normas.leg.br, Planalto, Senado). **336.806 de ~574.432 — 58.6%*
 | ✅ | Leis delegadas (série encerrada) | 13 | 13 | `federal/leis-delegadas` | normas.leg.br |
 | ✅ | Decretos-leis (série encerrada em 1988) | 12.250 | 12.250 | `federal/decretos-lei` | normas.leg.br |
 
-### Atos do Congresso — 12.728 / ~38.248 (33.3%)
+### Atos do Congresso — 20.862 / ~38.248 (54.5%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Decretos legislativos | 11.306 | 21.775 | `federal/decretos-legislativos` | normas.leg.br |
-| 🟦 | Medidas provisórias (originais e reedições) | 1.422 | 7.497 | `federal/medidas-provisorias` | Planalto + normas.leg.br |
-| ⬜️ | Resoluções do Senado Federal | 0 | 6.578 | `federal/resolucoes-senado` | normas.leg.br |
-| ⬜️ | Resoluções da Câmara dos Deputados | 0 | 2.300 | `federal/resolucoes-camara` | camara.leg.br |
-| ⬜️ | Resoluções do Congresso Nacional e da Revisão Constitucional | 0 | 95 | `federal/resolucoes-congresso` | normas.leg.br |
-| ⬜️ | Regimentos internos (Senado, Câmara, Congresso) | 0 | 3 | `federal/regimentos` | senado.leg.br, camara.leg.br |
+| 🟦 | Decretos legislativos | 15.928 | 21.775 | `federal/decretos-legislativos` | normas.leg.br |
+| 🟦 | Medidas provisórias (originais e reedições) | 3.141 | 7.497 | `federal/medidas-provisorias` | Planalto + normas.leg.br |
+| 🟦 | Resoluções do Senado Federal | 698 | 6.578 | `federal/resolucoes-senado` | normas.leg.br |
+| 🟦 | Resoluções da Câmara dos Deputados | 1.004 | 2.300 | `federal/resolucoes-camara` | camara.leg.br |
+| 🟦 | Resoluções do Congresso Nacional e da Revisão Constitucional | 88 | 95 | `federal/resolucoes-congresso` | normas.leg.br |
+| ✅ | Regimentos internos (Senado, Câmara, Congresso) | 3 | 3 | `federal/regimentos` | senado.leg.br, camara.leg.br |
 
-### Decretos do Executivo federal — 5 / ~153.657 (0.0%)
+### Decretos do Executivo federal — 5.628 / ~153.657 (3.7%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
 | ⬜️ | Decretos numerados (1889–hoje, as duas séries) | 0 | 139.127 | `federal/decretos` | normas.leg.br + Planalto |
-| ⬜️ | Decretos não numerados | 0 | 14.510 | `federal/decretos-nao-numerados` | Planalto |
-| 🟦 | Regulamentos consolidados (RIR, RIPI, Aduaneiro, RPS, PAF) | 5 | 20 | `federal/regulamentos` | Planalto |
+| 🟦 | Decretos não numerados | 5.619 | 14.510 | `federal/decretos-nao-numerados` | Planalto |
+| 🟦 | Regulamentos consolidados (RIR, RIPI, Aduaneiro, RPS, PAF) | 9 | 20 | `federal/regulamentos` | Planalto |
 
-### Tratados internacionais — 0 / ~5.680 (0.0%)
+### Tratados internacionais — 133 / ~5.680 (2.3%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
 | ⬜️ | Decretos de promulgação de tratados | 0 | 4.000 | `tratados/decretos` | Concórdia/MRE + Planalto |
-| ⬜️ | Tratados de direitos humanos (status constitucional/supralegal) | 0 | 40 | `tratados/direitos-humanos` | MRE + Planalto |
-| ⬜️ | Convenções da OIT ratificadas | 0 | 100 | `tratados/oit` | ilo.org + MTE |
-| ⬜️ | Acordos de bitributação | 0 | 40 | `tratados/bitributacao` | RFB |
+| 🟦 | Tratados de direitos humanos (status constitucional/supralegal) | 12 | 40 | `tratados/direitos-humanos` | MRE + Planalto |
+| 🟦 | Convenções da OIT ratificadas | 98 | 100 | `tratados/oit` | ilo.org + MTE |
+| 🟦 | Acordos de bitributação | 23 | 40 | `tratados/bitributacao` | RFB |
 | ⬜️ | Normas do Mercosul internalizadas | 0 | 1.500 | `tratados/mercosul` | mercosur.int |
 
 ### Leis estaduais e distritais — 294.709 / ~347.467 (84.8%)

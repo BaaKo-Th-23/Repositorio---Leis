@@ -4,8 +4,8 @@ tipo: "Constituição"
 numero: ""
 data: 1824-03-25
 ementa: "Constituição Política do Império do Brasil, outorgada em 25 de março de 1824."
-revogada: false
-versao_texto: "compilada (texto vigente)"
+revogada: true
+versao_texto: "texto histórico"
 fonte: "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao24.htm"
 baixado_em: 2026-10-15
 ---

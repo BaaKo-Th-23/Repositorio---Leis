@@ -72,6 +72,18 @@ DOCUMENTOS = [
      "Processo Administrativo Fiscal — Decreto nº 70.235 de 06/03/1972 (texto consolidado)",
      "Decreto", "70235", "1972-03-06",
      "Dispõe sobre o processo administrativo fiscal e dá outras providências."),
+    ("regulamentos", "riof-decreto-6306-2007", "_ato2007-2010/2007/decreto/d6306.htm",
+     "Regulamento do IOF — Decreto nº 6.306 de 14/12/2007", "Decreto", "6306", "2007-12-14",
+     "Regulamenta o Imposto sobre Operações de Crédito, Câmbio e Seguro, ou relativas a Títulos ou Valores Mobiliários - IOF."),
+    ("regulamentos", "ritr-decreto-4382-2002", "decreto/2002/d4382.htm",
+     "Regulamento do ITR — Decreto nº 4.382 de 19/09/2002", "Decreto", "4382", "2002-09-19",
+     "Regulamenta a tributação, fiscalização, arrecadação e administração do Imposto sobre a Propriedade Territorial Rural - ITR."),
+    ("regulamentos", "pis-cofins-decreto-4524-2002", "decreto/2002/d4524.htm",
+     "Regulamento do PIS/Pasep e da Cofins — Decreto nº 4.524 de 17/12/2002", "Decreto", "4524", "2002-12-17",
+     "Regulamenta a Contribuição para o PIS/Pasep e a Cofins devidas pelas pessoas jurídicas em geral."),
+    ("regulamentos", "processo-administrativo-fiscal-decreto-7574-2011", "_ato2011-2014/2011/decreto/d7574.htm",
+     "Regulamento do Processo Administrativo Fiscal — Decreto nº 7.574 de 29/09/2011", "Decreto", "7574", "2011-09-29",
+     "Regulamenta o processo de determinação e de exigência de créditos tributários da União, o processo de consulta sobre a aplicação da legislação tributária federal, e outros processos que especifica."),
 ]
 
 
@@ -96,9 +108,10 @@ def baixar(limite, pasta, nome, rel, titulo, tipo, numero, data, ementa, refazer
         f.write(bruto)
 
     corpo = convert(decodificar(bruto, ct))
+    historica = pasta == "constituicoes-historicas"
     cab = ["---", f"titulo: {yaml_str(titulo)}", f"tipo: {yaml_str(tipo)}", f"numero: {yaml_str(numero)}",
-           f"data: {data}", f"ementa: {yaml_str(ementa)}", "revogada: false",
-           "versao_texto: \"compilada (texto vigente)\"", f"fonte: {yaml_str(url)}",
+           f"data: {data}", f"ementa: {yaml_str(ementa)}", f"revogada: {'true' if historica else 'false'}",
+           f"versao_texto: {yaml_str('texto histórico' if historica else 'compilada (texto vigente)')}", f"fonte: {yaml_str(url)}",
            f"baixado_em: {dt.date.today().isoformat()}", "---", ""]
     os.makedirs(os.path.dirname(md), exist_ok=True)
     tmp = md + ".tmp"

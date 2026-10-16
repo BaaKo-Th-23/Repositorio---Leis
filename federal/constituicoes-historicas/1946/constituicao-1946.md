@@ -4,8 +4,8 @@ tipo: "Constituição"
 numero: ""
 data: 1946-09-18
 ementa: "Constituição dos Estados Unidos do Brasil, de 18 de setembro de 1946."
-revogada: false
-versao_texto: "compilada (texto vigente)"
+revogada: true
+versao_texto: "texto histórico"
 fonte: "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao46.htm"
 baixado_em: 2026-10-15
 ---

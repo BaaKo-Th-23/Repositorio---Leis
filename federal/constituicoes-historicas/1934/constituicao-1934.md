@@ -4,8 +4,8 @@ tipo: "Constituição"
 numero: ""
 data: 1934-07-16
 ementa: "Constituição da República dos Estados Unidos do Brasil, de 16 de julho de 1934."
-revogada: false
-versao_texto: "compilada (texto vigente)"
+revogada: true
+versao_texto: "texto histórico"
 fonte: "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao34.htm"
 baixado_em: 2026-10-15
 ---
