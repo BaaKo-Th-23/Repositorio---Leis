@@ -1,5 +1,22 @@
 # Continuação da coleta
 
+## Publicação10423 e próximo lote RSF — 16/10/2026
+
+- abc9f6edcd0 publicado:10.423 documentos federais, total698.899; blob
+  público PROGRESSO.md a4140a9c4662890572fda322a7d8d1875c5c5e60 confirmado.
+- Próximo lote:12RSFs(9+3), fontes oficiais e transcrições visuais dos
+  originais revisadas;31hashes conferidos,3scripts AST, formato12/0erros,
+  diff-check válido. Helpers de auditoria só leem cache, semHTTP/mutação.
+  Manifestos federal/_lote_rsf9_20261016.json e _lote_rsf3_historicas_20261016.json.
+- Estadualv2:50.104candidatos,2.985retidos por imagens normativas/duvidosas;
+  aguardando ledger do subconjunto para não contabilizar retidos como publicados.
+- Municipal gate independente final:3pilotos141MD/32refs/118legados,
+  5pins conferidos. Amostra25PDF/796p:794aceitas sem perda de tokens,
+  2recusas conservadoras fora dos pilotos. Aplicação reversível em andamento;
+  sem retomada HTTP. Nunca contar tokenconservation como fidelidade integral.
+- DOU mantém retenções de integralidade, título, data citada e imagens;
+  47liberações individuais são apenas do gate de integralidade, não gerais.
+
 ## Próximo lote federal e revisão de metadados — 16/10/2026
 
 - Lote federal fixo10423:DEC3840+DPL1530+RFB5053, manifesto público
