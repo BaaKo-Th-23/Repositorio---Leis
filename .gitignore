@@ -5,5 +5,7 @@ _referencias/
 _log*.txt
 .DS_Store
 scripts/bin/
+__pycache__/
+*.py[cod]
 *.log
 *.tmp

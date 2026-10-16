@@ -283,7 +283,8 @@ vazia. Reprocessar o lote exige GPU NVIDIA.
 
 ## Reproduzir e atualizar
 
-**Requisitos:** macOS, Python 3 (só biblioteca padrão), `pdftotext` (poppler) e, para o OCR, o
+**Requisitos:** macOS, Python 3 e `pdftotext` (poppler). A reconstrução geométrica dos
+diários municipais requer também `pypdf` no mesmo Python. Para o OCR, usa-se o
 framework Vision via `swiftc -O scripts/ocr.swift -o scripts/bin/ocr`.
 
 Para JPEG/TIFF/PNG, o conversor pode usar Tesseract 5 com o modelo português

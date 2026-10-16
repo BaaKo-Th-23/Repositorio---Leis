@@ -1,5 +1,30 @@
 # Continuação da coleta
 
+## Reconciliação municipal validada e publicação RSF — 16/10/2026
+
+- 38beb4d724c publicado e confirmado pela API:698.911documentos; blob
+  PROGRESSO.md cf436c32d39c2e6bdf259d306058c320e3db113c. Relatório/SVG
+  incluídos e gráfico renderizado sem cortes.
+- Próxima publicação municipal:141MD em3edições oficiais,32referências,
+  saldo Git+52MD(A102/M39/D50). Os118legados desta aplicação e71históricos
+  preservados,189snapshots no total. Gates independentes:5pins/503p dos
+  pilotos,18sintéticos locais+11independentes;amostra25PDF794/796p aceitas,
+  2recusas conservadoras mantidas. Não certifica corpus inteiro.
+- Auditoria do índice municipal completo:12.381MD,1.281SAPL,0problemas;
+  formato dos141:0erros e38datas desconhecidas explícitas. Após essa rodada,
+  normalização38data:"" e fingerprint dos141MD/32refs foi reproduzida;
+  root confirmou bytes:nenhuma outra diferença,corpos/datas conhecidas iguais.
+- Ledger municipais/_serializacoes_datas.json preserva provas congeladas e
+  gerador anterior; snapshots não normalizados:50linhas originais no diff
+  constam das74exceções porSHA. Demais caminhos do diff sem whitespace novo.
+- Auditor geral --staged passa a excluir pastas _ e . como o modo em disco;
+  backups/provas não são documentos canônicos nem entram no progresso.
+- Estadual50.104 pronto porhash, inclui1PI já existente(saldo+50.103),
+  ledger filtrado29.480 e2.985retidos excluídos. Nenhum arquivo estadual
+  staged nesta publicação municipal. DOU segue revisão de datas/identidade.
+- HTTPdiários/fila offline continuam parados; coletores federais/estaduais
+  e SAPL preservados. Objetivo completo ativo, sem reduzir metas.
+
 ## Publicação10423 e próximo lote RSF — 16/10/2026
 
 - abc9f6edcd0 publicado:10.423 documentos federais, total698.899; blob

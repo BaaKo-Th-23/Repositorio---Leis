@@ -19,12 +19,13 @@ na forma:
     <nome>
     Código Identificador:481AA0F1
 
-O `Código Identificador` fecha cada ato e é único — é por ele que a edição se divide. O município
+O `Código Identificador` fecha cada ato e divide a edição; a identidade inclui também a fonte/edição, pois códigos podem reaparecer em dias diferentes. O município
 vem do cabeçalho de seção mais recente.
 
-**O PDF é convertido sem `-layout`, de propósito.** A edição é diagramada em duas colunas, e o
-`-layout` entrelaça as colunas: a epígrafe de uma lei sai na mesma linha do "Publicado por:" da
-outra. Sem ele, o pdftotext respeita a ordem de leitura do próprio PDF e o texto sai correto.
+O PDF é reconstruído por coordenadas de palavras e diagramação vetorial: colunas são
+lidas da esquerda para a direita, com tabelas e faixas em largura total preservadas.
+Layouts ambíguos falham explicitamente. O cache textual é versionado e os documentos
+anteriores exigem reconciliação por edição/código, em vez de serem pulados por caminho.
 
 O calendário público permite consultar edições históricas por data. `--de` e `--ate`
 consultam esse formulário, preservando cookie e token CSRF, e guardam os resultados para retomar
@@ -41,6 +42,7 @@ import gzip
 import hashlib
 from http.cookiejar import CookieJar
 import json
+from pathlib import Path
 import os
 import re
 import subprocess
@@ -51,6 +53,10 @@ import urllib.parse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from comum import CANONICO, Limitador, normalizar_chave, slugify, yaml_str  # noqa: E402
+from extrair_diario_municipal import VERSAO, caminhos_cache, texto_colunas_cache
+
+CLASSIFICADOR_SHA = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+EXTRACAO_ATUAL = {}
 
 RAIZ = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "municipais"))
 PORTAL = "https://www.diariomunicipal.com.br/"
@@ -71,7 +77,9 @@ TIPOS = [
     (re.compile(r"^LEI\s+COMPLEMENTAR\s+N", re.I), "lei complementar"),
     (re.compile(r"^LEI\s+ORG[ÂA]NICA", re.I), "lei organica"),
     (re.compile(r"^EMENDA\s+[ÀA]\s+LEI\s+ORG[ÂA]NICA", re.I), "emenda a lei organica"),
-    (re.compile(r"^LEI\s+(?:MUNICIPAL\s+)?N", re.I), "lei ordinaria"),
+    (re.compile(r"^LEI\s+(?:(?:MUNICIPAL|ORDIN[ÁA]RIA)\s+)?N", re.I), "lei ordinaria"),
+    (re.compile(r"^DECRETO\s+LEGISLATIVO\s+N", re.I), "decreto legislativo"),
+    (re.compile(r"^RESOLU[ÇC][ÃA]O\s+N", re.I), "resolucao"),
     (re.compile(r"^DECRETO\s+(?:MUNICIPAL\s+)?N", re.I), "decreto"),
 ]
 
@@ -80,7 +88,7 @@ CODIGO = re.compile(r"^Código Identificador:\s*(\w+)\s*$", re.M)
 # "ESTADO DA BAHIA"; e "PREFEITURA MUNICIPAL DO CARPINA" ao lado de "MUNICÍPIO DE ALEXÂNIA-GO".
 # A preposição entra como D[AEO]S? e o nome do estado é validado contra UFS — assim uma linha que
 # só começa igual ("ESTADO DE GOIÁS, E A EMPRESA...") não vira cabeçalho.
-ENTIDADE = re.compile(r"^(?:PREFEITURA\s+MUNICIPAL|PREFEITURA|MUNIC[ÍI]PIO|C[ÂA]MARA\s+MUNICIPAL"
+ENTIDADE = re.compile(r"^(?:PREFEITURA\s+DO\s+MUNIC[ÍI]PIO|PREFEITURA\s+MUNICIPAL|PREFEITURA|MUNIC[ÍI]PIO|C[ÂA]MARA\s+MUNICIPAL"
                       r"|C[ÂA]MARA|GOVERNO\s+MUNICIPAL)\s+D[AEO]S?\s+(.+?)\s*$", re.M)
 ESTADO = re.compile(r"^ESTADO\s+D[AEO]S?\s+(.+?)\s*$", re.M)
 # "ALEXÂNIA-GO", "SÃO PAULO/SP": a sigla do estado no fim do nome do município
@@ -261,20 +269,24 @@ def data_do_link(link):
 
 
 def texto_do_pdf(caminho):
-    """Sem -layout: a edição é de duas colunas e o -layout entrelaça as colunas."""
-    with tempfile.NamedTemporaryFile(suffix=".txt", delete=False) as t:
-        saida = t.name
-    try:
-        subprocess.run(["pdftotext", caminho, saida], check=True,
-                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        with open(saida, encoding="utf-8", errors="replace") as f:
-            return f.read()
-    finally:
-        os.unlink(saida)
+    """Geometria por página, com cache versionado e prova do PDF/texto."""
+    global EXTRACAO_ATUAL
+    texto = texto_colunas_cache(caminho)
+    _, meta = caminhos_cache(caminho)
+    EXTRACAO_ATUAL = json.loads(meta.read_text())
+    return texto
 
 
 MUNICIPIOS = {}
 IBGE_URL = "https://servicodados.ibge.gov.br/api/v1/localidades/municipios?orderBy=nome"
+
+
+def chaves_municipio(nome):
+    nome = re.sub(r"['’‘´ʼ]\s*", "'", nome)
+    formas = {nome, nome.replace("'", "")}
+    # Grafia expandida dos nomes oficiais D'Oeste encontrada nos próprios diários.
+    formas.add(re.sub(r"\bD'OESTE\b", "DO OESTE", nome, flags=re.I))
+    return {normalizar_chave(x) for x in formas}
 
 
 def municipios_ibge():
@@ -300,15 +312,21 @@ def municipios_ibge():
     for registro in dados:
         regiao = registro.get("microrregiao")
         uf = regiao["mesorregiao"]["UF"]["sigla"] if regiao else registro["regiao-imediata"]["regiao-intermediaria"]["UF"]["sigla"]
-        MUNICIPIOS.setdefault(uf, {})[normalizar_chave(registro["nome"].replace("'", "").replace("’", ""))] = registro["nome"].upper()
+        for chave in chaves_municipio(registro["nome"]):
+            nomes = MUNICIPIOS.setdefault(uf, {})
+            if chave in nomes and nomes[chave] != registro["nome"].upper():
+                raise RuntimeError("alias IBGE ambíguo: " + chave)
+            nomes[chave] = registro["nome"].upper()
     return MUNICIPIOS
 
 
 def municipio_oficial(uf, candidato, prefixo=False):
     nomes = municipios_ibge().get(uf, {})
-    chave = normalizar_chave(SUFIXO_UF.sub("", candidato).replace("'", "").replace("’", ""))
-    if chave in nomes:
-        return nomes[chave]
+    chaves = chaves_municipio(SUFIXO_UF.sub("", candidato))
+    encontrados = {nomes[c] for c in chaves if c in nomes}
+    if len(encontrados) == 1:
+        return encontrados.pop()
+    chave = max(chaves, key=len)
     if prefixo:
         candidatos = [n for n in nomes if chave.startswith(n + " ")]
         if candidatos:
@@ -336,21 +354,82 @@ def atos(texto):
         yield uf, municipio, bloco, m.group(1)
 
 
-def epigrafe(bloco):
-    """(epígrafe, tipo canônico, posição) da primeira linha do bloco que abre uma norma.
+def linha_epigrafe(linhas, indice):
+    linha = linhas[indice].strip()
+    if re.search(r"\bDE(?:\s+\d{1,2}(?:\s+DE)?)?$", linha, re.I) and indice + 1 < len(linhas):
+        continuacao = linhas[indice + 1].strip()
+        if re.fullmatch(r"(?:\d{1,2}\s+DE\s+)?(?:[A-ZÀ-Ÿa-zà-ÿ]+\s+DE\s+)?\d{4}[.,]?", continuacao, re.I):
+            linha += " " + continuacao
+    return linha
 
-    A posição importa: o bloco começa onde terminou o ato anterior, então traz na frente o rodapé
-    dele — assinatura, cidade, nome da secretaria. O texto da norma começa na epígrafe.
-    """
+
+def epigrafe_contextual(linhas, indice):
+    linha=linhas[indice].strip()
+    if not re.fullmatch(r"LEI(?:\s+(?:MUNICIPAL|ORDIN[ÁA]RIA|COMPLEMENTAR))?\s+N[.ºo°\s]{0,4}\d[\d.]*/\d{4}(?:[-/][A-Z]+)?[.]?",linha,re.I):
+        return False
+    anterior="\n".join(linhas[:indice])
+    if re.search(r"^\s*(?:PORTARIA|AVISO|CONTRATO|CONSIDERANDO|RESOLVE|Art\.)\b",anterior,re.M|re.I):
+        return False
+    abertura=" ".join(linhas[indice+1:indice+18])
+    return bool(re.search(r"\bsanciono\b",abertura,re.I) and re.search(r"\bArt\.\s*1[º°.]?\b",abertura,re.I))
+
+
+def epigrafe(bloco):
+    """Epígrafe e posição original; repetições próprias podem completar seus metadados."""
     pos = 0
-    for bruta in bloco.split("\n"):
-        linha = bruta.strip()
-        if 6 <= len(linha) <= 160 and e_epigrafe(linha):
+    linhas = bloco.split("\n")
+    for indice, bruta in enumerate(linhas):
+        linha = linha_epigrafe(linhas, indice)
+        if 6 <= len(linha) <= 200 and (e_epigrafe(linha) or epigrafe_contextual(linhas, indice)):
             for padrao, chave in TIPOS:
                 if padrao.match(linha):
+                    numero = NUMERO.search(linha)
+                    if numero and not DATA_EXTENSO.search(linha):
+                        for proximo in range(indice + 1, min(indice + 9, len(linhas))):
+                            repetida = linha_epigrafe(linhas, proximo)
+                            if re.match(r"^(?:Art\.|CONSIDERANDO|RESOLVE|DECRETA|O PREFEITO)\b", repetida, re.I):
+                                break
+                            outro = NUMERO.search(repetida)
+                            if (padrao.match(repetida) and outro
+                                    and outro.group(1).replace(".", "") == numero.group(1).replace(".", "")
+                                    and DATA_EXTENSO.search(repetida) and e_epigrafe(repetida)):
+                                return repetida, chave, pos
                     return linha, chave, pos
         pos += len(bruta) + 1
     return None, None, 0
+
+
+def cabecalho_normativo_pendente(bloco):
+    possivel = re.search(r"^\s*(?:LEI(?:\s+(?:ORDIN[ÁA]RIA|COMPLEMENTAR|MUNICIPAL))?|DECRETO(?:\s+LEGISLATIVO)?|RESOLU[ÇC][ÃA]O|EMENDA\s+[ÀA]\s+LEI)\s+(?:N[.ºo°\s]|\d)", bloco, re.M|re.I)
+    return bloco[possivel.start():].splitlines()[0] if possivel else ""
+
+
+def cobertura_bloco(bloco):
+    titulo, _, inicio = epigrafe(bloco)
+    cabecalho = bloco[:inicio] if titulo else bloco[:600]
+    if re.search(r"^\s*ANEXO(?:\s+[ÚU]NICO|\s+[IVXLC\d]+)?\s*(?:[-–:]|$)", cabecalho, re.M|re.I):
+        return "anexo; documento vinculado ao ato principal, sem contagem como nova norma"
+    if re.search(r"^\s*EXTRATO\s+DE\s+(?:LEI|DECRETO|RESOLU[ÇC][ÃA]O)\b", cabecalho, re.M|re.I):
+        return "extrato; texto integral e anexos externos pendentes de verificação"
+    if re.search(r"^\s*(?:ERRATA|RETIFICA[ÇC][ÃA]O)\b", cabecalho, re.M|re.I):
+        return "retificação; não substitui a publicação integral do ato"
+    return ""
+
+
+def gravar_referencia(uf, municipio, bloco, codigo, data, fonte, cobertura):
+    titulo, tipo, _ = epigrafe(bloco)
+    numero = NUMERO.search(titulo or "")
+    dados = {"uf":uf,"municipio":municipio,"codigo_identificador":codigo,
+             "titulo":titulo,"tipo":tipo,"numero":numero.group(1).replace(".", "") if numero else "",
+             "data_publicacao":str(data),"fonte":fonte,"cobertura":cobertura,
+             "extrator":VERSAO,"sha256_classificador":CLASSIFICADOR_SHA,"sha256_extrator":EXTRACAO_ATUAL["sha256_extrator"],"sha256_pdf":EXTRACAO_ATUAL["sha256_pdf"],
+             "sha256_bloco":hashlib.sha256(bloco.encode()).hexdigest(),"texto":bloco}
+    caminho = Path(RAIZ)/"_referencias/diarios"/VERSAO/EXTRACAO_ATUAL["sha256_pdf"]/(codigo+".json")
+    caminho.parent.mkdir(parents=True,exist_ok=True)
+    temporario=caminho.with_suffix(".json.tmp")
+    temporario.write_text(json.dumps(dados,ensure_ascii=False,indent=2))
+    temporario.replace(caminho)
+    return caminho
 
 
 def e_epigrafe(linha):
@@ -363,7 +442,13 @@ def e_epigrafe(linha):
     exige, em troca, que a linha seja curta — citação costuma continuar a frase.
     """
     if linha != linha.upper():
-        return False
+        # Certos diários mantêm LEI em caixa alta e escrevem somente a data em caixa mista.
+        # A frase deve encerrar na data, para não aceitar citações dentro de portarias.
+        if (not re.match(r"^(?:LEI|DECRETO|RESOLUÇÃO)\s+", linha)
+                or not NUMERO.search(linha)
+                or not DATA_EXTENSO.search(linha)
+                or not re.search(r"\b\d{4}[.,\s]*$", linha)):
+            return False
     if NUMERO.search(linha) or DATA_BARRA.search(linha):
         return True
     return len(linha) <= 60 and not linha.rstrip().endswith((",", ";", ":", "E", "QUE", "DO", "DE"))
@@ -412,19 +497,33 @@ def gravar(uf, municipio, titulo, chave, bloco, codigo, data_edicao, link):
                     pass
             observacao_data = "Data da epígrafe posterior à publicação ou inválida; " + (
                 "data registrada conforme assinatura no corpo." if data else "data não determinada.")
-    ano_citado = DATA_BARRA.search(titulo)
-    ano = data[:4] if data else (ano_citado.group(2) if ano_citado else data_na_fonte[:4] or str(data_edicao.year))
+    ano_citado = re.search(r"/(?:[A-Z.-]+/)*(\d{4})\b", titulo, re.I)
+    ano = data[:4] if data else (ano_citado.group(1) if ano_citado else data_na_fonte[:4])
+    if not ano:
+        raise RuntimeError("ano da norma não determinado na epígrafe; exige revisão da assinatura")
     # o nome do arquivo sai da chave canônica ("lei ordinaria"), não da pasta no plural; e o
     # nome do município perde o acento, para que o caminho seja o mesmo em qualquer sistema
     slug = slugify(f"{slugify(chave)}-{numero or codigo}-{ano}-{codigo}")[:110]
     md = os.path.join(RAIZ, uf, slugify(normalizar_chave(municipio))[:60], pasta, ano, slug + ".md")
-    if os.path.exists(md):
-        return False
     corpo = re.sub(r"\n{3,}", "\n\n", bloco.strip())
+    if os.path.exists(md):
+        anterior = Path(md).read_text()
+        if (f'extrator: "{VERSAO}"' in anterior
+                and f'sha256_classificador: {yaml_str(CLASSIFICADOR_SHA)}' in anterior
+                and f'sha256_extrator: {yaml_str(EXTRACAO_ATUAL.get("sha256_extrator", ""))}' in anterior
+                and f'fonte: {yaml_str(link)}' in anterior
+                and f'sha256_pdf: {yaml_str(EXTRACAO_ATUAL.get("sha256_pdf", ""))}' in anterior
+                and anterior.split("\n# ",1)[-1].split("\n\n",1)[-1].strip()==corpo.strip()):
+            return False
+        raise RuntimeError("documento existente exige reconciliação por fonte/edição+código: " + md)
+    if not EXTRACAO_ATUAL.get("sha256_pdf"):
+        raise RuntimeError("extração sem proveniência verificável do PDF")
     cab = ["---", f"titulo: {yaml_str(titulo)}", f"uf: {yaml_str(uf)}",
            f"municipio: {yaml_str(municipio)}", f"tipo: {yaml_str(tipo_nome)}",
-           f"numero: {yaml_str(numero)}", f"data: {data}", f"ano: {yaml_str(ano)}",
-           "revogada: false", 'versao_texto: "publicação original"',
+           f"numero: {yaml_str(numero)}", f"data: {data if data else yaml_str('')}", f"ano: {yaml_str(ano)}",
+           "revogada: null", 'versao_texto: "publicação original"',
+           f"extrator: {yaml_str(VERSAO)}", f"sha256_classificador: {yaml_str(CLASSIFICADOR_SHA)}", f"sha256_extrator: {yaml_str(EXTRACAO_ATUAL['sha256_extrator'])}", f"sha256_pdf: {yaml_str(EXTRACAO_ATUAL['sha256_pdf'])}",
+           f"sha256_texto_pdf: {yaml_str(EXTRACAO_ATUAL['sha256_texto'])}",
            f"publicacao: {yaml_str('Diário Oficial de ' + data_edicao.strftime('%d/%m/%Y'))}",
            f"data_publicacao: {data_edicao.isoformat()}",
            f"codigo_identificador: {yaml_str(codigo)}", f"fonte: {yaml_str(link)}",
@@ -438,6 +537,21 @@ def gravar(uf, municipio, titulo, chave, bloco, codigo, data_edicao, link):
         f.write("\n".join(cab) + f"# {titulo}\n\n" + corpo + "\n")
     os.replace(tmp, md)
     return True
+
+
+def verificar_edicao_reconciliada(link):
+    resultado = subprocess.run(
+        ["rtk", "proxy", "rg", "-l", "-F", "--glob", "*.md",
+         "fonte: " + yaml_str(link), RAIZ], capture_output=True, text=True)
+    if resultado.returncode not in (0, 1):
+        raise RuntimeError("não foi possível verificar documentos anteriores da edição")
+    for caminho in resultado.stdout.splitlines():
+        anterior = Path(caminho).read_text()
+        if (f'extrator: "{VERSAO}"' not in anterior
+                or f'sha256_classificador: {yaml_str(CLASSIFICADOR_SHA)}' not in anterior
+                or f'sha256_extrator: {yaml_str(EXTRACAO_ATUAL.get("sha256_extrator", ""))}' not in anterior
+                or f'sha256_pdf: {yaml_str(EXTRACAO_ATUAL["sha256_pdf"])}' not in anterior):
+            raise RuntimeError("edição possui versão anterior não reconciliada: " + caminho)
 
 
 def main():
@@ -465,7 +579,7 @@ def main():
 
     os.makedirs(RAIZ, exist_ok=True)
     falhas_path = os.path.join(RAIZ, "_falhas.jsonl")
-    total = {"ok": 0, "pulado": 0, "sem_norma": 0, "sem_edicao": 0, "erro": 0}
+    total = {"ok": 0, "pulado": 0, "sem_norma": 0, "referencias_parciais": 0, "sem_edicao": 0, "erro": 0}
     with open(falhas_path, "a", encoding="utf-8") as falhas:
         for slug, url in lista:
             try:
@@ -489,12 +603,24 @@ def main():
                                 f.write(dados)
                             os.replace(pdf + ".tmp", pdf)
 
-                        n_ok = n_pulado = n_sem = 0
-                        for uf, municipio, bloco, codigo in atos(texto_do_pdf(pdf)):
+                        n_ok = n_pulado = n_sem = n_ref = 0
+                        texto = texto_do_pdf(pdf)
+                        verificar_edicao_reconciliada(link)
+                        for uf, municipio, bloco, codigo in atos(texto):
                             titulo, chave, inicio = epigrafe(bloco)
-                            if not titulo or not uf or not municipio:
+                            cobertura = cobertura_bloco(bloco)
+                            if cobertura:
+                                gravar_referencia(uf,municipio,bloco,codigo,data_edicao,link,cobertura)
+                                n_ref += 1
+                                continue
+                            if not titulo:
+                                pendente = cabecalho_normativo_pendente(bloco)
+                                if pendente:
+                                    raise RuntimeError("cabeçalho normativo não reconhecido, código " + codigo + ": " + pendente)
                                 n_sem += 1
                                 continue
+                            if not uf or not municipio:
+                                raise RuntimeError("norma sem cabeçalho municipal confirmado, código " + codigo)
                             if gravar(uf, municipio, titulo, chave, bloco[inicio:], codigo, data_edicao, link):
                                 n_ok += 1
                             else:
@@ -502,8 +628,9 @@ def main():
                         total["ok"] += n_ok
                         total["pulado"] += n_pulado
                         total["sem_norma"] += n_sem
+                        total["referencias_parciais"] += n_ref
                         print(f"{slug} {data_edicao}: {n_ok} normas novas, {n_pulado} já tinha, "
-                              f"{n_sem} atos que não são norma", flush=True)
+                              f"{n_sem} atos fora do recorte, {n_ref} referências parciais", flush=True)
                     except Exception as e:
                         total["erro"] += 1
                         falhas.write(json.dumps({"assoc": slug, "fonte": link, "erro": str(e)}, ensure_ascii=False) + "\n")

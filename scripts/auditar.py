@@ -80,7 +80,8 @@ def documentos(alvos, staged):
                                     stdin=subprocess.PIPE, stdout=subprocess.PIPE)
         try:
             for nome in nomes.decode().split("\0"):
-                if not nome.endswith(".md") or nome.split("/")[0] not in BASES:
+                if (not nome.endswith(".md") or nome.split("/")[0] not in BASES
+                        or any(p.startswith(("_", ".")) for p in Path(nome).parts)):
                     continue
                 processo.stdin.write((":" + nome + "\n").encode())
                 processo.stdin.flush()
