@@ -4,7 +4,7 @@ tribunal: "STJ"
 tipo: "Súmula"
 numero: "418"
 data: 2016-07-01
-revogada: false
+revogada: true
 versao_texto: "caderno consolidado do tribunal"
 fonte: "https://www.stj.jus.br/docs_internet/SumulasSTJ.pdf"
 baixado_em: 2026-10-15

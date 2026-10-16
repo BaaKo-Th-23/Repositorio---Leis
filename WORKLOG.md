@@ -51,6 +51,27 @@ O último relatório disponível é antigo e será regenerado após a auditoria 
   uniformização tem item próprio, separado de súmulas. Nenhuma meta é reduzida ao
   volume coletado para simular conclusão.
 
+## Lotes seguintes — 15/10/2026
+
+- Commit estadual `5fd5a8b4e83`: acréscimo líquido de 124.319 registros; relatório
+  de 547.986 / ~11.768.329. Auditoria dos 136.927 Markdown novos/alterados
+  encontrou uma data de citação em SC; corrigida para 31/07/1975 conforme metadado,
+  epígrafe e assinatura, número 670, corpo preservado. Verificação focada passou.
+  Diff completo passou. Datas ausentes permanecem explícitas em 7.487 registros.
+- Hook de progresso usa `rtk proxy git add` para evitar calcular novamente o diff
+  completo apenas para resumir o comando de inclusão dos dois relatórios.
+- Municipal: fila atual 12292/12301, com limites comprovados nos cards oficiais e
+  históricos preservados. Nova frente de orgânicas SAPL valida identidade no IBGE;
+  descoberta usa catálogo oficial SIGI/Interlegis, sem adivinhar domínios.
+- SC retomado com parser corrigido no PID 15440; RJ constitucional PID 15868,
+  índice de 84 seções completo, documento final ainda pendente de texto e ADCT.
+- Federal: histórico de falhas auditado offline, 2.172 registros já resolvidos e
+  6.034 pendências reais naquele snapshot. Relatórios preservados no cache de
+  auditorias; preencher URNs equivalentes não altera os corpos. Série Planalto DPL
+  de 175 URLs é recorte histórico, não prova cobertura dos 5.831 DPL do índice.
+- Próximo lote jurisprudência inclui BNP com decisões variantes preservadas e
+  83 súmulas TNU da edição oficial histórica de 2016; situação atual não inferida.
+
 ## Publicação e progresso
 
 A pedido do usuário, todo commit deve regenerar `PROGRESSO.md` e `progresso.svg`

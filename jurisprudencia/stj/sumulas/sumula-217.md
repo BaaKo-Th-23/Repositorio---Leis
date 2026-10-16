@@ -4,7 +4,7 @@ tribunal: "STJ"
 tipo: "Súmula"
 numero: "217"
 data: 2003-10-23
-revogada: false
+revogada: true
 versao_texto: "caderno consolidado do tribunal"
 fonte: "https://www.stj.jus.br/docs_internet/SumulasSTJ.pdf"
 baixado_em: 2026-10-15

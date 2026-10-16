@@ -1,11 +1,11 @@
 # Progresso
 
-Gerado por `scripts/progresso.py` em 15/10/2026 22:30:44 (America/Recife). O escopo está em
+Gerado por `scripts/progresso.py` em 15/10/2026 22:39:36 (America/Recife). O escopo está em
 `scripts/plano.py`; os números de **meta** são estimativas do tamanho de cada série, não
 contagens oficiais. O percentual mede volume diante das metas; não comprova integralidade
 das fontes nem qualidade de cada conversão. Lacunas continuam abertas até verificação.
 
-**547.986 de ~11.768.329 normas — 4.7%**
+**554.596 de ~11.768.329 normas — 4.7%**
 
 ![progresso](progresso.svg)
 
@@ -73,7 +73,7 @@ Fonte única (normas.leg.br, Planalto, Senado). **351.905 de ~574.432 — 61.3%*
 
 ## Fase 2 — infralegal e jurisprudência
 
-Uma fonte por órgão, agência ou tribunal. **195.521 de ~861.184 — 22.7%**
+Uma fonte por órgão, agência ou tribunal. **202.131 de ~861.184 — 23.5%**
 
 ### Infralegal — tributário — 1.114 / ~134.038 (0.8%)
 
@@ -203,20 +203,20 @@ Uma fonte por órgão, agência ou tribunal. **195.521 de ~861.184 — 22.7%**
 | 🟦 | Ministério dos Povos Indígenas | 88 | 300 | `reguladores/mpi` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério do Desenvolvimento Agrário e Agricultura Familiar | 964 | 1.200 | `reguladores/mda` | Diário Oficial da União (in.gov.br) |
 
-### Jurisprudência vinculante — 4.924 / ~14.667 (33.6%)
+### Jurisprudência vinculante — 11.534 / ~14.667 (78.6%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
 | ✅ | Súmulas vinculantes do STF | 62 | 62 | `jurisprudencia/stf/sumulas-vinculantes` | CNJ — Pangea/BNP (precedentes do STF) |
 | ✅ | Súmulas do STF | 736 | 736 | `jurisprudencia/stf/sumulas` | stf.jus.br |
-| 🟦 | Temas de repercussão geral | 550 | 1.489 | `jurisprudencia/stf/repercussao-geral` | CNJ — Pangea/BNP (precedentes do STF) |
-| ⬜️ | Controle concentrado com eficácia erga omnes (ADI, ADC, ADPF, ADO) | 0 | 8.000 | `jurisprudencia/stf/controle-concentrado` | stf.jus.br |
+| ✅ | Temas de repercussão geral | 1.489 | 1.489 | `jurisprudencia/stf/repercussao-geral` | CNJ — Pangea/BNP (precedentes do STF) |
+| 🟦 | Controle concentrado com eficácia erga omnes (ADI, ADC, ADPF, ADO) | 5.194 | 8.000 | `jurisprudencia/stf/controle-concentrado` | stf.jus.br |
 | ✅ | Súmulas do STJ | 649 | 649 | `jurisprudencia/stj/sumulas` | stj.jus.br |
 | ✅ | Temas de recursos repetitivos (STJ) | 1.474 | 1.474 | `jurisprudencia/stj/repetitivos` | STJ — dados abertos, Temas.csv (números únicos) |
 | ✅ | Súmulas e orientações jurisprudenciais do TST | 1.157 | 1.157 | `jurisprudencia/tst` | tst.jus.br |
-| 🟦 | Súmulas do TCU, TNU, STM e TSE | 294 | 700 | `jurisprudencia/outros-tribunais` | tcu.gov.br, cjf.jus.br, stm.jus.br, tse.jus.br |
+| 🟦 | Súmulas do TCU, TNU, STM e TSE | 377 | 700 | `jurisprudencia/outros-tribunais`, `jurisprudencia/tnu/sumulas` | tcu.gov.br, cjf.jus.br, stm.jus.br, tse.jus.br |
 | 🟦 | Regimentos internos dos tribunais superiores | 2 | 6 | `jurisprudencia/regimentos` | portais dos tribunais |
-| ⬜️ | Temas de uniformização da TNU, incluindo cancelados | 0 | 394 | `jurisprudencia/tnu/uniformizacao` | CNJ — Pangea/BNP (precedentes da TNU) |
+| ✅ | Temas de uniformização da TNU, incluindo cancelados | 394 | 394 | `jurisprudencia/tnu/uniformizacao` | CNJ — Pangea/BNP (precedentes da TNU) |
 
 ### Infralegal estadual — 154.689 / ~577.054 (26.8%)
 

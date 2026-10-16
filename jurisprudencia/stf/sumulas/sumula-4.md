@@ -4,7 +4,7 @@ tribunal: "STF"
 tipo: "Súmula"
 numero: "4"
 data: 1963-12-13
-revogada: false
+revogada: true
 versao_texto: "caderno consolidado do tribunal"
 fonte: "https://www.stf.jus.br/arquivo/cms/jurisprudenciaSumula/anexo/Enunciados_Sumulas_STF_1_a_736_Completo.pdf"
 baixado_em: 2026-10-15

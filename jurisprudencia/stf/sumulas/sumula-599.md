@@ -4,7 +4,7 @@ tribunal: "STF"
 tipo: "Súmula"
 numero: "599"
 data: 1976-12-15
-revogada: false
+revogada: true
 versao_texto: "caderno consolidado do tribunal"
 fonte: "https://www.stf.jus.br/arquivo/cms/jurisprudenciaSumula/anexo/Enunciados_Sumulas_STF_1_a_736_Completo.pdf"
 baixado_em: 2026-10-15

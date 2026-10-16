@@ -4,7 +4,7 @@ tribunal: "TST"
 tipo: "Orientação Jurisprudencial"
 numero: "SDI1T-22"
 data: 2003-11-24
-revogada: false
+revogada: true
 versao_texto: "caderno consolidado do tribunal"
 fonte: "https://www.tst.jus.br/documents/10157/63003/Livro-Internet.pdf"
 baixado_em: 2026-10-15

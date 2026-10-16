@@ -137,6 +137,19 @@ DATA_APROVACAO = re.compile(r"(?:Data de Aprovação|Data da Decisão)\s*\n\s*(?
 DATA_TST = re.compile(r"\b(\d{2})\.(\d{2})\.(\d{4})\b")
 
 
+def cancelada_no_caderno(corpo, tribunal, numero):
+    """Somente marcações do próprio verbete, sem propagar cancelamento de precedentes citados."""
+    if tribunal == "stf":
+        return bool(re.search(r"\(\s*Cancelada\s*\)", corpo.split("Data de Aprovação", 1)[0], re.I))
+    if tribunal == "stj":
+        enunciado = corpo.split("Órgão Julgador", 1)[0]
+        return bool(re.search(r"CANCELAMENTO\s+da\s+Súmula\s+n[.ºo°\s]*" +
+                              re.escape(numero) + r"\b", enunciado, re.I))
+    if tribunal == "tst":
+        return bool(re.search(r"\bcancelad[ao]\b", corpo.split("\n\n", 1)[0], re.I))
+    return False
+
+
 def data_do_enunciado(corpo):
     m = DATA_APROVACAO.search(corpo)
     if m:
@@ -174,23 +187,26 @@ def texto_do_pdf(caminho):
         os.unlink(saida)
 
 
-def bnp_stf(limite, refazer=False):
+def bnp_stf(limite, refazer=False, tribunal="STF"):
+    tribunal = tribunal.upper()
     """Precedentes STF do Banco Nacional de Precedentes do CNJ, com paginação e JSON original."""
     url = "https://pangeabnp.pdpj.jus.br/api/v1/precedentes"
     grupos = [("sumulas-vinculantes", ["SV"]), ("repercussao-geral", ["RG"]),
               ("controle-concentrado", ["ADI", "ADPF", "ADC", "ADO"])]
+    if tribunal != "STF":
+        grupos = [("uniformizacao", ["PUIL"])] if tribunal == "TNU" else [("sumulas", ["SUM"])]
     tipos = {"SV": "Súmula vinculante", "RG": "Tema de repercussão geral", "ADI": "ADI",
-             "ADPF": "ADPF", "ADC": "ADC", "ADO": "ADO"}
+             "ADPF": "ADPF", "ADC": "ADC", "ADO": "ADO", "SUM": "Súmula", "PUIL": "PUIL"}
     cont = {"ok": 0, "pulado": 0}
     for pasta, especies in grupos:
         pagina = 1
         vistos = set()
         while True:
             filtro = {"buscaGeral": "", "todasPalavras": "", "quaisquerPalavras": "", "semPalavras": "",
-                      "trechoExato": "", "atualizacaoDesde": "", "atualizacaoAte": "", "cancelados": False,
+                      "trechoExato": "", "atualizacaoDesde": "", "atualizacaoAte": "", "cancelados": True,
                       "ordenacao": "Text", "nr": "", "pagina": pagina, "tamanhoPagina": 50,
-                      "orgaos": ["STF"], "tipos": especies}
-            cache = os.path.join(RAIZ, "_fonte", "bnp", pasta, f"pagina-{pagina}.json")
+                      "orgaos": [tribunal], "tipos": especies}
+            cache = os.path.join(RAIZ, "_fonte", "bnp", (pasta if tribunal == "STF" else tribunal.lower() + "-" + pasta) + "-todos", f"pagina-{pagina}.json")
             try:
                 if os.path.exists(cache) and not refazer:
                     with open(cache, encoding="utf-8") as f:
@@ -212,7 +228,7 @@ def bnp_stf(limite, refazer=False):
                         raise RuntimeError("BNP encerrou paginação antes do total informado")
                     break
                 for registro in dados["resultados"]:
-                    if registro["orgao"] != "STF" or registro["tipo"] not in especies:
+                    if registro["orgao"] != tribunal or registro["tipo"] not in especies:
                         raise RuntimeError("BNP retornou registro fora do filtro")
                     if registro["id"] in vistos:
                         raise RuntimeError("BNP repetiu registro entre páginas")
@@ -220,13 +236,28 @@ def bnp_stf(limite, refazer=False):
                     numero, tipo = str(registro["nr"]), registro["tipo"]
                     if not numero.isdigit():
                         raise RuntimeError("BNP sem número válido")
-                    prefixo = "sumula-vinculante" if tipo == "SV" else ("tema" if tipo == "RG" else tipo.lower())
-                    destino = os.path.join(RAIZ, "stf", pasta, f"{prefixo}-{numero}.md")
-                    if os.path.exists(destino) and not refazer:
-                        cont["pulado"] += 1
-                        continue
-                    titulo = f"{tipos[tipo]} nº {numero} do STF"
-                    cab = ["---", f"titulo: {yaml_str(titulo)}", 'tribunal: "STF"',
+                    prefixo = "sumula-vinculante" if tipo == "SV" else ("tema" if tipo == "RG" else ("sumula" if tipo == "SUM" else tipo.lower()))
+                    destino = os.path.join(RAIZ, "stf", pasta, f"{prefixo}-{numero}.md") if tribunal == "STF" else (
+                        os.path.join(RAIZ, "tnu", pasta, f"{prefixo}-{numero}.md") if tribunal == "TNU" else
+                        os.path.join(RAIZ, "outros-tribunais", tribunal.lower(), f"{prefixo}-{numero}.md"))
+                    versoes_anteriores = []
+                    if os.path.exists(destino):
+                        with open(destino, encoding="utf-8") as f:
+                            anterior = f.read()
+                        versoes_anteriores = [json.loads(t) for t in re.findall(r"```json\n(.*?)\n```", anterior, re.S)]
+                        if not refazer:
+                            if registro in versoes_anteriores:
+                                cont["pulado"] += 1
+                            else:
+                                adicional = "\n## Outra versão oficial capturada pelo CNJ\n\n```json\n" + json.dumps(
+                                    registro, ensure_ascii=False, indent=2) + "\n```\n"
+                                with open(destino + ".tmp", "w", encoding="utf-8") as f:
+                                    f.write(anterior + adicional)
+                                os.replace(destino + ".tmp", destino)
+                                cont["ok"] += 1
+                            continue
+                    titulo = f"{tipos[tipo]} nº {numero} do {tribunal}"
+                    cab = ["---", f"titulo: {yaml_str(titulo)}", f"tribunal: {yaml_str(tribunal)}",
                            f"tipo: {yaml_str(tipos[tipo])}", f"numero: {yaml_str(numero)}", "data:",
                            f"situacao: {yaml_str(registro.get('situacao', ''))}",
                            f"id_bnp: {yaml_str(registro['id'])}",
@@ -238,18 +269,59 @@ def bnp_stf(limite, refazer=False):
                             cab.extend([f"## {titulo_campo}", "", registro[campo], ""])
                     cab.extend(["## Registro original do CNJ", "", "```json",
                                 json.dumps(registro, ensure_ascii=False, indent=2), "```", ""])
+                    for anterior in versoes_anteriores:
+                        if anterior != registro:
+                            cab.extend(["## Outra versão oficial capturada pelo CNJ", "", "```json",
+                                        json.dumps(anterior, ensure_ascii=False, indent=2), "```", ""])
                     os.makedirs(os.path.dirname(destino), exist_ok=True)
                     with open(destino + ".tmp", "w", encoding="utf-8") as f:
                         f.write("\n".join(cab))
                     os.replace(destino + ".tmp", destino)
                     cont["ok"] += 1
-                print(f"bnp/stf/{pasta}: {len(vistos)}/{dados['total']} registros", flush=True)
+                print(f"bnp/{tribunal.lower()}/{pasta}: {len(vistos)}/{dados['total']} registros", flush=True)
                 if len(vistos) >= dados["total"]:
                     break
                 pagina += 1
             except Exception as e:
-                registrar_falha(f"bnp/stf/{pasta}/pagina-{pagina}", e, url)
+                registrar_falha(f"bnp/{tribunal.lower()}/{pasta}/pagina-{pagina}", e, url)
                 break
+    return cont
+
+
+def tnu_sumulas(limite, refazer=False):
+    url = "https://www.cjf.jus.br/cjf/corregedoria-da-justica-federal/turma-nacional-de-uniformizacao/publicacoes-1/comentarios-as-sumulas-da-turma-nacional-de-uniformizacao.pdf"
+    pdf = os.path.join(RAIZ, "_fonte", "tnu", "sumulas-edicao-2016.pdf")
+    baixar_pdf(url, pdf, limite)
+    texto = texto_do_pdf(pdf)
+    # A seção inicial contém os enunciados; os comentários autorais ficam fora do acervo.
+    secao = texto.split("SÚMULAS DA TNU", 1)[1].split("COMENTÁRIOS ÀS SÚMULAS", 1)[0]
+    secao = re.sub(r"\f[ \t]*\d+[ \t]*\n", "\n", secao)
+    itens = list(re.finditer(r"(?m)^Súmula (\d+)\s*$", secao))
+    if [int(m.group(1)) for m in itens] != list(range(1, 84)):
+        raise RuntimeError("seção histórica TNU não contém exatamente os enunciados 1 a 83")
+    cont = {"ok": 0, "pulado": 0}
+    for i, m in enumerate(itens):
+        numero = m.group(1)
+        corpo = limpar(secao[m.end():itens[i + 1].start() if i + 1 < len(itens) else len(secao)])
+        destino = os.path.join(RAIZ, "tnu", "sumulas", f"sumula-{numero}.md")
+        if os.path.exists(destino) and not refazer:
+            cont["pulado"] += 1
+            continue
+        titulo = f"Súmula nº {numero} da TNU"
+        cab = ["---", f"titulo: {yaml_str(titulo)}", 'tribunal: "TNU"', 'tipo: "Súmula"',
+               f"numero: {yaml_str(numero)}", 'data:',
+               'versao_texto: "enunciado reproduzido na edição histórica CJF de 2016"',
+               'situacao: "situação atual não verificada; texto histórico de 2016"',
+               f"fonte: {yaml_str(url)}", f"baixado_em: {dt.date.today().isoformat()}"]
+        if re.search(r"[Cc]ancelad[ao]", corpo):
+            cab.append('revogada: true')
+        cab.extend(["---", "", f"# {titulo}", "", corpo, ""])
+        os.makedirs(os.path.dirname(destino), exist_ok=True)
+        with open(destino + ".tmp", "w", encoding="utf-8") as f:
+            f.write("\n".join(cab))
+        os.replace(destino + ".tmp", destino)
+        cont["ok"] += 1
+    print("tnu/sumulas (edição 2016):", cont, flush=True)
     return cont
 
 
@@ -275,7 +347,7 @@ def regimentos(limite, refazer=False):
                 raise RuntimeError("PDF sem regimento completo reconhecível")
             titulo = f"Regimento Interno do {nome}"
             cab = ["---", f"titulo: {yaml_str(titulo)}", f"tribunal: {yaml_str(slug.upper())}",
-                   'tipo: "Regimento interno"', f"data: {data}", 'revogada: false',
+                   'tipo: "Regimento interno"', 'numero: ""', f"data: {data}", 'revogada: false',
                    f"versao_texto: {yaml_str(versao)}", f"fonte: {yaml_str(url)}",
                    f"baixado_em: {dt.date.today().isoformat()}", "---", "", f"# {titulo}", "", corpo, ""]
             os.makedirs(os.path.dirname(destino), exist_ok=True)
@@ -462,7 +534,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--refazer", action="store_true")
     ap.add_argument("--rps", type=float, default=1)
-    ap.add_argument("--somente", choices=["cadernos", "stj-repetitivos", "tcu-sumulas", "stm-sumulas", "regimentos", "bnp-stf"], help="limita a coleta à fonte indicada")
+    ap.add_argument("--somente", choices=["cadernos", "stj-repetitivos", "tcu-sumulas", "stm-sumulas", "tnu-sumulas", "regimentos", "bnp-stf", "bnp-outros"], help="limita a coleta à fonte indicada")
     a = ap.parse_args()
     if not 0 < a.rps <= 4:
         ap.error("--rps deve ser maior que zero e no máximo 4")
@@ -490,6 +562,13 @@ def main():
                 cont[chave] += resultado[chave]
         except Exception as e:
             registrar_falha("stm/sumulas", e)
+    if a.somente in (None, "tnu-sumulas"):
+        try:
+            resultado = tnu_sumulas(limite, a.refazer)
+            for chave in cont:
+                cont[chave] += resultado[chave]
+        except Exception as e:
+            registrar_falha("tnu/sumulas", e)
     if a.somente in (None, "regimentos"):
         resultado = regimentos(limite, a.refazer)
         for chave in cont:
@@ -498,6 +577,11 @@ def main():
         resultado = bnp_stf(limite, a.refazer)
         for chave in cont:
             cont[chave] += resultado[chave]
+    if a.somente in (None, "bnp-outros"):
+        for tribunal in ("TNU", "TSE", "STM"):
+            resultado = bnp_stf(limite, a.refazer, tribunal)
+            for chave in cont:
+                cont[chave] += resultado[chave]
     for tribunal, pasta, prefixo, url, analisar, tipo, molde in CADERNOS if a.somente in (None, "cadernos") else []:
         pdf = os.path.join(RAIZ, "_fonte", tribunal, os.path.basename(url.split("?")[0]))
         try:
@@ -526,7 +610,7 @@ def main():
             data = data_do_enunciado(corpo)
             cab = ["---", f"titulo: {yaml_str(titulo)}", f"tribunal: {yaml_str(tribunal.upper())}",
                    f"tipo: {yaml_str(tipo)}", f"numero: {yaml_str(numero)}", f"data: {data}",
-                   "revogada: false", 'versao_texto: "caderno consolidado do tribunal"',
+                   f"revogada: {'true' if cancelada_no_caderno(corpo, tribunal, numero) else 'false'}", 'versao_texto: "caderno consolidado do tribunal"',
                    f"fonte: {yaml_str(url)}", f"baixado_em: {dt.date.today().isoformat()}", "---", ""]
             os.makedirs(os.path.dirname(md), exist_ok=True)
             tmp = md + ".tmp"

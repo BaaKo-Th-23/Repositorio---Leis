@@ -4,7 +4,7 @@ tribunal: "TST"
 tipo: "Súmula"
 numero: "352"
 data: 2003-11-21
-revogada: false
+revogada: true
 versao_texto: "caderno consolidado do tribunal"
 fonte: "https://www.tst.jus.br/documents/10157/63003/Livro-Internet.pdf"
 baixado_em: 2026-10-15

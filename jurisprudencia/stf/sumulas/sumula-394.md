@@ -4,7 +4,7 @@ tribunal: "STF"
 tipo: "Súmula"
 numero: "394"
 data: 1964-04-03
-revogada: false
+revogada: true
 versao_texto: "caderno consolidado do tribunal"
 fonte: "https://www.stf.jus.br/arquivo/cms/jurisprudenciaSumula/anexo/Enunciados_Sumulas_STF_1_a_736_Completo.pdf"
 baixado_em: 2026-10-15

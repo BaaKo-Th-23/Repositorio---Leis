@@ -1,4 +1,4 @@
 #!/bin/sh
 set -e
 rtk proxy python3 -I scripts/progresso.py --git-index
-rtk git add PROGRESSO.md progresso.svg
+rtk proxy git add PROGRESSO.md progresso.svg

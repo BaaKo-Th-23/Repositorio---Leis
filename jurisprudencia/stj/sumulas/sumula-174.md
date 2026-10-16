@@ -4,7 +4,7 @@ tribunal: "STJ"
 tipo: "Súmula"
 numero: "174"
 data: 2001-10-24
-revogada: false
+revogada: true
 versao_texto: "caderno consolidado do tribunal"
 fonte: "https://www.stj.jus.br/docs_internet/SumulasSTJ.pdf"
 baixado_em: 2026-10-15

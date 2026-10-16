@@ -266,7 +266,7 @@ PLANO = [
          "STJ — dados abertos, Temas.csv (números únicos)"),
     Item("Jurisprudência vinculante", "Súmulas e orientações jurisprudenciais do TST", "jurisprudencia/tst", 1157, 2,
          "tst.jus.br"),
-    Item("Jurisprudência vinculante", "Súmulas do TCU, TNU, STM e TSE", "jurisprudencia/outros-tribunais", 700, 2,
+    Item("Jurisprudência vinculante", "Súmulas do TCU, TNU, STM e TSE", "jurisprudencia/outros-tribunais, jurisprudencia/tnu/sumulas", 700, 2,
          "tcu.gov.br, cjf.jus.br, stm.jus.br, tse.jus.br"),
     Item("Jurisprudência vinculante", "Regimentos internos dos tribunais superiores",
          "jurisprudencia/regimentos", 6, 2, "portais dos tribunais"),

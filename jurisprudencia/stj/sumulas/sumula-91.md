@@ -4,7 +4,7 @@ tribunal: "STJ"
 tipo: "Súmula"
 numero: "91"
 data: 2000-11-08
-revogada: false
+revogada: true
 versao_texto: "caderno consolidado do tribunal"
 fonte: "https://www.stj.jus.br/docs_internet/SumulasSTJ.pdf"
 baixado_em: 2026-10-15

@@ -4,7 +4,7 @@ tribunal: "TST"
 tipo: "Orientação Jurisprudencial"
 numero: "SDI1-338"
 data: 2004-05-04
-revogada: false
+revogada: true
 versao_texto: "caderno consolidado do tribunal"
 fonte: "https://www.tst.jus.br/documents/10157/63003/Livro-Internet.pdf"
 baixado_em: 2026-10-15
