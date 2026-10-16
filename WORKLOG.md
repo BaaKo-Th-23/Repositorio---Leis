@@ -1,6 +1,22 @@
 # Continuação da coleta
 
+## Prova independente ES12 e conferência do envio — 16/10/2026
+
+- Commit60ede08f59f contém12MDs ES aprovados e manifesto2116d635… com
+  prova raiz. A atualização do índice com a prova independente sobrepôs-se
+  à leitura do índice pelo commit e ficou fora dele; conferência pós-commit
+  detectou antes do push. Nenhum MD mudou, e a revisão já havia sido concluída.
+- Incluir agora revisão independente cb37e8e5… e manifesto e516d0c7…,
+  mantendo60ede08 sem reescrita/amend. Ambos os commits atualizam PROGRESSO.md
+  por hook; enviar juntos após conferir os blobs do último commit.
+- Publicação esperada após push699.149 documentos. Até confirmação remota,
+  último relatório público conferido é0119e0f4a6e/699.137documentos.
+
 ## ES14 restauradas, publicação de 12 — 16/10/2026
+
+- Revisão independente concluída:12aprovados2retidos; prova cb37e8e5… em
+  ES/_indice/_reparos-tachado-20261016/revisao-independente-es14.json.
+  Divergências editoriais impressas5128/4675 mantidas, sem emendas inferidas.
 
 - Correção GFM publicada0119e0f4a6e; PROGRESSO.md público confirmado,
   blobf5a6b8aede7d75ae00bd50c6ef7741514a5feef6;699.137 documentos.

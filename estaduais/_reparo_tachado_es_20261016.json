@@ -761,5 +761,15 @@
         }
       ]
     }
-  ]
+  ],
+  "revisao_independente": {
+    "path": "estaduais/ES/_indice/_reparos-tachado-20261016/revisao-independente-es14.json",
+    "sha256_arquivo": "cb37e8e516745fa5e507558e2c7b258835751f887c926754730a40d8e95410f3",
+    "resultado": "12aprovados2retidos",
+    "divergencias_literais_preservadas": [
+      "Res5128: publicação DPL06/10/2017 anterior à assinatura31/10/2017",
+      "Res4675: preâmbulo embaralhado na própria fonte",
+      "Res5296(retida):DPL01/03/2017 anterior à epígrafe2018"
+    ]
+  }
 }
