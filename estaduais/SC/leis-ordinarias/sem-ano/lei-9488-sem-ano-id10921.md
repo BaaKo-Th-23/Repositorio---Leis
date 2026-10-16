@@ -4,7 +4,7 @@ uf: "SC"
 tipo: "Lei Ordinária"
 numero: "9.488"
 data: 1994-01-19
-revogada: true
+revogada: false
 versao_texto: "texto anotado da ALESC"
 fonte: "https://leis.alesc.sc.gov.br/ato-normativo/10921"
 baixado_em: 2026-10-13

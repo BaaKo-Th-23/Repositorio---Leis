@@ -1,4 +1,5 @@
 ---
+numero: ""
 titulo: "Constituição do Estado do Rio Grande do Sul de 1989"
 uf: "RS"
 tipo: "Constituição Estadual"

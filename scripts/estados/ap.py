@@ -4,6 +4,7 @@
 Texto: /portal/proposicao/{id}/texto-integral (PDF ou HTML; OCR quando escaneado).
 """
 import html as htmllib
+import datetime as dt
 import json
 import os
 import re
@@ -86,6 +87,13 @@ def processar(it):
     corpo, motivo = documento_para_md(doc, it["texto"], ctype)
     if corpo is None:
         return "sem_texto", {"titulo": it["titulo"], "url": it["texto"], "motivo": motivo}
+    data_na_fonte = ""
+    if data:
+        try:
+            if dt.date.fromisoformat(data) > dt.date.today():
+                raise ValueError("data futura")
+        except ValueError:
+            data_na_fonte, data = data, ""
     meta = [
         ("titulo", it["titulo"]),
         ("uf", UF),
@@ -97,6 +105,8 @@ def processar(it):
         ("versao_texto", "consolidada" if it["tipo"] == "ce" else "texto integral do e-Legis"),
         ("fonte", it["texto"]),
     ]
+    if data_na_fonte:
+        meta.append(("data_na_fonte", data_na_fonte))
     gravar(md, fonte, doc, meta, f"# {it['titulo']}\n\n{corpo}")
     return "ok", None
 

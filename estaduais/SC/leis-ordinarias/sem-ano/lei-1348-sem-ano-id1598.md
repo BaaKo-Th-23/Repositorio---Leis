@@ -4,7 +4,7 @@ uf: "SC"
 tipo: "Lei Ordinária"
 numero: "1.348"
 data: ""
-revogada: true
+revogada: false
 versao_texto: "texto anotado da ALESC"
 fonte: "https://leis.alesc.sc.gov.br/ato-normativo/1598"
 baixado_em: 2026-10-13

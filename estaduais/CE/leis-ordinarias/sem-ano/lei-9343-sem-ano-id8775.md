@@ -3,7 +3,7 @@ titulo: "LEI N.° 9.343, DE 3 DE DEZEMBRO DE 1969 (D.O. 09.12.1969)"
 uf: "CE"
 tipo: "Lei Ordinária"
 numero: "9.343"
-data: ""
+data: 1969-12-03
 ementa: "AUTORIZA A ABERTURA DO CRÉDITO SU­PLEMENTAR DE NCR$ 3.747.000,00, AO ORÇAMENTO VIGENTE DA SECRETARIA DA FAZENDA."
 versao_texto: "texto do BELT (Assembleia Legislativa)"
 fonte: "https://belt.al.ce.gov.br/index.php?option=com_k2&view=item&id=8775"

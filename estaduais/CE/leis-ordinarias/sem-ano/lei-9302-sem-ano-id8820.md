@@ -3,7 +3,7 @@ titulo: "LEI N.° 9.302. DE 29 DE AGOSTO DE 1969. (D.O. 03.09.1969)"
 uf: "CE"
 tipo: "Lei Ordinária"
 numero: "9.302."
-data: ""
+data: 1969-08-29
 ementa: "CONSIDERA DE UTILIDADE PÚBLICA A ENTIDADE QUE INDICA"
 versao_texto: "texto do BELT (Assembleia Legislativa)"
 fonte: "https://belt.al.ce.gov.br/index.php?option=com_k2&view=item&id=8820"

@@ -1,17 +1,17 @@
 # Progresso
 
-Gerado por `scripts/progresso.py` em 15/10/2026 21:50:56 (America/Recife). O escopo está em
+Gerado por `scripts/progresso.py` em 15/10/2026 22:30:44 (America/Recife). O escopo está em
 `scripts/plano.py`; os números de **meta** são estimativas do tamanho de cada série, não
 contagens oficiais. O percentual mede volume diante das metas; não comprova integralidade
 das fontes nem qualidade de cada conversão. Lacunas continuam abertas até verificação.
 
-**423.667 de ~11.672.473 normas — 3.6%**
+**547.986 de ~11.768.329 normas — 4.7%**
 
 ![progresso](progresso.svg)
 
 ## Fase 1 — esfera federal completa
 
-Fonte única (normas.leg.br, Planalto, Senado). **350.696 de ~574.432 — 61.1%**
+Fonte única (normas.leg.br, Planalto, Senado). **351.905 de ~574.432 — 61.3%**
 
 ### Constituição Federal — 180 / ~180 (100.0%)
 
@@ -59,27 +59,27 @@ Fonte única (normas.leg.br, Planalto, Senado). **350.696 de ~574.432 — 61.1%*
 | 🟦 | Acordos de bitributação | 23 | 40 | `tratados/bitributacao` | RFB |
 | ⬜️ | Normas do Mercosul internalizadas | 0 | 1.500 | `tratados/mercosul` | mercosur.int |
 
-### Leis estaduais e distritais — 294.709 / ~347.467 (84.8%)
+### Leis estaduais e distritais — 295.918 / ~347.467 (85.2%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Constituições estaduais e Lei Orgânica do DF | 23 | 27 | `estaduais/*/constituicao`, `estaduais/*/lei-organica` | Assembleias e Casas Civis |
-| 🟦 | Constituições estaduais históricas | 4 | 40 | `estaduais/*/constituicoes-historicas` | Assembleias |
-| 🟦 | Emendas constitucionais estaduais | 2.013 | 2.200 | `estaduais/*/emendas-constitucionais` | Assembleias |
-| 🟦 | Leis ordinárias estaduais | 273.045 | 330.000 | `estaduais/*/leis-ordinarias` | 19 scripts, uma fonte por UF |
-| 🟦 | Leis complementares estaduais | 12.361 | 14.000 | `estaduais/*/leis-complementares` | 19 scripts, uma fonte por UF |
+| 🟦 | Constituições estaduais e Lei Orgânica do DF | 25 | 27 | `estaduais/*/constituicao`, `estaduais/*/lei-organica` | Assembleias e Casas Civis |
+| 🟦 | Constituições estaduais históricas | 10 | 40 | `estaduais/*/constituicoes-historicas` | Assembleias |
+| 🟦 | Emendas constitucionais estaduais | 2.095 | 2.200 | `estaduais/*/emendas-constitucionais` | Assembleias |
+| 🟦 | Leis ordinárias estaduais | 274.138 | 330.000 | `estaduais/*/leis-ordinarias` | 19 scripts, uma fonte por UF |
+| 🟦 | Leis complementares estaduais | 12.386 | 14.000 | `estaduais/*/leis-complementares` | 19 scripts, uma fonte por UF |
 | ✅ | Decretos-leis e leis delegadas estaduais | 6.676 | 600 | `estaduais/*/decretos-lei`, `estaduais/*/leis-delegadas`, `estaduais/*/decretos-lei-complementares` | Assembleias |
-| 🟦 | Leis promulgadas, constitucionais e emendas à Lei Orgânica | 587 | 600 | `estaduais/*/leis-promulgadas`, `estaduais/*/leis-constitucionais`, `estaduais/*/emendas-lei-organica` | Assembleias |
+| 🟦 | Leis promulgadas, constitucionais e emendas à Lei Orgânica | 588 | 600 | `estaduais/*/leis-promulgadas`, `estaduais/*/leis-constitucionais`, `estaduais/*/emendas-lei-organica` | Assembleias |
 
 ## Fase 2 — infralegal e jurisprudência
 
-Uma fonte por órgão, agência ou tribunal. **72.411 de ~765.331 — 9.5%**
+Uma fonte por órgão, agência ou tribunal. **195.521 de ~861.184 — 22.7%**
 
-### Infralegal — tributário — 1.114 / ~38.600 (2.9%)
+### Infralegal — tributário — 1.114 / ~134.038 (0.8%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Receita Federal: instruções normativas, portarias, atos declaratórios, soluções de consulta e pareceres normativos | 600 | 19.800 | `reguladores/rfb` | Diário Oficial da União (in.gov.br) |
+| 🟦 | Receita Federal: instruções normativas, portarias, atos declaratórios, soluções de consulta e pareceres normativos | 600 | 115.238 | `reguladores/rfb` | RFB — Sijut (23 espécies normativas) e Diário Oficial da União |
 | 🟦 | CONFAZ: convênios, protocolos e ajustes SINIEF | 224 | 12.000 | `reguladores/confaz` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Tesouro Nacional: portarias e instruções | 56 | 2.000 | `reguladores/stn` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Procuradoria-Geral da Fazenda Nacional | 24 | 1.500 | `reguladores/pgfn` | Diário Oficial da União (in.gov.br) |
@@ -203,46 +203,47 @@ Uma fonte por órgão, agência ou tribunal. **72.411 de ~765.331 — 9.5%**
 | 🟦 | Ministério dos Povos Indígenas | 88 | 300 | `reguladores/mpi` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério do Desenvolvimento Agrário e Agricultura Familiar | 964 | 1.200 | `reguladores/mda` | Diário Oficial da União (in.gov.br) |
 
-### Jurisprudência vinculante — 4.924 / ~14.252 (34.5%)
+### Jurisprudência vinculante — 4.924 / ~14.667 (33.6%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
 | ✅ | Súmulas vinculantes do STF | 62 | 62 | `jurisprudencia/stf/sumulas-vinculantes` | CNJ — Pangea/BNP (precedentes do STF) |
 | ✅ | Súmulas do STF | 736 | 736 | `jurisprudencia/stf/sumulas` | stf.jus.br |
-| 🟦 | Temas de repercussão geral | 550 | 1.468 | `jurisprudencia/stf/repercussao-geral` | CNJ — Pangea/BNP (precedentes do STF) |
+| 🟦 | Temas de repercussão geral | 550 | 1.489 | `jurisprudencia/stf/repercussao-geral` | CNJ — Pangea/BNP (precedentes do STF) |
 | ⬜️ | Controle concentrado com eficácia erga omnes (ADI, ADC, ADPF, ADO) | 0 | 8.000 | `jurisprudencia/stf/controle-concentrado` | stf.jus.br |
 | ✅ | Súmulas do STJ | 649 | 649 | `jurisprudencia/stj/sumulas` | stj.jus.br |
 | ✅ | Temas de recursos repetitivos (STJ) | 1.474 | 1.474 | `jurisprudencia/stj/repetitivos` | STJ — dados abertos, Temas.csv (números únicos) |
 | ✅ | Súmulas e orientações jurisprudenciais do TST | 1.157 | 1.157 | `jurisprudencia/tst` | tst.jus.br |
 | 🟦 | Súmulas do TCU, TNU, STM e TSE | 294 | 700 | `jurisprudencia/outros-tribunais` | tcu.gov.br, cjf.jus.br, stm.jus.br, tse.jus.br |
 | 🟦 | Regimentos internos dos tribunais superiores | 2 | 6 | `jurisprudencia/regimentos` | portais dos tribunais |
+| ⬜️ | Temas de uniformização da TNU, incluindo cancelados | 0 | 394 | `jurisprudencia/tnu/uniformizacao` | CNJ — Pangea/BNP (precedentes da TNU) |
 
-### Infralegal estadual — 31.579 / ~577.054 (5.5%)
+### Infralegal estadual — 154.689 / ~577.054 (26.8%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Decretos dos governadores (27 UF) | 22.770 | 400.000 | `estaduais/*/decretos` | Casas Civis e diários oficiais estaduais |
+| 🟦 | Decretos dos governadores (27 UF) | 93.193 | 400.000 | `estaduais/*/decretos`, `estaduais/*/decretos-nao-numerados` | Casas Civis e diários oficiais estaduais |
 | ⬜️ | Regulamentos do ICMS (RICMS das 27 UF) | 0 | 27 | `estaduais/*/regulamentos` | Secretarias de Fazenda |
-| 🟦 | Instruções normativas e portarias das SEFAZ | 161 | 50.000 | `estaduais/*/instrucoes-normativas` | Secretarias de Fazenda |
+| 🟦 | Instruções normativas e portarias das SEFAZ | 1.063 | 50.000 | `estaduais/*/instrucoes-normativas` | Secretarias de Fazenda |
 | ⬜️ | Resoluções e decisões normativas dos TCE | 0 | 10.000 | `estaduais/*/resolucoes-tce` | Tribunais de Contas estaduais |
 | ⬜️ | Resoluções e provimentos dos TJ e das Corregedorias | 0 | 8.000 | `estaduais/*/resolucoes-tj` | Tribunais de Justiça |
-| 🟦 | Regimentos internos das Assembleias | 2 | 27 | `estaduais/*/regimentos` | Assembleias |
-| 🟦 | Decretos legislativos estaduais | 2.192 | 20.000 | `estaduais/*/decretos-legislativos` | Assembleias (SAPL e sistemas próprios) |
-| 🟦 | Resoluções das Assembleias | 2.963 | 25.000 | `estaduais/*/resolucoes` | Assembleias (SAPL e sistemas próprios) |
-| 🟦 | Portarias das administrações estaduais e distrital | 3.390 | 60.000 | `estaduais/*/portarias` | SINJ-DF, Legisla Goiás e sistemas equivalentes |
-| 🟦 | Deliberações, súmulas administrativas, provimentos e pareceres normativos | 101 | 4.000 | `estaduais/*/deliberacoes`, `estaduais/*/sumulas`, `estaduais/*/provimentos`, `estaduais/*/pareceres-normativos` | SINJ-DF, Legisla Goiás e sistemas equivalentes |
+| 🟦 | Regimentos internos das Assembleias | 10 | 27 | `estaduais/*/regimentos` | Assembleias |
+| 🟦 | Decretos legislativos estaduais | 12.246 | 20.000 | `estaduais/*/decretos-legislativos` | Assembleias (SAPL e sistemas próprios) |
+| 🟦 | Resoluções das Assembleias | 24.448 | 25.000 | `estaduais/*/resolucoes` | Assembleias (SAPL e sistemas próprios) |
+| 🟦 | Portarias das administrações estaduais e distrital | 23.219 | 60.000 | `estaduais/*/portarias` | SINJ-DF, Legisla Goiás e sistemas equivalentes |
+| 🟦 | Deliberações, súmulas administrativas, provimentos e pareceres normativos | 510 | 4.000 | `estaduais/*/deliberacoes`, `estaduais/*/sumulas`, `estaduais/*/provimentos`, `estaduais/*/pareceres-normativos` | SINJ-DF, Legisla Goiás e sistemas equivalentes |
 
 ## Fase 3 — direito municipal
 
-5.570 fontes, sem índice central. **560 de ~10.332.710 — 0.0%**
+5.571 municípios no cadastro do IBGE, sem índice legislativo central. **560 de ~10.332.713 — 0.0%**
 
-### Legislação municipal — 560 / ~10.332.710 (0.0%)
+### Legislação municipal — 560 / ~10.332.713 (0.0%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Leis orgânicas municipais e suas emendas | 4 | 5.570 | `municipais/*/*/lei-organica`, `municipais/*/*/emendas-lei-organica` | diários das associações estaduais de municípios |
-| ⬜️ | Planos diretores | 0 | 5.570 | `municipais/*/*/plano-diretor` | portais municipais |
-| ⬜️ | Códigos tributários municipais | 0 | 5.570 | `municipais/*/*/codigo-tributario` | portais municipais |
+| 🟦 | Leis orgânicas municipais e suas emendas | 4 | 5.571 | `municipais/*/*/lei-organica`, `municipais/*/*/emendas-lei-organica` | diários das associações estaduais de municípios |
+| ⬜️ | Planos diretores | 0 | 5.571 | `municipais/*/*/plano-diretor` | portais municipais |
+| ⬜️ | Códigos tributários municipais | 0 | 5.571 | `municipais/*/*/codigo-tributario` | portais municipais |
 | ⬜️ | Códigos de obras, posturas e zoneamento | 0 | 16.000 | `municipais/*/*/codigos` | portais municipais |
 | 🟦 | Leis ordinárias e complementares municipais (27 capitais primeiro) | 143 | 8.300.000 | `municipais/*/*/leis-ordinarias`, `municipais/*/*/leis-complementares` | Câmaras municipais |
 | 🟦 | Decretos municipais | 413 | 2.000.000 | `municipais/*/*/decretos` | prefeituras e diários oficiais |

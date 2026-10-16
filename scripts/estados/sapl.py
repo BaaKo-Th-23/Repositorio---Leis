@@ -97,6 +97,10 @@ def processar_factory(uf, tipos):
     def processar(n):
         bruto = tipos[str(n["tipo"])]
         pasta, tipo = canonico(bruto)
+        if pasta == "constituicao" and "CONSTITUIÇÃO FEDERAL" in (n.get("ementa") or "").upper():
+            return "fora_escopo", None
+        if pasta == "constituicao" and int(n["ano"]) < 1988:
+            pasta = "constituicoes-historicas"
         # o prefixo do nome do arquivo vem do nome que a Assembleia usa, não do canônico:
         # os arquivos já gravados se chamam lei-ordinaria-N-AAAA-idX.md e precisam ser
         # reconhecidos como existentes numa nova rodada.

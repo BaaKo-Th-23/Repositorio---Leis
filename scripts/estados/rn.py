@@ -4,6 +4,7 @@
 Texto: PDF de cada lei (storage/legislacao/...). O acervo do site começa em 1994.
 """
 import html as htmllib
+import datetime as dt
 import json
 import os
 import re
@@ -11,6 +12,7 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 from comum import RAIZ_ESTADUAIS, Rede, caminhos, decodificar, documento_para_md, executar, gravar  # noqa: E402
+from datas import data_do_texto
 
 UF = "RN"
 B = "https://www.al.rn.leg.br"
@@ -79,6 +81,17 @@ def processar(it):
     if corpo is None:
         return "sem_texto", {"url": url, "titulo": it["titulo"], "motivo": motivo}
     titulo = it["titulo"]
+    data_na_fonte = ""
+    if it["lista"] != "constituicao":
+        data_epigrafe = data_do_texto(corpo, numero=numero.replace(".", ""))
+        if data_epigrafe and data_epigrafe != data:
+            data_na_fonte, data = data, data_epigrafe
+        if data:
+            try:
+                if dt.date.fromisoformat(data) > dt.date.today():
+                    raise ValueError("data futura")
+            except ValueError:
+                data_na_fonte, data = data, ""
     meta = [
         ("titulo", titulo),
         ("uf", UF),
@@ -89,6 +102,14 @@ def processar(it):
         ("versao_texto", "PDF da Assembleia Legislativa"),
         ("fonte", url),
     ]
+    if data_na_fonte:
+        meta.append(("data_na_fonte", data_na_fonte))
+    if data and it["lista"] != "constituicao":
+        ano = data[:4]
+        slug = f"{prefixo}-{numero.replace('.', '') or 'sn'}-{data}-{os.path.splitext(os.path.basename(it['url']))[0][-10:]}"
+        md, fonte = caminhos(UF, pasta, ano, slug)
+        if os.path.exists(md):
+            return "pulado", None
     gravar(md, fonte, doc, meta, f"# {titulo}\n\n{corpo}")
     return "ok", None
 

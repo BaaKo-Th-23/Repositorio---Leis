@@ -4,7 +4,7 @@ uf: "SC"
 tipo: "Lei Ordinária"
 numero: "322"
 data: 1957-11-12
-revogada: true
+revogada: false
 versao_texto: "texto anotado da ALESC"
 fonte: "https://leis.alesc.sc.gov.br/ato-normativo/2138"
 baixado_em: 2026-10-13

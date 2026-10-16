@@ -20,7 +20,7 @@ gerados por `scripts/progresso.py`.
 
 > [!IMPORTANT]
 > Os textos têm caráter informativo e **não substituem a publicação no Diário Oficial**. São
-> conversões automáticas e, em 17.016 arquivos, OCR de PDF escaneado. Confira sempre a fonte
+> conversões automáticas e OCR de documentos escaneados. Confira sempre a fonte
 > indicada no cabeçalho antes de citar.
 
 ---
@@ -255,10 +255,11 @@ caso tem uma linha, com o motivo, no `_falhas.jsonl` da respectiva pasta.
 
 ### Qualidade do OCR
 
-17.016 arquivos vêm de PDF escaneado, com OCR pelo framework Vision do macOS. O texto é legível,
-mas tem dois defeitos conhecidos:
+Na base inicial, 17.016 arquivos vieram de PDF escaneado, com OCR pelo framework Vision do macOS.
+Há dois problemas conhecidos, com correções de alcance diferente:
 
-- **ordem de leitura trocada** em digitalizações de duas colunas — **corrigido**, e sem precisar de
+- **ordem de leitura trocada** em digitalizações de duas colunas — detector implementado, com
+  reprocessamento integral do acervo ainda pendente. Sem precisar de
   modelo nenhum: o Vision devolve a caixa de cada linha, então `scripts/ocr.swift` procura a calha
   vertical entre as colunas e emite a da esquerda inteira antes da direita. A correção é
   conservadora por desenho — só age quando há uma calha limpa, com os dois lados cheios e linhas
@@ -271,9 +272,8 @@ mas tem dois defeitos conhecidos:
   ao menos dois termos e a numeração resultante fica coerente. Assim um `Art. 19` legítimo, ou um
   `Art. 99` que cita outra lei, não é tocado.
 
-Nenhum dos dois exigia um modelo de visão, afinal: o do ordinal saiu por regra de texto e o das
-colunas, por geometria. O que resta de OCR imperfeito é erro de reconhecimento de caractere em
-digitalização antiga, que é o limite do material, não do método.
+As correções usam regras de texto e geometria. Ainda podem existir erros de reconhecimento,
+segmentação e ordem de leitura; a amostra não comprova a qualidade de todo o acervo.
 
 `baidu/Unlimited-OCR` foi testado em Apple Silicon e não serve localmente: na resolução de treino o
 encoder de visão pede ~21 GB, e numa resolução que caiba o prefill leva 221 s por página com saída
@@ -285,6 +285,12 @@ vazia. Reprocessar o lote exige GPU NVIDIA.
 
 **Requisitos:** macOS, Python 3 (só biblioteca padrão), `pdftotext` (poppler) e, para o OCR, o
 framework Vision via `swiftc -O scripts/ocr.swift -o scripts/bin/ocr`.
+
+Para JPEG/TIFF/PNG, o conversor pode usar Tesseract 5 com o modelo português
+[`tessdata_best/por.traineddata`](https://raw.githubusercontent.com/tesseract-ocr/tessdata_best/main/por.traineddata)
+em `scripts/bin/tessdata/por.traineddata`. SHA-256 esperado:
+`711de9dbb8052067bd42f16b9119967f30bada80d57e2ef24f65d09f531adb04`.
+O Markdown identifica o motor utilizado; os originais permanecem no cache.
 
 ```sh
 # baixar — todos os scripts são retomáveis: pulam o que já existe

@@ -3,7 +3,7 @@ titulo: "LEI N.°9.269, DE 18 DE ABRIL DE 1969. (D.O. 25.04.1969)"
 uf: "CE"
 tipo: "Lei Ordinária"
 numero: "9.269"
-data: ""
+data: 1969-04-18
 ementa: "CONSIDERA DE UTILIDADE PÚBLICA A ENTIDADE QUE INDICA."
 versao_texto: "texto do BELT (Assembleia Legislativa)"
 fonte: "https://belt.al.ce.gov.br/index.php?option=com_k2&view=item&id=8874"

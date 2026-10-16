@@ -2,9 +2,11 @@
 import collections
 import datetime as dt
 import gzip
+import hashlib
 import json
 import os
 import re
+import shutil
 import subprocess
 import tempfile
 import threading
@@ -247,9 +249,16 @@ def executar(uf, itens, processar, workers=4):
     return cont
 
 
+def imagem_bruta(bruto):
+    return (bruto.startswith((b"\xff\xd8\xff", b"\x89PNG\r\n\x1a\n", b"GIF87a", b"GIF89a", b"II*\0", b"MM\0*", b"BM"))
+            or bruto[:4] == b"RIFF" and bruto[8:12] == b"WEBP")
+
+
 def extrair_texto(bruto, url="", content_type=""):
-    """Retorna (html, texto): PDF -> texto via pdftotext; DOC/DOCX/ODT/RTF -> HTML via textutil; HTML direto."""
+    """Retorna (html, texto): PDF -> pdftotext; imagem -> OCR; DOC/DOCX/ODT/RTF -> textutil; HTML direto."""
     ext = os.path.splitext(url.split("?")[0])[1].lower()
+    if imagem_bruta(bruto):
+        return None, ocr_imagem(bruto)[0]
     if bruto[:4] == b"%PDF":
         with tempfile.TemporaryDirectory() as tmp:
             pdf = os.path.join(tmp, "a.pdf")
@@ -257,9 +266,9 @@ def extrair_texto(bruto, url="", content_type=""):
             r = subprocess.run(["pdftotext", "-q", "-layout", "-enc", "UTF-8", pdf, "-"], capture_output=True, timeout=300)
             texto = r.stdout.decode("utf-8", "replace")
         return None, texto
-    if ext in (".doc", ".docx", ".odt", ".rtf") or bruto[:2] == b"PK" or bruto[:5] == b"{\\rtf":
+    if ext in (".doc", ".docx", ".odt", ".rtf") or bruto[:2] == b"PK" or bruto[:5] == b"{\\rtf" or bruto.startswith(b"\xd0\xcf\x11\xe0\xa1\xb1\x1a\xe1"):
         with tempfile.TemporaryDirectory() as tmp:
-            src = os.path.join(tmp, "a" + (ext or ".doc"))
+            src = os.path.join(tmp, "a" + (".doc" if bruto.startswith(b"\xd0\xcf\x11\xe0") else ext or ".doc"))
             open(src, "wb").write(bruto)
             r = subprocess.run(["textutil", "-convert", "html", "-stdout", src], capture_output=True, timeout=300)
             return r.stdout.decode("utf-8", "replace"), None
@@ -311,6 +320,7 @@ def texto_pdf_para_md(texto):
 OCR_BIN = os.path.join(os.path.dirname(os.path.abspath(__file__)), "bin", "ocr")
 _ocr_vagas = threading.Semaphore(2)  # OCR é pesado: no máximo 2 simultâneos por processo
 AVISO_OCR = "> Texto obtido por OCR a partir de PDF escaneado; pode conter erros de reconhecimento.\n\n"
+AVISO_OCR_IMAGEM = "> Texto obtido por OCR a partir de imagem; pode conter erros de reconhecimento.\n\n"
 AVISO_SEM_TEXTO = ("> A fonte oficial não disponibiliza o texto desta norma: o documento servido "
                    "está vazio. Só os metadados foram preservados.\n\n")
 
@@ -326,6 +336,28 @@ def ocr_pdf(bruto):
         return r.stdout.decode("utf-8", "replace")
 
 
+def ocr_imagem(bruto):
+    programa = shutil.which("tesseract")
+    dados = os.path.join(os.path.dirname(OCR_BIN), "tessdata")
+    modelo = os.path.join(dados, "por.traineddata")
+    aprovado = "711de9dbb8052067bd42f16b9119967f30bada80d57e2ef24f65d09f531adb04"
+    if programa and os.path.isfile(modelo):
+        with open(modelo, "rb") as f:
+            confere = hashlib.sha256(f.read()).hexdigest() == aprovado
+        if confere:
+            try:
+                with _ocr_vagas:
+                    r = subprocess.run([programa, "stdin", "stdout", "--tessdata-dir", dados,
+                                        "-l", "por", "--oem", "1", "--psm", "3"], input=bruto,
+                                       capture_output=True, timeout=180, env={**os.environ, "OMP_THREAD_LIMIT": "1"})
+                texto = r.stdout.decode("utf-8", "replace")
+                if r.returncode == 0 and len(re.sub(r"\W", "", texto)) >= 80:
+                    return texto, "Tesseract, português, tessdata_best"
+            except (OSError, subprocess.TimeoutExpired):
+                pass
+    return ocr_pdf(bruto), "Vision do macOS"
+
+
 def pdf_escaneado(texto):
     """Pouco texto por página = PDF de imagem (às vezes só com um carimbo ou cabeçalho em texto)."""
     paginas = max(1, len([p for p in texto.split("\f") if p.strip()]))
@@ -334,16 +366,24 @@ def pdf_escaneado(texto):
 
 def documento_para_md(bruto, url="", content_type="", remover_inicio=()):
     """Converte um documento baixado (HTML, PDF, DOC...) em Markdown. Retorna (corpo, None) ou (None, motivo)."""
-    html, texto = extrair_texto(bruto, url, content_type)
+    if b"\0" in bruto[:4096] and not (imagem_bruta(bruto) or bruto.startswith(
+            (b"%PDF", b"\xd0\xcf\x11\xe0", b"PK", b"\xff\xfe", b"\xfe\xff"))):
+        return None, "formato binário não reconhecido; arquivo oficial possivelmente corrompido"
+    motor_imagem = ""
+    if imagem_bruta(bruto):
+        texto, motor_imagem = ocr_imagem(bruto)
+        html = None
+    else:
+        html, texto = extrair_texto(bruto, url, content_type)
     if texto is not None:
-        aviso = ""
-        if pdf_escaneado(texto):
+        aviso = AVISO_OCR_IMAGEM.replace("imagem;", f"imagem ({motor_imagem});") if motor_imagem else ""
+        if not imagem_bruta(bruto) and pdf_escaneado(texto):
             texto_ocr = ocr_pdf(bruto)
             if len(re.sub(r"\W", "", texto_ocr)) > len(re.sub(r"\W", "", texto)):
                 texto, aviso = texto_ocr, AVISO_OCR
         corpo = texto_pdf_para_md(texto)
         if len(re.sub(r"\W", "", corpo)) < 80:
-            return None, "PDF sem texto legível (nem por OCR)"
+            return None, "imagem sem texto legível por OCR" if imagem_bruta(bruto) else "PDF sem texto legível (nem por OCR)"
         if len(corpo) < 1500 and re.search(r"não consta do acervo|não foi encontrada nos acervos", corpo, re.I):
             return None, "a fonte informa que o texto não está no acervo"
         return aviso + corpo, None

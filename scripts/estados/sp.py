@@ -12,7 +12,7 @@ import xml.etree.ElementTree as ET
 import zipfile
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
-from comum import RAIZ_ESTADUAIS, Rede, caminhos, decodificar, executar, gravar, html_para_md  # noqa: E402
+from comum import RAIZ_ESTADUAIS, Rede, caminhos, documento_para_md, executar, gravar  # noqa: E402
 
 UF = "SP"
 INDICE_URL = "https://www.al.sp.gov.br/repositorioDados/legislacao/legislacao_normas.zip"
@@ -48,19 +48,22 @@ def indice(refazer=False):
             sys.exit(f"índice indisponível: HTTP {st}")
         with open(arq, "wb") as f:
             f.write(dados)
-    itens = []
+    itens = {}
     with zipfile.ZipFile(arq) as z, z.open(z.namelist()[0]) as f:
         for _, el in ET.iterparse(f):
             if el.tag == "LegislacaoNorma":
                 if el.findtext("IdTipo") in TIPOS:
-                    itens.append({c.tag: (c.text or "") for c in el})
+                    norma = {c.tag: (c.text or "") for c in el}
+                    itens[norma["IdNorma"]] = norma
                 el.clear()
-    return itens
+    return list(itens.values())
 
 
 def processar(n):
     pasta, nome, prefixo = TIPOS[n["IdTipo"]]
     ano, mes, dia = n["Data"][:10].split("-")
+    if pasta == "constituicao" and int(ano) < 1988:
+        pasta = "constituicoes-historicas"
     slug = f"{prefixo}-{n['Numero'] or 'sn'}-{ano}-{mes}-{dia}-id{n['IdNorma']}"
     md, fonte = caminhos(UF, pasta, ano, slug)
     if os.path.exists(md):
@@ -76,9 +79,9 @@ def processar(n):
     st, bruto, ctype = rede.get(url, "text/html")
     if st != 200 or not bruto:
         return "sem_texto", {"id": n["IdNorma"], "url": url, "http": st}
-    if url.lower().endswith(".pdf") or bruto[:4] == b"%PDF":
-        return "sem_texto", {"id": n["IdNorma"], "url": url, "motivo": "só PDF"}
-    html = decodificar(bruto, ctype)
+    corpo, motivo = documento_para_md(bruto, url, ctype, CABECALHO)
+    if corpo is None:
+        return "sem_texto", {"id": n["IdNorma"], "url": url, "motivo": motivo}
     titulo = info.get("nomeNorma") or f"{nome} nº {n['Numero']}"
     situacao = info.get("dsSituacao") or ""
     meta = [
@@ -94,7 +97,7 @@ def processar(n):
         ("publicacao", info.get("nomePublicacaoDO") or ""),
         ("fonte", f"https://www.al.sp.gov.br/norma/{n['IdNorma']}"),
     ]
-    gravar(md, fonte, bruto, meta, f"# {titulo}\n\n{html_para_md(html, CABECALHO)}")
+    gravar(md, fonte, bruto, meta, f"# {titulo}\n\n{corpo}")
     return "ok", None
 
 

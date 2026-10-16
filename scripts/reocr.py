@@ -33,7 +33,7 @@ RAIZ = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), 
 
 
 def mapa_de_fontes(bases):
-    """nome do arquivo (sem .html.gz) -> caminho do original em _fonte."""
+    """(unidade, nome do arquivo) -> original; nomes coincidem entre esferas e UFs."""
     mapa = {}
     for base in bases:
         for dirpath, dirs, arquivos in os.walk(base):
@@ -41,7 +41,9 @@ def mapa_de_fontes(bases):
                 continue
             for a in arquivos:
                 if a.endswith(".html.gz"):
-                    mapa[a[: -len(".html.gz")]] = os.path.join(dirpath, a)
+                    unidade = dirpath.split(os.sep + "_fonte", 1)[0]
+                    nome = a[: -len(".html.gz")]
+                    mapa[(os.path.abspath(unidade), nome)] = os.path.join(dirpath, a)
     return mapa
 
 
@@ -97,7 +99,9 @@ def main():
     cont = {"mudou": 0, "igual": 0, "sem_fonte": 0, "erro": 0}
     for n, md in enumerate(alvos, 1):
         nome = os.path.basename(md)[:-3]
-        src = fontes.get(nome)
+        partes_md = os.path.relpath(md, RAIZ).split(os.sep)
+        unidade = os.path.join(RAIZ, *partes_md[:2]) if partes_md[0] == "estaduais" else os.path.join(RAIZ, partes_md[0])
+        src = fontes.get((unidade, nome))
         if not src:
             cont["sem_fonte"] += 1
             continue

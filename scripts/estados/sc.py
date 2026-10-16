@@ -4,12 +4,14 @@ Não há índice estruturado público: percorre os IDs de /ato-normativo/legisla
 documento (Word convertido, com anotações de alterações) e classifica pelo título.
 """
 import html as htmllib
+import datetime as dt
 import os
 import re
 import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 from comum import Rede, caminhos, decodificar, executar, gravar, html_para_md  # noqa: E402
+from datas import data_do_texto as data_da_epigrafe
 
 UF = "SC"
 BASE = "https://leis.alesc.sc.gov.br"
@@ -45,11 +47,25 @@ def classificar(titulo):
     return None
 
 
-def data_do_texto(texto):
-    m = re.search(r"de (\d{1,2})[ºo°]? de ([a-zçA-ZÇ]+) de (\d{4})", texto[:1500], re.I)
-    if m and m.group(2).lower() in MESES:
-        return f"{m.group(3)}-{MESES[m.group(2).lower()]:02d}-{int(m.group(1)):02d}"
+def data_do_texto(texto, html=""):
+    m = re.search(r'<meta\s+name="Emissao"\s+content="(\d{4})/(\d{2})/(\d{2})"', html, re.I)
+    if m:
+        try:
+            data = dt.date(*map(int, m.groups()))
+            if data <= dt.date.today():
+                return data.isoformat()
+        except ValueError:
+            pass
+    primeira = next((ln.strip() for ln in texto.splitlines() if ln.strip()), "")
+    data = data_da_epigrafe(primeira, linhas=1)
+    if data and dt.date.fromisoformat(data) <= dt.date.today():
+        return data
     return ""
+
+
+def norma_revogada(html, cabeca):
+    return bool(re.search(r'<(?:body|div)\b[^>]*(?:class|id)=["\'][^"\']*\blei-revogada\b', html, re.I)
+                or re.search(r"\bREVOGAD[AO] (PELA|PELO|INTEGRALMENTE)", cabeca))
 
 
 def processar(id_):
@@ -72,11 +88,12 @@ def processar(id_):
         return "fora_escopo", None
     pasta, nome, prefixo = tipo
     texto_plano = re.sub(r"[*\\#]", "", corpo)
-    data = data_do_texto(texto_plano)
+    data = data_do_texto(texto_plano, html)
     ano = data[:4] or "sem-ano"
     # "LEI Nº 8.575" e "DEC-000120" são as duas formas em que o número aparece
     num = re.search(r"N[º°o.]*\s*([\d.]+)", titulo, re.I) or re.search(r"^[A-Z]{3}-0*(\d+)", titulo)
-    numero = num.group(1).replace(".", "") if num else ""
+    num_meta = re.search(r'<meta\s+name="Numero"\s+content="0*(\d+)"', html, re.I)
+    numero = num_meta.group(1) if num_meta else num.group(1).replace(".", "") if num else ""
     slug = f"{prefixo}-{numero or 'sn'}-{ano}-id{id_}"
     md, fonte = caminhos(UF, pasta, ano, slug)
     if os.path.exists(md):
@@ -88,9 +105,9 @@ def processar(id_):
         ("titulo", titulo),
         ("uf", UF),
         ("tipo", nome),
-        ("numero", num.group(1) if num else ""),
+        ("numero", numero),
         ("data", data),
-        ("revogada", "lei-revogada" in html[:20000] or bool(re.search(r"\bREVOGAD[AO] (PELA|PELO|INTEGRALMENTE)", cabeca))),
+        ("revogada", norma_revogada(html, cabeca)),
         ("versao_texto", "texto anotado da ALESC"),
         ("fonte", f"{BASE}/ato-normativo/{id_}"),
     ]
@@ -100,6 +117,9 @@ def processar(id_):
 
 if __name__ == "__main__":
     ids = list(range(ID_MAX, 0, -1))
-    if len(sys.argv) > 1:
+    if "--inicio" in sys.argv:
+        inicio = int(sys.argv[sys.argv.index("--inicio") + 1])
+        ids = list(range(inicio, 0, -1))
+    elif len(sys.argv) > 1:
         ids = [int(x) for x in sys.argv[1].split(",")] if "," in sys.argv[1] else ids[-int(sys.argv[1]):]
     executar(UF, ids, processar, workers=3)

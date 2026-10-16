@@ -4,7 +4,7 @@ uf: "SC"
 tipo: "Lei Ordinária"
 numero: "7.679"
 data: ""
-revogada: true
+revogada: false
 versao_texto: "texto anotado da ALESC"
 fonte: "https://leis.alesc.sc.gov.br/ato-normativo/8936"
 baixado_em: 2026-10-13

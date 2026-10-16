@@ -3,7 +3,7 @@ titulo: "LEI N.°9.273 DE 8 DE MAIO DE 1969. (D.O. 08.05.1969)"
 uf: "CE"
 tipo: "Lei Ordinária"
 numero: "9.273"
-data: ""
+data: 1969-05-08
 ementa: "INSTITUI O FUNDO ESTADUAL DE SANEA­MENTO (FUNESA), AUTORIZA A TRANSFORMA­ÇÃO DA COMPANHIA CEARENSE DE SONDAGENS E PERFURAÇÕES (COCESP) E DÁ OUTRAS PRO­VIDÊNCIAS."
 versao_texto: "texto do BELT (Assembleia Legislativa)"
 fonte: "https://belt.al.ce.gov.br/index.php?option=com_k2&view=item&id=8870"

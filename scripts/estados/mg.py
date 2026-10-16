@@ -23,6 +23,12 @@ TIPOS = {
     "LDL": ("leis-delegadas", "Lei Delegada"),
     "LEA": ("leis-adicionais", "Lei Adicional"),
     "DEL": ("decretos-lei", "Decreto-Lei"),
+    "DEC": ("decretos", "Decreto"),
+    "RAL": ("resolucoes", "Resolução"),
+    "PRT": ("portarias", "Portaria"),
+    "DNE": ("decretos", "Decreto"),
+    "DSN": ("decretos-nao-numerados", "Decreto (não numerado)"),
+    "DLB": ("deliberacoes", "Deliberação"),
 }
 rede = Rede(rps=4)
 
@@ -48,6 +54,8 @@ def indice():
 
 def processar(r):
     pasta, nome = TIPOS[r["Tipo"]]
+    if pasta == "constituicao" and int(r["Ano"]) < 1988:
+        pasta = "constituicoes-historicas"
     comp = f"-{r['Complemento']}" if r["Complemento"] else ""
     slug = f"{r['Tipo'].lower()}-{r['Numero']}{comp}-{r['Ano']}"
     md, fonte = caminhos(UF, pasta, r["Ano"], slug)

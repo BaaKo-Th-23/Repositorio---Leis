@@ -1,5 +1,5 @@
-// OCR de PDF com o framework Vision do macOS (sem dependências externas).
-// Uso: ocr arquivo.pdf  -> texto em UTF-8 no stdout, páginas separadas por \f
+// OCR de PDF e imagens com o framework Vision do macOS (sem dependências externas).
+// Uso: ocr arquivo.pdf ou imagem -> texto em UTF-8 no stdout, páginas separadas por \f
 //
 // Ordem de leitura: o Vision devolve as linhas soltas, com a caixa de cada uma. Ordenar tudo de
 // cima para baixo funciona em página de uma coluna e destrói uma de duas: as linhas das duas
@@ -13,14 +13,22 @@ import AppKit
 import Foundation
 import PDFKit
 import Vision
+import ImageIO
 
 // --diagnostico: em vez do texto, relata por página se uma calha foi encontrada e onde. Serve
 // para medir quantas páginas do acervo são de duas colunas antes de reprocessar qualquer coisa.
 let argumentos = CommandLine.arguments.filter { $0 != "--diagnostico" }
 let diagnostico = CommandLine.arguments.contains("--diagnostico")
-guard argumentos.count > 1,
-      let doc = PDFDocument(url: URL(fileURLWithPath: argumentos[1])) else {
-    FileHandle.standardError.write("uso: ocr [--diagnostico] arquivo.pdf\n".data(using: .utf8)!)
+guard argumentos.count > 1 else {
+    FileHandle.standardError.write("uso: ocr [--diagnostico] arquivo.pdf ou imagem\n".data(using: .utf8)!)
+    exit(2)
+}
+let entrada = URL(fileURLWithPath: argumentos[1])
+let ehPDF = (try? Data(contentsOf: entrada, options: .mappedIfSafe).starts(with: Data("%PDF".utf8))) ?? false
+let doc = ehPDF ? PDFDocument(url: entrada) : nil
+let fonteImagem = ehPDF ? nil : CGImageSourceCreateWithURL(entrada as CFURL, nil)
+guard doc != nil || fonteImagem != nil else {
+    FileHandle.standardError.write("documento não reconhecido\n".data(using: .utf8)!)
     exit(2)
 }
 
@@ -66,8 +74,14 @@ func calha(_ caixas: [CGRect]) -> CGFloat? {
 let escala: CGFloat = 2.5  // ~180 dpi: bom equilíbrio entre precisão e tempo
 var saida = ""
 
-for i in 0..<doc.pageCount {
-    guard let pagina = doc.page(at: i) else { continue }
+let paginas = doc?.pageCount ?? fonteImagem.map { CGImageSourceGetCount($0) } ?? 0
+for i in 0..<paginas {
+    let imagem: CGImage
+    if let fonte = fonteImagem {
+        guard let original = CGImageSourceCreateImageAtIndex(fonte, i, nil) else { continue }
+        imagem = original
+    } else {
+    guard let pagina = doc?.page(at: i) else { continue }
     let caixa = pagina.bounds(for: .mediaBox)
     let largura = Int(caixa.width * escala), altura = Int(caixa.height * escala)
     guard let ctx = CGContext(data: nil, width: largura, height: altura, bitsPerComponent: 8, bytesPerRow: 0,
@@ -77,13 +91,20 @@ for i in 0..<doc.pageCount {
     ctx.fill(CGRect(x: 0, y: 0, width: largura, height: altura))
     ctx.scaleBy(x: escala, y: escala)
     pagina.draw(with: .mediaBox, to: ctx)
-    guard let imagem = ctx.makeImage() else { continue }
+    guard let renderizada = ctx.makeImage() else { continue }
+    imagem = renderizada
+    }
 
     let pedido = VNRecognizeTextRequest()
     pedido.recognitionLevel = .accurate
     pedido.recognitionLanguages = ["pt-BR"]
     pedido.usesLanguageCorrection = true
-    try? VNImageRequestHandler(cgImage: imagem, options: [:]).perform([pedido])
+    do {
+        try VNImageRequestHandler(cgImage: imagem, options: [:]).perform([pedido])
+    } catch {
+        FileHandle.standardError.write("OCR página \(i + 1): \(error)\n".data(using: .utf8)!)
+        continue
+    }
 
     let observacoes = pedido.results ?? []
     // o Vision usa origem no canto inferior esquerdo: maior maxY é mais alto na página

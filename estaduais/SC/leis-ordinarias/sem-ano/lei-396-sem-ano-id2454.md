@@ -4,7 +4,7 @@ uf: "SC"
 tipo: "Lei Ordinária"
 numero: "396"
 data: 1959-05-13
-revogada: true
+revogada: false
 versao_texto: "texto anotado da ALESC"
 fonte: "https://leis.alesc.sc.gov.br/ato-normativo/2454"
 baixado_em: 2026-10-13

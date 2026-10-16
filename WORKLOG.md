@@ -26,6 +26,31 @@ registros de falha; verificar formato, datas, proveniência e texto. Fonte bloqu
 índice incompleto ou universo apenas estimado permanece como pendência explícita.
 O último relatório disponível é antigo e será regenerado após a auditoria do lote.
 
+## Checkpoint de publicação e correções — 15/10/2026 à noite
+
+- Último lote publicado: `808531961dd`, 25.489 novos atos do DOU. O relatório
+  publicado registra 423.667 documentos; ainda não comprova cobertura integral.
+- Federal e jurisprudência anteriores publicados em `8dc1d518aea` e `8431a0f1642`.
+- Próximo lote estadual: correções de datas comprovadas na própria epígrafe,
+  revogação de SC conferida com os HTML originais, recuperação de imagens/Word e
+  constituições oficiais com edição explicitada. Dois decretos PA (3.323 e 3.324/2023)
+  continuam com binários oficiais corrompidos e aviso explícito de texto indisponível.
+- PDF Vision: reprocessamento integral pendente; simulação antiga foi interrompida
+  após colisões no mapa de originais. O mapa agora inclui a jurisdição. O serviço
+  nativo ANE estava preso; não substituir textos existentes em massa sem validação.
+- Filas federais: decretos PID 7371 a 3 rps; complementos ausentes em cliente separado
+  limitado a 1 rps. DOU PID 87026, fila 87017. Confirmar processos antes de retomadas.
+- Filas estaduais retomadas com cache; SP/PE tiveram DNS restabelecido. O agente
+  estadual controla substituição de SP para carregar suporte a PDF. Não duplicar.
+- Municipal: fila PID 4998; agente confere limites oficiais de circulação antes de
+  retomar o filho. Jurisprudência BNP: 7.139 IDs / 7.207 registros, incluindo 68
+  variantes ADI preservadas no mesmo documento, conferidos integralmente com caches.
+- RFB: catálogo normativo oficial declara 115.238 itens em 23 espécies; índice ainda
+  parcial. Coleta retomável e equivalências por corpo integral evitam duplicatas.
+- Metas municipais ajustadas ao cadastro oficial IBGE de 5.571 municípios. TNU
+  uniformização tem item próprio, separado de súmulas. Nenhuma meta é reduzida ao
+  volume coletado para simular conclusão.
+
 ## Publicação e progresso
 
 A pedido do usuário, todo commit deve regenerar `PROGRESSO.md` e `progresso.svg`

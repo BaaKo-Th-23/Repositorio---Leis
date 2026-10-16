@@ -5,6 +5,7 @@ Texto: texto.aspx?id=N&tipo=TEXTOATUALIZADO (quando existe) ou TEXTOORIGINAL; co
 """
 import html as htmllib
 import http.cookiejar
+import datetime as dt
 import json
 import os
 import re
@@ -14,6 +15,7 @@ import urllib.request
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 from comum import RAIZ_ESTADUAIS, UA, Rede, caminhos, decodificar, executar, gravar, html_para_md  # noqa: E402
+from datas import data_do_texto
 
 UF = "PE"
 BASE = "https://legis.alepe.pe.gov.br"
@@ -116,11 +118,18 @@ def processar(it):
         return "sem_texto", {"id": it["id"], "motivo": "texto vazio"}
     data = re.search(r"(\d{2})/(\d{2})/(\d{4})", it["publicacao"])
     titulo = it["nome"]
+    data_norma = data_do_texto(corpo, numero=numero) or ""
+    if data_norma:
+        try:
+            dt.date.fromisoformat(data_norma)
+        except ValueError:
+            data_norma = ""
     meta = [
         ("titulo", titulo),
         ("uf", UF),
         ("tipo", nome),
         ("numero", num.group(1) if num else ""),
+        ("data", data_norma),
         ("ano", ano),
         ("ementa", it["ementa"]),
         ("publicacao", it["publicacao"]),

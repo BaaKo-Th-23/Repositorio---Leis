@@ -26,7 +26,7 @@ Item = collections.namedtuple("Item", "setor nome caminho meta fase fonte")
 FASES = {
     1: ("Fase 1 — esfera federal completa", "fonte única (normas.leg.br, Planalto, Senado)"),
     2: ("Fase 2 — infralegal e jurisprudência", "uma fonte por órgão, agência ou tribunal"),
-    3: ("Fase 3 — direito municipal", "5.570 fontes, sem índice central"),
+    3: ("Fase 3 — direito municipal", "5.571 municípios no cadastro do IBGE, sem índice legislativo central"),
 }
 
 PLANO = [
@@ -80,7 +80,7 @@ PLANO = [
 
     # ---------------------------------------------------------------------------- Tributário
     Item("Infralegal — tributário", "Receita Federal: instruções normativas, portarias, atos declaratórios, soluções de consulta e pareceres normativos",
-         "reguladores/rfb", 19800, 2, "Diário Oficial da União (in.gov.br)"),
+         "reguladores/rfb", 115238, 2, "RFB — Sijut (23 espécies normativas) e Diário Oficial da União"),
     Item("Infralegal — tributário", "CONFAZ: convênios, protocolos e ajustes SINIEF",
          "reguladores/confaz", 12000, 2, "Diário Oficial da União (in.gov.br)"),
     Item("Infralegal — tributário", "Tesouro Nacional: portarias e instruções",
@@ -257,7 +257,7 @@ PLANO = [
     Item("Jurisprudência vinculante", "Súmulas vinculantes do STF", "jurisprudencia/stf/sumulas-vinculantes", 62, 2,
          "CNJ — Pangea/BNP (precedentes do STF)"),
     Item("Jurisprudência vinculante", "Súmulas do STF", "jurisprudencia/stf/sumulas", 736, 2, "stf.jus.br"),
-    Item("Jurisprudência vinculante", "Temas de repercussão geral", "jurisprudencia/stf/repercussao-geral", 1468, 2,
+    Item("Jurisprudência vinculante", "Temas de repercussão geral", "jurisprudencia/stf/repercussao-geral", 1489, 2,
          "CNJ — Pangea/BNP (precedentes do STF)"),
     Item("Jurisprudência vinculante", "Controle concentrado com eficácia erga omnes (ADI, ADC, ADPF, ADO)",
          "jurisprudencia/stf/controle-concentrado", 8000, 2, "stf.jus.br"),
@@ -270,6 +270,8 @@ PLANO = [
          "tcu.gov.br, cjf.jus.br, stm.jus.br, tse.jus.br"),
     Item("Jurisprudência vinculante", "Regimentos internos dos tribunais superiores",
          "jurisprudencia/regimentos", 6, 2, "portais dos tribunais"),
+    Item("Jurisprudência vinculante", "Temas de uniformização da TNU, incluindo cancelados",
+         "jurisprudencia/tnu/uniformizacao", 394, 2, "CNJ — Pangea/BNP (precedentes da TNU)"),
 
     # ----------------------------------------------------------- Estadual: leis (já coletado)
     Item("Leis estaduais e distritais", "Constituições estaduais e Lei Orgânica do DF", "estaduais/*/constituicao, estaduais/*/lei-organica", 27,
@@ -290,7 +292,7 @@ PLANO = [
          600, 1, "Assembleias"),
 
     # ----------------------------------------------------------- Estadual: infralegal (lacuna)
-    Item("Infralegal estadual", "Decretos dos governadores (27 UF)", "estaduais/*/decretos", 400000, 2,
+    Item("Infralegal estadual", "Decretos dos governadores (27 UF)", "estaduais/*/decretos, estaduais/*/decretos-nao-numerados", 400000, 2,
          "Casas Civis e diários oficiais estaduais"),
     Item("Infralegal estadual", "Regulamentos do ICMS (RICMS das 27 UF)", "estaduais/*/regulamentos", 27, 2,
          "Secretarias de Fazenda"),
@@ -315,10 +317,10 @@ PLANO = [
 
     # --------------------------------------------------------------------------- Municipal
     Item("Legislação municipal", "Leis orgânicas municipais e suas emendas",
-         "municipais/*/*/lei-organica, municipais/*/*/emendas-lei-organica", 5570, 3,
+         "municipais/*/*/lei-organica, municipais/*/*/emendas-lei-organica", 5571, 3,
          "diários das associações estaduais de municípios"),
-    Item("Legislação municipal", "Planos diretores", "municipais/*/*/plano-diretor", 5570, 3, "portais municipais"),
-    Item("Legislação municipal", "Códigos tributários municipais", "municipais/*/*/codigo-tributario", 5570, 3,
+    Item("Legislação municipal", "Planos diretores", "municipais/*/*/plano-diretor", 5571, 3, "portais municipais"),
+    Item("Legislação municipal", "Códigos tributários municipais", "municipais/*/*/codigo-tributario", 5571, 3,
          "portais municipais"),
     Item("Legislação municipal", "Códigos de obras, posturas e zoneamento", "municipais/*/*/codigos", 16000, 3,
          "portais municipais"),

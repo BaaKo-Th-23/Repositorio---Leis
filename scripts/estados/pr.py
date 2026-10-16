@@ -12,6 +12,7 @@ import sys
 import time
 import urllib.parse
 import urllib.request
+import urllib.error
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 from comum import RAIZ_ESTADUAIS, UA, Rede, caminhos, decodificar, executar, gravar, html_para_md  # noqa: E402
@@ -50,6 +51,12 @@ def post(caminho, dados, tentativas=4):
         try:
             with _sessao.open(req, timeout=300) as r:
                 return decodificar(r.read(), r.headers.get("Content-Type") or "")
+        except urllib.error.HTTPError as e:
+            if e.code in (401, 403, 429):
+                raise RuntimeError(f"fonte recusou acesso (HTTP {e.code}); coleta interrompida") from e
+            if n == tentativas - 1:
+                raise
+            time.sleep(30 * (n + 1))
         except Exception:
             if n == tentativas - 1:
                 raise
@@ -62,19 +69,29 @@ def indice(refazer=False):
     if os.path.exists(arq) and not refazer:
         return json.load(open(arq, encoding="utf-8"))
     itens = {}
+    os.makedirs(pasta, exist_ok=True)
     for tipo in TIPOS:
         st, dados, ctype = rede.get(f"{B}/listarAtosAno.do?action=iniciarProcesso&tipoAto={tipo}&orgaoUnidade=1100&retiraLista=true&site=1")
         html = decodificar(dados, ctype)
+        if st != 200:
+            raise RuntimeError(f"índice tipo {tipo}: HTTP {st}")
         anos = sorted({a for _, a in re.findall(r"listarAtos\('(\d{4})', '(\d{4})'\)", html)}, reverse=True)
         if not anos:  # tipo com um único ato (Constituição): a página já é o próprio ato
             for cod in dict.fromkeys(re.findall(r'name="codAto" value="(\d+)"', html)):
                 itens[cod] = {"codAto": cod, "tipo": tipo, "epigrafe": "", "ementa": "", "publicacao": ""}
         for ano in anos:
-            h = post(
-                f"listarAtosAno.do?action=listarAtos&anoAto={ano}&isPaginado=false",
-                dict(codTipoAto=tipo, codTipoAtoSelecionado=tipo, codOrgaoUnidade="1100", codOrgaoUnidadeSelecionado="1100",
-                     pesquisou="", anoAtoPesquisado="0", paginaAtual="", isPaginado="false", site="1"),
-            )
+            cache = os.path.join(pasta, f"tipo-{tipo}-{ano}.html")
+            if os.path.exists(cache) and not refazer:
+                with open(cache, encoding="utf-8") as f:
+                    h = f.read()
+            else:
+                h = post(
+                    f"listarAtosAno.do?action=listarAtos&anoAto={ano}&isPaginado=false",
+                    dict(codTipoAto=tipo, codTipoAtoSelecionado=tipo, codOrgaoUnidade="1100", codOrgaoUnidadeSelecionado="1100",
+                         pesquisou="", anoAtoPesquisado="0", paginaAtual="", isPaginado="false", site="1"),
+                )
+                with open(cache, "w", encoding="utf-8") as f:
+                    f.write(h)
             for cod, epi, ementa, pub in LINHA.findall(h):
                 itens[cod] = {"codAto": cod, "tipo": tipo, "ano": ano, "epigrafe": limpar(epi), "ementa": limpar(ementa), "publicacao": limpar(pub)}
         print(f"[{UF}] índice tipo {tipo}: {sum(1 for i in itens.values() if i['tipo'] == tipo)}", flush=True)

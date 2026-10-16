@@ -5,12 +5,14 @@ Texto: PDF de cada norma (OCR quando escaneado).
 """
 import html as htmllib
 import json
+import datetime as dt
 import os
 import re
 import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 from comum import RAIZ_ESTADUAIS, Rede, caminhos, decodificar, documento_para_md, executar, gravar  # noqa: E402
+from datas import TIPO_EPIGRAFE, data_do_texto
 
 UF = "PA"
 BASE = "https://bancodeleis.alepa.pa.gov.br"
@@ -56,28 +58,21 @@ def indice(refazer=False):
     return lista
 
 
-MESES = ("janeiro fevereiro março abril maio junho julho agosto setembro outubro novembro "
-         "dezembro").split()
 # epígrafe do PDF: "LEI N° 9.016, DE 30 DE JANEIRO DE 2020". A data tem de vir ancorada no número
 # da própria norma: qualquer lei citada no corpo do texto traz data no mesmo formato.
 def data_da_epigrafe(corpo, numero):
     """(AAAA-MM-DD, AAAA) a partir da epígrafe da norma `numero`, ou (None, None)."""
     if not numero:
         return None, None
-    # o número pode aparecer com separador de milhar: 9016 vira "9.016"
-    flex = r"\.?".join(re.escape(c) for c in numero)
-    padrao = re.compile(
-        r"LEI[ \t]*N[\u00ba\u00b0o.]*[ \t]*" + flex + r"[ \t]*,?[ \t]*DE[ \t]+(\d{1,2})[\u00ba\u00b0]?"
-        r"[ \t]+DE[ \t]+([A-Z\u00c7]+)[ \t]+DE[ \t]+(\d{4})"
-    )
-    m = padrao.search(corpo)
-    if not m:
-        return None, None
-    try:
-        mes = MESES.index(m.group(2).lower()) + 1
-    except ValueError:
-        return None, None
-    return f"{m.group(3)}-{mes:02d}-{int(m.group(1)):02d}", m.group(3)
+    linhas = [ln.strip() for ln in corpo.splitlines() if ln.strip() and not ln.strip().startswith(("#", ">"))][:6]
+    for linha in linhas:
+        linha = re.sub(r"[*\\]", "", linha).strip()
+        if not TIPO_EPIGRAFE.match(linha):
+            continue
+        data = data_do_texto(linha, numero=re.sub(r"[.\s]", "", str(numero)), linhas=1)
+        if data and dt.date.fromisoformat(data) <= dt.date.today():
+            return data, data[:4]
+    return None, None
 
 
 def processar(it):
@@ -99,9 +94,9 @@ def processar(it):
     corpo, motivo = documento_para_md(doc, url, ctype)
     if corpo is None:
         return "sem_texto", {"pdf": it["pdf"], "norma": f"{nome} {it['numero']}/{ano}", "motivo": motivo}
-    data = ""
+    data, achado = data_da_epigrafe(corpo, it["numero"])
+    data = data or ""
     if truncado:
-        data, achado = data_da_epigrafe(corpo, it["numero"])
         ano = achado or ano
         md, fonte = caminhos(UF, pasta, ano, slug)
     titulo = f"{nome} nº {it['numero']}, de {ano}"
