@@ -132,15 +132,18 @@ class Parser(HTMLParser):
         self.block_tag = None
         self.blocks = []  # (tipo, conteúdo, centralizado)
         self.source = ""
+        self.line_offsets = [0]
         self.table_depth = 0
 
     def feed(self, data):
+        inicio = len(self.source)
+        self.line_offsets.extend(inicio + m.end() for m in re.finditer("\n", data))
         self.source += data
         super().feed(data)
 
     def source_offset(self):
         line, column = self.getpos()
-        return sum(len(s) + 1 for s in self.source.split("\n")[:line - 1]) + column
+        return self.line_offsets[line - 1] + column
 
     # --- formatação inline herdada ---
     def cur(self, key):

@@ -13,7 +13,7 @@
 ## DEC1946 PUBLICADO e progresso público confirmado — 16/10/2026
 
 -7abcccab19ed386a0fa3c0ba6f4c8af97e851e50 público:1946novosdocumentos;719290total,719265/~11768799nassériescommeta(6,1%),25semmeta. Commit70872/push19467TERMINAL0;6049paths incluindoPROGRESSO.md/progresso.svg. API pública17:18:29UTC confirmoublob73990928f72776f192df77bef0972bb0223df0e5 exatamenteigualHEAD. Prova/tmp/DEC1946-publicacao-confirmada.json e revisão raiz/publicacao-confirmada-DEC1946-raiz.json. Index vazio após publicação;nenhumestágio/commit/pushpendente. Turno com progresso real; goal100% continua ativo.
--Próximo loteDF11:aprovados09f380cf47b337bd3e7213644cb830a67f85e6edbd63d8cef2e6e55c04906345 em revisao-raiz-df11/aprovacao-DF11-raiz.json, ainda NÃOaplicados. Fonte11integrallida,HTML5/GFM/máscaras/GitHub/formato,índiceprimário106683streaming/925exatos e65976fontesHEADdedup conferidos. ConferirDFtree5c8d81dbd24c14d50652b555663c6c84d57fb649 e baselineSHA antesdecopiar candidatos; preservar37fontes/provas+subsets925/mapaHEAD+overlays/revisãoraiz/WORKLOG,semstageamplo.
+-Próximo loteDF11:aprovados09f380cf47b337bd3e7213644cb830a67f85e6edbd63d8cef2e6e55c04906345 em revisao-raiz-df11/aprovacao-DF11-raiz.json, ainda NÃOaplicados. Fonte 11integrallida,HTML5/GFM/máscaras/GitHub/formato,índiceprimário106683streaming/925exatos e65976fontesHEADdedup conferidos. ConferirDFtree5c8d81dbd24c14d50652b555663c6c84d57fb649 e baselineSHA antesdecopiar candidatos; preservar37fontes/provas+subsets925/mapaHEAD+overlays/revisãoraiz/WORKLOG,semstageamplo.
 -Câmara5 originaisnãoforampublicados em1946:75906/77443/77544/77620/78587 recuperadosintegralmentesem enxerto. Manifesto5 21d5bc43fa47d6443e199a33f98418e80606f80d965da3d6db13a700bf460e0a,54arquivos605068bytes verificadosraiz. Checkpoint parcialem revisao-raiz-camara5;raízaindarevisarCSSperfil0128dc930ee04400877843ee4fc73893fb9770e8ed3ec01554a759e71aaccd4e43arquivos26030770bytes,computedStyleChromeporcaractere/cascata5passadoagente. Perfisbaixar_camara/comum/corepreservados;semfacsímile/fontmetricsCSS externo remotoGitHub não alegadosiguais. Raizleufragmentos4textosintegrais+77443textointegral,4tabelas77620alíneasa-d preservadas;faltagateindependenteraiz/GitHub5/identidade/status/cobertura. Dedupforward5:basef5b1951ausentes156376HEAD;commit7abapenas1946IDsdisjuntos,verificardiffao invésrevarrertodoHEAD.
 -Trêsagentesvivos:Federalreconstruçãointegral3tratados/76424;EstadospropostaP925+regressãoconsumidores(144estaduais/12federaisreais,1RJlei11291deltaaindaemcotejo);MunicipalV4 202/277deltasrevistos,75pendentes,796gateestruturalcom2recusashistóricas/0novas. Nenhumcore/coletor/fila94555 alterado. Browsertodosencerrados;CâmaraCSS5terminado,umapáginaporvez.
 
@@ -197,7 +197,7 @@
 
 - Raizconcluiu106fontes/headers/índiceprimário/datas/links/status/versões;527tabelas/2080células modeloDOMricoHTML5independente+GFM,0diferenças. Listascomcontadoresol/start/valuecomparadas;negrito/itálico/tachado/sup/subpreservados,semU/visuaispendentes. Prova b4026613…
 - GitHubAPIoficial/render em4lotes37+25+39+5 confirmaTODOS106corpos e527tabelas/células, contadores eformatossemperdaapóssanitização. SemaprovaçãoCSS/browserde106páginas.
-- Aplicados106MDsnovosnoshistóricos,backupsgzipintegraisjácongelados; candidatos105null+1true conforme statuspróprios. Oitos retidos docoorte114continuampendentes.
+- Aplicados106MDsnovosnoshistóricos,backupsgzipintegraisjácongelados; candidatos105null+1true conforme statuspróprios. Oitos retidos docoorte 114continuampendentes.
 - Relatório federal/_publicacao_dpl106_tabelas_20261016.json; lista/tmp/dpl106-publicacao-paths.txt. Stage474arquivosconferido106SHAcanônicos+ambosmanifestoscongelados. Formato106:0erros/avisos. Diffcheck1233ocorrências exclusivamente dois espaços GFM preservadoscomprova; commit/pushpendentes, PROGRESSO.mdgeradopelohook.
 
 ## DPL3266 publicados — 16/10/2026
@@ -221,7 +221,7 @@
 - Aprovaçãofinal raiz3266novos+315metadadosjápublicados; índice3581canônicos. Daaplicaçãooriginal3273,7retidosporcolunas/quadroslineares/U:5099,5116,5173,5368,5585,5636,5745. Nenhumapagadoworktree, apenasretiradoíndice. Fonte/snapshots/provaspreservados.
 - Revisão15dfcadcc9…/manifesto9655daf5…resolvem8falsospositivoscomcontexto:prosa,unitário+total,labelspontilhados,lapsosnuméricosliteraisnaementa/valorcitado. Nãoinferircorreções.
 - Relatóriofinalfederal/_publicacao_dpl3266_triestado315_final_20261016.json delimitaescopodepublicaçãodaproposta3273, comSHApor3581arquivos;formato3588incluiesses3581semalteração,0erro/aviso.
-- Whitespace11577anterioré2espaçosGFM/snapshotspreservados; novasfontesHTMLtambémpreservamoriginais. API/renderGithubremoveULiteralem2contextos, provapreservada.
+- Whitespace 11577anterioré2espaçosGFM/snapshotspreservados; novasfontesHTMLtambémpreservamoriginais. API/renderGithubremoveULiteralem2contextos, provapreservada.
 - Stagefinal eíndice3581SHAexatosconferidos. Verificaçãode48novasprovastem658whitespaceexclusivamente emfragmentosHTMLoriginais(SHA9655), preservadosliteralmente;nenhumcanônico. Aguarda commit/push. PROGRESSO.mdrecalculadopelohook; totalprevisto702429documentos, metaestimadapreservada.
 
 ## Lote DPL3273 + triestado315 em finalização — 16/10/2026
@@ -317,7 +317,7 @@
   nãoextraídas;8fixturescomparadosHTML5libpassaram. Raiz reconferiu todas10
   fontesvsMDs com modeloDOMindependente ecorpo do core atual:0diferenças.
   GFM preservou as84árvores/atributos/textos;visualGitHub ainda nãoverificado.
-- CorrigidosLC128data1994-10-09/rota1994 e11178revogada:true comsnapshots
+- CorrigidosLC128data1994-10-09/rota1994 e 11178revogada:true comsnapshots
   ebodybyteigual. Fontes/backups/metadadosprovas incluídos no envio.
 - Integração70db2e58…/metadadosade9b11…/revisãoindependente14dfa08…;
   decisão raiz emestaduais/_publicacao_tabelas_sc9_20261016.json.
@@ -1315,3 +1315,41 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
   sua meta; excedentes de outra série não antecipam conclusão de lacunas.
   Todas as metas foram mantidas. Quatro testes verificam isolamento do index,
   retenção do arquivo físico, recusa de registro sem prova e limite por série.
+
+### Regulatórios: 7.739 novos textos com fonte conferida
+
+- Oito mil candidatos dos lotes001/002 DOU/SIJUT passaram pelos gates de
+  identidade, reconversão integral, proveniência e revogação explícita quando
+  informada pela fonte. Retiveram-se 218 imagens/PDFs sem QA próprio e mais 43
+  casos de conteúdo próprio externo ausente da transcrição. A revisão dos 84
+  suspeitos readmitiu 30 anexos reproduzidos e 11 falsos positivos. O complemento exato tem 7.739 documentos.
+- Checagem final de todas as fontes: nenhum visual/fórmula Office omitido e
+  nenhum campo DOU com DIV truncada nos 7.782 anteriores à última retenção.
+  A igualdade da reconversão não é usada sozinha para provar integralidade.
+- Auditorias novas têm 13 testes de fonte, múltiplos atos, truncamento, hash,
+  metadados, visuais e retificação avulsa; fila DOU encerra em recusa de acesso.
+  Datas desconhecidas não são preenchidas com a data da publicação.
+- Atualização do registro de pendências: 369 casos preservados e excluídos
+  do progresso, sendo 44 federais (inclui nota 20.176), 194 avisos explícitos MG
+  de material não reproduzido e 131 suspeitas conservadoras MG. Evidências
+  substitutas mantêm os overlays anteriores; ausência na transcrição não
+  significa inexistência da norma ou do suplemento no diário original.
+
+### Desempenho com saída preservada
+
+- O cálculo de posições do HTML tinha custo repetido da fonte inteira por
+  tabela. Prefixos de linha pré-computados preservam posições Unicode, CRLF,
+  tabelas aninhadas e tags divididas entre chamadas de feed. Dois testes novos
+  e dez de vigência passaram; 195 corpos reais continuam byte a byte iguais.
+- Benchmark local de 1.500 tabelas: 1,727s antes e 0,339s depois, com SHA de saída
+  idêntico. Esse fator medido não é estimativa universal de velocidade.
+- Revisão de metadados DOU ganhou retomada por backup sem reescrita, proteção
+  contra alteração manual e prazo por arquivo. Três testes passaram; o lote
+  interrompido no gargalo retomou dos backups, sem mudar corpos normativos.
+- Monitor nativo de alterações do Git foi ativado somente na configuração
+  local e seu estado de observação foi confirmado; commits e hook permanecem
+  normais. Nenhuma preferência global do usuário foi alterada.
+
+- Auditoria final do index:7.739 Markdown sem erros/avisos. Os 880 avisos
+  de espaços foram conferidos como exatamente dois espaços do conversor,
+  incluindo 7 linhas vazias; evidência por SHA/linha foi preservada.

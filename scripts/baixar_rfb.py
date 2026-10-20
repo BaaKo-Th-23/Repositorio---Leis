@@ -71,7 +71,7 @@ def anexo_pdf(rede, doc, anexo):
     with tempfile.TemporaryDirectory() as tmp:
         path = Path(tmp) / "anexo.pdf"
         path.write_bytes(bruto)
-        proc = subprocess.run(["rtk", "proxy", "pdftotext", "-q", "-layout", "-enc", "UTF-8", str(path), "-"], capture_output=True, timeout=60, check=True)
+        proc = subprocess.run(["pdftotext", "-q", "-layout", "-enc", "UTF-8", str(path), "-"], capture_output=True, timeout=60, check=True)
         texto = proc.stdout.decode("utf-8")
         paginas = max(1, texto.count("\f"))
         extraidas = [p for p in texto.split("\f") if p.strip()]
@@ -80,7 +80,7 @@ def anexo_pdf(rede, doc, anexo):
             if ocr_cache.exists():
                 texto = gzip.decompress(ocr_cache.read_bytes()).decode("utf-8")
             else:
-                proc = subprocess.run(["rtk", "proxy", OCR_BIN, str(path)], capture_output=True, timeout=300, check=True)
+                proc = subprocess.run([OCR_BIN, str(path)], capture_output=True, timeout=300, check=True)
                 texto = proc.stdout.decode("utf-8")
                 salvar(ocr_cache, gzip.compress(texto.encode()))
             doc["_ocr_pdf"] = True
@@ -100,7 +100,7 @@ def imagem_segmento(doc, anexo):
     if not programa or not modelo.exists() or hashlib.sha256(modelo.read_bytes()).hexdigest() != "711de9dbb8052067bd42f16b9119967f30bada80d57e2ef24f65d09f531adb04":
         raise ValueError("OCR português verificado indisponível para imagem anexa")
     import os
-    proc = subprocess.run(["rtk", "proxy", programa, "stdin", "stdout", "--tessdata-dir", str(dados), "-l", "por", "--oem", "1", "--psm", "6"],
+    proc = subprocess.run([programa, "stdin", "stdout", "--tessdata-dir", str(dados), "-l", "por", "--oem", "1", "--psm", "6"],
                           input=bruto, capture_output=True, timeout=60, check=True, env={**os.environ, "OMP_THREAD_LIMIT": "1"})
     texto = proc.stdout.decode("utf-8").strip()
     fonte = CORPO + str(doc["idAto"]) + "/anexo/" + str(anexo["idArquivoBinario"])
@@ -140,6 +140,11 @@ def extrair(doc, rede=None):
         if texto:
             partes.append(convert(texto).strip())
     corpo = "\n\n".join(partes)
+    # A visão chamada "original" pode conter somente uma errata da norma
+    # identificada pela epígrafe. Isso não é a íntegra desse ato.
+    abertura = re.sub(r"^[#*\s]+", "", corpo)
+    if re.match(r"^(?:Retifica(?:ção|ções|cao|coes)|Erratas?|Onde se l[êe])\b", abertura, re.I):
+        raise ValueError("visão original contém somente retificação; íntegra da norma exige revisão")
     if doc.get("_anexos_graficos"):
         texto_base = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", corpo)
         if len(texto_base) < 200 or not re.search(r"(?m)^(?:\*\*)?Art(?:igo)?[*.\s]{0,8}(?:\d|[úu]nico)", texto_base, re.I):
