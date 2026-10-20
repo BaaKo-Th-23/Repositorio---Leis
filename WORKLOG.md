@@ -1300,3 +1300,18 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - As quebras Markdown de dois espaços foram conferidas no index dos20mil
   preparados, sem modificar conteúdo para silenciar avisos. O registro guarda
   SHA e linhas porarquivo, incluindo documentos posteriormente retidos.
+
+### Contagem com pendências de integralidade explícitas
+
+- Registro central inicial com 199 documentos publicados preservados, mas
+  excluídos do progresso até validação integral: nove novos casos federais de
+  suplemento próprio ausente na transcrição, a nota diplomática DEC20.176
+  previamente documentada e 189 suspeitas conservadoras mineiras. As suspeitas
+  não são classificadas como ausência definitiva; 73 outros casos mineiros
+  tiveram anexo encontrado sob título próprio e seguem aptos.
+- O registro possui hashes atuais dos Markdown e aponta para evidências
+  imutáveis, fontes e trechos. Nenhum corpo normativo foi apagado ou reescrito.
+- A medição por Git lê o registro do próprio index. Cada série contribui até
+  sua meta; excedentes de outra série não antecipam conclusão de lacunas.
+  Todas as metas foram mantidas. Quatro testes verificam isolamento do index,
+  retenção do arquivo físico, recusa de registro sem prova e limite por série.

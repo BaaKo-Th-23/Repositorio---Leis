@@ -23,20 +23,22 @@ from zoneinfo import ZoneInfo
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from plano import FASES, PLANO, por_setor  # noqa: E402
+from pendencias_integralidade import carregar as carregar_pendencias
 
 RAIZ = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 
 
-def contar_md(caminho):
+def contar_md(caminho, pendentes=()):
     """Arquivos .md sob um caminho, ignorando as pastas de trabalho (`_fonte`, `_indice`)."""
     if caminho.endswith(".md"):
-        return 1 if os.path.isfile(caminho) else 0
+        return int(os.path.isfile(caminho) and os.path.relpath(caminho, RAIZ) not in pendentes)
     if not os.path.isdir(caminho):
         return 0
     n = 0
     for dirpath, dirs, arquivos in os.walk(caminho):
         dirs[:] = [d for d in dirs if not d.startswith("_")]
-        n += sum(1 for a in arquivos if a.endswith(".md"))
+        n += sum(1 for a in arquivos if a.endswith(".md")
+                 and os.path.relpath(os.path.join(dirpath, a), RAIZ) not in pendentes)
     return n
 
 
@@ -49,23 +51,24 @@ def expandir(caminho_do_item):
         yield from (alvos or ([os.path.join(RAIZ, parte)] if "*" not in parte else []))
 
 
-def medir():
+def medir(pendentes=()):
     """[(item, atual)] na ordem do plano, mais o conjunto de pastas já cobertas."""
     medidas, cobertas = [], set()
     for item in PLANO:
         n = 0
         for alvo in expandir(item.caminho):
-            n += contar_md(alvo)
+            n += contar_md(alvo, pendentes)
             cobertas.add(os.path.relpath(alvo, RAIZ))
         medidas.append((item, n))
     return medidas, cobertas
 
 
-def medir_git():
+def medir_git(pendentes=()):
     """Conta o index que será publicado, sem incluir downloads ainda não adicionados."""
     saida = subprocess.check_output(["git", "ls-files", "--cached", "-z"], cwd=RAIZ)
     arquivos = {p for p in saida.decode().split("\0") if p.endswith(".md")
                 and not any(c.startswith(("_", ".")) for c in p.split("/"))}
+    arquivos.difference_update(pendentes)
     contagem = collections.Counter()
     for path in arquivos:
         partes = path.split("/")
@@ -169,9 +172,9 @@ def linha(y, rotulo, atual, meta, destaque=False):
 
 
 def totais(medidas):
-    """Total, numerador conhecido, denominador conhecido e documentos sem meta."""
+    """Total, numerador limitado à meta de cada série, metas e documentos sem meta."""
     return (sum(n for _, n in medidas),
-            sum(n for i, n in medidas if i.meta is not None),
+            sum(min(n, i.meta) for i, n in medidas if i.meta is not None),
             sum(i.meta for i, _ in medidas if i.meta is not None),
             sum(n for i, n in medidas if i.meta is None))
 
@@ -187,7 +190,7 @@ def resumo(medidas):
     total, conhecido, meta, desconhecido = totais(medidas)
     if not meta:
         return f"{mil(total)} documentos · universo desconhecido"
-    if not any(i.meta is None for i, _ in medidas):
+    if not any(i.meta is None for i, _ in medidas) and total == conhecido:
         return f"{mil(total)} / ~{mil(meta)} documentos ({percentual(conhecido, meta)})"
     return (f"{mil(total)} documentos · {mil(conhecido)} / ~{mil(meta)} nas séries com meta "
             f"({percentual(conhecido, meta)}) · {mil(desconhecido)} sem meta")
@@ -233,11 +236,16 @@ def desenhar(medidas):
             + "".join(cab + corpo) + pe + "</svg>\n")
 
 
-def markdown(medidas, achadas):
+def markdown(medidas, achadas, pendentes=()):
     L = ["# Progresso", "", f"Gerado em {dt.datetime.now(ZoneInfo('America/Recife')):%d/%m/%Y %H:%M:%S} (America/Recife). Escopo: `scripts/plano.py`.", "",
          "Percentuais usam somente documentos e metas das séries com universo estimado ou contado. "
-         "Séries sem meta ficam fora do cálculo. Volume não comprova integralidade das fontes ou qualidade das conversões.", "",
+         "Séries sem meta ficam fora do cálculo. Cada série contribui até sua própria meta. "
+         "Volume não comprova integralidade das fontes ou qualidade das conversões.", "",
          f"**{resumo(medidas)}**", "", "![progresso](progresso.svg)", ""]
+    if pendentes:
+        L += [f"Há {mil(len(pendentes))} pendências de integralidade registradas em "
+              "[registro auditável](scripts/dados/pendencias-integralidade-publicadas.json). "
+              "Esses documentos ficam fora da contagem até validação; seus textos e histórico são preservados.", ""]
     atual_item = {id(i): n for i, n in medidas}
     for fase in sorted(FASES):
         itens = [(i, n) for i, n in medidas if i.fase == fase]
@@ -270,10 +278,11 @@ def main():
     ap.add_argument("--git-index", action="store_true", help="mede somente arquivos adicionados ao próximo commit")
     args = ap.parse_args()
 
+    pendentes = carregar_pendencias(RAIZ, args.git_index)
     if args.git_index:
-        medidas, achadas = medir_git()
+        medidas, achadas = medir_git(pendentes)
     else:
-        medidas, cobertas = medir()
+        medidas, cobertas = medir(pendentes)
         achadas = orfas(cobertas)
     for setor, itens in por_setor().items():
         print(setor + ": " + resumo([(i, n) for i, n in medidas if i in itens]))
@@ -286,7 +295,7 @@ def main():
     with open(os.path.join(RAIZ, "progresso.svg"), "w", encoding="utf-8") as f:
         f.write(desenhar(medidas))
     with open(os.path.join(RAIZ, "PROGRESSO.md"), "w", encoding="utf-8") as f:
-        f.write(markdown(medidas, achadas))
+        f.write(markdown(medidas, achadas, pendentes))
     print("\ngravados: progresso.svg, PROGRESSO.md")
 
 

@@ -1,18 +1,20 @@
 # Progresso
 
-Gerado em 20/10/2026 20:17:23 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 20/10/2026 20:22:04 (America/Recife). Escopo: `scripts/plano.py`.
 
-Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Volume não comprova integralidade das fontes ou qualidade das conversões.
+Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Cada série contribui até sua própria meta. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**768.402 documentos · 768.377 / ~11.768.799 nas séries com meta (6.5%) · 25 sem meta**
+**768.203 documentos · 743.298 / ~11.768.799 nas séries com meta (6.3%) · 25 sem meta**
 
 ![progresso](progresso.svg)
+
+Há 199 pendências de integralidade registradas em [registro auditável](scripts/dados/pendencias-integralidade-publicadas.json). Esses documentos ficam fora da contagem até validação; seus textos e histórico são preservados.
 
 ## Fase 1 — legislação federal e leis estaduais
 
 Planalto, Senado, Câmara e assembleias.
 
-409.647 / ~574.766 documentos (71.3%)
+409.637 documentos · 403.296 / ~574.766 nas séries com meta (70.2%) · 0 sem meta
 
 ### Constituição Federal
 
@@ -51,17 +53,17 @@ Planalto, Senado, Câmara e assembleias.
 
 ### Decretos do Executivo federal
 
-45.875 / ~153.657 documentos (29.9%)
+45.865 / ~153.657 documentos (29.8%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Decretos numerados (1889–hoje, as duas séries) | 31.348 | 139.127 | `federal/decretos` | normas.leg.br + Planalto |
+| 🟦 | Decretos numerados (1889–hoje, as duas séries) | 31.338 | 139.127 | `federal/decretos` | normas.leg.br + Planalto |
 | 🟦 | Decretos não numerados | 14.507 | 14.510 | `federal/decretos-nao-numerados` | Planalto |
 | ✅ | Regulamentos consolidados (RIR, RIPI, Aduaneiro, RPS, PAF) | 20 | 20 | `federal/regulamentos` | Planalto |
 
 ### Tratados internacionais
 
-161 / ~5.680 documentos (2.8%)
+161 documentos · 150 / ~5.680 nas séries com meta (2.6%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -73,7 +75,7 @@ Planalto, Senado, Câmara e assembleias.
 
 ### Leis estaduais e distritais
 
-296.209 / ~347.467 documentos (85.2%)
+296.209 documentos · 289.879 / ~347.467 nas séries com meta (83.4%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -89,7 +91,7 @@ Planalto, Senado, Câmara e assembleias.
 
 Diários oficiais e portais de órgãos e tribunais.
 
-346.372 / ~861.320 documentos (40.2%)
+346.183 documentos · 327.644 / ~861.320 nas séries com meta (38.0%) · 0 sem meta
 
 ### Infralegal — tributário
 
@@ -106,7 +108,7 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal — trânsito e transportes
 
-3.951 / ~12.857 documentos (30.7%)
+3.951 documentos · 2.736 / ~12.857 nas séries com meta (21.3%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -120,7 +122,7 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal — saúde
 
-11.547 / ~34.400 documentos (33.6%)
+11.547 documentos · 8.118 / ~34.400 nas séries com meta (23.6%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -131,7 +133,7 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal — trabalho e previdência
 
-968 / ~4.498 documentos (21.5%)
+968 documentos · 817 / ~4.498 nas séries com meta (18.2%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -142,7 +144,7 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal — meio ambiente
 
-4.705 / ~10.720 documentos (43.9%)
+4.705 documentos · 4.045 / ~10.720 nas séries com meta (37.7%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -173,7 +175,7 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal — infraestrutura e energia
 
-7.836 / ~8.000 documentos (98.0%)
+7.836 documentos · 3.357 / ~8.000 nas séries com meta (42.0%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -188,7 +190,7 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal — educação e cultura
 
-6.548 / ~12.300 documentos (53.2%)
+6.548 documentos · 6.061 / ~12.300 nas séries com meta (49.3%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -228,7 +230,7 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal — direitos e desenvolvimento social
 
-2.340 / ~5.400 documentos (43.3%)
+2.340 documentos · 2.316 / ~5.400 nas séries com meta (42.9%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -241,7 +243,7 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Jurisprudência vinculante
 
-11.564 / ~14.667 documentos (78.8%)
+11.564 documentos · 11.559 / ~14.667 nas séries com meta (78.8%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -266,18 +268,18 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal estadual
 
-269.858 / ~577.054 documentos (46.8%)
+269.669 documentos · 261.580 / ~577.054 nas séries com meta (45.3%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Decretos dos governadores (27 UF) | 187.128 | 400.000 | `estaduais/*/decretos`, `estaduais/*/decretos-nao-numerados` | Casas Civis e diários oficiais estaduais |
+| 🟦 | Decretos dos governadores (27 UF) | 186.956 | 400.000 | `estaduais/*/decretos`, `estaduais/*/decretos-nao-numerados` | Casas Civis e diários oficiais estaduais |
 | ⬜️ | Regulamentos do ICMS (RICMS das 27 UF) | 0 | 27 | `estaduais/*/regulamentos` | Secretarias de Fazenda |
 | 🟦 | Instruções normativas e portarias das SEFAZ | 1.350 | 50.000 | `estaduais/*/instrucoes-normativas` | Secretarias de Fazenda |
 | ⬜️ | Resoluções e decisões normativas dos TCE | 0 | 10.000 | `estaduais/*/resolucoes-tce` | Tribunais de Contas estaduais |
 | ⬜️ | Resoluções e provimentos dos TJ e das Corregedorias | 0 | 8.000 | `estaduais/*/resolucoes-tj` | Tribunais de Justiça |
 | 🟦 | Regimentos internos das Assembleias | 18 | 27 | `estaduais/*/regimentos` | Assembleias |
 | 🟦 | Decretos legislativos estaduais | 15.339 | 20.000 | `estaduais/*/decretos-legislativos` | Assembleias (SAPL e sistemas próprios) |
-| ✅ | Resoluções das Assembleias | 33.106 | 25.000 | `estaduais/*/resolucoes` | Assembleias (SAPL e sistemas próprios) |
+| ✅ | Resoluções das Assembleias | 33.089 | 25.000 | `estaduais/*/resolucoes` | Assembleias (SAPL e sistemas próprios) |
 | 🟦 | Portarias das administrações estaduais e distrital | 30.220 | 60.000 | `estaduais/*/portarias` | SINJ-DF, Legisla Goiás e sistemas equivalentes |
 | 🟦 | Deliberações, súmulas administrativas, provimentos e pareceres normativos | 2.697 | 4.000 | `estaduais/*/deliberacoes`, `estaduais/*/sumulas`, `estaduais/*/provimentos`, `estaduais/*/pareceres-normativos` | SINJ-DF, Legisla Goiás e sistemas equivalentes |
 
