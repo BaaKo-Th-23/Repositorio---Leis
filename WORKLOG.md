@@ -1104,3 +1104,16 @@ faz isso automaticamente; ativar neste clone com `rtk git config core.hooksPath 
   cadastro e arquivo existente: não resolver por inferência.
 - Infraestrutura publicada em `7c3e5e7e9d1`. SSH falhou na verificação da chave
   do host; envio HTTPS autenticado pelo GitHub CLI concluiu sem mudar o remoto.
+
+### Primeiro lote federal da retomada
+
+- Coletados 40 candidatos DEC de dezembro/1945, a 1 requisição/segundo; 38 novos
+  decretos liberados e dois retidos. Número e data completos da epígrafe foram
+  confrontados com índice, URN e metadados; todos os caracteres alfanuméricos
+  disponíveis e 11 tabelas foram preservados na reextração. Auditoria: 38/38,
+  zero erros e avisos. Manifesto: `federal/_lote_dec1945_20261020.json`.
+- DEC 17.453 e 17.424 trazem 1944 nos próprios textos e 1945 no cadastro/URN.
+  Não entram no lote; evidência e cache preservados em quarentena local.
+- Consulta limitada aos índices oficiais de 2026 (LEI/LCP/MPV/DLG/RSF/RCN)
+  não encontrou normas novas ausentes nessas séries; isso não prova completude
+  histórica nem atualização de todos os tipos.
