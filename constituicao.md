@@ -1,5 +1,9 @@
 # Constituição da República Federativa do Brasil de 1988
 
+> Fonte: [texto compilado do Planalto](https://www.planalto.gov.br/ccivil_03/constituicao/constituicaocompilado.htm), obtido em 2026-10-20. Redações tachadas foram omitidas; indicações de revogação, vigência e decisões judiciais foram preservadas. A compilação não dispensa a consulta às regras de transição e de produção de efeitos das emendas.
+
+> No art. 7º, a EC 141/2026 prevê implementação gradual da jornada semanal (art. 6º) e vigência diferida da alteração do inciso XV (art. 10, I). Consulte as [regras e prazos da emenda](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc141.htm); a redação de 40 horas no inciso XIII não significa aplicação imediata desse limite a todos os contratos.
+
 ## PREÂMBULO
 
 Nós, representantes do povo brasileiro, reunidos em Assembléia Nacional Constituinte para instituir um Estado Democrático, destinado a assegurar o exercício dos direitos sociais e individuais, a liberdade, a segurança, o bem-estar, o desenvolvimento, a igualdade e a justiça como valores supremos de uma sociedade fraterna, pluralista e sem preconceitos, fundada na harmonia social e comprometida, na ordem interna e internacional, com a solução pacífica das controvérsias, promulgamos, sob a proteção de Deus, a seguinte CONSTITUIÇÃO DA REPÚBLICA FEDERATIVA DO BRASIL.
@@ -232,9 +236,9 @@ LXVI - ninguém será levado à prisão ou nela mantido, quando a lei admitir a 
 
 LXVII - não haverá prisão civil por dívida, salvo a do responsável pelo inadimplemento voluntário e inescusável de obrigação alimentícia e a do depositário infiel;
 
-LXVIII - conceder-se-á "habeas-corpus" sempre que alguém sofrer ou se achar ameaçado de sofrer violência ou coação em sua liberdade de locomoção, por ilegalidade ou abuso de poder;
+LXVIII - conceder-se-á habeas corpus sempre que alguém sofrer ou se achar ameaçado de sofrer violência ou coação em sua liberdade de locomoção, por ilegalidade ou abuso de poder;
 
-LXIX - conceder-se-á mandado de segurança para proteger direito líquido e certo, não amparado por "habeas-corpus" ou "habeas-data", quando o responsável pela ilegalidade ou abuso de poder for autoridade pública ou agente de pessoa jurídica no exercício de atribuições do Poder Público;
+LXIX - conceder-se-á mandado de segurança para proteger direito líquido e certo, não amparado por habeas corpus ou habeas data, quando o responsável pela ilegalidade ou abuso de poder for autoridade pública ou agente de pessoa jurídica no exercício de atribuições do Poder Público;
 
 LXX - o mandado de segurança coletivo pode ser impetrado por:
 
@@ -244,7 +248,7 @@ b) organização sindical, entidade de classe ou associação legalmente constit
 
 LXXI - conceder-se-á mandado de injunção sempre que a falta de norma regulamentadora torne inviável o exercício dos direitos e liberdades constitucionais e das prerrogativas inerentes à nacionalidade, à soberania e à cidadania;
 
-LXXII - conceder-se-á "habeas-data":
+LXXII - conceder-se-á habeas data:
 
 a) para assegurar o conhecimento de informações relativas à pessoa do impetrante, constantes de registros ou bancos de dados de entidades governamentais ou de caráter público;
 
@@ -262,7 +266,7 @@ a) o registro civil de nascimento;
 
 b) a certidão de óbito;
 
-LXXVII - são gratuitas as ações de "habeas-corpus" e "habeas-data", e, na forma da lei, os atos necessários ao exercício da cidadania. (Regulamento)
+LXXVII - são gratuitas as ações de habeas corpus e habeas data, e, na forma da lei, os atos necessários ao exercício da cidadania. (Regulamento)
 
 LXXVIII - a todos, no âmbito judicial e administrativo, são assegurados a razoável duração do processo e os meios que garantam a celeridade de sua tramitação. (Incluído pela Emenda Constitucional nº 45, de 2004) (Vide ADIN 3392)
 
@@ -290,7 +294,7 @@ II - seguro-desemprego, em caso de desemprego involuntário;
 
 III - fundo de garantia do tempo de serviço;
 
-IV - salário mínimo, fixado em lei, nacionalmente unificado, capaz de atender a suas necessidades vitais básicas e às de sua família com moradia, alimentação, educação, saúde, lazer, vestuário, higiene, transporte e previdência social, com reajustes periódicos que lhe preservem o poder aquisitivo, sendo vedada sua vinculação para qualquer fim;
+IV - salário mínimo , fixado em lei, nacionalmente unificado, capaz de atender a suas necessidades vitais básicas e às de sua família com moradia, alimentação, educação, saúde, lazer, vestuário, higiene, transporte e previdência social, com reajustes periódicos que lhe preservem o poder aquisitivo, sendo vedada sua vinculação para qualquer fim;
 
 V - piso salarial proporcional à extensão e à complexidade do trabalho;
 
@@ -300,19 +304,19 @@ VII - garantia de salário, nunca inferior ao mínimo, para os que percebem remu
 
 VIII - décimo terceiro salário com base na remuneração integral ou no valor da aposentadoria;
 
-IX - remuneração do trabalho noturno superior à do diurno;
+IX – remuneração do trabalho noturno superior à do diurno;
 
 X - proteção do salário na forma da lei, constituindo crime sua retenção dolosa;
 
-XI - participação nos lucros, ou resultados, desvinculada da remuneração, e, excepcionalmente, participação na gestão da empresa, conforme definido em lei;
+XI – participação nos lucros, ou resultados, desvinculada da remuneração, e, excepcionalmente, participação na gestão da empresa, conforme definido em lei;
 
 XII - salário-família pago em razão do dependente do trabalhador de baixa renda nos termos da lei; (Redação dada pela Emenda Constitucional nº 20, de 1998)
 
-XIII - duração do trabalho normal não superior a oito horas diárias e quarenta e quatro semanais, facultada a compensação de horários e a redução da jornada, mediante acordo ou convenção coletiva de trabalho; (Vide Decreto-Lei nº 5.452, de 1943)
+XIII - duração do trabalho normal não superior a 8 (oito) horas diárias e 40 (quarenta) horas semanais, facultada a compensação de horários e a redução da jornada, mediante acordo ou convenção coletiva de trabalho; (Redação dada pela Emenda Constitucional nº 141, de 2026)
 
 XIV - jornada de seis horas para o trabalho realizado em turnos ininterruptos de revezamento, salvo negociação coletiva;
 
-XV - repouso semanal remunerado, preferencialmente aos domingos;
+XV - repouso semanal remunerado, preferencialmente aos domingos; (Vide Emenda Constitucional nº 141, de 2026) (Vigência)
 
 XVI - remuneração do serviço extraordinário superior, no mínimo, em cinqüenta por cento à do normal; (Vide Del 5.452, art. 59 § 1º)
 
@@ -340,8 +344,6 @@ XXVII - proteção em face da automação, na forma da lei;
 
 XXVIII - seguro contra acidentes de trabalho, a cargo do empregador, sem excluir a indenização a que este está obrigado, quando incorrer em dolo ou culpa;
 
-a) b)
-
 XXIX - ação, quanto aos créditos resultantes das relações de trabalho, com prazo prescricional de cinco anos para os trabalhadores urbanos e rurais, até o limite de dois anos após a extinção do contrato de trabalho; (Redação dada pela Emenda Constitucional nº 28, de 2000)
 
 a) (Revogada). (Redação dada pela Emenda Constitucional nº 28, de 2000)
@@ -354,13 +356,15 @@ XXXI - proibição de qualquer discriminação no tocante a salário e critério
 
 XXXII - proibição de distinção entre trabalho manual, técnico e intelectual ou entre os profissionais respectivos;
 
-\- ;
-
 XXXIII - proibição de trabalho noturno, perigoso ou insalubre a menores de dezoito e de qualquer trabalho a menores de dezesseis anos, salvo na condição de aprendiz, a partir de quatorze anos; (Redação dada pela Emenda Constitucional nº 20, de 1998)
 
-XXXIV - igualdade de direitos entre o trabalhador com vínculo empregatício permanente e o trabalhador avulso
+XXXIV - igualdade de direitos entre o trabalhador com vínculo empregatício permanente e o trabalhador avulso.
 
-**Parágrafo único.** São assegurados à categoria dos trabalhadores domésticos os direitos previstos nos incisos IV, VI, VII, VIII, X, XIII, XV, XVI, XVII, XVIII, XIX, XXI, XXII, XXIV, XXVI, XXX, XXXI e XXXIII e, atendidas as condições estabelecidas em lei e observada a simplificação do cumprimento das obrigações tributárias, principais e acessórias, decorrentes da relação de trabalho e suas peculiaridades, os previstos nos incisos I, II, III, IX, XII, XXV e XXVIII, bem como a sua integração à previdência social. (Redação dada pela Emenda Constitucional nº 72, de 2013)
+**§ 1º** São assegurados à categoria dos trabalhadores domésticos os direitos previstos nos incisos IV, VI, VII, VIII, X, XIII, XV, XVI, XVII, XVIII, XIX, XXI, XXII, XXIV, XXVI, XXX, XXXI e XXXIII e, atendidas as condições estabelecidas em lei e observada a simplificação do cumprimento das obrigações tributárias, principais e acessórias, decorrentes da relação de trabalho e suas peculiaridades, os previstos nos incisos I, II, III, IX, XII, XXV e XXVIII, bem como a sua integração à previdência social. (Redação dada pela Emenda Constitucional nº 141, de 2026)
+
+**§ 2º** Excepcionalmente, convenção ou acordo coletivo de trabalho poderão, inclusive para os trabalhadores sujeitos a regimes diferenciados de trabalho estabelecidos em lei ou norma regulamentadora, estabelecer regime compensatório que assegure, na média, 2 (dois) dias de repouso semanal remunerado dentro do mês-calendário, garantido o gozo de pelo menos 1 (um) dos dias dentro do período máximo de 1 (uma) semana de trabalho. (Incluído pela Emenda Constitucional nº 141, de 2026)
+
+**§ 3º** Lei poderá dispor sobre hipóteses e condições em que a duração do trabalho e os dias de repouso semanal remunerado poderão observar regimes diferenciados, respeitados os limites previstos nos incisos XIII, XIV e XV do caput deste artigo. (Incluído pela Emenda Constitucional nº 141, de 2026)
 
 **Art. 8º** É livre a associação profissional ou sindical, observado o seguinte:
 
@@ -401,10 +405,6 @@ I - natos:
 a) os nascidos na República Federativa do Brasil, ainda que de pais estrangeiros, desde que estes não estejam a serviço de seu país;
 
 b) os nascidos no estrangeiro, de pai brasileiro ou mãe brasileira, desde que qualquer deles esteja a serviço da República Federativa do Brasil;
-
-c) ;
-
-c
 
 c) os nascidos no estrangeiro de pai brasileiro ou de mãe brasileira, desde que sejam registrados em repartição brasileira competente ou venham a residir na República Federativa do Brasil e optem, em qualquer tempo, depois de atingida a maioridade, pela nacionalidade brasileira; (Redação dada pela Emenda Constitucional nº 54, de 2007)
 
@@ -512,13 +512,11 @@ I - se contar menos de dez anos de serviço, deverá afastar-se da atividade;
 
 II - se contar mais de dez anos de serviço, será agregado pela autoridade superior e, se eleito, passará automaticamente, no ato da diplomação, para a inatividade.
 
-.
-
 **§ 9º** Lei complementar estabelecerá outros casos de inelegibilidade e os prazos de sua cessação, a fim de proteger a probidade administrativa, a moralidade para exercício de mandato considerada vida pregressa do candidato, e a normalidade e legitimidade das eleições contra a influência do poder econômico ou o abuso do exercício de função, cargo ou emprego na administração direta ou indireta. (Redação dada pela Emenda Constitucional de Revisão nº 4, de 1994)
 
-**§ 10** - O mandato eletivo poderá ser impugnado ante a Justiça Eleitoral no prazo de quinze dias contados da diplomação, instruída a ação com provas de abuso do poder econômico, corrupção ou fraude.
+**§ 10.** O mandato eletivo poderá ser impugnado ante a Justiça Eleitoral no prazo de quinze dias contados da diplomação, instruída a ação com provas de abuso do poder econômico, corrupção ou fraude.
 
-**§ 11** - A ação de impugnação de mandato tramitará em segredo de justiça, respondendo o autor, na forma da lei, se temerária ou de manifesta má-fé.
+**§ 11.** A ação de impugnação de mandato tramitará em segredo de justiça, respondendo o autor, na forma da lei, se temerária ou de manifesta má-fé.
 
 **§ 12.** Serão realizadas concomitantemente às eleições municipais as consultas populares sobre questões locais aprovadas pelas Câmaras Municipais e encaminhadas à Justiça Eleitoral até 90 (noventa) dias antes da data das eleições, observados os limites operacionais relativos ao número de quesitos. (Incluído pela Emenda Constitucional nº 111, de 2021)
 
@@ -535,8 +533,6 @@ III - condenação criminal transitada em julgado, enquanto durarem seus efeitos
 IV - recusa de cumprir obrigação a todos imposta ou prestação alternativa, nos termos do art. 5º, VIII;
 
 V - improbidade administrativa, nos termos do art. 37, § 4º.
-
-.
 
 **Art. 16.** A lei que alterar o processo eleitoral entrará em vigor na data de sua publicação, não se aplicando à eleição que ocorra até um ano da data de sua vigência. (Redação dada pela Emenda Constitucional nº 4, de 1993)
 
@@ -676,7 +672,7 @@ XVII - conceder anistia;
 
 XVIII - planejar e promover a defesa permanente contra as calamidades públicas, especialmente as secas e as inundações;
 
-XIX - instituir sistema nacional de gerenciamento de recursos hídricos e definir critérios de outorga de direitos de seu uso; ( Regulamento )
+XIX - instituir sistema nacional de gerenciamento de recursos hídricos e definir critérios de outorga de direitos de seu uso; (Regulamento)
 
 XX - instituir diretrizes para o desenvolvimento urbano, inclusive habitação, saneamento básico e transportes urbanos;
 
@@ -692,7 +688,7 @@ b) sob regime de permissão, são autorizadas a comercialização e a utilizaç�
 
 c) sob regime de permissão, são autorizadas a produção, a comercialização e a utilização de radioisótopos para pesquisa e uso médicos; (Redação dada pela Emenda Constitucional nº 118, de 2022)
 
-d) a responsabilidade civil por danos nucleares independe da existência de culpa; (Incluída pela Emenda Constitucional nº 49, de 2006)
+d) a responsabilidade civil por danos nucleares independe da existência de culpa; (Redação dada pela Emenda Constitucional nº 49, de 2006)
 
 XXIV - organizar, manter e executar a inspeção do trabalho;
 
@@ -754,7 +750,7 @@ XXV - registros públicos;
 
 XXVI - atividades nucleares de qualquer natureza;
 
-XXVII - normas gerais de licitação e contratação, em todas as modalidades, para as administrações públicas diretas, autárquicas e fundacionais da União, Estados, Distrito Federal e Municípios, obedecido o disposto no art. 37, XXI, e para as empresas públicas e sociedades de economia mista, nos termos do art. 173, § 1°, III; (Redação dada pela Emenda Constitucional nº 19, de 1998)
+XXVII – normas gerais de licitação e contratação, em todas as modalidades, para as administrações públicas diretas, autárquicas e fundacionais da União, Estados, Distrito Federal e Municípios, obedecido o disposto no art. 37, XXI, e para as empresas públicas e sociedades de economia mista, nos termos do art. 173, § 1°, III; (Redação dada pela Emenda Constitucional nº 19, de 1998)
 
 XXVIII - defesa territorial, defesa aeroespacial, defesa marítima, defesa civil e mobilização nacional;
 
@@ -880,55 +876,55 @@ II - eleição do Prefeito e do Vice-Prefeito realizada no primeiro domingo de o
 
 III - posse do Prefeito e do Vice-Prefeito no dia 1º de janeiro do ano subseqüente ao da eleição;
 
-IV - para a composição das Câmaras Municipais, será observado o limite máximo de: (Redação dada pela Emenda Constituição Constitucional nº 58, de 2009) (Produção de efeito) (Vide ADIN 4307)
+IV - para a composição das Câmaras Municipais, será observado o limite máximo de: (Redação dada pela Emenda Constitucional nº 58, de 2009) (Produção de efeito) (Vide ADIN 4307)
 
-a) 9 (nove) Vereadores, nos Municípios de até 15.000 (quinze mil) habitantes; (Redação dada pela Emenda Constituição Constitucional nº 58, de 2009)
+a) 9 (nove) Vereadores, nos Municípios de até 15.000 (quinze mil) habitantes; (Redação dada pela Emenda Constitucional nº 58, de 2009)
 
-b) 11 (onze) Vereadores, nos Municípios de mais de 15.000 (quinze mil) habitantes e de até 30.000 (trinta mil) habitantes; (Redação dada pela Emenda Constituição Constitucional nº 58, de 2009)
+b) 11 (onze) Vereadores, nos Municípios de mais de 15.000 (quinze mil) habitantes e de até 30.000 (trinta mil) habitantes; (Redação dada pela Emenda Constitucional nº 58, de 2009)
 
-c) 13 (treze) Vereadores, nos Municípios com mais de 30.000 (trinta mil) habitantes e de até 50.000 (cinquenta mil) habitantes; (Redação dada pela Emenda Constituição Constitucional nº 58, de 2009)
+c) 13 (treze) Vereadores, nos Municípios com mais de 30.000 (trinta mil) habitantes e de até 50.000 (cinquenta mil) habitantes; (Redação dada pela Emenda Constitucional nº 58, de 2009)
 
-d) 15 (quinze) Vereadores, nos Municípios de mais de 50.000 (cinquenta mil) habitantes e de até 80.000 (oitenta mil) habitantes; (Incluída pela Emenda Constituição Constitucional nº 58, de 2009)
+d) 15 (quinze) Vereadores, nos Municípios de mais de 50.000 (cinquenta mil) habitantes e de até 80.000 (oitenta mil) habitantes; (Incluída pela Emenda Constitucional nº 58, de 2009)
 
-e) 17 (dezessete) Vereadores, nos Municípios de mais de 80.000 (oitenta mil) habitantes e de até 120.000 (cento e vinte mil) habitantes; (Incluída pela Emenda Constituição Constitucional nº 58, de 2009)
+e) 17 (dezessete) Vereadores, nos Municípios de mais de 80.000 (oitenta mil) habitantes e de até 120.000 (cento e vinte mil) habitantes; (Incluída pela Emenda Constitucional nº 58, de 2009)
 
-f) 19 (dezenove) Vereadores, nos Municípios de mais de 120.000 (cento e vinte mil) habitantes e de até 160.000 (cento sessenta mil) habitantes; (Incluída pela Emenda Constituição Constitucional nº 58, de 2009)
+f) 19 (dezenove) Vereadores, nos Municípios de mais de 120.000 (cento e vinte mil) habitantes e de até 160.000 (cento sessenta mil) habitantes; (Incluída pela Emenda Constitucional nº 58, de 2009)
 
-g) 21 (vinte e um) Vereadores, nos Municípios de mais de 160.000 (cento e sessenta mil) habitantes e de até 300.000 (trezentos mil) habitantes; (Incluída pela Emenda Constituição Constitucional nº 58, de 2009)
+g) 21 (vinte e um) Vereadores, nos Municípios de mais de 160.000 (cento e sessenta mil) habitantes e de até 300.000 (trezentos mil) habitantes; (Incluída pela Emenda Constitucional nº 58, de 2009)
 
-h) 23 (vinte e três) Vereadores, nos Municípios de mais de 300.000 (trezentos mil) habitantes e de até 450.000 (quatrocentos e cinquenta mil) habitantes; (Incluída pela Emenda Constituição Constitucional nº 58, de 2009)
+h) 23 (vinte e três) Vereadores, nos Municípios de mais de 300.000 (trezentos mil) habitantes e de até 450.000 (quatrocentos e cinquenta mil) habitantes; (Incluída pela Emenda Constitucional nº 58, de 2009)
 
-i) 25 (vinte e cinco) Vereadores, nos Municípios de mais de 450.000 (quatrocentos e cinquenta mil) habitantes e de até 600.000 (seiscentos mil) habitantes; (Incluída pela Emenda Constituição Constitucional nº 58, de 2009)
+i) 25 (vinte e cinco) Vereadores, nos Municípios de mais de 450.000 (quatrocentos e cinquenta mil) habitantes e de até 600.000 (seiscentos mil) habitantes; (Incluída pela Emenda Constitucional nº 58, de 2009)
 
-j) 27 (vinte e sete) Vereadores, nos Municípios de mais de 600.000 (seiscentos mil) habitantes e de até 750.000 (setecentos cinquenta mil) habitantes; (Incluída pela Emenda Constituição Constitucional nº 58, de 2009)
+j) 27 (vinte e sete) Vereadores, nos Municípios de mais de 600.000 (seiscentos mil) habitantes e de até 750.000 (setecentos cinquenta mil) habitantes; (Incluída pela Emenda Constitucional nº 58, de 2009)
 
-k) 29 (vinte e nove) Vereadores, nos Municípios de mais de 750.000 (setecentos e cinquenta mil) habitantes e de até 900.000 (novecentos mil) habitantes; (Incluída pela Emenda Constituição Constitucional nº 58, de 2009)
+k) 29 (vinte e nove) Vereadores, nos Municípios de mais de 750.000 (setecentos e cinquenta mil) habitantes e de até 900.000 (novecentos mil) habitantes; (Incluída pela Emenda Constitucional nº 58, de 2009)
 
-l) 31 (trinta e um) Vereadores, nos Municípios de mais de 900.000 (novecentos mil) habitantes e de até 1.050.000 (um milhão e cinquenta mil) habitantes; (Incluída pela Emenda Constituição Constitucional nº 58, de 2009)
+l) 31 (trinta e um) Vereadores, nos Municípios de mais de 900.000 (novecentos mil) habitantes e de até 1.050.000 (um milhão e cinquenta mil) habitantes; (Incluída pela Emenda Constitucional nº 58, de 2009)
 
-m) 33 (trinta e três) Vereadores, nos Municípios de mais de 1.050.000 (um milhão e cinquenta mil) habitantes e de até 1.200.000 (um milhão e duzentos mil) habitantes; (Incluída pela Emenda Constituição Constitucional nº 58, de 2009)
+m) 33 (trinta e três) Vereadores, nos Municípios de mais de 1.050.000 (um milhão e cinquenta mil) habitantes e de até 1.200.000 (um milhão e duzentos mil) habitantes; (Incluída pela Emenda Constitucional nº 58, de 2009)
 
-n) 35 (trinta e cinco) Vereadores, nos Municípios de mais de 1.200.000 (um milhão e duzentos mil) habitantes e de até 1.350.000 (um milhão e trezentos e cinquenta mil) habitantes; (Incluída pela Emenda Constituição Constitucional nº 58, de 2009)
+n) 35 (trinta e cinco) Vereadores, nos Municípios de mais de 1.200.000 (um milhão e duzentos mil) habitantes e de até 1.350.000 (um milhão e trezentos e cinquenta mil) habitantes; (Incluída pela Emenda Constitucional nº 58, de 2009)
 
-o) 37 (trinta e sete) Vereadores, nos Municípios de 1.350.000 (um milhão e trezentos e cinquenta mil) habitantes e de até 1.500.000 (um milhão e quinhentos mil) habitantes; (Incluída pela Emenda Constituição Constitucional nº 58, de 2009)
+o) 37 (trinta e sete) Vereadores, nos Municípios de 1.350.000 (um milhão e trezentos e cinquenta mil) habitantes e de até 1.500.000 (um milhão e quinhentos mil) habitantes; (Incluída pela Emenda Constitucional nº 58, de 2009)
 
-p) 39 (trinta e nove) Vereadores, nos Municípios de mais de 1.500.000 (um milhão e quinhentos mil) habitantes e de até 1.800.000 (um milhão e oitocentos mil) habitantes; (Incluída pela Emenda Constituição Constitucional nº 58, de 2009)
+p) 39 (trinta e nove) Vereadores, nos Municípios de mais de 1.500.000 (um milhão e quinhentos mil) habitantes e de até 1.800.000 (um milhão e oitocentos mil) habitantes; (Incluída pela Emenda Constitucional nº 58, de 2009)
 
-q) 41 (quarenta e um) Vereadores, nos Municípios de mais de 1.800.000 (um milhão e oitocentos mil) habitantes e de até 2.400.000 (dois milhões e quatrocentos mil) habitantes; (Incluída pela Emenda Constituição Constitucional nº 58, de 2009)
+q) 41 (quarenta e um) Vereadores, nos Municípios de mais de 1.800.000 (um milhão e oitocentos mil) habitantes e de até 2.400.000 (dois milhões e quatrocentos mil) habitantes; (Incluída pela Emenda Constitucional nº 58, de 2009)
 
-r) 43 (quarenta e três) Vereadores, nos Municípios de mais de 2.400.000 (dois milhões e quatrocentos mil) habitantes e de até 3.000.000 (três milhões) de habitantes; (Incluída pela Emenda Constituição Constitucional nº 58, de 2009)
+r) 43 (quarenta e três) Vereadores, nos Municípios de mais de 2.400.000 (dois milhões e quatrocentos mil) habitantes e de até 3.000.000 (três milhões) de habitantes; (Incluída pela Emenda Constitucional nº 58, de 2009)
 
-s) 45 (quarenta e cinco) Vereadores, nos Municípios de mais de 3.000.000 (três milhões) de habitantes e de até 4.000.000 (quatro milhões) de habitantes; (Incluída pela Emenda Constituição Constitucional nº 58, de 2009)
+s) 45 (quarenta e cinco) Vereadores, nos Municípios de mais de 3.000.000 (três milhões) de habitantes e de até 4.000.000 (quatro milhões) de habitantes; (Incluída pela Emenda Constitucional nº 58, de 2009)
 
-t) 47 (quarenta e sete) Vereadores, nos Municípios de mais de 4.000.000 (quatro milhões) de habitantes e de até 5.000.000 (cinco milhões) de habitantes; (Incluída pela Emenda Constituição Constitucional nº 58, de 2009)
+t) 47 (quarenta e sete) Vereadores, nos Municípios de mais de 4.000.000 (quatro milhões) de habitantes e de até 5.000.000 (cinco milhões) de habitantes; (Incluída pela Emenda Constitucional nº 58, de 2009)
 
-u) 49 (quarenta e nove) Vereadores, nos Municípios de mais de 5.000.000 (cinco milhões) de habitantes e de até 6.000.000 (seis milhões) de habitantes; (Incluída pela Emenda Constituição Constitucional nº 58, de 2009)
+u) 49 (quarenta e nove) Vereadores, nos Municípios de mais de 5.000.000 (cinco milhões) de habitantes e de até 6.000.000 (seis milhões) de habitantes; (Incluída pela Emenda Constitucional nº 58, de 2009)
 
-v) 51 (cinquenta e um) Vereadores, nos Municípios de mais de 6.000.000 (seis milhões) de habitantes e de até 7.000.000 (sete milhões) de habitantes; (Incluída pela Emenda Constituição Constitucional nº 58, de 2009)
+v) 51 (cinquenta e um) Vereadores, nos Municípios de mais de 6.000.000 (seis milhões) de habitantes e de até 7.000.000 (sete milhões) de habitantes; (Incluída pela Emenda Constitucional nº 58, de 2009)
 
-w) 53 (cinquenta e três) Vereadores, nos Municípios de mais de 7.000.000 (sete milhões) de habitantes e de até 8.000.000 (oito milhões) de habitantes; e (Incluída pela Emenda Constituição Constitucional nº 58, de 2009)
+w) 53 (cinquenta e três) Vereadores, nos Municípios de mais de 7.000.000 (sete milhões) de habitantes e de até 8.000.000 (oito milhões) de habitantes; e (Incluída pela Emenda Constitucional nº 58, de 2009)
 
-x) 55 (cinquenta e cinco) Vereadores, nos Municípios de mais de 8.000.000 (oito milhões) de habitantes; (Incluída pela Emenda Constituição Constitucional nº 58, de 2009)
+x) 55 (cinquenta e cinco) Vereadores, nos Municípios de mais de 8.000.000 (oito milhões) de habitantes; (Incluída pela Emenda Constitucional nº 58, de 2009)
 
 V - subsídios do Prefeito, do Vice-Prefeito e dos Secretários Municipais fixados por lei de iniciativa da Câmara Municipal, observado o que dispõem os arts. 37, XI, 39, § 4º, 150, II, 153, III, e 153, § 2º, I; (Redação dada pela Emenda constitucional nº 19, de 1998)
 
@@ -960,7 +956,7 @@ XII - cooperação das associações representativas no planejamento municipal; 
 
 XIII - iniciativa popular de projetos de lei de interesse específico do Município, da cidade ou de bairros, através de manifestação de, pelo menos, cinco por cento do eleitorado; (Renumerado do inciso XI, pela Emenda Constitucional nº 1, de 1992)
 
-XIV - perda do mandato do Prefeito, nos termos do art. 28, parágrafo único . (Renumerado do inciso XII, pela Emenda Constitucional nº 1, de 1992)
+XIV - perda do mandato do Prefeito, nos termos do art. 28, parágrafo único. (Renumerado do inciso XII, pela Emenda Constitucional nº 1, de 1992)
 
 **Art. 29-A.** O total da despesa do Poder Legislativo Municipal, incluídos os subsídios dos Vereadores e os demais gastos com pessoal inativo e pensionistas, não poderá ultrapassar os seguintes percentuais, relativos ao somatório da receita tributária e das transferências previstas no § 5º do art. 153 e nos arts. 158 e 159 desta Constituição, efetivamente realizado no exercício anterior: (Redação dada pela Emenda Constitucional nº 109, de 2021) (Vigência)
 
@@ -976,9 +972,9 @@ V - 4% (quatro por cento) para Municípios com população entre 3.000.001 (trê
 
 VI - 3,5% (três inteiros e cinco décimos por cento) para Municípios com população acima de 8.000.001 (oito milhões e um) habitantes. (Incluído pela Emenda Constituição Constitucional nº 58, de 2009)
 
-**§ 1** º A Câmara Municipal não gastará mais de setenta por cento de sua receita com folha de pagamento, incluído o gasto com o subsídio de seus Vereadores. (Incluído pela Emenda Constitucional nº 25, de 2000)
+§ 1o A Câmara Municipal não gastará mais de setenta por cento de sua receita com folha de pagamento, incluído o gasto com o subsídio de seus Vereadores. (Incluído pela Emenda Constitucional nº 25, de 2000)
 
-**§ 2** º Constitui crime de responsabilidade do Prefeito Municipal: (Incluído pela Emenda Constitucional nº 25, de 2000)
+§ 2o Constitui crime de responsabilidade do Prefeito Municipal: (Incluído pela Emenda Constitucional nº 25, de 2000)
 
 I - efetuar repasse que supere os limites definidos neste artigo; (Incluído pela Emenda Constitucional nº 25, de 2000)
 
@@ -986,7 +982,7 @@ II - não enviar o repasse até o dia vinte de cada mês; ou (Incluído pela Eme
 
 III - enviá-lo a menor em relação à proporção fixada na Lei Orçamentária. (Incluído pela Emenda Constitucional nº 25, de 2000)
 
-**§ 3** º Constitui crime de responsabilidade do Presidente da Câmara Municipal o desrespeito ao § 1 º deste artigo. (Incluído pela Emenda Constitucional nº 25, de 2000)
+§ 3o Constitui crime de responsabilidade do Presidente da Câmara Municipal o desrespeito ao § 1o deste artigo. (Incluído pela Emenda Constitucional nº 25, de 2000)
 
 **Art. 30.** Compete aos Municípios:
 
@@ -1080,7 +1076,7 @@ I - deixar de ser paga, sem motivo de força maior, por dois anos consecutivos, 
 
 II - não forem prestadas contas devidas, na forma da lei;
 
-III - não tiver sido aplicado o mínimo exigido da receita municipal na manutenção e desenvolvimento do ensino e nas ações e serviços públicos de saúde; (Redação dada pela Emenda Constitucional nº 29, de 2000)
+III – não tiver sido aplicado o mínimo exigido da receita municipal na manutenção e desenvolvimento do ensino e nas ações e serviços públicos de saúde; (Redação dada pela Emenda Constitucional nº 29, de 2000)
 
 IV - o Tribunal de Justiça der provimento a representação para assegurar a observância de princípios indicados na Constituição Estadual, ou para prover a execução de lei, de ordem ou de decisão judicial.
 
@@ -1128,7 +1124,7 @@ IX - a lei estabelecerá os casos de contratação por tempo determinado para at
 
 X - a remuneração dos servidores públicos e o subsídio de que trata o § 4º do art. 39 somente poderão ser fixados ou alterados por lei específica, observada a iniciativa privativa em cada caso, assegurada revisão geral anual, sempre na mesma data e sem distinção de índices; (Redação dada pela Emenda Constitucional nº 19, de 1998) (Regulamento)
 
-XI - a remuneração e o subsídio dos ocupantes de cargos, funções e empregos públicos da administração direta, autárquica e fundacional, dos membros de qualquer dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios, dos detentores de mandato eletivo e dos demais agentes políticos e os proventos, pensões ou outra espécie remuneratória, percebidos cumulativamente ou não, incluídas as vantagens pessoais ou de qualquer outra natureza, não poderão exceder o subsídio mensal, em espécie, dos Ministros do Supremo Tribunal Federal, aplicando-se como limite, nos Municípios, o subsídio do Prefeito, e nos Estados e no Distrito Federal, o subsídio mensal do Governador no âmbito do Poder Executivo, o subsídio dos Deputados Estaduais e Distritais no âmbito do Poder Legislativo e o subsídio dos Desembargadores do Tribunal de Justiça, limitado a noventa inteiros e vinte e cinco centésimos por cento do subsídio mensal, em espécie, dos Ministros do Supremo Tribunal Federal, no âmbito do Poder Judiciário, aplicável este limite aos membros do Ministério Público, aos Procuradores e aos Defensores Públicos; (Redação dada pela Emenda Constitucional nº 41, 19.12.2003)
+XI - a remuneração e o subsídio dos ocupantes de cargos, funções e empregos públicos da administração direta, autárquica e fundacional, dos membros de qualquer dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios, dos detentores de mandato eletivo e dos demais agentes políticos e os proventos, pensões ou outra espécie remuneratória, percebidos cumulativamente ou não, incluídas as vantagens pessoais ou de qualquer outra natureza, não poderão exceder o subsídio mensal, em espécie, dos Ministros do Supremo Tribunal Federal, aplicando-se como limite, nos Municípios, o subsídio do Prefeito, e nos Estados e no Distrito Federal, o subsídio mensal do Governador no âmbito do Poder Executivo, o subsídio dos Deputados Estaduais e Distritais no âmbito do Poder Legislativo e o subsidio dos Desembargadores do Tribunal de Justiça, limitado a noventa inteiros e vinte e cinco centésimos por cento do subsídio mensal, em espécie, dos Ministros do Supremo Tribunal Federal, no âmbito do Poder Judiciário, aplicável este limite aos membros do Ministério Público, aos Procuradores e aos Defensores Públicos; (Redação dada pela Emenda Constitucional nº 41, 19.12.2003)
 
 XII - os vencimentos dos cargos do Poder Legislativo e do Poder Judiciário não poderão ser superiores aos pagos pelo Poder Executivo;
 
@@ -1150,7 +1146,7 @@ XVII - a proibição de acumular estende-se a empregos e funções e abrange aut
 
 XVIII - a administração fazendária e seus servidores fiscais terão, dentro de suas áreas de competência e jurisdição, precedência sobre os demais setores administrativos, na forma da lei;
 
-XIX - somente por lei específica poderá ser criada autarquia e autorizada a instituição de empresa pública, de sociedade de economia mista e de fundação, cabendo à lei complementar, neste último caso, definir as áreas de sua atuação; (Redação dada pela Emenda Constitucional nº 19, de 1998)
+XIX – somente por lei específica poderá ser criada autarquia e autorizada a instituição de empresa pública, de sociedade de economia mista e de fundação, cabendo à lei complementar, neste último caso, definir as áreas de sua atuação; (Redação dada pela Emenda Constitucional nº 19, de 1998)
 
 XX - depende de autorização legislativa, em cada caso, a criação de subsidiárias das entidades mencionadas no inciso anterior, assim como a participação de qualquer delas em empresa privada;
 
@@ -1170,7 +1166,7 @@ II - o acesso dos usuários a registros administrativos e a informações sobre 
 
 III - a disciplina da representação contra o exercício negligente ou abusivo de cargo, emprego ou função na administração pública. (Incluído pela Emenda Constitucional nº 19, de 1998)
 
-**§ 4º** Os atos de improbidade administrativa importarão a suspensão dos direitos políticos, a perda da função pública, a indisponibilidade dos bens e o ressarcimento ao erário, na forma e gradação previstas em lei, sem prejuízo da ação penal cabível.
+**§ 4º** - Os atos de improbidade administrativa importarão a suspensão dos direitos políticos, a perda da função pública, a indisponibilidade dos bens e o ressarcimento ao erário, na forma e gradação previstas em lei, sem prejuízo da ação penal cabível.
 
 **§ 5º** A lei estabelecerá os prazos de prescrição para ilícitos praticados por qualquer agente, servidor ou não, que causem prejuízos ao erário, ressalvadas as respectivas ações de ressarcimento.
 
@@ -1258,7 +1254,7 @@ III - no âmbito da União, aos 62 (sessenta e dois) anos de idade, se mulher, e
 
 **§ 3º** As regras para cálculo de proventos de aposentadoria serão disciplinadas em lei do respectivo ente federativo. (Redação dada pela Emenda Constitucional nº 103, de 2019)
 
-**§ 4º** É vedada a adoção de requisitos ou critérios diferenciados para concessão de benefícios em regime próprio de previdência social, ressalvado o disposto nos §§ 4º-A, 4º-B, 4º-C e 5º. (Redação dada pela Emenda Constitucional nº 103, de 2019)
+**§ 4º** É vedada a adoção de requisitos ou critérios diferenciados para concessão de benefícios em regime próprio de previdência social, ressalvado o disposto nos §§ 4º-A, 4º-B, 4º-C, 5º e 5º-A deste artigo. (Redação dada pela Emenda Constitucional nº 140, de 2026)
 
 **§ 4º-A.** Poderão ser estabelecidos por lei complementar do respectivo ente federativo idade e tempo de contribuição diferenciados para aposentadoria de servidores com deficiência, previamente submetidos a avaliação biopsicossocial realizada por equipe multiprofissional e interdisciplinar. (Incluído pela Emenda Constitucional nº 103, de 2019)
 
@@ -1267,6 +1263,8 @@ III - no âmbito da União, aos 62 (sessenta e dois) anos de idade, se mulher, e
 **§ 4º-C.** Poderão ser estabelecidos por lei complementar do respectivo ente federativo idade e tempo de contribuição diferenciados para aposentadoria de servidores cujas atividades sejam exercidas com efetiva exposição a agentes químicos, físicos e biológicos prejudiciais à saúde, ou associação desses agentes, vedada a caracterização por categoria profissional ou ocupação. (Incluído pela Emenda Constitucional nº 103, de 2019)
 
 **§ 5º** Os ocupantes do cargo de professor terão idade mínima reduzida em 5 (cinco) anos em relação às idades decorrentes da aplicação do disposto no inciso III do § 1º, desde que comprovem tempo de efetivo exercício das funções de magistério na educação infantil e no ensino fundamental e médio fixado em lei complementar do respectivo ente federativo. (Redação dada pela Emenda Constitucional nº 103, de 2019)
+
+**§ 5º-A.** O requisito de idade a que se refere o inciso III do § 1º deste artigo será de 57 (cinquenta e sete) anos de idade, se mulher, e 60 (sessenta) anos de idade, se homem, para o agente comunitário de saúde e o agente de combate às endemias que comprovem o mínimo de 25 (vinte e cinco) anos de tempo de contribuição e de efetivo exercício na respectiva atividade profissional. (Incluído pela Emenda Constitucional nº 140, de 2026)
 
 **§ 6º** Ressalvadas as aposentadorias decorrentes dos cargos acumuláveis na forma desta Constituição, é vedada a percepção de mais de uma aposentadoria à conta de regime próprio de previdência social, aplicando-se outras vedações, regras e condições para a acumulação de benefícios previdenciários estabelecidas no Regime Geral de Previdência Social. (Redação dada pela Emenda Constitucional nº 103, de 2019)
 
@@ -1288,7 +1286,7 @@ III - no âmbito da União, aos 62 (sessenta e dois) anos de idade, se mulher, e
 
 **§ 15.** O regime de previdência complementar de que trata o § 14 oferecerá plano de benefícios somente na modalidade contribuição definida, observará o disposto no art. 202 e será efetivado por intermédio de entidade fechada de previdência complementar ou de entidade aberta de previdência complementar. (Redação dada pela Emenda Constitucional nº 103, de 2019)
 
-**§ 16** - Somente mediante sua prévia e expressa opção, o disposto nos § § 14 e 15 poderá ser aplicado ao servidor que tiver ingressado no serviço público até a data da publicação do ato de instituição do correspondente regime de previdência complementar. (Incluído pela Emenda Constitucional nº 20, de 15/12/98)
+**§ 16** - Somente mediante sua prévia e expressa opção, o disposto nos §§ 14 e 15 poderá ser aplicado ao servidor que tiver ingressado no serviço público até a data da publicação do ato de instituição do correspondente regime de previdência complementar. (Incluído pela Emenda Constitucional nº 20, de 15/12/98)
 
 **§ 17.** Todos os valores de remuneração considerados para o cálculo do benefício previsto no § 3° serão devidamente atualizados, na forma da lei. (Incluído pela Emenda Constitucional nº 41, 19.12.2003)
 
@@ -1354,13 +1352,13 @@ III - mediante procedimento de avaliação periódica de desempenho, na forma de
 
 **Art. 43.** Para efeitos administrativos, a União poderá articular sua ação em um mesmo complexo geoeconômico e social, visando a seu desenvolvimento e à redução das desigualdades regionais.
 
-**§ 1º** Lei complementar disporá sobre:
+**§ 1º** - Lei complementar disporá sobre:
 
 I - as condições para integração de regiões em desenvolvimento;
 
 II - a composição dos organismos regionais que executarão, na forma da lei, os planos regionais, integrantes dos planos nacionais de desenvolvimento econômico e social, aprovados juntamente com estes.
 
-**§ 2º** Os incentivos regionais compreenderão, além de outros, na forma da lei:
+**§ 2º** - Os incentivos regionais compreenderão, além de outros, na forma da lei:
 
 I - igualdade de tarifas, fretes, seguros e outros itens de custos e preços de responsabilidade do Poder Público;
 
@@ -1370,7 +1368,7 @@ III - isenções, reduções ou diferimento temporário de tributos federais dev
 
 IV - prioridade para o aproveitamento econômico e social dos rios e das massas de água represadas ou represáveis nas regiões de baixa renda, sujeitas a secas periódicas.
 
-**§ 3º** Nas áreas a que se refere o § 2º, IV, a União incentivará a recuperação de terras áridas e cooperará com os pequenos e médios proprietários rurais para o estabelecimento, em suas glebas, de fontes de água e de pequena irrigação.
+**§ 3º** - Nas áreas a que se refere o § 2º, IV, a União incentivará a recuperação de terras áridas e cooperará com os pequenos e médios proprietários rurais para o estabelecimento, em suas glebas, de fontes de água e de pequena irrigação.
 
 **§ 4º** Sempre que possível, a concessão dos incentivos regionais a que se refere o § 2º, III, considerará critérios de sustentabilidade ambiental e redução das emissões de carbono. (Incluído pela Emenda Constitucional nº 132, de 2023)
 
@@ -1424,9 +1422,9 @@ VIII - concessão de anistia;
 
 IX - organização administrativa, judiciária, do Ministério Público e da Defensoria Pública da União e dos Territórios e organização judiciária e do Ministério Público do Distrito Federal; (Redação dada pela Emenda Constitucional nº 69, de 2012) (Produção de efeito)
 
-X - criação, transformação e extinção de cargos, empregos e funções públicas, observado o que estabelece o art. 84, VI, b ; (Redação dada pela Emenda Constitucional nº 32, de 2001)
+X – criação, transformação e extinção de cargos, empregos e funções públicas, observado o que estabelece o art. 84, VI, b; (Redação dada pela Emenda Constitucional nº 32, de 2001)
 
-XI - criação e extinção de Ministérios e órgãos da administração pública; (Redação dada pela Emenda Constitucional nº 32, de 2001)
+XI – criação e extinção de Ministérios e órgãos da administração pública; (Redação dada pela Emenda Constitucional nº 32, de 2001)
 
 XII - telecomunicações e radiodifusão;
 
@@ -1490,7 +1488,7 @@ II - proceder à tomada de contas do Presidente da República, quando não apres
 
 III - elaborar seu regimento interno;
 
-IV - dispor sobre sua organização, funcionamento, polícia, criação, transformação ou extinção dos cargos, empregos e funções de seus serviços, e a iniciativa de lei para fixação da respectiva remuneração, observados os parâmetros estabelecidos na lei de diretrizes orçamentárias; (Redação dada pela Emenda Constitucional nº 19, de 1998)
+IV – dispor sobre sua organização, funcionamento, polícia, criação, transformação ou extinção dos cargos, empregos e funções de seus serviços, e a iniciativa de lei para fixação da respectiva remuneração, observados os parâmetros estabelecidos na lei de diretrizes orçamentárias; (Redação dada pela Emenda Constitucional nº 19, de 1998)
 
 V - eleger membros do Conselho da República, nos termos do art. 89, VII.
 
@@ -1598,7 +1596,7 @@ VI - que sofrer condenação criminal em sentença transitada em julgado.
 
 **§ 2º** Nos casos dos incisos I, II e VI, a perda do mandato será decidida pela Câmara dos Deputados ou pelo Senado Federal, por maioria absoluta, mediante provocação da respectiva Mesa ou de partido político representado no Congresso Nacional, assegurada ampla defesa. (Redação dada pela Emenda Constitucional nº 76, de 2013)
 
-**§ 3º** Nos casos previstos nos incisos III a V, a perda será declarada pela Mesa da Casa respectiva, de ofício ou mediante provocação de qualquer de seus membros, ou de partido político representado no Congresso Nacional, assegurada ampla defesa.
+**§ 3º** - Nos casos previstos nos incisos III a V, a perda será declarada pela Mesa da Casa respectiva, de ofício ou mediante provocação de qualquer de seus membros, ou de partido político representado no Congresso Nacional, assegurada ampla defesa.
 
 **§ 4º** A renúncia de parlamentar submetido a processo que vise ou possa levar à perda do mandato, nos termos deste artigo, terá seus efeitos suspensos até as deliberações finais de que tratam os §§ 2º e 3º. (Incluído pela Emenda Constitucional de Revisão nº 6, de 1994)
 
@@ -1748,7 +1746,7 @@ f) militares das Forças Armadas, seu regime jurídico, provimento de cargos, pr
 
 **§ 1º** É vedada a edição de medidas provisórias sobre matéria: (Incluído pela Emenda Constitucional nº 32, de 2001)
 
-I - relativa a: (Incluído pela Emenda Constitucional nº 32, de 2001)
+I – relativa a: (Incluído pela Emenda Constitucional nº 32, de 2001)
 
 a) nacionalidade, cidadania, direitos políticos, partidos políticos e direito eleitoral; (Incluído pela Emenda Constitucional nº 32, de 2001)
 
@@ -1758,11 +1756,11 @@ c) organização do Poder Judiciário e do Ministério Público, a carreira e a 
 
 d) planos plurianuais, diretrizes orçamentárias, orçamento e créditos adicionais e suplementares, ressalvado o previsto no art. 167, § 3º; (Incluído pela Emenda Constitucional nº 32, de 2001)
 
-II - que vise a detenção ou seqüestro de bens, de poupança popular ou qualquer outro ativo financeiro; (Incluído pela Emenda Constitucional nº 32, de 2001)
+II – que vise a detenção ou seqüestro de bens, de poupança popular ou qualquer outro ativo financeiro; (Incluído pela Emenda Constitucional nº 32, de 2001)
 
-III - reservada a lei complementar; (Incluído pela Emenda Constitucional nº 32, de 2001)
+III – reservada a lei complementar; (Incluído pela Emenda Constitucional nº 32, de 2001)
 
-IV - já disciplinada em projeto de lei aprovado pelo Congresso Nacional e pendente de sanção ou veto do Presidente da República. (Incluído pela Emenda Constitucional nº 32, de 2001)
+IV – já disciplinada em projeto de lei aprovado pelo Congresso Nacional e pendente de sanção ou veto do Presidente da República. (Incluído pela Emenda Constitucional nº 32, de 2001)
 
 **§ 2º** Medida provisória que implique instituição ou majoração de impostos, exceto os previstos nos arts. 153, I, II, IV, V, e 154, II, só produzirá efeitos no exercício financeiro seguinte se houver sido convertida em lei até o último dia daquele em que foi editada. (Incluído pela Emenda Constitucional nº 32, de 2001)
 
@@ -1794,7 +1792,7 @@ II - nos projetos sobre organização dos serviços administrativos da Câmara d
 
 **Art. 64.** A discussão e votação dos projetos de lei de iniciativa do Presidente da República, do Supremo Tribunal Federal e dos Tribunais Superiores terão início na Câmara dos Deputados.
 
-**§ 1º** - O Presidente da República poderá solicitar urgência para apreciação de projetos de sua iniciativa.
+**§ 1º** O Presidente da República poderá solicitar urgência para apreciação de projetos de sua iniciativa.
 
 **§ 2º** Se, no caso do § 1º, a Câmara dos Deputados e o Senado Federal não se manifestarem sobre a proposição, cada qual sucessivamente, em até quarenta e cinco dias, sobrestar-se-ão todas as demais deliberações legislativas da respectiva Casa, com exceção das que tenham prazo constitucional determinado, até que se ultime a votação. (Redação dada pela Emenda Constitucional nº 32, de 2001)
 
@@ -1808,7 +1806,7 @@ II - nos projetos sobre organização dos serviços administrativos da Câmara d
 
 **Art. 66.** A Casa na qual tenha sido concluída a votação enviará o projeto de lei ao Presidente da República, que, aquiescendo, o sancionará.
 
-**§ 1º** Se o Presidente da República considerar o projeto, no todo ou em parte, inconstitucional ou contrário ao interesse público, vetá-lo-á total ou parcialmente, no prazo de quinze dias úteis, contados da data do recebimento, e comunicará, dentro de quarenta e oito horas, ao Presidente do Senado Federal os motivos do veto.
+**§ 1º** - Se o Presidente da República considerar o projeto, no todo ou em parte, inconstitucional ou contrário ao interesse público, vetá-lo-á total ou parcialmente, no prazo de quinze dias úteis, contados da data do recebimento, e comunicará, dentro de quarenta e oito horas, ao Presidente do Senado Federal os motivos do veto.
 
 **§ 2º** O veto parcial somente abrangerá texto integral de artigo, de parágrafo, de inciso ou de alínea.
 
@@ -1946,7 +1944,7 @@ IV - apoiar o controle externo no exercício de sua missão institucional.
 
 **Parágrafo único.** Se, decorridos dez dias da data fixada para a posse, o Presidente ou o Vice-Presidente, salvo motivo de força maior, não tiver assumido o cargo, este será declarado vago.
 
-**Art. 79.** Substituirá o Presidente, no caso de impedimento, e suceder-lhe-á, no de vaga, o Vice-Presidente.
+**Art. 79.** Substituirá o Presidente, no caso de impedimento, e suceder- lhe-á, no de vaga, o Vice-Presidente.
 
 **Parágrafo único.** O Vice-Presidente da República, além de outras atribuições que lhe forem conferidas por lei complementar, auxiliará o Presidente, sempre que por ele convocado para missões especiais.
 
@@ -1954,11 +1952,9 @@ IV - apoiar o controle externo no exercício de sua missão institucional.
 
 **Art. 81.** Vagando os cargos de Presidente e Vice-Presidente da República, far-se-á eleição noventa dias depois de aberta a última vaga.
 
-**§ 1º** Ocorrendo a vacância nos últimos dois anos do período presidencial, a eleição para ambos os cargos será feita trinta dias depois da última vaga, pelo Congresso Nacional, na forma da lei.
+**§ 1º** - Ocorrendo a vacância nos últimos dois anos do período presidencial, a eleição para ambos os cargos será feita trinta dias depois da última vaga, pelo Congresso Nacional, na forma da lei.
 
-**§ 2º** Em qualquer dos casos, os eleitos deverão completar o período de seus antecessores.
-
-**Art. 82.** (Vide Emenda Constitucional de Revisão nº 5, de 1994)
+**§ 2º** - Em qualquer dos casos, os eleitos deverão completar o período de seus antecessores.
 
 **Art. 82.** O mandato do Presidente da República é de 4 (quatro) anos e terá início em 5 de janeiro do ano seguinte ao de sua eleição. (Redação dada pela Emenda Constitucional nº 111, de 2021)
 
@@ -1978,7 +1974,7 @@ IV - sancionar, promulgar e fazer publicar as leis, bem como expedir decretos e 
 
 V - vetar projetos de lei, total ou parcialmente;
 
-VI - dispor, mediante decreto, sobre: (Redação dada pela Emenda Constitucional nº 32, de 2001)
+VI – dispor, mediante decreto, sobre: (Redação dada pela Emenda Constitucional nº 32, de 2001)
 
 a) organização e funcionamento da administração federal, quando não implicar aumento de despesa nem criação ou extinção de órgãos públicos; (Incluída pela Emenda Constitucional nº 32, de 2001)
 
@@ -2236,9 +2232,9 @@ II - receber, a qualquer título ou pretexto, custas ou participação em proces
 
 III - dedicar-se à atividade político-partidária.
 
-IV - receber, a qualquer título ou pretexto, auxílios ou contribuições de pessoas físicas, entidades públicas ou privadas, ressalvadas as exceções previstas em lei; (Incluído pela Emenda Constitucional nº 45, de 2004)
+IV receber, a qualquer título ou pretexto, auxílios ou contribuições de pessoas físicas, entidades públicas ou privadas, ressalvadas as exceções previstas em lei; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-V - exercer a advocacia no juízo ou tribunal do qual se afastou, antes de decorridos três anos do afastamento do cargo por aposentadoria ou exoneração. (Incluído pela Emenda Constitucional nº 45, de 2004)
+V exercer a advocacia no juízo ou tribunal do qual se afastou, antes de decorridos três anos do afastamento do cargo por aposentadoria ou exoneração. (Incluído pela Emenda Constitucional nº 45, de 2004)
 
 **Art. 96.** Compete privativamente:
 
@@ -2260,8 +2256,6 @@ II - ao Supremo Tribunal Federal, aos Tribunais Superiores e aos Tribunais de Ju
 
 a) a alteração do número de membros dos tribunais inferiores;
 
-b)
-
 b) a criação e a extinção de cargos e a remuneração dos seus serviços auxiliares e dos juízos que lhes forem vinculados, bem como a fixação do subsídio de seus membros e dos juízes, inclusive dos tribunais inferiores, onde houver; (Redação dada pela Emenda Constitucional nº 41, 19.12.2003)
 
 c) a criação ou extinção dos tribunais inferiores;
@@ -2276,7 +2270,7 @@ III - aos Tribunais de Justiça julgar os juízes estaduais e do Distrito Federa
 
 **Art. 98.** A União, no Distrito Federal e nos Territórios, e os Estados criarão:
 
-I - juizados especiais, providos por juízes togados, ou togados e leigos, competentes para a conciliação, o julgamento e a execução de causas cíveis de menor complexidade e infrações penais de menor potencial ofensivo, mediante os procedimentos oral e sumaríssimo , permitidos, nas hipóteses previstas em lei, a transação e o julgamento de recursos por turmas de juízes de primeiro grau;
+I - juizados especiais, providos por juízes togados, ou togados e leigos, competentes para a conciliação, o julgamento e a execução de causas cíveis de menor complexidade e infrações penais de menor potencial ofensivo, mediante os procedimentos oral e sumaríssimo, permitidos, nas hipóteses previstas em lei, a transação e o julgamento de recursos por turmas de juízes de primeiro grau;
 
 II - justiça de paz, remunerada, composta de cidadãos eleitos pelo voto direto, universal e secreto, com mandato de quatro anos e competência para, na forma da lei, celebrar casamentos, verificar, de ofício ou em face de impugnação apresentada, o processo de habilitação e exercer atribuições conciliatórias, sem caráter jurisdicional, além de outras previstas na legislação.
 
@@ -2342,7 +2336,7 @@ V - compra de direitos, disponibilizados para cessão, do respectivo ente federa
 
 **§ 15.** Sem prejuízo do disposto neste artigo, lei complementar a esta Constituição Federal poderá estabelecer regime especial para pagamento de crédito de precatórios de Estados, Distrito Federal e Municípios, dispondo sobre vinculações à receita corrente líquida e forma e prazo de liquidação. (Incluído pela Emenda Constitucional nº 62, de 2009).
 
-**§ 16.** A seu critério exclusivo e na forma de lei, a União poderá assumir débitos, oriundos de precatórios, de Estados, Distrito Federal e Municípios, refinanciando-os diretamente. (Incluído pela Emenda Constitucional nº 62, de 2009).
+**§ 16.** A seu critério exclusivo e na forma de lei, a União poderá assumir débitos, oriundos de precatórios, de Estados, Distrito Federal e Municípios, refinanciando-os diretamente. (Incluído pela Emenda Constitucional nº 62, de 2009)
 
 **§ 17.** A União, os Estados, o Distrito Federal e os Municípios aferirão mensalmente, em base anual, o comprometimento de suas respectivas receitas correntes líquidas com o pagamento de precatórios e obrigações de pequeno valor. (Incluído pela Emenda Constitucional nº 94, de 2016)
 
@@ -2432,11 +2426,9 @@ a) a ação direta de inconstitucionalidade de lei ou ato normativo federal ou e
 
 b) nas infrações penais comuns, o Presidente da República, o Vice-Presidente, os membros do Congresso Nacional, seus próprios Ministros e o Procurador-Geral da República;
 
-;
-
 c) nas infrações penais comuns e nos crimes de responsabilidade, os Ministros de Estado e os Comandantes da Marinha, do Exército e da Aeronáutica, ressalvado o disposto no art. 52, I, os membros dos Tribunais Superiores, os do Tribunal de Contas da União e os chefes de missão diplomática de caráter permanente; (Redação dada pela Emenda Constitucional nº 23, de 1999)
 
-d) o habeas corpus , sendo paciente qualquer das pessoas referidas nas alíneas anteriores; o mandado de segurança e o habeas data contra atos do Presidente da República, das Mesas da Câmara dos Deputados e do Senado Federal, do Tribunal de Contas da União, do Procurador-Geral da República e do próprio Supremo Tribunal Federal;
+d) o habeas corpus, sendo paciente qualquer das pessoas referidas nas alíneas anteriores; o mandado de segurança e o habeas data contra atos do Presidente da República, das Mesas da Câmara dos Deputados e do Senado Federal, do Tribunal de Contas da União, do Procurador-Geral da República e do próprio Supremo Tribunal Federal;
 
 e) o litígio entre Estado estrangeiro ou organismo internacional e a União, o Estado, o Distrito Federal ou o Território;
 
@@ -2446,7 +2438,7 @@ g) a extradição solicitada por Estado estrangeiro;
 
 h) (Revogado pela Emenda Constitucional nº 45, de 2004)
 
-i) o habeas corpus , quando o coator for Tribunal Superior ou quando o coator ou o paciente for autoridade ou funcionário cujos atos estejam sujeitos diretamente à jurisdição do Supremo Tribunal Federal, ou se trate de crime sujeito à mesma jurisdição em uma única instância; (Redação dada pela Emenda Constitucional nº 22, de 1999)
+i) o habeas corpus, quando o coator for Tribunal Superior ou quando o coator ou o paciente for autoridade ou funcionário cujos atos estejam sujeitos diretamente à jurisdição do Supremo Tribunal Federal, ou se trate de crime sujeito à mesma jurisdição em uma única instância; (Redação dada pela Emenda Constitucional nº 22, de 1999)
 
 j) a revisão criminal e a ação rescisória de seus julgados;
 
@@ -2466,7 +2458,7 @@ r) as ações contra o Conselho Nacional de Justiça e contra o Conselho Naciona
 
 II - julgar, em recurso ordinário:
 
-a) o habeas corpus , o mandado de segurança, o habeas data e o mandado de injunção decididos em única instância pelos Tribunais Superiores, se denegatória a decisão;
+a) o habeas corpus, o mandado de segurança, o habeas data e o mandado de injunção decididos em única instância pelos Tribunais Superiores, se denegatória a decisão;
 
 b) o crime político;
 
@@ -2480,7 +2472,7 @@ c) julgar válida lei ou ato de governo local contestado em face desta Constitui
 
 d) julgar válida lei local contestada em face de lei federal. (Incluída pela Emenda Constitucional nº 45, de 2004)
 
-**§ 1º** A argüição de descumprimento de preceito fundamental, decorrente desta Constituição, será apreciada pelo Supremo Tribunal Federal, na forma da lei. (Transformado em § 1º pela Emenda Constitucional nº 3, de 17/03/93)
+**§ 1.º** A argüição de descumprimento de preceito fundamental, decorrente desta Constituição, será apreciada pelo Supremo Tribunal Federal, na forma da lei. (Transformado do parágrafo único em § 1º pela Emenda Constitucional nº 3, de 17/03/93)
 
 **§ 2º** As decisões definitivas de mérito, proferidas pelo Supremo Tribunal Federal, nas ações diretas de inconstitucionalidade e nas ações declaratórias de constitucionalidade produzirão eficácia contra todos e efeito vinculante, relativamente aos demais órgãos do Poder Judiciário e à administração pública direta e indireta, nas esferas federal, estadual e municipal. (Redação dada pela Emenda Constitucional nº 45, de 2004) (Vide ADIN 3392)
 
@@ -2526,29 +2518,29 @@ IX - confederação sindical ou entidade de classe de âmbito nacional.
 
 I - o Presidente do Supremo Tribunal Federal; (Redação dada pela Emenda Constitucional nº 61, de 2009)
 
-II - um Ministro do Superior Tribunal de Justiça, indicado pelo respectivo tribunal; (Incluído pela Emenda Constitucional nº 45, de 2004)
+II um Ministro do Superior Tribunal de Justiça, indicado pelo respectivo tribunal; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-III - um Ministro do Tribunal Superior do Trabalho, indicado pelo respectivo tribunal; (Incluído pela Emenda Constitucional nº 45, de 2004)
+III um Ministro do Tribunal Superior do Trabalho, indicado pelo respectivo tribunal; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-IV - um desembargador de Tribunal de Justiça, indicado pelo Supremo Tribunal Federal; (Incluído pela Emenda Constitucional nº 45, de 2004)
+IV um desembargador de Tribunal de Justiça, indicado pelo Supremo Tribunal Federal; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-V - um juiz estadual, indicado pelo Supremo Tribunal Federal; (Incluído pela Emenda Constitucional nº 45, de 2004)
+V um juiz estadual, indicado pelo Supremo Tribunal Federal; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-VI - um juiz de Tribunal Regional Federal, indicado pelo Superior Tribunal de Justiça; (Incluído pela Emenda Constitucional nº 45, de 2004)
+VI um juiz de Tribunal Regional Federal, indicado pelo Superior Tribunal de Justiça; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-VII - um juiz federal, indicado pelo Superior Tribunal de Justiça; (Incluído pela Emenda Constitucional nº 45, de 2004)
+VII um juiz federal, indicado pelo Superior Tribunal de Justiça; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-VIII - um juiz de Tribunal Regional do Trabalho, indicado pelo Tribunal Superior do Trabalho; (Incluído pela Emenda Constitucional nº 45, de 2004)
+VIII um juiz de Tribunal Regional do Trabalho, indicado pelo Tribunal Superior do Trabalho; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-IX - um juiz do trabalho, indicado pelo Tribunal Superior do Trabalho; (Incluído pela Emenda Constitucional nº 45, de 2004)
+IX um juiz do trabalho, indicado pelo Tribunal Superior do Trabalho; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-X - um membro do Ministério Público da União, indicado pelo Procurador-Geral da República; (Incluído pela Emenda Constitucional nº 45, de 2004)
+X um membro do Ministério Público da União, indicado pelo Procurador-Geral da República; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
 XI um membro do Ministério Público estadual, escolhido pelo Procurador-Geral da República dentre os nomes indicados pelo órgão competente de cada instituição estadual; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-XII - dois advogados, indicados pelo Conselho Federal da Ordem dos Advogados do Brasil; (Incluído pela Emenda Constitucional nº 45, de 2004)
+XII dois advogados, indicados pelo Conselho Federal da Ordem dos Advogados do Brasil; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-XIII - dois cidadãos, de notável saber jurídico e reputação ilibada, indicados um pela Câmara dos Deputados e outro pelo Senado Federal. (Incluído pela Emenda Constitucional nº 45, de 2004)
+XIII dois cidadãos, de notável saber jurídico e reputação ilibada, indicados um pela Câmara dos Deputados e outro pelo Senado Federal. (Incluído pela Emenda Constitucional nº 45, de 2004)
 
 **§ 1º** O Conselho será presidido pelo Presidente do Supremo Tribunal Federal e, nas suas ausências e impedimentos, pelo Vice-Presidente do Supremo Tribunal Federal. (Redação dada pela Emenda Constitucional nº 61, de 2009)
 
@@ -2564,13 +2556,13 @@ II - zelar pela observância do art. 37 e apreciar, de ofício ou mediante provo
 
 III - receber e conhecer das reclamações contra membros ou órgãos do Poder Judiciário, inclusive contra seus serviços auxiliares, serventias e órgãos prestadores de serviços notariais e de registro que atuem por delegação do poder público ou oficializados, sem prejuízo da competência disciplinar e correicional dos tribunais, podendo avocar processos disciplinares em curso, determinar a remoção ou a disponibilidade e aplicar outras sanções administrativas, assegurada ampla defesa; (Redação dada pela Emenda Constitucional nº 103, de 2019)
 
-IV - representar ao Ministério Público, no caso de crime contra a administração pública ou de abuso de autoridade; (Incluído pela Emenda Constitucional nº 45, de 2004)
+IV representar ao Ministério Público, no caso de crime contra a administração pública ou de abuso de autoridade; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-V - rever, de ofício ou mediante provocação, os processos disciplinares de juízes e membros de tribunais julgados há menos de um ano; (Incluído pela Emenda Constitucional nº 45, de 2004)
+V rever, de ofício ou mediante provocação, os processos disciplinares de juízes e membros de tribunais julgados há menos de um ano; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-VI - elaborar semestralmente relatório estatístico sobre processos e sentenças prolatadas, por unidade da Federação, nos diferentes órgãos do Poder Judiciário; (Incluído pela Emenda Constitucional nº 45, de 2004)
+VI elaborar semestralmente relatório estatístico sobre processos e sentenças prolatadas, por unidade da Federação, nos diferentes órgãos do Poder Judiciário; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-VII - elaborar relatório anual, propondo as providências que julgar necessárias, sobre a situação do Poder Judiciário no País e as atividades do Conselho, o qual deve integrar mensagem do Presidente do Supremo Tribunal Federal a ser remetida ao Congresso Nacional, por ocasião da abertura da sessão legislativa. (Incluído pela Emenda Constitucional nº 45, de 2004)
+VII elaborar relatório anual, propondo as providências que julgar necessárias, sobre a situação do Poder Judiciário no País e as atividades do Conselho, o qual deve integrar mensagem do Presidente do Supremo Tribunal Federal a ser remetida ao Congresso Nacional, por ocasião da abertura da sessão legislativa. (Incluído pela Emenda Constitucional nº 45, de 2004)
 
 **§ 5º** O Ministro do Superior Tribunal de Justiça exercerá a função de Ministro-Corregedor e ficará excluído da distribuição de processos no Tribunal, competindo-lhe, além das atribuições que lhe forem conferidas pelo Estatuto da Magistratura, as seguintes: (Incluído pela Emenda Constitucional nº 45, de 2004)
 
@@ -2708,7 +2700,7 @@ V-A as causas relativas a direitos humanos a que se refere o § 5º deste artigo
 
 VI - os crimes contra a organização do trabalho e, nos casos determinados por lei, contra o sistema financeiro e a ordem econômico-financeira;
 
-VII - os habeas corpus , em matéria criminal de sua competência ou quando o constrangimento provier de autoridade cujos atos não estejam diretamente sujeitos a outra jurisdição;
+VII - os habeas corpus, em matéria criminal de sua competência ou quando o constrangimento provier de autoridade cujos atos não estejam diretamente sujeitos a outra jurisdição;
 
 VIII - os mandados de segurança e os habeas data contra ato de autoridade federal, excetuados os casos de competência dos tribunais federais;
 
@@ -2736,7 +2728,9 @@ XI - a disputa sobre direitos indígenas.
 
 (Redação dada pela Emenda Constitucional nº 92, de 2016)
 
-Do Tribunal Superior do Trabalho, dos Tribunais Regionais do Trabalho e dos Juízes do Trabalho
+Do Tribunal Superior do Trabalho, dos Tribunais Regionais
+
+do Trabalho e dos Juízes do Trabalho
 
 **Art. 111.** São órgãos da Justiça do Trabalho:
 
@@ -2746,11 +2740,7 @@ II - os Tribunais Regionais do Trabalho;
 
 III - Juizes do Trabalho. (Redação dada pela Emenda Constitucional nº 24, de 1999)
 
-**§ 1º.** (Revogado pela Emenda Constitucional nº 45, de 2004)
-
-**§ 2º.** (Revogado pela Emenda Constitucional nº 45, de 2004)
-
-**§ 3º** (Revogado pela Emenda Constitucional nº 45, de 2004)
+§§ 1º a 3º. (Revogados pela Emenda Constitucional nº 45, de 2004)
 
 **Art. 111-A.** O Tribunal Superior do Trabalho compõe-se de vinte e sete Ministros, escolhidos dentre brasileiros com mais de trinta e cinco e menos de setenta anos de idade, de notável saber jurídico e reputação ilibada, nomeados pelo Presidente da República após aprovação pela maioria absoluta do Senado Federal, sendo: (Redação dada pela Emenda Constitucional nº 122, de 2022)
 
@@ -2798,8 +2788,6 @@ IX outras controvérsias decorrentes da relação de trabalho, na forma da lei. 
 
 **§ 3º** Em caso de greve em atividade essencial, com possibilidade de lesão do interesse público, o Ministério Público do Trabalho poderá ajuizar dissídio coletivo, competindo à Justiça do Trabalho decidir o conflito. (Redação dada pela Emenda Constitucional nº 45, de 2004) (Vide ADI nº 3423) (Vide ADI nº 3431) (Vide ADI nº 3520) (Vide ADIN 3392) (Vide ADIN 3432)
 
-III (Revogado pela Emenda Constitucional nº 24, de 1999)
-
 **Art. 115.** Os Tribunais Regionais do Trabalho compõem-se de, no mínimo, sete juízes, recrutados, quando possível, na respectiva região e nomeados pelo Presidente da República dentre brasileiros com mais de trinta e menos de setenta anos de idade, sendo: (Redação dada pela Emenda Constitucional nº 122, de 2022)
 
 I um quinto dentre advogados com mais de dez anos de efetiva atividade profissional e membros do Ministério Público do Trabalho com mais de dez anos de efetivo exercício, observado o disposto no art. 94; (Redação dada pela Emenda Constitucional nº 45, de 2004)
@@ -2814,9 +2802,7 @@ II os demais, mediante promoção de juízes do trabalho por antigüidade e mere
 
 **Parágrafo único.** (Revogado pela Emenda Constitucional nº 24, de 1999)
 
-**Art. 117.** (Revogado pela Emenda Constitucional nº 24, de 1999)
-
-**Parágrafo único.** (Revogado pela Emenda Constitucional nº 24, de 1999)
+**Art. 117.** e Parágrafo único. (Revogados pela Emenda Constitucional nº 24, de 1999)
 
 #### Seção VI — DOS TRIBUNAIS E JUÍZES ELEITORAIS
 
@@ -2860,13 +2846,13 @@ III - por nomeação, pelo Presidente da República, de dois juízes dentre seis
 
 **Art. 121.** Lei complementar disporá sobre a organização e competência dos tribunais, dos juízes de direito e das juntas eleitorais.
 
-**§ 1º** - Os membros dos tribunais, os juízes de direito e os integrantes das juntas eleitorais, no exercício de suas funções, e no que lhes for aplicável, gozarão de plenas garantias e serão inamovíveis.
+**§ 1º** Os membros dos tribunais, os juízes de direito e os integrantes das juntas eleitorais, no exercício de suas funções, e no que lhes for aplicável, gozarão de plenas garantias e serão inamovíveis.
 
-**§ 2º** - Os juízes dos tribunais eleitorais, salvo motivo justificado, servirão por dois anos, no mínimo, e nunca por mais de dois biênios consecutivos, sendo os substitutos escolhidos na mesma ocasião e pelo mesmo processo, em número igual para cada categoria.
+**§ 2º** Os juízes dos tribunais eleitorais, salvo motivo justificado, servirão por dois anos, no mínimo, e nunca por mais de dois biênios consecutivos, sendo os substitutos escolhidos na mesma ocasião e pelo mesmo processo, em número igual para cada categoria.
 
-**§ 3º** - São irrecorríveis as decisões do Tribunal Superior Eleitoral, salvo as que contrariarem esta Constituição e as denegatórias de habeas corpus ou mandado de segurança.
+**§ 3º** São irrecorríveis as decisões do Tribunal Superior Eleitoral, salvo as que contrariarem esta Constituição e as denegatórias de habeas corpus ou mandado de segurança.
 
-**§ 4º** - Das decisões dos Tribunais Regionais Eleitorais somente caberá recurso quando:
+**§ 4º** Das decisões dos Tribunais Regionais Eleitorais somente caberá recurso quando:
 
 I - forem proferidas contra disposição expressa desta Constituição ou de lei;
 
@@ -2876,7 +2862,7 @@ III - versarem sobre inelegibilidade ou expedição de diplomas nas eleições f
 
 IV - anularem diplomas ou decretarem a perda de mandatos eletivos federais ou estaduais;
 
-V - denegarem habeas corpus , mandado de segurança, habeas data ou mandado de injunção.
+V - denegarem habeas corpus, mandado de segurança, habeas data ou mandado de injunção.
 
 #### Seção VII — DOS TRIBUNAIS E JUÍZES MILITARES
 
@@ -2894,7 +2880,7 @@ I - três dentre advogados de notório saber jurídico e conduta ilibada, com ma
 
 II - dois, por escolha paritária, dentre juízes auditores e membros do Ministério Público da Justiça Militar.
 
-**Art. 124.** À Justiça Militar compete processar e julgar os crimes militares definidos em lei.
+**Art. 124.** à Justiça Militar compete processar e julgar os crimes militares definidos em lei.
 
 **Parágrafo único.** A lei disporá sobre a organização, o funcionamento e a competência da Justiça Militar.
 
@@ -2928,7 +2914,7 @@ II - dois, por escolha paritária, dentre juízes auditores e membros do Minist�
 
 **Art. 127.** O Ministério Público é instituição permanente, essencial à função jurisdicional do Estado, incumbindo-lhe a defesa da ordem jurídica, do regime democrático e dos interesses sociais e individuais indisponíveis.
 
-**§ 1º** - São princípios institucionais do Ministério Público a unidade, a indivisibilidade e a independência funcional.
+**§ 1º** São princípios institucionais do Ministério Público a unidade, a indivisibilidade e a independência funcional.
 
 **§ 2º** Ao Ministério Público é assegurada autonomia funcional e administrativa, podendo, observado o disposto no art. 169, propor ao Poder Legislativo a criação e extinção de seus cargos e serviços auxiliares, provendo-os por concurso público de provas ou de provas e títulos, a política remuneratória e os planos de carreira; a lei disporá sobre sua organização e funcionamento. (Redação dada pela Emenda Constitucional nº 19, de 1998)
 
@@ -3008,7 +2994,7 @@ VIII - requisitar diligências investigatórias e a instauração de inquérito 
 
 IX - exercer outras funções que lhe forem conferidas, desde que compatíveis com sua finalidade, sendo-lhe vedada a representação judicial e a consultoria jurídica de entidades públicas.
 
-**§ 1º** - A legitimação do Ministério Público para as ações civis previstas neste artigo não impede a de terceiros, nas mesmas hipóteses, segundo o disposto nesta Constituição e na lei.
+**§ 1º** A legitimação do Ministério Público para as ações civis previstas neste artigo não impede a de terceiros, nas mesmas hipóteses, segundo o disposto nesta Constituição e na lei.
 
 **§ 2º** As funções do Ministério Público só podem ser exercidas por integrantes da carreira, que deverão residir na comarca da respectiva lotação, salvo autorização do chefe da instituição. (Redação dada pela Emenda Constitucional nº 45, de 2004)
 
@@ -3066,11 +3052,11 @@ III requisitar e designar membros do Ministério Público, delegando-lhes atribu
 
 **Art. 131.** A Advocacia-Geral da União é a instituição que, diretamente ou através de órgão vinculado, representa a União, judicial e extrajudicialmente, cabendo-lhe, nos termos da lei complementar que dispuser sobre sua organização e funcionamento, as atividades de consultoria e assessoramento jurídico do Poder Executivo.
 
-**§ 1º** - A Advocacia-Geral da União tem por chefe o Advogado-Geral da União, de livre nomeação pelo Presidente da República dentre cidadãos maiores de trinta e cinco anos, de notável saber jurídico e reputação ilibada.
+**§ 1º** A Advocacia-Geral da União tem por chefe o Advogado-Geral da União, de livre nomeação pelo Presidente da República dentre cidadãos maiores de trinta e cinco anos, de notável saber jurídico e reputação ilibada.
 
-**§ 2º** - O ingresso nas classes iniciais das carreiras da instituição de que trata este artigo far-se-á mediante concurso público de provas e títulos.
+**§ 2º** O ingresso nas classes iniciais das carreiras da instituição de que trata este artigo far-se-á mediante concurso público de provas e títulos.
 
-**§ 3º** - Na execução da dívida ativa de natureza tributária, a representação da União cabe à Procuradoria-Geral da Fazenda Nacional, observado o disposto em lei.
+**§ 3º** Na execução da dívida ativa de natureza tributária, a representação da União cabe à Procuradoria-Geral da Fazenda Nacional, observado o disposto em lei.
 
 **Art. 132.** Os Procuradores dos Estados e do Distrito Federal, organizados em carreira, na qual o ingresso dependerá de concurso público de provas e títulos, com a participação da Ordem dos Advogados do Brasil em todas as suas fases, exercerão a representação judicial e a consultoria jurídica das respectivas unidades federadas. (Redação dada pela Emenda Constitucional nº 19, de 1998)
 
@@ -3086,11 +3072,11 @@ III requisitar e designar membros do Ministério Público, delegando-lhes atribu
 
 (Redação dada pela Emenda Constitucional nº 80, de 2014)
 
-**Art. 134.** A Defensoria Pública é instituição permanente, essencial à função jurisdicional do Estado, incumbindo-lhe, como expressão e instrumento do regime democrático, fundamentalmente, a orientação jurídica, a promoção dos direitos humanos e a defesa, em todos os graus, judicial e extrajudicial, dos direitos individuais e coletivos, de forma integral e gratuita, aos necessitados, na forma do inciso LXXIV do art. 5º desta Constituição Federal . (Redação dada pela Emenda Constitucional nº 80, de 2014)
+**Art. 134.** A Defensoria Pública é instituição permanente, essencial à função jurisdicional do Estado, incumbindo-lhe, como expressão e instrumento do regime democrático, fundamentalmente, a orientação jurídica, a promoção dos direitos humanos e a defesa, em todos os graus, judicial e extrajudicial, dos direitos individuais e coletivos, de forma integral e gratuita, aos necessitados, na forma do inciso LXXIV do art. 5º desta Constituição Federal. (Redação dada pela Emenda Constitucional nº 80, de 2014)
 
 **§ 1º** Lei complementar organizará a Defensoria Pública da União e do Distrito Federal e dos Territórios e prescreverá normas gerais para sua organização nos Estados, em cargos de carreira, providos, na classe inicial, mediante concurso público de provas e títulos, assegurada a seus integrantes a garantia da inamovibilidade e vedado o exercício da advocacia fora das atribuições institucionais. (Renumerado do parágrafo único pela Emenda Constitucional nº 45, de 2004)
 
-**§ 2º** Às Defensorias Públicas Estaduais são asseguradas autonomia funcional e administrativa e a iniciativa de sua proposta orçamentária dentro dos limites estabelecidos na lei de diretrizes orçamentárias e subordinação ao disposto no art. 99, § 2º . (Incluído pela Emenda Constitucional nº 45, de 2004)
+**§ 2º** Às Defensorias Públicas Estaduais são asseguradas autonomia funcional e administrativa e a iniciativa de sua proposta orçamentária dentro dos limites estabelecidos na lei de diretrizes orçamentárias e subordinação ao disposto no art. 99, § 2º. (Incluído pela Emenda Constitucional nº 45, de 2004)
 
 **§ 3º** Aplica-se o disposto no § 2º às Defensorias Públicas da União e do Distrito Federal. (Incluído pela Emenda Constitucional nº 74, de 2013)
 
@@ -3150,11 +3136,11 @@ II - declaração de estado de guerra ou resposta a agressão armada estrangeira
 
 **Art. 138.** O decreto do estado de sítio indicará sua duração, as normas necessárias a sua execução e as garantias constitucionais que ficarão suspensas, e, depois de publicado, o Presidente da República designará o executor das medidas específicas e as áreas abrangidas.
 
-**§ 1º** O estado de sítio, no caso do art. 137, I, não poderá ser decretado por mais de trinta dias, nem prorrogado, de cada vez, por prazo superior; no do inciso II, poderá ser decretado por todo o tempo que perdurar a guerra ou a agressão armada estrangeira.
+**§ 1º** - O estado de sítio, no caso do art. 137, I, não poderá ser decretado por mais de trinta dias, nem prorrogado, de cada vez, por prazo superior; no do inciso II, poderá ser decretado por todo o tempo que perdurar a guerra ou a agressão armada estrangeira.
 
-**§ 2º** Solicitada autorização para decretar o estado de sítio durante o recesso parlamentar, o Presidente do Senado Federal, de imediato, convocará extraordinariamente o Congresso Nacional para se reunir dentro de cinco dias, a fim de apreciar o ato.
+**§ 2º** - Solicitada autorização para decretar o estado de sítio durante o recesso parlamentar, o Presidente do Senado Federal, de imediato, convocará extraordinariamente o Congresso Nacional para se reunir dentro de cinco dias, a fim de apreciar o ato.
 
-**§ 3º** O Congresso Nacional permanecerá em funcionamento até o término das medidas coercitivas.
+**§ 3º** - O Congresso Nacional permanecerá em funcionamento até o término das medidas coercitivas.
 
 **Art. 139.** Na vigência do estado de sítio decretado com fundamento no art. 137, I, só poderão ser tomadas contra as pessoas as seguintes medidas:
 
@@ -3216,7 +3202,7 @@ X - a lei disporá sobre o ingresso nas Forças Armadas, os limites de idade, a 
 
 **§ 1º** Às Forças Armadas compete, na forma da lei, atribuir serviço alternativo aos que, em tempo de paz, após alistados, alegarem imperativo de consciência, entendendo-se como tal o decorrente de crença religiosa e de convicção filosófica ou política, para se eximirem de atividades de caráter essencialmente militar. (Regulamento)
 
-**§ 2º** - As mulheres e os eclesiásticos ficam isentos do serviço militar obrigatório em tempo de paz, sujeitos, porém, a outros encargos que a lei lhes atribuir. (Regulamento)
+**§ 2º** As mulheres e os eclesiásticos ficam isentos do serviço militar obrigatório em tempo de paz, sujeitos, porém, a outros encargos que a lei lhes atribuir. (Regulamento)
 
 ### CAPÍTULO III — DA SEGURANÇA PÚBLICA
 
@@ -3245,8 +3231,6 @@ III - exercer as funções de polícia marítima, aeroportuária e de fronteiras
 IV - exercer, com exclusividade, as funções de polícia judiciária da União.
 
 **§ 2º** A polícia rodoviária federal, órgão permanente, organizado e mantido pela União e estruturado em carreira, destina-se, na forma da lei, ao patrulhamento ostensivo das rodovias federais. (Redação dada pela Emenda Constitucional nº 19, de 1998)
-
-.
 
 **§ 3º** A polícia ferroviária federal, órgão permanente, organizado e mantido pela União e estruturado em carreira, destina-se, na forma da lei, ao patrulhamento ostensivo das ferrovias federais. (Redação dada pela Emenda Constitucional nº 19, de 1998)
 
@@ -3340,7 +3324,7 @@ II - no caso de investimento público de caráter urgente e de relevante interes
 
 **Art. 149.** Compete exclusivamente à União instituir contribuições sociais, de intervenção no domínio econômico e de interesse das categorias profissionais ou econômicas, como instrumento de sua atuação nas respectivas áreas, observado o disposto nos arts. 146, III, e 150, I e III, e sem prejuízo do previsto no art. 195, § 6º, relativamente às contribuições a que alude o dispositivo.
 
-**§ 1º** A União, os Estados, o Distrito Federal e os Municípios instituirão, por meio de lei, contribuições para custeio de regime próprio de previdência social, cobradas dos servidores ativos, dos aposentados e dos pensionistas, que poderão ter alíquotas progressivas de acordo com o valor da base de contribuição ou dos proventos de aposentadoria e de pensões. (Redação dada pela Emenda Constitucional nº 103, de 2019) (Vigência)
+**§ 1º** A União, os Estados, o Distrito Federal e os Municípios instituirão, por meio de lei, contribuições para custeio de regime próprio de previdência social, cobradas dos servidores ativos, dos aposentados e dos pensionistas, que poderão ter alíquotas progressivas de acordo com o valor da base de contribuição ou dos proventos de aposentadoria e de pensões. (Redação dada pela Emenda Constitucional nº 103, de 2019) (Vigência
 
 **§ 1º-A.** Quando houver deficit atuarial, a contribuição ordinária dos aposentados e pensionistas poderá incidir sobre o valor dos proventos de aposentadoria e de pensões que supere o salário-mínimo. (Incluído pela Emenda Constitucional nº 103, de 2019) (Vigência)
 
@@ -3356,7 +3340,7 @@ II - incidirão também sobre a importação de produtos estrangeiros ou serviç
 
 III - poderão ter alíquotas: (Incluído pela Emenda Constitucional nº 33, de 2001)
 
-a) ad valorem , tendo por base o faturamento, a receita bruta ou o valor da operação e, no caso de importação, o valor aduaneiro; (Incluído pela Emenda Constitucional nº 33, de 2001)
+a) ad valorem, tendo por base o faturamento, a receita bruta ou o valor da operação e, no caso de importação, o valor aduaneiro; (Incluído pela Emenda Constitucional nº 33, de 2001)
 
 b) específica, tendo por base a unidade de medida adotada. (Incluído pela Emenda Constitucional nº 33, de 2001)
 
@@ -3424,11 +3408,11 @@ e) fonogramas e videofonogramas musicais produzidos no Brasil contendo obras mus
 
 **§ 2º** A vedação do inciso VI, "a", é extensiva às autarquias e às fundações instituídas e mantidas pelo poder público e à empresa pública prestadora de serviço postal, no que se refere ao patrimônio, à renda e aos serviços vinculados a suas finalidades essenciais ou às delas decorrentes. (Redação dada pela Emenda Constitucional nº 132, de 2023)
 
-**§ 3º** - As vedações do inciso VI, "a", e do parágrafo anterior não se aplicam ao patrimônio, à renda e aos serviços, relacionados com exploração de atividades econômicas regidas pelas normas aplicáveis a empreendimentos privados, ou em que haja contraprestação ou pagamento de preços ou tarifas pelo usuário, nem exonera o promitente comprador da obrigação de pagar imposto relativamente ao bem imóvel.
+**§ 3º** As vedações do inciso VI, "a", e do parágrafo anterior não se aplicam ao patrimônio, à renda e aos serviços, relacionados com exploração de atividades econômicas regidas pelas normas aplicáveis a empreendimentos privados, ou em que haja contraprestação ou pagamento de preços ou tarifas pelo usuário, nem exonera o promitente comprador da obrigação de pagar imposto relativamente ao bem imóvel.
 
-**§ 4º** - As vedações expressas no inciso VI, alíneas "b" e "c", compreendem somente o patrimônio, a renda e os serviços, relacionados com as finalidades essenciais das entidades nelas mencionadas.
+**§ 4º** As vedações expressas no inciso VI, alíneas "b" e "c", compreendem somente o patrimônio, a renda e os serviços, relacionados com as finalidades essenciais das entidades nelas mencionadas.
 
-**§ 5º** - A lei determinará medidas para que os consumidores sejam esclarecidos acerca dos impostos que incidam sobre mercadorias e serviços.
+**§ 5º** A lei determinará medidas para que os consumidores sejam esclarecidos acerca dos impostos que incidam sobre mercadorias e serviços.
 
 **§ 6º** Qualquer subsídio ou isenção, redução de base de cálculo, concessão de crédito presumido, anistia ou remissão, relativos a impostos, taxas ou contribuições, só poderá ser concedido mediante lei específica, federal, estadual ou municipal, que regule exclusivamente as matérias acima enumeradas ou o correspondente tributo ou contribuição, sem prejuízo do disposto no art. 155, § 2.º, XII, g. (Redação dada pela Emenda Constitucional nº 3, de 1993)
 
@@ -3482,7 +3466,7 @@ III - não incidirá sobre produtos industrializados destinados ao exterior.
 
 IV - terá reduzido seu impacto sobre a aquisição de bens de capital pelo contribuinte do imposto, na forma da lei. (Incluído pela Emenda Constitucional nº 42, de 19.12.2003)
 
-**§ 4º** O imposto previsto no inciso VI do capu t: (Redação dada pela Emenda Constitucional nº 42, de 19.12.2003)
+**§ 4º** O imposto previsto no inciso VI do caput: (Redação dada pela Emenda Constitucional nº 42, de 19.12.2003)
 
 I - será progressivo e terá suas alíquotas fixadas de forma a desestimular a manutenção de propriedades improdutivas; (Incluído pela Emenda Constitucional nº 42, de 19.12.2003)
 
@@ -3520,16 +3504,6 @@ II - na iminência ou no caso de guerra externa, impostos extraordinários, comp
 
 #### Seção IV — DOS IMPOSTOS DOS ESTADOS E DO DISTRITO FEDERAL
 
-I -
-
-a)
-
-b)
-
-c)
-
-II -
-
 **Art. 155.** Compete aos Estados e ao Distrito Federal instituir impostos sobre: (Redação dada pela Emenda Constitucional nº 3, de 1993)
 
 I - transmissão causa mortis e doação, de quaisquer bens ou direitos; (Redação dada pela Emenda Constitucional nº 3, de 1993)
@@ -3552,13 +3526,11 @@ b) se o de cujus possuía bens, era residente ou domiciliado ou teve o seu inven
 
 IV - terá suas alíquotas máximas fixadas pelo Senado Federal;
 
-V - não incidirá sobre as doações destinadas, no âmbito do Poder Executivo da União, a projetos socioambientais ou destinados a mitigar os efeitos das mudanças climáticas e às instituições federais de ensino. (Incluído pela Emenda Constituicional nº 126, de 2022)
+V - não incidirá sobre as doações destinadas, no âmbito do Poder Executivo da União, a projetos socioambientais ou destinados a mitigar os efeitos das mudanças climáticas e às instituições federais de ensino. (Incluído pela Emenda Constitucional nº 126, de 2022)
 
 VI - será progressivo em razão do valor do quinhão, do legado ou da doação; (Incluído pela Emenda Constitucional nº 132, de 2023)
 
 VII - não incidirá sobre as transmissões e as doações para as instituições sem fins lucrativos com finalidade de relevância pública e social, inclusive as organizações assistenciais e beneficentes de entidades religiosas e institutos científicos e tecnológicos, e por elas realizadas na consecução dos seus objetivos sociais, observadas as condições estabelecidas em lei complementar. (Incluído pela Emenda Constitucional nº 132, de 2023)
-
-**§ 2º**
 
 **§ 2º** O imposto previsto no inciso II atenderá ao seguinte: (Redação dada pela Emenda Constitucional nº 3, de 1993) (Vide Emenda Constitucional nº 132, de 2023) Vigência
 
@@ -3596,7 +3568,7 @@ b) ao remetente, quando o destinatário não for contribuinte do imposto; (Inclu
 
 IX - incidirá também:
 
-a) sobre a entrada de bem ou mercadoria importados do exterior por pessoa física ou jurídica, ainda que não seja contribuinte habitual do imposto, qualquer que seja a sua finalidade, assim como sobre o serviço prestado no exterior, cabendo o imposto ao Estado onde estiver situado o domicílio ou o estabelecimento do destinatário da mercadoria, bem ou serviço; (Redação dada pela Emenda Constitucional nº 33, de 2001)
+a)sobre a entrada de bem ou mercadoria importados do exterior por pessoa física ou jurídica, ainda que não seja contribuinte habitual do imposto, qualquer que seja a sua finalidade, assim como sobre o serviço prestado no exterior, cabendo o imposto ao Estado onde estiver situado o domicílio ou o estabelecimento do destinatário da mercadoria, bem ou serviço; (Redação dada pela Emenda Constitucional nº 33, de 2001)
 
 b) sobre o valor total da operação, quando mercadorias forem fornecidas com serviços não compreendidos na competência tributária dos Municípios;
 
@@ -3622,21 +3594,19 @@ c) disciplinar o regime de compensação do imposto;
 
 d) fixar, para efeito de sua cobrança e definição do estabelecimento responsável, o local das operações relativas à circulação de mercadorias e das prestações de serviços;
 
-e) excluir da incidência do imposto, nas exportações para o exterior, serviços e outros produtos além dos mencionados no inciso X, "a"
+e) excluir da incidência do imposto, nas exportações para o exterior, serviços e outros produtos além dos mencionados no inciso X, "a";
 
 f) prever casos de manutenção de crédito, relativamente à remessa para outro Estado e exportação para o exterior, de serviços e de mercadorias;
 
 g) regular a forma como, mediante deliberação dos Estados e do Distrito Federal, isenções, incentivos e benefícios fiscais serão concedidos e revogados.
 
-h) definir os combustíveis e lubrificantes sobre os quais o imposto incidirá uma única vez, qualquer que seja a sua finalidade, hipótese em que não se aplicará o disposto no inciso X, b ; (Incluída pela Emenda Constitucional nº 33, de 2001) (Vide Emenda Constitucional nº 33, de 2001)
+h) definir os combustíveis e lubrificantes sobre os quais o imposto incidirá uma única vez, qualquer que seja a sua finalidade, hipótese em que não se aplicará o disposto no inciso X, b; (Incluída pela Emenda Constitucional nº 33, de 2001) (Vide Emenda Constitucional nº 33, de 2001)
 
 i) fixar a base de cálculo, de modo que o montante do imposto a integre, também na importação do exterior de bem, mercadoria ou serviço. (Incluída pela Emenda Constitucional nº 33, de 2001)
 
-**§ 3º** (Vide Emenda Constitucional nº 132, de 2023) Vigência
-
 **§ 3º** À exceção dos impostos de que tratam o inciso II do caput deste artigo e os arts. 153, I e II, e 156-A, nenhum outro imposto poderá incidir sobre operações relativas a energia elétrica e serviços de telecomunicações e, à exceção destes e do previsto no art. 153, VIII, nenhum outro imposto poderá incidir sobre operações relativas a derivados de petróleo, combustíveis e minerais do País. (Redação dada pela Emenda Constitucional nº 132, de 2023)
 
-**§ 4º** Na hipótese do inciso XII, h , observar-se-á o seguinte: (Incluído pela Emenda Constitucional nº 33, de 2001) (Vide Emenda Constitucional nº 132, de 2023) Vigência
+**§ 4º** Na hipótese do inciso XII, h, observar-se-á o seguinte: (Incluído pela Emenda Constitucional nº 33, de 2001) (Vide Emenda Constitucional nº 132, de 2023) Vigência
 
 I - nas operações com os lubrificantes e combustíveis derivados de petróleo, o imposto caberá ao Estado onde ocorrer o consumo; (Incluído pela Emenda Constitucional nº 33, de 2001)
 
@@ -3644,15 +3614,15 @@ II - nas operações interestaduais, entre contribuintes, com gás natural e seu
 
 III - nas operações interestaduais com gás natural e seus derivados, e lubrificantes e combustíveis não incluídos no inciso I deste parágrafo, destinadas a não contribuinte, o imposto caberá ao Estado de origem; (Incluído pela Emenda Constitucional nº 33, de 2001)
 
-IV - as alíquotas do imposto serão definidas mediante deliberação dos Estados e Distrito Federal, nos termos do § 2º, XII, g , observando-se o seguinte: (Incluído pela Emenda Constitucional nº 33, de 2001)
+IV - as alíquotas do imposto serão definidas mediante deliberação dos Estados e Distrito Federal, nos termos do § 2º, XII, g, observando-se o seguinte: (Incluído pela Emenda Constitucional nº 33, de 2001)
 
 a) serão uniformes em todo o território nacional, podendo ser diferenciadas por produto; (Incluído pela Emenda Constitucional nº 33, de 2001)
 
-b) poderão ser específicas, por unidade de medida adotada, ou ad valorem , incidindo sobre o valor da operação ou sobre o preço que o produto ou seu similar alcançaria em uma venda em condições de livre concorrência; (Incluído pela Emenda Constitucional nº 33, de 2001)
+b) poderão ser específicas, por unidade de medida adotada, ou ad valorem, incidindo sobre o valor da operação ou sobre o preço que o produto ou seu similar alcançaria em uma venda em condições de livre concorrência; (Incluído pela Emenda Constitucional nº 33, de 2001)
 
-c) poderão ser reduzidas e restabelecidas, não se lhes aplicando o disposto no art. 150, III, b . (Incluído pela Emenda Constitucional nº 33, de 2001)
+c) poderão ser reduzidas e restabelecidas, não se lhes aplicando o disposto no art. 150, III, b. (Incluído pela Emenda Constitucional nº 33, de 2001)
 
-**§ 5º** As regras necessárias à aplicação do disposto no § 4º, inclusive as relativas à apuração e à destinação do imposto, serão estabelecidas mediante deliberação dos Estados e do Distrito Federal, nos termos do § 2º, XII, g . (Incluído pela Emenda Constitucional nº 33, de 2001) (Vide Emenda Constitucional nº 132, de 2023) Vigência
+**§ 5º** As regras necessárias à aplicação do disposto no § 4º, inclusive as relativas à apuração e à destinação do imposto, serão estabelecidas mediante deliberação dos Estados e do Distrito Federal, nos termos do § 2º, XII, g. (Incluído pela Emenda Constitucional nº 33, de 2001) (Vide Emenda Constitucional nº 132, de 2023) Vigência
 
 **§ 6º** O imposto previsto no inciso III: (Incluído pela Emenda Constitucional nº 42, de 19.12.2003)
 
@@ -3686,9 +3656,9 @@ IV - (Revogado pela Emenda Constitucional nº 3, de 1993)
 
 **§ 1º** Sem prejuízo da progressividade no tempo a que se refere o art. 182, § 4º, inciso II, o imposto previsto no inciso I poderá: (Redação dada pela Emenda Constitucional nº 29, de 2000)
 
-I - ser progressivo em razão do valor do imóvel; e (Incluído pela Emenda Constitucional nº 29, de 2000)
+I – ser progressivo em razão do valor do imóvel; e (Incluído pela Emenda Constitucional nº 29, de 2000)
 
-II - ter alíquotas diferentes de acordo com a localização e o uso do imóvel. (Incluído pela Emenda Constitucional nº 29, de 2000)
+II – ter alíquotas diferentes de acordo com a localização e o uso do imóvel. (Incluído pela Emenda Constitucional nº 29, de 2000)
 
 III - ter sua base de cálculo atualizada pelo Poder Executivo, conforme critérios estabelecidos em lei municipal. (Incluído pela Emenda Constitucional nº 132, de 2023)
 
@@ -3706,13 +3676,9 @@ I - fixar as suas alíquotas máximas e mínimas; (Redação dada pela Emenda Co
 
 II - excluir da sua incidência exportações de serviços para o exterior. (Incluído pela Emenda Constitucional nº 3, de 1993)
 
-III - regular a forma e as condições como isenções, incentivos e benefícios fiscais serão concedidos e revogados. (Incluído pela Emenda Constitucional nº 3, de 1993)
+III – regular a forma e as condições como isenções, incentivos e benefícios fiscais serão concedidos e revogados. (Incluído pela Emenda Constitucional nº 3, de 1993)
 
 **§ 4º** (Revogado pela Emenda Constitucional nº 3, de 1993)
-
-I - (Revogado pela Emenda Constitucional nº 3, de 1993)
-
-II - (Revogado pela Emenda Constitucional nº 3, de 1993)
 
 #### Seção V-A
 
@@ -3912,7 +3878,7 @@ II - vinte por cento do produto da arrecadação do imposto que a União institu
 
 I - o produto da arrecadação do imposto da União sobre renda e proventos de qualquer natureza, incidente na fonte, sobre rendimentos pagos, a qualquer título, por eles, suas autarquias e pelas fundações que instituírem e mantiverem;
 
-II - cinqüenta por cento do produto da arrecadação do imposto da União sobre a propriedade territorial rural, relativamente aos imóveis neles situados, cabendo a totalidade na hipótese da opção a que se refere o art. 153, § 4º, III; (Redação dada pela Emenda Constitucional nº 42, de 19.12.2003) (Regulamento)
+II - cinqüenta por cento do produto da arrecadação do imposto da União sobre a propriedade territorial rural, relativamente aos imóveis neles situados, cabendo a totalidade na hipótese da opção a que se refere o art. 153, § 4º, III; (Redação dada pela Emenda Constitucional nº 42, de 19.12.2003)
 
 III - 50% (cinquenta por cento) do produto da arrecadação do imposto do Estado sobre a propriedade de veículos automotores licenciados em seus territórios e, em relação a veículos aquáticos e aéreos, cujos proprietários sejam domiciliados em seus territórios; (Redação dada pela Emenda Constitucional nº 132, de 2023)
 
@@ -3922,7 +3888,7 @@ a) do produto da arrecadação do imposto do Estado sobre operações relativas 
 
 b) do produto da arrecadação do imposto previsto no art. 156-A distribuída aos Estados. (Incluído pela Emenda Constitucional nº 132, de 2023)
 
-**§ 1º** As parcelas de receita pertencentes aos Municípios mencionadas no inciso IV, "a", serão creditadas conforme os seguintes critérios: (Incluído pela Emenda Constitucional nº 132, de 2023) (Vide Emenda Constitucional nº 132, de 2023) Vigência
+**§ 1º** As parcelas de receita pertencentes aos Municípios mencionadas no inciso IV, "a", serão creditadas conforme os seguintes critérios: (Incluído pela Emenda Constitucional nº 132, de 2023)
 
 I - 65% (sessenta e cinco por cento), no mínimo, na proporção do valor adicionado nas operações relativas à circulação de mercadorias e nas prestações de serviços, realizadas em seus territórios; (Redação dada pela Emenda Constitucional nº 108, de 2020)
 
@@ -3992,9 +3958,9 @@ II - coeficiente individual de participação do Estado ou do Distrito Federal n
 
 **§ 1º** A vedação prevista neste artigo não impede a União e os Estados de condicionarem a entrega de recursos: (Renumerado do Parágrafo único pela Emenda Constitucional nº 113, de 2021)
 
-I - ao pagamento de seus créditos, inclusive de suas autarquias; (Incluído pela Emenda Constitucional nº 29, de 2000)
+I – ao pagamento de seus créditos, inclusive de suas autarquias; (Incluído pela Emenda Constitucional nº 29, de 2000)
 
-II - ao cumprimento do disposto no art. 198, § 2º, incisos II e III. (Incluído pela Emenda Constitucional nº 29, de 2000)
+II – ao cumprimento do disposto no art. 198, § 2º, incisos II e III. (Incluído pela Emenda Constitucional nº 29, de 2000)
 
 **§ 2º** Os contratos, os acordos, os ajustes, os convênios, os parcelamentos ou as renegociações de débitos de qualquer espécie, inclusive tributários, firmados pela União com os entes federativos conterão cláusulas para autorizar a dedução dos valores devidos dos montantes a serem repassados relacionados às respectivas cotas nos Fundos de Participação ou aos precatórios federais. (Incluído pela Emenda Constitucional nº 113, de 2021)
 
@@ -4100,7 +4066,7 @@ I - dispor sobre o exercício financeiro, a vigência, os prazos, a elaboração
 
 II - estabelecer normas de gestão financeira e patrimonial da administração direta e indireta bem como condições para a instituição e funcionamento de fundos.
 
-III - dispor sobre critérios para a execução equitativa, além de procedimentos que serão adotados quando houver impedimentos legais e técnicos, cumprimento de restos a pagar e limitação das programações de caráter obrigatório, para a realização do disposto nos §§ 11 e 12 do art. 166 . (Redação dada pela Emenda Constitucional nº 100, de 2019) (Produção de efeito ) (Vide ADI 7697)
+III - dispor sobre critérios para a execução equitativa, além de procedimentos que serão adotados quando houver impedimentos legais e técnicos, cumprimento de restos a pagar e limitação das programações de caráter obrigatório, para a realização do disposto nos §§ 11 e 12 do art. 166. (Redação dada pela Emenda Constitucional nº 100, de 2019) (Produção de efeito) (Vide ADI 7697)
 
 **§ 10.** A administração tem o dever de executar as programações orçamentárias, adotando os meios e as medidas necessários, com o propósito de garantir a efetiva entrega de bens e serviços à sociedade. (Incluído pela Emenda Constitucional nº 100, de 2019) (Produção de efeito) (Vide ADI 7697)
 
@@ -4422,35 +4388,15 @@ VII - redução das desigualdades regionais e sociais;
 
 VIII - busca do pleno emprego;
 
-IX -
-
 IX - tratamento favorecido para as empresas de pequeno porte constituídas sob as leis brasileiras e que tenham sua sede e administração no País. (Redação dada pela Emenda Constitucional nº 6, de 1995)
 
 **Parágrafo único.** É assegurado a todos o livre exercício de qualquer atividade econômica, independentemente de autorização de órgãos públicos, salvo nos casos previstos em lei. (Vide Lei nº 13.874, de 2019)
 
 **Art. 171.** (Revogado pela Emenda Constitucional nº 6, de 1995)
 
-I - (Revogado pela Emenda Constitucional nº 6, de 1995)
-
-II - (Revogado pela Emenda Constitucional nº 6, de 1995)
-
-**§ 1º** (Revogado pela Emenda Constitucional nº 6, de 1995)
-
-I - (Revogado pela Emenda Constitucional nº 6, de 1995)
-
-II - (Revogado pela Emenda Constitucional nº 6, de 1995)
-
-a) (Revogado pela Emenda Constitucional nº 6, de 1995)
-
-b) (Revogado pela Emenda Constitucional nº 6, de 1995)
-
-**§ 2º** - . (Revogado pela Emenda Constitucional nº 6, de 1995)
-
 **Art. 172.** A lei disciplinará, com base no interesse nacional, os investimentos de capital estrangeiro, incentivará os reinvestimentos e regulará a remessa de lucros.
 
 **Art. 173.** Ressalvados os casos previstos nesta Constituição, a exploração direta de atividade econômica pelo Estado só será permitida quando necessária aos imperativos da segurança nacional ou a relevante interesse coletivo, conforme definidos em lei.
-
-.
 
 **§ 1º** A lei estabelecerá o estatuto jurídico da empresa pública, da sociedade de economia mista e de suas subsidiárias que explorem atividade econômica de produção ou comercialização de bens ou de prestação de serviços, dispondo sobre: (Redação dada pela Emenda Constitucional nº 19, de 1998)
 
@@ -4468,7 +4414,7 @@ V - os mandatos, a avaliação de desempenho e a responsabilidade dos administra
 
 **§ 3º** A lei regulamentará as relações da empresa pública com o Estado e a sociedade.
 
-**§ 4º** A lei reprimirá o abuso do poder econômico que vise à dominação dos mercados, à eliminação da concorrência e ao aumento arbitrário dos lucros.
+**§ 4º** - lei reprimirá o abuso do poder econômico que vise à dominação dos mercados, à eliminação da concorrência e ao aumento arbitrário dos lucros.
 
 **§ 5º** A lei, sem prejuízo da responsabilidade individual dos dirigentes da pessoa jurídica, estabelecerá a responsabilidade desta, sujeitando-a às punições compatíveis com sua natureza, nos atos praticados contra a ordem econômica e financeira e contra a economia popular.
 
@@ -4498,7 +4444,7 @@ IV - a obrigação de manter serviço adequado.
 
 **§ 1º** A pesquisa e a lavra de recursos minerais e o aproveitamento dos potenciais a que se refere o "caput" deste artigo somente poderão ser efetuados mediante autorização ou concessão da União, no interesse nacional, por brasileiros ou empresa constituída sob as leis brasileiras e que tenha sua sede e administração no País, na forma da lei, que estabelecerá as condições específicas quando essas atividades se desenvolverem em faixa de fronteira ou terras indígenas. (Redação dada pela Emenda Constitucional nº 6, de 1995)
 
-**§ 2º** É assegurada participação ao proprietário do solo nos resultados da lavra, na forma e no valor que dispuser a lei.
+**§ 2º** - É assegurada participação ao proprietário do solo nos resultados da lavra, na forma e no valor que dispuser a lei.
 
 **§ 3º** A autorização de pesquisa será sempre por prazo determinado, e as autorizações e concessões previstas neste artigo não poderão ser cedidas ou transferidas, total ou parcialmente, sem prévia anuência do poder concedente.
 
@@ -4534,7 +4480,7 @@ I - a alíquota da contribuição poderá ser: (Incluído pela Emenda Constituci
 
 a) diferenciada por produto ou uso; (Incluído pela Emenda Constitucional nº 33, de 2001)
 
-b)reduzida e restabelecida por ato do Poder Executivo, não se lhe aplicando o disposto no art. 150,III, b ; (Incluído pela Emenda Constitucional nº 33, de 2001)
+b)reduzida e restabelecida por ato do Poder Executivo, não se lhe aplicando o disposto no art. 150,III, b; (Incluído pela Emenda Constitucional nº 33, de 2001)
 
 II - os recursos arrecadados serão destinados: (Incluído pela Emenda Constitucional nº 33, de 2001)
 
@@ -4545,12 +4491,6 @@ b) ao financiamento de projetos ambientais relacionados com a indústria do petr
 c) ao financiamento de programas de infra-estrutura de transportes. (Incluído pela Emenda Constitucional nº 33, de 2001)
 
 d) ao pagamento de subsídios a tarifas de transporte público coletivo de passageiros. (Incluído pela Emenda Constitucional nº 132, de 2023)
-
-;
-
-.
-
-**§ 3º**
 
 **Art. 178.** A lei disporá sobre a ordenação dos transportes aéreo, aquático e terrestre, devendo, quanto à ordenação do transporte internacional, observar os acordos firmados pela União, atendido o princípio da reciprocidade. (Redação dada pela Emenda Constitucional nº 7, de 1995)
 
@@ -4674,7 +4614,7 @@ b) (Revogado) (Redação dada pela Emenda Constitucional nº 40, de 2003)
 
 IV - (Revogado) (Redação dada pela Emenda Constitucional nº 40, de 2003)
 
-V - (Revogado) (Redação dada pela Emenda Constitucional nº 40, de 2003)
+V -(Revogado) (Redação dada pela Emenda Constitucional nº 40, de 2003)
 
 VI - (Revogado) (Redação dada pela Emenda Constitucional nº 40, de 2003)
 
@@ -4682,11 +4622,11 @@ VII - (Revogado) (Redação dada pela Emenda Constitucional nº 40, de 2003)
 
 VIII - (Revogado) (Redação dada pela Emenda Constitucional nº 40, de 2003)
 
-**§ 1°** (Revogado) (Redação dada pela Emenda Constitucional nº 40, de 2003)
+§ 1°- (Revogado) (Redação dada pela Emenda Constitucional nº 40, de 2003)
 
-**§ 2°** (Revogado) (Redação dada pela Emenda Constitucional nº 40, de 2003)
+§ 2°- (Revogado) (Redação dada pela Emenda Constitucional nº 40, de 2003)
 
-**§ 3°** (Revogado) (Redação dada pela Emenda Constitucional nº 40, de 2003)
+§ 3°- (Revogado) (Redação dada pela Emenda Constitucional nº 40, de 2003)
 
 ## TÍTULO VIII — Da Ordem Social
 
@@ -4736,7 +4676,7 @@ IV - do importador de bens ou serviços do exterior, ou de quem a lei a ele equi
 
 V - sobre bens e serviços, nos termos de lei complementar. (Incluído pela Emenda Constitucional nº 132, de 2023) (Vide Lei Complementar nº 214, de 2026)
 
-**§ 1º** As receitas dos Estados, do Distrito Federal e dos Municípios destinadas à seguridade social constarão dos respectivos orçamentos, não integrando o orçamento da União.
+**§ 1º** - As receitas dos Estados, do Distrito Federal e dos Municípios destinadas à seguridade social constarão dos respectivos orçamentos, não integrando o orçamento da União.
 
 **§ 2º** A proposta de orçamento da seguridade social será elaborada de forma integrada pelos órgãos responsáveis pela saúde, previdência social e assistência social, tendo em vista as metas e prioridades estabelecidas na lei de diretrizes orçamentárias, assegurada a cada área a gestão de seus recursos.
 
@@ -4758,9 +4698,7 @@ V - sobre bens e serviços, nos termos de lei complementar. (Incluído pela Emen
 
 **§ 11.** São vedados a moratória e o parcelamento em prazo superior a 60 (sessenta) meses e, na forma de lei complementar, a remissão e a anistia das contribuições sociais de que tratam a alínea "a" do inciso I e o inciso II do caput. (Redação dada pela Emenda Constitucional nº 103, de 2019)
 
-**§ 12.** A lei definirá os setores de atividade econômica para os quais as contribuições incidentes na forma dos incisos I, b; e IV do capu t, serão não-cumulativas. (Incluído pela Emenda Constitucional nº 42, de 19.12.2003) (Vide Emenda Constitucional nº 132, de 2023) Vigência
-
-**§ 13.** (Revogado pela Emenda Constitucional nº 103, de 2019)
+**§ 12.** A lei definirá os setores de atividade econômica para os quais as contribuições incidentes na forma dos incisos I, b; e IV do caput, serão não-cumulativas. (Incluído pela Emenda Constitucional nº 42, de 19.12.2003) (Vide Emenda Constitucional nº 132, de 2023) Vigência
 
 **§ 13.** (Revogado). (Redação dada pela Emenda Constitucional nº 103, de 2019)
 
@@ -4790,7 +4728,9 @@ II - atendimento integral, com prioridade para as atividades preventivas, sem pr
 
 III - participação da comunidade.
 
-**§ 1º.** O sistema único de saúde será financiado, nos termos do art. 195, com recursos do orçamento da seguridade social, da União, dos Estados, do Distrito Federal e dos Municípios, além de outras fontes. (Parágrafo único renumerado para § 1º pela Emenda Constitucional nº 29, de 2000)
+IV - atuação obrigatória e permanente de agentes comunitários de saúde e de agentes de combate às endemias, cuja atividade é essencial ao sistema único de saúde e exclusiva de Estado. (Incluído pela Emenda Constitucional nº 140, de 2026)
+
+**§ 1º** O sistema único de saúde será financiado, nos termos do art. 195, com recursos do orçamento da seguridade social, da União, dos Estados, do Distrito Federal e dos Municípios, além de outras fontes. (Parágrafo único renumerado para § 1º pela Emenda Constitucional nº 29, de 2000)
 
 **§ 2º** A União, os Estados, o Distrito Federal e os Municípios aplicarão, anualmente, em ações e serviços públicos de saúde recursos mínimos derivados da aplicação de percentuais calculados sobre: (Incluído pela Emenda Constitucional nº 29, de 2000)
 
@@ -4804,13 +4744,17 @@ III - no caso dos Municípios e do Distrito Federal, o produto da arrecadação 
 
 I - os percentuais de que tratam os incisos II e III do § 2º; (Redação dada pela Emenda Constitucional nº 86, de 2015)
 
-II - os critérios de rateio dos recursos da União vinculados à saúde destinados aos Estados, ao Distrito Federal e aos Municípios, e dos Estados destinados a seus respectivos Municípios, objetivando a progressiva redução das disparidades regionais; (Incluído pela Emenda Constitucional nº 29, de 2000)
+II – os critérios de rateio dos recursos da União vinculados à saúde destinados aos Estados, ao Distrito Federal e aos Municípios, e dos Estados destinados a seus respectivos Municípios, objetivando a progressiva redução das disparidades regionais; (Incluído pela Emenda Constitucional nº 29, de 2000)
 
-III - as normas de fiscalização, avaliação e controle das despesas com saúde nas esferas federal, estadual, distrital e municipal; (Incluído pela Emenda Constitucional nº 29, de 2000)
+III – as normas de fiscalização, avaliação e controle das despesas com saúde nas esferas federal, estadual, distrital e municipal; (Incluído pela Emenda Constitucional nº 29, de 2000)
 
-IV - (revogado) . (Redação dada pela Emenda Constitucional nº 86, de 2015)
+IV - (revogado). (Redação dada pela Emenda Constitucional nº 86, de 2015)
 
 **§ 4º** Os gestores locais do sistema único de saúde poderão admitir agentes comunitários de saúde e agentes de combate às endemias por meio de processo seletivo público, de acordo com a natureza e complexidade de suas atribuições e requisitos específicos para sua atuação. (Incluído pela Emenda Constitucional nº 51, de 2006)
+
+**§ 4º-A.** É vedada a contratação temporária ou terceirizada de agentes comunitários de saúde e de agentes de combate às endemias, salvo a hipótese de emergência em saúde pública, na forma da lei. (Incluído pela Emenda Constitucional nº 140, de 2026)
+
+**§ 4º-B.** Os agentes de que trata o § 4º deste artigo submetem-se ao regime jurídico dos servidores nomeados para cargo de provimento efetivo. (Incluído pela Emenda Constitucional nº 140, de 2026)
 
 **§ 5º** Lei federal disporá sobre o regime jurídico, o piso salarial profissional nacional, as diretrizes para os Planos de Carreira e a regulamentação das atividades de agente comunitário de saúde e agente de combate às endemias, competindo à União, nos termos da lei, prestar assistência financeira complementar aos Estados, ao Distrito Federal e aos Municípios, para o cumprimento do referido piso salarial. (Redação dada pela Emenda Constitucional nº 63, de 2010) Regulamento
 
@@ -4822,7 +4766,7 @@ IV - (revogado) . (Redação dada pela Emenda Constitucional nº 86, de 2015)
 
 **§ 9º** O vencimento dos agentes comunitários de saúde e dos agentes de combate às endemias não será inferior a 2 (dois) salários mínimos, repassados pela União aos Municípios, aos Estados e ao Distrito Federal. (Incluído pela Emenda Constitucional nº 120, de 2022)
 
-**§ 10.** Os agentes comunitários de saúde e os agentes de combate às endemias terão também, em razão dos riscos inerentes às funções desempenhadas, aposentadoria especial e, somado aos seus vencimentos, adicional de insalubridade. (Incluído pela Emenda Constitucional nº 120, de 2022)
+**§ 10.** Os agentes comunitários de saúde e os agentes de combate às endemias terão, em razão dos riscos inerentes às funções desempenhadas, direito à aposentadoria mediante requisitos diferenciados, na forma do § 5º-A do art. 40 e do § 8º-A do art. 201 desta Constituição, e ao adicional de insalubridade. (Redação dada pela Emenda Constitucional nº 140, de 2026)
 
 **§ 11.** Os recursos financeiros repassados pela União aos Estados, ao Distrito Federal e aos Municípios para pagamento do vencimento ou de qualquer outra vantagem dos agentes comunitários de saúde e dos agentes de combate às endemias não serão objeto de inclusão no cálculo para fins do limite de despesa com pessoal. (Incluído pela Emenda Constitucional nº 120, de 2022)
 
@@ -4836,11 +4780,11 @@ IV - (revogado) . (Redação dada pela Emenda Constitucional nº 86, de 2015)
 
 **Art. 199.** A assistência à saúde é livre à iniciativa privada.
 
-**§ 1º** - As instituições privadas poderão participar de forma complementar do sistema único de saúde, segundo diretrizes deste, mediante contrato de direito público ou convênio, tendo preferência as entidades filantrópicas e as sem fins lucrativos.
+**§ 1º** As instituições privadas poderão participar de forma complementar do sistema único de saúde, segundo diretrizes deste, mediante contrato de direito público ou convênio, tendo preferência as entidades filantrópicas e as sem fins lucrativos.
 
 **§ 2º** É vedada a destinação de recursos públicos para auxílios ou subvenções às instituições privadas com fins lucrativos.
 
-**§ 3º** É vedada a participação direta ou indireta de empresas ou capitais estrangeiros na assistência à saúde no País, salvo nos casos previstos em lei.
+**§ 3º** - É vedada a participação direta ou indireta de empresas ou capitais estrangeiros na assistência à saúde no País, salvo nos casos previstos em lei.
 
 **§ 4º** A lei disporá sobre as condições e os requisitos que facilitem a remoção de órgãos, tecidos e substâncias humanas para fins de transplante, pesquisa e tratamento, bem como a coleta, processamento e transfusão de sangue e seus derivados, sendo vedado todo tipo de comercialização.
 
@@ -4863,8 +4807,6 @@ VII - participar do controle e fiscalização da produção, transporte, guarda 
 VIII - colaborar na proteção do meio ambiente, nele compreendido o do trabalho.
 
 #### Seção III — DA PREVIDÊNCIA SOCIAL
-
-;
 
 **Art. 201.** A previdência social será organizada sob a forma do Regime Geral de Previdência Social, de caráter contributivo e de filiação obrigatória, observados critérios que preservem o equilíbrio financeiro e atuarial, e atenderá, na forma da lei, a: (Redação dada pela Emenda Constitucional nº 103, de 2019)
 
@@ -4901,6 +4843,8 @@ I - 65 (sessenta e cinco) anos de idade, se homem, e 62 (sessenta e dois) anos d
 II - 60 (sessenta) anos de idade, se homem, e 55 (cinquenta e cinco) anos de idade, se mulher, para os trabalhadores rurais e para os que exerçam suas atividades em regime de economia familiar, nestes incluídos o produtor rural, o garimpeiro e o pescador artesanal. (Redação dada pela Emenda Constitucional nº 103, de 2019)
 
 **§ 8º** O requisito de idade a que se refere o inciso I do § 7º será reduzido em 5 (cinco) anos, para o professor que comprove tempo de efetivo exercício das funções de magistério na educação infantil e no ensino fundamental e médio fixado em lei complementar. (Redação dada pela Emenda Constitucional nº 103, de 2019)
+
+**§ 8º-A.** O requisito de idade a que se refere o inciso I do § 7º deste artigo será de 57 (cinquenta e sete) anos de idade, se mulher, e 60 (sessenta) anos de idade, se homem, para o agente comunitário de saúde e o agente de combate às endemias que comprovem o mínimo de 25 (vinte e cinco) anos de tempo de contribuição e de efetivo exercício na respectiva atividade profissional. (Incluído pela Emenda Constitucional nº 140, de 2026)
 
 **§ 9º** Para fins de aposentadoria, será assegurada a contagem recíproca do tempo de contribuição entre o Regime Geral de Previdência Social e os regimes próprios de previdência social, e destes entre si, observada a compensação financeira, de acordo com os critérios estabelecidos em lei. (Redação dada pela Emenda Constitucional nº 103, de 2019)
 
@@ -5140,7 +5084,7 @@ I - comprovem finalidade não-lucrativa e apliquem seus excedentes financeiros e
 
 II - assegurem a destinação de seu patrimônio a outra escola comunitária, filantrópica ou confessional, ou ao Poder Público, no caso de encerramento de suas atividades.
 
-**§ 1º** Os recursos de que trata este artigo poderão ser destinados a bolsas de estudo para o ensino fundamental e médio, na forma da lei, para os que demonstrarem insuficiência de recursos, quando houver falta de vagas e cursos regulares da rede pública na localidade da residência do educando, ficando o Poder Público obrigado a investir prioritariamente na expansão de sua rede na localidade.
+**§ 1º** - Os recursos de que trata este artigo poderão ser destinados a bolsas de estudo para o ensino fundamental e médio, na forma da lei, para os que demonstrarem insuficiência de recursos, quando houver falta de vagas e cursos regulares da rede pública na localidade da residência do educando, ficando o Poder Público obrigado a investir prioritariamente na expansão de sua rede na localidade.
 
 **§ 2º** As atividades de pesquisa, de extensão e de estímulo e fomento à inovação realizadas por universidades e/ou por instituições de educação profissional e tecnológica poderão receber apoio financeiro do Poder Público. (Redação dada pela Emenda Constitucional nº 85, de 2015)
 
@@ -5164,9 +5108,9 @@ VI - estabelecimento de meta de aplicação de recursos públicos em educação 
 
 **§ 1º** O Estado protegerá as manifestações das culturas populares, indígenas e afro-brasileiras, e das de outros grupos participantes do processo civilizatório nacional. Regulamento
 
-**§ 2º** A lei disporá sobre a fixação de datas comemorativas de alta significação para os diferentes segmentos étnicos nacionais.
+2º A lei disporá sobre a fixação de datas comemorativas de alta significação para os diferentes segmentos étnicos nacionais.
 
-**§ 3º** A lei estabelecerá o Plano Nacional de Cultura, de duração plurianual, visando ao desenvolvimento cultural do País e à integração das ações do poder público que conduzem à: (Incluído pela Emenda Constitucional nº 48, de 2005)
+3º A lei estabelecerá o Plano Nacional de Cultura, de duração plurianual, visando ao desenvolvimento cultural do País e à integração das ações do poder público que conduzem à: (Incluído pela Emenda Constitucional nº 48, de 2005)
 
 I defesa e valorização do patrimônio cultural brasileiro; (Incluído pela Emenda Constitucional nº 48, de 2005)
 
@@ -5200,7 +5144,7 @@ V - os conjuntos urbanos e sítios de valor histórico, paisagístico, artístic
 
 **§ 5º** Ficam tombados todos os documentos e os sítios detentores de reminiscências históricas dos antigos quilombos.
 
-**§ 6** º É facultado aos Estados e ao Distrito Federal vincular a fundo estadual de fomento à cultura até cinco décimos por cento de sua receita tributária líquida, para o financiamento de programas e projetos culturais, vedada a aplicação desses recursos no pagamento de: (Incluído pela Emenda Constitucional nº 42, de 19.12.2003)
+**§ 6º** É facultado aos Estados e ao Distrito Federal vincular a fundo estadual de fomento à cultura até cinco décimos por cento de sua receita tributária líquida, para o financiamento de programas e projetos culturais, vedada a aplicação desses recursos no pagamento de: (Incluído pela Emenda Constitucional nº 42, de 19.12.2003)
 
 I - despesas com pessoal e encargos sociais; (Incluído pela Emenda Constitucional nº 42, de 19.12.2003)
 
@@ -5210,55 +5154,55 @@ III - qualquer outra despesa corrente não vinculada diretamente aos investiment
 
 **Art. 216-A.** O Sistema Nacional de Cultura, organizado em regime de colaboração, de forma descentralizada e participativa, institui um processo de gestão e promoção conjunta de políticas públicas de cultura, democráticas e permanentes, pactuadas entre os entes da Federação e a sociedade, tendo por objetivo promover o desenvolvimento humano, social e econômico com pleno exercício dos direitos culturais. (Incluído pela Emenda Constitucional nº 71, de 2012)
 
-**§ 1º** O Sistema Nacional de Cultura fundamenta-se na política nacional de cultura e nas suas diretrizes, estabelecidas no Plano Nacional de Cultura, e rege-se pelos seguintes princípios: (Incluído pela Emenda Constitucional nº 71, de 2012)
+**§ 1º** O Sistema Nacional de Cultura fundamenta-se na política nacional de cultura e nas suas diretrizes, estabelecidas no Plano Nacional de Cultura, e rege-se pelos seguintes princípios: Incluído pela Emenda Constitucional nº 71, de 2012
 
-I - diversidade das expressões culturais; (Incluído pela Emenda Constitucional nº 71, de 2012)
+I - diversidade das expressões culturais; Incluído pela Emenda Constitucional nº 71, de 2012
 
-II - universalização do acesso aos bens e serviços culturais; (Incluído pela Emenda Constitucional nº 71, de 2012)
+II - universalização do acesso aos bens e serviços culturais; Incluído pela Emenda Constitucional nº 71, de 2012
 
-III - fomento à produção, difusão e circulação de conhecimento e bens culturais; (Incluído pela Emenda Constitucional nº 71, de 2012)
+III - fomento à produção, difusão e circulação de conhecimento e bens culturais; Incluído pela Emenda Constitucional nº 71, de 2012
 
-IV - cooperação entre os entes federados, os agentes públicos e privados atuantes na área cultural; (Incluído pela Emenda Constitucional nº 71, de 2012)
+IV - cooperação entre os entes federados, os agentes públicos e privados atuantes na área cultural; Incluído pela Emenda Constitucional nº 71, de 2012
 
-V - integração e interação na execução das políticas, programas, projetos e ações desenvolvidas; (Incluído pela Emenda Constitucional nº 71, de 2012)
+V - integração e interação na execução das políticas, programas, projetos e ações desenvolvidas; Incluído pela Emenda Constitucional nº 71, de 2012
 
-VI - complementaridade nos papéis dos agentes culturais; (Incluído pela Emenda Constitucional nº 71, de 2012)
+VI - complementaridade nos papéis dos agentes culturais; Incluído pela Emenda Constitucional nº 71, de 2012
 
-VII - transversalidade das políticas culturais; (Incluído pela Emenda Constitucional nº 71, de 2012)
+VII - transversalidade das políticas culturais; Incluído pela Emenda Constitucional nº 71, de 2012
 
-VIII - autonomia dos entes federados e das instituições da sociedade civil; (Incluído pela Emenda Constitucional nº 71, de 2012)
+VIII - autonomia dos entes federados e das instituições da sociedade civil; Incluído pela Emenda Constitucional nº 71, de 2012
 
-IX - transparência e compartilhamento das informações; (Incluído pela Emenda Constitucional nº 71, de 2012)
+IX - transparência e compartilhamento das informações; Incluído pela Emenda Constitucional nº 71, de 2012
 
-X - democratização dos processos decisórios com participação e controle social; (Incluído pela Emenda Constitucional nº 71, de 2012)
+X - democratização dos processos decisórios com participação e controle social; Incluído pela Emenda Constitucional nº 71, de 2012
 
-XI - descentralização articulada e pactuada da gestão, dos recursos e das ações; (Incluído pela Emenda Constitucional nº 71, de 2012)
+XI - descentralização articulada e pactuada da gestão, dos recursos e das ações; Incluído pela Emenda Constitucional nº 71, de 2012
 
-XII - ampliação progressiva dos recursos contidos nos orçamentos públicos para a cultura. (Incluído pela Emenda Constitucional nº 71, de 2012)
+XII - ampliação progressiva dos recursos contidos nos orçamentos públicos para a cultura. Incluído pela Emenda Constitucional nº 71, de 2012
 
-**§ 2º** Constitui a estrutura do Sistema Nacional de Cultura, nas respectivas esferas da Federação: (Incluído pela Emenda Constitucional nº 71, de 2012)
+**§ 2º** Constitui a estrutura do Sistema Nacional de Cultura, nas respectivas esferas da Federação: Incluído pela Emenda Constitucional nº 71, de 2012
 
-I - órgãos gestores da cultura; (Incluído pela Emenda Constitucional nº 71, de 2012)
+I - órgãos gestores da cultura; Incluído pela Emenda Constitucional nº 71, de 2012
 
-II - conselhos de política cultural; (Incluído pela Emenda Constitucional nº 71, de 2012)
+II - conselhos de política cultural; Incluído pela Emenda Constitucional nº 71, de 2012
 
-III - conferências de cultura; (Incluído pela Emenda Constitucional nº 71, de 2012)
+III - conferências de cultura; Incluído pela Emenda Constitucional nº 71, de 2012
 
-IV - comissões intergestores; (Incluído pela Emenda Constitucional nº 71, de 2012)
+IV - comissões intergestores; Incluído pela Emenda Constitucional nº 71, de 2012
 
-V - planos de cultura; (Incluído pela Emenda Constitucional nº 71, de 2012)
+V - planos de cultura; Incluído pela Emenda Constitucional nº 71, de 2012
 
-VI - sistemas de financiamento à cultura; (Incluído pela Emenda Constitucional nº 71, de 2012)
+VI - sistemas de financiamento à cultura; Incluído pela Emenda Constitucional nº 71, de 2012
 
-VII - sistemas de informações e indicadores culturais; (Incluído pela Emenda Constitucional nº 71, de 2012)
+VII - sistemas de informações e indicadores culturais; Incluído pela Emenda Constitucional nº 71, de 2012
 
-VIII - programas de formação na área da cultura; e (Incluído pela Emenda Constitucional nº 71, de 2012)
+VIII - programas de formação na área da cultura; e Incluído pela Emenda Constitucional nº 71, de 2012
 
-IX - sistemas setoriais de cultura. (Incluído pela Emenda Constitucional nº 71, de 2012)
+IX - sistemas setoriais de cultura. Incluído pela Emenda Constitucional nº 71, de 2012
 
-**§ 3º** Lei federal disporá sobre a regulamentação do Sistema Nacional de Cultura, bem como de sua articulação com os demais sistemas nacionais ou políticas setoriais de governo. (Incluído pela Emenda Constitucional nº 71, de 2012)
+**§ 3º** Lei federal disporá sobre a regulamentação do Sistema Nacional de Cultura, bem como de sua articulação com os demais sistemas nacionais ou políticas setoriais de governo. Incluído pela Emenda Constitucional nº 71, de 2012
 
-**§ 4º** Os Estados, o Distrito Federal e os Municípios organizarão seus respectivos sistemas de cultura em leis próprias. (Incluído pela Emenda Constitucional nº 71, de 2012)
+**§ 4º** Os Estados, o Distrito Federal e os Municípios organizarão seus respectivos sistemas de cultura em leis próprias. Incluído pela Emenda Constitucional nº 71, de 2012
 
 #### Seção III — DO DESPORTO
 
@@ -5496,12 +5440,6 @@ II - o plano nacional de juventude, de duração decenal, visando à articulaç�
 
 **Art. 233.** (Revogado pela Emenda Constitucional nº 28, de 25/05/2000)
 
-**§ 1º** (Revogado pela Emenda Constitucional nº 28, de 25/05/2000)
-
-**§ 2º** (Revogado pela Emenda Constitucional nº 28, de 25/05/2000)
-
-**§ 3º** (Revogado pela Emenda Constitucional nº 28, de 25/05/2000)
-
 **Art. 234.** É vedado à União, direta ou indiretamente, assumir, em decorrência da criação de Estado, encargos referentes a despesas com pessoal inativo e com encargos e amortizações da dívida interna ou externa da administração pública, inclusive da indireta.
 
 **Art. 235.** Nos dez primeiros anos da criação de Estado, serão observadas as seguintes normas básicas:
@@ -5547,8 +5485,6 @@ XI - as despesas orçamentárias com pessoal não poderão ultrapassar cinqüent
 **Art. 237.** A fiscalização e o controle sobre o comércio exterior, essenciais à defesa dos interesses fazendários nacionais, serão exercidos pelo Ministério da Fazenda.
 
 **Art. 238.** A lei ordenará a venda e revenda de combustíveis de petróleo, álcool carburante e outros combustíveis derivados de matérias-primas renováveis, respeitados os princípios desta Constituição.
-
-**Art. 239.** (Regulamento)
 
 **Art. 239.** A arrecadação decorrente das contribuições para o Programa de Integração Social, criado pela Lei Complementar nº 7, de 7 de setembro de 1970, e para o Programa de Formação do Patrimônio do Servidor Público, criado pela Lei Complementar nº 8, de 3 de dezembro de 1970, passa, a partir da promulgação desta Constituição, a financiar, nos termos que a lei dispuser, o programa do seguro-desemprego, outras ações da previdência social e o abono de que trata o § 3º deste artigo. (Redação dada pela Emenda Constitucional nº 103, de 2019)
 
@@ -5596,25 +5532,23 @@ XI - as despesas orçamentárias com pessoal não poderão ultrapassar cinqüent
 
 Brasília, 5 de outubro de 1988.
 
-Ulysses Guimarães, Presidente - Mauro Benevides , 1.º Vice-Presidente - Jorge Arbage , 2.º Vice-Presidente - Marcelo Cordeiro , 1.º Secretário - Mário Maia , 2.º Secretário - Arnaldo Faria de Sá , 3.º Secretário - Benedita da Silva , 1.º Suplente de Secretário - Luiz Soyer , 2.º Suplente de Secretário - Sotero Cunha , 3.º Suplente de Secretário - Bernardo Cabral , Relator Geral - Adolfo Oliveira , Relator Adjunto - Antônio Carlos Konder Reis , Relator Adjunto - José Fogaça , Relator Adjunto - Abigail Feitosa - Acival Gomes - Adauto Pereira - Ademir Andrade - Adhemar de Barros Filho - Adroaldo Streck - Adylson Motta - Aécio de Borba - Aécio Neves - Affonso Camargo - Afif Domingos - Afonso Arinos - Afonso Sancho - Agassiz Almeida - Agripino de Oliveira Lima - Airton Cordeiro - Airton Sandoval - Alarico Abib - Albano Franco - Albérico Cordeiro - Albérico Filho - Alceni Guerra - Alcides Saldanha - Aldo Arantes - Alércio Dias - Alexandre Costa - Alexandre Puzyna - Alfredo Campos - Almir Gabriel - Aloisio Vasconcelos - Aloysio Chaves - Aloysio Teixeira - Aluizio Bezerra - Aluízio Campos - Álvaro Antônio - Álvaro Pacheco - Álvaro Valle - Alysson Paulinelli - Amaral Netto - Amaury Müller - Amilcar Moreira - Ângelo Magalhães - Anna Maria Rattes - Annibal Barcellos - Antero de Barros - Antônio Câmara - Antônio Carlos Franco - Antonio Carlos Mendes Thame - Antônio de Jesus - Antonio Ferreira - Antonio Gaspar - Antonio Mariz - Antonio Perosa - Antônio Salim Curiati - Antonio Ueno - Arnaldo Martins - Arnaldo Moraes - Arnaldo Prieto - Arnold Fioravante - Arolde de Oliveira - Artenir Werner - Artur da Távola - Asdrubal Bentes - Assis Canuto - Átila Lira - Augusto Carvalho - Áureo Mello - Basílio Villani - Benedicto Monteiro - Benito Gama - Beth Azize - Bezerra de Melo - Bocayuva Cunha - Bonifácio de Andrada - Bosco França - Brandão Monteiro - Caio Pompeu - Carlos Alberto - Carlos Alberto Caó - Carlos Benevides - Carlos Cardinal - Carlos Chiarelli - Carlos Cotta - Carlos De’Carli - Carlos Mosconi - Carlos Sant’Anna - Carlos Vinagre - Carlos Virgílio - Carrel Benevides - Cássio Cunha Lima - Célio de Castro - Celso Dourado - César Cals Neto - César Maia - Chagas Duarte - Chagas Neto - Chagas Rodrigues - Chico Humberto - Christóvam Chiaradia - Cid Carvalho - Cid Sabóia de Carvalho - Cláudio Ávila - Cleonâncio Fonseca - Costa Ferreira - Cristina Tavares - Cunha Bueno - Dálton Canabrava - Darcy Deitos - Darcy Pozza - Daso Coimbra - Davi Alves Silva - Del Bosco Amaral - Delfim Netto - Délio Braz - Denisar Arneiro - Dionisio Dal Prá - Dionísio Hage - Dirce Tutu Quadros - Dirceu Carneiro - Divaldo Suruagy - Djenal Gonçalves - Domingos Juvenil - Domingos Leonelli - Doreto Campanari - Edésio Frias - Edison Lobão - Edivaldo Motta - Edme Tavares - Edmilson Valentim - Eduardo Bonfim - Eduardo Jorge - Eduardo Moreira - Egídio Ferreira Lima - Elias Murad - Eliel Rodrigues - Eliézer Moreira - Enoc Vieira - Eraldo Tinoco - Eraldo Trindade - Erico Pegoraro - Ervin Bonkoski - Etevaldo Nogueira - Euclides Scalco - Eunice Michiles - Evaldo Gonçalves - Expedito Machado - Ézio Ferreira - Fábio Feldmann - Fábio Raunheitti - Farabulini Júnior - Fausto Fernandes - Fausto Rocha - Felipe Mendes - Feres Nader - Fernando Bezerra Coelho - Fernando Cunha - Fernando Gasparian - Fernando Gomes - Fernando Henrique Cardoso - Fernando Lyra - Fernando Santana - Fernando Velasco - Firmo de Castro - Flavio Palmier da Veiga - Flávio Rocha - Florestan Fernandes - Floriceno Paixão - França Teixeira - Francisco Amaral - Francisco Benjamim - Francisco Carneiro - Francisco Coelho - Francisco Diógenes - Francisco Dornelles - Francisco Küster - Francisco Pinto - Francisco Rollemberg - Francisco Rossi - Francisco Sales - Furtado Leite - Gabriel Guerreiro - Gandi Jamil - Gastone Righi - Genebaldo Correia - Genésio Bernardino - Geovani Borges - Geraldo Alckmin Filho - Geraldo Bulhões - Geraldo Campos - Geraldo Fleming - Geraldo Melo - Gerson Camata - Gerson Marcondes - Gerson Peres - Gidel Dantas - Gil César - Gilson Machado - Gonzaga Patriota - Guilherme Palmeira - Gumercindo Milhomem - Gustavo de Faria - Harlan Gadelha - Haroldo Lima - Haroldo Sabóia - Hélio Costa - Hélio Duque - Hélio Manhães - Hélio Rosas - Henrique Córdova - Henrique Eduardo Alves - Heráclito Fortes - Hermes Zaneti - Hilário Braun - Homero Santos - Humberto Lucena - Humberto Souto - Iberê Ferreira - Ibsen Pinheiro - Inocêncio Oliveira - Irajá Rodrigues - Iram Saraiva - Irapuan Costa Júnior - Irma Passoni - Ismael Wanderley - Israel Pinheiro - Itamar Franco - Ivo Cersósimo - Ivo Lech - Ivo Mainardi - Ivo Vanderlinde - Jacy Scanagatta - Jairo Azi - Jairo Carneiro - Jalles Fontoura - Jamil Haddad - Jarbas Passarinho - Jayme Paliarin - Jayme Santana - Jesualdo Cavalcanti - Jesus Tajra - Joaci Góes - João Agripino - João Alves - João Calmon - João Carlos Bacelar - João Castelo - João Cunha - João da Mata - João de Deus Antunes - João Herrmann Neto - João Lobo - João Machado Rollemberg - João Menezes - João Natal - João Paulo - João Rezek - Joaquim Bevilácqua - Joaquim Francisco - Joaquim Hayckel - Joaquim Sucena - Jofran Frejat - Jonas Pinheiro - Jonival Lucas - Jorge Bornhausen - Jorge Hage - Jorge Leite - Jorge Uequed - Jorge Vianna - José Agripino - José Camargo - José Carlos Coutinho - José Carlos Grecco - José Carlos Martinez - José Carlos Sabóia - José Carlos Vasconcelos - José Costa - José da Conceição - José Dutra - José Egreja - José Elias - José Fernandes - José Freire - José Genoíno - José Geraldo - José Guedes - José Ignácio Ferreira - José Jorge - José Lins - José Lourenço - José Luiz de Sá - José Luiz Maia - José Maranhão - José Maria Eymael - José Maurício - José Melo - José Mendonça Bezerra - José Moura - José Paulo Bisol - José Queiroz - José Richa - José Santana de Vasconcellos - José Serra - José Tavares - José Teixeira - José Thomaz Nonô - José Tinoco - José Ulísses de Oliveira - José Viana - José Yunes - Jovanni Masini - Juarez Antunes - Júlio Campos - Júlio Costamilan - Jutahy Júnior - Jutahy Magalhães - Koyu Iha - Lael Varella - Lavoisier Maia - Leite Chaves - Lélio Souza - Leopoldo Peres - Leur Lomanto - Levy Dias - Lézio Sathler - Lídice da Mata - Louremberg Nunes Rocha - Lourival Baptista - Lúcia Braga - Lúcia Vânia - Lúcio Alcântara - Luís Eduardo - Luís Roberto Ponte - Luiz Alberto Rodrigues - Luiz Freire - Luiz Gushiken - Luiz Henrique - Luiz Inácio Lula da Silva - Luiz Leal - Luiz Marques - Luiz Salomão - Luiz Viana - Luiz Viana Neto - Lysâneas Maciel - Maguito Vilela - Maluly Neto - Manoel Castro - Manoel Moreira - Manoel Ribeiro - Mansueto de Lavor - Manuel Viana - Márcia Kubitschek - Márcio Braga - Márcio Lacerda - Marco Maciel - Marcondes Gadelha - Marcos Lima - Marcos Queiroz - Maria de Lourdes Abadia - Maria Lúcia - Mário Assad - Mário Covas - Mário de Oliveira - Mário Lima - Marluce Pinto - Matheus Iensen - Mattos Leão - Maurício Campos - Maurício Correa - Maurício Fruet - Maurício Nasser - Maurício Pádua - Maurílio Ferreira Lima - Mauro Borges - Mauro Campos - Mauro Miranda - Mauro Sampaio - Max Rosenmann - Meira Filho - Melo Freire - Mello Reis - Mendes Botelho - Mendes Canale - Mendes Ribeiro - Messias Góis - Messias Soares - Michel Temer - Milton Barbosa - Milton Lima - Milton Reis - Miraldo Gomes - Miro Teixeira - Moema São Thiago - Moysés Pimentel - Mozarildo Cavalcanti - Mussa Demes - Myrian Portella - Nabor Júnior - Naphtali Alves de Souza - Narciso Mendes - Nelson Aguiar - Nelson Carneiro - Nelson Jobim - Nelson Sabrá - Nelson Seixas - Nelson Wedekin - Nelton Friedrich - Nestor Duarte - Ney Maranhão - Nilso Sguarezi - Nilson Gibson - Nion Albernaz - Noel de Carvalho - Nyder Barbosa - Octávio Elísio - Odacir Soares - Olavo Pires - Olívio Dutra - Onofre Corrêa - Orlando Bezerra - Orlando Pacheco - Oscar Corrêa - Osmar Leitão - Osmir Lima - Osmundo Rebouças - Osvaldo Bender - Osvaldo Coelho - Osvaldo Macedo - Osvaldo Sobrinho - Oswaldo Almeida - Oswaldo Trevisan - Ottomar Pinto - Paes de Andrade - Paes Landim - Paulo Delgado - Paulo Macarini - Paulo Marques - Paulo Mincarone - Paulo Paim - Paulo Pimentel - Paulo Ramos - Paulo Roberto - Paulo Roberto Cunha - Paulo Silva - Paulo Zarzur - Pedro Canedo - Pedro Ceolin - Percival Muniz - Pimenta da Veiga - Plínio Arruda Sampaio - Plínio Martins - Pompeu de Sousa - Rachid Saldanha Derzi - Raimundo Bezerra - Raimundo Lira - Raimundo Rezende - Raquel Cândido - Raquel Capiberibe - Raul Belém - Raul Ferraz - Renan Calheiros - Renato Bernardi - Renato Johnsson - Renato Vianna - Ricardo Fiuza - Ricardo Izar - Rita Camata - Rita Furtado - Roberto Augusto - Roberto Balestra - Roberto Brant - Roberto Campos - Roberto D’Ávila - Roberto Freire - Roberto Jefferson - Roberto Rollemberg - Roberto Torres - Roberto Vital - Robson Marinho - Rodrigues Palma - Ronaldo Aragão - Ronaldo Carvalho - Ronaldo Cezar Coelho - Ronan Tito - Ronaro Corrêa - Rosa Prata - Rose de Freitas - Rospide Netto - Rubem Branquinho - Rubem Medina - Ruben Figueiró - Ruberval Pilotto - Ruy Bacelar - Ruy Nedel - Sadie Hauache - Salatiel Carvalho - Samir Achôa - Sandra Cavalcanti - Santinho Furtado - Sarney Filho - Saulo Queiroz - Sérgio Brito - Sérgio Spada - Sérgio Werneck - Severo Gomes - Sigmaringa Seixas - Sílvio Abreu - Simão Sessim - Siqueira Campos - Sólon Borges dos Reis - Stélio Dias - Tadeu França - Telmo Kirst - Teotonio Vilela Filho - Theodoro Mendes - Tito Costa - Ubiratan Aguiar - Ubiratan Spinelli - Uldurico Pinto - Valmir Campelo - Valter Pereira - Vasco Alves - Vicente Bogo - Victor Faccioni - Victor Fontana - Victor Trovão - Vieira da Silva - Vilson Souza - Vingt Rosado - Vinicius Cansanção - Virgildásio de Senna - Virgílio Galassi - Virgílio Guimarães - Vitor Buaiz - Vivaldo Barbosa - Vladimir Palmeira - Wagner Lago - Waldec Ornélas - Waldyr Pugliesi - Walmor de Luca - Wilma Maia - Wilson Campos - Wilson Martins - Ziza Valadares.
+Ulysses Guimarães , Presidente - Mauro Benevides , 1.º Vice-Presidente - Jorge Arbage , 2.º Vice-Presidente - Marcelo Cordeiro , 1.º Secretário - Mário Maia , 2.º Secretário - Arnaldo Faria de Sá , 3.º Secretário - Benedita da Silva , 1.º Suplente de Secretário - Luiz Soyer , 2.º Suplente de Secretário - Sotero Cunha , 3.º Suplente de Secretário - Bernardo Cabral , Relator Geral - Adolfo Oliveira , Relator Adjunto - Antônio Carlos Konder Reis , Relator Adjunto - José Fogaça , Relator Adjunto - Abigail Feitosa - Acival Gomes - Adauto Pereira - Ademir Andrade - Adhemar de Barros Filho - Adroaldo Streck - Adylson Motta - Aécio de Borba - Aécio Neves - Affonso Camargo - Afif Domingos - Afonso Arinos - Afonso Sancho - Agassiz Almeida - Agripino de Oliveira Lima - Airton Cordeiro - Airton Sandoval - Alarico Abib - Albano Franco - Albérico Cordeiro - Albérico Filho - Alceni Guerra - Alcides Saldanha - Aldo Arantes - Alércio Dias - Alexandre Costa - Alexandre Puzyna - Alfredo Campos - Almir Gabriel - Aloisio Vasconcelos - Aloysio Chaves - Aloysio Teixeira - Aluizio Bezerra - Aluízio Campos - Álvaro Antônio - Álvaro Pacheco - Álvaro Valle - Alysson Paulinelli - Amaral Netto - Amaury Müller - Amilcar Moreira - Ângelo Magalhães - Anna Maria Rattes - Annibal Barcellos - Antero de Barros - Antônio Câmara - Antônio Carlos Franco - Antonio Carlos Mendes Thame - Antônio de Jesus - Antonio Ferreira - Antonio Gaspar - Antonio Mariz - Antonio Perosa - Antônio Salim Curiati - Antonio Ueno - Arnaldo Martins - Arnaldo Moraes - Arnaldo Prieto - Arnold Fioravante - Arolde de Oliveira - Artenir Werner - Artur da Távola - Asdrubal Bentes - Assis Canuto - Átila Lira - Augusto Carvalho - Áureo Mello - Basílio Villani - Benedicto Monteiro - Benito Gama - Beth Azize - Bezerra de Melo - Bocayuva Cunha - Bonifácio de Andrada - Bosco França - Brandão Monteiro - Caio Pompeu - Carlos Alberto - Carlos Alberto Caó - Carlos Benevides - Carlos Cardinal - Carlos Chiarelli - Carlos Cotta - Carlos De’Carli - Carlos Mosconi - Carlos Sant’Anna - Carlos Vinagre - Carlos Virgílio - Carrel Benevides - Cássio Cunha Lima - Célio de Castro - Celso Dourado - César Cals Neto - César Maia - Chagas Duarte - Chagas Neto - Chagas Rodrigues - Chico Humberto - Christóvam Chiaradia - Cid Carvalho - Cid Sabóia de Carvalho - Cláudio Ávila - Cleonâncio Fonseca - Costa Ferreira - Cristina Tavares - Cunha Bueno - Dálton Canabrava - Darcy Deitos - Darcy Pozza - Daso Coimbra - Davi Alves Silva - Del Bosco Amaral - Delfim Netto - Délio Braz - Denisar Arneiro - Dionisio Dal Prá - Dionísio Hage - Dirce Tutu Quadros - Dirceu Carneiro - Divaldo Suruagy - Djenal Gonçalves - Domingos Juvenil - Domingos Leonelli - Doreto Campanari - Edésio Frias - Edison Lobão - Edivaldo Motta - Edme Tavares - Edmilson Valentim - Eduardo Bonfim - Eduardo Jorge - Eduardo Moreira - Egídio Ferreira Lima - Elias Murad - Eliel Rodrigues - Eliézer Moreira - Enoc Vieira - Eraldo Tinoco - Eraldo Trindade - Erico Pegoraro - Ervin Bonkoski - Etevaldo Nogueira - Euclides Scalco - Eunice Michiles - Evaldo Gonçalves - Expedito Machado - Ézio Ferreira - Fábio Feldmann - Fábio Raunheitti - Farabulini Júnior - Fausto Fernandes - Fausto Rocha - Felipe Mendes - Feres Nader - Fernando Bezerra Coelho - Fernando Cunha - Fernando Gasparian - Fernando Gomes - Fernando Henrique Cardoso - Fernando Lyra - Fernando Santana - Fernando Velasco - Firmo de Castro - Flavio Palmier da Veiga - Flávio Rocha - Florestan Fernandes - Floriceno Paixão - França Teixeira - Francisco Amaral - Francisco Benjamim - Francisco Carneiro - Francisco Coelho - Francisco Diógenes - Francisco Dornelles - Francisco Küster - Francisco Pinto - Francisco Rollemberg - Francisco Rossi - Francisco Sales - Furtado Leite - Gabriel Guerreiro - Gandi Jamil - Gastone Righi - Genebaldo Correia - Genésio Bernardino - Geovani Borges - Geraldo Alckmin Filho - Geraldo Bulhões - Geraldo Campos - Geraldo Fleming - Geraldo Melo - Gerson Camata - Gerson Marcondes - Gerson Peres - Gidel Dantas - Gil César - Gilson Machado - Gonzaga Patriota - Guilherme Palmeira - Gumercindo Milhomem - Gustavo de Faria - Harlan Gadelha - Haroldo Lima - Haroldo Sabóia - Hélio Costa - Hélio Duque - Hélio Manhães - Hélio Rosas - Henrique Córdova - Henrique Eduardo Alves - Heráclito Fortes - Hermes Zaneti - Hilário Braun - Homero Santos - Humberto Lucena - Humberto Souto - Iberê Ferreira - Ibsen Pinheiro - Inocêncio Oliveira - Irajá Rodrigues - Iram Saraiva - Irapuan Costa Júnior - Irma Passoni - Ismael Wanderley - Israel Pinheiro - Itamar Franco - Ivo Cersósimo - Ivo Lech - Ivo Mainardi - Ivo Vanderlinde - Jacy Scanagatta - Jairo Azi - Jairo Carneiro - Jalles Fontoura - Jamil Haddad - Jarbas Passarinho - Jayme Paliarin - Jayme Santana - Jesualdo Cavalcanti - Jesus Tajra - Joaci Góes - João Agripino - João Alves - João Calmon - João Carlos Bacelar - João Castelo - João Cunha - João da Mata - João de Deus Antunes - João Herrmann Neto - João Lobo - João Machado Rollemberg - João Menezes - João Natal - João Paulo - João Rezek - Joaquim Bevilácqua - Joaquim Francisco - Joaquim Hayckel - Joaquim Sucena - Jofran Frejat - Jonas Pinheiro - Jonival Lucas - Jorge Bornhausen - Jorge Hage - Jorge Leite - Jorge Uequed - Jorge Vianna - José Agripino - José Camargo - José Carlos Coutinho - José Carlos Grecco - José Carlos Martinez - José Carlos Sabóia - José Carlos Vasconcelos - José Costa - José da Conceição - José Dutra - José Egreja - José Elias - José Fernandes - José Freire - José Genoíno - José Geraldo - José Guedes - José Ignácio Ferreira - José Jorge - José Lins - José Lourenço - José Luiz de Sá - José Luiz Maia - José Maranhão - José Maria Eymael - José Maurício - José Melo - José Mendonça Bezerra - José Moura - José Paulo Bisol - José Queiroz - José Richa - José Santana de Vasconcellos - José Serra - José Tavares - José Teixeira - José Thomaz Nonô - José Tinoco - José Ulísses de Oliveira - José Viana - José Yunes - Jovanni Masini - Juarez Antunes - Júlio Campos - Júlio Costamilan - Jutahy Júnior - Jutahy Magalhães - Koyu Iha - Lael Varella - Lavoisier Maia - Leite Chaves - Lélio Souza - Leopoldo Peres - Leur Lomanto - Levy Dias - Lézio Sathler - Lídice da Mata - Louremberg Nunes Rocha - Lourival Baptista - Lúcia Braga - Lúcia Vânia - Lúcio Alcântara - Luís Eduardo - Luís Roberto Ponte - Luiz Alberto Rodrigues - Luiz Freire - Luiz Gushiken - Luiz Henrique - Luiz Inácio Lula da Silva - Luiz Leal - Luiz Marques - Luiz Salomão - Luiz Viana - Luiz Viana Neto - Lysâneas Maciel - Maguito Vilela - Maluly Neto - Manoel Castro - Manoel Moreira - Manoel Ribeiro - Mansueto de Lavor - Manuel Viana - Márcia Kubitschek - Márcio Braga - Márcio Lacerda - Marco Maciel - Marcondes Gadelha - Marcos Lima - Marcos Queiroz - Maria de Lourdes Abadia - Maria Lúcia - Mário Assad - Mário Covas - Mário de Oliveira - Mário Lima - Marluce Pinto - Matheus Iensen - Mattos Leão - Maurício Campos - Maurício Correa - Maurício Fruet - Maurício Nasser - Maurício Pádua - Maurílio Ferreira Lima - Mauro Borges - Mauro Campos - Mauro Miranda - Mauro Sampaio - Max Rosenmann - Meira Filho - Melo Freire - Mello Reis - Mendes Botelho - Mendes Canale - Mendes Ribeiro - Messias Góis - Messias Soares - Michel Temer - Milton Barbosa - Milton Lima - Milton Reis - Miraldo Gomes - Miro Teixeira - Moema São Thiago - Moysés Pimentel - Mozarildo Cavalcanti - Mussa Demes - Myrian Portella - Nabor Júnior - Naphtali Alves de Souza - Narciso Mendes - Nelson Aguiar - Nelson Carneiro - Nelson Jobim - Nelson Sabrá - Nelson Seixas - Nelson Wedekin - Nelton Friedrich - Nestor Duarte - Ney Maranhão - Nilso Sguarezi - Nilson Gibson - Nion Albernaz - Noel de Carvalho - Nyder Barbosa - Octávio Elísio - Odacir Soares - Olavo Pires - Olívio Dutra - Onofre Corrêa - Orlando Bezerra - Orlando Pacheco - Oscar Corrêa - Osmar Leitão - Osmir Lima - Osmundo Rebouças - Osvaldo Bender - Osvaldo Coelho - Osvaldo Macedo - Osvaldo Sobrinho - Oswaldo Almeida - Oswaldo Trevisan - Ottomar Pinto - Paes de Andrade - Paes Landim - Paulo Delgado - Paulo Macarini - Paulo Marques - Paulo Mincarone - Paulo Paim - Paulo Pimentel - Paulo Ramos - Paulo Roberto - Paulo Roberto Cunha - Paulo Silva - Paulo Zarzur - Pedro Canedo - Pedro Ceolin - Percival Muniz - Pimenta da Veiga - Plínio Arruda Sampaio - Plínio Martins - Pompeu de Sousa - Rachid Saldanha Derzi - Raimundo Bezerra - Raimundo Lira - Raimundo Rezende - Raquel Cândido - Raquel Capiberibe - Raul Belém - Raul Ferraz - Renan Calheiros - Renato Bernardi - Renato Johnsson - Renato Vianna - Ricardo Fiuza - Ricardo Izar - Rita Camata - Rita Furtado - Roberto Augusto - Roberto Balestra - Roberto Brant - Roberto Campos - Roberto D’Ávila - Roberto Freire - Roberto Jefferson - Roberto Rollemberg - Roberto Torres - Roberto Vital - Robson Marinho - Rodrigues Palma - Ronaldo Aragão - Ronaldo Carvalho - Ronaldo Cezar Coelho - Ronan Tito - Ronaro Corrêa - Rosa Prata - Rose de Freitas - Rospide Netto - Rubem Branquinho - Rubem Medina - Ruben Figueiró - Ruberval Pilotto - Ruy Bacelar - Ruy Nedel - Sadie Hauache - Salatiel Carvalho - Samir Achôa - Sandra Cavalcanti - Santinho Furtado - Sarney Filho - Saulo Queiroz - Sérgio Brito - Sérgio Spada - Sérgio Werneck - Severo Gomes - Sigmaringa Seixas - Sílvio Abreu - Simão Sessim - Siqueira Campos - Sólon Borges dos Reis - Stélio Dias - Tadeu França - Telmo Kirst - Teotonio Vilela Filho - Theodoro Mendes - Tito Costa - Ubiratan Aguiar - Ubiratan Spinelli - Uldurico Pinto - Valmir Campelo - Valter Pereira - Vasco Alves - Vicente Bogo - Victor Faccioni - Victor Fontana - Victor Trovão - Vieira da Silva - Vilson Souza - Vingt Rosado - Vinicius Cansanção - Virgildásio de Senna - Virgílio Galassi - Virgílio Guimarães - Vitor Buaiz - Vivaldo Barbosa - Vladimir Palmeira - Wagner Lago - Waldec Ornélas - Waldyr Pugliesi - Walmor de Luca - Wilma Maia - Wilson Campos - Wilson Martins - Ziza Valadares.
 
 Participantes: Álvaro Dias - Antônio Britto - Bete Mendes - Borges da Silveira - Cardoso Alves - Edivaldo Holanda - Expedito Júnior - Fadah Gattass - Francisco Dias - Geovah Amarante - Hélio Gueiros - Horácio Ferraz - Hugo Napoleão - Iturival Nascimento - Ivan Bonato - Jorge Medauar - José Mendonça de Morais - Leopoldo Bessone - Marcelo Miranda - Mauro Fecury - Neuto de Conto - Nivaldo Machado - Oswaldo Lima Filho - Paulo Almada - Prisco Viana - Ralph Biasi - Rosário Congro Neto - Sérgio Naya - Tidei de Lima.
 
 In Memoriam: Alair Ferreira - Antônio Farias - Fábio Lucena - Norberto Schwantes - Virgílio Távora.
 
-Este texto não substitui o publicado no D.O.U. de 5.10.1988 .
+Este texto não substitui o publicado no DOU de 5.10.1988
 
 # ATO DAS DISPOSIÇÕES CONSTITUCIONAIS TRANSITÓRIAS
-
-(Vide Emenda Constitucional nº 132, de 2023) Vigência
 
 **Art. 1º.** O Presidente da República, o Presidente do Supremo Tribunal Federal e os membros do Congresso Nacional prestarão o compromisso de manter, defender e cumprir a Constituição, no ato e na data de sua promulgação.
 
 **Art. 2º.** No dia 7 de setembro de 1993 o eleitorado definirá, através de plebiscito, a forma (república ou monarquia constitucional) e o sistema de governo (parlamentarismo ou presidencialismo) que devem vigorar no País. (Vide emenda Constitucional nº 2, de 1992)
 
-**§ 1º** Será assegurada gratuidade na livre divulgação dessas formas e sistemas, através dos meios de comunicação de massa cessionários de serviço público.
+**§ 1º** - Será assegurada gratuidade na livre divulgação dessas formas e sistemas, através dos meios de comunicação de massa cessionários de serviço público.
 
-**§ 2º** O Tribunal Superior Eleitoral, promulgada a Constituição, expedirá as normas regulamentadoras deste artigo.
+**§ 2º** - O Tribunal Superior Eleitoral, promulgada a Constituição, expedirá as normas regulamentadoras deste artigo.
 
 **Art. 3º.** A revisão constitucional será realizada após cinco anos, contados da promulgação da Constituição, pelo voto da maioria absoluta dos membros do Congresso Nacional, em sessão unicameral.
 
@@ -5624,9 +5558,9 @@ Este texto não substitui o publicado no D.O.U. de 5.10.1988 .
 
 **§ 2º** É assegurada a irredutibilidade da atual representação dos Estados e do Distrito Federal na Câmara dos Deputados.
 
-**§ 3º** Os mandatos dos Governadores e dos Vice-Governadores eleitos em 15 de novembro de 1986 terminarão em 15 de março de 1991.
+**§ 3º** - Os mandatos dos Governadores e dos Vice-Governadores eleitos em 15 de novembro de 1986 terminarão em 15 de março de 1991.
 
-**§ 4º** Os mandatos dos atuais Prefeitos, Vice-Prefeitos e Vereadores terminarão no dia 1º de janeiro de 1989, com a posse dos eleitos.
+**§ 4º** - Os mandatos dos atuais Prefeitos, Vice-Prefeitos e Vereadores terminarão no dia 1º de janeiro de 1989, com a posse dos eleitos.
 
 **Art. 5º.** Não se aplicam às eleições previstas para 15 de novembro de 1988 o disposto no art. 16 e as regras do art. 77 da Constituição.
 
@@ -5638,7 +5572,7 @@ Este texto não substitui o publicado no D.O.U. de 5.10.1988 .
 
 **§ 4º** O número de vereadores por município será fixado, para a representação a ser eleita em 1988, pelo respectivo Tribunal Regional Eleitoral, respeitados os limites estipulados no art. 29, IV, da Constituição.
 
-**§ 5º** - Para as eleições de 15 de novembro de 1988, ressalvados os que já exercem mandato eletivo, são inelegíveis para qualquer cargo, no território de jurisdição do titular, o cônjuge e os parentes por consangüinidade ou afinidade, até o segundo grau, ou por adoção, do Presidente da República, do Governador de Estado, do Governador do Distrito Federal e do Prefeito que tenham exercido mais da metade do mandato.
+**§ 5º** Para as eleições de 15 de novembro de 1988, ressalvados os que já exercem mandato eletivo, são inelegíveis para qualquer cargo, no território de jurisdição do titular, o cônjuge e os parentes por consangüinidade ou afinidade, até o segundo grau, ou por adoção, do Presidente da República, do Governador de Estado, do Governador do Distrito Federal e do Prefeito que tenham exercido mais da metade do mandato.
 
 **Art. 6º.** Nos seis meses posteriores à promulgação da Constituição, parlamentares federais, reunidos em número não inferior a trinta, poderão requerer ao Tribunal Superior Eleitoral o registro de novo partido político, juntando ao requerimento o manifesto, o estatuto e o programa devidamente assinados pelos requerentes.
 
@@ -5648,7 +5582,7 @@ Este texto não substitui o publicado no D.O.U. de 5.10.1988 .
 
 **Art. 7º.** O Brasil propugnará pela formação de um tribunal internacional dos direitos humanos.
 
-**Art. 8º.** É concedida anistia aos que, no período de 18 de setembro de 1946 até a data da promulgação da Constituição, foram atingidos, em decorrência de motivação exclusivamente política, por atos de exceção, institucionais ou complementares, aos que foram abrangidos pelo Decreto Legislativo nº 18, de 15 de dezembro de 1961 , e aos atingidos pelo Decreto-Lei nº 864, de 12 de setembro de 1969 , asseguradas as promoções, na inatividade, ao cargo, emprego, posto ou graduação a que teriam direito se estivessem em serviço ativo, obedecidos os prazos de permanência em atividade previstos nas leis e regulamentos vigentes, respeitadas as características e peculiaridades das carreiras dos servidores públicos civis e militares e observados os respectivos regimes jurídicos. (Regulamento)
+**Art. 8º.** É concedida anistia aos que, no período de 18 de setembro de 1946 até a data da promulgação da Constituição, foram atingidos, em decorrência de motivação exclusivamente política, por atos de exceção, institucionais ou complementares, aos que foram abrangidos pelo Decreto Legislativo nº 18, de 15 de dezembro de 1961, e aos atingidos pelo Decreto-Lei nº 864, de 12 de setembro de 1969, asseguradas as promoções, na inatividade, ao cargo, emprego, posto ou graduação a que teriam direito se estivessem em serviço ativo, obedecidos os prazos de permanência em atividade previstos nas leis e regulamentos vigentes, respeitadas as características e peculiaridades das carreiras dos servidores públicos civis e militares e observados os respectivos regimes jurídicos. (Regulamento)
 
 **§ 1º** O disposto neste artigo somente gerará efeitos financeiros a partir da promulgação da Constituição, vedada a remuneração de qualquer espécie em caráter retroativo.
 
@@ -5658,7 +5592,7 @@ Este texto não substitui o publicado no D.O.U. de 5.10.1988 .
 
 **§ 4º** Aos que, por força de atos institucionais, tenham exercido gratuitamente mandato eletivo de vereador serão computados, para efeito de aposentadoria no serviço público e previdência social, os respectivos períodos.
 
-**§ 5º** A anistia concedida nos termos deste artigo aplica-se aos servidores públicos civis e aos empregados em todos os níveis de governo ou em suas fundações, empresas públicas ou empresas mistas sob controle estatal, exceto nos Ministérios militares, que tenham sido punidos ou demitidos por atividades profissionais interrompidas em virtude de decisão de seus trabalhadores, bem como em decorrência do Decreto-Lei nº 1.632, de 4 de agosto de 1978 , ou por motivos exclusivamente políticos, assegurada a readmissão dos que foram atingidos a partir de 1979, observado o disposto no § 1º.
+**§ 5º** A anistia concedida nos termos deste artigo aplica-se aos servidores públicos civis e aos empregados em todos os níveis de governo ou em suas fundações, empresas públicas ou empresas mistas sob controle estatal, exceto nos Ministérios militares, que tenham sido punidos ou demitidos por atividades profissionais interrompidas em virtude de decisão de seus trabalhadores, bem como em decorrência do Decreto-Lei nº 1.632, de 4 de agosto de 1978, ou por motivos exclusivamente políticos, assegurada a readmissão dos que foram atingidos a partir de 1979, observado o disposto no § 1º.
 
 **Art. 9º.** Os que, por motivos exclusivamente políticos, foram cassados ou tiveram seus direitos políticos suspensos no período de 15 de julho a 31 de dezembro de 1969, por ato do então Presidente da República, poderão requerer ao Supremo Tribunal Federal o reconhecimento dos direitos e vantagens interrompidos pelos atos punitivos, desde que comprovem terem sido estes eivados de vício grave.
 
@@ -5666,7 +5600,7 @@ Este texto não substitui o publicado no D.O.U. de 5.10.1988 .
 
 **Art. 10.** Até que seja promulgada a lei complementar a que se refere o art. 7º, I, da Constituição:
 
-I - fica limitada a proteção nele referida ao aumento, para quatro vezes, da porcentagem prevista no art. 6º, "caput" e § 1º, da Lei nº 5.107, de 13 de setembro de 1966 ;
+I - fica limitada a proteção nele referida ao aumento, para quatro vezes, da porcentagem prevista no art. 6º, "caput" e § 1º, da Lei nº 5.107, de 13 de setembro de 1966;
 
 II - fica vedada a dispensa arbitrária ou sem justa causa:
 
@@ -5698,7 +5632,7 @@ b) da empregada gestante, desde a confirmação da gravidez até cinco meses ap�
 
 **Art. 13.** É criado o Estado do Tocantins, pelo desmembramento da área descrita neste artigo, dando-se sua instalação no quadragésimo sexto dia após a eleição prevista no § 3º, mas não antes de 1º de janeiro de 1989.
 
-**§ 1º** O Estado do Tocantins integra a Região Norte e limita-se com o Estado de Goiás pelas divisas norte dos Municípios de São Miguel do Araguaia, Porangatu, Formoso, Minaçu, Cavalcante, Monte Alegre de Goiás e Campos Belos, conservando a leste, norte e oeste as divisas atuais de Goiás com os Estados da Bahia, Piauí, Maranhão, Pará e Mato Grosso.
+**§ 1º** - O Estado do Tocantins integra a Região Norte e limita-se com o Estado de Goiás pelas divisas norte dos Municípios de São Miguel do Araguaia, Porangatu, Formoso, Minaçu, Cavalcante, Monte Alegre de Goiás e Campos Belos, conservando a leste, norte e oeste as divisas atuais de Goiás com os Estados da Bahia, Piauí, Maranhão, Pará e Mato Grosso.
 
 **§ 2º** O Poder Executivo designará uma das cidades do Estado para sua Capital provisória até a aprovação da sede definitiva do governo pela Assembléia Constituinte.
 
@@ -5822,7 +5756,7 @@ II - pela nomeação dos Ministros que sejam necessários para completar o núme
 
 **§ 11.** São criados, ainda, os seguintes Tribunais Regionais Federais: o da 6ª Região, com sede em Curitiba, Estado do Paraná, e jurisdição nos Estados do Paraná, Santa Catarina e Mato Grosso do Sul; o da 7ª Região, com sede em Belo Horizonte, Estado de Minas Gerais, e jurisdição no Estado de Minas Gerais; o da 8ª Região, com sede em Salvador, Estado da Bahia, e jurisdição nos Estados da Bahia e Sergipe; e o da 9ª Região, com sede em Manaus, Estado do Amazonas, e jurisdição nos Estados do Amazonas, Acre, Rondônia e Roraima. (Incluído pela Emenda Constitucional nº 73, de 2013) (Vide ADIN nº 5017, de 2013)
 
-**Art. 28.** Os juízes federais de que trata o art. 123, § 2º, da Constituição de 1967, com a redação dada pela Emenda Constitucional nº 7, de 1977 , ficam investidos na titularidade de varas na Seção Judiciária para a qual tenham sido nomeados ou designados; na inexistência de vagas, proceder-se-á ao desdobramento das varas existentes.
+**Art. 28.** Os juízes federais de que trata o art. 123, § 2º, da Constituição de 1967, com a redação dada pela Emenda Constitucional nº 7, de 1977, ficam investidos na titularidade de varas na Seção Judiciária para a qual tenham sido nomeados ou designados; na inexistência de vagas, proceder-se-á ao desdobramento das varas existentes.
 
 **Parágrafo único.** Para efeito de promoção por antigüidade, o tempo de serviço desses juízes será computado a partir do dia de sua posse.
 
@@ -5870,7 +5804,7 @@ III - o percentual relativo ao Fundo de Participação dos Municípios, a partir
 
 **§ 7º** Até que sejam fixadas em lei complementar, as alíquotas máximas do imposto municipal sobre vendas a varejo de combustíveis líquidos e gasosos não excederão a três por cento.
 
-**§ 8º** Se, no prazo de sessenta dias contados da promulgação da Constituição, não for editada a lei complementar necessária à instituição do imposto de que trata o art. 155, I, "b", os Estados e o Distrito Federal, mediante convênio celebrado nos termos da Lei Complementar nº 24, de 7 de janeiro de 1975 , fixarão normas para regular provisoriamente a matéria.
+**§ 8º** Se, no prazo de sessenta dias contados da promulgação da Constituição, não for editada a lei complementar necessária à instituição do imposto de que trata o art. 155, I, "b", os Estados e o Distrito Federal, mediante convênio celebrado nos termos da Lei Complementar nº 24, de 7 de janeiro de 1975, fixarão normas para regular provisoriamente a matéria.
 
 **§ 9º** Até que lei complementar disponha sobre a matéria, as empresas distribuidoras de energia elétrica, na condição de contribuintes ou de substitutos tributários, serão as responsáveis, por ocasião da saída do produto de seus estabelecimentos, ainda que destinado a outra unidade da Federação, pelo pagamento do imposto sobre operações relativas à circulação de mercadorias incidente sobre energia elétrica, desde a produção ou importação até a última operação, calculado o imposto sobre o preço então praticado na operação final e assegurado seu recolhimento ao Estado ou ao Distrito Federal, conforme o local onde deva ocorrer essa operação.
 
@@ -5884,7 +5818,7 @@ III - seis décimos por cento na Região Centro-Oeste, através do Banco do Bras
 
 **§ 11.** Fica criado, nos termos da lei, o Banco de Desenvolvimento do Centro-Oeste, para dar cumprimento, na referida região, ao que determinam os arts. 159, I, "c", e 192, § 2º, da Constituição.
 
-**§ 12.** A urgência prevista no art. 148, II, não prejudica a cobrança do empréstimo compulsório instituído, em benefício das Centrais Elétricas Brasileiras S.A. (Eletrobrás), pela Lei nº 4.156, de 28 de novembro de 1962 , com as alterações posteriores.
+**§ 12.** A urgência prevista no art. 148, II, não prejudica a cobrança do empréstimo compulsório instituído, em benefício das Centrais Elétricas Brasileiras S.A. (Eletrobrás), pela Lei nº 4.156, de 28 de novembro de 1962, com as alterações posteriores.
 
 **Art. 35.** O disposto no art. 165, § 7º, será cumprido de forma progressiva, no prazo de até dez anos, distribuindo-se os recursos entre as regiões macroeconômicas em razão proporcional à população, a partir da situação verificada no biênio 1986-87.
 
@@ -5938,7 +5872,7 @@ III - entre o terceiro e o décimo segundo exercício financeiro subsequente ao 
 
 **§ 2º** A revogação não prejudicará os direitos que já tiverem sido adquiridos, àquela data, em relação a incentivos concedidos sob condição e com prazo certo.
 
-**§ 3º** Os incentivos concedidos por convênio entre Estados, celebrados nos termos do art. 23, § 6º, da Constituição de 1967 , com a redação da Emenda Constitucional nº 1, de 17 de outubro de 1969, também deverão ser reavaliados e reconfirmados nos prazos deste artigo.
+**§ 3º** Os incentivos concedidos por convênio entre Estados, celebrados nos termos do art. 23, § 6º, da Constituição de 1967, com a redação da Emenda Constitucional nº 1, de 17 de outubro de 1969, também deverão ser reavaliados e reconfirmados nos prazos deste artigo.
 
 **Art. 42.** Durante 40 (quarenta) anos, a União aplicará dos recursos destinados à irrigação: (Redação dada pela Emenda Constitucional nº 89, de 2015)
 
@@ -5958,7 +5892,7 @@ II - 50% (cinquenta por cento) na Região Nordeste, preferencialmente no Semiár
 
 **§ 3º** As empresas brasileiras referidas no § 1º somente poderão ter autorizações de pesquisa e concessões de lavra ou potenciais de energia hidráulica, desde que a energia e o produto da lavra sejam utilizados nos respectivos processos industriais.
 
-**Art. 45.** Ficam excluídas do monopólio estabelecido pelo art. 177, II, da Constituição as refinarias em funcionamento no País amparadas pelo art. 43 e nas condições do art. 45 da Lei nº 2.004, de 3 de outubro de 1953 .
+**Art. 45.** Ficam excluídas do monopólio estabelecido pelo art. 177, II, da Constituição as refinarias em funcionamento no País amparadas pelo art. 43 e nas condições do art. 45 da Lei nº 2.004, de 3 de outubro de 1953.
 
 **Parágrafo único.** Ficam ressalvados da vedação do art. 177, § 1º, os contratos de risco feitos com a Petróleo Brasileiro S.A. (Petrobrás), para pesquisa de petróleo, que estejam em vigor na data da promulgação da Constituição.
 
@@ -6034,7 +5968,7 @@ II - o aumento do percentual de participação, no capital de instituições fin
 
 **Parágrafo único.** A vedação a que se refere este artigo não se aplica às autorizações resultantes de acordos internacionais, de reciprocidade, ou de interesse do Governo brasileiro.
 
-**Art. 53.** Ao ex-combatente que tenha efetivamente participado de operações bélicas durante a Segunda Guerra Mundial, nos termos da Lei nº 5.315, de 12 de setembro de 1967 , serão assegurados os seguintes direitos:
+**Art. 53.** Ao ex-combatente que tenha efetivamente participado de operações bélicas durante a Segunda Guerra Mundial, nos termos da Lei nº 5.315, de 12 de setembro de 1967, serão assegurados os seguintes direitos:
 
 I - aproveitamento no serviço público, sem a exigência de concurso, com estabilidade;
 
@@ -6050,9 +5984,9 @@ VI - prioridade na aquisição da casa própria, para os que não a possuam ou p
 
 **Parágrafo único.** A concessão da pensão especial do inciso II substitui, para todos os efeitos legais, qualquer outra pensão já concedida ao ex-combatente.
 
-**Art. 54.** Os seringueiros recrutados nos termos do Decreto-Lei nº 5.813, de 14 de setembro de 1943 , e amparados pelo Decreto-Lei nº 9.882, de 16 de setembro de 1946 , receberão, quando carentes, pensão mensal vitalícia no valor de dois salários mínimos.
+**Art. 54.** Os seringueiros recrutados nos termos do Decreto-Lei nº 5.813, de 14 de setembro de 1943, e amparados pelo Decreto-Lei nº 9.882, de 16 de setembro de 1946, receberão, quando carentes, pensão mensal vitalícia no valor de dois salários mínimos.
 
-**§ 1º** O benefício é estendido aos seringueiros que, atendendo a apelo do Governo brasileiro, contribuíram para o esforço de guerra, trabalhando na produção de borracha, na Região Amazônica, durante a Segunda Guerra Mundial.
+**§ 1º** - O benefício é estendido aos seringueiros que, atendendo a apelo do Governo brasileiro, contribuíram para o esforço de guerra, trabalhando na produção de borracha, na Região Amazônica, durante a Segunda Guerra Mundial.
 
 **§ 2º** Os benefícios estabelecidos neste artigo são transferíveis aos dependentes reconhecidamente carentes.
 
@@ -6062,13 +5996,13 @@ VI - prioridade na aquisição da casa própria, para os que não a possuam ou p
 
 **Art. 55.** Até que seja aprovada a lei de diretrizes orçamentárias, trinta por cento, no mínimo, do orçamento da seguridade social, excluído o seguro-desemprego, serão destinados ao setor de saúde.
 
-**Art. 56.** Até que a lei disponha sobre o art. 195, I, a arrecadação decorrente de, no mínimo, cinco dos seis décimos percentuais correspondentes à alíquota da contribuição de que trata o Decreto-Lei nº 1.940, de 25 de maio de 1982 , alterada pelo Decreto-Lei nº 2.049, de 1º de agosto de 1983 , pelo Decreto nº 91.236, de 8 de maio de 1985 , e pela Lei nº 7.611, de 8 de julho de 1987 , passa a integrar a receita da seguridade social, ressalvados, exclusivamente no exercício de 1988, os compromissos assumidos com programas e projetos em andamento.
+**Art. 56.** Até que a lei disponha sobre o art. 195, I, a arrecadação decorrente de, no mínimo, cinco dos seis décimos percentuais correspondentes à alíquota da contribuição de que trata o Decreto-Lei nº 1.940, de 25 de maio de 1982 , alterada pelo Decreto-Lei nº 2.049, de 1º de agosto de 1983 , pelo Decreto nº 91.236, de 8 de maio de 1985 , e pela Lei nº 7.611, de 8 de julho de 1987 , passa a integrar a receita da seguridade social, ressalvados, exclusivamente no exercício de 1988, os compromissos assumidos com programas e projetos em andamento. .
 
 **Art. 57.** Os débitos dos Estados e dos Municípios relativos às contribuições previdenciárias até 30 de junho de 1988 serão liquidados, com correção monetária, em cento e vinte parcelas mensais, dispensados os juros e multas sobre eles incidentes, desde que os devedores requeiram o parcelamento e iniciem seu pagamento no prazo de cento e oitenta dias a contar da promulgação da Constituição.
 
 **§ 1º** O montante a ser pago em cada um dos dois primeiros anos não será inferior a cinco por cento do total do débito consolidado e atualizado, sendo o restante dividido em parcelas mensais de igual valor.
 
-**§ 2º** A liquidação poderá incluir pagamentos na forma de cessão de bens e prestação de serviços, nos termos da Lei nº 7.578, de 23 de dezembro de 198 6.
+**§ 2º** A liquidação poderá incluir pagamentos na forma de cessão de bens e prestação de serviços, nos termos da Lei nº 7.578, de 23 de dezembro de 1986.
 
 **§ 3º** Em garantia do cumprimento do parcelamento, os Estados e os Municípios consignarão, anualmente, nos respectivos orçamentos as dotações necessárias ao pagamento de seus débitos.
 
@@ -6081,8 +6015,6 @@ VI - prioridade na aquisição da casa própria, para os que não a possuam ou p
 **Art. 59.** Os projetos de lei relativos à organização da seguridade social e aos planos de custeio e de benefício serão apresentados no prazo máximo de seis meses da promulgação da Constituição ao Congresso Nacional, que terá seis meses para apreciá-los.
 
 **Parágrafo único.** Aprovados pelo Congresso Nacional, os planos serão implantados progressivamente nos dezoito meses seguintes.
-
-.
 
 **Art. 60.** A complementação da União referida no inciso IV do caput do art. 212-A da Constituição Federal será implementada progressivamente até alcançar a proporção estabelecida no inciso V do caput do mesmo artigo, a partir de 1º de janeiro de 2021, nos seguintes valores mínimos: (Redação dada pela Emenda Constitucional nº 108, de 2020)
 
@@ -6144,11 +6076,11 @@ IV - 2,5 (dois inteiros e cinco décimos) pontos percentuais, no sexto ano. (Red
 
 **Art. 69.** Será permitido aos Estados manter consultorias jurídicas separadas de suas Procuradorias-Gerais ou Advocacias-Gerais, desde que, na data da promulgação da Constituição, tenham órgãos distintos para as respectivas funções.
 
-**Art. 70.** Fica mantida atual competência dos tribunais estaduais até que a mesma seja definida na Constituição do Estado, nos termos do art. 125, § 1º, da Constituição.
+**Art. 70.** Fica mantida atual competência dos tribunais estaduais até a mesma seja definida na Constituição do Estado, nos termos do art. 125, § 1º, da Constituição.
 
 **Art. 71.** É instituído, nos exercícios financeiros de 1994 e 1995, bem assim nos períodos de 01/01/1996 a 30/06/97 e 01/07/97 a 31/12/1999, o Fundo Social de Emergência, com o objetivo de saneamento financeiro da Fazenda Pública Federal e de estabilização econômica, cujos recursos serão aplicados prioritariamente no custeio das ações dos sistemas de saúde e educação, incluindo a complementação de recursos de que trata o § 3º do art. 60 do Ato das Disposições Constitucionais Transitórias, benefícios previdenciários e auxílios assistenciais de prestação continuada, inclusive liquidação de passivo previdenciário, e despesas orçamentárias associadas a programas de relevante interesse econômico e social. (Redação dada pela Emenda Constitucional nº 17, de 1997) (Vide Emenda Constitucional nº 17, de 1997)
 
-**§ 1º** Ao Fundo criado por este artigo não se aplica o disposto na parte final do inciso II do § 9º do art. 165 da Constituição. (Renumerado do parágrafo único, pela Emenda Constitucional nº 10, de 1996) ]
+**§ 1º** Ao Fundo criado por este artigo não se aplica o disposto na parte final do inciso II do § 9º do art. 165 da Constituição. (Renumerado do parágrafo único, pela Emenda Constitucional nº 10, de 1996)
 
 **§ 2º** O Fundo criado por este artigo passa a ser denominado Fundo de Estabilização Fiscal a partir do início do exercício financeiro de 1996. (Incluído pela Emenda Constitucional nº 10, de 1996)
 
@@ -6164,11 +6096,11 @@ III - a parcela do produto da arrecadação resultante da elevação da alíquot
 
 IV - vinte por cento do produto da arrecadação de todos os impostos e contribuições da União, já instituídos ou a serem criados, excetuado o previsto nos incisos I, II e III, observado o disposto nos §§ 3º e 4º; (Redação dada pela Emenda Constitucional nº 10, de 1996)
 
-V - a parcela do produto da arrecadação da contribuição de que trata a Lei Complementar nº 7, de 7 de setembro de 1970, devida pelas pessoas jurídicas a que se refere o inciso III deste artigo, a qual será calculada, nos exercícios financeiros de 1994 a 1995, bem assim nos períodos de 1ºde janeiro de 1996 a 30 de junho de 1997 e de 1º de julho de 1997 a 31 de dezembro de 1999, mediante a aplicação da alíquota de setenta e cinco centésimos por cento, sujeita a alteração por lei ordinária posterior, sobre a receita bruta operacional, como definida na legislação do imposto sobre renda e proventos de qualquer natureza. (Redação dada pela Emenda Constitucional nº 17, de 1997) (Vide Emenda Constitucional nº 17, de 1997)
+V - a parcela do produto da arrecadação da contribuição de que trata a Lei Complementar nº 7, de 7 de setembro de 1970, devida pelas pessoas jurídicas a que se refere o inciso III deste artigo, a qual será calculada, nos exercícios financeiros de 1994 a 1995, bem assim nos períodos de 1º de janeiro de 1996 a 30 de junho de 1997 e de 1º de julho de 1997 a 31 de dezembro de 1999, mediante a aplicação da alíquota de setenta e cinco centésimos por cento, sujeita a alteração por lei ordinária posterior, sobre a receita bruta operacional, como definida na legislação do imposto sobre renda e proventos de qualquer natureza. (Redação dada pela Emenda Constitucional nº 17, de 1997) (Vide Emenda Constitucional nº 17, de 1997)
 
 VI - outras receitas previstas em lei específica. (Incluído pela Emenda Constitucional de Revisão nº 1, de 1994)
 
-**§ 1.º** As alíquotas e a base de cálculo previstas nos incisos III e V aplicar-se-ão a partir do primeiro dia do mês seguinte aos noventa dias posteriores à promulgação desta Emenda. (Incluído pela Emenda Constitucional de Revisão nº 1, de 1994)
+**§ 1º** As alíquotas e a base de cálculo previstas nos incisos III e V aplicar-se-ão a partir do primeiro dia do mês seguinte aos noventa dias posteriores à promulgação desta Emenda. (Incluído pela Emenda Constitucional de Revisão nº 1, de 1994)
 
 **§ 2º** As parcelas de que tratam os incisos I, II, III e V serão previamente deduzidas da base de cálculo de qualquer vinculação ou participação constitucional ou legal, não se lhes aplicando o disposto nos artigos, 159, 212 e 239 da Constituição. (Redação dada pela Emenda Constitucional nº 10, de 1996)
 
@@ -6190,7 +6122,7 @@ VI - outras receitas previstas em lei específica. (Incluído pela Emenda Consti
 
 **§ 4º** A contribuição de que trata este artigo terá sua exigibilidade subordinada ao disposto no art. 195, § 6º, da Constituição, e não poderá ser cobrada por prazo superior a dois anos. (Incluído pela Emenda Constitucional nº 12, de 1996)
 
-**Art. 75.** É prorrogada, por trinta e seis meses, a cobrança da contribuição provisória sobre movimentação ou transmissão de valores e de créditos e direitos de natureza financeira de que trata o art. 74, instituída pela Lei nº 9.311, de 24 de outubro de 1996 , modificada pela Lei nº 9.539, de 12 de dezembro de 1997 , cuja vigência é também prorrogada por idêntico prazo. (Incluído pela Emenda Constitucional nº 21, de 1999)
+**Art. 75.** É prorrogada, por trinta e seis meses, a cobrança da contribuição provisória sobre movimentação ou transmissão de valores e de créditos e direitos de natureza financeira de que trata o art. 74, instituída pela Lei nº 9.311, de 24 de outubro de 1996, modificada pela Lei nº 9.539, de 12 de dezembro de 1997, cuja vigência é também prorrogada por idêntico prazo. (Incluído pela Emenda Constitucional nº 21, de 1999)
 
 **§ 1º** Observado o disposto no § 6º do art. 195 da Constituição Federal, a alíquota da contribuição será de trinta e oito centésimos por cento, nos primeiros doze meses, e de trinta centésimos, nos meses subseqüentes, facultado ao Poder Executivo reduzi-la total ou parcialmente, nos limites aqui definidos. (Incluído pela Emenda Constitucional nº 21, de 1999)
 
@@ -6198,13 +6130,11 @@ VI - outras receitas previstas em lei específica. (Incluído pela Emenda Consti
 
 **§ 3º** É a União autorizada a emitir títulos da dívida pública interna, cujos recursos serão destinados ao custeio da saúde e da previdência social, em montante equivalente ao produto da arrecadação da contribuição, prevista e não realizada em 1999. (Incluído pela Emenda Constitucional nº 21, de 1999) (Vide ADIN nº 2.031-5)
 
-A
-
 **Art. 76.** São desvinculados de órgão, fundo ou despesa, até 31 de dezembro de 2032, 30% (trinta por cento) da arrecadação da União relativa às contribuições sociais, sem prejuízo do pagamento das despesas do Regime Geral de Previdência Social, às contribuições de intervenção no domínio econômico, às taxas e às receitas patrimoniais, já instituídas ou que vierem a ser criadas até a referida data. (Redação dada pela Emenda Constitucional nº 135, de 2024)
 
 **§ 1º** (Revogado). (Redação dada pela Emenda constitucional nº 93, de 2016) Produção de efeitos
 
-**§ 2°** Excetua-se da desvinculação de que trata o caput a arrecadação da contribuição social do salário-educação a que se refere o § 5º do art. 212 da Constituição Federal . (Redação dada pela Emenda Constitucional nº 68, de 2011).
+**§ 2°** Excetua-se da desvinculação de que trata o caput a arrecadação da contribuição social do salário-educação a que se refere o § 5º do art. 212 da Constituição Federal. (Redação dada pela Emenda Constitucional nº 68, de 2011).
 
 **§ 3º** (Revogado). (Redação dada pela Emenda constitucional nº 93, de 2016) Produção de efeitos
 
@@ -6248,15 +6178,15 @@ IV - fundos instituídos pelo Tribunal de Contas do Município. (Incluído dada 
 
 **Art. 77.** Até o exercício financeiro de 2004, os recursos mínimos aplicados nas ações e serviços públicos de saúde serão equivalentes: (Incluído pela Emenda Constitucional nº 29, de 2000)
 
-I - no caso da União: (Incluído pela Emenda Constitucional nº 29, de 2000)
+I – no caso da União: (Incluído pela Emenda Constitucional nº 29, de 2000)
 
-a ) no ano 2000, o montante empenhado em ações e serviços públicos de saúde no exercício financeiro de 1999 acrescido de, no mínimo, cinco por cento; (Incluído pela Emenda Constitucional nº 29, de 2000)
+a) no ano 2000, o montante empenhado em ações e serviços públicos de saúde no exercício financeiro de 1999 acrescido de, no mínimo, cinco por cento; (Incluído pela Emenda Constitucional nº 29, de 2000)
 
-b ) do ano 2001 ao ano 2004, o valor apurado no ano anterior, corrigido pela variação nominal do Produto Interno Bruto - PIB; (Incluído pela Emenda Constitucional nº 29, de 2000)
+b) do ano 2001 ao ano 2004, o valor apurado no ano anterior, corrigido pela variação nominal do Produto Interno Bruto – PIB; (Incluído pela Emenda Constitucional nº 29, de 2000)
 
-II - no caso dos Estados e do Distrito Federal, doze por cento do produto da arrecadação dos impostos a que se refere o art. 155 e dos recursos de que tratam os arts. 157 e 159, inciso I, alínea a , e inciso II, deduzidas as parcelas que forem transferidas aos respectivos Municípios; e (Incluído pela Emenda Constitucional nº 29, de 2000)
+II – no caso dos Estados e do Distrito Federal, doze por cento do produto da arrecadação dos impostos a que se refere o art. 155 e dos recursos de que tratam os arts. 157 e 159, inciso I, alínea a, e inciso II, deduzidas as parcelas que forem transferidas aos respectivos Municípios; e (Incluído pela Emenda Constitucional nº 29, de 2000)
 
-III - no caso dos Municípios e do Distrito Federal, quinze por cento do produto da arrecadação dos impostos a que se refere o art. 156 e dos recursos de que tratam os arts. 158 e 159, inciso I, alínea b e § 3º. (Incluído pela Emenda Constitucional nº 29, de 2000)
+III – no caso dos Municípios e do Distrito Federal, quinze por cento do produto da arrecadação dos impostos a que se refere o art. 156 e dos recursos de que tratam os arts. 158 e 159, inciso I, alínea b e § 3º. (Incluído pela Emenda Constitucional nº 29, de 2000)
 
 **§ 1º** Os Estados, o Distrito Federal e os Municípios que apliquem percentuais inferiores aos fixados nos incisos II e III deverão elevá-los gradualmente, até o exercício financeiro de 2004, reduzida a diferença à razão de, pelo menos, um quinto por ano, sendo que, a partir de 2000, a aplicação será de pelo menos sete por cento. (Incluído pela Emenda Constitucional nº 29, de 2000)
 
@@ -6282,17 +6212,17 @@ III - no caso dos Municípios e do Distrito Federal, quinze por cento do produto
 
 **Art. 80.** Compõem o Fundo de Combate e Erradicação da Pobreza: (Incluído pela Emenda Constitucional nº 31, de 2000) (Vide Emenda Constitucional nº 67, de 2010)
 
-I - a parcela do produto da arrecadação correspondente a um adicional de oito centésimos por cento, aplicável de 18 de junho de 2000 a 17 de junho de 2002, na alíquota da contribuição social de que trata o art. 75 do Ato das Disposições Constitucionais Transitórias; (Incluído pela Emenda Constitucional nº 31, de 2000)
+I – a parcela do produto da arrecadação correspondente a um adicional de oito centésimos por cento, aplicável de 18 de junho de 2000 a 17 de junho de 2002, na alíquota da contribuição social de que trata o art. 75 do Ato das Disposições Constitucionais Transitórias; (Incluído pela Emenda Constitucional nº 31, de 2000)
 
-II - a parcela do produto da arrecadação correspondente a um adicional de cinco pontos percentuais na alíquota do Imposto sobre Produtos Industrializados - IPI, ou do imposto que vier a substituí-lo, incidente sobre produtos supérfluos e aplicável até a extinção do Fundo; (Incluído pela Emenda Constitucional nº 31, de 2000) (Vide Emenda Constitucional nº 132, de 2023) Vigência
+II – a parcela do produto da arrecadação correspondente a um adicional de cinco pontos percentuais na alíquota do Imposto sobre Produtos Industrializados – IPI, ou do imposto que vier a substituí-lo, incidente sobre produtos supérfluos e aplicável até a extinção do Fundo; (Incluído pela Emenda Constitucional nº 31, de 2000) (Vide Emenda Constitucional nº 132, de 2023) Vigência
 
-III - o produto da arrecadação do imposto de que trata o art. 153, inciso VII, da Constituição; (Incluído pela Emenda Constitucional nº 31, de 2000)
+III – o produto da arrecadação do imposto de que trata o art. 153, inciso VII, da Constituição; (Incluído pela Emenda Constitucional nº 31, de 2000)
 
-IV - dotações orçamentárias; (Incluído pela Emenda Constitucional nº 31, de 2000)
+IV – dotações orçamentárias; (Incluído pela Emenda Constitucional nº 31, de 2000)
 
-V- doações, de qualquer natureza, de pessoas físicas ou jurídicas do País ou do exterior; (Incluído pela Emenda Constitucional nº 31, de 2000)
+V– doações, de qualquer natureza, de pessoas físicas ou jurídicas do País ou do exterior; (Incluído pela Emenda Constitucional nº 31, de 2000)
 
-VI - outras receitas, a serem definidas na regulamentação do referido Fundo. (Incluído pela Emenda Constitucional nº 31, de 2000)
+VI – outras receitas, a serem definidas na regulamentação do referido Fundo. (Incluído pela Emenda Constitucional nº 31, de 2000)
 
 **§ 1º** Aos recursos integrantes do Fundo de que trata este artigo não se aplica o disposto nos arts. 159 e 167, inciso IV, da Constituição, assim como qualquer desvinculação de recursos orçamentários. (Incluído pela Emenda Constitucional nº 31, de 2000)
 
@@ -6312,11 +6242,11 @@ VI - outras receitas, a serem definidas na regulamentação do referido Fundo. (
 
 **§ 2º** Para o financiamento dos Fundos Municipais, poderá ser criado adicional de até meio ponto percentual na alíquota do Imposto sobre serviços ou do imposto que vier a substituí-lo, sobre serviços supérfluos. (Incluído pela Emenda Constitucional nº 31, de 2000) (Vide Emenda Constitucional nº 132, de 2023) Vigência
 
-**Art. 83.** Lei federal definirá os produtos e serviços supérfluos a que se referem os arts. 80, II, e 82, § 2º. (Redação dada pela Emenda Constitucional nº 42, de 19.12.2003) (Vide Emenda Constitucional nº 132, de 2023) Vigência
+**Art. 83.** Lei federal definirá os produtos e serviços supérfluos a que se referem os arts. 80, II, e 82, § 2º . (Redação dada pela Emenda Constitucional nº 42, de 19.12.2003) (Vide Emenda Constitucional nº 132, de 2023) Vigência
 
 **Art. 84.** A contribuição provisória sobre movimentação ou transmissão de valores e de créditos e direitos de natureza financeira, prevista nos arts. 74, 75 e 80, I, deste Ato das Disposições Constitucionais Transitórias, será cobrada até 31 de dezembro de 2004. (Incluído pela Emenda Constitucional nº 37, de 2002)
 
-**§ 1º** Fica prorrogada até a data referida no caput deste artigo, a vigência da Lei nº 9.311, de 24 de outubro de 1996 , e suas alterações. (Incluído pela Emenda Constitucional nº 37, de 2002)
+**§ 1º** Fica prorrogada, até a data referida no caput deste artigo, a vigência da Lei nº 9.311, de 24 de outubro de 1996, e suas alterações. (Incluído pela Emenda Constitucional nº 37, de 2002)
 
 **§ 2º** Do produto da arrecadação da contribuição social de que trata este artigo será destinada a parcela correspondente à alíquota de: (Incluído pela Emenda Constitucional nº 37, de 2002)
 
@@ -6336,9 +6266,9 @@ II - (Revogado pela Emenda Constitucional nº 42, de 19.12.2003)
 
 I - em contas correntes de depósito especialmente abertas e exclusivamente utilizadas para operações de: (Incluído pela Emenda Constitucional nº 37, de 2002) (Vide Lei nº 10.982, de 2004)
 
-a) câmaras e prestadoras de serviços de compensação e de liquidação de que trata o parágrafo único do art. 2º da Lei nº 10.214, de 27 de março de 2001 ; (Incluído pela Emenda Constitucional nº 37, de 2002)
+a) câmaras e prestadoras de serviços de compensação e de liquidação de que trata o parágrafo único do art. 2º da Lei nº 10.214, de 27 de março de 2001; (Incluído pela Emenda Constitucional nº 37, de 2002)
 
-b) companhias securitizadoras de que trata a Lei nº 9.514, de 20 de novembro de 1997 ; (Incluído pela Emenda Constitucional nº 37, de 2002)
+b) companhias securitizadoras de que trata a Lei nº 9.514, de 20 de novembro de 1997; (Incluído pela Emenda Constitucional nº 37, de 2002)
 
 c) sociedades anônimas que tenham por objeto exclusivo a aquisição de créditos oriundos de operações praticadas no mercado financeiro; (Incluído pela Emenda Constitucional nº 37, de 2002)
 
@@ -6362,7 +6292,7 @@ I - ter sido objeto de emissão de precatórios judiciários; (Incluído pela Em
 
 II - ter sido definidos como de pequeno valor pela lei de que trata o § 3º do art. 100 da Constituição Federal ou pelo art. 87 deste Ato das Disposições Constitucionais Transitórias; (Incluído pela Emenda Constitucional nº 37, de 2002)
 
-III - estar, total ou parcialmente, pendentes de pagamento na data da publicação desta Emenda Constitucional. (Incluído pela Emenda Constitucional nº 37, de 2002)
+III - estar, total ou parcialmente, pendentes de pagamento na data da publicação desta Emenda Constitucional . (Incluído pela Emenda Constitucional nº 37, de 2002)
 
 **§ 1º** Os débitos a que se refere o caput deste artigo, ou os respectivos saldos, serão pagos na ordem cronológica de apresentação dos respectivos precatórios, com precedência sobre os de maior valor. (Incluído pela Emenda Constitucional nº 37, de 2002)
 
@@ -6380,11 +6310,11 @@ II - trinta salários-mínimos, perante a Fazenda dos Municípios. (Incluído pe
 
 **Art. 88.** Enquanto lei complementar não disciplinar o disposto nos incisos I e III do § 3º do art. 156 da Constituição Federal, o imposto a que se refere o inciso III do caput do mesmo artigo: (Incluído pela Emenda Constitucional nº 37, de 2002)
 
-I - terá alíquota mínima de dois por cento, exceto para os serviços a que se referem os itens 32, 33 e 34 da Lista de Serviços anexa ao Decreto-Lei nº 406, de 31 de dezembro de 1968 ; (Incluído pela Emenda Constitucional nº 37, de 2002)
+I – terá alíquota mínima de dois por cento, exceto para os serviços a que se referem os itens 32, 33 e 34 da Lista de Serviços anexa ao Decreto-Lei nº 406, de 31 de dezembro de 1968; (Incluído pela Emenda Constitucional nº 37, de 2002)
 
-II - não será objeto de concessão de isenções, incentivos e benefícios fiscais, que resulte, direta ou indiretamente, na redução da alíquota mínima estabelecida no inciso I. (Incluído pela Emenda Constitucional nº 37, de 2002)
+II – não será objeto de concessão de isenções, incentivos e benefícios fiscais, que resulte, direta ou indiretamente, na redução da alíquota mínima estabelecida no inciso I. (Incluído pela Emenda Constitucional nº 37, de 2002)
 
-**Art. 89.** Os integrantes da carreira policial militar e os servidores municipais do ex-Território Federal de Rondônia que, comprovadamente, se encontravam no exercício regular de suas funções prestando serviço àquele ex-Território na data em que foi transformado em Estado, bem como os servidores e os policiais militares alcançados pelo disposto no art. 36 da Lei Complementar nº 41, de 22 de dezembro de 1981 , e aqueles admitidos regularmente nos quadros do Estado de Rondônia até a data de posse do primeiro Governador eleito, em 15 de março de 1987, constituirão, mediante opção, quadro em extinção da administração federal, assegurados os direitos e as vantagens a eles inerentes, vedado o pagamento, a qualquer título, de diferenças remuneratórias. (Redação dada pela Emenda Constitucional nº 60, de 2009)
+**Art. 89.** Os integrantes da carreira policial militar e os servidores municipais do ex-Território Federal de Rondônia que, comprovadamente, se encontravam no exercício regular de suas funções prestando serviço àquele ex-Território na data em que foi transformado em Estado, bem como os servidores e os policiais militares alcançados pelo disposto no art. 36 da Lei Complementar nº 41, de 22 de dezembro de 1981, e aqueles admitidos regularmente nos quadros do Estado de Rondônia até a data de posse do primeiro Governador eleito, em 15 de março de 1987, constituirão, mediante opção, quadro em extinção da administração federal, assegurados os direitos e as vantagens a eles inerentes, vedado o pagamento, a qualquer título, de diferenças remuneratórias. (Redação dada pela Emenda Constitucional nº 60, de 2009) (Vide Lei nº 13.681, de 2018)
 
 **§ 1º** Os membros da Polícia Militar continuarão prestando serviços ao Estado de Rondônia, na condição de cedidos, submetidos às corporações da Polícia Militar, observadas as atribuições de função compatíveis com o grau hierárquico. (Incluído pela Emenda Constitucional nº 60, de 2009)
 
@@ -6392,19 +6322,11 @@ II - não será objeto de concessão de isenções, incentivos e benefícios fis
 
 **Art. 90.** O prazo previsto no caput do art. 84 deste Ato das Disposições Constitucionais Transitórias fica prorrogado até 31 de dezembro de 2007. (Incluído pela Emenda Constitucional nº 42, de 19.12.2003)
 
-**§ 1º** Fica prorrogada, até a data referida no caput deste artigo, a vigência da Lei nº 9.311, de 24 de outubro de 1996 , e suas alterações. (Incluído pela Emenda Constitucional nº 42, de 19.12.2003)
+**§ 1º** Fica prorrogada, até a data referida no caput deste artigo, a vigência da Lei nº 9.311, de 24 de outubro de 1996, e suas alterações. (Incluído pela Emenda Constitucional nº 42, de 19.12.2003)
 
 **§ 2º** Até a data referida no caput deste artigo, a alíquota da contribuição de que trata o art. 84 deste Ato das Disposições Constitucionais Transitórias será de trinta e oito centésimos por cento. (Incluído pela Emenda Constitucional nº 42, de 19.12.2003)
 
 **Art. 91.** (Revogado pela Emenda Constitucional nº 109, de 2021)
-
-**§ 1º** (Revogado pela Emenda Constitucional nº 109, de 2021)
-
-**§ 2º** (Revogado pela Emenda Constitucional nº 109, de 2021)
-
-**§ 3º** (Revogado pela Emenda Constitucional nº 109, de 2021)
-
-**§ 4º** (Revogado pela Emenda Constitucional nº 109, de 2021)
 
 **Art. 92.** São acrescidos dez anos ao prazo fixado no art. 40 deste Ato das Disposições Constitucionais Transitórias. (Incluído pela Emenda Constitucional nº 42, de 19.12.2003) (Vide Decreto nº 7.212, de 2010)
 
@@ -6558,7 +6480,7 @@ IV - para o ano de 2018: 80% (oitenta por cento) para o Estado de destino e 20% 
 
 V - a partir do ano de 2019: 100% (cem por cento) para o Estado de destino. (Incluído pela Emenda Constitucional nº 87, de 2015)
 
-**Art. 100.** Até que entre em vigor a lei complementar de que trata o inciso II do § 1º do art. 40 da Constituição Federal , os Ministros do Supremo Tribunal Federal, dos Tribunais Superiores e do Tribunal de Contas da União aposentar-se-ão, compulsoriamente, aos 75 (setenta e cinco) anos de idade, nas condições do art. 52 da Constituição Federal . (Incluído pela Emenda Constitucional nº 88, de 2015)
+**Art. 100.** Até que entre em vigor a lei complementar de que trata o inciso II do § 1º do art. 40 da Constituição Federal, os Ministros do Supremo Tribunal Federal, dos Tribunais Superiores e do Tribunal de Contas da União aposentar-se-ão, compulsoriamente, aos 75 (setenta e cinco) anos de idade, nas condições do art. 52 da Constituição Federal. (Incluído pela Emenda Constitucional nº 88, de 2015)
 
 **Art. 101.** Os Estados, o Distrito Federal e os Municípios que, em 25 de março de 2015, se encontravam em mora no pagamento de seus precatórios quitarão, até 31 de dezembro de 2029, seus débitos vencidos e os que vencerão dentro desse período, atualizados pelo Índice Nacional de Preços ao Consumidor Amplo Especial (IPCA-E), ou por outro índice que venha a substituí-lo, depositando mensalmente em conta especial do Tribunal de Justiça local, sob única e exclusiva administração deste, 1/12 (um doze avos) do valor calculado percentualmente sobre suas receitas correntes líquidas apuradas no segundo mês anterior ao mês de pagamento, em percentual suficiente para a quitação de seus débitos e, ainda que variável, nunca inferior, em cada exercício, ao percentual praticado na data da entrada em vigor do regime especial a que se refere este artigo, em conformidade com plano de pagamento a ser anualmente apresentado ao Tribunal de Justiça local. (Redação dada pela Emenda Constitucional nº 109, de 2021)
 
@@ -6584,16 +6506,6 @@ IV - a totalidade dos depósitos em precatórios e requisições diretas de paga
 
 **§ 3º** Os recursos adicionais previstos nos incisos I, II e IV do § 2º deste artigo serão transferidos diretamente pela instituição financeira depositária para a conta especial referida no caput deste artigo, sob única e exclusiva administração do Tribunal de Justiça local, e essa transferência deverá ser realizada em até sessenta dias contados a partir da entrada em vigor deste parágrafo, sob pena de responsabilização pessoal do dirigente da instituição financeira por improbidade. (Incluído pela Emenda constitucional nº 99, de 2017)
 
-**§ 4º** (Revogado pela Emenda Constitucional nº 109, de 2021)
-
-I - (Revogado pela Emenda Constitucional nº 109, de 2021)
-
-II - (Revogado pela Emenda Constitucional nº 109, de 2021)
-
-III - (Revogado pela Emenda Constitucional nº 109, de 2021)
-
-IV - (Revogado pela Emenda Constitucional nº 109, de 2021)
-
 **§ 4º** (Revogado). (Redação dada pela Emenda Constitucional nº 109, de 2021)
 
 I - (revogado); (Redação dada pela Emenda Constitucional nº 109, de 2021)
@@ -6604,7 +6516,7 @@ III - (revogado); (Redação dada pela Emenda Constitucional nº 109, de 2021)
 
 IV - (revogado). (Redação dada pela Emenda Constitucional nº 109, de 2021)
 
-**§ 5º** Os empréstimos de que trata o inciso III do § 2º deste artigo poderão ser destinados, por meio de ato do Poder Executivo, exclusivamente ao pagamento de precatórios por acordo direto com os credores, na forma do disposto no inciso III do § 8º do art. 97 deste Ato das Disposições Constitucionais Transitórias. (Incluído pela Emenda Constitucional nº 113, de 2021) (Vide ADI 7047) (Vide ADI 7064)
+**§ 5º** Os empréstimos de que trata o inciso III do § 2º deste artigo poderão ser destinados, por meio de ato do Poder Executivo, exclusivamente ao pagamento de precatórios por acordo direto com os credores, na forma do disposto no inciso III do § 8º do art. 97 deste Ato das Disposições Constitucionais Transitórias. (Incluído pela Emenda Constitucional nº 113, de 2021) (Vide ADI 7047)
 
 **§ 6º** Aplica-se ao regime de pagamento de precatórios descrito no caput deste artigo o disposto nos §§ 23 a 30 do art. 100 da Constituição Federal. (Incluído pela Emenda Constitucional nº 136, de 2025)
 
@@ -6646,7 +6558,7 @@ IV - os Estados e o Comitê Gestor do Imposto sobre Bens e Serviços reterão os
 
 I - no exercício de 2022, o espaço fiscal decorrente da diferença entre o valor dos precatórios expedidos e o limite estabelecido no caput deste artigo deverá ser destinado ao programa previsto no parágrafo único do art. 6º e à seguridade social, nos termos do art. 194, ambos da Constituição Federal; (Incluído pela Emenda Constitucional nº 114, de 2021)
 
-II - no exercício de 2023, pela diferença entre o total de precatórios expedidos entre 2 de julho de 2021 e 2 de abril de 2022 e o limite de que trata o caput deste artigo válido para o exercício de 2023; e (Incluído pela Emenda Constitucional nº 114, de 2021) (Vide MI 7300) (Vide ADI 7064)
+II - no exercício de 2023, pela diferença entre o total de precatórios expedidos entre 2 de julho de 2021 e 2 de abril de 2022 e o limite de que trata o caput deste artigo válido para o exercício de 2023; e (Incluído pela Emenda Constitucional nº 114, de 2021) (Vide ADI 7064)
 
 III - nos exercícios de 2024 a 2026, pela diferença entre o total de precatórios expedidos entre 3 de abril de dois anos anteriores e 2 de abril do ano anterior ao exercício e o limite de que trata o caput deste artigo válido para o mesmo exercício. (Incluído pela Emenda Constitucional nº 114, de 2021) (Vide ADI 7064)
 
@@ -6658,7 +6570,7 @@ III - nos exercícios de 2024 a 2026, pela diferença entre o total de precatór
 
 **§ 4º** O Conselho Nacional de Justiça regulamentará a atuação dos Presidentes dos Tribunais competentes para o cumprimento deste artigo. (Incluído pela Emenda Constitucional nº 114, de 2021)
 
-**§ 5º** Não se incluem no limite estabelecido neste artigo as despesas para fins de cumprimento do disposto nos §§ 11, 20 e 21 do art. 100 da Constituição Federal e no § 3º deste artigo, bem como a atualização monetária dos precatórios inscritos no exercício. (Incluído pela Emenda Constitucional nº 114, de 2021) (Vide ADI 7064)
+**§ 5º** Não se incluem no limite estabelecido neste artigo as despesas para fins de cumprimento do disposto nos §§ 11, 20 e 21 do art. 100 da Constituição Federal e no § 3º deste artigo, bem como a atualização monetária dos precatórios inscritos no exercício. (Incluído pela Emenda Constitucional nº 114, de 2021)(Vide ADI 7064)
 
 **§ 6º** Não se incluem nos limites estabelecidos no art. 107 deste Ato das Disposições Constitucionais Transitórias o previsto nos §§ 11, 20 e 21 do art. 100 da Constituição Federal e no § 3º deste artigo. (Incluído pela Emenda Constitucional nº 114, de 2021) (Vide ADI 7064)
 
@@ -6677,10 +6589,6 @@ IV - demais precatórios de natureza alimentícia além do valor previsto no inc
 V - demais precatórios. (Incluído pela Emenda Constitucional nº 114, de 2021)
 
 **Art. 108.** (Revogado pela Emenda Constitucional nº 113, de 2021)
-
-**Parágrafo único.** (Revogado pela Emenda Constitucional nº 113, de 2021)
-
-A
 
 **Art. 109.** (Revogado pela Emenda Constitucional nº 126, de 2022)
 
@@ -7058,7 +6966,7 @@ IV - a contribuição instituída nos termos do caput será extinta em 31 de dez
 
 Brasília, 5 de outubro de 1988.
 
-Ulysses Guimarães, Presidente - Mauro Benevides , 1.º Vice-Presidente - Jorge Arbage , 2.º Vice-Presidente - Marcelo Cordeiro , 1.º Secretário - Mário Maia , 2.º Secretário - Arnaldo Faria de Sá , 3.º Secretário - Benedita da Silva , 1.º Suplente de Secretário - Luiz Soyer , 2.º Suplente de Secretário - Sotero Cunha , 3.º Suplente de Secretário - Bernardo Cabral , Relator Geral - Adolfo Oliveira , Relator Adjunto - Antônio Carlos Konder Reis , Relator Adjunto - José Fogaça , Relator Adjunto - Abigail Feitosa - Acival Gomes - Adauto Pereira - Ademir Andrade - Adhemar de Barros Filho - Adroaldo Streck - Adylson Motta - Aécio de Borba - Aécio Neves - Affonso Camargo - Afif Domingos - Afonso Arinos - Afonso Sancho - Agassiz Almeida - Agripino de Oliveira Lima - Airton Cordeiro - Airton Sandoval - Alarico Abib - Albano Franco - Albérico Cordeiro - Albérico Filho - Alceni Guerra - Alcides Saldanha - Aldo Arantes - Alércio Dias - Alexandre Costa - Alexandre Puzyna - Alfredo Campos - Almir Gabriel - Aloisio Vasconcelos - Aloysio Chaves - Aloysio Teixeira - Aluizio Bezerra - Aluízio Campos - Álvaro Antônio - Álvaro Pacheco - Álvaro Valle - Alysson Paulinelli - Amaral Netto - Amaury Müller - Amilcar Moreira - Ângelo Magalhães - Anna Maria Rattes - Annibal Barcellos - Antero de Barros - Antônio Câmara - Antônio Carlos Franco - Antonio Carlos Mendes Thame - Antônio de Jesus - Antonio Ferreira - Antonio Gaspar - Antonio Mariz - Antonio Perosa - Antônio Salim Curiati - Antonio Ueno - Arnaldo Martins - Arnaldo Moraes - Arnaldo Prieto - Arnold Fioravante - Arolde de Oliveira - Artenir Werner - Artur da Távola - Asdrubal Bentes - Assis Canuto - Átila Lira - Augusto Carvalho - Áureo Mello - Basílio Villani - Benedicto Monteiro - Benito Gama - Beth Azize - Bezerra de Melo - Bocayuva Cunha - Bonifácio de Andrada - Bosco França - Brandão Monteiro - Caio Pompeu - Carlos Alberto - Carlos Alberto Caó - Carlos Benevides - Carlos Cardinal - Carlos Chiarelli - Carlos Cotta - Carlos De’Carli - Carlos Mosconi - Carlos Sant’Anna - Carlos Vinagre - Carlos Virgílio - Carrel Benevides - Cássio Cunha Lima - Célio de Castro - Celso Dourado - César Cals Neto - César Maia - Chagas Duarte - Chagas Neto - Chagas Rodrigues - Chico Humberto - Christóvam Chiaradia - Cid Carvalho - Cid Sabóia de Carvalho - Cláudio Ávila - Cleonâncio Fonseca - Costa Ferreira - Cristina Tavares - Cunha Bueno - Dálton Canabrava - Darcy Deitos - Darcy Pozza - Daso Coimbra - Davi Alves Silva - Del Bosco Amaral - Delfim Netto - Délio Braz - Denisar Arneiro - Dionisio Dal Prá - Dionísio Hage - Dirce Tutu Quadros - Dirceu Carneiro - Divaldo Suruagy - Djenal Gonçalves - Domingos Juvenil - Domingos Leonelli - Doreto Campanari - Edésio Frias - Edison Lobão - Edivaldo Motta - Edme Tavares - Edmilson Valentim - Eduardo Bonfim - Eduardo Jorge - Eduardo Moreira - Egídio Ferreira Lima - Elias Murad - Eliel Rodrigues - Eliézer Moreira - Enoc Vieira - Eraldo Tinoco - Eraldo Trindade - Erico Pegoraro - Ervin Bonkoski - Etevaldo Nogueira - Euclides Scalco - Eunice Michiles - Evaldo Gonçalves - Expedito Machado - Ézio Ferreira - Fábio Feldmann - Fábio Raunheitti - Farabulini Júnior - Fausto Fernandes - Fausto Rocha - Felipe Mendes - Feres Nader - Fernando Bezerra Coelho - Fernando Cunha - Fernando Gasparian - Fernando Gomes - Fernando Henrique Cardoso - Fernando Lyra - Fernando Santana - Fernando Velasco - Firmo de Castro - Flavio Palmier da Veiga - Flávio Rocha - Florestan Fernandes - Floriceno Paixão - França Teixeira - Francisco Amaral - Francisco Benjamim - Francisco Carneiro - Francisco Coelho - Francisco Diógenes - Francisco Dornelles - Francisco Küster - Francisco Pinto - Francisco Rollemberg - Francisco Rossi - Francisco Sales - Furtado Leite - Gabriel Guerreiro - Gandi Jamil - Gastone Righi - Genebaldo Correia - Genésio Bernardino - Geovani Borges - Geraldo Alckmin Filho - Geraldo Bulhões - Geraldo Campos - Geraldo Fleming - Geraldo Melo - Gerson Camata - Gerson Marcondes - Gerson Peres - Gidel Dantas - Gil César - Gilson Machado - Gonzaga Patriota - Guilherme Palmeira - Gumercindo Milhomem - Gustavo de Faria - Harlan Gadelha - Haroldo Lima - Haroldo Sabóia - Hélio Costa - Hélio Duque - Hélio Manhães - Hélio Rosas - Henrique Córdova - Henrique Eduardo Alves - Heráclito Fortes - Hermes Zaneti - Hilário Braun - Homero Santos - Humberto Lucena - Humberto Souto - Iberê Ferreira - Ibsen Pinheiro - Inocêncio Oliveira - Irajá Rodrigues - Iram Saraiva - Irapuan Costa Júnior - Irma Passoni - Ismael Wanderley - Israel Pinheiro - Itamar Franco - Ivo Cersósimo - Ivo Lech - Ivo Mainardi - Ivo Vanderlinde - Jacy Scanagatta - Jairo Azi - Jairo Carneiro - Jalles Fontoura - Jamil Haddad - Jarbas Passarinho - Jayme Paliarin - Jayme Santana - Jesualdo Cavalcanti - Jesus Tajra - Joaci Góes - João Agripino - João Alves - João Calmon - João Carlos Bacelar - João Castelo - João Cunha - João da Mata - João de Deus Antunes - João Herrmann Neto - João Lobo - João Machado Rollemberg - João Menezes - João Natal - João Paulo - João Rezek - Joaquim Bevilácqua - Joaquim Francisco - Joaquim Hayckel - Joaquim Sucena - Jofran Frejat - Jonas Pinheiro - Jonival Lucas - Jorge Bornhausen - Jorge Hage - Jorge Leite - Jorge Uequed - Jorge Vianna - José Agripino - José Camargo - José Carlos Coutinho - José Carlos Grecco - José Carlos Martinez - José Carlos Sabóia - José Carlos Vasconcelos - José Costa - José da Conceição - José Dutra - José Egreja - José Elias - José Fernandes - José Freire - José Genoíno - José Geraldo - José Guedes - José Ignácio Ferreira - José Jorge - José Lins - José Lourenço - José Luiz de Sá - José Luiz Maia - José Maranhão - José Maria Eymael - José Maurício - José Melo - José Mendonça Bezerra - José Moura - José Paulo Bisol - José Queiroz - José Richa - José Santana de Vasconcellos - José Serra - José Tavares - José Teixeira - José Thomaz Nonô - José Tinoco - José Ulísses de Oliveira - José Viana - José Yunes - Jovanni Masini - Juarez Antunes - Júlio Campos - Júlio Costamilan - Jutahy Júnior - Jutahy Magalhães - Koyu Iha - Lael Varella - Lavoisier Maia - Leite Chaves - Lélio Souza - Leopoldo Peres - Leur Lomanto - Levy Dias - Lézio Sathler - Lídice da Mata - Louremberg Nunes Rocha - Lourival Baptista - Lúcia Braga - Lúcia Vânia - Lúcio Alcântara - Luís Eduardo - Luís Roberto Ponte - Luiz Alberto Rodrigues - Luiz Freire - Luiz Gushiken - Luiz Henrique - Luiz Inácio Lula da Silva - Luiz Leal - Luiz Marques - Luiz Salomão - Luiz Viana - Luiz Viana Neto - Lysâneas Maciel - Maguito Vilela - Maluly Neto - Manoel Castro - Manoel Moreira - Manoel Ribeiro - Mansueto de Lavor - Manuel Viana - Márcia Kubitschek - Márcio Braga - Márcio Lacerda - Marco Maciel - Marcondes Gadelha - Marcos Lima - Marcos Queiroz - Maria de Lourdes Abadia - Maria Lúcia - Mário Assad - Mário Covas - Mário de Oliveira - Mário Lima - Marluce Pinto - Matheus Iensen - Mattos Leão - Maurício Campos - Maurício Correa - Maurício Fruet - Maurício Nasser - Maurício Pádua - Maurílio Ferreira Lima - Mauro Borges - Mauro Campos - Mauro Miranda - Mauro Sampaio - Max Rosenmann - Meira Filho - Melo Freire - Mello Reis - Mendes Botelho - Mendes Canale - Mendes Ribeiro - Messias Góis - Messias Soares - Michel Temer - Milton Barbosa - Milton Lima - Milton Reis - Miraldo Gomes - Miro Teixeira - Moema São Thiago - Moysés Pimentel - Mozarildo Cavalcanti - Mussa Demes - Myrian Portella - Nabor Júnior - Naphtali Alves de Souza - Narciso Mendes - Nelson Aguiar - Nelson Carneiro - Nelson Jobim - Nelson Sabrá - Nelson Seixas - Nelson Wedekin - Nelton Friedrich - Nestor Duarte - Ney Maranhão - Nilso Sguarezi - Nilson Gibson - Nion Albernaz - Noel de Carvalho - Nyder Barbosa - Octávio Elísio - Odacir Soares - Olavo Pires - Olívio Dutra - Onofre Corrêa - Orlando Bezerra - Orlando Pacheco - Oscar Corrêa - Osmar Leitão - Osmir Lima - Osmundo Rebouças - Osvaldo Bender - Osvaldo Coelho - Osvaldo Macedo - Osvaldo Sobrinho - Oswaldo Almeida - Oswaldo Trevisan - Ottomar Pinto - Paes de Andrade - Paes Landim - Paulo Delgado - Paulo Macarini - Paulo Marques - Paulo Mincarone - Paulo Paim - Paulo Pimentel - Paulo Ramos - Paulo Roberto - Paulo Roberto Cunha - Paulo Silva - Paulo Zarzur - Pedro Canedo - Pedro Ceolin - Percival Muniz - Pimenta da Veiga - Plínio Arruda Sampaio - Plínio Martins - Pompeu de Sousa - Rachid Saldanha Derzi - Raimundo Bezerra - Raimundo Lira - Raimundo Rezende - Raquel Cândido - Raquel Capiberibe - Raul Belém - Raul Ferraz - Renan Calheiros - Renato Bernardi - Renato Johnsson - Renato Vianna - Ricardo Fiuza - Ricardo Izar - Rita Camata - Rita Furtado - Roberto Augusto - Roberto Balestra - Roberto Brant - Roberto Campos - Roberto D’Ávila - Roberto Freire - Roberto Jefferson - Roberto Rollemberg - Roberto Torres - Roberto Vital - Robson Marinho - Rodrigues Palma - Ronaldo Aragão - Ronaldo Carvalho - Ronaldo Cezar Coelho - Ronan Tito - Ronaro Corrêa - Rosa Prata - Rose de Freitas - Rospide Netto - Rubem Branquinho - Rubem Medina - Ruben Figueiró - Ruberval Pilotto - Ruy Bacelar - Ruy Nedel - Sadie Hauache - Salatiel Carvalho - Samir Achôa - Sandra Cavalcanti - Santinho Furtado - Sarney Filho - Saulo Queiroz - Sérgio Brito - Sérgio Spada - Sérgio Werneck - Severo Gomes - Sigmaringa Seixas - Sílvio Abreu - Simão Sessim - Siqueira Campos - Sólon Borges dos Reis - Stélio Dias - Tadeu França - Telmo Kirst - Teotonio Vilela Filho - Theodoro Mendes - Tito Costa - Ubiratan Aguiar - Ubiratan Spinelli - Uldurico Pinto - Valmir Campelo - Valter Pereira - Vasco Alves - Vicente Bogo - Victor Faccioni - Victor Fontana - Victor Trovão - Vieira da Silva - Vilson Souza - Vingt Rosado - Vinicius Cansanção - Virgildásio de Senna - Virgílio Galassi - Virgílio Guimarães - Vitor Buaiz - Vivaldo Barbosa - Vladimir Palmeira - Wagner Lago - Waldec Ornélas - Waldyr Pugliesi - Walmor de Luca - Wilma Maia - Wilson Campos - Wilson Martins - Ziza Valadares.
+Ulysses Guimarães , Presidente - Mauro Benevides , 1.º Vice-Presidente - Jorge Arbage , 2.º Vice-Presidente - Marcelo Cordeiro , 1.º Secretário - Mário Maia , 2.º Secretário - Arnaldo Faria de Sá , 3.º Secretário - Benedita da Silva , 1.º Suplente de Secretário - Luiz Soyer , 2.º Suplente de Secretário - Sotero Cunha , 3.º Suplente de Secretário - Bernardo Cabral , Relator Geral - Adolfo Oliveira , Relator Adjunto - Antônio Carlos Konder Reis , Relator Adjunto - José Fogaça , Relator Adjunto - Abigail Feitosa - Acival Gomes - Adauto Pereira - Ademir Andrade - Adhemar de Barros Filho - Adroaldo Streck - Adylson Motta - Aécio de Borba - Aécio Neves - Affonso Camargo - Afif Domingos - Afonso Arinos - Afonso Sancho - Agassiz Almeida - Agripino de Oliveira Lima - Airton Cordeiro - Airton Sandoval - Alarico Abib - Albano Franco - Albérico Cordeiro - Albérico Filho - Alceni Guerra - Alcides Saldanha - Aldo Arantes - Alércio Dias - Alexandre Costa - Alexandre Puzyna - Alfredo Campos - Almir Gabriel - Aloisio Vasconcelos - Aloysio Chaves - Aloysio Teixeira - Aluizio Bezerra - Aluízio Campos - Álvaro Antônio - Álvaro Pacheco - Álvaro Valle - Alysson Paulinelli - Amaral Netto - Amaury Müller - Amilcar Moreira - Ângelo Magalhães - Anna Maria Rattes - Annibal Barcellos - Antero de Barros - Antônio Câmara - Antônio Carlos Franco - Antonio Carlos Mendes Thame - Antônio de Jesus - Antonio Ferreira - Antonio Gaspar - Antonio Mariz - Antonio Perosa - Antônio Salim Curiati - Antonio Ueno - Arnaldo Martins - Arnaldo Moraes - Arnaldo Prieto - Arnold Fioravante - Arolde de Oliveira - Artenir Werner - Artur da Távola - Asdrubal Bentes - Assis Canuto - Átila Lira - Augusto Carvalho - Áureo Mello - Basílio Villani - Benedicto Monteiro - Benito Gama - Beth Azize - Bezerra de Melo - Bocayuva Cunha - Bonifácio de Andrada - Bosco França - Brandão Monteiro - Caio Pompeu - Carlos Alberto - Carlos Alberto Caó - Carlos Benevides - Carlos Cardinal - Carlos Chiarelli - Carlos Cotta - Carlos De’Carli - Carlos Mosconi - Carlos Sant’Anna - Carlos Vinagre - Carlos Virgílio - Carrel Benevides - Cássio Cunha Lima - Célio de Castro - Celso Dourado - César Cals Neto - César Maia - Chagas Duarte - Chagas Neto - Chagas Rodrigues - Chico Humberto - Christóvam Chiaradia - Cid Carvalho - Cid Sabóia de Carvalho - Cláudio Ávila - Cleonâncio Fonseca - Costa Ferreira - Cristina Tavares - Cunha Bueno - Dálton Canabrava - Darcy Deitos - Darcy Pozza - Daso Coimbra - Davi Alves Silva - Del Bosco Amaral - Delfim Netto - Délio Braz - Denisar Arneiro - Dionisio Dal Prá - Dionísio Hage - Dirce Tutu Quadros - Dirceu Carneiro - Divaldo Suruagy - Djenal Gonçalves - Domingos Juvenil - Domingos Leonelli - Doreto Campanari - Edésio Frias - Edison Lobão - Edivaldo Motta - Edme Tavares - Edmilson Valentim - Eduardo Bonfim - Eduardo Jorge - Eduardo Moreira - Egídio Ferreira Lima - Elias Murad - Eliel Rodrigues - Eliézer Moreira - Enoc Vieira - Eraldo Tinoco - Eraldo Trindade - Erico Pegoraro - Ervin Bonkoski - Etevaldo Nogueira - Euclides Scalco - Eunice Michiles - Evaldo Gonçalves - Expedito Machado - Ézio Ferreira - Fábio Feldmann - Fábio Raunheitti - Farabulini Júnior - Fausto Fernandes - Fausto Rocha - Felipe Mendes - Feres Nader - Fernando Bezerra Coelho - Fernando Cunha - Fernando Gasparian - Fernando Gomes - Fernando Henrique Cardoso - Fernando Lyra - Fernando Santana - Fernando Velasco - Firmo de Castro - Flavio Palmier da Veiga - Flávio Rocha - Florestan Fernandes - Floriceno Paixão - França Teixeira - Francisco Amaral - Francisco Benjamim - Francisco Carneiro - Francisco Coelho - Francisco Diógenes - Francisco Dornelles - Francisco Küster - Francisco Pinto - Francisco Rollemberg - Francisco Rossi - Francisco Sales - Furtado Leite - Gabriel Guerreiro - Gandi Jamil - Gastone Righi - Genebaldo Correia - Genésio Bernardino - Geovani Borges - Geraldo Alckmin Filho - Geraldo Bulhões - Geraldo Campos - Geraldo Fleming - Geraldo Melo - Gerson Camata - Gerson Marcondes - Gerson Peres - Gidel Dantas - Gil César - Gilson Machado - Gonzaga Patriota - Guilherme Palmeira - Gumercindo Milhomem - Gustavo de Faria - Harlan Gadelha - Haroldo Lima - Haroldo Sabóia - Hélio Costa - Hélio Duque - Hélio Manhães - Hélio Rosas - Henrique Córdova - Henrique Eduardo Alves - Heráclito Fortes - Hermes Zaneti - Hilário Braun - Homero Santos - Humberto Lucena - Humberto Souto - Iberê Ferreira - Ibsen Pinheiro - Inocêncio Oliveira - Irajá Rodrigues - Iram Saraiva - Irapuan Costa Júnior - Irma Passoni - Ismael Wanderley - Israel Pinheiro - Itamar Franco - Ivo Cersósimo - Ivo Lech - Ivo Mainardi - Ivo Vanderlinde - Jacy Scanagatta - Jairo Azi - Jairo Carneiro - Jalles Fontoura - Jamil Haddad - Jarbas Passarinho - Jayme Paliarin - Jayme Santana - Jesualdo Cavalcanti - Jesus Tajra - Joaci Góes - João Agripino - João Alves - João Calmon - João Carlos Bacelar - João Castelo - João Cunha - João da Mata - João de Deus Antunes - João Herrmann Neto - João Lobo - João Machado Rollemberg - João Menezes - João Natal - João Paulo - João Rezek - Joaquim Bevilácqua - Joaquim Francisco - Joaquim Hayckel - Joaquim Sucena - Jofran Frejat - Jonas Pinheiro - Jonival Lucas - Jorge Bornhausen - Jorge Hage - Jorge Leite - Jorge Uequed - Jorge Vianna - José Agripino - José Camargo - José Carlos Coutinho - José Carlos Grecco - José Carlos Martinez - José Carlos Sabóia - José Carlos Vasconcelos - José Costa - José da Conceição - José Dutra - José Egreja - José Elias - José Fernandes - José Freire - José Genoíno - José Geraldo - José Guedes - José Ignácio Ferreira - José Jorge - José Lins - José Lourenço - José Luiz de Sá - José Luiz Maia - José Maranhão - José Maria Eymael - José Maurício - José Melo - José Mendonça Bezerra - José Moura - José Paulo Bisol - José Queiroz - José Richa - José Santana de Vasconcellos - José Serra - José Tavares - José Teixeira - José Thomaz Nonô - José Tinoco - José Ulísses de Oliveira - José Viana - José Yunes - Jovanni Masini - Juarez Antunes - Júlio Campos - Júlio Costamilan - Jutahy Júnior - Jutahy Magalhães - Koyu Iha - Lael Varella - Lavoisier Maia - Leite Chaves - Lélio Souza - Leopoldo Peres - Leur Lomanto - Levy Dias - Lézio Sathler - Lídice da Mata - Louremberg Nunes Rocha - Lourival Baptista - Lúcia Braga - Lúcia Vânia - Lúcio Alcântara - Luís Eduardo - Luís Roberto Ponte - Luiz Alberto Rodrigues - Luiz Freire - Luiz Gushiken - Luiz Henrique - Luiz Inácio Lula da Silva - Luiz Leal - Luiz Marques - Luiz Salomão - Luiz Viana - Luiz Viana Neto - Lysâneas Maciel - Maguito Vilela - Maluly Neto - Manoel Castro - Manoel Moreira - Manoel Ribeiro - Mansueto de Lavor - Manuel Viana - Márcia Kubitschek - Márcio Braga - Márcio Lacerda - Marco Maciel - Marcondes Gadelha - Marcos Lima - Marcos Queiroz - Maria de Lourdes Abadia - Maria Lúcia - Mário Assad - Mário Covas - Mário de Oliveira - Mário Lima - Marluce Pinto - Matheus Iensen - Mattos Leão - Maurício Campos - Maurício Correa - Maurício Fruet - Maurício Nasser - Maurício Pádua - Maurílio Ferreira Lima - Mauro Borges - Mauro Campos - Mauro Miranda - Mauro Sampaio - Max Rosenmann - Meira Filho - Melo Freire - Mello Reis - Mendes Botelho - Mendes Canale - Mendes Ribeiro - Messias Góis - Messias Soares - Michel Temer - Milton Barbosa - Milton Lima - Milton Reis - Miraldo Gomes - Miro Teixeira - Moema São Thiago - Moysés Pimentel - Mozarildo Cavalcanti - Mussa Demes - Myrian Portella - Nabor Júnior - Naphtali Alves de Souza - Narciso Mendes - Nelson Aguiar - Nelson Carneiro - Nelson Jobim - Nelson Sabrá - Nelson Seixas - Nelson Wedekin - Nelton Friedrich - Nestor Duarte - Ney Maranhão - Nilso Sguarezi - Nilson Gibson - Nion Albernaz - Noel de Carvalho - Nyder Barbosa - Octávio Elísio - Odacir Soares - Olavo Pires - Olívio Dutra - Onofre Corrêa - Orlando Bezerra - Orlando Pacheco - Oscar Corrêa - Osmar Leitão - Osmir Lima - Osmundo Rebouças - Osvaldo Bender - Osvaldo Coelho - Osvaldo Macedo - Osvaldo Sobrinho - Oswaldo Almeida - Oswaldo Trevisan - Ottomar Pinto - Paes de Andrade - Paes Landim - Paulo Delgado - Paulo Macarini - Paulo Marques - Paulo Mincarone - Paulo Paim - Paulo Pimentel - Paulo Ramos - Paulo Roberto - Paulo Roberto Cunha - Paulo Silva - Paulo Zarzur - Pedro Canedo - Pedro Ceolin - Percival Muniz - Pimenta da Veiga - Plínio Arruda Sampaio - Plínio Martins - Pompeu de Sousa - Rachid Saldanha Derzi - Raimundo Bezerra - Raimundo Lira - Raimundo Rezende - Raquel Cândido - Raquel Capiberibe - Raul Belém - Raul Ferraz - Renan Calheiros - Renato Bernardi - Renato Johnsson - Renato Vianna - Ricardo Fiuza - Ricardo Izar - Rita Camata - Rita Furtado - Roberto Augusto - Roberto Balestra - Roberto Brant - Roberto Campos - Roberto D’Ávila - Roberto Freire - Roberto Jefferson - Roberto Rollemberg - Roberto Torres - Roberto Vital - Robson Marinho - Rodrigues Palma - Ronaldo Aragão - Ronaldo Carvalho - Ronaldo Cezar Coelho - Ronan Tito - Ronaro Corrêa - Rosa Prata - Rose de Freitas - Rospide Netto - Rubem Branquinho - Rubem Medina - Ruben Figueiró - Ruberval Pilotto - Ruy Bacelar - Ruy Nedel - Sadie Hauache - Salatiel Carvalho - Samir Achôa - Sandra Cavalcanti - Santinho Furtado - Sarney Filho - Saulo Queiroz - Sérgio Brito - Sérgio Spada - Sérgio Werneck - Severo Gomes - Sigmaringa Seixas - Sílvio Abreu - Simão Sessim - Siqueira Campos - Sólon Borges dos Reis - Stélio Dias - Tadeu França - Telmo Kirst - Teotonio Vilela Filho - Theodoro Mendes - Tito Costa - Ubiratan Aguiar - Ubiratan Spinelli - Uldurico Pinto - Valmir Campelo - Valter Pereira - Vasco Alves - Vicente Bogo - Victor Faccioni - Victor Fontana - Victor Trovão - Vieira da Silva - Vilson Souza - Vingt Rosado - Vinicius Cansanção - Virgildásio de Senna - Virgílio Galassi - Virgílio Guimarães - Vitor Buaiz - Vivaldo Barbosa - Vladimir Palmeira - Wagner Lago - Waldec Ornélas - Waldyr Pugliesi - Walmor de Luca - Wilma Maia - Wilson Campos - Wilson Martins - Ziza Valadares.
 
 Participantes: Álvaro Dias - Antônio Britto - Bete Mendes - Borges da Silveira - Cardoso Alves - Edivaldo Holanda - Expedito Júnior - Fadah Gattass - Francisco Dias - Geovah Amarante - Hélio Gueiros - Horácio Ferraz - Hugo Napoleão - Iturival Nascimento - Ivan Bonato - Jorge Medauar - José Mendonça de Morais - Leopoldo Bessone - Marcelo Miranda - Mauro Fecury - Neuto de Conto - Nivaldo Machado - Oswaldo Lima Filho - Paulo Almada - Prisco Viana - Ralph Biasi - Rosário Congro Neto - Sérgio Naya - Tidei de Lima.
 

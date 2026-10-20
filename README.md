@@ -132,6 +132,19 @@ Duas exceções, ambas propositais: a `constituicao.md` na raiz é o único arqu
 ser o documento único de topo; e cinco arquivos trazem, no lugar do texto, um aviso em citação —
 a fonte oficial serve um documento vazio para eles e só os metadados foram preservados.
 
+`constituicao.md` é reproduzida pelo comando `python3 -I scripts/converter_constituicao.py`;
+acrescente `--check` para conferir sem escrever. O snapshot oficial compilado está em
+`fonte/constituicao-compilado.htm`, com origem, data de obtenção e SHA-256 no JSON de mesmo
+nome. A captura anterior permanece em `fonte/constituicao.htm`. A EC 141/2026 consultada para
+a nota de transição está preservada em `fonte/emc141.htm`, também identificada no JSON.
+
+O conversor da Constituição omite apenas redações tachadas e conserva indicações de
+revogação, vigência e decisões judiciais. Isso não certifica eficácia imediata: consulte também
+as transições e os prazos das emendas. Os demais documentos mantêm suas versões históricas
+e seus tachados; `html2md.convert(..., exclude_struck=True)` é uma opção explícita, nunca o
+padrão. As regressões podem ser verificadas com
+`python3 -I -m unittest discover -s scripts -p test_vigencia.py`.
+
 ---
 
 ## O histórico do git

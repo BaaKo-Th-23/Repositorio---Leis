@@ -37,8 +37,9 @@ class TableParser(HTMLParser):
     VOID = {"br", "col", "img", "hr", "input", "meta", "link", "wbr"}
     VISUAL = {"img", "svg", "object", "embed", "iframe", "canvas", "input", "math"}
 
-    def __init__(self, inherited):
+    def __init__(self, inherited, exclude_struck=False):
         super().__init__(convert_charrefs=True)
+        self.exclude_struck = exclude_struck
         self.root = {"tag": None, "children": [], "flags": inherited, "skip": False}
         self.stack = [self.root]
 
@@ -101,6 +102,8 @@ class TableParser(HTMLParser):
         node = self.root if node is None else node
         if isinstance(node, tuple):
             text, flags = node
+            if self.exclude_struck and flags.get("s"):
+                return ""
             text = html.escape(text.replace("\r", " ").replace("\n", " "), quote=False)
             if not text.strip():
                 return text
@@ -108,7 +111,7 @@ class TableParser(HTMLParser):
                 if flags.get(key):
                     text = f"<{tag}>{text}</{tag}>"
             return text
-        if node["skip"]:
+        if node["skip"] or (self.exclude_struck and node["flags"].get("s")):
             return ""
         content = "".join(self.render(child) for child in node["children"])
         tag = node["tag"]
@@ -119,8 +122,9 @@ class TableParser(HTMLParser):
 
 
 class Parser(HTMLParser):
-    def __init__(self):
+    def __init__(self, exclude_struck=False):
         super().__init__(convert_charrefs=True)
+        self.exclude_struck = exclude_struck
         self.skip = 0
         self.fmt = []  # pilha de (tag, flags)
         self.runs = []  # [(texto, bold, italic, tachado)]
@@ -179,7 +183,7 @@ class Parser(HTMLParser):
                 self.table_depth -= 1
                 if not self.table_depth:
                     end = self.source.find(">", self.source_offset()) + 1
-                    parser = TableParser(self.table_inherited)
+                    parser = TableParser(self.table_inherited, self.exclude_struck)
                     parser.feed(self.source[self.table_start:end])
                     parser.close()
                     self.emitir(("html_table", parser.render(), False))
@@ -206,7 +210,8 @@ class Parser(HTMLParser):
         self.blocks.append(bloco)
 
     def flush(self):
-        text = render_runs(self.runs)
+        runs = [r for r in self.runs if not r[3]] if self.exclude_struck else self.runs
+        text = render_runs(runs)
         self.runs = []
         if text:
             self.emitir((self.block_tag or "p", text, self.block_center))
@@ -284,8 +289,14 @@ def table_md(rows):
     return "\n".join(lines)
 
 
-def convert(html_text):
-    p = Parser()
+def convert(html_text, *, exclude_struck=False):
+    """Converte preservando o histórico por padrão.
+
+    exclude_struck omite apenas texto marcado como tachado no HTML (tags e
+    estilos inline); não certifica vigência, eficácia nem datas de aplicação.
+    Notas de revogação, vigência e decisões judiciais continuam no resultado.
+    """
+    p = Parser(exclude_struck=exclude_struck)
     p.feed(html_text)
     p.close()
     if p.table_depth:
@@ -353,9 +364,9 @@ def convert(html_text):
     return "\n\n".join(out).strip() + "\n"
 
 
-def convert_file(path):
+def convert_file(path, *, exclude_struck=False):
     with open(path, encoding="utf-8", errors="replace") as f:
-        return convert(f.read())
+        return convert(f.read(), exclude_struck=exclude_struck)
 
 
 if __name__ == "__main__":

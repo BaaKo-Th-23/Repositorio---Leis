@@ -1117,3 +1117,25 @@ faz isso automaticamente; ativar neste clone com `rtk git config core.hooksPath 
 - Consulta limitada aos índices oficiais de 2026 (LEI/LCP/MPV/DLG/RSF/RCN)
   não encontrou normas novas ausentes nessas séries; isso não prova completude
   histórica nem atualização de todos os tipos.
+
+### Constituição Federal: compilação e seleção de redações
+
+- A captura antiga já omitia redações materiais tachadas, mas ainda deixava
+  fragmentos e dois rótulos órfãos (arts. 82/239). A edição raiz agora deriva do
+  snapshot oficial compilado obtido em 20/10/2026; snapshot anterior preservado.
+- `scripts/converter_constituicao.py --check` verifica a reprodução integral e
+  o SHA-256 da fonte. `html2md` ganhou filtro opcional de tachado, mantendo o
+  comportamento histórico como padrão e preservando notas de revogação/vigência.
+- A atualização incorpora a compilação com EC138/2025 e EC140–141/2026. A nota
+  inicial registra transição da jornada e vigência diferida da EC141 (arts. 6º e
+  10); a publicação de redação nova não é tratada como eficácia imediata universal.
+  Fonte da emenda e hashes também foram preservados em `fonte/`.
+- Dez regressões, conferência de reprodução com Python isolado e compilação dos
+  scripts passaram; todos os 101 cabeçalhos da edição anterior foram mantidos.
+  Permanecem as disposições transitórias conforme a compilação oficial; não se
+  infere vigência jurídica integral por ausência de tachado, por ano ou posição.
+- Compatibilidade adicional: 101 HTMLs cacheados (5,94 MB; 40 com tabelas e
+  32 com tachados) tiveram conversão padrão idêntica byte a byte à versão anterior.
+  As 105.696 palavras/números da compilação filtrada coincidem em sequência com
+  o corpo convertido. Snapshots oficiais preservam bytes CP1252/CRLF via
+  `.gitattributes`; verificações de espaços não os reformatam nem invalidam hashes.
