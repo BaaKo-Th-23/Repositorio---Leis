@@ -1217,3 +1217,15 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
   Doze candidatos rejeitados estão nominados no manifesto. Hashes individuais
   conferidos pelo coordenador; auditoria do index antes da publicação.
   Evidência: `scripts/estados/manifestos/mg-20261020-001.json`.
+
+- MG002–MG010: mais 18.000 documentos preexistentes novos; os nove manifestos
+  registram confronto de CSV oficial, corpo/cache, hashes e rejeições individuais.
+  Coordenador conferiu hashes e ausência no baseline; lotes sem sobreposição.
+  Nenhum redownload necessário. Agente segue MG/BA e demais UFs.
+
+- Revisão adicional de MG002–010: publicação restrita a 16.768 documentos
+  após excluir retificações suspeitas, epígrafes inconclusivas, oito estados de
+  vigência sem prova e dois separadores literais da fonte detectados pelo Git.
+  Overlays imutáveis registram cada retenção. Muitos ordinais ASCII e artigos
+  inline são falsos positivos do detector conservador e serão readmitidos após
+  revisão contextual; não foram descartados. MG001 segue sob checagem adicional.
