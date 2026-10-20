@@ -1166,3 +1166,39 @@ faz isso automaticamente; ativar neste clone com `rtk git config core.hooksPath 
   `federal/_lote_dec1945_200_20261020.json`.
 - Nenhum documento preexistente ou do lote38 foi sobrescrito. Coleta encerrada,
   sem processo em segundo plano nem promessa de cobertura histórica completa.
+
+### Lote limitado de Roraima e fechamento da rodada
+
+- 249 decretos legislativos já publicados foram excluídos da seleção; entre
+  100 candidatos ausentes, 46 atos de 2023–2024 foram aceitos e 54 rejeitados
+  por camada textual/epígrafe/data insuficientes. Identidade e data dos 46
+  conferem com a fonte; IDs e hashes PDF são únicos, sem repetir número/ano/tipo
+  dos publicados. Três PDFs foram também confrontados visualmente.
+- A camada textual oficial contém erros de reconhecimento, inclusive em nomes;
+  esses erros não foram silenciosamente corrigidos. Todos os 46 documentos têm
+  aviso e versão da extração explícitos. Não se executou OCR novo. PDF original,
+  catálogo e evidências permanecem no cache; manifesto publicado em
+  `scripts/dados/rr-infralegal-20261020.json`.
+- Resultado desta rodada: 278 documentos novos (232 federais e 46 RR), 82 aliases
+  removidos e Constituição Federal atualizada. Contagem esperada do index:
+  719.497 documentos, aumento líquido de 196; não é declaração de completude.
+- Validação: 21 testes de regressão; auditorias de formato/datas do index de cada
+  lote; hashes e proveniência confrontados; comparação de 101 HTML históricos
+  com conversão padrão idêntica. Guard federal não bloqueou falsamente nenhum
+  dos 194 novos decretos; 13 epígrafes tipograficamente incomuns ficaram
+  inconclusivas no helper e foram conferidas na revisão específica do lote.
+- Coletas limitadas encerradas. Mudanças e coletas locais preexistentes seguem
+  preservadas, fora dos lotes desta rodada; não houve add geral, reescrita de
+  histórico ou force-push. Progresso gerado do index em cada commit pelo hook.
+
+### Próximas frentes comprovadas
+
+- Continuar decretos federais numerados ausentes com lotes finitos e a validação
+  de identidade, texto e tabelas; revisar divergências dos quatro retidos antes
+  de corrigir qualquer data ou URN. Quatro candidatos continuam sem encoding.
+- Retomar RR além do recorte de 100, priorizando PDFs legíveis; os 54 rejeitados
+  precisam de extração/OCR validado, não de inferência de nomes ou datas.
+- Rever emendas SAPL sem anexo e a divergência da data AM144; nova varredura nos
+  oito estados SAPL não encontrou aliases adicionais no snapshot inicial.
+- Auditar os lotes preexistentes ainda não publicados separadamente. Volume
+  coletado e metas estimadas não certificam cobertura ou vigência integral.
