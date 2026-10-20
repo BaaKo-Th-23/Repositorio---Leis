@@ -1286,3 +1286,17 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
   julgamento permanece explícita nos 2.146. O diff não apresenta falhas.
   Incremento real: 24 novos documentos e 2.122 atualizações de documentos
   existentes, além dos manifests e scripts de auditoria/atualização.
+
+### São Paulo: complemento efetivamente apto dos primeiros 20.000
+
+- Os overlays específicos retiveram 9.322 textos com imagens normativas da
+  fonte ignoradas pelo conversor e mais 101 com remissão explícita a anexo
+  próprio sem seção/tabela correspondente. Logos conhecidos foram separados
+  das imagens de conteúdo; menção simples a anexo de outra norma não basta.
+- O complemento de 10.577 documentos segue para publicação, com lista exata
+  e SHA individual em scripts/dados/publicacao-sp10577-20261020.json. Os
+  manifests v2 originais permanecem como evidência histórica e são restringidos
+  pelos dois overlays; seus totais anteriores não são totais publicados.
+- As quebras Markdown de dois espaços foram conferidas no index dos20mil
+  preparados, sem modificar conteúdo para silenciar avisos. O registro guarda
+  SHA e linhas porarquivo, incluindo documentos posteriormente retidos.
