@@ -25,6 +25,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from comum import AVISO_OCR, AVISO_SEM_TEXTO, extrair_texto, ocr_pdf, texto_pdf_para_md  # noqa: E402
 from html2md import convert  # noqa: E402
+from identidade_decreto import divergencia_epigrafe_decreto  # noqa: E402
 
 RAIZ = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "federal")
 RAIZ = os.path.abspath(RAIZ)
@@ -279,6 +280,10 @@ def processar(d):
     if not corpo.strip() or "\x00" in corpo:
         return "sem_texto", info["slug"], {"id": d["id"], "norma": d["norma"], "urn": urn,
                                            "url": url, "motivo": "corpo vazio ou contém NUL; fonte preservada"}
+    divergencia = divergencia_epigrafe_decreto(d["tipo"], numero_oficial(d), info["data"], corpo)
+    if divergencia:
+        return "sem_texto", info["slug"], {"id": d["id"], "norma": d["norma"], "urn": urn,
+                                           "url": url, **divergencia}
     versao = {"Current": "compilada (texto vigente)", "Original": "original", "Intermediate": "republicação/retificação"}
     forca = como_lista(meta.get("legislationLegalForce"))
     revogada = False if forca == ["InForce"] else None

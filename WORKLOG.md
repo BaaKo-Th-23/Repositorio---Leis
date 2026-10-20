@@ -1139,3 +1139,15 @@ faz isso automaticamente; ativar neste clone com `rtk git config core.hooksPath 
   As 105.696 palavras/números da compilação filtrada coincidem em sequência com
   o corpo convertido. Snapshots oficiais preservam bytes CP1252/CRLF via
   `.gitattributes`; verificações de espaços não os reformatam nem invalidam hashes.
+
+### Proteção permanente de identidade federal
+
+- Decretos federais numerados agora confrontam a epígrafe inequívoca de abertura
+  com número/data do índice antes de gravar Markdown. Divergências ficam como
+  pendência estruturada, com identidades esperada/encontrada e bruto preservado.
+  Citações no articulado não servem como epígrafe. Ausência de cabeçalho claro
+  continua inconclusiva, sem alegar que a identidade foi validada.
+- Seis regressões passaram, incluindo três conflitos reais e prova de que o
+  coletor não publica o Markdown divergente, conserva cache e aceita caso válido.
+  Reaplicação aos 40 candidatos iniciais: 38 coerentes e dois bloqueados; nenhum
+  bloqueio falso ou inconclusivo nesse recorte. Não houve reconversão em massa.
