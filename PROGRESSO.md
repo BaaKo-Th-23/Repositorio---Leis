@@ -1,10 +1,10 @@
 # Progresso
 
-Gerado em 20/10/2026 18:45:40 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 20/10/2026 18:47:54 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**719.301 documentos · 719.276 / ~11.768.799 nas séries com meta (6.1%) · 25 sem meta**
+**719.219 documentos · 719.194 / ~11.768.799 nas séries com meta (6.1%) · 25 sem meta**
 
 ![progresso](progresso.svg)
 
@@ -12,7 +12,7 @@ Percentuais usam somente documentos e metas das séries com universo estimado ou
 
 Planalto, Senado, Câmara e assembleias.
 
-389.961 / ~574.766 documentos (67.8%)
+389.879 / ~574.766 documentos (67.8%)
 
 ### Constituição Federal
 
@@ -73,13 +73,13 @@ Planalto, Senado, Câmara e assembleias.
 
 ### Leis estaduais e distritais
 
-296.291 / ~347.467 documentos (85.3%)
+296.209 / ~347.467 documentos (85.2%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
 | ✅ | Constituições estaduais e Lei Orgânica do DF | 27 | 27 | `estaduais/*/constituicao`, `estaduais/*/lei-organica` | Assembleias e Casas Civis |
 | 🟦 | Constituições estaduais históricas | 9 | 40 | `estaduais/*/constituicoes-historicas` | Assembleias |
-| 🟦 | Emendas constitucionais estaduais | 2.105 | 2.200 | `estaduais/*/emendas-constitucionais` | Assembleias |
+| 🟦 | Emendas constitucionais estaduais | 2.023 | 2.200 | `estaduais/*/emendas-constitucionais` | Assembleias |
 | 🟦 | Leis ordinárias estaduais | 274.230 | 330.000 | `estaduais/*/leis-ordinarias` | 19 scripts, uma fonte por UF |
 | 🟦 | Leis complementares estaduais | 12.390 | 14.000 | `estaduais/*/leis-complementares` | 19 scripts, uma fonte por UF |
 | ✅ | Decretos-leis e leis delegadas estaduais | 6.676 | 600 | `estaduais/*/decretos-lei`, `estaduais/*/leis-delegadas`, `estaduais/*/decretos-lei-complementares` | Assembleias |

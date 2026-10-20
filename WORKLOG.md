@@ -1084,3 +1084,23 @@ faz isso automaticamente; ativar neste clone com `rtk git config core.hooksPath 
 - Objetivo do acervo permanece histórico e abrangente. Remover uma redação
   tachada da edição vigente não implica excluir a norma histórica do acervo nem
   certificar vigência apenas por ausência de tachado.
+
+### Identidade estadual e aliases SAPL
+
+- Reconciliados 82 pares publicados com o mesmo documento oficial: AL 52, TO 19
+  e RR 11. Preservados caminhos históricos; 12 corpos AL receberam apenas a
+  limpeza de preenchimento de assinatura já presente no alias, com texto e
+  cargos conservados. Identidades e hashes estão em
+  `scripts/dados/sapl-aliases-20261020.json`.
+- O coletor reconhece o identificador oficial independentemente do slug do tipo;
+  divergência de número, data, UF, fonte ou anexo gera pendência, sem duplicar
+  nem interromper a fila. Reconciliação exige equivalência do corpo e metadados
+  antes de qualquer remoção, e opera em simulação por padrão.
+- Cinco testes de regressão passaram; 175 emendas remanescentes auditadas com
+  zero erros/avisos; segunda simulação AL/TO/RR encontrou zero aliases.
+- Últimas emendas consultadas em AL/TO/RR e PI/RO/PB já estavam no acervo ou
+  não tinham anexo. TO EC60/2026 (id1602) e RR EC103/104 de 2025 (ids5244/5245)
+  permanecem sem texto oficial anexado. AM144 tem divergência de data entre
+  cadastro e arquivo existente: não resolver por inferência.
+- Infraestrutura publicada em `7c3e5e7e9d1`. SSH falhou na verificação da chave
+  do host; envio HTTPS autenticado pelo GitHub CLI concluiu sem mudar o remoto.

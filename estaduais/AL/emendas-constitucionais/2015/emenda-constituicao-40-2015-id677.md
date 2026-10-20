@@ -39,4 +39,4 @@ II – compulsoriamente, com proventos proporcionais ao tempo de contribuição,
 
 SALA DAS SESSÕES DA ASSEMBLEIA LEGISLATIVA ESTADUAL, em Maceió, 01 de setembro de 2015.
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_PRESIDENTE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_1º VICE-PRESIDENTE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_2º VICE-PRESIDENTE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_3º VICE-PRESIDENTE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_1º SECRETÁRIO \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_2º SECRETÁRIO \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_3º SECRETÁRIO \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_4º SECRETÁRIO
+PRESIDENTE 1º VICE-PRESIDENTE 2º VICE-PRESIDENTE 3º VICE-PRESIDENTE 1º SECRETÁRIO 2º SECRETÁRIO 3º SECRETÁRIO 4º SECRETÁRIO

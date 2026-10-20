@@ -3,10 +3,14 @@
 Uso:
   python3 -I scripts/estados/sapl.py indice AM        # baixa o índice e mostra a cobertura
   python3 -I scripts/estados/sapl.py baixar AM [N]    # baixa e converte os textos
+  python3 -I scripts/estados/sapl.py reconciliar AL [--aplicar]  # aliases comprovados
 """
 import collections
+import datetime as dt
+import hashlib
 import json
 import os
+from pathlib import Path
 import re
 import sys
 
@@ -93,6 +97,99 @@ def cobertura(uf, refazer=False):
         print(f"   {t}: {tot} ({com} com arquivo)")
 
 
+def metadados(caminho):
+    texto = Path(caminho).read_text(encoding="utf-8")
+    if not texto.startswith("---\n") or "\n---\n" not in texto[4:]:
+        raise ValueError(f"cabeçalho inválido: {caminho}")
+    campos = {}
+    for linha in texto[4:].split("\n---\n", 1)[0].splitlines():
+        chave, valor = linha.split(":", 1)
+        valor = valor.strip()
+        campos[chave] = json.loads(valor) if valor.startswith('"') else valor
+    return campos
+
+
+def identidade(uf, n, tipo):
+    return {"uf": uf, "tipo": tipo, "numero": str(n.get("numero") or ""),
+            "data": n.get("data") or "",
+            "fonte": f"https://{HOSTS[uf]}/norma/{n['id']}",
+            "arquivo": (n.get("texto_integral") or "").replace("http://", "https://")}
+
+
+def existentes(uf, pasta, n, tipo):
+    """O ID do SAPL identifica a norma mesmo se a descrição do tipo mudar de slug."""
+    ano = Path(RAIZ_ESTADUAIS) / uf / pasta / str(n["ano"])
+    esperada = identidade(uf, n, tipo)
+    encontrados = []
+    for caminho in sorted(ano.glob(f"*-id{n['id']}.md")):
+        meta = metadados(caminho)
+        divergencias = [f"{k}: arquivo={meta.get(k, '')!r}, índice={v!r}"
+                        for k, v in esperada.items() if str(meta.get(k, "")) != str(v)]
+        if divergencias:
+            raise ValueError(f"ID SAPL com identidade divergente: {caminho} ({'; '.join(divergencias)})")
+        encontrados.append(caminho)
+    return encontrados
+
+
+def reconciliar(uf, aplicar=False):
+    """Remove apenas o alias com preposição de uma emenda da mesma fonte oficial.
+
+    Número, data, UF, tipo, ficha e anexo precisam coincidir com o índice SAPL.
+    Os corpos podem diferir por reconversão; o PDF original permanece em _fonte.
+    Não funde normas só porque seus corpos são iguais.
+    """
+    d = indice(uf)
+    pares = []
+    for n in d["normas"]:
+        pasta, tipo = canonico(d["tipos"][str(n["tipo"])])
+        if pasta != "emendas-constitucionais":
+            continue
+        arquivos = existentes(uf, pasta, n, tipo)
+        sufixo = f"{n['numero'] or 'sn'}-{n['ano']}-id{n['id']}.md"
+        por_nome = {p.name: p for p in arquivos}
+        antigo = por_nome.get("emenda-constituicao-" + sufixo)
+        alias = por_nome.get("emenda-a-constituicao-" + sufixo)
+        if antigo and alias:
+            pares.append((antigo, alias))
+    registros = []
+    for antigo, alias in pares:
+        texto_antigo, texto_alias = antigo.read_text(), alias.read_text()
+        corpo_antigo = texto_antigo.split("\n---\n", 1)[1]
+        corpo_alias = texto_alias.split("\n---\n", 1)[1]
+        # A reconversão removeu linhas de preenchimento de assinatura. Só aceitamos
+        # essa diferença gráfica; texto novo ou perdido exige revisão manual.
+        normalizar = lambda t: re.sub(r"\s+", " ", re.sub(r"(?:\\_){5,}|_{5,}", "", t)).strip()
+        if normalizar(corpo_antigo) != normalizar(corpo_alias):
+            raise ValueError(f"corpos divergentes exigem revisão manual: {alias}")
+        ma, mb = metadados(antigo), metadados(alias)
+        if {k: v for k, v in ma.items() if k != "baixado_em"} != {
+                k: v for k, v in mb.items() if k != "baixado_em"}:
+            raise ValueError(f"metadados divergentes exigem revisão manual: {alias}")
+        limpar = corpo_antigo != corpo_alias
+        registros.append({"preservado": str(antigo), "removido": str(alias),
+                          "identidade": {k: ma[k] for k in ("uf", "tipo", "numero", "data", "fonte", "arquivo")},
+                          "sha256_anterior": hashlib.sha256(texto_antigo.encode()).hexdigest(),
+                          "sha256_alias": hashlib.sha256(texto_alias.encode()).hexdigest(),
+                          "corpo": "limpeza de preenchimento de assinatura" if limpar else "idêntico"})
+    if aplicar and registros:
+        pasta_relatorio = Path(RAIZ_ESTADUAIS) / uf / "_fonte" / "auditorias"
+        pasta_relatorio.mkdir(parents=True, exist_ok=True)
+        relatorio = pasta_relatorio / f"sapl-aliases-{dt.datetime.now():%Y%m%d-%H%M%S}.json"
+        relatorio.write_text(json.dumps(registros, ensure_ascii=False, indent=2) + "\n")
+        print(f"relatório: {relatorio}")
+    for antigo, alias in pares:
+        print(f"{'remover' if aplicar else 'removeria'} {alias}; preservado {antigo}")
+        if aplicar:
+            texto = antigo.read_text()
+            cab, corpo = texto.split("\n---\n", 1)
+            corpo_alias = alias.read_text().split("\n---\n", 1)[1]
+            if corpo != corpo_alias:
+                antigo.write_text(cab + "\n---\n" + corpo_alias)
+            alias.unlink()
+    print(f"{uf}: {len(pares)} aliases {'removidos' if aplicar else 'comprovados (simulação)'}")
+    return pares
+
+
 def processar_factory(uf, tipos):
     def processar(n):
         bruto = tipos[str(n["tipo"])]
@@ -105,6 +202,13 @@ def processar_factory(uf, tipos):
             corrente = os.path.join(RAIZ_ESTADUAIS, uf, "constituicao")
             if any(nome.endswith(".md") for _, _, nomes in os.walk(corrente) for nome in nomes):
                 return "pulado", None
+        try:
+            if existentes(uf, pasta, n, tipo):
+                return "pulado", None
+        except ValueError as erro:
+            # A fonte pode ter corrigido número/data/anexo. Não recriar nem
+            # substituir silenciosamente; registrar e deixar a fila continuar.
+            return "sem_texto", {"id": n["id"], "motivo": str(erro)}
         # o prefixo do nome do arquivo vem do nome que a Assembleia usa, não do canônico:
         # os arquivos já gravados se chamam lei-ordinaria-N-AAAA-idX.md e precisam ser
         # reconhecidos como existentes numa nova rodada.
@@ -148,6 +252,8 @@ if __name__ == "__main__":
     refazer = "--refazer" in sys.argv
     if acao == "indice":
         cobertura(uf, refazer)
+    elif acao == "reconciliar":
+        reconciliar(uf, "--aplicar" in sys.argv)
     elif acao == "baixar":
         d = indice(uf, refazer)
         itens = sorted(d["normas"], key=lambda n: n.get("data") or "", reverse=True)

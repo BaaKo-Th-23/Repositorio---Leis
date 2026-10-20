@@ -29,6 +29,6 @@ Parágrafo Único. O cargo de Delegado de Polícia Civil, privativo de bacharel 
 
 SALA DAS SESSÕES DA ASSEMBLEIA LEGISLATIVA ESTADUAL, em Maceió, 04 de fevereiro de 2014.
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ PRESIDENTE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_1º VICE-PRESIDENTE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_2º VICE-PRESIDENTE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_3º VICE-PRESIDENTE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_1º SECRETÁRIO \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_2º SECRETÁRIO \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_3º SECRETÁRIO \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_4º SECRETÁRIO
+PRESIDENTE 1º VICE-PRESIDENTE 2º VICE-PRESIDENTE 3º VICE-PRESIDENTE 1º SECRETÁRIO 2º SECRETÁRIO 3º SECRETÁRIO 4º SECRETÁRIO
 
 Este texto não substitui o publicado no DOE de 10.04.2014.

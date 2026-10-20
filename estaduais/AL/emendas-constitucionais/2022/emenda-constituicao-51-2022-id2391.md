@@ -35,6 +35,6 @@ II - a vedação à reeleição ou recondução aplica-se somente para o mesmo c
 
 SALA DAS SESSÕES DA ASSEMBLEIA LEGISLATIVA DO ESTADO DE ALAGOAS, em Maceió, 21 de dezembro de 2022.
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_PRESIDENTE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 1º VICE-PRESIDENTE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 2º VICE-PRESIDENTE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 3º VICE-PRESIDENTE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 1º SECRETÁRIO \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 2º SECRETÁRIO \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_3º SECRETÁRIO \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 4º SECRETÁRIO
+PRESIDENTE 1º VICE-PRESIDENTE 2º VICE-PRESIDENTE 3º VICE-PRESIDENTE 1º SECRETÁRIO 2º SECRETÁRIO 3º SECRETÁRIO 4º SECRETÁRIO
 
 PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DA ASSEMBLEIA LEGISLATIVA, EDIÇÃO Nº 1326, DE 28/12/2022

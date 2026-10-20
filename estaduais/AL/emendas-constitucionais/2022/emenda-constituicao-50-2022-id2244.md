@@ -45,4 +45,4 @@ IV – a partir de 1º de julho de 2023: 100% (cem por cento) do subsídio mensa
 
 SALA DAS SESSÕES DA ASSEMBLEIA LEGISLATIVA DO ESTADO DE ALAGOAS, em Maceió, 29 de março de 2022.
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_PRESIDENTE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 1º VICE-PRESIDENTE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 2º VICE-PRESIDENTE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 3º VICE-PRESIDENTE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 1º SECRETÁRIO \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 2º SECRETÁRIO \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_3º SECRETÁRIO \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 4º SECRETÁRIO
+PRESIDENTE 1º VICE-PRESIDENTE 2º VICE-PRESIDENTE 3º VICE-PRESIDENTE 1º SECRETÁRIO 2º SECRETÁRIO 3º SECRETÁRIO 4º SECRETÁRIO

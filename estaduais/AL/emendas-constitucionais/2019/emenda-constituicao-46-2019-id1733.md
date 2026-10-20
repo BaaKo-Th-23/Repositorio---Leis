@@ -51,6 +51,6 @@ III - eixo de promoção à vida saudável e subeixo: habitação, saneamento e 
 
 SALA DAS SESSÕES DA ASSEMBLEIA LEGISLATIVA ESTADUAL, em Maceió, 11 de dezembro de 2019.
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_PRESIDENTE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 1º VICE-PRESIDENTE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 2º VICE-PRESIDENTE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 3º VICE-PRESIDENTE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 1º SECRETÁRIO \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 2º SECRETÁRIO \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_3º SECRETÁRIO \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 4º SECRETÁRIO
+PRESIDENTE 1º VICE-PRESIDENTE 2º VICE-PRESIDENTE 3º VICE-PRESIDENTE 1º SECRETÁRIO 2º SECRETÁRIO 3º SECRETÁRIO 4º SECRETÁRIO
 
 PUBLICADA NO DIÁRIO OFICIAL DO PODER LEGISLATIVO EM 03/01/2020
