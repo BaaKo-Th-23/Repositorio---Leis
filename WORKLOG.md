@@ -1202,3 +1202,18 @@ faz isso automaticamente; ativar neste clone com `rtk git config core.hooksPath 
   oito estados SAPL não encontrou aliases adicionais no snapshot inicial.
 - Auditar os lotes preexistentes ainda não publicados separadamente. Volume
   coletado e metas estimadas não certificam cobertura ou vigência integral.
+
+## Continuação até as metas — 20/10/2026
+
+O usuário determinou continuar até 100% das metas. A conclusão de um lote não
+encerra o trabalho; não reduzir metas para simular cobertura. Goal reaberto com
+três agentes Sol Medium em frentes federal, estadual e municipal/jurisprudência;
+coordenação cuida RFB/DOU, validação do index, commits e publicação. Índice-base
+deste ciclo: `5f68e29e14dd`; coletas e mudanças preexistentes são auditadas
+separadamente. Falhas de fonte permanecem como lacunas, avançando outras frentes.
+
+- MG001: 2.000 documentos preexistentes, ausentes do Git; identidade confrontada
+  com CSV ALMG e corpo com cache HTML oficial, sem redownload ou mudança no texto.
+  Doze candidatos rejeitados estão nominados no manifesto. Hashes individuais
+  conferidos pelo coordenador; auditoria do index antes da publicação.
+  Evidência: `scripts/estados/manifestos/mg-20261020-001.json`.
