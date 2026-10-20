@@ -65,3 +65,43 @@ Não há repercussão geral. Leading case: transitado em julgado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "A questão da possibilidade de o juízo reduzir, de  ofício, multa fixada em sentença, no caso de descumprimento de obrigação de fazer, ou não fazer (art. 461, § 6º, atual art. 537, § 1º, do Código de Processo Civil), não tem repercussão geral, pois ausente relevância econômica, política, social ou jurídica, que transcenda ao interesse das partes",
+    "tese_snippet": "A questão da possibilidade de o juízo reduzir, de ofício, multa fixada em sentença, no caso de descumprimento de obrigação de fazer, ou não fazer (art. 461, § 6º, atual art. 537, § 1º, do Código de Processo Civil), não tem repercussão geral, pois ausente relevância econômica, política, social ou jurídica, que transcenda ao interesse das partes"
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-7",
+  "nr": 7,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=2540706",
+      "numero": "556385"
+    }
+  ],
+  "questao": "Redução, de ofício, de multa fixada em sentença, no caso de descumprimento de obrigação de fazer.",
+  "situacao": "Não há repercussão geral. Leading case: transitado em julgado",
+  "tese": "A questão da possibilidade de o juízo reduzir, de  ofício, multa fixada em sentença, no caso de descumprimento de obrigação de fazer, ou não fazer (art. 461, § 6º, atual art. 537, § 1º, do Código de Processo Civil), não tem repercussão geral, pois ausente relevância econômica, política, social ou jurídica, que transcenda ao interesse das partes",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

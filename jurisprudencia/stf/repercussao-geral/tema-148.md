@@ -65,3 +65,43 @@ Há repercussão geral. Leading case: transitado em julgado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "A interpretação do § 4º do art. 100, alterado e hoje § 8º do art. 100 da Constituição da República, permite o pagamento dos débitos em execução nos casos de litisconsórcio facultativo.",
+    "tese_snippet": "A interpretação do § 4º do art. 100, alterado e hoje § 8º do art. 100 da Constituição da República, permite o pagamento dos débitos em execução nos casos de litisconsórcio facultativo."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-148",
+  "nr": 148,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=2570455",
+      "numero": "568645"
+    }
+  ],
+  "questao": "Individualização de créditos de litisconsortes para efeito de fracionamento do valor principal da execução contra a Fazenda Pública. ",
+  "situacao": "Há repercussão geral. Leading case: transitado em julgado",
+  "tese": "A interpretação do § 4º do art. 100, alterado e hoje § 8º do art. 100 da Constituição da República, permite o pagamento dos débitos em execução nos casos de litisconsórcio facultativo.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

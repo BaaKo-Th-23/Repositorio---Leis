@@ -65,3 +65,43 @@ Há repercussão geral. Leading case: transitado em julgado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "A prerrogativa processual da Fazenda Pública Federal de receber intimações pessoais, nos termos do art. 17 da Lei 10.910/2004, não tem aplicação no âmbito do procedimento dos Juizados Especiais Federais.",
+    "tese_snippet": "A prerrogativa processual da Fazenda Pública Federal de receber intimações pessoais, nos termos do art. 17 da Lei 10.910/2004, não tem aplicação no âmbito do procedimento dos Juizados Especiais Federais."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-549",
+  "nr": 549,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 11880,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=4107441",
+      "numero": "648629"
+    }
+  ],
+  "questao": "Obrigatoriedade de intimação pessoal de procuradores federais no âmbito dos Juizados Especiais Federais.",
+  "situacao": "Há repercussão geral. Leading case: transitado em julgado",
+  "tese": "A prerrogativa processual da Fazenda Pública Federal de receber intimações pessoais, nos termos do art. 17 da Lei 10.910/2004, não tem aplicação no âmbito do procedimento dos Juizados Especiais Federais.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

@@ -65,3 +65,43 @@ Há repercussão geral. Leading case: transitado em julgado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "As hipóteses de inelegibilidade previstas no art. 14, § 7º, da Constituição Federal, inclusive quanto ao prazo de seis meses, são aplicáveis às eleições suplementares.",
+    "tese_snippet": "As hipóteses de inelegibilidade previstas no art. 14, § 7º, da Constituição Federal, inclusive quanto ao prazo de seis meses, são aplicáveis às eleições suplementares."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-781",
+  "nr": 781,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=4651719",
+      "numero": "843455"
+    }
+  ],
+  "questao": "Aplicabilidade do prazo de desincompatibilização de 6 meses previsto no art. 14, § 7º, da Constituição Federal às eleições suplementares.",
+  "situacao": "Há repercussão geral. Leading case: transitado em julgado",
+  "tese": "As hipóteses de inelegibilidade previstas no art. 14, § 7º, da Constituição Federal, inclusive quanto ao prazo de seis meses, são aplicáveis às eleições suplementares.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

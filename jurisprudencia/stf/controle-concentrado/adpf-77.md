@@ -48,3 +48,37 @@ baixado_em: 2026-10-15
   "ultimaAtualizacao": "19/11/2014"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "cautelar": "NAO",
+  "decisao": "EMBARGOS_DE_DECLARACAO",
+  "historico": [
+    {
+      "dataAdmissao": "2025-11-24",
+      "dataCriacao": "2026-06-02T00:00:00.000-03:00",
+      "dataJulgamento": "2026-04-29",
+      "dataPublicacao": "2026-04-30",
+      "situacao": "Admitido"
+    },
+    {
+      "dataAdmissao": "2025-11-24",
+      "dataCriacao": "2026-08-21T00:00:00.000-03:00",
+      "dataJulgamento": "2026-04-29",
+      "dataPublicacao": "2026-04-30",
+      "situacao": "Acórdão Publicado"
+    }
+  ],
+  "id": "stf-adpf-77",
+  "linkDecisao": "https://redir.stf.jus.br/paginadorpub/paginador.jsp?docTP=TP&docID=8399517",
+  "nr": "77",
+  "orgao": "STF",
+  "possuiDecisoes": true,
+  "textoDecisao": "O Tribunal, por unanimidade e nos termos do voto do Relator, não conheceu dos embargos de declaração. Ausentes, neste julgamento, os Ministros Luiz Fux e Roberto Barroso. Presidiu o julgamento o Ministro Ricardo Lewandowski. Plenário, 16.04.2015.",
+  "textoEmenta": "Ementa: CONSTITUCIONAL E PROCESSUAL CIVIL. EMBARGOS DE DECLARAÇÃO EM FACE DE DECISÃO CAUTELAR DEFERIDA EM ARGUIÇÃO DE DESCUMPRIMENTO DE PRECEITO FUNDAMENTAL (ADPF). OPOSIÇÃO POR AMICUS CURIAE. AUSÊNCIA DE LEGITIMAÇÃO. EMBARGOS DECLARATÓRIOS NÃO CONHECIDOS. 1. Segundo jurisprudência consolidada no Supremo Tribunal Federal, colaboradores admitidos em processos objetivos e causas com repercussão geral na condição de amicus curiae não detém legitimidade para recorrer de decisões de mérito, ainda que tenham participado do julgamento mediante a oferta de elementos de informação. 2. Embargos de declaração não conhecidos.",
+  "tipo": "ADPF",
+  "ultimaAtualizacao": "16/04/2015"
+}
+```

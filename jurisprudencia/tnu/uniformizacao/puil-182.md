@@ -68,3 +68,46 @@ Transitado em julgado
   "ultimaAtualizacao": "14/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "O cancelamento ou a suspensão indevida do pagamento das parcelas alusivas ao seguro-desemprego não gera, \"ipso facto\", o direito à indenização por danos morais.",
+    "tese_snippet": "O cancelamento ou a suspensão indevida do pagamento das parcelas alusivas ao seguro-desemprego não gera, \"ipso facto\", o direito à indenização por danos morais."
+  },
+  "historico": [
+    {
+      "dataAdmissao": "2025-11-24",
+      "dataCriacao": "2026-06-02T00:00:00.000-03:00",
+      "dataJulgamento": "2026-04-29",
+      "dataPublicacao": "2026-04-30",
+      "situacao": "Admitido"
+    },
+    {
+      "dataAdmissao": "2025-11-24",
+      "dataCriacao": "2026-08-21T00:00:00.000-03:00",
+      "dataJulgamento": "2026-04-29",
+      "dataPublicacao": "2026-04-30",
+      "situacao": "Acórdão Publicado"
+    }
+  ],
+  "id": "tnu-puil-182",
+  "nr": 182,
+  "orgao": "TNU",
+  "possuiDecisoes": true,
+  "processosParadigma": [
+    {
+      "classe": 457,
+      "link": "https://eproctnu.cjf.jus.br/eproc/externo_controlador.php?acao=processo_seleciona_publica&acao_origem=processo_consulta_publica&acao_retorno=processo_consulta_publica&num_processo=05075583920164058500",
+      "numero": "05075583920164058500"
+    }
+  ],
+  "questao": "Saber se a suspensão/cancelamento indevidos do pagamento de seguro-desemprego gera dano moral in re ipsa.",
+  "situacao": "Transitado em julgado",
+  "tese": "O cancelamento ou a suspensão indevida do pagamento das parcelas alusivas ao seguro-desemprego não gera, \"ipso facto\", o direito à indenização por danos morais.",
+  "tipo": "PUIL",
+  "ultimaAtualizacao": "19/10/2026"
+}
+```

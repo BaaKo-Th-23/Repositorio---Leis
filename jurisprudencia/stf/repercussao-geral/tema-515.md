@@ -65,3 +65,43 @@ Há repercussão geral. Leading case: transitado em julgado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "É constitucional a majoração diferenciada de alíquotas em relação às contribuições sociais incidentes sobre o faturamento ou a receita de instituições financeiras ou de entidades a elas legalmente equiparáveis.",
+    "tese_snippet": "É constitucional a majoração diferenciada de alíquotas em relação às contribuições sociais incidentes sobre o faturamento ou a receita de instituições financeiras ou de entidades a elas legalmente equiparáveis."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-515",
+  "nr": 515,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=4136181",
+      "numero": "656089"
+    }
+  ],
+  "questao": "Reserva de lei para a majoração da alíquota da COFINS de 3% para 4% pela Lei 10.684/2003.  ",
+  "situacao": "Há repercussão geral. Leading case: transitado em julgado",
+  "tese": "É constitucional a majoração diferenciada de alíquotas em relação às contribuições sociais incidentes sobre o faturamento ou a receita de instituições financeiras ou de entidades a elas legalmente equiparáveis.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

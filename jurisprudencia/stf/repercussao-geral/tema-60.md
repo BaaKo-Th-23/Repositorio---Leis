@@ -65,3 +65,43 @@ Há repercussão geral. Leading case: transitado em julgado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "É ilícita a prisão civil de depositário infiel, qualquer que seja a modalidade de depósito.",
+    "tese_snippet": "É ilícita a prisão civil de depositário infiel, qualquer que seja a modalidade de depósito."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-60",
+  "nr": 60,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=2343529",
+      "numero": "466343"
+    }
+  ],
+  "questao": "Possibilidade de prisão civil do depositário infiel no ordenamento jurídico-constitucional brasileiro. ",
+  "situacao": "Há repercussão geral. Leading case: transitado em julgado",
+  "tese": "É ilícita a prisão civil de depositário infiel, qualquer que seja a modalidade de depósito.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

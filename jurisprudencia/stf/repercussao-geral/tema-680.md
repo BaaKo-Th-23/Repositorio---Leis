@@ -65,3 +65,43 @@ Há repercussão geral. Leading case: transitado em julgado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "A partir das eleições de 2014, inclusive, o Ministério Público Eleitoral tem legitimidade para recorrer da decisão que julga o pedido de registro de candidatura, ainda que não tenha apresentado impugnação.",
+    "tese_snippet": "A partir das eleições de 2014, inclusive, o Ministério Público Eleitoral tem legitimidade para recorrer da decisão que julga o pedido de registro de candidatura, ainda que não tenha apresentado impugnação."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-680",
+  "nr": 680,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 11880,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=4348076",
+      "numero": "728188"
+    }
+  ],
+  "questao": "Legitimidade do Ministério Público Eleitoral para recorrer de decisão que defere registro de candidatura, ainda que não haja apresentado impugnação ao pedido inicial.",
+  "situacao": "Há repercussão geral. Leading case: transitado em julgado",
+  "tese": "A partir das eleições de 2014, inclusive, o Ministério Público Eleitoral tem legitimidade para recorrer da decisão que julga o pedido de registro de candidatura, ainda que não tenha apresentado impugnação.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

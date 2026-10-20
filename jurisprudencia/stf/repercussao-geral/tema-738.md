@@ -65,3 +65,43 @@ Há repercussão geral com reafirmação de Jurisprudência. Leading case: trans
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "É incompatível com a Constituição a exigência de inscrição na Ordem dos Músicos do Brasil, bem como de pagamento de anuidade, para o exercício da profissão.",
+    "tese_snippet": "É incompatível com a Constituição a exigência de inscrição na Ordem dos Músicos do Brasil, bem como de pagamento de anuidade, para o exercício da profissão."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-738",
+  "nr": 738,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=4526783",
+      "numero": "795467"
+    }
+  ],
+  "questao": "Necessidade de registro na Ordem dos Músicos do Brasil – OMB e do pagamento de anuidades à referida autarquia para o exercício da profissão de músico.",
+  "situacao": "Há repercussão geral com reafirmação de Jurisprudência. Leading case: transitado em julgado",
+  "tese": "É incompatível com a Constituição a exigência de inscrição na Ordem dos Músicos do Brasil, bem como de pagamento de anuidade, para o exercício da profissão.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

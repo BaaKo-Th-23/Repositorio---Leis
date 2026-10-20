@@ -48,3 +48,38 @@ baixado_em: 2026-10-15
   "ultimaAtualizacao": "13/04/2023"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "cautelar": "NAO",
+  "decisao": "AGRAVO_REGIMENTAL",
+  "historico": [
+    {
+      "dataAdmissao": "2025-11-24",
+      "dataCriacao": "2026-06-02T00:00:00.000-03:00",
+      "dataJulgamento": "2026-04-29",
+      "dataPublicacao": "2026-04-30",
+      "situacao": "Admitido"
+    },
+    {
+      "dataAdmissao": "2025-11-24",
+      "dataCriacao": "2026-08-21T00:00:00.000-03:00",
+      "dataJulgamento": "2026-04-29",
+      "dataPublicacao": "2026-04-30",
+      "situacao": "Acórdão Publicado"
+    }
+  ],
+  "id": "stf-adpf-788",
+  "linkDecisao": "https://redir.stf.jus.br/paginadorpub/paginador.jsp?docTP=TP&docID=759738023",
+  "nr": "788",
+  "orgao": "STF",
+  "possuiDecisoes": true,
+  "textoAtoImpugnado": "LEG-EST CES ANO-1989 ART-00001 INC-00001 CONSTITUIÇÃO ESTADUAL, PR",
+  "textoDecisao": "O Tribunal, por unanimidade, negou provimento ao agravo regimental, nos termos do voto do Relator. Afirmou suspeição o Ministro Edson Fachin. Plenário, Sessão Virtual de 4.3.2022 a 11.3.2022.",
+  "textoEmenta": "Ementa: AGRAVO REGIMENTAL NA ARGUIÇÃO DE DESCUMPRIMENTO DE PRECEITO FUNDAMENTAL . SUBSISTÊNCIA DA DECISÃO AGRAVADA. CABIMENTO DE AÇÃO DIRETA DE INCONSTITUCIONALIDADE DA NORMA MUNICIPAL NO TRIBUNAL LOCAL. AUSÊNCIA DE SUBSIDIARIEDADE. AGRAVO REGIMENTAL A QUE SE NEGA PROVIMENTO. I - As razões do agravo regimental são inaptas para desconstituir os fundamentos da decisão agravada, que, por isso, se mantêm hígidos. II - Nos termos da jurisprudência desta Corte, não cabe ADPF quando houver qualquer outro meio eficaz de sanar a lesividade apontada. No caso, seria possível, em tese, o ajuizamento de ação direta de inconstitucionalidade da norma municipal no âmbito do Tribunal de Justiça local. III - Agravo regimental a que se nega provimento.",
+  "tipo": "ADPF",
+  "ultimaAtualizacao": "14/03/2022"
+}
+```

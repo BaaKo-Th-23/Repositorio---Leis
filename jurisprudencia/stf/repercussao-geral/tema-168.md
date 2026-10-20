@@ -65,3 +65,43 @@ Há repercussão geral com reafirmação de Jurisprudência. Leading case: trans
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "É inconstitucional a aplicação retroativa de lei que majora a alíquota incidente sobre o lucro proveniente de operações incentivadas ocorridas no passado, ainda que no mesmo ano-base, tendo em vista que o fato gerador se consolida no momento em que ocorre cada operação de exportação, à luz da extrafiscalidade da tributação na espécie.",
+    "tese_snippet": "É inconstitucional a aplicação retroativa de lei que majora a alíquota incidente sobre o lucro proveniente de operações incentivadas ocorridas no passado, ainda que no mesmo ano-base, tendo em vista que o fato gerador se consolida no momento em que ocorre cada operação de exportação, à luz da extrafiscalidade da tributação na espécie."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-168",
+  "nr": 168,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=2636879",
+      "numero": "592396"
+    }
+  ],
+  "questao": "Aplicação de lei que majorou alíquota do imposto de renda sobre fatos ocorridos no mesmo ano em que publicada, para pagamento do tributo com relação ao exercício seguinte. ",
+  "situacao": "Há repercussão geral com reafirmação de Jurisprudência. Leading case: transitado em julgado",
+  "tese": "É inconstitucional a aplicação retroativa de lei que majora a alíquota incidente sobre o lucro proveniente de operações incentivadas ocorridas no passado, ainda que no mesmo ano-base, tendo em vista que o fato gerador se consolida no momento em que ocorre cada operação de exportação, à luz da extrafiscalidade da tributação na espécie.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

@@ -188,7 +188,7 @@ def texto_do_pdf(caminho):
         os.unlink(saida)
 
 
-def bnp_stf(limite, refazer=False, tribunal="STF"):
+def bnp_stf(limite, refazer=False, tribunal="STF", atualizar_indice=False):
     tribunal = tribunal.upper()
     """Precedentes STF do Banco Nacional de Precedentes do CNJ, com paginação e JSON original."""
     url = "https://pangeabnp.pdpj.jus.br/api/v1/precedentes"
@@ -209,7 +209,7 @@ def bnp_stf(limite, refazer=False, tribunal="STF"):
                       "orgaos": [tribunal], "tipos": especies}
             cache = os.path.join(RAIZ, "_fonte", "bnp", (pasta if tribunal == "STF" else tribunal.lower() + "-" + pasta) + "-todos", f"pagina-{pagina}.json")
             try:
-                if os.path.exists(cache) and not refazer:
+                if os.path.exists(cache) and not refazer and not atualizar_indice:
                     with open(cache, encoding="utf-8") as f:
                         dados = json.load(f)
                 else:
@@ -217,10 +217,29 @@ def bnp_stf(limite, refazer=False, tribunal="STF"):
                     req = urllib.request.Request(url, data=json.dumps({"filtro": filtro}).encode(),
                                                  headers={"Content-Type": "application/json", "Accept": "application/json"})
                     with urllib.request.urlopen(req, timeout=90) as r:
-                        dados = json.load(r)
+                        bruto_resposta = r.read()
+                    dados = json.loads(bruto_resposta)
                     if not isinstance(dados.get("resultados"), list) or "total" not in dados:
                         raise RuntimeError("BNP sem esquema de resultados esperado")
                     os.makedirs(os.path.dirname(cache), exist_ok=True)
+                    # O índice atualizado não pode apagar a evidência das versões
+                    # anteriores nem alterar o corpo de enunciados idênticos.
+                    capturas = os.path.join(RAIZ, "_fonte", "bnp-capturas")
+                    os.makedirs(capturas, exist_ok=True)
+                    brutos = [bruto_resposta]
+                    if os.path.exists(cache):
+                        with open(cache, "rb") as f:
+                            brutos.append(f.read())
+                    for bruto in brutos:
+                        digest = hashlib.sha256(bruto).hexdigest()
+                        captura = os.path.join(capturas, digest + ".json")
+                        if not os.path.exists(captura):
+                            with open(captura, "xb") as f:
+                                f.write(bruto)
+                    with open(os.path.join(capturas, "consultas.jsonl"), "a", encoding="utf-8") as f:
+                        f.write(json.dumps({"fonte": url, "filtro": filtro, "consultado_em": dt.datetime.now().isoformat(),
+                                           "sha256_resposta": hashlib.sha256(bruto_resposta).hexdigest(),
+                                           "total_informado": dados["total"]}, ensure_ascii=False) + "\n")
                     with open(cache + ".tmp", "w", encoding="utf-8") as f:
                         json.dump(dados, f, ensure_ascii=False)
                     os.replace(cache + ".tmp", cache)
@@ -572,6 +591,7 @@ def stj_repetitivos(limite, refazer=False):
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--refazer", action="store_true")
+    ap.add_argument("--atualizar-indice", action="store_true", help="atualiza páginas BNP, preserva capturas e acrescenta somente registros/versões novos")
     ap.add_argument("--rps", type=float, default=1)
     ap.add_argument("--somente", choices=["cadernos", "stj-repetitivos", "tcu-sumulas", "stm-sumulas", "tnu-sumulas", "regimentos", "bnp-stf", "bnp-outros"], help="limita a coleta à fonte indicada")
     a = ap.parse_args()
@@ -616,12 +636,12 @@ def main():
         for chave in cont:
             cont[chave] += resultado[chave]
     if a.somente in (None, "bnp-stf"):
-        resultado = bnp_stf(limite, a.refazer)
+        resultado = bnp_stf(limite, a.refazer, atualizar_indice=a.atualizar_indice)
         for chave in cont:
             cont[chave] += resultado[chave]
     if a.somente in (None, "bnp-outros"):
         for tribunal in ("TNU", "TSE", "STM"):
-            resultado = bnp_stf(limite, a.refazer, tribunal)
+            resultado = bnp_stf(limite, a.refazer, tribunal, atualizar_indice=a.atualizar_indice)
             for chave in cont:
                 cont[chave] += resultado[chave]
     for tribunal, pasta, prefixo, url, analisar, tipo, molde in CADERNOS if a.somente in (None, "cadernos") else []:

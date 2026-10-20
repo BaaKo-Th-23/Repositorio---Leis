@@ -72,3 +72,50 @@ Há repercussão geral. Leading case: acórdão publicado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "As receitas brutas operacionais decorrentes da atividade empresarial típica das instituições financeiras integram a base de cálculo PIS/COFINS cobrado em face daquelas ante a Lei nº 9.718/98, mesmo em sua redação original, ressalvadas as exclusões e deduções legalmente prescritas.",
+    "tese_snippet": "As receitas brutas operacionais decorrentes da atividade empresarial típica das instituições financeiras integram a base de cálculo PIS/COFINS cobrado em face daquelas ante a Lei nº 9.718/98, mesmo em sua redação original, ressalvadas as exclusões e deduções legalmente prescritas."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-372",
+  "nr": 372,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=3840384",
+      "numero": "609096"
+    }
+  ],
+  "questao": "Exigibilidade do PIS e da COFINS sobre as receitas financeiras das instituições financeiras. ",
+  "situacao": "Há repercussão geral. Leading case: acórdão publicado",
+  "suspensoes": [
+    {
+      "ativa": true,
+      "dataSuspensao": "30/08/2024",
+      "descricao": "Suspensão nacional"
+    }
+  ],
+  "tese": "As receitas brutas operacionais decorrentes da atividade empresarial típica das instituições financeiras integram a base de cálculo PIS/COFINS cobrado em face daquelas ante a Lei nº 9.718/98, mesmo em sua redação original, ressalvadas as exclusões e deduções legalmente prescritas.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

@@ -65,3 +65,43 @@ Há repercussão geral. Leading case: transitado em julgado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "O ICMS não incide sobre o fornecimento de água tratada por concessionária de serviço público, dado que esse serviço não caracteriza uma operação de circulação de mercadoria.",
+    "tese_snippet": "O ICMS não incide sobre o fornecimento de água tratada por concessionária de serviço público, dado que esse serviço não caracteriza uma operação de circulação de mercadoria."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-326",
+  "nr": 326,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=3809887",
+      "numero": "607056"
+    }
+  ],
+  "questao": "Incidência de ICMS sobre o fornecimento de água encanada por concessionárias. ",
+  "situacao": "Há repercussão geral. Leading case: transitado em julgado",
+  "tese": "O ICMS não incide sobre o fornecimento de água tratada por concessionária de serviço público, dado que esse serviço não caracteriza uma operação de circulação de mercadoria.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

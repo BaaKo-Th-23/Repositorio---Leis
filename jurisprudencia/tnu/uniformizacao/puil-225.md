@@ -67,3 +67,45 @@ Transitado em julgado
   "ultimaAtualizacao": "14/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "É possível a concessão de pensão por morte quando o instituidor, apesar de titular de benefício assistencial, tinha direito adquirido a benefício previdenciário não concedido pela Administração.",
+    "tese_snippet": "É possível a concessão de pensão por morte quando o instituidor, apesar de titular de benefício assistencial, tinha direito adquirido a benefício previdenciário não concedido pela Administração."
+  },
+  "historico": [
+    {
+      "dataAdmissao": "2025-11-24",
+      "dataCriacao": "2026-06-02T00:00:00.000-03:00",
+      "dataJulgamento": "2026-04-29",
+      "dataPublicacao": "2026-04-30",
+      "situacao": "Admitido"
+    },
+    {
+      "dataAdmissao": "2025-11-24",
+      "dataCriacao": "2026-08-21T00:00:00.000-03:00",
+      "dataJulgamento": "2026-04-29",
+      "dataPublicacao": "2026-04-30",
+      "situacao": "Acórdão Publicado"
+    }
+  ],
+  "id": "tnu-puil-225",
+  "nr": 225,
+  "orgao": "TNU",
+  "processosParadigma": [
+    {
+      "classe": 457,
+      "link": "https://eproctnu.cjf.jus.br/eproc/externo_controlador.php?acao=processo_seleciona_publica&acao_origem=processo_consulta_publica&acao_retorno=processo_consulta_publica&num_processo=00299028620124013500",
+      "numero": "00299028620124013500"
+    }
+  ],
+  "questao": "É possível a concessão de pensão por morte quando instituidor, apesar de titular de benefício assistencial, tinha direito adquirido a benefício previdenciário?",
+  "situacao": "Transitado em julgado",
+  "tese": "É possível a concessão de pensão por morte quando o instituidor, apesar de titular de benefício assistencial, tinha direito adquirido a benefício previdenciário não concedido pela Administração.",
+  "tipo": "PUIL",
+  "ultimaAtualizacao": "19/10/2026"
+}
+```

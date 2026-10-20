@@ -65,3 +65,43 @@ Há repercussão geral com reafirmação de Jurisprudência. Leading case: trans
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "Compete aos Municípios legislar sobre assuntos de interesse local, notadamente sobre a definição do tempo máximo de espera de clientes em filas de instituições bancárias.",
+    "tese_snippet": "Compete aos Municípios legislar sobre assuntos de interesse local, notadamente sobre a definição do tempo máximo de espera de clientes em filas de instituições bancárias."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-272",
+  "nr": 272,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=3850351",
+      "numero": "610221"
+    }
+  ],
+  "questao": "Competência dos Municípios para legislar sobre tempo máximo de espera de clientes em filas de bancos. ",
+  "situacao": "Há repercussão geral com reafirmação de Jurisprudência. Leading case: transitado em julgado",
+  "tese": "Compete aos Municípios legislar sobre assuntos de interesse local, notadamente sobre a definição do tempo máximo de espera de clientes em filas de instituições bancárias.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

@@ -1,10 +1,10 @@
 # Progresso
 
-Gerado em 20/10/2026 19:58:45 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 20/10/2026 20:10:32 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**757.801 documentos · 757.776 / ~11.768.799 nas séries com meta (6.4%) · 25 sem meta**
+**757.825 documentos · 757.800 / ~11.768.799 nas séries com meta (6.4%) · 25 sem meta**
 
 ![progresso](progresso.svg)
 
@@ -89,7 +89,7 @@ Planalto, Senado, Câmara e assembleias.
 
 Diários oficiais e portais de órgãos e tribunais.
 
-335.771 / ~861.320 documentos (39.0%)
+335.795 / ~861.320 documentos (39.0%)
 
 ### Infralegal — tributário
 
@@ -241,18 +241,18 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Jurisprudência vinculante
 
-11.540 / ~14.667 documentos (78.7%)
+11.564 / ~14.667 documentos (78.8%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
 | ✅ | Súmulas vinculantes do STF | 62 | 62 | `jurisprudencia/stf/sumulas-vinculantes` | CNJ — Pangea/BNP (precedentes do STF) |
 | ✅ | Súmulas do STF | 736 | 736 | `jurisprudencia/stf/sumulas` | stf.jus.br |
-| ✅ | Temas de repercussão geral | 1.489 | 1.489 | `jurisprudencia/stf/repercussao-geral` | CNJ — Pangea/BNP (precedentes do STF) |
-| 🟦 | Controle concentrado com eficácia erga omnes (ADI, ADC, ADPF, ADO) | 5.194 | 8.000 | `jurisprudencia/stf/controle-concentrado` | stf.jus.br |
+| ✅ | Temas de repercussão geral | 1.494 | 1.489 | `jurisprudencia/stf/repercussao-geral` | CNJ — Pangea/BNP (precedentes do STF) |
+| 🟦 | Controle concentrado com eficácia erga omnes (ADI, ADC, ADPF, ADO) | 5.198 | 8.000 | `jurisprudencia/stf/controle-concentrado` | stf.jus.br |
 | ✅ | Súmulas do STJ | 649 | 649 | `jurisprudencia/stj/sumulas` | stj.jus.br |
 | ✅ | Temas de recursos repetitivos (STJ) | 1.474 | 1.474 | `jurisprudencia/stj/repetitivos` | STJ — dados abertos, Temas.csv (números únicos) |
 | ✅ | Súmulas e orientações jurisprudenciais do TST | 1.157 | 1.157 | `jurisprudencia/tst` | tst.jus.br |
-| 🟦 | Súmulas do TCU, TNU, STM e TSE | 383 | 700 | `jurisprudencia/outros-tribunais`, `jurisprudencia/tnu/sumulas` | tcu.gov.br, cjf.jus.br, stm.jus.br, tse.jus.br |
+| 🟦 | Súmulas do TCU, TNU, STM e TSE | 398 | 700 | `jurisprudencia/outros-tribunais`, `jurisprudencia/tnu/sumulas` | tcu.gov.br, cjf.jus.br, stm.jus.br, tse.jus.br |
 | 🟦 | Regimentos internos dos tribunais superiores | 2 | 6 | `jurisprudencia/regimentos` | portais dos tribunais |
 | ✅ | Temas de uniformização da TNU, incluindo cancelados | 394 | 394 | `jurisprudencia/tnu/uniformizacao` | CNJ — Pangea/BNP (precedentes da TNU) |
 

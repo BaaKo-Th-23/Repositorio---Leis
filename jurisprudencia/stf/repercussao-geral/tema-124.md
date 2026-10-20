@@ -60,3 +60,42 @@ Cancelado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "alertaSituacao": "cancelado",
+  "highlight": {
+    "tese_snippet": "-"
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-124",
+  "nr": 124,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=4603174",
+      "numero": "825274"
+    }
+  ],
+  "questao": "Cabimento de recurso especial eleitoral contra decisão administrativa sobre prestação de contas de campanhas eleitorais.",
+  "situacao": "Cancelado",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

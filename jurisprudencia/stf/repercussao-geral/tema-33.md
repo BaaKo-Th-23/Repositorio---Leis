@@ -65,3 +65,43 @@ Há repercussão geral. Leading case: transitado em julgado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "Os requisitos de relevância e urgência previstos no art. 62 da Constituição Federal estão presentes na Medida Provisória 2.170-36/2001, que autoriza a capitalização de juros com periodicidade inferior a um ano nas operações realizadas pelas instituições integrantes do Sistema Financeiro Nacional.",
+    "tese_snippet": "Os requisitos de relevância e urgência previstos no art. 62 da Constituição Federal estão presentes na Medida Provisória 2.170-36/2001, que autoriza a capitalização de juros com periodicidade inferior a um ano nas operações realizadas pelas instituições integrantes do Sistema Financeiro Nacional."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-33",
+  "nr": 33,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=2636792",
+      "numero": "592377"
+    }
+  ],
+  "questao": "Relevância e urgência da medida provisória nº 2.170-36/2001 que disciplina a capitalização de juros com periodicidade inferior a um ano nas operações realizadas pelas instituições integrantes do Sistema Financeiro Nacional. ",
+  "situacao": "Há repercussão geral. Leading case: transitado em julgado",
+  "tese": "Os requisitos de relevância e urgência previstos no art. 62 da Constituição Federal estão presentes na Medida Provisória 2.170-36/2001, que autoriza a capitalização de juros com periodicidade inferior a um ano nas operações realizadas pelas instituições integrantes do Sistema Financeiro Nacional.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

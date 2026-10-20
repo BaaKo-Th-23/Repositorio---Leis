@@ -65,3 +65,43 @@ Não há repercussão geral. Leading case: transitado em julgado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "A questão da validade de contrato de adesão, firmado entre distribuidora e revendedora de combustíveis, que confere exclusividade de fornecimento de produtos derivados de petróleo, não tem repercussão geral, pois ausente relevância econômica, política, social ou jurídica que transcenda ao interesse das partes.",
+    "tese_snippet": "A questão da validade de contrato de adesão, firmado entre distribuidora e revendedora de combustíveis, que confere exclusividade de fornecimento de produtos derivados de petróleo, não tem repercussão geral, pois ausente relevância econômica, política, social ou jurídica que transcenda ao interesse das partes."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-68",
+  "nr": 68,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=2581081",
+      "numero": "573181"
+    }
+  ],
+  "questao": "Validade de contrato de adesão, firmado entre distribuidora e revendedora de combustíveis, que confere exclusividade de fornecimento de produtos derivados de petróleo. ",
+  "situacao": "Não há repercussão geral. Leading case: transitado em julgado",
+  "tese": "A questão da validade de contrato de adesão, firmado entre distribuidora e revendedora de combustíveis, que confere exclusividade de fornecimento de produtos derivados de petróleo, não tem repercussão geral, pois ausente relevância econômica, política, social ou jurídica que transcenda ao interesse das partes.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

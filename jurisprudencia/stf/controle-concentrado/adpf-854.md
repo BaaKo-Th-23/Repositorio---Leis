@@ -48,3 +48,38 @@ baixado_em: 2026-10-15
   "ultimaAtualizacao": "06/03/2025"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "cautelar": "NAO",
+  "decisao": "REFERENDO",
+  "historico": [
+    {
+      "dataAdmissao": "2025-11-24",
+      "dataCriacao": "2026-06-02T00:00:00.000-03:00",
+      "dataJulgamento": "2026-04-29",
+      "dataPublicacao": "2026-04-30",
+      "situacao": "Admitido"
+    },
+    {
+      "dataAdmissao": "2025-11-24",
+      "dataCriacao": "2026-08-21T00:00:00.000-03:00",
+      "dataJulgamento": "2026-04-29",
+      "dataPublicacao": "2026-04-30",
+      "situacao": "Acórdão Publicado"
+    }
+  ],
+  "id": "stf-adpf-854",
+  "linkDecisao": "https://redir.stf.jus.br/paginadorpub/paginador.jsp?docTP=TP&docID=794576241",
+  "nr": "854",
+  "orgao": "STF",
+  "possuiDecisoes": true,
+  "textoAtoImpugnado": "LEG-FED CF ANO-1988 ART-00037 \"CAPUT\" ART-00165 PAR-00011 INC-00002 ART-00166 PAR-00013 CF-1988 CONSTITUIÇÃO FEDERAL LEG-FED LCP-000210 ANO-2024 ART-00010 INC-00023 LEI COMPLEMENTAR",
+  "textoDecisao": "O Tribunal, por unanimidade, referendou a decisão que, visando ao fiel atendimento às determinações do Plenário do STF quanto ao enquadramento das emendas parlamentares ao regime constitucional, acolheu o requerimento formulado para esclarecer que fica vedado ao Poder Executivo - a partir da publicação dessa decisão de 4/12/2025 - receber, apreciar, encaminhar, liberar, executar (ou atos similares) quaisquer novas propostas ou indicações relativas a emendas parlamentares provenientes dos Deputados Federais Eduardo Bolsonaro e Alexandre Ramagem. Tudo nos termos do voto do Relator, Ministro Flávio Dino. O Ministro André Mendonça acompanhou o Relator com ressalvas. Plenário, Sessão Virtual de 19.12.2025 a 6.2.2026.",
+  "textoEmenta": "Ementa: ARGUIÇÃO DE DESCUMPRIMENTO DE PRECEITO FUNDAMENTAL. PARLAMENTARES AFASTADOS DO TERRITÓRIO NACIONAL E DO EXERCÍCIO REGULAR DO MANDATO. IMPOSSIBILIDADE DE APRESENTAÇÃO E EXECUÇÃO DE EMENDAS. IMPEDIMENTO DE ORDEM TÉCNICA (ARTS. 165, § 11, II E 166, § 13 DA CF; ART. 10, XXIII, DA LC 210/2024). PRINCÍPIOS DA LEGALIDADE E MORALIDADE ADMINISTRATIVA (ART. 37, CAPUT, DA CF). DESVIRTUAMENTO DO DEVIDO PROCESSO ORÇAMENTÁRIO. MEDIDA CAUTELAR DEFERIDA. *. O processo orçamentário, regido pela Constituição, exige atuação parlamentar regular e presencial, sendo a apresentação de emendas prerrogativa inerente ao exercício efetivo do mandato legislativo. Disso decorre a impossibilidade de parlamentares situados permanentemente no exterior influenciarem na destinação de recursos públicos por meio de emendas ao Orçamento da União. 2. Impedimento de ordem técnica, nos termos dos arts. 165, § 11, II, e 166, § 13, da Constituição, e art. 10, XXIII, da LC 210/2024, configurado pela afronta aos princípios da legalidade e da moralidade (art. 37, caput, da CF), bem como pela ruptura do nexo entre representação política e atuação institucional. 3. Risco de deformação institucional e de comprometimento da transparência, da responsabilidade política e da integridade na alocação de recursos, especialmente diante do volume bilionário tratado por meio de emendas parlamentares. 4. Medida cautelar referendada para assegurar o fiel cumprimento do acórdão proferido por esta Suprema Corte em dezembro de 2022, a fim de vedar ao Poder Executivo o recebimento, a apreciação, o encaminhamento, a liberação, a execução — ou a prática de qualquer ato equivalente — de novas propostas ou indicações de emendas parlamentares apresentadas pelos Deputados Federais Eduardo Bolsonaro e Alexandre Ramagem.",
+  "tipo": "ADPF",
+  "ultimaAtualizacao": "09/02/2026"
+}
+```

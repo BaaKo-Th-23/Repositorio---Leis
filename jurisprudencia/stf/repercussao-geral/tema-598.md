@@ -65,3 +65,43 @@ Há repercussão geral. Leading case: transitado em julgado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "O deferimento de sequestro de rendas públicas para pagamento de precatório deve se restringir às hipóteses enumeradas taxativamente na Constituição Federal de 1988.",
+    "tese_snippet": "O deferimento de sequestro de rendas públicas para pagamento de precatório deve se restringir às hipóteses enumeradas taxativamente na Constituição Federal de 1988."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-598",
+  "nr": 598,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=4643090",
+      "numero": "840435"
+    }
+  ],
+  "questao": "Sequestro de verbas públicas para pagamento de crédito a portador de moléstia grave sem observância à regra dos precatórios.",
+  "situacao": "Há repercussão geral. Leading case: transitado em julgado",
+  "tese": "O deferimento de sequestro de rendas públicas para pagamento de precatório deve se restringir às hipóteses enumeradas taxativamente na Constituição Federal de 1988.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

@@ -65,3 +65,43 @@ Há repercussão geral com reafirmação de Jurisprudência. Leading case: trans
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "É compatível com a Constituição lei específica que altera o cálculo da Gratificação por Produção Suplementar - GPS, desde que não haja redução da remuneração na sua totalidade.",
+    "tese_snippet": "É compatível com a Constituição lei específica que altera o cálculo da Gratificação por Produção Suplementar - GPS, desde que não haja redução da remuneração na sua totalidade."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-434",
+  "nr": 434,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=2658476",
+      "numero": "596542"
+    }
+  ],
+  "questao": "Alteração do cálculo da Gratificação por Produção Suplementar – GPS  por lei específica.  ",
+  "situacao": "Há repercussão geral com reafirmação de Jurisprudência. Leading case: transitado em julgado",
+  "tese": "É compatível com a Constituição lei específica que altera o cálculo da Gratificação por Produção Suplementar - GPS, desde que não haja redução da remuneração na sua totalidade.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

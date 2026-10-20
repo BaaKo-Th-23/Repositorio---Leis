@@ -65,3 +65,43 @@ Há repercussão geral com reafirmação de Jurisprudência. Leading case: trans
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "A imunidade tributária prevista no art. 150, VI, c, da CF/88 aplica-se aos bens imóveis, temporariamente ociosos, de propriedade das instituições de educação e de assistência social sem fins lucrativos que atendam os requisitos legais.",
+    "tese_snippet": "A imunidade tributária prevista no art. 150, VI, c, da CF/88 aplica-se aos bens imóveis, temporariamente ociosos, de propriedade das instituições de educação e de assistência social sem fins lucrativos que atendam os requisitos legais."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-693",
+  "nr": 693,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=4452299",
+      "numero": "767332"
+    }
+  ],
+  "questao": "Incidência do IPTU sobre lotes vagos de propriedade de instituições de educação e de assistência social sem fins lucrativos.",
+  "situacao": "Há repercussão geral com reafirmação de Jurisprudência. Leading case: transitado em julgado",
+  "tese": "A imunidade tributária prevista no art. 150, VI, c, da CF/88 aplica-se aos bens imóveis, temporariamente ociosos, de propriedade das instituições de educação e de assistência social sem fins lucrativos que atendam os requisitos legais.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

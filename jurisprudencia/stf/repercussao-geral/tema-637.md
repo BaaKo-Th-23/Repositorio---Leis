@@ -65,3 +65,43 @@ Não há repercussão geral (questão infraconstitucional). Leading case: transi
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "A questão do prazo prescricional aplicável às ações de reparação de danos decorrentes de acidente de trabalho reconhecido antes do advento da Emenda Constitucional 45/2004 tem natureza infraconstitucional e a ela atribuem-se os efeitos da ausência de repercussão geral, nos termos do precedente fixado no RE 584.608, Relatora a Ministra Ellen Gracie, DJe 13/3/2009. ",
+    "tese_snippet": "A questão do prazo prescricional aplicável às ações de reparação de danos decorrentes de acidente de trabalho reconhecido antes do advento da Emenda Constitucional 45/2004 tem natureza infraconstitucional e a ela atribuem-se os efeitos da ausência de repercussão geral, nos termos do precedente fixado no RE 584.608, Relatora a Ministra Ellen Gracie, DJe 13/3/2009. "
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-637",
+  "nr": 637,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 11880,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=4115625",
+      "numero": "650932"
+    }
+  ],
+  "questao": "Prazo prescricional relativo às ações de indenização por danos morais e materiais decorrentes de acidente de trabalho antes do advento da Emenda Constitucional 45/2004.",
+  "situacao": "Não há repercussão geral (questão infraconstitucional). Leading case: transitado em julgado",
+  "tese": "A questão do prazo prescricional aplicável às ações de reparação de danos decorrentes de acidente de trabalho reconhecido antes do advento da Emenda Constitucional 45/2004 tem natureza infraconstitucional e a ela atribuem-se os efeitos da ausência de repercussão geral, nos termos do precedente fixado no RE 584.608, Relatora a Ministra Ellen Gracie, DJe 13/3/2009. ",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

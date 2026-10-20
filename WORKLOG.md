@@ -1252,3 +1252,37 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
   e preservados, com registro em scripts/dados/hardbreaks-fed001-011-20261020.json;
   os demais checks de espaços/conflitos passaram. Nenhum corpo/hash foi alterado
   apenas para silenciar o aviso do Git.
+
+### São Paulo: preparação dos primeiros 20.000 documentos com revisão v2
+
+- Preparação limitada aos dois primeiros grupos congelados da revisão v2,
+  com SHA-256 individual conferido no momento do staging. Os manifests por
+  lote preservam fonte, identidade, evidência de conteúdo próprio e retenções.
+- As correções de `revogada: false` para `null` preservam o corpo normativo
+  byte a byte e registram situação literal, hash anterior e backup. A indicação
+  “sem revogação expressa” não é tratada como prova universal de vigência.
+- O index foi preparado somente por caminhos explícitos, com objetos em pack,
+  sem criar refs nem alterar arquivos. Quatro testes verificam preservação do
+  index alheio, hashes, modo de simulação e recusa de filtros de checkout.
+  O commit normal e seu hook continuam gerando o progresso do index.
+
+- Publicação paulista suspensa antes do commit após achado de remissão a
+  tabelas próprias ausentes (DEC38.545/1994, id13528). Foi solicitada revisão
+  contextual por overlay; os arquivos e objetos preparados foram preservados.
+  Nenhum desses 20.000 textos foi contado como publicado nesta etapa.
+
+### Jurisprudência: versões oficiais e súmulas individuais
+
+- Atualização BNP em 2.131 arquivos STF/TNU, preservando versões históricas
+  e arquivos idênticos. As 4.253 versões contidas nos arquivos foram confrontadas
+  com as respostas oficiais preservadas, sem inferir datas de julgamento.
+- Quinze súmulas STM foram conferidas byte a byte com a reextração integral
+  de seus PDFs oficiais. Cancelamentos e datas ausentes ficam explícitos.
+- Listas congeladas, hashes dos documentos e relatórios de todas as versões
+  acompanham o lote. O incremento de arquivos será o apurado no index, sem
+  contar uma atualização de arquivo existente como um documento novo.
+
+- Auditoria do index: 2.146 Markdown sem erros; a ausência de data de
+  julgamento permanece explícita nos 2.146. O diff não apresenta falhas.
+  Incremento real: 24 novos documentos e 2.122 atualizações de documentos
+  existentes, além dos manifests e scripts de auditoria/atualização.

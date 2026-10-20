@@ -65,3 +65,43 @@ Há repercussão geral. Leading case: transitado em julgado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "Compete aos municípios legislar sobre a obrigatoriedade de instalação de hidrômetros individuais nos edifícios e condomínios, em razão do preponderante interesse local envolvido.",
+    "tese_snippet": "Compete aos municípios legislar sobre a obrigatoriedade de instalação de hidrômetros individuais nos edifícios e condomínios, em razão do preponderante interesse local envolvido."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-849",
+  "nr": 849,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=4378197",
+      "numero": "738481"
+    }
+  ],
+  "questao": "Competência municipal para legislar acerca da obrigatoriedade de instalação de hidrômetros individuais nos edifícios e condomínios.",
+  "situacao": "Há repercussão geral. Leading case: transitado em julgado",
+  "tese": "Compete aos municípios legislar sobre a obrigatoriedade de instalação de hidrômetros individuais nos edifícios e condomínios, em razão do preponderante interesse local envolvido.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

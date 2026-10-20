@@ -47,3 +47,38 @@ baixado_em: 2026-10-15
   "ultimaAtualizacao": "23/04/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "cautelar": "NAO",
+  "decisao": "REFERENDO",
+  "historico": [
+    {
+      "dataAdmissao": "2025-11-24",
+      "dataCriacao": "2026-06-02T00:00:00.000-03:00",
+      "dataJulgamento": "2026-04-29",
+      "dataPublicacao": "2026-04-30",
+      "situacao": "Admitido"
+    },
+    {
+      "dataAdmissao": "2025-11-24",
+      "dataCriacao": "2026-08-21T00:00:00.000-03:00",
+      "dataJulgamento": "2026-04-29",
+      "dataPublicacao": "2026-04-30",
+      "situacao": "Acórdão Publicado"
+    }
+  ],
+  "id": "stf-adpf-342",
+  "linkDecisao": "https://redir.stf.jus.br/paginadorpub/paginador.jsp?docTP=TP&docID=769032771",
+  "nr": "342",
+  "orgao": "STF",
+  "possuiDecisoes": true,
+  "textoAtoImpugnado": "LEG-FED CF ANO-1988 ART-00172 ART-00190 ART-00222 \"CAPUT\" PAR-00001 PAR-00002 PAR-00003 PAR-00004 CF-1988 CONSTITUIÇÃO FEDERAL LEG-FED EMC-000006 ANO-1995 EMENDA CONSTITUCIONAL LEG-FED LEI-005709 ANO-1971 ART-00001 PAR-00001 LEI ORDINÁRIA LEG-FED EMD-000006 ANO-1995 EMENDA LEG-FED EMD-000036 ANO-2002 EMENDA LEG-FED DEC-074965 ANO-1974 DECRETO LEG-FED PRC-- RVJ ANO-2008 PARECER DA ADVOCACIA GERAL DA UNIÃO - AGU LEG-EST PRC-61-12-E ANO-2012 PARECER DA CORREGEDORIA-GERAL DE JUSTIÇA DO ESTADO DE SÃO PAULO",
+  "textoDecisao": "O Tribunal, por empate na votação, não referendou a medida cautelar incidental deferida, nos termos do art. 146 do RI/STF. Votaram pelo referendo da decisão os Ministros André Mendonça (Relator), Edson Fachin, Dias Toffoli, Cármen Lúcia e Nunes Marques. Votaram pelo não referendo da decisão os Ministros Alexandre de Moraes, Roberto Barroso, Luiz Fux, Rosa Weber (Presidente) e Gilmar Mendes. Redigirá o acórdão o Ministro Alexandre de Moraes. Falou, pelo amicus curiae Conselho Federal da Ordem dos Advogados do Brasil, a Dra. Silvia Virginia Silva de Souza. Plenário, Sessão Virtual Extraordinária de 28.4.2023 a 3.5.2023.",
+  "textoEmenta": "Ementa: CONSTITUCIONAL. AQUISIÇÕES DE IMÓVEIS RURAIS POR EMPRESAS BRASILEIRAS COM A MAIOR PARTE DO CAPITAL SOCIAL PERTENCENTE A PESSOAS FÍSICAS ESTRANGEIRAS RESIDENTES NO EXTERIOR OU JURÍDICAS QUE TENHAM SEDE NO ESTERIOR. ART. 1º, § 1º, DA LEI 5.709/1971. MEDIDA CAUTELAR DEFERIDA PARA DETERMINAR A SUSPENSÃO DE TODOS OS PROCESSOS JUDICIAIS EM TRÂMITE NO TERRITÓRIO NACIONAL ATÉ O JULGAMENTO FINAL DA ADPF 342 E DA ACO 2463. AUSÊNCIA DOS PRESSUPOSTOS. NÃO REFERENDO DA MEDIDA CAUTELAR INCIDENTAL. 1. A controvérsia constitucional refere-se à recepção, ou não, pela Constituição Federal de 1988 do § 1º do art. 1º da Lei 5.709/1971, que equiparou as empresas brasileiras controladas por estrangeiros às empresas alienígenas para fins de aquisição de terras, submetendo-as às disposições do referido diploma legal. 2. Medida cautelar deferida para suspender todos os processos judiciais em trâmite no território nacional que versem sobre a validade do §1º do art. 1º da Lei 5.709/1971, até o julgamento final da ADPF 342 e da ACO 2463, em razão de cenário de insegurança decorrente de posicionamentos opostos no âmbito do SUPREMO TRIBUNAL FEDERAL acerca da matéria. 3. Limitação de qualquer discussão existente quanto à submissão das empresas brasileiras controladas por estrangeiros ao regramento do § 1º do art. 1º da Lei 5.709/1971, enquanto pendente pronunciamento deste SUPREMO TRIBUNAL FEDERAL. 4. Ausência de demonstração de que exista uma correlação entre a suspensão dos processos judiciais pendentes e atendimento positivo a um cenário de insegurança jurídica. 5. Desproporção entre a suspensão de todos os processos judiciais que versem sobre a recepção do dispositivo impugnado e a finalidade pretendida em se resguardar a segurança jurídica. 6. Não referendo da medida cautelar incidental.",
+  "tipo": "ADPF",
+  "ultimaAtualizacao": "05/05/2023"
+}
+```

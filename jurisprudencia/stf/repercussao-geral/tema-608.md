@@ -65,3 +65,43 @@ Há repercussão geral. Leading case: transitado em julgado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "O prazo prescricional aplicável à cobrança de valores não depositados no Fundo de Garantia por Tempo de Serviço (FGTS) é quinquenal, nos termos do art. 7º, XXIX, da Constituição Federal.",
+    "tese_snippet": "O prazo prescricional aplicável à cobrança de valores não depositados no Fundo de Garantia por Tempo de Serviço (FGTS) é quinquenal, nos termos do art. 7º, XXIX, da Constituição Federal."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-608",
+  "nr": 608,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 11880,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=4294417",
+      "numero": "709212"
+    }
+  ],
+  "questao": "Prazo prescricional aplicável à cobrança de valores não depositados no Fundo de Garantia por Tempo de Serviço - FGTS",
+  "situacao": "Há repercussão geral. Leading case: transitado em julgado",
+  "tese": "O prazo prescricional aplicável à cobrança de valores não depositados no Fundo de Garantia por Tempo de Serviço (FGTS) é quinquenal, nos termos do art. 7º, XXIX, da Constituição Federal.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

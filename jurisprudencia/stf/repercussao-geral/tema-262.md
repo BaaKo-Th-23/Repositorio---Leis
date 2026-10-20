@@ -65,3 +65,43 @@ Há repercussão geral. Leading case: transitado em julgado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "O Ministério Público é parte legítima para ajuizamento de ação civil pública que vise o fornecimento de remédios a portadores de certa doença.",
+    "tese_snippet": "O Ministério Público é parte legítima para ajuizamento de ação civil pública que vise o fornecimento de remédios a portadores de certa doença."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-262",
+  "nr": 262,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=3791720",
+      "numero": "605533"
+    }
+  ],
+  "questao": "Legitimidade do Ministério Público para ajuizar ação civil pública que tem por objetivo compelir entes federados a entregar medicamentos a portadores de certas doenças. ",
+  "situacao": "Há repercussão geral. Leading case: transitado em julgado",
+  "tese": "O Ministério Público é parte legítima para ajuizamento de ação civil pública que vise o fornecimento de remédios a portadores de certa doença.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

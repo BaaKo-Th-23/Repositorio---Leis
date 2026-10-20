@@ -65,3 +65,43 @@ Há repercussão geral. Leading case: transitado em julgado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "Compete às Turmas Recursais o julgamento de mandado de segurança utilizado como substitutivo recursal contra decisão de juiz federal no exercício de jurisdição do Juizado Especial Federal.",
+    "tese_snippet": "Compete às Turmas Recursais o julgamento de mandado de segurança utilizado como substitutivo recursal contra decisão de juiz federal no exercício de jurisdição do Juizado Especial Federal."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-159",
+  "nr": 159,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=2617979",
+      "numero": "586789"
+    }
+  ],
+  "questao": "Competência para processar e julgar mandado de segurança contra decisão de juiz federal no exercício de jurisdição de juizado especial federal.",
+  "situacao": "Há repercussão geral. Leading case: transitado em julgado",
+  "tese": "Compete às Turmas Recursais o julgamento de mandado de segurança utilizado como substitutivo recursal contra decisão de juiz federal no exercício de jurisdição do Juizado Especial Federal.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

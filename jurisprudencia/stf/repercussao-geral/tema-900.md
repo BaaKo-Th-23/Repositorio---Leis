@@ -65,3 +65,43 @@ Há repercussão geral. Leading case: transitado em julgado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "É defeso o pagamento de remuneração em valor inferior ao salário mínimo ao servidor público, ainda que labore em jornada reduzida de trabalho.",
+    "tese_snippet": "É defeso o pagamento de remuneração em valor inferior ao salário mínimo ao servidor público, ainda que labore em jornada reduzida de trabalho."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-900",
+  "nr": 900,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=4967664",
+      "numero": "964659"
+    }
+  ],
+  "questao": "Possibilidade de recebimento de remuneração em valor inferior ao salário mínimo por servidor público que trabalha em regime de carga horária reduzida.",
+  "situacao": "Há repercussão geral. Leading case: transitado em julgado",
+  "tese": "É defeso o pagamento de remuneração em valor inferior ao salário mínimo ao servidor público, ainda que labore em jornada reduzida de trabalho.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

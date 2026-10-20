@@ -48,3 +48,38 @@ baixado_em: 2026-10-15
   "ultimaAtualizacao": "07/12/2005"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "cautelar": "SIM",
+  "decisao": "MEDIDA_CAUTELAR",
+  "historico": [
+    {
+      "dataAdmissao": "2025-11-24",
+      "dataCriacao": "2026-06-02T00:00:00.000-03:00",
+      "dataJulgamento": "2026-04-29",
+      "dataPublicacao": "2026-04-30",
+      "situacao": "Admitido"
+    },
+    {
+      "dataAdmissao": "2025-11-24",
+      "dataCriacao": "2026-08-21T00:00:00.000-03:00",
+      "dataJulgamento": "2026-04-29",
+      "dataPublicacao": "2026-04-30",
+      "situacao": "Acórdão Publicado"
+    }
+  ],
+  "id": "stf-adpf-33",
+  "linkDecisao": "https://redir.stf.jus.br/paginadorpub/paginador.jsp?docTP=AC&docID=348434",
+  "nr": "33",
+  "orgao": "STF",
+  "possuiDecisoes": true,
+  "textoAtoImpugnado": "LEG-FED CF ANO-1891 ART-00083 CF-1891 CONSTITUIÇÃO FEDERAL LEG-FED CF ANO-1934 ART-00187 CF-1934 CONSTITUIÇÃO FEDERAL LEG-FED CF ANO-1937 ART-00183 CF-1937 CONSTITUIÇÃO FEDERAL LEG-FED CF ANO-1988 ART-00001 ART-00005 ART-00007 INC-00004 ART-00018 ART-00029 ART-00034 INC-00007 ART-00034 PAR-00004 INC-00001 ART-00060 PAR-00004 INC-00001 ART-00102 INC-00003 LET-A LET-B LET-C CF-1988 CONSTITUIÇÃO FEDERAL LEG-FED LEI-003071 ANO-1942 ART-00002 LICC-1916 LEI DE INTRODUÇÃO AO CÓDIGO CIVIL LEG-FED LEI-009868 ANO-1999 ART-00021 LEG-FED LEI-009882 ANO-1999 ART-00001 \"CAPUT\" ART-00001 PAR-ÚNICO INC-00001 ART-00004 PAR-00001 ART-00005 PAR-00001 PAR-00002 PAR-00003 LEG-EST LEI-003649 ANO-1966 (PA) LEG-EST LEI-006211 ANO-1999 ART-00011 (PA) (DETERMINOU SER O ESTADO DO PARÁ SUCESSOR DO IDESP). LEG-EST DEC-004307 ANO-1986 (PA). LEG-EST REG ART-00034 (REGULAMENTO DE PESSOAL DO INSTITUTO DE DESENVOLVIMENTO ECONÔMICO-SOCIAL DO PARÁ - IDESP). LEG-EST RES-000008 ANO-1986 (PA) (CONSELHO DE ADMINISTRAÇÃO).",
+  "textoDecisao": "Após os votos do Senhor Ministro Gilmar Mendes, Relator, da Senhora Ministra Ellen Gracie e do Senhor Ministro Nelson Jobim, referendando o despacho monocrático de concessão de liminar, pediu vista o Senhor Ministro Maurício Corrêa. Ausentes, justificadamente, os Senhores Ministros Marco Aurélio, Presidente, e Moreira Alves. Presidência do Senhor Ministro Ilmar Galvão, Vice-Presidente. Plenário, 20.03.2003. Decisão: O Tribunal, por unanimidade, referendou a decisão monocrática que determinou a suspensão de todos os processos em curso e dos efeitos das decisões judiciais que versem sobre a aplicação do dispositivo ora questionado, até o julgamento final da ação. Votou o Presidente, o Senhor Ministro Maurício Corrêa. Ausentes, justificadamente, a Senhora Ministra Ellen Gracie, que proferira voto na assentada anterior, e o Senhor Ministro Joaquim Barbosa. Plenário, 29.10.2003.",
+  "textoEmenta": "Argüição de Descumprimento de Preceito Fundamental - ADPF. Medida Cautelar. 2. Ato regulamentar. Autarquia estadual. Instituto de Desenvolvimento Econômico-Social do Pará - IDESP. Remuneração de pessoal. Vinculação do quadro de salários ao salário mínimo. 3. Norma não recepcionada pela Constituição de 1988. Afronta ao princípio federativo e ao direito social fundamental ao salário mínimo digno (arts. 7º, inciso IV, 1º e 18 da Constituição). 4. Medida liminar para impedir o comprometimento da ordem jurídica e das finanças do Estado. 5. Preceito Fundamental: parâmetro de controle a indicar os preceitos fundamentais passíveis de lesão que justifiquem o processo e o julgamento da argüição de descumprimento. Direitos e garantias individuais, cláusulas pétreas, princípios sensíveis: sua interpretação, vinculação com outros princípios e garantia de eternidade. Densidade normativa ou significado específico dos princípios fundamentais. 6. Direito pré-constitucional. Cláusulas de recepção da Constituição. Derrogação do direito pré-constitucional em virtude de colisão entre este e a Constituição superveniente. Direito comparado: desenvolvimento da jurisdição constitucional e tratamento diferenciado em cada sistema jurídico. A Lei nº 9.882, de 1999, e a extensão do controle direto de normas ao direito pré-constitucional. 7. Cláusula da subsidiariedade ou do exaurimento das instâncias. Inexistência de outro meio eficaz para sanar lesão a preceito fundamental de forma ampla, geral e imediata. Caráter objetivo do instituto a revelar como meio eficaz aquele apto a solver a controvérsia constitucional relevante. Compreensão do princípio no contexto da ordem constitucional global. Atenuação do significado literal do princípio da subsidiariedade quando o prosseguimento de ações nas vias ordinárias não se mostra apto para afastar a lesão a preceito fundamental. 8. Plausibilidade da medida cautelar solicitada. 9. Cautelar confirmada.",
+  "tipo": "ADPF",
+  "ultimaAtualizacao": "29/10/2004"
+}
+```

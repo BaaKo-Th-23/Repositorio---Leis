@@ -65,3 +65,43 @@ Há repercussão geral. Leading case: transitado em julgado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "É constitucional a aplicação dos recursos arrecadados por meio de contribuição para o custeio da iluminação pública na expansão e aprimoramento da rede.",
+    "tese_snippet": "É constitucional a aplicação dos recursos arrecadados por meio de contribuição para o custeio da iluminação pública na expansão e aprimoramento da rede."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-696",
+  "nr": 696,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=4179476",
+      "numero": "666404"
+    }
+  ],
+  "questao": "Validade da destinação de recursos advindos da contribuição para o custeio do serviço de iluminação pública também ao melhoramento e à expansão da rede.",
+  "situacao": "Há repercussão geral. Leading case: transitado em julgado",
+  "tese": "É constitucional a aplicação dos recursos arrecadados por meio de contribuição para o custeio da iluminação pública na expansão e aprimoramento da rede.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

@@ -65,3 +65,43 @@ Não há repercussão geral (questão infraconstitucional). Leading case: transi
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "É infraconstitucional, a ela se aplicando os efeitos da ausência de repercussão geral, a controvérsia relativa à incidência de IPI sobre o bacalhau seco e salgado oriundo de país signatário do GATT.",
+    "tese_snippet": "É infraconstitucional, a ela se aplicando os efeitos da ausência de repercussão geral, a controvérsia relativa à incidência de IPI sobre o bacalhau seco e salgado oriundo de país signatário do GATT."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-502",
+  "nr": 502,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=3920968",
+      "numero": "627280"
+    }
+  ],
+  "questao": "Incidência de IPI sobre bacalhau seco e salgado  ",
+  "situacao": "Não há repercussão geral (questão infraconstitucional). Leading case: transitado em julgado",
+  "tese": "É infraconstitucional, a ela se aplicando os efeitos da ausência de repercussão geral, a controvérsia relativa à incidência de IPI sobre o bacalhau seco e salgado oriundo de país signatário do GATT.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

@@ -47,3 +47,36 @@ baixado_em: 2026-10-15
   "ultimaAtualizacao": "21/02/1990"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "cautelar": "NAO",
+  "decisao": "OUTROS",
+  "historico": [
+    {
+      "dataAdmissao": "2025-11-24",
+      "dataCriacao": "2026-06-02T00:00:00.000-03:00",
+      "dataJulgamento": "2026-04-29",
+      "dataPublicacao": "2026-04-30",
+      "situacao": "Admitido"
+    },
+    {
+      "dataAdmissao": "2025-11-24",
+      "dataCriacao": "2026-08-21T00:00:00.000-03:00",
+      "dataJulgamento": "2026-04-29",
+      "dataPublicacao": "2026-04-30",
+      "situacao": "Acórdão Publicado"
+    }
+  ],
+  "id": "stf-adi-27",
+  "nr": "27",
+  "orgao": "STF",
+  "possuiDecisoes": true,
+  "textoAtoImpugnado": "LEG-FED CF ANO-1988 ART-00093 INC-00003 CF-1988 CONSTITUIÇÃO FEDERAL LEG-EST ASR-000004 ANO-1988 ART-00003 PAR-ÚNICO TRIBUNAL DE JUSTIÇA, (PR).",
+  "textoEmenta": "AÇÃO DIRETA DE INCONSTITUCIONALIDADE. MEDIDA CAUTELAR. ASSENTO N. 04/1988, ART. 3., PARAGRAFO ÚNICO, DO TRIBUNAL DE JUSTIÇA DO ESTADO DO PARANA. PROVIMENTO DE VAGAS DESTINADAS AO QUINTO CONSTITUCIONAL, EM TRIBUNAL DE JUSTIÇA, QUANDO EXISTE, NO ESTADO, TAMBÉM, TRIBUNAL DE ALÇADA. ASSENTO QUE PREVE A PROMOÇÃO DE JUIZES INTEGRANTES DO TRIBUNAL DE ALÇADA, ALI REPRESENTANTES DO MINISTÉRIO PÚBLICO E DOS ADVOGADOS, AS VAGAS DO TRIBUNAL DE JUSTIÇA RESERVADAS A ADVOGADOS E MEMBROS DO MINISTÉRIO PÚBLICO, OBEDECIDOS OS CRITÉRIOS DE ANTIGUIDADE E MERECIMENTO. HIPÓTESE EM QUE SE ACONSELHA O DEFERIMENTO DA CAUTELAR. PEDIDO DE LIMINAR DEFERIDO, SUSPENDENDO-SE, ATÉ O JULGAMENTO FINAL DA AÇÃO, OS EFEITOS DO PARAGRAFO ÚNICO, DO ART. 3., DO ASSENTO N. 04/1988, DO TRIBUNAL DE JUSTIÇA DO PARANA.",
+  "tipo": "ADI",
+  "ultimaAtualizacao": "08/03/1989"
+}
+```

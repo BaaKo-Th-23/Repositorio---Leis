@@ -65,3 +65,43 @@ Há repercussão geral. Leading case: transitado em julgado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "É dos Estados e Distrito Federal a titularidade do que arrecadado, considerado Imposto de Renda, incidente na fonte, sobre rendimentos pagos, a qualquer título, por si, autarquias e fundações que instituírem e mantiverem.",
+    "tese_snippet": "É dos Estados e Distrito Federal a titularidade do que arrecadado, considerado Imposto de Renda, incidente na fonte, sobre rendimentos pagos, a qualquer título, por si, autarquias e fundações que instituírem e mantiverem."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-364",
+  "nr": 364,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=3823000",
+      "numero": "607886"
+    }
+  ],
+  "questao": "Titularidade do produto de arrecadação do imposto de renda incidente sobre complementação de aposentadoria paga por autarquia estadual. ",
+  "situacao": "Há repercussão geral. Leading case: transitado em julgado",
+  "tese": "É dos Estados e Distrito Federal a titularidade do que arrecadado, considerado Imposto de Renda, incidente na fonte, sobre rendimentos pagos, a qualquer título, por si, autarquias e fundações que instituírem e mantiverem.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

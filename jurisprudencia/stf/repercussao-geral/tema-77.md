@@ -65,3 +65,43 @@ Há repercussão geral. Leading case: transitado em julgado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "Não cabe mandado de segurança das decisões interlocutórias exaradas em processos submetidos ao rito da Lei 9.099/1995.",
+    "tese_snippet": "Não cabe mandado de segurança das decisões interlocutórias exaradas em processos submetidos ao rito da Lei 9.099/1995."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-77",
+  "nr": 77,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=2591874",
+      "numero": "576847"
+    }
+  ],
+  "questao": "Cabimento do mandado de segurança contra decisões interlocutórias exaradas em processos submetidos ao rito da Lei nº 9.099/95.",
+  "situacao": "Há repercussão geral. Leading case: transitado em julgado",
+  "tese": "Não cabe mandado de segurança das decisões interlocutórias exaradas em processos submetidos ao rito da Lei 9.099/1995.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

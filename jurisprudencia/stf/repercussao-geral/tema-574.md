@@ -65,3 +65,43 @@ Não há repercussão geral. Leading case: transitado em julgado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "Não possui repercussão geral a discussão sobre o desligamento voluntário do serviço militar, antes do cumprimento de lapso temporal legalmente previsto, de praça das Forças Armadas que ingressa na carreira por meio de concurso público.",
+    "tese_snippet": "Não possui repercussão geral a discussão sobre o desligamento voluntário do serviço militar, antes do cumprimento de lapso temporal legalmente previsto, de praça das Forças Armadas que ingressa na carreira por meio de concurso público."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-574",
+  "nr": 574,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=4226663",
+      "numero": "680871"
+    }
+  ],
+  "questao": "Desligamento voluntário do serviço militar, antes do cumprimento de lapso temporal legalmente previsto, de oficial que ingressa na carreira por meio de concurso público.",
+  "situacao": "Não há repercussão geral. Leading case: transitado em julgado",
+  "tese": "Não possui repercussão geral a discussão sobre o desligamento voluntário do serviço militar, antes do cumprimento de lapso temporal legalmente previsto, de praça das Forças Armadas que ingressa na carreira por meio de concurso público.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

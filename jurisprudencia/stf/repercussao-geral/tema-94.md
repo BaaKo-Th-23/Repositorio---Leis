@@ -65,3 +65,43 @@ Há repercussão geral. Leading case: transitado em julgado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "É constitucional a Emenda Constitucional nº 29, de 2000, no que estabeleceu a possibilidade de previsão legal de alíquotas progressivas para o IPTU de acordo com o valor do imóvel.",
+    "tese_snippet": "É constitucional a Emenda Constitucional nº 29, de 2000, no que estabeleceu a possibilidade de previsão legal de alíquotas progressivas para o IPTU de acordo com o valor do imóvel."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-94",
+  "nr": 94,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=2617543",
+      "numero": "586693"
+    }
+  ],
+  "questao": "Exigência de reserva de plenário para as situações em que a Emenda Constitucional nº 29/2000 deixa de ser aplicada em face da incidência da versão primitiva da norma constitucional por ela modificada.",
+  "situacao": "Há repercussão geral. Leading case: transitado em julgado",
+  "tese": "É constitucional a Emenda Constitucional nº 29, de 2000, no que estabeleceu a possibilidade de previsão legal de alíquotas progressivas para o IPTU de acordo com o valor do imóvel.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

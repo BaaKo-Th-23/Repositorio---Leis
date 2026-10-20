@@ -65,3 +65,43 @@ Há repercussão geral. Leading case: transitado em julgado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "É inconstitucional a cobrança de ICMS pelo Estado de destino, com fundamento no Protocolo ICMS 21/2011 do CONFAZ, nas operações interestaduais de venda de mercadoria ou bem realizadas de forma não presencial a consumidor final não contribuinte do imposto.",
+    "tese_snippet": "É inconstitucional a cobrança de ICMS pelo Estado de destino, com fundamento no Protocolo ICMS 21/2011 do CONFAZ, nas operações interestaduais de venda de mercadoria ou bem realizadas de forma não presencial a consumidor final não contribuinte do imposto."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-615",
+  "nr": 615,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=4223697",
+      "numero": "680089"
+    }
+  ],
+  "questao": "Constitucionalidade da cobrança de ICMS, pelo Estado de destino, com base no Protocolo ICMS  21/2011 do CONFAZ, nas operações interestaduais de vendas de mercadorias a consumidor final, realizadas de forma não presencial.",
+  "situacao": "Há repercussão geral. Leading case: transitado em julgado",
+  "tese": "É inconstitucional a cobrança de ICMS pelo Estado de destino, com fundamento no Protocolo ICMS 21/2011 do CONFAZ, nas operações interestaduais de venda de mercadoria ou bem realizadas de forma não presencial a consumidor final não contribuinte do imposto.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

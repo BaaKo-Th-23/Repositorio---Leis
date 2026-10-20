@@ -60,3 +60,38 @@ Transitado em julgado
   "ultimaAtualizacao": "14/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "Não é devido o pagamento da indenização de localidade estratégica, instituída pela lei nº 12.855/2013, durante as férias do servidor.",
+    "tese_snippet": "Não é devido o pagamento da indenização de localidade estratégica, instituída pela lei nº 12.855/2013, durante as férias do servidor."
+  },
+  "historico": [
+    {
+      "dataAdmissao": "2025-11-24",
+      "dataCriacao": "2026-06-02T00:00:00.000-03:00",
+      "dataJulgamento": "2026-04-29",
+      "dataPublicacao": "2026-04-30",
+      "situacao": "Admitido"
+    },
+    {
+      "dataAdmissao": "2025-11-24",
+      "dataCriacao": "2026-08-21T00:00:00.000-03:00",
+      "dataJulgamento": "2026-04-29",
+      "dataPublicacao": "2026-04-30",
+      "situacao": "Acórdão Publicado"
+    }
+  ],
+  "id": "tnu-puil-290",
+  "nr": 290,
+  "orgao": "TNU",
+  "questao": "Saber se é devido o pagamento da indenização de localidade estratégica, instituída pela lei nº 12.855/2013, durante as férias do servidor.",
+  "situacao": "Transitado em julgado",
+  "tese": "Não é devido o pagamento da indenização de localidade estratégica, instituída pela lei nº 12.855/2013, durante as férias do servidor.",
+  "tipo": "PUIL",
+  "ultimaAtualizacao": "19/10/2026"
+}
+```

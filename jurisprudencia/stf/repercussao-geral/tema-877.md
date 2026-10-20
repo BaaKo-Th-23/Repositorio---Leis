@@ -65,3 +65,43 @@ Há repercussão geral. Leading case: transitado em julgado
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "Os pagamentos devidos, em razão de pronunciamento judicial, pelos Conselhos de Fiscalização não se submetem ao regime de precatórios.",
+    "tese_snippet": "Os pagamentos devidos, em razão de pronunciamento judicial, pelos Conselhos de Fiscalização não se submetem ao regime de precatórios."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-877",
+  "nr": 877,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=4904431",
+      "numero": "938837"
+    }
+  ],
+  "questao": "Submissão dos conselhos de fiscalização profissional à execução pelo regime de precatórios.",
+  "situacao": "Há repercussão geral. Leading case: transitado em julgado",
+  "tese": "Os pagamentos devidos, em razão de pronunciamento judicial, pelos Conselhos de Fiscalização não se submetem ao regime de precatórios.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

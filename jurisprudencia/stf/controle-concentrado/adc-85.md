@@ -48,3 +48,38 @@ baixado_em: 2026-10-15
   "ultimaAtualizacao": "25/06/2025"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "cautelar": "NAO",
+  "decisao": "EMBARGOS_DE_DECLARACAO",
+  "historico": [
+    {
+      "dataAdmissao": "2025-11-24",
+      "dataCriacao": "2026-06-02T00:00:00.000-03:00",
+      "dataJulgamento": "2026-04-29",
+      "dataPublicacao": "2026-04-30",
+      "situacao": "Admitido"
+    },
+    {
+      "dataAdmissao": "2025-11-24",
+      "dataCriacao": "2026-08-21T00:00:00.000-03:00",
+      "dataJulgamento": "2026-04-29",
+      "dataPublicacao": "2026-04-30",
+      "situacao": "Acórdão Publicado"
+    }
+  ],
+  "id": "stf-adc-85",
+  "linkDecisao": "https://redir.stf.jus.br/paginadorpub/paginador.jsp?docTP=TP&docID=790606168",
+  "nr": "85",
+  "orgao": "STF",
+  "possuiDecisoes": true,
+  "textoAtoImpugnado": "LEG-FED LEI-010823 ANO-2003 LEI ORDINÁRIA LEG-FED LEI-010826 ANO-2003 ED-2003 ESTATUTO DO DESARMAMENTO LEG-FED LEI-013105 ANO-2015 ART-00507 CPC-2015 CÓDIGO DE PROCESSO CIVIL LEG-FED DEC-011366 ANO-2023 DECRETO LEG-FED DEC-011615 ANO-2023 DECRETO",
+  "textoDecisao": "O Tribunal, por unanimidade, não conheceu tanto dos embargos de declaração opostos pelas entidades admitidas na qualidade de amicus curiae (eDOC 116), quanto dos embargos de declaração opostos por terceiro não admitido nos autos (eDOCs 107 e 114), nos termos do voto do Relator, Ministro Gilmar Mendes. Plenário, Sessão Virtual de 5.9.2025 a 12.9.2025.",
+  "textoEmenta": "Ementa: Direito constitucional e administrativo. Ação declaratória de constitucionalidade. Decretos 11.366/2023 e 11.615/2023. Atos normativos que promoveram a regulamentação do Estatuto do Desarmamento (Lei 10.823/2003). Oposição pelo amicus curiae e por terceiro não admitido nos autos. Ilegitimidade processual. Preclusão consumativa. Violação ao princípio da unirrecorribilidade. Não conhecimento. Ausência de vícios de fundamentação no acórdão embargado. Pretensão de rediscussão do mérito da causa. Embargos de declaração rejeitados. I. Caso em exame 1. Embargos de declaração opostos por entidades admitidas no feito a título de amicus curiae e por terceiro não admitido nos autos em face de acórdão por meio do qual foram julgados procedentes os pedidos formulados na petição inicial II. Questão em discussão 2. A questão em análise consiste em saber se amicus curiae e terceiro não admitido nos autos detém legitimidade para oposição de embargos de declaração e, caso superado o óbice, se o acórdão embargado está eivado dos vícios apontados. III. Razões de decidir 3. Nos termos da jurisprudência do Supremo Tribunal Federal, amicus curiae não possui legitimidade para opor embargos de declaração. 4. Igualmente não possui legitimidade para opor embargos de declaração terceiro não admitido nos autos que requereu o seu ingresso no feito a destempo, quando já em curso o julgamento e após o voto da maioria dos julgadores. Impossibilidade de conhecimento da segunda pela de embargos de declaração em virtude da preclusão consumativa (CPC, art. 507). 4. Ausência de omissão, obscuridade, contradição ou erro material. As alegações são impertinentes e decorrem de mero inconformismo com a decisão adotada, uma vez que as embargantes não trouxeram argumentos suficientes a infirmá-la, visando apenas à rediscussão da matéria já decidida. IV. Dispositivo e tese 5. Embargos de declaração não conhecidos.",
+  "tipo": "ADC",
+  "ultimaAtualizacao": "15/09/2025"
+}
+```

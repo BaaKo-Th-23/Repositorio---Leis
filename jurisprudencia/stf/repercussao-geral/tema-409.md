@@ -65,3 +65,43 @@ Há repercussão geral com reafirmação de Jurisprudência. Leading case: trans
   "ultimaAtualizacao": "06/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "É compatível com a Constituição a extensão, aos servidores públicos inativos, dos critérios de cálculo da Gratificação de Desempenho da Carreira da Previdência, Saúde e Trabalho — GDPST estabelecidos para os servidores públicos em atividade.",
+    "tese_snippet": "É compatível com a Constituição a extensão, aos servidores públicos inativos, dos critérios de cálculo da Gratificação de Desempenho da Carreira da Previdência, Saúde e Trabalho — GDPST estabelecidos para os servidores públicos em atividade."
+  },
+  "historico": [
+    {
+      "dataCriacao": "2026-10-13T00:00:00.000-03:00",
+      "situacao": "Acórdão Publicado"
+    },
+    {
+      "dataCriacao": "2026-09-14T00:00:00.000-03:00",
+      "situacao": "Mérito Julgado"
+    },
+    {
+      "dataCriacao": "2026-09-10T00:00:00.000-03:00",
+      "situacao": "Afetado"
+    }
+  ],
+  "id": "stf-rg-409",
+  "nr": 409,
+  "orgao": "STF",
+  "processosParadigma": [
+    {
+      "classe": 1348,
+      "link": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=3973317",
+      "numero": "631880"
+    }
+  ],
+  "questao": "Extensão, em relação aos servidores inativos, dos critérios de cálculo da GDPST estabelecidos para os servidores em atividade.  ",
+  "situacao": "Há repercussão geral com reafirmação de Jurisprudência. Leading case: transitado em julgado",
+  "tese": "É compatível com a Constituição a extensão, aos servidores públicos inativos, dos critérios de cálculo da Gratificação de Desempenho da Carreira da Previdência, Saúde e Trabalho — GDPST estabelecidos para os servidores públicos em atividade.",
+  "tipo": "RG",
+  "ultimaAtualizacao": "15/10/2026"
+}
+```

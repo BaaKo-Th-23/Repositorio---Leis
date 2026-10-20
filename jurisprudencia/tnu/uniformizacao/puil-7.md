@@ -61,3 +61,39 @@ Transitado em julgado
   "ultimaAtualizacao": "14/10/2026"
 }
 ```
+
+## Outra versão oficial capturada pelo CNJ
+
+```json
+{
+  "highlight": {
+    "tese": "É indevida a prorrogação da pensão por morte ao filho maior de 21 anos, ainda que esteja cursando o ensino superior.<br>",
+    "tese_snippet": "É indevida a prorrogação da pensão por morte ao filho maior de 21 anos, ainda que esteja cursando o ensino superior. "
+  },
+  "historico": [
+    {
+      "dataAdmissao": "2025-11-24",
+      "dataCriacao": "2026-06-02T00:00:00.000-03:00",
+      "dataJulgamento": "2026-04-29",
+      "dataPublicacao": "2026-04-30",
+      "situacao": "Admitido"
+    },
+    {
+      "dataAdmissao": "2025-11-24",
+      "dataCriacao": "2026-08-21T00:00:00.000-03:00",
+      "dataJulgamento": "2026-04-29",
+      "dataPublicacao": "2026-04-30",
+      "situacao": "Acórdão Publicado"
+    }
+  ],
+  "id": "tnu-puil-7",
+  "nr": 7,
+  "orgao": "TNU",
+  "possuiDecisoes": true,
+  "questao": "Saber se o filho maior de 21 anos que esteja cursando ensino superior tem direito à prorrogação de pensão por morte até os 24 anos.",
+  "situacao": "Transitado em julgado",
+  "tese": "É indevida a prorrogação da pensão por morte ao filho maior de 21 anos, ainda que esteja cursando o ensino superior.<br>",
+  "tipo": "PUIL",
+  "ultimaAtualizacao": "19/10/2026"
+}
+```
