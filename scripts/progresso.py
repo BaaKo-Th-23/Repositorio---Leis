@@ -63,7 +63,7 @@ def medir():
 
 def medir_git():
     """Conta o index que será publicado, sem incluir downloads ainda não adicionados."""
-    saida = subprocess.check_output(["rtk", "proxy", "git", "ls-files", "--cached", "-z"], cwd=RAIZ)
+    saida = subprocess.check_output(["git", "ls-files", "--cached", "-z"], cwd=RAIZ)
     arquivos = {p for p in saida.decode().split("\0") if p.endswith(".md")
                 and not any(c.startswith(("_", ".")) for c in p.split("/"))}
     contagem = collections.Counter()

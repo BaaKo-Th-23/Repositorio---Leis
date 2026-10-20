@@ -74,9 +74,9 @@ def validar(texto, caminho, hoje):
 
 def documentos(alvos, staged):
     if staged:
-        nomes = subprocess.check_output(["rtk", "proxy", "git", "diff", "--cached",
+        nomes = subprocess.check_output(["git", "diff", "--cached",
                                          "--diff-filter=ACMR", "--name-only", "-z"], cwd=RAIZ)
-        processo = subprocess.Popen(["rtk", "proxy", "git", "cat-file", "--batch"], cwd=RAIZ,
+        processo = subprocess.Popen(["git", "cat-file", "--batch"], cwd=RAIZ,
                                     stdin=subprocess.PIPE, stdout=subprocess.PIPE)
         try:
             for nome in nomes.decode().split("\0"):

@@ -1069,3 +1069,18 @@ faz isso automaticamente; ativar neste clone com `rtk git config core.hooksPath 
 - Lacunas novas resolvidas pelos agentes: Câmara/Senado via Legin, três regimentos,
   temas repetitivos STJ, súmulas TCU, calendário municipal histórico, constituições
   PA/TO, edição histórica CE e portal histórico de leis TO. Validar antes de publicar.
+
+## Retomada coordenada — 20/10/2026
+
+- Base remota e local confirmada via GitHub CLI: `9e66b8b613d`. Nenhum coletor
+  anterior estava ativo na inspeção de processos; caches e modificações locais
+  preexistentes foram preservados e não entram automaticamente nos novos lotes.
+- Três agentes GPT 6.1 Sol, esforço médio, com frentes separadas: Constituição
+  Federal/vigência, lacunas federais e identidade/deduplicação estadual. Somente
+  o coordenador prepara o index, valida e publica commits normais.
+- Ambiente atual não tem `rtk`: auditoria do index, medição de progresso e hook
+  de commit passaram a invocar Python/Git diretamente, sem dependência extra.
+  A contagem por commit continua restrita ao index, excluindo coletas pendentes.
+- Objetivo do acervo permanece histórico e abrangente. Remover uma redação
+  tachada da edição vigente não implica excluir a norma histórica do acervo nem
+  certificar vigência apenas por ausência de tachado.
