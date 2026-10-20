@@ -1151,3 +1151,18 @@ faz isso automaticamente; ativar neste clone com `rtk git config core.hooksPath 
   coletor não publica o Markdown divergente, conserva cache e aceita caso válido.
   Reaplicação aos 40 candidatos iniciais: 38 coerentes e dois bloqueados; nenhum
   bloqueio falso ou inconclusivo nesse recorte. Não houve reconversão em massa.
+
+### Segundo lote federal da retomada
+
+- 200 candidatos limitados: 194 publicáveis + dois retidos + quatro sem texto,
+  zero erros de execução. 196 HTML obtidos, todos novos neste ciclo. Reextração
+  integral e 23 tabelas conferidas inclusive estrutura e extensões de células.
+  Auditoria do lote: 194 documentos, zero erros/avisos; pasta de 1945: 232/232.
+- DEC20.215 fornece epígrafe20.251 e DEC17.278 fornece data de1944, apesar do
+  cadastro de1945: retidos com bruto e quarentena preservados. DEC20.199,20.191,
+  20.142 e20.141 continuam sem texto/encoding na API. DEC20.102 e20.067 têm
+  erros gráficos de mês na epígrafe; data confirmada no próprio fecho completo,
+  sem corrigir silenciosamente o corpo oficial. Evidência em
+  `federal/_lote_dec1945_200_20261020.json`.
+- Nenhum documento preexistente ou do lote38 foi sobrescrito. Coleta encerrada,
+  sem processo em segundo plano nem promessa de cobertura histórica completa.
