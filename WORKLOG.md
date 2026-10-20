@@ -1229,3 +1229,26 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
   Overlays imutáveis registram cada retenção. Muitos ordinais ASCII e artigos
   inline são falsos positivos do detector conservador e serão readmitidos após
   revisão contextual; não foram descartados. MG001 segue sob checagem adicional.
+
+### Decretos preexistentes: lotes 001–011
+
+- 19.536 textos novos no Git, previamente coletados e reextraídos dos caches
+  oficiais. Foram usados apenas manifests/listas v2 dos lotes 001–005 e gates
+  fortes dos 006–011. Todos os hashes e URNs únicos foram conferidos antes do
+  staging; texto visível, estrutura das tabelas, epígrafe e índice coincidem.
+- Caches que só continham erratas foram retidos, com originais preservados. O
+  coletor agora escolhe Current, depois Original e só depois Intermediate, e
+  retém errata avulsa/ausência de artigo próprio para revisão; comandos legítimos
+  sem artigo não são inventados. Sete regressões novas e seis de identidade
+  passaram. Recusas HTTP encerram a frente correspondente.
+- Revisão dos 232 decretos publicados antes desta continuação não encontrou
+  errata avulsa: 229 têm artigos próprios e três têm comandos diretos completos.
+  O DEC20.176 remete a nota diplomática ausente nos HTML do Senado e da Câmara;
+  aviso específico e evidência foram acrescidos sem mudar o texto normativo.
+  A nota continua como pendência de integralidade, não prova de completude.
+
+- O diff destes decretos contém dez hardbreaks Markdown de exatamente dois
+  espaços, emitidos pelo conversor. Foram conferidos individualmente no index
+  e preservados, com registro em scripts/dados/hardbreaks-fed001-011-20261020.json;
+  os demais checks de espaços/conflitos passaram. Nenhum corpo/hash foi alterado
+  apenas para silenciar o aviso do Git.

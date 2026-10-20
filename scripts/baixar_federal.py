@@ -1,7 +1,8 @@
 """Baixa a legislação federal (normas.leg.br) e grava em Markdown.
 
 Índice: listas do Senado em federal/_indice/*.json.
-Texto: versão compilada vigente ("Current") quando existe; senão a publicação mais recente.
+Texto: versão compilada vigente ("Current") quando existe; senão Original antes de Intermediate.
+Decretos com apenas errata ou sem artigo próprio ficam pendentes de revisão da íntegra.
 Retomável: pula normas cujo .md já existe. HTML bruto fica em federal/_fonte (gzip).
 
 Uso: python3 -I scripts/baixar_federal.py [--limite N] [--tipos LEI,LCP,...] [--workers 4] [--rps 4]
@@ -98,6 +99,8 @@ def http_get(url, accept="*/*", tentativas=4):
                     dados = gzip.decompress(dados)
                 return r.status, dados
         except urllib.error.HTTPError as e:
+            if e.code in (401, 403, 429):
+                raise RuntimeError(f"fonte recusou HTTP {e.code}: {url}") from e
             if e.code in (400, 404):
                 return e.code, b""
             ultimo = e
@@ -234,7 +237,21 @@ def escolher_texto(meta):
     atual = [e for e in encs if e.get("version") == "Current"]
     if atual:
         return atual[0]
+    originais = [e for e in encs if e.get('version') == 'Original']
+    if originais:
+        return sorted(originais, key=lambda e: e.get('datePublished') or '')[-1]
     return sorted(encs, key=lambda e: e.get("datePublished") or "")[-1]
+
+
+def motivo_texto_parcial_decreto(tipo, corpo):
+    if tipo != "DEC-n":
+        return None
+    limpo = re.sub(r"[*_`\\]", "", corpo)
+    if re.search(r"^\s*RETIFICA[ÇC][ÃA]O\s*$", limpo, re.I | re.M):
+        return "Documento de retificação avulsa; buscar a versão integral da norma"
+    if not re.search(r"^\s*(?:Artigo|Art\.?)\s*[.º°o]*\s*(?:\d|[úu]nico)", limpo, re.I | re.M):
+        return "Sem artigo normativo próprio; íntegra/comando decisório exige revisão específica"
+    return None
 
 
 def yaml_str(v):
@@ -280,6 +297,10 @@ def processar(d):
     if not corpo.strip() or "\x00" in corpo:
         return "sem_texto", info["slug"], {"id": d["id"], "norma": d["norma"], "urn": urn,
                                            "url": url, "motivo": "corpo vazio ou contém NUL; fonte preservada"}
+    parcial = motivo_texto_parcial_decreto(d["tipo"], corpo)
+    if parcial:
+        return "sem_texto", info["slug"], {"id": d["id"], "norma": d["norma"], "urn": urn,
+                                           "url": url, "motivo": parcial}
     divergencia = divergencia_epigrafe_decreto(d["tipo"], numero_oficial(d), info["data"], corpo)
     if divergencia:
         return "sem_texto", info["slug"], {"id": d["id"], "norma": d["norma"], "urn": urn,
