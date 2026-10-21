@@ -1493,3 +1493,9 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Os 87 grupos tachados das LOs e dois trechos de SP foram conferidos visualmente. Todo texto/notas preservado e corpo anterior reversivel exatamente. Notas condicionais de efeitos tributarios nao foram convertidas em afirmacao de vigencia.
 - Overlay58-v2 corrige classificacao indevida de Arapongas4839; somente4841/4842 divergem de tipo/data. Dois casos de cor sem contexto tambem ficam pendentes. Quatro documentos publicados conferidos pelo HEAD foram acrescentados ao registro, total2.135, sem apagar corpos.
 - Codigo revisado e 53 testes passaram. Auditoria generica129 sem erros/avisos e auditoria municipal completa sem problemas. 127 ocorrencias de EOF contem apenas linhas vazias, provadas no index; demais verificacoes de whitespace passaram.
+
+### Reguladores: mais 8.806 normas
+
+- De 5.000 candidatos DOU e5.000 RFB aprovados nos controles de fonte,8.806 passam gates adicionais:4.193 DOU e4.613 RFB. Recibo scripts/dados/publicacao-reguladores8806-20261020.json, com fonte/cache/MD reconferidos.
+- Identidades normalizadas por area/tipo/numero/data, remissoes externas, representacao de objetos aprovados e placeholders foram conferidos; retencoes preservadas com motivo, sem inferir ausencia definitiva.
+- Auditoria do index sem erros ou avisos e zero placeholders suspeitos.3.149 hardbreaks exatos, incluindo28linhas vazias com dois espacos, provados; demais verificacoes de whitespace passaram.
