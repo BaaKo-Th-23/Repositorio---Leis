@@ -1538,3 +1538,9 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - RRC1/1994 recuperada na publicacao original: dois artigos e fecho, ementa/artigo34 literais preservados com nota de divergencia do cadastro, sem trocar por37.
 - SN12/12-11-2010 tinha metadados Itapema mas corpo PousoAlegre. Overlay por SHA publicado retem esse documento ate reparo atomico das duas identidades; registro passa para2.136. Sequencial de indice nao basta para identidade.
 - Auditoria do index: dezoito documentos, sem erros ou avisos; diffcheck integral passou sem dispensas.
+
+### Reguladores: mais 8.532 normas
+
+- Lote007 aprovado nos gates reproduziveis: 4.306 DOU e 4.226 RFB. Recibo publicacao-reguladores8532-20261020.json, fontes e corpos reconferidos por SHA, reservas e baseline considerados na deduplicacao.
+- De dez mil candidatos dos controles iniciais, 1.468 ficam retidos para contexto; sem reduzir metas, apagar fontes ou substituir texto por ementa.
+- Auditoria do index sem erros ou avisos. Quatrocentos e cinquenta e quatro hardbreaks exatos, incluindo quatro linhas vazias com dois espacos, provados; demais verificacoes de whitespace passaram.
