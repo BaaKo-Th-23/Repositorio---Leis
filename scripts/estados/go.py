@@ -56,6 +56,11 @@ def indice(refazer=False):
     return itens
 
 
+def revogada_da_situacao(situacao):
+    """Só situação literal inequívoca suporta booleano de revogação integral."""
+    return {"Em Vigor": False, "Revogada": True}.get(situacao)
+
+
 def processar(it):
     pasta, nome, prefixo = TIPOS[int(it["tipo_legislacao"]["id"])]
     numero = (it.get("numero") or "sn").replace(".", "")
@@ -82,7 +87,7 @@ def processar(it):
         ("data", data),
         ("ementa", " ".join((d.get("ementa") or "").split())),
         ("situacao", situacao),
-        ("revogada", situacao == "Revogada"),
+        ("revogada", revogada_da_situacao(situacao)),
         ("versao_texto", "compilada (Legisla Goiás)"),
         ("publicacao", f"DOE nº {diarios[0].get('numero')}, {diarios[0].get('data')}" if diarios and diarios[0].get("numero") else ""),
         ("fonte", f"https://legisla.casacivil.go.gov.br/pesquisa_legislacao/{it['id']}"),
