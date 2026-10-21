@@ -37117,6 +37117,18 @@
         "fonte": "municipais/_fonte/organicas-sapl/sapl.arapongas.pr.leg.br/4842.bin",
         "sha256_fonte": "39c536f6f192b09f0bde3c3a476b26c2552c746b50fe1585e5104d2fcb62c789"
       }
+    },
+    {
+      "path": "federal/decretos-nao-numerados/2010/dec-sn-2010-11-12-s12.md",
+      "sha256_md": "fa499119440a82b95ecfb204cee3db1ad5d7ee9add197ec63cf8583eb74ae775",
+      "estado": "identidade_corpo_diverge_metadados_publicados",
+      "motivo": "Cabeçalho/índice esperamAutopistaLitoralSul/Itapema/SC,marginalSulkm147+000daBR101; ementa eArt1próprios doMD sãoAutopistaFernãoDias/PousoAlegre/MG,CCO daBR381. Corpo corresponde àidentidade11índice, ID576839.",
+      "evidencia": {
+        "manifesto": "federal/_overlay_identidade_dec_sn_20261020_001.json",
+        "sha256_manifesto": "a313db833716f1e8b0b35739b01bafc7229b5aa974894f1fbc6b43b52184000a",
+        "fonte": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/dnn/dnn12932.htm",
+        "sha256_fonte": "5c53acad8058553df72eb306e05b635284d77c4b9d46f5df69ae4887e891d0af"
+      }
     }
   ]
 }

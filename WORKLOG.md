@@ -1530,3 +1530,11 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Confronto independente de 98.282 identidades do cache com objetos do HEAD: zero divergencias; recibo comprimido registra OIDs, metadados e commit. Suspeitas de objetos, visuais, remissoes e placeholders permanecem documentadas.
 - Auditoria do index sem erros ou avisos; 102 hardbreaks exatos, incluindo uma linha vazia com dois espacos, provados. Demais verificacoes de whitespace passaram.
 - Corrigida a descricao da auditoria PE anterior: zero erros, com dez avisos de campo data_publicacao ausente. Nenhuma data foi inventada.
+
+### Federal: dezessete reparos, uma lacuna e diagnostico de identidade
+
+- Dezesseis recuperacoes adicionais de tabelas (quinze emendas historicas de Artigo unico e MPV280/2006), verificadas contra preimagem HEAD, fonte literal e estrutura.
+- Regimento Senado conserva o texto anterior integral e incorpora 65 quadros editoriais como imagens diretas da edicao oficial; distinguidos da parte normativa. Camara teve integraHTML normativa confirmada, sem corpo alterado. Auditoria LDL confirma as treze normas apos recuperacao das oito tabelas.
+- RRC1/1994 recuperada na publicacao original: dois artigos e fecho, ementa/artigo34 literais preservados com nota de divergencia do cadastro, sem trocar por37.
+- SN12/12-11-2010 tinha metadados Itapema mas corpo PousoAlegre. Overlay por SHA publicado retem esse documento ate reparo atomico das duas identidades; registro passa para2.136. Sequencial de indice nao basta para identidade.
+- Auditoria do index: dezoito documentos, sem erros ou avisos; diffcheck integral passou sem dispensas.

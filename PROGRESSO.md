@@ -1,6 +1,6 @@
 # Progresso
 
-Gerado em 20/10/2026 22:28:51 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 20/10/2026 22:33:19 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Cada série contribui até sua própria meta. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
@@ -8,7 +8,7 @@ Percentuais usam somente documentos e metas das séries com universo estimado ou
 
 ![progresso](progresso.svg)
 
-Há 2.135 pendências de integralidade registradas em [registro auditável](scripts/dados/pendencias-integralidade-publicadas.json). Esses documentos ficam fora da contagem até validação; seus textos e histórico são preservados.
+Há 2.136 pendências de integralidade registradas em [registro auditável](scripts/dados/pendencias-integralidade-publicadas.json). Esses documentos ficam fora da contagem até validação; seus textos e histórico são preservados.
 
 ## Fase 1 — legislação federal e leis estaduais
 
@@ -40,7 +40,7 @@ Planalto, Senado, Câmara e assembleias.
 
 ### Atos do Congresso
 
-37.802 documentos · 37.800 / ~38.248 nas séries com meta (98.8%) · 0 sem meta
+37.803 documentos · 37.801 / ~38.248 nas séries com meta (98.8%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -48,17 +48,17 @@ Planalto, Senado, Câmara e assembleias.
 | ✅ | Medidas provisórias (originais e reedições) | 7.499 | 7.497 | `federal/medidas-provisorias` | Planalto + normas.leg.br |
 | 🟦 | Resoluções do Senado Federal | 6.574 | 6.578 | `federal/resolucoes-senado` | normas.leg.br |
 | 🟦 | Resoluções da Câmara dos Deputados | 2.280 | 2.300 | `federal/resolucoes-camara` | camara.leg.br |
-| 🟦 | Resoluções do Congresso Nacional e da Revisão Constitucional | 88 | 95 | `federal/resolucoes-congresso` | normas.leg.br |
+| 🟦 | Resoluções do Congresso Nacional e da Revisão Constitucional | 89 | 95 | `federal/resolucoes-congresso` | normas.leg.br |
 | ✅ | Regimentos internos (Senado, Câmara, Congresso) | 3 | 3 | `federal/regimentos` | senado.leg.br, camara.leg.br |
 
 ### Decretos do Executivo federal
 
-79.720 / ~153.657 documentos (51.9%)
+79.719 / ~153.657 documentos (51.9%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
 | 🟦 | Decretos numerados (1889–hoje, as duas séries) | 65.193 | 139.127 | `federal/decretos` | normas.leg.br + Planalto |
-| 🟦 | Decretos não numerados | 14.507 | 14.510 | `federal/decretos-nao-numerados` | Planalto |
+| 🟦 | Decretos não numerados | 14.506 | 14.510 | `federal/decretos-nao-numerados` | Planalto |
 | ✅ | Regulamentos consolidados (RIR, RIPI, Aduaneiro, RPS, PAF) | 20 | 20 | `federal/regulamentos` | Planalto |
 
 ### Tratados internacionais

@@ -9,6 +9,9 @@ versao_texto: "compilada (edição da fonte)"
 fonte: "https://www25.senado.leg.br/documents/12427/45868/RISF+2018+Volume+1.pdf/cd5769c8-46c5-4c8a-9af7-99be436b89c4"
 baixado_em: 2026-10-15
 atualizado_ate: "2025-07"
+recuperacao_integralidade: "Páginas com quadros comparativos editoriais do PDF oficial incorporadas como suplementos visuais literais; transcrição textual anterior preservada sem alterações. Edição atualizada até julho de 2025."
+sha256_pdf_fonte: "3fab72cdda6e5294e2b29a0a6e92da9c495d1ed8564cc29af59168c39ae8d2f0"
+sha256_md_historico: "ad4cc8c427b3c9f4a8a535abfebae1d1530576af6d69d325ad121ee49ab44afa"
 ---
 
 # Regimento Interno do Senado Federal
@@ -7412,3 +7415,268 @@ Regimento Interno 291
 292 Regimento Interno
 
 .
+
+
+## Suplementos visuais da fonte oficial
+
+As reproduções abaixo preservam a disposição dos quadros comparativos editoriais que não aparecem na extração textual. A numeração identifica a página do arquivo PDF oficial, incluindo as páginas preliminares. Os quadros comparativos editoriais da edição também foram preservados.
+
+### Quadro comparativo editorial — página 174 do PDF
+
+![Quadro comparativo editorial — página 174 do PDF](anexos/regimento-senado-2025/pagina-174.png)
+
+### Quadro comparativo editorial — página 175 do PDF
+
+![Quadro comparativo editorial — página 175 do PDF](anexos/regimento-senado-2025/pagina-175.png)
+
+### Quadro comparativo editorial — página 176 do PDF
+
+![Quadro comparativo editorial — página 176 do PDF](anexos/regimento-senado-2025/pagina-176.png)
+
+### Quadro comparativo editorial — página 177 do PDF
+
+![Quadro comparativo editorial — página 177 do PDF](anexos/regimento-senado-2025/pagina-177.png)
+
+### Quadro comparativo editorial — página 178 do PDF
+
+![Quadro comparativo editorial — página 178 do PDF](anexos/regimento-senado-2025/pagina-178.png)
+
+### Quadro comparativo editorial — página 179 do PDF
+
+![Quadro comparativo editorial — página 179 do PDF](anexos/regimento-senado-2025/pagina-179.png)
+
+### Quadro comparativo editorial — página 180 do PDF
+
+![Quadro comparativo editorial — página 180 do PDF](anexos/regimento-senado-2025/pagina-180.png)
+
+### Quadro comparativo editorial — página 181 do PDF
+
+![Quadro comparativo editorial — página 181 do PDF](anexos/regimento-senado-2025/pagina-181.png)
+
+### Quadro comparativo editorial — página 182 do PDF
+
+![Quadro comparativo editorial — página 182 do PDF](anexos/regimento-senado-2025/pagina-182.png)
+
+### Quadro comparativo editorial — página 183 do PDF
+
+![Quadro comparativo editorial — página 183 do PDF](anexos/regimento-senado-2025/pagina-183.png)
+
+### Quadro comparativo editorial — página 184 do PDF
+
+![Quadro comparativo editorial — página 184 do PDF](anexos/regimento-senado-2025/pagina-184.png)
+
+### Quadro comparativo editorial — página 185 do PDF
+
+![Quadro comparativo editorial — página 185 do PDF](anexos/regimento-senado-2025/pagina-185.png)
+
+### Quadro comparativo editorial — página 186 do PDF
+
+![Quadro comparativo editorial — página 186 do PDF](anexos/regimento-senado-2025/pagina-186.png)
+
+### Quadro comparativo editorial — página 187 do PDF
+
+![Quadro comparativo editorial — página 187 do PDF](anexos/regimento-senado-2025/pagina-187.png)
+
+### Quadro comparativo editorial — página 188 do PDF
+
+![Quadro comparativo editorial — página 188 do PDF](anexos/regimento-senado-2025/pagina-188.png)
+
+### Quadro comparativo editorial — página 189 do PDF
+
+![Quadro comparativo editorial — página 189 do PDF](anexos/regimento-senado-2025/pagina-189.png)
+
+### Quadro comparativo editorial — página 190 do PDF
+
+![Quadro comparativo editorial — página 190 do PDF](anexos/regimento-senado-2025/pagina-190.png)
+
+### Quadro comparativo editorial — página 191 do PDF
+
+![Quadro comparativo editorial — página 191 do PDF](anexos/regimento-senado-2025/pagina-191.png)
+
+### Quadro comparativo editorial — página 192 do PDF
+
+![Quadro comparativo editorial — página 192 do PDF](anexos/regimento-senado-2025/pagina-192.png)
+
+### Quadro comparativo editorial — página 193 do PDF
+
+![Quadro comparativo editorial — página 193 do PDF](anexos/regimento-senado-2025/pagina-193.png)
+
+### Quadro comparativo editorial — página 194 do PDF
+
+![Quadro comparativo editorial — página 194 do PDF](anexos/regimento-senado-2025/pagina-194.png)
+
+### Quadro comparativo editorial — página 195 do PDF
+
+![Quadro comparativo editorial — página 195 do PDF](anexos/regimento-senado-2025/pagina-195.png)
+
+### Quadro comparativo editorial — página 196 do PDF
+
+![Quadro comparativo editorial — página 196 do PDF](anexos/regimento-senado-2025/pagina-196.png)
+
+### Quadro comparativo editorial — página 197 do PDF
+
+![Quadro comparativo editorial — página 197 do PDF](anexos/regimento-senado-2025/pagina-197.png)
+
+### Quadro comparativo editorial — página 198 do PDF
+
+![Quadro comparativo editorial — página 198 do PDF](anexos/regimento-senado-2025/pagina-198.png)
+
+### Quadro comparativo editorial — página 199 do PDF
+
+![Quadro comparativo editorial — página 199 do PDF](anexos/regimento-senado-2025/pagina-199.png)
+
+### Quadro comparativo editorial — página 200 do PDF
+
+![Quadro comparativo editorial — página 200 do PDF](anexos/regimento-senado-2025/pagina-200.png)
+
+### Quadro comparativo editorial — página 201 do PDF
+
+![Quadro comparativo editorial — página 201 do PDF](anexos/regimento-senado-2025/pagina-201.png)
+
+### Quadro comparativo editorial — página 202 do PDF
+
+![Quadro comparativo editorial — página 202 do PDF](anexos/regimento-senado-2025/pagina-202.png)
+
+### Quadro comparativo editorial — página 203 do PDF
+
+![Quadro comparativo editorial — página 203 do PDF](anexos/regimento-senado-2025/pagina-203.png)
+
+### Quadro comparativo editorial — página 204 do PDF
+
+![Quadro comparativo editorial — página 204 do PDF](anexos/regimento-senado-2025/pagina-204.png)
+
+### Quadro comparativo editorial — página 205 do PDF
+
+![Quadro comparativo editorial — página 205 do PDF](anexos/regimento-senado-2025/pagina-205.png)
+
+### Quadro comparativo editorial — página 206 do PDF
+
+![Quadro comparativo editorial — página 206 do PDF](anexos/regimento-senado-2025/pagina-206.png)
+
+### Quadro comparativo editorial — página 207 do PDF
+
+![Quadro comparativo editorial — página 207 do PDF](anexos/regimento-senado-2025/pagina-207.png)
+
+### Quadro comparativo editorial — página 208 do PDF
+
+![Quadro comparativo editorial — página 208 do PDF](anexos/regimento-senado-2025/pagina-208.png)
+
+### Quadro comparativo editorial — página 209 do PDF
+
+![Quadro comparativo editorial — página 209 do PDF](anexos/regimento-senado-2025/pagina-209.png)
+
+### Quadro comparativo editorial — página 210 do PDF
+
+![Quadro comparativo editorial — página 210 do PDF](anexos/regimento-senado-2025/pagina-210.png)
+
+### Quadro comparativo editorial — página 211 do PDF
+
+![Quadro comparativo editorial — página 211 do PDF](anexos/regimento-senado-2025/pagina-211.png)
+
+### Quadro comparativo editorial — página 212 do PDF
+
+![Quadro comparativo editorial — página 212 do PDF](anexos/regimento-senado-2025/pagina-212.png)
+
+### Quadro comparativo editorial — página 213 do PDF
+
+![Quadro comparativo editorial — página 213 do PDF](anexos/regimento-senado-2025/pagina-213.png)
+
+### Quadro comparativo editorial — página 214 do PDF
+
+![Quadro comparativo editorial — página 214 do PDF](anexos/regimento-senado-2025/pagina-214.png)
+
+### Quadro comparativo editorial — página 215 do PDF
+
+![Quadro comparativo editorial — página 215 do PDF](anexos/regimento-senado-2025/pagina-215.png)
+
+### Quadro comparativo editorial — página 216 do PDF
+
+![Quadro comparativo editorial — página 216 do PDF](anexos/regimento-senado-2025/pagina-216.png)
+
+### Quadro comparativo editorial — página 217 do PDF
+
+![Quadro comparativo editorial — página 217 do PDF](anexos/regimento-senado-2025/pagina-217.png)
+
+### Quadro comparativo editorial — página 218 do PDF
+
+![Quadro comparativo editorial — página 218 do PDF](anexos/regimento-senado-2025/pagina-218.png)
+
+### Quadro comparativo editorial — página 219 do PDF
+
+![Quadro comparativo editorial — página 219 do PDF](anexos/regimento-senado-2025/pagina-219.png)
+
+### Quadro comparativo editorial — página 220 do PDF
+
+![Quadro comparativo editorial — página 220 do PDF](anexos/regimento-senado-2025/pagina-220.png)
+
+### Quadro comparativo editorial — página 221 do PDF
+
+![Quadro comparativo editorial — página 221 do PDF](anexos/regimento-senado-2025/pagina-221.png)
+
+### Quadro comparativo editorial — página 222 do PDF
+
+![Quadro comparativo editorial — página 222 do PDF](anexos/regimento-senado-2025/pagina-222.png)
+
+### Quadro comparativo editorial — página 223 do PDF
+
+![Quadro comparativo editorial — página 223 do PDF](anexos/regimento-senado-2025/pagina-223.png)
+
+### Quadro comparativo editorial — página 224 do PDF
+
+![Quadro comparativo editorial — página 224 do PDF](anexos/regimento-senado-2025/pagina-224.png)
+
+### Quadro comparativo editorial — página 225 do PDF
+
+![Quadro comparativo editorial — página 225 do PDF](anexos/regimento-senado-2025/pagina-225.png)
+
+### Quadro comparativo editorial — página 226 do PDF
+
+![Quadro comparativo editorial — página 226 do PDF](anexos/regimento-senado-2025/pagina-226.png)
+
+### Quadro comparativo editorial — página 227 do PDF
+
+![Quadro comparativo editorial — página 227 do PDF](anexos/regimento-senado-2025/pagina-227.png)
+
+### Quadro comparativo editorial — página 228 do PDF
+
+![Quadro comparativo editorial — página 228 do PDF](anexos/regimento-senado-2025/pagina-228.png)
+
+### Quadro comparativo editorial — página 229 do PDF
+
+![Quadro comparativo editorial — página 229 do PDF](anexos/regimento-senado-2025/pagina-229.png)
+
+### Quadro comparativo editorial — página 230 do PDF
+
+![Quadro comparativo editorial — página 230 do PDF](anexos/regimento-senado-2025/pagina-230.png)
+
+### Quadro comparativo editorial — página 231 do PDF
+
+![Quadro comparativo editorial — página 231 do PDF](anexos/regimento-senado-2025/pagina-231.png)
+
+### Quadro comparativo editorial — página 232 do PDF
+
+![Quadro comparativo editorial — página 232 do PDF](anexos/regimento-senado-2025/pagina-232.png)
+
+### Quadro comparativo editorial — página 233 do PDF
+
+![Quadro comparativo editorial — página 233 do PDF](anexos/regimento-senado-2025/pagina-233.png)
+
+### Quadro comparativo editorial — página 234 do PDF
+
+![Quadro comparativo editorial — página 234 do PDF](anexos/regimento-senado-2025/pagina-234.png)
+
+### Quadro comparativo editorial — página 235 do PDF
+
+![Quadro comparativo editorial — página 235 do PDF](anexos/regimento-senado-2025/pagina-235.png)
+
+### Quadro comparativo editorial — página 236 do PDF
+
+![Quadro comparativo editorial — página 236 do PDF](anexos/regimento-senado-2025/pagina-236.png)
+
+### Quadro comparativo editorial — página 237 do PDF
+
+![Quadro comparativo editorial — página 237 do PDF](anexos/regimento-senado-2025/pagina-237.png)
+
+### Quadro comparativo editorial — página 238 do PDF
+
+![Quadro comparativo editorial — página 238 do PDF](anexos/regimento-senado-2025/pagina-238.png)
