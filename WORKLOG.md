@@ -1595,3 +1595,9 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Duas resoluções da Revisão Constitucional de 1993 recuperadas. Ano inicial RRC do coletor corrigido com snapshot oficial isolado; índice global preservado. Fac-símile da RRC2 também conferido visualmente pelo coordenador, com a divergência do HTML explicitamente documentada.
 - Seis textos aprovados por conferência de pontuação, contexto numérico e renderizador independente CommonMark/GFM. As 1.356 células literais dos anexos foram confrontadas entre DOC, duas exportações e Markdown; fontes brutas arquivadas e SHA reconferidos.
 - Coletor permite até oito workers mantendo limite de quatro requisições por segundo e padrão de quatro workers. Diagnósticos de índices e das 99 leis sem corpo integral preservados, sem criar normas a partir de ementa. Auditoria do index sem erros ou avisos; oito hardbreaks exatos provados e demais verificações passaram.
+
+### Pernambuco: 13.331 novos decretos com estrutura recuperada
+
+- Dos 13.416 candidatos com tabelas/apresentação recuperadas, 13.331 passam por fonte, identidade, conteúdo, CommonMark e assinatura numérica; 85 sinais remanescentes ficam retidos. Nenhuma colisão com HEAD, IDs oficiais ou conjunto inicial de 11.900.
+- ROOT reconferiu todos os MD, fontes brutas/comprimidas, backups e preimagens por SHA. São 15.621 tabelas complexas conferidas; nenhuma norma, valor ou numeração foi inferida. Os seis casos de contadores efetivos têm prova por AST e HTML ol/start/li, sem copiar rótulos da fonte.
+- Auditoria genérica: 13.331 documentos, zero erros e sete avisos de data_publicacao ausente; nenhuma data foi inventada. Diffcheck integral passou, sem dispensas de whitespace. Suíte estadual completa do agente: 97 testes; cinco testes contextuais de listas também passaram no coordenador.
