@@ -1627,3 +1627,9 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Auditor aceita o modo somente por campo explícito e igualdade exata com o helper; modo desconhecido falha. Conversor padrão e gates existentes de publicação, identidade, assinatura, íntegra, objetos e visuais permanecem aplicados. Dezessete testes passaram, incluindo corrupção de decimal e modo desconhecido.
 - ROOT validou as 966 preimagens, candidatos, fontes e duplicações antes de qualquer promoção. HTML primário e todas as preimagens completas arquivados em gzip; capturas anteriores mantêm sua data real. Replay independente CommonMark/números já aprovado individualmente.
 - Auditoria dos 966 documentos do index sem erros ou avisos; diffcheck integral passou sem dispensas. CSS externo não fornecido no fragmento não é presumido pelo helper.
+
+### Federal: 5.555 decretos com fontes primárias preservadas
+
+- Integração das seleções 005 v4, 006 v5 e 007 v4: 5.555 novas normas, sem colisão com HEAD por URN ou número completo/ano, incluindo sufixos literais. As 212 promoções privadas foram aplicadas somente após conferir todas as preimagens e os candidatos.
+- HTML primário, metadados oficiais e preimagens alteradas arquivados integralmente em três arquivos gzip. Notas de datas literais não emendam o corpo oficial. Gates cumulativos de anexos/modelos próprios, visuais, CommonMark, pontuação e contexto numérico reconferidos nas seleções congeladas.
+- Auditoria dos 5.555 documentos no index: zero erros e avisos. Escopo e SHA dos 5.804 caminhos conferidos. Diffcheck preserva somente um hardbreak Markdown comprovado de dois espaços; demais verificações passaram. Metas mantidas.
