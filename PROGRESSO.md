@@ -1,10 +1,10 @@
 # Progresso
 
-Gerado em 20/10/2026 22:45:30 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 20/10/2026 22:50:34 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Cada série contribui até sua própria meta. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**967.091 documentos · 926.172 / ~11.768.799 nas séries com meta (7.9%) · 174 sem meta**
+**968.907 documentos · 926.172 / ~11.768.799 nas séries com meta (7.9%) · 1.990 sem meta**
 
 ![progresso](progresso.svg)
 
@@ -91,7 +91,7 @@ Planalto, Senado, Câmara e assembleias.
 
 Diários oficiais e portais de órgãos e tribunais.
 
-509.115 documentos · 474.713 / ~861.320 nas séries com meta (55.1%) · 0 sem meta
+510.931 documentos · 474.713 / ~861.320 nas séries com meta (55.1%) · 1.816 sem meta
 
 ### Infralegal — tributário
 
@@ -108,7 +108,7 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal — trânsito e transportes
 
-8.167 documentos · 5.037 / ~12.857 nas séries com meta (39.2%) · 0 sem meta
+8.326 documentos · 5.037 / ~12.857 nas séries com meta (39.2%) · 159 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -119,6 +119,7 @@ Diários oficiais e portais de órgãos e tribunais.
 | ✅ | ANAC: resoluções e RBAC | 3.317 | 700 | `reguladores/anac` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério dos Transportes: demais atos normativos | 684 | 2.000 | `reguladores/transportes` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério de Portos e Aeroportos | 214 | 800 | `reguladores/portos-aeroportos` | Diário Oficial da União (in.gov.br) |
+| — | Ministério da Infraestrutura (denominação histórica) | 159 | desconhecida | `reguladores/ministerio-da-infraestrutura` | Diário Oficial da União (órgão literal da publicação) |
 
 ### Infralegal — saúde
 
@@ -175,7 +176,7 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal — infraestrutura e energia
 
-10.258 documentos · 3.821 / ~8.000 nas séries com meta (47.8%) · 0 sem meta
+11.821 documentos · 3.821 / ~8.000 nas séries com meta (47.8%) · 1.563 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -187,6 +188,7 @@ Diários oficiais e portais de órgãos e tribunais.
 | ✅ | Ministério das Comunicações | 3.505 | 800 | `reguladores/comunicacoes` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério das Cidades | 734 | 800 | `reguladores/cidades` | Diário Oficial da União (in.gov.br) |
 | ✅ | Ministério da Integração e do Desenvolvimento Regional | 4.532 | 800 | `reguladores/integracao` | Diário Oficial da União (in.gov.br) |
+| — | Ministério do Desenvolvimento Regional (denominação histórica) | 1.563 | desconhecida | `reguladores/ministerio-do-desenvolvimento-regional` | Diário Oficial da União (órgão literal da publicação) |
 
 ### Infralegal — educação e cultura
 
@@ -207,7 +209,7 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal — justiça e controle
 
-11.384 / ~27.700 documentos (41.1%)
+11.389 documentos · 11.384 / ~27.700 nas séries com meta (41.1%) · 5 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -219,6 +221,7 @@ Diários oficiais e portais de órgãos e tribunais.
 | 🟦 | Defensoria Pública da União | 112 | 400 | `reguladores/dpu` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Tribunal de Contas da União: instruções normativas e resoluções | 43 | 1.500 | `reguladores/tcu` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Conselhos federais de fiscalização profissional (CFM, COFEN, CONFEA/CREA e demais) | 1.949 | 7.000 | `reguladores/conselhos-profissionais` | Diário Oficial da União (in.gov.br) |
+| — | Atos em rubricas gerais do DOU (órgão discriminado nos metadados) | 5 | desconhecida | `reguladores/editais-e-avisos`, `reguladores/entidades-de-fiscalizacao-dos-profission` | Diário Oficial da União; rubrica e órgão preservados sem atribuir meta de outra série |
 | 🟦 | Presidência da República: atos normativos | 1.000 | 2.000 | `reguladores/presidencia` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério da Gestão e da Inovação em Serviços Públicos | 1.151 | 2.500 | `reguladores/gestao` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério do Planejamento e Orçamento | 586 | 1.200 | `reguladores/planejamento` | Diário Oficial da União (in.gov.br) |
@@ -230,13 +233,14 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal — direitos e desenvolvimento social
 
-3.157 documentos · 2.709 / ~5.400 nas séries com meta (50.2%) · 0 sem meta
+3.246 documentos · 2.709 / ~5.400 nas séries com meta (50.2%) · 89 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
 | 🟦 | Ministério do Desenvolvimento e Assistência Social | 390 | 2.500 | `reguladores/mds` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério dos Direitos Humanos e da Cidadania | 754 | 800 | `reguladores/mdh` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério das Mulheres | 65 | 300 | `reguladores/mulheres` | Diário Oficial da União (in.gov.br) |
+| — | Ministério da Mulher, da Família e dos Direitos Humanos (denominação histórica) | 89 | desconhecida | `reguladores/ministerio-da-mulher-da-familia-e-dos-di` | Diário Oficial da União (órgão literal da publicação) |
 | 🟦 | Ministério da Igualdade Racial | 61 | 300 | `reguladores/igualdade-racial` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério dos Povos Indígenas | 239 | 300 | `reguladores/mpi` | Diário Oficial da União (in.gov.br) |
 | ✅ | Ministério do Desenvolvimento Agrário e Agricultura Familiar | 1.648 | 1.200 | `reguladores/mda` | Diário Oficial da União (in.gov.br) |
@@ -308,17 +312,4 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ## Pastas fora do plano
 
-| Pasta | Arquivos |
-| --- | ---: |
-| `reguladores/ministerio-do-desenvolvimento-regional/portarias` | 1.496 |
-| `reguladores/ministerio-da-infraestrutura/portarias` | 120 |
-| `reguladores/ministerio-da-mulher-da-familia-e-dos-di/portarias` | 69 |
-| `reguladores/ministerio-do-desenvolvimento-regional/resolucoes` | 51 |
-| `reguladores/ministerio-da-mulher-da-familia-e-dos-di/resolucoes` | 20 |
-| `reguladores/ministerio-da-infraestrutura/resolucoes` | 19 |
-| `reguladores/ministerio-da-infraestrutura/deliberacoes` | 19 |
-| `reguladores/ministerio-do-desenvolvimento-regional/instrucoes-normativas` | 16 |
-| `reguladores/editais-e-avisos/resolucoes` | 3 |
-| `reguladores/entidades-de-fiscalizacao-dos-profission/resolucoes` | 1 |
-| `reguladores/editais-e-avisos/portarias` | 1 |
-| `reguladores/ministerio-da-infraestrutura/instrucoes-normativas` | 1 |
+Nenhuma: todo arquivo do repositório está sob um item do plano.

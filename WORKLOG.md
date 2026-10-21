@@ -1536,7 +1536,7 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Dezesseis recuperacoes adicionais de tabelas (quinze emendas historicas de Artigo unico e MPV280/2006), verificadas contra preimagem HEAD, fonte literal e estrutura.
 - Regimento Senado conserva o texto anterior integral e incorpora 65 quadros editoriais como imagens diretas da edicao oficial; distinguidos da parte normativa. Camara teve integraHTML normativa confirmada, sem corpo alterado. Auditoria LDL confirma as treze normas apos recuperacao das oito tabelas.
 - RRC1/1994 recuperada na publicacao original: dois artigos e fecho, ementa/artigo34 literais preservados com nota de divergencia do cadastro, sem trocar por37.
-- SN12/12-11-2010 tinha metadados Itapema mas corpo PousoAlegre. Overlay por SHA publicado retem esse documento ate reparo atomico das duas identidades; registro passa para2.136. Sequencial de indice nao basta para identidade.
+- SN12/12-11-2010 tinha metadados Itapema mas corpo PousoAlegre. Overlay por SHA publicado retem esse documento ate reparo atomico das duas identidades; registro passa para 2.136. Sequencial de indice nao basta para identidade.
 - Auditoria do index: dezoito documentos, sem erros ou avisos; diffcheck integral passou sem dispensas.
 
 ### Reguladores: mais 8.532 normas
@@ -1547,7 +1547,13 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 
 ### Campestre: quatro atos municipais completos
 
-- Dois atos complementares de2026 e duas leis de2015 publicados apos controles de PDF nativo integral, imagens/brasoes, anexos API completos, colunas/emissores, epigrafe/fecho, identidade e vetores.
-- LC82/2026 recupera sete colunas associadas as celulas vistas no PDF. Fonte e tabela tambem revistas visualmente pelo coordenador; quatro vagas, regime de carga e salarioR$3.800,00 preservados, com restante do corpo identico e backup completo.
-- Mil candidatos examinados: quatro aptos e996retidos; nenhum OCR promovido a integra apenas comparando extratores. Curitiba fica separada para revisao de estrutura, sem alterar o snapshot anterior.
-- Auditoria generica4 sem erros ou avisos; municipal completo sem problemas ou avisos. Cinco ocorrencias de EOF sao somente linhas vazias provadas no index; demais verificacoes de whitespace passaram.
+- Dois atos complementares de 2026 e duas leis de 2015 publicados apos controles de PDF nativo integral, imagens/brasoes, anexos API completos, colunas/emissores, epigrafe/fecho, identidade e vetores.
+- LC82/2026 recupera sete colunas associadas as celulas vistas no PDF. Fonte e tabela tambem revistas visualmente pelo coordenador; quatro vagas, regime de carga e salario R$ 3.800,00 preservados, com restante do corpo identico e backup completo.
+- Mil candidatos examinados: quatro aptos e 996 retidos; nenhum OCR promovido a integra apenas comparando extratores. Curitiba fica separada para revisao de estrutura, sem alterar o snapshot anterior.
+- Auditoria generica 4 sem erros ou avisos; municipal completo sem problemas ou avisos. Cinco ocorrencias de EOF sao somente linhas vazias provadas no index; demais verificacoes de whitespace passaram.
+
+### Escopos historicos de reguladores, sem mudar metas
+
+- 1.816 normas ja publicadas estavam fora dos caminhos do plano: nomes historicos de tres ministerios e rubricas gerais do DOU. Orgao literal, fonte, OID e SHA dos documentos foram inventariados em escopos-historicos-reguladores-20261020.json. Nao sao novos documentos nem duplicacoes.
+- Quatro escopos de universo ainda desconhecido passam a ser discriminados separadamente, sem atribuir esses atos a metas estimadas de orgaos atuais. Todas as entradas anteriores foram comparadas por AST e permanecem intactas.
+- Soma das metas antes/depois:11.768.799. Dois testes de contagem, index, pendencias e teto por serie passaram; nenhum alvo foi reduzido e excesso de uma serie nao preenche outra.

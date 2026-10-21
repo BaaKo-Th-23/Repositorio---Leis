@@ -108,6 +108,8 @@ PLANO = [
          "reguladores/transportes", 2000, 2, "Diário Oficial da União (in.gov.br)"),
     Item("Infralegal — trânsito e transportes", "Ministério de Portos e Aeroportos",
          "reguladores/portos-aeroportos", 800, 2, "Diário Oficial da União (in.gov.br)"),
+    Item("Infralegal — trânsito e transportes", "Ministério da Infraestrutura (denominação histórica)",
+         "reguladores/ministerio-da-infraestrutura", None, 2, "Diário Oficial da União (órgão literal da publicação)"),
 
     # --------------------------------------------------------------------------------- Saúde
     Item("Infralegal — saúde", "ANVISA: RDC, instruções normativas e portarias",
@@ -184,6 +186,10 @@ PLANO = [
          "reguladores/cidades", 800, 2, "Diário Oficial da União (in.gov.br)"),
     Item("Infralegal — infraestrutura e energia", "Ministério da Integração e do Desenvolvimento Regional",
          "reguladores/integracao", 800, 2, "Diário Oficial da União (in.gov.br)"),
+    # Os universos históricos ainda não têm índice completo. Não preenchem
+    # artificialmente as metas estimadas de ministérios atuais/sucessores.
+    Item("Infralegal — infraestrutura e energia", "Ministério do Desenvolvimento Regional (denominação histórica)",
+         "reguladores/ministerio-do-desenvolvimento-regional", None, 2, "Diário Oficial da União (órgão literal da publicação)"),
 
     # -------------------------------------------------------------------- Educação e cultura
     Item("Infralegal — educação e cultura", "Conselho Nacional de Educação: resoluções e pareceres",
@@ -224,6 +230,9 @@ PLANO = [
          "reguladores/tcu", 1500, 2, "Diário Oficial da União (in.gov.br)"),
     Item("Infralegal — justiça e controle", "Conselhos federais de fiscalização profissional (CFM, COFEN, CONFEA/CREA e demais)",
          "reguladores/conselhos-profissionais", 7000, 2, "Diário Oficial da União (in.gov.br)"),
+    Item("Infralegal — justiça e controle", "Atos em rubricas gerais do DOU (órgão discriminado nos metadados)",
+         "reguladores/editais-e-avisos,reguladores/entidades-de-fiscalizacao-dos-profission", None, 2,
+         "Diário Oficial da União; rubrica e órgão preservados sem atribuir meta de outra série"),
     Item("Infralegal — justiça e controle", "Presidência da República: atos normativos",
          "reguladores/presidencia", 2000, 2, "Diário Oficial da União (in.gov.br)"),
     Item("Infralegal — justiça e controle", "Ministério da Gestão e da Inovação em Serviços Públicos",
@@ -248,6 +257,8 @@ PLANO = [
          "reguladores/mdh", 800, 2, "Diário Oficial da União (in.gov.br)"),
     Item("Infralegal — direitos e desenvolvimento social", "Ministério das Mulheres",
          "reguladores/mulheres", 300, 2, "Diário Oficial da União (in.gov.br)"),
+    Item("Infralegal — direitos e desenvolvimento social", "Ministério da Mulher, da Família e dos Direitos Humanos (denominação histórica)",
+         "reguladores/ministerio-da-mulher-da-familia-e-dos-di", None, 2, "Diário Oficial da União (órgão literal da publicação)"),
     Item("Infralegal — direitos e desenvolvimento social", "Ministério da Igualdade Racial",
          "reguladores/igualdade-racial", 300, 2, "Diário Oficial da União (in.gov.br)"),
     Item("Infralegal — direitos e desenvolvimento social", "Ministério dos Povos Indígenas",
