@@ -1455,3 +1455,9 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Recibo scripts/dados/publicacao-estaduais31862-20261020.json: RS HTML 11.116, RS PDF 10.970, MG 6.036 e Bahia base 3.740. Lotes finais por SHA, com aliases e omissões retidos e fontes oficiais conferidas.
 - PDFs RS preservam camada textual, números e páginas; imagens extraídas foram confrontadas com os cinco logos decorativos revisados visualmente. HTML conserva tabelas e células normativas.
 - Auditoria do index sem erros ou avisos. Foram provados 145.116 hardbreaks exatos, inclusive 39.086 linhas vazias com dois espaços. Demais verificações de whitespace passaram sem modificar texto normativo.
+
+### Recuperação federal: 193 documentos publicados
+
+- Substituições verificadas contra SHA anterior do HEAD: 187 no lote séries curtas001, quatro no complemento002 e duas leis delegadas com oito tabelas recuperadas. EC18 e EC28 deixam de trazer somente retificações.
+- Históricos comprimidos preservam integralmente as transcrições anteriores, capturas e metadados oficiais. Candidatos congelados ficam como evidência fora das pastas contadas; não são novas identidades normativas.
+- Texto visível, identidade, fecho, tabelas e ausência de visuais foram confrontados com a fonte. Cabeçalhos legados das leis delegadas não ganham certificação de vigência. Auditoria do index sem erros ou avisos; dez hardbreaks exatos provados.
