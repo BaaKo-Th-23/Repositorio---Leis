@@ -1,10 +1,10 @@
 # Progresso
 
-Gerado em 21/10/2026 06:45:51 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 21/10/2026 06:47:40 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Cada série contribui até sua própria meta. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**1.094.647 documentos · 1.012.735 / ~11.768.799 nas séries com meta (8.6%) · 2.560 sem meta**
+**1.094.650 documentos · 1.012.738 / ~11.768.799 nas séries com meta (8.6%) · 2.560 sem meta**
 
 ![progresso](progresso.svg)
 
@@ -91,15 +91,15 @@ Planalto, Senado, Câmara e assembleias.
 
 Diários oficiais e portais de órgãos e tribunais.
 
-618.942 documentos · 544.107 / ~861.320 nas séries com meta (63.2%) · 1.816 sem meta
+618.945 documentos · 544.110 / ~861.320 nas séries com meta (63.2%) · 1.816 sem meta
 
 ### Infralegal — tributário
 
-76.069 / ~134.038 documentos (56.8%)
+76.072 / ~134.038 documentos (56.8%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Receita Federal: instruções normativas, portarias, atos declaratórios, soluções de consulta e pareceres normativos | 74.264 | 115.238 | `reguladores/rfb` | RFB — Sijut (23 espécies normativas) e Diário Oficial da União |
+| 🟦 | Receita Federal: instruções normativas, portarias, atos declaratórios, soluções de consulta e pareceres normativos | 74.267 | 115.238 | `reguladores/rfb` | RFB — Sijut (23 espécies normativas) e Diário Oficial da União |
 | 🟦 | CONFAZ: convênios, protocolos e ajustes SINIEF | 793 | 12.000 | `reguladores/confaz` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Tesouro Nacional: portarias e instruções | 197 | 2.000 | `reguladores/stn` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Procuradoria-Geral da Fazenda Nacional | 124 | 1.500 | `reguladores/pgfn` | Diário Oficial da União (in.gov.br) |
