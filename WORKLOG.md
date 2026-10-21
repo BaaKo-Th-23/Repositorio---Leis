@@ -1581,3 +1581,10 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Acrescentadas literalmente as notas de inconstitucionalidade vinculadas ao art. 168 § 5º e art. 177 §§ 8º e 9º, com datas, autoria e referências informadas pelo portal. A numeração processual da fonte foi preservada; nenhum alcance judicial foi inferido.
 - Preimagem confirmada contra HEAD; remover as três inserções recompõe o corpo anterior byte a byte. Fonte completa, fragmentos e consultas judiciais preservados. Dois testes passaram, auditoria genérica sem erros ou avisos e municipal completa sem problemas ou avisos.
 - Atributo restrito conserva os três fragmentos HTML brutos com CRLF; prova de whitespace do backup confirma apenas uma linha vazia em EOF. Demais verificações passaram.
+
+### Reguladores: 8.668 atos e conferência de renderização
+
+- Lote 010: 8.698 candidatos passaram pelos controles de fonte/identidade. A conferência suplementar com CommonMark, HTML, tabelas e strike confirmou 8.668; trinta ficam retidos para revisão contextual de listas, separadores ou apresentação. Todo caractere visível, pontuação e assinatura numérica são confrontados; alertas não equivalem a ausência normativa. Recibo preliminar de 8.698 permanece local e não integra a publicação.
+- Auditoria dos 8.668 documentos do index sem erros ou avisos; 2.232 hardbreaks exatos, incluindo dezoito linhas vazias com dois espaços, provados. Demais verificações passaram.
+- Replay adicional dos 8.900 atos do lote 009 confirmou 8.880 e reteve conservadoramente vinte para contexto de renderização. Pernambuco acrescenta 78 pendências além das já registradas; 80 publicados foram confrontados contra HEAD, dois já constavam do registro. Total conservador passa a 2.264 até validação/reparo. Nenhuma ausência material foi presumida e nenhum alvo foi reduzido.
+- Auditor PE v2, testes e inventário de atributos CSS congelados incorporados; 26 testes PE passaram no coordenador. Nos 25.316 caches fragmentários examinados não foram encontrados sinais locais de tachado nos atributos/CSS; estilos ou ancestrais externos ausentes não foram presumidos.
