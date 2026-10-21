@@ -15,6 +15,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from baixar_camara import equivalencias, gravar_json
 from comum import Rede, decodificar, yaml_str
 from html2md import convert
+from identidade_decreto import extrair_epigrafe_decreto, numero_normalizado
 
 RAIZ = Path(__file__).resolve().parent.parent / "federal"
 CACHE = RAIZ / "_fonte" / "dpl-planalto"
@@ -67,6 +68,15 @@ def indice(rede):
     return docs
 
 
+def conferir_epigrafe(d, corpo):
+    """Recusa conflito explícito entre a epígrafe própria e o cadastro do índice."""
+    epigrafe = extrair_epigrafe_decreto(corpo)
+    if epigrafe and (epigrafe["data"] != d["data"] or
+                     epigrafe["numero"] != numero_normalizado(d["numero"])):
+        raise ValueError("Epígrafe própria diverge do índice Planalto: " +
+                         json.dumps(epigrafe, ensure_ascii=False))
+
+
 def processar(rede, d):
     urn = f"urn:lex:br:federal:decreto.legislativo:{d['data']};{d['numero']}" if d["numero"] else ""
     iguais = equivalencias("dpl").get(urn, []) if urn else []
@@ -88,6 +98,7 @@ def processar(rede, d):
         s = re.sub(r"</?(?:strike|del|s)\b[^>]*>", "", s, flags=re.I)
         s = re.sub(r"text-decoration\s*:\s*line-through", "", s, flags=re.I)
     corpo = convert(s)
+    conferir_epigrafe(d, corpo)
     historico_integral = (d["data"] in ("1827-10-15", "1821-05-26") and len(corpo) > 800
                           and re.search(r"(?:tenha o seu devido cumprimento|Com as rubricas dos Membros da Regencia)", corpo, re.I))
     if not re.search(r"\bArt(?:igo)?\.?\s*(?:\d|[úu]nico)", corpo, re.I) and not historico_integral:

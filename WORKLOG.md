@@ -1614,3 +1614,9 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Lote 011 fornece 7.954 novos atos: 7.931 de igualdade direta e 23 com contadores efetivos comprovados por AST/HTML. Mais 24 atos retidos do lote 010 passam pela mesma prova contextual, totalizando 7.978 novos. Fontes, corpos e reservas reconferidos.
 - Dezessete dos vinte alertas publicados do lote 009 são readmitidos sem editar MD após prova dos contadores realmente renderizados, sem copiar números da fonte. Três seguem pendentes; registro global fica com 2.138. As 969 divergências remanescentes do lote 011 e seis do lote 010 não foram publicadas.
 - Auditoria dos 7.978 documentos do index sem erros ou avisos. Prova de whitespace conserva 1.114 hardbreaks exatos, incluindo 35 linhas vazias com dois espaços; demais verificações passaram. Código exato da prova contextual e hashes de suas dependências preservados.
+
+### DPL: identidade única de 1920 e tabelas de 1922
+
+- DPL 4.182 estava publicado sob 1919 embora a epígrafe, o fecho, o URL Planalto, Senado e Câmara identifiquem 1920. O corpo legado foi confrontado literalmente, arquivado integralmente e retirado do caminho incorreto no mesmo commit da identidade canônica de 1920. O índice legado errado permanece documentado; nenhuma segunda norma foi criada.
+- DPL 4.555/1922 incorpora 22 tabelas estruturadas e 22 escapes que preservam os rótulos numéricos literais em CommonMark. Duas preimagens locais anteriormente não publicadas também foram arquivadas antes das substituições. Ambos os textos passam pontuação, assinatura e contexto numéricos contra fonte, com renderizador independente.
+- Variação líquida: um documento, sem reduzir metas. Guard do coletor recusa divergência explícita de número/data da epígrafe; três testes passaram. Auditoria do index: dois documentos, sem erros ou avisos; diffcheck integral passou sem dispensas.

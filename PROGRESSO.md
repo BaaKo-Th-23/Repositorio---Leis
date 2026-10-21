@@ -1,10 +1,10 @@
 # Progresso
 
-Gerado em 20/10/2026 23:41:32 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 20/10/2026 23:49:11 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Cada série contribui até sua própria meta. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**1.016.088 documentos · 962.984 / ~11.768.799 nas séries com meta (8.2%) · 2.005 sem meta**
+**1.016.089 documentos · 962.985 / ~11.768.799 nas séries com meta (8.2%) · 2.005 sem meta**
 
 ![progresso](progresso.svg)
 
@@ -14,7 +14,7 @@ Há 2.138 pendências de integralidade registradas em [registro auditável](scri
 
 Planalto, Senado, Câmara e assembleias.
 
-443.513 documentos · 437.170 / ~574.766 nas séries com meta (76.1%) · 0 sem meta
+443.514 documentos · 437.171 / ~574.766 nas séries com meta (76.1%) · 0 sem meta
 
 ### Constituição Federal
 
@@ -40,11 +40,11 @@ Planalto, Senado, Câmara e assembleias.
 
 ### Atos do Congresso
 
-37.805 documentos · 37.803 / ~38.248 nas séries com meta (98.8%) · 0 sem meta
+37.806 documentos · 37.804 / ~38.248 nas séries com meta (98.8%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Decretos legislativos | 21.358 | 21.775 | `federal/decretos-legislativos` | normas.leg.br |
+| 🟦 | Decretos legislativos | 21.359 | 21.775 | `federal/decretos-legislativos` | normas.leg.br |
 | ✅ | Medidas provisórias (originais e reedições) | 7.499 | 7.497 | `federal/medidas-provisorias` | Planalto + normas.leg.br |
 | 🟦 | Resoluções do Senado Federal | 6.574 | 6.578 | `federal/resolucoes-senado` | normas.leg.br |
 | 🟦 | Resoluções da Câmara dos Deputados | 2.280 | 2.300 | `federal/resolucoes-camara` | camara.leg.br |
