@@ -7,15 +7,17 @@ data: "1990-03-21"
 municipio: "Campina Verde"
 uf: "MG"
 codigo_ibge: "3111101"
-versao_texto: "texto integral anexado no SAPL municipal; "
+versao_texto: "texto integral anexado no SAPL municipal; ; trechos tachados identificados conforme a fonte, com texto e notas preservados"
 fonte: "https://sapl.campinaverde.mg.leg.br/norma/1"
 fonte_texto: "https://sapl.campinaverde.mg.leg.br/media/sapl/public/normajuridica/1990/1/lei_organica.pdf"
 sha256_fonte: "c418b3405c1f6adec83a3e77876a3d44addbd483bb4e0bb60a05cdc73ecec1a3"
-sha256_texto: "e2e0b6983e6ef62935a96551256ddec47fa90d257347f155adf70f78c494b877"
+sha256_texto: "128a801b415eafbd9a78747cb5cecb67d0662dbbdc6264737cccd70f74923edd"
 baixado_em: "2026-10-16"
 ---
 
 # Lei Orgânica Municipal nº 1, de 21 de março de 1990
+
+Nota de transcrição: esta edição oficial reúne trechos tachados e não tachados. Os trechos tachados foram preservados entre rótulos explícitos, com indicação da página da fonte; as notas de alteração, revogação e efeitos permanecem literais. A marcação reproduz a apresentação da fonte e não certifica vigência jurídica integral ou atualização posterior.
 
 LEI ORGÂNICA DO MUNICÍPIO DE CAMPINA VERDE - MG
 
@@ -681,7 +683,7 @@ d) livros, jornais, periódicos e o papel destinado a sua impressão. Parágrafo
 
 ##### SEÇÃO I DA CÂMARA MUNICIPAL
 
-**Art. 29** – O Poder Legislativo é exercido pela Câmara Municipal, que se compõe de vereadores eleitos pelo povo Campinaverdense, pelo sistema proporcional na forma da Lei. Parágrafo 1º - Em conformidade com art. 29 da Constituição Federal, fica fixado em treze (13) o número de vereadores integrantes da Câmara Municipal campinaverdense. Parágrafo 1º. - Nos termos do Art. 29, inciso IV, letra “b” da Constituição Federal, fica fixado em 11 (onze) o número de vereadores integrantes da Câmara Municipal de Campina Verde. (Emenda à Lei Orgânica nº. 002/2011 de 30/09/2011). Parágrafo 2º - Cada legislatura terá a duração de quatro (04) anos, compreendendo cada ano uma sessão legislativa. Parágrafo 3º - São condições de elegibilidade para mandato de vereador, na forma da Lei Federal:
+**Art. 29** – O Poder Legislativo é exercido pela Câmara Municipal, que se compõe de vereadores eleitos pelo povo Campinaverdense, pelo sistema proporcional na forma da Lei. ⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 23, grupo 1⟧Parágrafo 1º - Em conformidade com art. 29 da Constituição Federal, fica fixado em treze (13) o número de vereadores integrantes da Câmara Municipal campinaverdense.⟦FIM DO TRECHO TACHADO NA FONTE⟧ Parágrafo 1º. - Nos termos do Art. 29, inciso IV, letra “b” da Constituição Federal, fica fixado em 11 (onze) o número de vereadores integrantes da Câmara Municipal de Campina Verde. (Emenda à Lei Orgânica nº. 002/2011 de 30/09/2011). Parágrafo 2º - Cada legislatura terá a duração de quatro (04) anos, compreendendo cada ano uma sessão legislativa. Parágrafo 3º - São condições de elegibilidade para mandato de vereador, na forma da Lei Federal:
 
 I – a nacionalidade brasileira;
 
@@ -977,7 +979,7 @@ VII – que não tomar posse nas condições estabelecidas nesta Lei Orgânica;
 
 VIII – que se utilizar do mandato para a prática dos atos de corrupção ou de improbidade administrativa. Parágrafo 1º - Além de outros casos definidos no Regimento Interno da Câmara Municipal, considerar-se-á incompatível com o decoro parlamentar o abuso das prerrogativas asseguradas ao Vereador ou a percepção de vantagens ilícitas ou imorais.
 
-Parágrafo 2º - Nos casos dos incisos I, II e VI a perda do mandato será declarada pela Câmara por voto secreto e de dois terços (2/3) pelo menos mediante provocação da Mesa, qualquer vereador ou de Partido Político representado na Câmara, assegurada ampla defesa. Parágrafo 2º - Nos casos dos incisos I, II e VI a perda do mandato será declarada pela Câmara por voto nominal aberto, pela maioria de dois terços (2/3) de seus membros, em chamada pela ordem alfabética, mediante provocação da Mesa, qualquer vereador ou de Partido Político representado na Câmara, assegurada ampla defesa. (Emenda à Lei Orgânica Municipal nº. 002/2001) Parágrafo 3º - Nos casos previstos nos incisos III, IV, V, VII e VIII, a perda será declarada pela Mesa da Câmara, de ofício ou mediante provocação de qualquer vereador ou de Partido Político representado na Câmara, assegurada ampla defesa.
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 29, grupo 1⟧Parágrafo 2º - Nos casos dos incisos I, II e VI a perda do mandato será declarada pela Câmara por voto secreto e de dois terços (2/3) pelo menos mediante provocação da Mesa, qualquer vereador ou de Partido Político representado na Câmara, assegurada ampla defesa.⟦FIM DO TRECHO TACHADO NA FONTE⟧ Parágrafo 2º - Nos casos dos incisos I, II e VI a perda do mandato será declarada pela Câmara por voto nominal aberto, pela maioria de dois terços (2/3) de seus membros, em chamada pela ordem alfabética, mediante provocação da Mesa, qualquer vereador ou de Partido Político representado na Câmara, assegurada ampla defesa. (Emenda à Lei Orgânica Municipal nº. 002/2001) Parágrafo 3º - Nos casos previstos nos incisos III, IV, V, VII e VIII, a perda será declarada pela Mesa da Câmara, de ofício ou mediante provocação de qualquer vereador ou de Partido Político representado na Câmara, assegurada ampla defesa.
 
 **Art. 56** – O Vereador poderá licenciar-se:
 
@@ -1073,7 +1075,7 @@ I – se aquiescendo, a sancionará; ou
 
 II – se a considerar, no todo ou em parte, inconstitucional ou contrária ao interesse público, veta-la-á total ou parcialmente. Parágrafo 1º - O silêncio do Prefeito Municipal, decorrido o prazo, importa sanção; Parágrafo 2º - O veto parcial somente abrangerá texto integral de artigo, de parágrafo, de inciso ou de alínea.
 
-Parágrafo 3º - A Câmara Municipal, dentro de trinta (30) dias a contar do recebimento, apreciará o veto em uma só discussão e votação, com parecer ou sem ele, e sua rejeição só ocorrerá pelo voto da maioria absoluta dos Vereadores, em escrutínio secreto. Parágrafo 3º - A Câmara Municipal, dentro de trinta (30) dias a contar do recebimento, apreciará o veto em uma só discussão e votação, com parecer ou sem ele, e sua rejeição só ocorrerá pelo voto da maioria absoluta dos Vereadores, em votação nominal aberta e pela chamada em ordem alfabética. (Emenda à Lei Orgânica Municipal nº. 002/2001) Parágrafo 4º - Rejeitado o veto, será a proposição de lei enviada ao Prefeito para a promulgação. Parágrafo 5º - Esgotado o prazo estabelecido no Parágrafo 3º, sem deliberação, o veto será incluído na Ordem do Dia da sessão imediata, sobrestadas as demais proposições, até votação final, ressalvadas as matérias de que trata sobre orçamento. Parágrafo 6º - Se, nos casos dos parágrafos 1º e 4º, dentro de quarenta e oito (48) horas, a
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 31, grupo 1⟧Parágrafo 3º - A Câmara Municipal, dentro de trinta (30) dias a contar do recebimento, apreciará o veto em uma só discussão e votação, com parecer ou sem ele, e sua rejeição só ocorrerá pelo voto da maioria absoluta dos Vereadores, em escrutínio secreto.⟦FIM DO TRECHO TACHADO NA FONTE⟧ Parágrafo 3º - A Câmara Municipal, dentro de trinta (30) dias a contar do recebimento, apreciará o veto em uma só discussão e votação, com parecer ou sem ele, e sua rejeição só ocorrerá pelo voto da maioria absoluta dos Vereadores, em votação nominal aberta e pela chamada em ordem alfabética. (Emenda à Lei Orgânica Municipal nº. 002/2001) Parágrafo 4º - Rejeitado o veto, será a proposição de lei enviada ao Prefeito para a promulgação. Parágrafo 5º - Esgotado o prazo estabelecido no Parágrafo 3º, sem deliberação, o veto será incluído na Ordem do Dia da sessão imediata, sobrestadas as demais proposições, até votação final, ressalvadas as matérias de que trata sobre orçamento. Parágrafo 6º - Se, nos casos dos parágrafos 1º e 4º, dentro de quarenta e oito (48) horas, a
 
 lei não for promulgada pelo Prefeito, o Presidente da Câmara Municipal a promulgará, e, se, este não o fizer em igual prazo, caberá ao Vice-Presidente fazê-lo.
 
@@ -1429,7 +1431,7 @@ XIV – proibição de diferença de salários, de exercício de funções e de 
 
 **Art. 102** – Os servidores públicos municipais, terão a partir do quinto ano de exercício, seus salários/vencimentos acrescidos de 10% (dez por cento) por quinquênio, que serão incorporados para efeito de aposentadoria.
 
-Parágrafo Único – O funcionário estável por concurso público fará jus à sexta parte dos vencimentos ao completar 20 (vinte) anos de serviços prestados exclusivamente ao município.
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 38, grupo 1⟧Parágrafo Único – O funcionário estável por concurso público fará jus à sexta parte dos vencimentos ao completar 20 (vinte) anos de serviços prestados exclusivamente ao município.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 Parágrafo 1º- Os funcionários estáveis e efetivos farão jus à sexta parte dos vencimentos ao completar 20 (vinte) anos de serviços prestados exclusivamente ao município de Campina Verde. Emenda nº. 001/2011
 

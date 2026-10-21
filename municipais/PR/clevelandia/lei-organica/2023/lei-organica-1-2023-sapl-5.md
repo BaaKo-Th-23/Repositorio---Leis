@@ -7,16 +7,18 @@ data: "2023-08-15"
 municipio: "Clevelândia"
 uf: "PR"
 codigo_ibge: "4105706"
-versao_texto: "texto integral anexado no SAPL municipal; ; transcrição integral preformatada de PDF nativo sem imagens, cabeçalhos/fólios/valores numéricos preservados; fidelidade à camada textual, sem certificar vigência jurídica"
+versao_texto: "texto integral anexado no SAPL municipal; ; transcrição integral preformatada de PDF nativo sem imagens, cabeçalhos/fólios/valores numéricos preservados; fidelidade à camada textual, sem certificar vigência jurídica; trechos tachados identificados conforme a fonte, com texto e notas preservados"
 fonte: "https://sapl.clevelandia.pr.leg.br/norma/5"
 fonte_texto: "https://sapl.clevelandia.pr.leg.br/media/sapl/public/normajuridica/2023/5/lei_organica_clevelandia.pdf"
 sha256_fonte: "ecd69b0de5099a776c348a953d594042ff7f7cfdda624ef26fa441c501291777"
-sha256_texto: "474b36562641854abd829f9c8b47ef5028dc0511981000657c3e76af856af475"
+sha256_texto: "593c8d6b429b43326b80750679aabbf6d09213ab96f5a517d23b55ccc7e26f97"
 baixado_em: "2026-10-16"
 revisado_em: "2026-10-20"
 ---
 
 # Lei Orgânica Municipal nº 1, de 15 de agosto de 2023
+
+Nota de transcrição: esta edição oficial reúne trechos tachados e não tachados. Os trechos tachados foram preservados entre rótulos explícitos, com indicação da página da fonte; as notas de alteração, revogação e efeitos permanecem literais. A marcação reproduz a apresentação da fonte e não certifica vigência jurídica integral ou atualização posterior.
 
 ```text
 CÂMARA MUNICIPAL DE CLEVELÂNDIA – PR
@@ -400,8 +402,8 @@ de crime contra a administração pública que tomar conhecimento;
                    XIV – Aprovar, previamente, a alienação ou concessão de
 imóveis Municipais;
 
-                     XV – Aprovar, previamente, por voto secreto após
-argüição pública, a escolha de titulares de cargos que a Lei determinar;
+                     ⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 11, grupo 1⟧XV – Aprovar, previamente, por voto secreto após
+argüição pública, a escolha de titulares de cargos que a Lei determinar;⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
       XV- Aprovar, previamente, por voto aberto, após argüição pública, a
       escolha de titulares de cargos que a Lei determinar; (Redação dada
@@ -497,10 +499,10 @@ constitucionalmente previstos;
 casos definidos no Regimento Interno, o abuso das prerrogativas asseguradas
 aos vereadores ou a percepção de vantagens indevidas.
 
-                   § 2º Nos casos dos incisos I e II a perda do mandato é
+                   ⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 14, grupo 1⟧§ 2º Nos casos dos incisos I e II a perda do mandato é
 decidida pela Câmara Municipal, por voto secreto e maioria absoluta mediante
 a provocação da mesa ou de partido político representado na Casa, assegurada
-ampla defesa.
+ampla defesa.⟦FIM DO TRECHO TACHADO NA FONTE⟧
                    § 2º - Nos casos dos incisos I e II a perda do mandato é
 decidida pela Câmara Municipal, por voto aberto e maioria absoluta mediante
 a provocação da mesa ou de partido político representado na Casa, assegurada
@@ -737,9 +739,9 @@ artigo, de parágrafo, de inciso ou de alínea.
                     § 3º Decorrido o prazo de quinze dias o silêncio do
 Prefeito importará em sanção.
 
-                    § 4º O veto será apreciado pela Câmara, dentro de trinta
+                    ⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 20, grupo 1⟧§ 4º O veto será apreciado pela Câmara, dentro de trinta
 dias a contar de seu recebimento, só podendo ser rejeitado pelo voto da
-maioria absoluta de Vereadores, em escrutínio secreto.
+maioria absoluta de Vereadores, em escrutínio secreto.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
                    § 4º - O veto será apreciado pela Câmara, dentro de trinta
 dias a contar de seu recebimento, só podendo ser rejeitado pelo voto da

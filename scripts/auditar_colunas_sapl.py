@@ -38,6 +38,14 @@ def analisar(meta,layout):
         if d!=meta.get('data'):add('data_epigrafe_divergente',a);out[-1].update({'data_metadado':meta.get('data'),'data_epigrafe':d})
     for a in AVISO.finditer(layout):add('aviso_contratacao_ou_publicacao_possivelmente_alheia',a)
     for a in PROJETO.finditer(layout[:2500]):add('arquivo_com_cabecalho_de_projeto',a)
+    # Alguns SAPLs cadastram emendas como Lei Orgânica. A epígrafe pode incluir
+    # o nome completo da cidade entre ORGÂNICA e Nº, fora do padrão curto acima.
+    # Só examina o cabeçalho anterior ao primeiro artigo, nunca notas no corpo.
+    article = re.search(r'\bart(?:igo)?\.?\s*1[º°o.\s]', layout, re.I)
+    header = layout[:min(article.start() if article else 4000, 4000)]
+    if 'organica' in normal(meta.get('tipo','')) and tipo != 'EMENDA':
+        for a in re.finditer(r'^[\s*#]*EMENDA\s+[ÀA]\s+LEI\s+ORG[ÂA]NICA\b', header, re.M | re.I):
+            add('epigrafe_de_emenda_em_cadastro_de_lei_organica', a)
     codigos=set(re.findall(r'[Cc][óo]digo\s+[Ii]dentificador\s*[:.\-]?\s*([A-Za-z0-9]{6,})',layout))
     if len(codigos)>1:out.append({'regra':'multiplos_codigos_identificadores','codigos':sorted(codigos)})
     if tipo=='EMENDA' and re.match(r'\s*REGIMENTO\s+INTERNO',layout,re.I):out.append({'regra':'objeto_regimento_em_cadastro_de_emenda','trecho':layout[:700]})

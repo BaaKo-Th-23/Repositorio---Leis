@@ -7,15 +7,17 @@ data: "1990-03-27"
 municipio: "São Miguel do Guaporé"
 uf: "RO"
 codigo_ibge: "1100320"
-versao_texto: "texto integral anexado no SAPL municipal; "
+versao_texto: "texto integral anexado no SAPL municipal; ; trechos tachados identificados conforme a fonte, com texto e notas preservados"
 fonte: "https://sapl.saomigueldoguapore.ro.leg.br/norma/9"
 fonte_texto: "https://sapl.saomigueldoguapore.ro.leg.br/media/sapl/public/normajuridica/1990/9/lei_organica_atualizada.pdf"
 sha256_fonte: "9a89e5218df164c23c3f3119f3c7e3b72bdee8842ffee38a77d9c1926dc254d2"
-sha256_texto: "89209876c654b5e3ca2fee3019adfc9a6d0e9fca43008e7b554a52e0fb65a099"
+sha256_texto: "ddb7f406b967acb36a07cb8eed09060de07b976afd729b22ec71da19409681ff"
 baixado_em: "2026-10-16"
 ---
 
 # LEI ORGÂNICA MUNICIPAL nº 1, de 27 de março de 1990
+
+Nota de transcrição: esta edição oficial reúne trechos tachados e não tachados. Os trechos tachados foram preservados entre rótulos explícitos, com indicação da página da fonte; as notas de alteração, revogação e efeitos permanecem literais. A marcação reproduz a apresentação da fonte e não certifica vigência jurídica integral ou atualização posterior.
 
 LEI ORGÂNICA MUNICIPAL 1990
 
@@ -1695,7 +1697,7 @@ DAS DISPOSIÇÕES TRANSITÓRIAS
 
 **Art. 131.** O ensino de História e Geografia do Estado de Rondônia e do Município de São Miguel do Guaporé deverá ser obrigatoriamente ministrado no ensino fundamental, sob forma de unidades de estudos.
 
-**Art. 132.** O Município valorizará os profissionais de Ensino especial e da primeira série do Ensino fundamental, garantindo o acréscimo pecuniário de dois terços do vencimento para os primeiros, imediatamente, ao assumirem essa modalidade de ensino e, para os segundos, após dois anos de efetivo exercício da docência e comprovada aptidão. (Artigo suprimido pela Emenda a LOM n.º 001/2024)
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 47, grupo 1⟧Art. 132.** O Município valorizará os profissionais de Ensino especial e da primeira série do Ensino fundamental, garantindo o acréscimo pecuniário de dois terços do vencimento para os primeiros, imediatamente, ao assumirem essa modalidade de ensino e, para os segundos, após dois anos de efetivo exercício da docência e comprovada aptidão.⟦FIM DO TRECHO TACHADO NA FONTE⟧ (Artigo suprimido pela Emenda a LOM n.º 001/2024)
 
 **Art. 133.** A escolha de administrador escolar obedecerá aos princípios estabelecidos em Lei Federal e será feita, dentre professores e com experiência mínima de cinco anos de efetivo exercício no magistério.
 
@@ -1747,7 +1749,7 @@ Art. l46. O Executivo Municipal fica autorizado a proceder serviços de acesso a
 
 **Art. 153.** O Presidente da Câmara Municipal deverá manter a Bíblia Sagrada, no recinto da Câmara Municipal, inclusive no Plenário quando nas realizações das Reuniões Ordinárias, Extraordinárias, Solenes, Especiais e Secretas.
 
-Art. l54. Fica aprovada a Construção de um Monumento da Bíblia Sagrada, na Praça Deonildo Caragnatto, em homenagem ao Cristianismo e ao povo cristão de São Miguel do Guaporé. (Artigo suprimido pela Emenda a LOM n.º 001/2024)
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 49, grupo 1⟧Art. l54. Fica aprovada a Construção de um Monumento da Bíblia Sagrada, na Praça Deonildo Caragnatto, em homenagem ao Cristianismo e ao povo cristão de São Miguel do Guaporé.⟦FIM DO TRECHO TACHADO NA FONTE⟧ (Artigo suprimido pela Emenda a LOM n.º 001/2024)
 
 § 1°Em frente do monumento será construída uma área com cobertura e livre para pregações e concentrações públicas de qualquer denominação.
 

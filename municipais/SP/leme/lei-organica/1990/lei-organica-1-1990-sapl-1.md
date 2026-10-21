@@ -7,15 +7,17 @@ data: "1990-03-31"
 municipio: "Leme"
 uf: "SP"
 codigo_ibge: "3526704"
-versao_texto: "texto integral anexado no SAPL municipal; "
+versao_texto: "texto integral anexado no SAPL municipal; ; trechos tachados identificados conforme a fonte, com texto e notas preservados"
 fonte: "https://sapl.leme.sp.leg.br/norma/1"
 fonte_texto: "https://sapl.leme.sp.leg.br/media/sapl/public/normajuridica/1990/1/lei_organica_do_municipio-lom-_de_10_de_novembro_de_2020.pdf"
 sha256_fonte: "56600e840a11e6a00314b37a9205f2385f2688380eb25bbeb65ecb85041a0727"
-sha256_texto: "697f8ed90fffeda8cefc5828d2cc189e5323e82cc80c77959948b90e90238f34"
+sha256_texto: "669454ba25868b7846782b3d7150f74006b4ec7b7cca0b83ffb781cb4636eff5"
 baixado_em: "2026-10-16"
 ---
 
 # Lei Orgânica do Município nº 1, de 31 de março de 1990
+
+Nota de transcrição: esta edição oficial reúne trechos tachados e não tachados. Os trechos tachados foram preservados entre rótulos explícitos, com indicação da página da fonte; as notas de alteração, revogação e efeitos permanecem literais. A marcação reproduz a apresentação da fonte e não certifica vigência jurídica integral ou atualização posterior.
 
 LEI ORGÂNICA DO MUNICÍPIO DE LEME
 
@@ -77,7 +79,7 @@ XVI - manter programas de educação pré escolar e de ensino fundamental, com a
 
 XVII - dispor sobre os serviços funerários e de cemitérios, encarregando-se da administração daqueles que forem públicos e fiscalizando os pertencentes a entidades privadas;
 
-XVIII—regulamentar, autorizar e fiscalizar a afixação de cartazes e anúncios, bem como a utilização de quaisquer outros meios de publicidade e propaganda, nos locais sujeitos ao poder de polícia municipal, vedada a utilização do espaço aéreo de vias e logradouros públicos para fins de propaganda comercial e divulgação, por particulares, de eventos com fins econômicos e lucrativos (Emenda n° 16/01)
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 2, grupo 1⟧XVIII—regulamentar, autorizar e fiscalizar a afixação de cartazes e anúncios, bem como a utilização de quaisquer outros meios de publicidade e propaganda, nos locais sujeitos ao poder de polícia municipal, vedada a utilização do espaço aéreo de vias e logradouros públicos para fins de propaganda comercial e divulgação, por particulares, de eventos com fins econômicos e lucrativos (Emenda n° 16/01)⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 XVIII - regulamentar, autorizar e fiscalizar a afixação de cartazes e anúncios, bem como a utilização de quaisquer outros meios de publicidade e propaganda comercial ou divulgação por particulares de eventos com fins econômicos, lucrativos ou filantrópicos, nos locais sujeitos ao poder de polícia municipal, bem assim nas vias e logradouros públicos. (Emenda n° 34/16)
 
@@ -87,7 +89,7 @@ XX - dispor sobre registro, vacinação e captura de animais, com a finalidade p
 
 XXI - estabelecer e impor penalidades por infração de suas leis e regulamentos;
 
-XXII—instituir regime jurídico único e planos de carreira para os servidores da administração pública direta, das autarquias e das fundações públicas;
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 2, grupo 2⟧XXII—instituir regime jurídico único e planos de carreira para os servidores da administração pública direta, das autarquias e das fundações públicas;⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 XXII - instituir o regime jurídico único e planos de carreira para os servidores do Poder Executivo, das autarquias e das fundações (Emenda n° 35/16)
 
@@ -133,7 +135,7 @@ XIII - proteger as nascentes, os cursos d'água e as fontes do município, utili
 
 #### CAPÍTULO I DO PODER LEGISLATIVO SEÇÃO I DISPOSIÇÕES PRELIMINARES
 
-**Artigo 7°** - O Poder Legislativo é exercido pela Câmara de Vereadores, composta de Vereadores eleitos mediante pleito direto e simultâneo realizado em todo o país, na forma da legislação federal, para mandato de quatro anos. § único—O número de Vereadores à Câmara Municipal é fixado em 17 (dezessete), nos termos do inciso IV do artigo 29 da Constituição Federal, de acordo com a redação dada pela Emenda Constitucional n° 58, de 23 de setembro de 2.009, observada a população apurada por dados oficiais. (Emendas n°s 3/91 e 29/11) § único - O número de Vereadores à Câmara Municipal é fixado em 13 (treze), nos termos do inciso IV do artigo 29 da Constituição Federal, de acordo com a redação dada pela
+**Artigo 7°** - O Poder Legislativo é exercido pela Câmara de Vereadores, composta de Vereadores eleitos mediante pleito direto e simultâneo realizado em todo o país, na forma da legislação federal, para mandato de quatro anos. ⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 3, grupo 1⟧§ único—O número de Vereadores à Câmara Municipal é fixado em 17 (dezessete), nos termos do inciso IV do artigo 29 da Constituição Federal, de acordo com a redação dada pela Emenda Constitucional n° 58, de 23 de setembro de 2.009, observada a população apurada por dados oficiais. (Emendas n°s 3/91 e 29/11)⟦FIM DO TRECHO TACHADO NA FONTE⟧ § único - O número de Vereadores à Câmara Municipal é fixado em 13 (treze), nos termos do inciso IV do artigo 29 da Constituição Federal, de acordo com a redação dada pela
 
 Emenda Constitucional n° 58, de 23 de setembro de 2.009, observada a população apurada por dados oficiais. (Emenda n° 38/19) Artigo 8° - A Câmara de Vereadores reunir-se-á em sessão legislativa anual e ordinária, independentemente de convocação, de 1° de fevereiro a 30 de junho e de 1° de agosto a 15 de dezembro.
 
@@ -153,7 +155,7 @@ Emenda Constitucional n° 58, de 23 de setembro de 2.009, observada a populaçã
 
 **§ 3°** - O Presidente da Câmara ou seu substituto só terá voto: 1 - na eleição da Mesa; 2 - quando a matéria exigir, para sua aprovação, a votação da maioria absoluta ou de dois terços dos membros da Câmara; 3 - quando houver empate em qualquer votação em Plenário.
 
-**§ 4°** - O Vereador que tiver interesse pessoal na deliberação não poderá votar, sob pena de nulidade da votação, se o seu voto for decisivo. Artigo 10 - No primeiro ano de cada legislatura, no dia 1° de janeiro, às 10:00 horas, em sessão solene, independentemente de convocação e sob a presidência do Vereador mais votado dentre os presentes, com qualquer número, a Câmara de Vereadores se reunirá para a posse de seus membros e eleição da Mesa. Artigo 10 - No primeiro ano de cada legislatura, no dia 1° de janeiro, às 15:00 horas, em sessão solene, independentemente de convocação e sob a presidência do Vereador mais votado dentre os presentes, com qualquer número, a Câmara de Vereadores se reunirá para a posse de seus membros e eleição da Mesa. (Emenda 41/20)
+**§ 4°** - O Vereador que tiver interesse pessoal na deliberação não poderá votar, sob pena de nulidade da votação, se o seu voto for decisivo. ⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 4, grupo 1⟧Artigo 10 - No primeiro ano de cada legislatura, no dia 1° de janeiro, às 10:00 horas, em sessão solene, independentemente de convocação e sob a presidência do Vereador mais votado dentre os presentes, com qualquer número, a Câmara de Vereadores se reunirá para a posse de seus membros e eleição da Mesa⟦FIM DO TRECHO TACHADO NA FONTE⟧. Artigo 10 - No primeiro ano de cada legislatura, no dia 1° de janeiro, às 15:00 horas, em sessão solene, independentemente de convocação e sob a presidência do Vereador mais votado dentre os presentes, com qualquer número, a Câmara de Vereadores se reunirá para a posse de seus membros e eleição da Mesa. (Emenda 41/20)
 
 **§ 1°** - O Vereador que não tomar posse na sessão prevista por este artigo, deverá fazê-lo no prazo de quinze dias, salvo motivo justo aceito pela Câmara, sob pena de perda de seu mandato.
 
@@ -173,7 +175,7 @@ Artigo 11- Imediatamente após a posse, os Vereadores reunir-se-ão sob a presid
 
 **Artigo 15** - À Mesa, dentre outras atribuições, compete:
 
-I—propor projetos de lei dispondo sobre criação ou extinção de cargos dos serviços da Câmara e fixando os respectivos vencimentos;
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 5, grupo 1⟧I—propor projetos de lei dispondo sobre criação ou extinção de cargos dos serviços da Câmara e fixando os respectivos vencimentos;⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 I - propor projetos de Resolução dispondo sobre criação ou extinção de cargos da Câmara Municipal e fixando os respectivos vencimentos (Emenda n° 35/16)
 
@@ -187,7 +189,7 @@ V - devolver à tesouraria da Prefeitura o saldo de caixa existente na Câmara a
 
 VI - enviar ao Prefeito, até o dia 1° de março, as contas do exercício anterior;
 
-VII—promover, conceder licenças, comissionamento e punir funcionários da Câmara, nos termos da lei (Emenda n° 28/08)
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 5, grupo 2⟧VII—promover, conceder licenças, comissionamento e punir funcionários da Câmara, nos termos da lei (Emenda n° 28/08)⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 5 Lei Orgânica do Município de Leme
 
@@ -197,7 +199,7 @@ VIII - declarar a perda de mandato de Vereador, de ofício ou mediante provocaç
 
 I - representar a Câmara em juízo e fora dele;
 
-II—dirigir, executar e disciplinar os trabalhos legislativos e administrativos da Câmara, inclusive decidir sobre gratificações previamente criadas por lei (Emenda n° 28/08)
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 6, grupo 1⟧II—dirigir, executar e disciplinar os trabalhos legislativos e administrativos da Câmara, inclusive decidir sobre gratificações previamente criadas por lei (Emenda n° 28/08)⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 II - dirigir, executar e disciplinar os trabalhos legislativos e administrativos da Câmara Municipal (Emenda n° 32/12)
 
@@ -215,7 +217,7 @@ VIII - apresentar ao Plenário, até o dia 20 de cada mês, o balancete relativo
 
 IX - solicitar a intervenção no Município, nos casos previstos na Constituição do Estado;
 
-X - manter a ordem no recinto da Câmara, podendo solicitar a força necessária para esse fim. Parágrafo 1° A nomeação, colocação em disponibilidade, exoneração, demissão e readmissão de funcionários da Câmara bem como a autorização para a realização de concurso público serão objeto de Resolução, cujo projeto é de iniciativa exclusiva do Presidente da Câmara, mediante a indicação de pelo menos um terço dos membros da Câmara. (emenda n° 28/08) (Revogado Emenda n° 32/12) Parágrafo 2°—A Resolução de que trata o parágrafo 1° será individualizada por cargo ou servidor, exceto na autorização para a realização de concurso público. (emenda n° 28/08) (Revogado Emenda n° 32/12)
+X - manter a ordem no recinto da Câmara, podendo solicitar a força necessária para esse fim. ⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 6, grupo 2⟧Parágrafo 1° A nomeação, colocação em disponibilidade, exoneração, demissão e readmissão de funcionários da Câmara bem como a autorização para a realização de concurso público serão objeto de Resolução, cujo projeto é de iniciativa exclusiva do Presidente da Câmara, mediante a indicação de pelo menos um terço dos membros da Câmara. (emenda n° 28/08)⟦FIM DO TRECHO TACHADO NA FONTE⟧ (Revogado Emenda n° 32/12) ⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 6, grupo 3⟧Parágrafo 2°—A Resolução de que trata o parágrafo 1° será individualizada por cargo ou servidor, exceto na autorização para a realização de concurso público. (emenda n° 28/08)⟦FIM DO TRECHO TACHADO NA FONTE⟧ (Revogado Emenda n° 32/12)
 
 ##### SEÇÃO III DOS VEREADORES
 
@@ -269,17 +271,17 @@ II - licenciado pela Câmara por motivo de doença ou para tratar, sem remunera�
 
 7 Lei Orgânica do Município de Leme
 
-§ único - A remuneração do Vereador não poderá ser fixada em valor inferior a 10% (dez por cento), nem superior a 50% (cinquenta por cento) do valor da remuneração devida, em espécie, ao Prefeito. (Emenda n° 30/12) § único—A remuneração do Vereador não poderá ser fixada em valor inferior a 5% (cinco por cento) nem superior a 30% (trinta por cento) do valor da remuneração devida, em espécie, ao Prefeito. (Emenda n° 4/92)
+§ único - A remuneração do Vereador não poderá ser fixada em valor inferior a 10% (dez por cento), nem superior a 50% (cinquenta por cento) do valor da remuneração devida, em espécie, ao Prefeito. (Emenda n° 30/12) ⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 8, grupo 1⟧§ único—A remuneração do Vereador não poderá ser fixada em valor inferior a 5% (cinco por cento) nem superior a 30% (trinta por cento) do valor da remuneração devida, em espécie, ao Prefeito. (Emenda n° 4/92)⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 ##### SEÇÃO IV DA COMPETÊNCIA DA CÂMARA
 
-**Artigo 22** - Cabe à Câmara de Vereadores, com a sanção do Prefeito, dispensada esta nos casos do artigo 23, dispor sobre todas as matérias de competência do Município, e especialmente sobre: Artigo 22 - Cabe à Câmara de Vereadores, com a sanção do Prefeito, dispensada está nos casos do artigo 23, dispor e apreciar sobre todas as matérias de competência do Município, e especialmente sobre: (Emenda n° 35/16)
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 8, grupo 2⟧Artigo 22** - Cabe à Câmara de Vereadores, com a sanção do Prefeito, dispensada esta nos casos do artigo 23, dispor sobre todas as matérias de competência do Município, e especialmente sobre:⟦FIM DO TRECHO TACHADO NA FONTE⟧ Artigo 22 - Cabe à Câmara de Vereadores, com a sanção do Prefeito, dispensada está nos casos do artigo 23, dispor e apreciar sobre todas as matérias de competência do Município, e especialmente sobre: (Emenda n° 35/16)
 
 I - assuntos de interesse local, inclusive suplementando as legislações federal e estadual;
 
 II - tributos municipais e contribuição social, bem como autorizar isenções e anistias fiscais e a remissão de dívidas;
 
-III - plano plurianual, diretrizes orçamentárias, orçamento anual, operações de crédito, dívida pública e empréstimos externos, a qualquer título, pelo Poder Executivo, bem como autorização para abertura de créditos suplementares e especiais; IV criação e extinção de cargos públicos e fixação de vencimentos e vantagens;
+III - plano plurianual, diretrizes orçamentárias, orçamento anual, operações de crédito, dívida pública e empréstimos externos, a qualquer título, pelo Poder Executivo, bem como autorização para abertura de créditos suplementares e especiais; ⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 8, grupo 3⟧IV criação e extinção de cargos públicos e fixação de vencimentos e vantagens;⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 IV - criação e extinção de cargos públicos e fixação de vencimentos e vantagens do Poder Executivo, Autarquias, Fundações e Empresas Públicas (Emenda n° 35/16)
 
@@ -309,7 +311,7 @@ I - eleger sua Mesa, bem como destituí-la na forma regimental;
 
 II - elaborar seu Regimento Interno;
 
-III—organizar os seus serviços administrativos;
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 9, grupo 1⟧III—organizar os seus serviços administrativos;⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 III - organizar sua estrutura e serviços administrativos por meio de Resolução, Atos da Mesa e Portaria (Emenda n° 35/16)
 
@@ -317,7 +319,7 @@ IV - dar posse ao Prefeito e ao Vice Prefeito, conhecer de suas renúncias e afa
 
 V - conceder licença ao Prefeito, ao Vice Prefeito e aos Vereadores, para afastamento do cargo;
 
-VI - autorizar o Prefeito, por necessidade de serviço, a ausentar-se do Município por mais de quinze dias; VII fixar os subsídios do Prefeito, Vice Prefeito, dos Vereadores e dos Secretários Municipais, através de lei de sua iniciativa, observados os termos da Constituição Federal e antes das eleições municipais (Emenda n° 25/04)
+VI - autorizar o Prefeito, por necessidade de serviço, a ausentar-se do Município por mais de quinze dias; ⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 9, grupo 2⟧VII fixar os subsídios do Prefeito, Vice Prefeito, dos Vereadores e dos Secretários Municipais, através de lei de sua iniciativa, observados os termos da Constituição Federal e antes das eleições municipais⟦FIM DO TRECHO TACHADO NA FONTE⟧ (Emenda n° 25/04)
 
 VII - fixar o subsídio dos Vereadores, através de Resolução, em cada legislatura para a subsequente, observando o que dispõe a Constituição Federal e antes das eleições municipais (Emenda n° 31/12) VII(a) - fixar os subsídios do Prefeito, Vice-Prefeito e dos Secretários Municipais, através de lei de sua iniciativa, observando o que dispõe a Constituição Federal (Emenda n° 31/12)
 
@@ -333,7 +335,7 @@ XII - conceder título de cidadão honorário a pessoas que, reconhecidamente, t
 
 XIII - mudar temporariamente sua sede;
 
-XIV—tomar e julgar as contas do Prefeito e da Mesa;
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 9, grupo 3⟧XIV—tomar e julgar as contas do Prefeito e da Mesa;⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 XIV - tomar e julgar as contas do Prefeito (Emenda n° 35/16)
 
@@ -393,7 +395,7 @@ III - de 5% (cinco por cento), no mínimo, do eleitorado do município, observad
 
 **Artigo 28** - As Leis Complementares serão discutidas e votadas em dois turnos, com interstício mínimo de quatro dias, considerando-se aprovada se obtiver, em ambos os turnos, o voto favorável da maioria absoluta dos membros da Câmara, observados os demais termos de votação das Leis Ordinárias. (Emendas n°s 23/04 - 33/14)
 
-**§ 1°** - Para os fins deste artigo, consideram-se complementares as leis concernentes a: 1 - o Plano Diretor do Município; 2 - o Código Tributário; 3 - o Código de Obras ou de Edificações; 4 - o Estatuto dos Funcionários Públicos; 5 - o Estatuto do Magistério; 6 - a organização da Procuradoria Geral do Município; 7 - o parcelamento do solo; 8 - o uso e ocupação do solo; 9—a estrutura administrativa do Legislativo e do Executivo; 9 - a estrutura administrativa do Poder Executivo, Autarquias, Fundações e Empresas Públicas (Emenda n° 35/16) 10 - a criação, transformação e extinção de cargos e aumento de vencimentos; 11 - a concessão de serviço público e de direito real de uso;
+**§ 1°** - Para os fins deste artigo, consideram-se complementares as leis concernentes a: 1 - o Plano Diretor do Município; 2 - o Código Tributário; 3 - o Código de Obras ou de Edificações; 4 - o Estatuto dos Funcionários Públicos; 5 - o Estatuto do Magistério; 6 - a organização da Procuradoria Geral do Município; 7 - o parcelamento do solo; 8 - o uso e ocupação do solo; ⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 11, grupo 1⟧9—a estrutura administrativa do Legislativo e do Executivo;⟦FIM DO TRECHO TACHADO NA FONTE⟧ 9 - a estrutura administrativa do Poder Executivo, Autarquias, Fundações e Empresas Públicas (Emenda n° 35/16) 10 - a criação, transformação e extinção de cargos e aumento de vencimentos; 11 - a concessão de serviço público e de direito real de uso;
 
 11 Lei Orgânica do Município de Leme
 
@@ -411,7 +413,7 @@ III - de 5% (cinco por cento), no mínimo, do eleitorado do município, observad
 
 **§ 4°** - O projeto de criação de cargos tanto de iniciativa do Executivo como de iniciativa da Câmara Municipal, além da justificativa prevista no parágrafo anterior, deverá descrever e conter minuciosamente as atribuições inerentes ao cargo. (Emenda n° 14/00) Artigo 31 - Não será admitido aumento da despesa prevista:
 
-I - nos projetos sobre organização dos serviços administrativos da Câmara de Vereadores.
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 12, grupo 1⟧I - nos projetos sobre organização dos serviços administrativos da Câmara de Vereadores.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 I - nos projetos de iniciativa exclusiva do Prefeito, ressalvado o disposto no artigo 97, §§ 3° e 4°; (Emenda n° 35/16) Artigo 32 - A iniciativa popular pode ser exercida pela apresentação de projeto de lei subscrito por, no mínimo, 5% (cinco por cento) do eleitorado do município, vedada sobre matéria de iniciativa privativa do Prefeito e da Câmara.
 
@@ -475,13 +477,13 @@ III - apoiar o controle externo no exercício de sua missão institucional.
 
 **§ 1°** - O Vice Prefeito, além de outras atribuições que lhe forem conferidas por lei, auxiliará o Prefeito, sempre que por ele convocado para missões especiais.
 
-**§ 2°** - O Vice Prefeito terá assegurado, para toda a legislatura, um gabinete, ao qual será destinada dotação orçamentária própria. §-3°—Não perderá o mandato o Vice Prefeito, quando investido nos cargos previstos pelo inciso I do artigo 20.
+**§ 2°** - O Vice Prefeito terá assegurado, para toda a legislatura, um gabinete, ao qual será destinada dotação orçamentária própria. ⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 15, grupo 1⟧§-3°—Não perderá o mandato o Vice Prefeito, quando investido nos cargos previstos pelo inciso I do artigo 20.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **§ 3°** - Não perderá o mandato o Vice Prefeito quando investido nos cargos de Ministro de Estado, Secretário do Estado de São Paulo, Secretário da Prefeitura do Município de Leme e Presidente das Autarquias Municipais de Leme. (Emenda n° 36/17) Artigo 45 - Em caso de impedimento do Prefeito e do Vice Prefeito, ou vacância dos respectivos cargos, será chamado ao exercício do cargo o Presidente da Câmara de Vereadores. § único - Enquanto o substituto legal não assumir, responderão pelo expediente da Prefeitura, sucessivamente, o Secretário do Governo Municipal e o Secretário de Administração. Artigo 46 - Vagando os cargos de Prefeito e Vice Prefeito, far-se-á eleição noventa dias depois de aberta a última vaga, devendo os eleitos completar o período de seus antecessores. § único - Ocorrendo a vacância na segunda metade do período governamental, o período restante será completado pelo Presidente da Câmara de Vereadores. Artigo 47 - Os substitutos legais do Prefeito não poderão recusar-se a substituí-lo, sob pena de extinção dos respectivos mandatos de Vice Prefeito e de Presidente da Câmara de Vereadores.
 
 15 Lei Orgânica do Município de Leme
 
-§ único - A extinção de mandato prevista por este artigo será declarada pela Mesa da Câmara de Vereadores, de ofício ou mediante provocação de qualquer dos membros da Câmara ou de partido político nela representado. Artigo 48—Aplicam se ao Prefeito e ao Vice Prefeito as proibições previstas pelo artigo 18. Artigo 48 - O Prefeito e o Vice Prefeito deverão desincompatibilizar-se desde a posse, não podendo, sob pena de perda do cargo:
+§ único - A extinção de mandato prevista por este artigo será declarada pela Mesa da Câmara de Vereadores, de ofício ou mediante provocação de qualquer dos membros da Câmara ou de partido político nela representado. ⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 16, grupo 1⟧Artigo 48—Aplicam se ao Prefeito e ao Vice Prefeito as proibições previstas pelo artigo 18.⟦FIM DO TRECHO TACHADO NA FONTE⟧ Artigo 48 - O Prefeito e o Vice Prefeito deverão desincompatibilizar-se desde a posse, não podendo, sob pena de perda do cargo:
 
 I - firmar ou manter contrato com pessoa jurídica de direito público, autarquia, empresa pública, sociedades de economia mista ou concessionária de serviço público, salvo quando o contrato obedecer a cláusulas uniformes;
 
@@ -693,7 +695,7 @@ VI - o subsídio e os vencimentos dos ocupantes de cargos e empregos públicos s
 
 23 Lei Orgânica do Município de Leme
 
-**Artigo 84** - A lei estabelecerá os casos de contratação por tempo determinado, para atender a necessidade temporária de excepcional interesse público. Artigo 85—As remunerações dos cargos do Poder Legislativo não poderão ser superiores àquelas pagas pelo Poder Executivo. (Emenda n° 21/02) (Emenda n° 35/16) Artigo 86 É vedada a vinculação ou equiparação de remuneração, ressalvados os casos de que trata o parágrafo único do artigo. (Emenda n° 21/02) Artigo 86 - É vedada a vinculação ou equiparação de remuneração entre os Poderes, ressalvados os casos de equiparação de funções. (Emenda n° 35/16) Artigo 87 - Os acréscimos pecuniários percebidos por servidor público não serão computados nem acumulados para fins de concessão de acréscimos ulteriores, sob o mesmo título ou idêntico fundamento. Artigo 88—Os cargos, empregos e funções públicos serão criados por lei, que fixará sua denominação, padrão de remuneração e os recursos pelos quais seus ocupantes serão pagos. (Emenda n° 21/02) Artigo 88 - Os cargos, empregos e funções públicos do Poder Executivo serão criados por Lei e do Poder Legislativo serão criados por meio de Resolução, que fixarão sua denominação, padrão de remuneração e os recursos pelos quais seus ocupantes serão pagos. (Emenda n° 35/16) Artigo 89 - É vedada a acumulação remunerada de cargos públicos, exceto, quando houver compatibilidade de horários:
+**Artigo 84** - A lei estabelecerá os casos de contratação por tempo determinado, para atender a necessidade temporária de excepcional interesse público. ⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 24, grupo 1⟧Artigo 85—As remunerações dos cargos do Poder Legislativo não poderão ser superiores àquelas pagas pelo Poder Executivo.⟦FIM DO TRECHO TACHADO NA FONTE⟧ (Emenda n° 21/02) (Emenda n° 35/16) ⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 24, grupo 2⟧Artigo 86 É vedada a vinculação ou equiparação de remuneração, ressalvados os casos de que trata o parágrafo único do artigo. (⟦FIM DO TRECHO TACHADO NA FONTE⟧Emenda n° 21/02) Artigo 86 - É vedada a vinculação ou equiparação de remuneração entre os Poderes, ressalvados os casos de equiparação de funções. (Emenda n° 35/16) Artigo 87 - Os acréscimos pecuniários percebidos por servidor público não serão computados nem acumulados para fins de concessão de acréscimos ulteriores, sob o mesmo título ou idêntico fundamento. ⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 24, grupo 3⟧Artigo 88—Os cargos, empregos e funções públicos serão criados por lei, que fixará sua denominação, padrão de remuneração e os recursos pelos quais seus ocupantes serão pagos. (⟦FIM DO TRECHO TACHADO NA FONTE⟧Emenda n° 21/02) Artigo 88 - Os cargos, empregos e funções públicos do Poder Executivo serão criados por Lei e do Poder Legislativo serão criados por meio de Resolução, que fixarão sua denominação, padrão de remuneração e os recursos pelos quais seus ocupantes serão pagos. (Emenda n° 35/16) Artigo 89 - É vedada a acumulação remunerada de cargos públicos, exceto, quando houver compatibilidade de horários:
 
 I - a de dois cargos de professor;
 
@@ -703,7 +705,7 @@ III - a de dois cargos ou empregos privativos de profissionais da saúde, com pr
 
 **§ 1°** - A proibição de acumular estende-se a empregos e funções e abrange autarquias, empresas públicas, sociedades de economia mista e fundações mantidas pelo Poder Público.
 
-**§ 2°** - O servidor ou empregado público municipal aposentado somente poderá ingressar no serviço público municipal para ocupar cargo de provimento em comissão. (Emenda n° 21/02) Artigo 90 - Os proventos da aposentadoria serão revistos na mesma proporção e na mesma data, sempre que se modificar a remuneração dos servidores em atividade, sendo também estendidos aos inativos quaisquer benefícios ou vantagens posteriormente concedidos aos servidores em atividade, inclusive quando decorrentes da transformação ou reclassificação do cargo ou função em que se deu a aposentadoria. Artigo 90 -A- – Os Servidores Públicos Municipais farão jus a aposentadoria ao completarem 58 (cinquenta e oito) anos, se mulher, e aos 60 (sessenta) anos de idade, se homem, observados o tempo de contribuição e demais requisitos estabelecidos em lei complementar municipal. (Emenda 40/20)
+**§ 2°** - O servidor ou empregado público municipal aposentado somente poderá ingressar no serviço público municipal para ocupar cargo de provimento em comissão. (Emenda n° 21/02) ⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 24, grupo 4⟧Artigo 90 - Os proventos da aposentadoria serão revistos na mesma proporção e na mesma data, sempre que se modificar a remuneração dos servidores em atividade, sendo também estendidos aos inativos quaisquer benefícios ou vantagens posteriormente concedidos aos servidores em atividade, inclusive quando decorrentes da transformação ou reclassificação do cargo ou função em que se deu a aposentadoria.⟦FIM DO TRECHO TACHADO NA FONTE⟧ Artigo 90 -A- – Os Servidores Públicos Municipais farão jus a aposentadoria ao completarem 58 (cinquenta e oito) anos, se mulher, e aos 60 (sessenta) anos de idade, se homem, observados o tempo de contribuição e demais requisitos estabelecidos em lei complementar municipal. (Emenda 40/20)
 
 §1º: A aposentadoria especial do professor deverá prever redutor de 5 (cinco) anos para o requisito de idade desde que comprovem 25 (vinte e cinco) anos de efetivo exercício nas funções de magistério na educação infantil e no ensino fundamental e médio, bem
 
@@ -795,13 +797,13 @@ III - o orçamento da seguridade social, abrangendo todas as entidades e órgão
 
 **§ 2°** - A lei orçamentária anual não conterá dispositivo estranho à previsão da receita e à fixação da despesa, não se incluindo na proibição a autorização para abertura de créditos suplementares e contratação de operações de crédito, ainda que por antecipação da receita, nos termos da lei.
 
-**§ 3°** - O Prefeito enviará à Câmara Municipal:
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 27, grupo 1⟧§ 3°** - O Prefeito enviará à Câmara Municipal:⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
-I - até 30 de agosto do primeiro ano do mandato do Prefeito eleito o projeto de lei dispondo sobre o plano plurianual;
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 27, grupo 2⟧I - até 30 de agosto do primeiro ano do mandato do Prefeito eleito o projeto de lei dispondo sobre o plano plurianual;⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
-II - até 30 de maio, anualmente, o projeto de lei de diretrizes orçamentárias; e
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 27, grupo 3⟧II - até 30 de maio, anualmente, o projeto de lei de diretrizes orçamentárias; e⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
-III - até 30 de setembro, de cada ano, o projeto de lei da proposta orçamentária para o exercício subsequente. (Emenda n° 37/17) §-3°- Cabe à lei complementar, com observância da legislação federal: 1 - dispor sobre o exercício financeiro, a vigência, os prazos, a elaboração e a organização do plano plurianual, da lei de diretrizes orçamentárias e da lei orçamentária anual. (Emenda 39/19) 2 - estabelecer normas de gestão financeira e patrimonial da administração direta e indireta, bem como condições para a instituição e funcionamento de fundos. (Emenda 39/19) Artigo 97 - Os projetos de lei relativos ao plano plurianual, às diretrizes orçamentárias, ao orçamento anual e aos créditos adicionais, serão apreciados pela Câmara de Vereadores, na forma do Regimento Interno.
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 27, grupo 4⟧III - até 30 de setembro, de cada ano, o projeto de lei da proposta orçamentária para o exercício subsequente. (⟦FIM DO TRECHO TACHADO NA FONTE⟧Emenda n° 37/17) §-3°- Cabe à lei complementar, com observância da legislação federal: 1 - dispor sobre o exercício financeiro, a vigência, os prazos, a elaboração e a organização do plano plurianual, da lei de diretrizes orçamentárias e da lei orçamentária anual. (Emenda 39/19) 2 - estabelecer normas de gestão financeira e patrimonial da administração direta e indireta, bem como condições para a instituição e funcionamento de fundos. (Emenda 39/19) Artigo 97 - Os projetos de lei relativos ao plano plurianual, às diretrizes orçamentárias, ao orçamento anual e aos créditos adicionais, serão apreciados pela Câmara de Vereadores, na forma do Regimento Interno.
 
 27 Lei Orgânica do Município de Leme
 
@@ -1015,11 +1017,11 @@ ATO DAS DISPOSIÇÕES TRANSITÓRIAS
 
 35 Lei Orgânica do Município de Leme
 
-I - o projeto de lei de diretrizes orçamentárias do Município será enviado pelo Prefeito, à Câmara, até o dia 30 de abril de cada ano e devolvido para sanção até o dia 31 de julho;
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 36, grupo 1⟧I - o projeto de lei de diretrizes orçamentárias do Município será enviado pelo Prefeito, à Câmara, até o dia 30 de abril de cada ano e devolvido para sanção até o dia 31 de julho;⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 I - o projeto de lei de diretrizes orçamentárias do Município será enviado pelo Prefeito, à Câmara, até o dia 15 de abril de cada ano e devolvido para sanção até o dia 31 de julho; (Emenda 39/19)
 
-II - o projeto de lei orçamentária anual será enviado à Câmara, pelo Prefeito, até o dia 30 de setembro de cada ano e devolvido para sanção até o dia 15 de dezembro.
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 36, grupo 2⟧II - o projeto de lei orçamentária anual será enviado à Câmara, pelo Prefeito, até o dia 30 de setembro de cada ano e devolvido para sanção até o dia 15 de dezembro.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 II - o projeto de lei orçamentária anual será enviado à Câmara, pelo Prefeito, até o dia 30 de agosto de cada ano e devolvido para sanção até o dia 15 de dezembro. (Emenda 39/19) § único - Enquanto não forem disciplinadas, por lei, o plano plurianual e as diretrizes orçamentárias, não se aplica à lei do orçamento o disposto no artigo 97, § 3°, 1. Artigo 3° - Dentro de noventa dias da data da promulgação desta Lei Orgânica, o Município promoverá a adaptação dos logradouros e dos edifícios municipais de uso público, a fim de garantir acesso adequado às pessoas portadoras de deficiência, conforme o disposto no artigo 227, § 2°, da Constituição Federal. Artigo 4° - A partir de 1° de janeiro de 1.992, o lixo domiciliar coletado só poderá ser depositado em aterros sanitários que obedeçam às normas dos órgãos estaduais competentes. Artigo 5° - É vedado, a partir de 1° de janeiro de 1.995, o lançamento, em qualquer curso d'água, de efluentes e de esgotos industriais ou domésticos, sem o devido tratamento. Artigo 6° - É mantido, na atual legislatura, o número de dezessete vereadores. Artigo 7° - Ficam assegurados aos servidores e empregados públicos em exercício na data de promulgação desta Emenda, todos os direitos de que tratam os números 1, 2 e 3 do parágrafo 2° do artigo 80, com a redação anterior a esta Emenda. (Emenda n° 21/02)
 

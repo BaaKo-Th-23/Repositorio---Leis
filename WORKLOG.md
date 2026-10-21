@@ -1486,3 +1486,10 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Todos os SHA anteriores foram comparados ao HEAD antes de substituir; captura oficial e corpo anterior preservados no historico comprimido. Candidatos de evidencia fora das pastas contadas.
 - Outras 166 candidatas permanecem em revisao, sem declarar ausencia automaticamente; tres previamente reparadas nao foram sobrescritas.
 - Auditoria do index sem erros ou avisos; 23.281 hardbreaks exatos, incluindo 8.200 linhas vazias com dois espacos, provados por SHA e linha. Demais verificacoes de whitespace passaram.
+
+### Municipal: 119 novas normas e dez reparos de tachados
+
+- Consolidado municipal129-v2: 109 adicionais, nove DOCX simples e Lei Organica de Joao Pessoa; dez reparos publicados (nove LOs e tributaria de SP), sem sobreposicao de caminhos. Fontes seletivas e 887 artefatos por SHA; controles do proprio consolidado incluidos.
+- Os 87 grupos tachados das LOs e dois trechos de SP foram conferidos visualmente. Todo texto/notas preservado e corpo anterior reversivel exatamente. Notas condicionais de efeitos tributarios nao foram convertidas em afirmacao de vigencia.
+- Overlay58-v2 corrige classificacao indevida de Arapongas4839; somente4841/4842 divergem de tipo/data. Dois casos de cor sem contexto tambem ficam pendentes. Quatro documentos publicados conferidos pelo HEAD foram acrescentados ao registro, total2.135, sem apagar corpos.
+- Codigo revisado e 53 testes passaram. Auditoria generica129 sem erros/avisos e auditoria municipal completa sem problemas. 127 ocorrencias de EOF contem apenas linhas vazias, provadas no index; demais verificacoes de whitespace passaram.

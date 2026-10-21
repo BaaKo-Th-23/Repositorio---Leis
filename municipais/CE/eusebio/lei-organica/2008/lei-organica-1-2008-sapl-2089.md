@@ -7,15 +7,17 @@ data: "2008-06-16"
 municipio: "Eusébio"
 uf: "CE"
 codigo_ibge: "2304285"
-versao_texto: "texto integral anexado no SAPL municipal; "
+versao_texto: "texto integral anexado no SAPL municipal; ; trechos tachados identificados conforme a fonte, com texto e notas preservados"
 fonte: "https://sapl.eusebio.ce.leg.br/norma/2089"
 fonte_texto: "https://sapl.eusebio.ce.leg.br/media/sapl/public/normajuridica/2008/2089/lorg.pdf"
 sha256_fonte: "b87a019ccbd179db2796723c1944fead97c986a11f1f9afd8f02ae5aac5a19aa"
-sha256_texto: "c302cce2a8e7aa262612245735c2c9ca98212eabb93516e919eaedfa05e8464e"
+sha256_texto: "7aea7366795a088b09175dd1cad5a29bbceb7e5b43014d47c838e3f0266b95da"
 baixado_em: "2026-10-16"
 ---
 
 # Lei Orgânica nº 1, de 16 de junho de 2008
+
+Nota de transcrição: esta edição oficial reúne trechos tachados e não tachados. Os trechos tachados foram preservados entre rótulos explícitos, com indicação da página da fonte; as notas de alteração, revogação e efeitos permanecem literais. A marcação reproduz a apresentação da fonte e não certifica vigência jurídica integral ou atualização posterior.
 
 LEI ORGÂNICA DO MUNICÍPIO DE EUSÉBIO
 
@@ -233,11 +235,11 @@ Disposições Gerais
 
 **Art. 9º** O Poder Legislativo é exercido pela Câmara Municipal composta de Vereadores, representantes do povo, eleitos no Município em pleito direto, pelo sistema proporcional, para um mandato de quatro anos.
 
-**Art. 10.** A Câmara Municipal é o Poder Legislativo Municipal, composta por 11 (onze) Vereadores, eleitos pelo sistema proporcional com mandato de 4 (quatro) anos.
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 9, grupo 1⟧Art. 10.** A Câmara Municipal é o Poder Legislativo Municipal, composta por 11 (onze) Vereadores, eleitos pelo sistema proporcional com mandato de 4 (quatro) anos.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
-**Art. 10.** A Câmara Municipal é o Poder Legislativo Municipal, composta por 13 (treze) Vereadores, eleitos pelo sistema proporcional com mandato de 4 (quatro) anos. (Texto alterado pela
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 9, grupo 2⟧Art. 10.** A Câmara Municipal é o Poder Legislativo Municipal, composta por 13 (treze) Vereadores, eleitos pelo sistema proporcional com mandato de 4 (quatro) anos. (Texto alterado pela
 
-Emenda à LOM n. 002/2011)
+Emenda à LOM n. 002/2011)⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **Art. 10.** A Câmara Municipal é o Poder Legislativo Municipal, composta por 15 (quinze) Vereadores, eleitos pelo sistema proporcional com mandato de 4 (quatro) anos. (Texto alterado pela Emenda à LOM n. 005/2015)
 
@@ -389,11 +391,11 @@ II – licenciado pela Câmara, por motivo de doença, ou para tratar, sem remun
 
 Da Mesa da Câmara
 
-**Art. 25.** As reuniões e a administração da Casa serão dirigidas por uma Mesa eleita, em votação aberta, em cédula única, pela maioria absoluta dos Vereadores, para mandato de dois anos, permitida a recondução de qualquer de seus membros para o mesmo cargo na eleição imediatamente subsequente. (Emenda n. 001/06)
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 14, grupo 1⟧Art. 25.** As reuniões e a administração da Casa serão dirigidas por uma Mesa eleita, em votação aberta, em cédula única, pela maioria absoluta dos Vereadores, para mandato de dois anos, permitida a recondução de qualquer de seus membros para o mesmo cargo na eleição imediatamente subsequente. (Emenda n. 001/06)⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **Art. 25.** As reuniões e a administração da Casa serão dirigidas por uma Mesa eleita, em votação aberta, em cédula única, pela maioria absoluta dos Vereadores, para mandato de 1 (um) ano. (Redação dada pela Emenda à LOM n. 004/2012)
 
-**§ 1º** A Mesa da Câmara será constituída do Presidente, do Vice- Presidente e de dois Secretários.
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 15, grupo 1⟧§ 1º** A Mesa da Câmara será constituída do Presidente, do Vice- Presidente e de dois Secretários.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **§ 1º** A Mesa da Câmara será constituída do Presidente, dois Vice-Presidentes e de três Secretários. (Redação dada pela Emenda à LOM n. 003/2012)
 
@@ -1335,7 +1337,7 @@ decreto ou por qualquer ato administrativo.
 
 **Art. 111-J.** O Município incentivará a reciclagem e o aperfeiçoamento dos servidores públicos, permitindo o afastamento remunerado para freqüência em cursos, na forma da lei.
 
-**Art. 111-L.** Os servidores do Município que exerçam atividades em unidades de emergência da rede hospitalar, em regime de plantão, farão jus à gratificação de 75% (setenta e cinco por cento) sobre seus salários. Parágrafo único. Entende-se por servidor em atividade de plantão aquele com jornada de doze horas ininterruptas de trabalho e em regime de revezamento. (Revogado pela
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 50, grupo 1⟧Art. 111-L.** Os servidores do Município que exerçam atividades em unidades de emergência da rede hospitalar, em regime de plantão, farão jus à gratificação de 75% (setenta e cinco por cento) sobre seus salários. Parágrafo único. Entende-se por servidor em atividade de plantão aquele com jornada de doze horas ininterruptas de trabalho e em regime de revezamento.⟦FIM DO TRECHO TACHADO NA FONTE⟧ (Revogado pela
 
 Emenda à LOM n. 001/2009)
 
@@ -1449,7 +1451,7 @@ XIV - garantia de salário nunca inferior ao salário mínimo para o que percebe
 
 XV - a gratificação de produtividade, que será fixada por lei;
 
-XVI - aos servidores municipais da administração direta, indireta e fundacional, que exerçam cargo ou função de nível superior, fica assegurada a gratificação correspondente a vinte por cento sobre o seu salário ou vencimento básico; (Revogado pela Emenda à LOM n. 001/2009)
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 55, grupo 1⟧XVI - aos servidores municipais da administração direta, indireta e fundacional, que exerçam cargo ou função de nível superior, fica assegurada a gratificação correspondente a vinte por cento sobre o seu salário ou vencimento básico;⟦FIM DO TRECHO TACHADO NA FONTE⟧ (Revogado pela Emenda à LOM n. 001/2009)
 
 XVII – a garantia dos direitos adquiridos, anteriores à promulgação desta Lei Orgânica.
 
@@ -2549,7 +2551,7 @@ V – pela Iniciativa Popular.
 
 **Art. 257.** A intervenção no Município, seja qual for a razão invocada, será sempre e obrigatoriamente precedida de decisão do Tribunal de Justiça do Estado do Ceará quando provocado por quem seja parte legítima intentar o procedimento judicial.
 
-**Art. 258.** Além dos feriados nacionais e estaduais, serão igualmente festejados e comemorados como Feriados Municipais, o dia 23 de junho como o Dia do Município e o dia 25 de julho como o Dia da Padroeira, em todos proibidas as atividades públicas e privadas do comércio, da indústria, dos serviços e escolares.
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 86, grupo 1⟧Art. 258.** Além dos feriados nacionais e estaduais, serão igualmente festejados e comemorados como Feriados Municipais, o dia 23 de junho como o Dia do Município e o dia 25 de julho como o Dia da Padroeira, em todos proibidas as atividades públicas e privadas do comércio, da indústria, dos serviços e escolares.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **Art. 258.** Além dos feriados nacionais e estaduais, serão igualmente festejados e comemorados como Feriados Municipais, o dia 23 de junho como o Dia do Município e o dia 26 de julho como o Dia da Padroeira, em todos proibidas as atividades públicas e privadas do comércio, da indústria, dos serviços e escolares. (Redação dada pela Emenda à LOM n. 003/2012)
 

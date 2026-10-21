@@ -7,15 +7,17 @@ data: "1990-03-21"
 municipio: "Rio Pomba"
 uf: "MG"
 codigo_ibge: "3155801"
-versao_texto: "texto integral anexado no SAPL municipal; "
+versao_texto: "texto integral anexado no SAPL municipal; ; trechos tachados identificados conforme a fonte, com texto e notas preservados"
 fonte: "https://sapl.riopomba.mg.leg.br/norma/1"
 fonte_texto: "https://sapl.riopomba.mg.leg.br/media/sapl/public/normajuridica/1990/1/lei_organica_ate_emenda_no_13.pdf"
 sha256_fonte: "426916b4bb8132ce16f7cd96aab989412074a73bd54bb033a58ce8235b747341"
-sha256_texto: "8c78385e5c49f9d5af878eb02110d7f80fb50f4b1802b54c53749855e2ce3432"
+sha256_texto: "daf9a296e443642f15f74e9e9aa75583942da691b24fe782b20ca2989adf3965"
 baixado_em: "2026-10-16"
 ---
 
 # Lei Orgânica Municipal nº 1, de 21 de março de 1990
+
+Nota de transcrição: esta edição oficial reúne trechos tachados e não tachados. Os trechos tachados foram preservados entre rótulos explícitos, com indicação da página da fonte; as notas de alteração, revogação e efeitos permanecem literais. A marcação reproduz a apresentação da fonte e não certifica vigência jurídica integral ou atualização posterior.
 
 LEI ORGÂNICA DO MUNICÍPIO
 
@@ -317,11 +319,11 @@ DA ORGANIZAÇÃO DOS PODERES
 
 **Art. 15** O Poder Legislativo é exercido pela Câmara Municipal composta de Vereadores, representantes do povo, eleitos no Município em pleito direto, pelo sistema proporcional, para um mandato de quatro anos.
 
-**Art. 16** O número de Vereadores será proporcional à população do Município, conforme fixação da Justiça Eleitoral, observados os limites constitucionais.
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 7, grupo 1⟧Art. 16** O número de Vereadores será proporcional à população do Município, conforme fixação da Justiça Eleitoral, observados os limites constitucionais.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **Art. 16** O número de Vereadores será fixado pela Câmara Municipal, observados os limites estabelecidos nas alíneas do inciso IV do art. 29 da Constituição Federal e as seguintes normas: (Redação dada pela Emenda à Lei Orgânica nº 08, de 15.12.2009).
 
-I - para os primeiros 20 (vinte) mil habitantes, o número de Vereadores será 11 (onze), acrescentando-se 2 (duas) vagas para cada 10 (dez) mil habitantes seguintes ou fração; (Inciso inserido pela Emenda à Lei Orgânica nº 01, de 15.05.1992).
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 7, grupo 2⟧I - para os primeiros 20 (vinte) mil habitantes, o número de Vereadores será 11 (onze), acrescentando-se 2 (duas) vagas para cada 10 (dez) mil habitantes seguintes ou fração; (Inciso inserido pela Emenda à Lei Orgânica nº 01, de 15.05.1992).⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 I - REVOGADO (Inciso revogado pela Emenda à Lei Orgânica nº 08, de 15.12.2009).
 
@@ -399,9 +401,9 @@ XIII - julgar o Prefeito, Vice-Prefeito e Vereadores, nos casos previstos em lei
 
 XIV - conceder título de cidadão honorário e conferir homenagem a pessoas que, reconhecidamente, tenham prestado relevantes serviços ao Município ou nele se destacado pela atuação exemplar na vida pública e particular, mediante proposta aprovada pelo voto de 2/3 (dois terços) dos membros da Câmara;
 
-XV – fixar, observando, o que dispõem os artigos 37 inciso XI; 150 inciso II; 153 inciso III e 153, § 2º inciso I, da Constituição Federal, a remuneração do Prefeito, Vice-Prefeito e dos Vereadores, em cada legislatura, para a subsequente;
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 9, grupo 1⟧XV – fixar, observando, o que dispõem os artigos 37 inciso XI; 150 inciso II; 153 inciso III e 153, § 2º inciso I, da Constituição Federal, a remuneração do Prefeito, Vice-Prefeito e dos Vereadores, em cada legislatura, para a subsequente;
 
-XV – fixar, observando, o que dispõem os artigos 37 inciso XI; 39, § 4º; 150 inciso II; 153 inciso III e 153, § 2º, inciso I, da Constituição Federal, o subsídio do Prefeito, Vice-Prefeito, dos Secretários Municipais e dos Vereadores, em cada legislatura para a subsequente, antes das eleições municipais; (Redação dada pela Emenda à Lei Orgânica nº 05, de 15.10.2009).
+XV – fixar, observando, o que dispõem os artigos 37 inciso XI; 39, § 4º; 150 inciso II; 153 inciso III e 153, § 2º, inciso I, da Constituição Federal, o subsídio do Prefeito, Vice-Prefeito, dos Secretários Municipais e dos Vereadores, em cada legislatura para a subsequente, antes das eleições municipais; (Redação dada pela Emenda à Lei Orgânica nº 05, de 15.10.2009).⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 XV – fixar os subsídios do Prefeito, do Vice-Prefeito e dos Secretários Municipais, por
 
@@ -421,7 +423,7 @@ XIX - deliberar sobre assuntos de sua economia interna e competência privativa.
 
 **Art. 23** Os Vereadores são invioláveis por suas opiniões, palavras e votos no exercício do mandato e na circunscrição do Município.
 
-**Parágrafo único** - Os Vereadores não serão obrigados a testemunhar sobre informações recebidas ou prestadas em razão do exercício do mandato, nem sobre as provas que lhes confiarem ou delas receberem informações.
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 10, grupo 1⟧Parágrafo único** - Os Vereadores não serão obrigados a testemunhar sobre informações recebidas ou prestadas em razão do exercício do mandato, nem sobre as provas que lhes confiarem ou delas receberem informações.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **Parágrafo único** - Os Vereadores não serão obrigados a testemunhar sobre informações recebidas ou prestadas em razão do exercício do mandato, nem sobre as testemunhas que lhes confiarem ou delas receberem informações. (Redação dada pela Emenda à Lei Orgânica nº 05, de 15.10.2009).
 
@@ -429,7 +431,7 @@ XIX - deliberar sobre assuntos de sua economia interna e competência privativa.
 
 I - desde a expedição do diploma:
 
-a) firmar ou manter contrato com pessoa jurídica de direito público, autarquia, empresa pública, sociedade de economia mista ou empresa concessionária de serviço público, no âmbito e em operação no Município, salvo quando o contrato obedecer a cláusulas uniformes;
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 10, grupo 2⟧a) firmar ou manter contrato com pessoa jurídica de direito público, autarquia, empresa pública, sociedade de economia mista ou empresa concessionária de serviço público, no âmbito e em operação no Município, salvo quando o contrato obedecer a cláusulas uniformes;⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 a) firmar ou manter contrato com o Município, suas autarquias, empresas públicas, sociedades de economia mista, fundações ou empresas concessionárias de serviços públicos municipais, salvo quando o contrato obedecer a cláusulas uniformes; (Redação dada pela
 
@@ -493,7 +495,7 @@ Art 30 O Regimento Interno deverá disciplinar a palavra de representantes popul
 
 **Art. 32** Nas convocações extraordinárias, a Câmara somente deliberará as matérias para as quais foi convocada.
 
-**Art. 33** As reuniões e a administração da Câmara Municipal serão dirigidas por uma Mesa Diretora eleita, em votação secreta, cargo por cargo.
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 11, grupo 1⟧Art. 33** As reuniões e a administração da Câmara Municipal serão dirigidas por uma Mesa Diretora eleita, em votação secreta, cargo por cargo.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **Art. 33** As reuniões e a administração da Câmara Municipal serão dirigidas por uma Mesa Diretora eleita cargo por cargo. (Redação dada pela Emenda à Lei Orgânica nº 03, de 27.12.2004).
 
@@ -501,13 +503,13 @@ Art 30 O Regimento Interno deverá disciplinar a palavra de representantes popul
 
 situação, do mais votado entre os presentes e, havendo maioria absoluta dos membros da Câmara, elegerão os componentes da Mesa, que ficarão automaticamente empossados.
 
-**§ 1º** O mandato da Mesa serão de 02 (dois) anos, vedada a recondução para o mesmo cargo na eleição imediatamente subsequente, salvo na hipótese de uma legislatura para outra.
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 12, grupo 1⟧§ 1º** O mandato da Mesa serão de 02 (dois) anos, vedada a recondução para o mesmo cargo na eleição imediatamente subsequente, salvo na hipótese de uma legislatura para outra.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **§ 1º** O mandato da Mesa será de 02 (dois) anos, permitida uma única recondução para o mesmo cargo na eleição imediatamente subsequente, na mesma legislatura ou na seguinte. (Redação dada pela Emenda à Lei Orgânica nº 04, de 15.09.2006).
 
 **§ 2º** Na hipótese de não haver número suficiente para eleição da Mesa, o Vereador que mais recentemente tenha exercido o cargo na Mesa ou, na hipótese de inexistir tal situação, o mais votado entre os presentes permanecerá na Presidência e convocará sessões, até que seja eleita a Mesa.
 
-**§ 3º** A eleição para a renovação da Mesa realizar-se-á obrigatoriamente na última sessão ordinária da sessão legislativa, empossando-se os eleitos em 1º de janeiro.
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 12, grupo 2⟧§ 3º** A eleição para a renovação da Mesa realizar-se-á obrigatoriamente na última sessão ordinária da sessão legislativa, empossando-se os eleitos em 1º de janeiro.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **§ 3º** A eleição para renovação da Mesa realizar-se-á no segundo semestre do segundo ano de mandato da Mesa Diretora, em sessão convocada exclusivamente para este fim, empossando- se os eleitos em 1º de janeiro do ano subseqüente. (Redação dada pela Emenda à Lei Orgânica nº 04, de 15.09.2006).
 
@@ -563,7 +565,7 @@ II - da população, subscrita por cinco por cento do eleitorado do Município;
 
 III - do Prefeito Municipal.
 
-**§ 1º** A proposta será discutida e votada em dois turnos, considerando-se aprovada se obtiver, em ambos, maioria absoluta de votos.
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 13, grupo 1⟧§ 1º** A proposta será discutida e votada em dois turnos, considerando-se aprovada se obtiver, em ambos, maioria absoluta de votos.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **§ 1º** A proposta será discutida e votada em dois turnos, considerando-se aprovada se obtiver, em ambos, o voto de 2/3 (dois terços) dos membros da Câmara. (Redação dada pela
 
@@ -629,7 +631,7 @@ II - nos projetos sobre a organização dos serviços administrativos da Câmara
 
 **§ 3º** Decorrido o prazo de quinze dias, o silêncio do Prefeito importará em sanção.
 
-**§ 4º** O veto será apreciado em única discussão, em votação pública, só podendo ser rejeitado pelo voto da maioria absoluta dos Vereadores.
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 14, grupo 1⟧§ 4º** O veto será apreciado em única discussão, em votação pública, só podendo ser rejeitado pelo voto da maioria absoluta dos Vereadores.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **§ 4º** O veto será apreciado em única discussão, em votação pública, no prazo de trinta dias a contar do seu recebimento, só podendo ser rejeitado pelo voto da maioria absoluta dos Vereadores. (Redação dada pela Emenda à Lei Orgânica nº 05, de 15.10.2009).
 
@@ -939,7 +941,7 @@ VI - discutir, assessorar e deliberar sobre as diretrizes orçamentárias, o or�
 
 ##### Seção I Da Publicação
 
-**Art. 93** A publicação das leis e atos municipais deverá ser feita em órgão da imprensa local e por afixação na sede da Prefeitura ou da Câmara, conforme o caso.
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 22, grupo 1⟧Art. 93** A publicação das leis e atos municipais deverá ser feita em órgão da imprensa local e por afixação na sede da Prefeitura ou da Câmara, conforme o caso.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **Art. 93** A publicação das leis, decretos, resoluções e atos municipais será feita em órgão da imprensa local ou por afixação na sede da Prefeitura ou da Câmara, em local próprio e de acesso público. (Redação dada pela Emenda à Lei Orgânica nº 07, de 30.10.2009).
 
@@ -1249,7 +1251,7 @@ IV - não alterem o produto total do orçamento anual.
 
 destinada a ações e serviços públicos de saúde. (Redação dada pela Emenda à Lei Orgânica nº 13, de 15.06.2026).
 
-**§ 1º** As emendas individuais ao projeto de lei orçamentária serão aprovadas no limite de 1,2% (um inteiro e dois décimos por cento) da receita corrente líquida prevista no projeto encaminhado pelo Poder Executivo, sendo que a metade deste percentual será destinada a ações e serviços públicos de saúde. (Parágrafo inserido pela Emenda à Lei Orgânica nº 12, de 08.05.2023).
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 30, grupo 1⟧§ 1º** As emendas individuais ao projeto de lei orçamentária serão aprovadas no limite de 1,2% (um inteiro e dois décimos por cento) da receita corrente líquida prevista no projeto encaminhado pelo Poder Executivo, sendo que a metade deste percentual será destinada a ações e serviços públicos de saúde. (Parágrafo inserido pela Emenda à Lei Orgânica nº 12, de 08.05.2023).⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **§ 2º** A execução do montante destinado a ações e serviços públicos de saúde previsto no § 1º, inclusive custeio, será computada para fins do cumprimento do art. 198, § 2º, inciso III, da Constituição da República, vedada a destinação para pagamento de pessoal ou encargos sociais. (Parágrafo inserido pela Emenda à Lei Orgânica nº 12, de 08.05.2023).
 
@@ -1257,7 +1259,7 @@ destinada a ações e serviços públicos de saúde. (Redação dada pela Emenda
 
 art. 46, inciso VIII. (Redação dada pela Emenda à Lei Orgânica nº 13, de 15.06.2026).
 
-**§ 3º** É obrigatória a execução orçamentária e financeira das programações a que se refere o § 1º deste artigo, em montante correspondente a 1,2% (um inteiro e dois décimos por cento) da receita corrente líquida realizada no exercício anterior, conforme os critérios para a execução equitativa da programação definidos na lei complementar prevista no art. 46, inciso VIII. (Parágrafo inserido pela Emenda à Lei Orgânica nº 12, de 08.05.2023).
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 30, grupo 2⟧§ 3º** É obrigatória a execução orçamentária e financeira das programações a que se refere o § 1º deste artigo, em montante correspondente a 1,2% (um inteiro e dois décimos por cento) da receita corrente líquida realizada no exercício anterior, conforme os critérios para a execução equitativa da programação definidos na lei complementar prevista no art. 46, inciso VIII. (Parágrafo inserido pela Emenda à Lei Orgânica nº 12, de 08.05.2023).⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **§ 4º** As programações orçamentárias previstas no § 1º deste artigo não serão de execução obrigatória nos casos dos impedimentos de ordem técnica. (Parágrafo inserido pela Emenda à
 
@@ -1437,7 +1439,7 @@ IV - as paisagens notáveis.
 
 **Art. 150** É dever do Poder Público Municipal fornecer um transporte com tarifa condizente com o poder aquisitivo da população, bem como assegurar a qualidade dos serviços.
 
-**Parágrafo único** – O Executivo Municipal providenciará passes para garantir a gratuidade dos transportes coletivos urbanos para maiores de sessenta e cinco anos.
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 35, grupo 1⟧Parágrafo único** – O Executivo Municipal providenciará passes para garantir a gratuidade dos transportes coletivos urbanos para maiores de sessenta e cinco anos.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **Parágrafo único** – O Executivo Municipal providenciará passes para garantir a gratuidade dos transportes coletivos urbanos para maiores de sessenta e cinco anos e pessoas com deficiência. (Redação dada pela Emenda à Lei Orgânica nº 11, de 19.08.2019).
 
@@ -1727,7 +1729,7 @@ DAS DISPOSIÇÕES GERAIS E TRANSITÓRIAS
 
 **§ 2º** O Município terá o prazo de três anos contados da data da promulgação da Lei Orgânica Municipal, para fazer cumprir as finalidades dos imóveis adquiridos mediante doação municipal, sob pena de reversão.
 
-**Art. 3º** Serão revistas pela Câmara Municipal, por meio de Comissão Especial, até 31 de dezembro de 1992, a concessão ou permissão de uso de bens imóveis municipais realizadas de 1º de janeiro de 1983 até a presente data.
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 42, grupo 1⟧Art. 3º** Serão revistas pela Câmara Municipal, por meio de Comissão Especial, até 31 de dezembro de 1992, a concessão ou permissão de uso de bens imóveis municipais realizadas de 1º de janeiro de 1983 até a presente data.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **Art. 3º** Serão revistas pela Câmara Municipal, por meio de Comissão Especial, a concessão ou permissão de uso de bens imóveis municipais realizadas a partir de 1º de janeiro de 1983. (Redação dada pela Emenda à Lei Orgânica nº 02, de 14.09.2001).
 

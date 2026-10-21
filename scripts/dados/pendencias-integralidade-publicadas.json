@@ -37069,6 +37069,54 @@
         "sha256_fonte": "4785de4ef448018b848d2979b28f55fd404af0673f63a5384813a44bef624de3",
         "trecho": "Art. 1º - É aprovado o Regulamento que acompanha este decreto, dele fazendo parte, e pelo qual se regerão os Conservatórios Estaduais de Música, a partir do ano letivo de 1969.\n"
       }
+    },
+    {
+      "path": "municipais/MA/vitoria-do-mearim/lei-organica/1990/lei-organica-1-1990-sapl-1.md",
+      "sha256_md": "94c9456b7848a0078f9786ebe808b7640687772b7f7ca7dc45d826d91efef4c5",
+      "estado": "cor_sem_significado_juridico_esclarecido",
+      "motivo": "Disposição em vermelho sem nota suficiente para inferir seu status; manter cor/rótulo e edição ou obter esclarecimento oficial.",
+      "evidencia": {
+        "manifesto": "municipais/_lotes/20261020-overlay-58los-visual-v2/resultados.json",
+        "sha256_manifesto": "1e0f430103b1ca86b899061c5d569e5e13243dd8cd23b94e27e5ae32e7b978a1",
+        "fonte": "municipais/_fonte/organicas-sapl/sapl.vitoriadomearim.ma.leg.br/1.bin",
+        "sha256_fonte": "aa06f3f61b7fe9f556e7397b6fcfe19b1818b62e9d8eec51f7b45425a7c5573a"
+      }
+    },
+    {
+      "path": "municipais/PE/surubim/lei-organica/1990/lei-organica-1-1990-sapl-208.md",
+      "sha256_md": "38623f093c9f11fd74e2f7aa954568e7643aac5d116a950c02e3f44e748a0b21",
+      "estado": "cor_sem_significado_juridico_esclarecido",
+      "motivo": "Disposição em vermelho sem nota suficiente para inferir seu status; manter cor/rótulo e edição ou obter esclarecimento oficial.",
+      "evidencia": {
+        "manifesto": "municipais/_lotes/20261020-overlay-58los-visual-v2/resultados.json",
+        "sha256_manifesto": "1e0f430103b1ca86b899061c5d569e5e13243dd8cd23b94e27e5ae32e7b978a1",
+        "fonte": "municipais/_fonte/organicas-sapl/sapl.surubim.pe.leg.br/208.bin",
+        "sha256_fonte": "018406aa3d520d00aba4317c6afed6ea533d28c62a0a890575e65491dcc2b68e"
+      }
+    },
+    {
+      "path": "municipais/PR/arapongas/lei-organica/2015/lei-organica-1-2015-sapl-4841.md",
+      "sha256_md": "d4a63149bbfc112473aea969273ada6235a55094cd9d08b5ce06f02b125b5c4b",
+      "estado": "tipo_divergente_confirmado",
+      "motivo": "Epígrafe é Emenda à Lei Orgânica, não Lei Orgânica completa; tipo/rota exigem correção com controle de duplicatas.",
+      "evidencia": {
+        "manifesto": "municipais/_lotes/20261020-overlay-58los-visual-v2/resultados.json",
+        "sha256_manifesto": "1e0f430103b1ca86b899061c5d569e5e13243dd8cd23b94e27e5ae32e7b978a1",
+        "fonte": "municipais/_fonte/organicas-sapl/sapl.arapongas.pr.leg.br/4841.bin",
+        "sha256_fonte": "c725a6c1e0c8c3caef1b2cfc1dbc82dc4f77c9dcce0d834a3f31b41c925243ae"
+      }
+    },
+    {
+      "path": "municipais/PR/arapongas/lei-organica/2016/lei-organica-2-2016-sapl-4842.md",
+      "sha256_md": "04a6c6c67d5f5fb8289f704dde728147359c9cef50724fba21ec77eeaa4a7b5e",
+      "estado": "tipo_divergente_confirmado",
+      "motivo": "Epígrafe é Emenda à Lei Orgânica, não Lei Orgânica completa; tipo/rota exigem correção com controle de duplicatas.",
+      "evidencia": {
+        "manifesto": "municipais/_lotes/20261020-overlay-58los-visual-v2/resultados.json",
+        "sha256_manifesto": "1e0f430103b1ca86b899061c5d569e5e13243dd8cd23b94e27e5ae32e7b978a1",
+        "fonte": "municipais/_fonte/organicas-sapl/sapl.arapongas.pr.leg.br/4842.bin",
+        "sha256_fonte": "39c536f6f192b09f0bde3c3a476b26c2552c746b50fe1585e5104d2fcb62c789"
+      }
     }
   ]
 }

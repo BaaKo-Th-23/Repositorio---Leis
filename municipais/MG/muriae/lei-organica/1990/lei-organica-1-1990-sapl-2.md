@@ -7,15 +7,17 @@ data: "1990-03-21"
 municipio: "Muriaé"
 uf: "MG"
 codigo_ibge: "3143906"
-versao_texto: "texto integral anexado no SAPL municipal; NOVA REDAÇÃO CONFORME EMENDAS A LEI ORGÂNICA DO MUNICÍPIO DE MURIAÉ PROMULGADAS PELA CÂMARA MUNICIPAL DE NÚMEROS  01/92, 02/93, 03/93, 04/93, 05/93, 06/94, 07/94, 08/94, 09/95, 10/95, 11/95, 12/95, 13/98, 14/2000, 15/2001, 16/2001, 17/2001, 18/2002, 19/2003, 20/2004, 21/2005, 22/2007, 23/2009, 24/2012, 25/2012, 26/2013, 27/2013, 28/2013, 29/2013, 30/2013, 31/2013, 32/2013, 33/2013, 34/2013, 35/2013, 36/2013, 37/2013, 38/2017, 39/2019, 40/2021, 41/2021, 42/2021, 43/2022, 44/2022, 45/2022, 46/2023, 47/2023 e 48/2025."
+versao_texto: "texto integral anexado no SAPL municipal; NOVA REDAÇÃO CONFORME EMENDAS A LEI ORGÂNICA DO MUNICÍPIO DE MURIAÉ PROMULGADAS PELA CÂMARA MUNICIPAL DE NÚMEROS  01/92, 02/93, 03/93, 04/93, 05/93, 06/94, 07/94, 08/94, 09/95, 10/95, 11/95, 12/95, 13/98, 14/2000, 15/2001, 16/2001, 17/2001, 18/2002, 19/2003, 20/2004, 21/2005, 22/2007, 23/2009, 24/2012, 25/2012, 26/2013, 27/2013, 28/2013, 29/2013, 30/2013, 31/2013, 32/2013, 33/2013, 34/2013, 35/2013, 36/2013, 37/2013, 38/2017, 39/2019, 40/2021, 41/2021, 42/2021, 43/2022, 44/2022, 45/2022, 46/2023, 47/2023 e 48/2025.; trechos tachados identificados conforme a fonte, com texto e notas preservados"
 fonte: "https://sapl.muriae.mg.leg.br/norma/2"
 fonte_texto: "https://sapl.muriae.mg.leg.br/media/sapl/public/normajuridica/1990/2/lei_organica_atualizada_com_emenda_48.pdf"
 sha256_fonte: "4ea1d1a9b7efec54199f7ac694562cbc124b8f3555e7d8904f888c83e0e6155f"
-sha256_texto: "1ee75936649e5ffc8cec5f871c153e161f2e4f7c26c46605b3ba133e84f9fa40"
+sha256_texto: "574d4c8313453ee3b794777b72f0b3026921e7754be7885e565e17640531bc36"
 baixado_em: "2026-10-16"
 ---
 
 # LEI ORGÂNICA nº 1, de 21 de março de 1990
+
+Nota de transcrição: esta edição oficial reúne trechos tachados e não tachados. Os trechos tachados foram preservados entre rótulos explícitos, com indicação da página da fonte; as notas de alteração, revogação e efeitos permanecem literais. A marcação reproduz a apresentação da fonte e não certifica vigência jurídica integral ou atualização posterior.
 
 PREÂMBULO
 
@@ -125,7 +127,7 @@ VIII – manter, com cooperação técnica e financeira da União e do Estado, p
 
 IX – dispor sobre administração, utilização e alienação dos bens públicos;
 
-X – organizar o quadro e estabelecer o regime jurídico único dos servidores públicos;
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 3, grupo 1⟧X – organizar o quadro e estabelecer o regime jurídico único dos servidores públicos;⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 X. Organizar o quadro e estabelecer o regime jurídico dos servidores públicos; (Redação dada pela Emenda 48, de 2025)
 
@@ -467,7 +469,7 @@ SEÇÃO ÚNICA Dos Servidores Públicos
 
 **Art. 38** - A atividade administrativa permanente é exercida:
 
-I – em qualquer dos poderes do Município, nas autarquias e nas fundações públicas, por servidor público, ocupante de cargo, em caráter efetivo ou em comissão, ou de função pública.
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 12, grupo 1⟧I – em qualquer dos poderes do Município, nas autarquias e nas fundações públicas, por servidor público, ocupante de cargo, em caráter efetivo ou em comissão, ou de função pública.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 I - em qualquer dos Poderes do Município, nas autarquias e nas fundações públicas, por servidor público, ocupante de cargo ou emprego público, em caráter efetivo ou em comissão, ou de função pública. (Redação dada pela Emenda 48, de 2025)
 
@@ -485,9 +487,9 @@ II – nas sociedades de economia mista, empresas públicas e demais entidades d
 
 **Art. 40** – A lei estabelecerá os cargos de contratação por tempo determinado, para atender a necessidade temporária de excepcional interesse público.
 
-**§ 1º** - É vedado o desvio de função de pessoas contratadas na forma autorizada no artigo, bem como sua recontratação, sob pena de nulidade de contrato e responsabilidade administrativa e civil da autoridade contratante.
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 13, grupo 1⟧§ 1º** - É vedado o desvio de função de pessoas contratadas na forma autorizada no artigo, bem como sua recontratação, sob pena de nulidade de contrato e responsabilidade administrativa e civil da autoridade contratante.
 
-**§ 2º** - O disposto no artigo não se aplica a função de magistério.
+**§ 2º** - O disposto no artigo não se aplica a função de magistério.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **§ 1º** Os ocupantes de função pública contratados por tempo determinado para atender a necessidade temporária de excepcional interesse público, na forma do art. 37, IX, da Constituição da República, serão submetidos a regime especial de direito administrativo, conforme definido em lei municipal específica, sendo obrigatória a vinculação ao Regime Geral de Previdência Social. (Redação dada pela Emenda 48, de 2025)
 
@@ -515,9 +517,9 @@ I – a de dois cargos de professor;
 
 II – a de um cargo de professor e outro técnico ou científico;
 
-III – a de dois cargos privativos de médico.
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 14, grupo 1⟧III – a de dois cargos privativos de médico.
 
-PARÁGRAFO ÚNICO - A proibição de acumular se estende a empregos e funções e abrange autarquias, empresas públicas, sociedade de economia mista e fundações públicas.
+PARÁGRAFO ÚNICO - A proibição de acumular se estende a empregos e funções e abrange autarquias, empresas públicas, sociedade de economia mista e fundações públicas.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 III - a de dois cargos ou empregos privativos de profissionais de saúde, com profissões regulamentadas. (Redação dada pela Emenda 48, de 2025)
 
@@ -531,7 +533,7 @@ II - investido no mandato de vereador, havendo compatibilidade de horário, perc
 
 III - em qualquer caso que exija o afastamento para o exercício do mandato eletivo, seu tempo de serviço será contado para todos os efeitos legais, exceto para promoção por merecimento;
 
-IV - para efeito de benefício previdenciário, no caso de afastamento, os valores serão determinados, como se no exercício estivesse.
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 14, grupo 2⟧IV - para efeito de benefício previdenciário, no caso de afastamento, os valores serão determinados, como se no exercício estivesse.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 IV - na hipótese de ser segurado de regime próprio de previdência social, permanecerá filiado a esse regime, no ente federativo de origem. (Redação dada pela Emenda 48, de 2025)
 
@@ -547,7 +549,7 @@ atribuições com as do cargo de origem, para o desempenho de atividades no exce
 
 **Art.49** - É vedada a participação dos servidores públicos municipais da arrecadação de tributos, multas, inclusive da dívida ativa, a qualquer título.
 
-**Art.50** - O Município instituirá regime jurídico único e planos de carreira para os servidores de órgãos da administração direta, de autarquia e de fundação públicas.
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 15, grupo 1⟧Art.50** - O Município instituirá regime jurídico único e planos de carreira para os servidores de órgãos da administração direta, de autarquia e de fundação públicas.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **Art. 50.** O Município poderá adotar o regime jurídico estatutário e/ou celetista para os servidores públicos, observadas as normas constitucionais e legais aplicáveis. (Redação dada pela Emenda 48, de 2025)
 
@@ -571,13 +573,13 @@ V – remuneração compatível com a complexidade e a responsabilidade das tare
 
 Emenda 48, de 2025)
 
-**Art. 51** – O Município assegurará ao servidor os direitos previstos no art. 7º, incisos IV, VI, VII, VIII, IX, XII, XIII, XV, XVII, XVIII e XXX, da Constituição da República, e os artigos 30, 31, 32, 33, 34, 35, 36, 37, 38, com todos os seus incisos e parágrafos, da constituição Estadual, e os que, nos termos da lei visem a melhoria de sua condição social e a produtividade no serviço público, especialmente:
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 15, grupo 2⟧Art. 51** – O Município assegurará ao servidor os direitos previstos no art. 7º, incisos IV, VI, VII, VIII, IX, XII, XIII, XV, XVII, XVIII e XXX, da Constituição da República, e os artigos 30, 31, 32, 33, 34, 35, 36, 37, 38, com todos os seus incisos e parágrafos, da constituição Estadual, e os que, nos termos da lei visem a melhoria de sua condição social e a produtividade no serviço público, especialmente:
 
 I – adicionais por tempo de serviço;
 
-II – férias-prêmio, com duração de seis meses, adquiridas a cada período de dez anos de efetivo exercício público, admitida a sua conversão em espécie, por opção do servidor, ou, para efeito de aposentadoria, a contagem em dobro das não- gozadas; (NR - ADIN 1.0000.09.505501-8/000(2))
+II – férias-prêmio, com duração de seis meses, adquiridas a cada período de dez anos de efetivo exercício público, admitida a sua conversão em espécie, por opção do servidor, ou, para efeito de aposentadoria, a contagem em dobro das não- gozadas; (NR - ADIN 1.0000.09.505501-8/000(2))⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
-III – assistência e previdência sociais, extensivas ao cônjuge ou companheiro e aos dependentes;
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 16, grupo 1⟧III – assistência e previdência sociais, extensivas ao cônjuge ou companheiro e aos dependentes;
 
 IV – assistência gratuita, em creche e pré-escola, aos filhos e dependentes, desde o nascimento até seis anos de idade.
 
@@ -593,7 +595,7 @@ título declaratório que lhe assegure direito à continuidade de percepção da
 
 **§ 3º** - O disposto no parágrafo anterior se aplica no que couber ao servidor público detentor de título declaratório que lhe assegure o direito à continuidade de percepção de remuneração relativamente as funções.
 
-**§ 4º** - Fica garantido aos servidores municipais o direito à livre associação sindical.
+**§ 4º** - Fica garantido aos servidores municipais o direito à livre associação sindical.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **Art. 51.** O Município assegurará aos integrantes de seu quadro de pessoal, servidores estatutários e empregados públicos, os direitos sociais básicos previstos no art. 7º, incisos IV, VI, VII, VIII, IX, XII, XIII, XV, XVII, XVIII e XXX, da Constituição da República, observada a legislação específica de cada regime. (Redação dada pela Emenda 48, de 2025)
 
@@ -653,7 +655,7 @@ remuneração ou dos proventos do servidor em atividade ou aposentado, respectiv
 
 **§13** – Serão estabelecidas em lei complementar específica, critérios diferenciados para aposentadoria especial de servidores com deficiência. (Redação dada pela Emenda nº44, de 2022).
 
-**Art. 55** – O servidor público que retornar à atividade após a cessação dos motivos que causaram sua aposentadoria por invalidez terá direito para todos os fins, salvo para o de promoção, a contagem de tempo relativa ao período de afastamento. (Revogada pela Emenda nº 48, de 2025)
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 18, grupo 1⟧Art. 55** – O servidor público que retornar à atividade após a cessação dos motivos que causaram sua aposentadoria por invalidez terá direito para todos os fins, salvo para o de promoção, a contagem de tempo relativa ao período de afastamento.⟦FIM DO TRECHO TACHADO NA FONTE⟧ (Revogada pela Emenda nº 48, de 2025)
 
 **Art. 56** – A lei assegurará ao servidor público da administração direta isonomia de vencimento e carga horária para cargos de atribuições iguais ou assemelhados no mesmo poder, ou entre servidores dos Poderes Executivo e Legislativo, ressalvadas as vantagens de caráter individual e as relativas a natureza ou ao local de trabalho.
 
@@ -677,13 +679,13 @@ remuneração ou dos proventos do servidor em atividade ou aposentado, respectiv
 
 ###### SUBSEÇÃO II Da Câmara Municipal
 
-**Art. 59** – A Câmara Municipal reunir-se-á, anualmente, no período de 1º de fevereiro a 30 de junho, de 1º de agosto a 15 de dezembro e, no mínimo, uma sessão ordinária por semana.
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 19, grupo 1⟧Art. 59** – A Câmara Municipal reunir-se-á, anualmente, no período de 1º de fevereiro a 30 de junho, de 1º de agosto a 15 de dezembro e, no mínimo, uma sessão ordinária por semana.
 
 **§ 1º** - No primeiro ano de cada Legislatura, cuja duração coincide com o mandato dos Vereadores, a Câmara reunir-se-á no dia 1º de janeiro para dar posse aos Vereadores, ao Presidente da Câmara, ao Prefeito e ao Vice-Prefeito, permitidas as reconduções ao mesmo cargo em uma mesma legislatura. (NR)
 
 **§ 2º** - Na 1ª (primeira) Sessão Legislativa de cada Legislatura assumirá a Presidência da Câmara o Vereador que obtiver o maior número de votos na eleição para aquela Legislatura. (AC)
 
-**§ 3º** - Não se verificando a posse do Vereador, este deverá fazê-lo perante o Presidente da Câmara, no prazo máximo de 10 (dez) dias, sob pena de ser declarado extinto seu mandato, salvo motivo de força maior reconhecido pela Câmara.
+**§ 3º** - Não se verificando a posse do Vereador, este deverá fazê-lo perante o Presidente da Câmara, no prazo máximo de 10 (dez) dias, sob pena de ser declarado extinto seu mandato, salvo motivo de força maior reconhecido pela Câmara.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **Art. 59** – A Câmara Municipal reunir-se-á, anualmente, no período de 1º de fevereiro a 30 de junho, de 1º de agosto a 15 de dezembro e, no mínimo, uma sessão ordinária por semana.
 
@@ -775,7 +777,7 @@ VII – que fixar residência fora do Município em caráter definitivo.
 
 **Art. 68** – Não perderá o mandato o Vereador:
 
-I – investido em cargo de Ministro de Estado, Governador de Território, Secretário de Estado, do Município, ou de Chefe de missão diplomática temporária, desde que se afaste do exercício de vereança;
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 22, grupo 1⟧I – investido em cargo de Ministro de Estado, Governador de Território, Secretário de Estado, do Município, ou de Chefe de missão diplomática temporária, desde que se afaste do exercício de vereança;⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 I - investido em cargo de Ministro de Estado ou equivalente, Secretário de Estado ou equivalente, Secretário do Município de Muriaé ou equivalente, Dirigente Máximo de Entidade da Administração Indireta da União, dos Estados e do Município de Muriaé ou Chefe de Missão Diplomática temporária, incluindo a assunção de cargos eletivos de suplência e/ou por decisão judicial provisória, enquanto perdurar esta condição, considerando-se automaticamente licenciado, devendo optar pelos vencimentos do cargo ou pela remuneração do mandato; (Redação dada pela Emenda nº47, de 2023).
 
@@ -793,7 +795,7 @@ V - licenciado em razão de nascimento de filho ou de adoção, sem prejuízo da
 
 **§ 2º** - Se ocorrer vaga e não houver suplente, far-se-á eleição para preenchê-la, se faltarem mais de quinze meses para término do mandato.
 
-**§ 3º** - Na hipótese do inciso I, o Vereador poderá optar pela remuneração do mandato.
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 22, grupo 2⟧§ 3º** - Na hipótese do inciso I, o Vereador poderá optar pela remuneração do mandato.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **§3º.** Na hipótese do inciso V deste artigo, será concedida licença de até 20 (vinte) dias consecutivos para os pais e de até 120 (cento e vinte) dias para as mães, mediante requerimento do Parlamentar. (Redação dada pela Emenda nº47, de 2023).
 
@@ -849,7 +851,7 @@ VIII – criação, transformação e extinção de cargo, emprego e função p�
 
 IX – fixação do quadro de empregos das empresas públicas, sociedades de economia mista e demais entidades sob controle direto ou indireto do Município;
 
-X – política do servidor público da administração direta autárquica e fundacional, seu regime jurídico único, provimento de cargos, estabilidade e aposentadoria;
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 24, grupo 1⟧X – política do servidor público da administração direta autárquica e fundacional, seu regime jurídico único, provimento de cargos, estabilidade e aposentadoria;⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 X- política de pessoal da administração direta e indireta, regime jurídico dos servidores estatutários e celetistas, provimento de cargos e empregos públicos, bem como estabilidade e aposentadoria dos servidores efetivos; (Redação dada pela Emenda 48, de 2025)
 
@@ -899,7 +901,7 @@ XIII – proceder à tomada de contas do Prefeito não apresentadas dentro de se
 
 XIV – julgar anualmente, as contas previstas pelo Prefeito e apreciar os relatórios sobre a execução dos planos de governo;
 
-XV – aprovar matéria referente à venda, doação, permuta, empréstimo, operações de crédito, pelo voto de dois terços de seus membros;
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 25, grupo 1⟧XV – aprovar matéria referente à venda, doação, permuta, empréstimo, operações de crédito, pelo voto de dois terços de seus membros;⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 XV- aprovar matéria referente à venda, doação e permuta de bens imóveis, bem como matéria relativa a empréstimo e operação de crédito, pelo voto de dois terços de seus membros. (Redação dada pela Emenda 48, de 2025)
 
@@ -983,7 +985,7 @@ V – o Estatuto dos Servidores Públicos e do Magistério Municipal;
 
 VI – a lei de parcelamento, ocupação e uso do solo;
 
-VII – a lei instituidora do regime jurídico único dos servidores;
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 27, grupo 1⟧VII – a lei instituidora do regime jurídico único dos servidores;⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 VII - a lei instituidora do regime jurídico dos servidores ocupantes de cargo efetivo; (Redação dada pela Emenda 48, de 2025)
 
@@ -1003,7 +1005,7 @@ II – do Prefeito:
 
 a) a criação de cargo e função pública da administração direta, autárquica e fundacional e a fixação da respectiva remuneração, observados os parâmetros da lei de diretrizes orçamentárias;
 
-b) o regime jurídico único dos servidores públicos dos órgãos da administração direta, autárquica e fundacional, incluídos o provimento de cargo, estabilidade e aposentadoria;
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 27, grupo 2⟧b) o regime jurídico único dos servidores públicos dos órgãos da administração direta, autárquica e fundacional, incluídos o provimento de cargo, estabilidade e aposentadoria;⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 b) o regime jurídico dos servidores públicos estatutários e celetistas dos órgãos da administração direta e indireta, incluídos o provimento de cargo e emprego público, bem como a aposentadoria dos servidores estatutários; (Redação dada pela Emenda 48, de 2025)
 

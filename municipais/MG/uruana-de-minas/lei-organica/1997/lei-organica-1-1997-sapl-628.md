@@ -7,15 +7,17 @@ data: "1997-06-07"
 municipio: "Uruana de Minas"
 uf: "MG"
 codigo_ibge: "3170479"
-versao_texto: "texto integral anexado no SAPL municipal; Atualizada pelas Emendas à Lei Orgânica nº 001/1999; 002/2010; 003/2012 e 004/2023."
+versao_texto: "texto integral anexado no SAPL municipal; Atualizada pelas Emendas à Lei Orgânica nº 001/1999; 002/2010; 003/2012 e 004/2023.; trechos tachados identificados conforme a fonte, com texto e notas preservados"
 fonte: "https://sapl.uruanademinas.mg.leg.br/norma/628"
 fonte_texto: "https://sapl.uruanademinas.mg.leg.br/media/sapl/public/normajuridica/1997/628/lei_organica_atualizada.pdf"
 sha256_fonte: "d7caee0843398e378cd016c18095ecc04094ade8a5988f743b0bcb76b83bbead"
-sha256_texto: "ffd285c634220791632d96a88db2f529c1c327c5ae27ded9dc10b3494891df87"
+sha256_texto: "b1fa59157fc0e0fb8cb65a112967c56ccb562c48e589cae36e348329279a7c3b"
 baixado_em: "2026-10-16"
 ---
 
 # Lei Orgânica do Município nº 1, de 07 de junho de 1997
+
+Nota de transcrição: esta edição oficial reúne trechos tachados e não tachados. Os trechos tachados foram preservados entre rótulos explícitos, com indicação da página da fonte; as notas de alteração, revogação e efeitos permanecem literais. A marcação reproduz a apresentação da fonte e não certifica vigência jurídica integral ou atualização posterior.
 
 LEI ORGÂNICA Do Município de Uruana de Minas 07 de Junho de 1997
 
@@ -347,13 +349,13 @@ XII - planejar e promover a defesa permanente do Município e de seus habitantes
 
 **Art. 19.** O Poder Legislativo é exercido pela Câmara Municipal, composta de Vereadores eleitos dentre os cidadãos maiores de 18 (dezoito) anos e no exercício de seus direitos políticos.
 
-**§ 1º.** O número de Vereadores será fixado por Resolução da Câmara, até 180 (cento e oitenta) dias antes das eleições, observada a seguinte proporcionalidade:
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 13, grupo 1⟧§ 1º.** O número de Vereadores será fixado por Resolução da Câmara, até 180 (cento e oitenta) dias antes das eleições, observada a seguinte proporcionalidade:⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
-I - mínimo de 09 (nove) e máximo de 21 (vinte e um), quando o Município tiver menos de um milhão de habitantes;
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 13, grupo 2⟧I - mínimo de 09 (nove) e máximo de 21 (vinte e um), quando o Município tiver menos de um milhão de habitantes;
 
 II - mínimo de 33 (trinta e três) e máximo de 41 (quarenta e um), quando o Município tiver mais de um milhão e menos de cinco milhões de habitantes;
 
-III - mínimo de 43 (quarenta e três) e máximo de 55 (cinqüenta e cinco), quando o Município tiver mais de cinco milhões de habitantes.(Revogado)
+III - mínimo de 43 (quarenta e três) e máximo de 55 (cinqüenta e cinco), quando o Município tiver mais de cinco milhões de habitantes.(Revogado)⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **§ 1º.** É de 09 (nove) o número de vereadores da Câmara Municipal. (Incluído pela Emenda à Lei Orgânica nº 003, de 2012).
 
@@ -569,7 +571,7 @@ IV – o total da despesa com os subsídios dos vereadores não poderá ultrapas
 
 **Art. 32.** A Mesa da Câmara é composta do Presidente, do Vice-Presidente, do 1º e do 2º Secretários.
 
-**Art. 33.** O mandato da Mesa será de 1 (um) ano, permitida uma reeleição. (Revogado)
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 20, grupo 1⟧Art. 33.** O mandato da Mesa será de 1 (um) ano, permitida uma reeleição⟦FIM DO TRECHO TACHADO NA FONTE⟧. (Revogado)
 
 **Art. 33.** O mandato para o mesmo cargo da Mesa será de 01 (um) ano, permitida uma reeleição e o mandato para cargos distintos da Mesa permite a reeleição indefinida. (Alterado pela Emenda à Lei Orgânica nº 002, de 2010).
 

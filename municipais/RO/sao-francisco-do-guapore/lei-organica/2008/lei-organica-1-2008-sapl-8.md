@@ -7,15 +7,17 @@ data: "2008-07-01"
 municipio: "São Francisco do Guaporé"
 uf: "RO"
 codigo_ibge: "1101492"
-versao_texto: "texto integral anexado no SAPL municipal; "
+versao_texto: "texto integral anexado no SAPL municipal; ; trechos tachados identificados conforme a fonte, com texto e notas preservados"
 fonte: "https://sapl.saofranciscodoguapore.ro.leg.br/norma/8"
 fonte_texto: "https://sapl.saofranciscodoguapore.ro.leg.br/media/sapl/public/normajuridica/2008/8/lei_organica_do_municipal_de_sao_francisco_do_guapore_-_lom.pdf"
 sha256_fonte: "e3bb3d7d7ad03c9f7ab6e499112e9e4b64fd1438f2e436a66070715a9c27ea28"
-sha256_texto: "8ff628943d1b8e22f8fd3931e09784af33b9f8f77d76f846a737d782cc78f470"
+sha256_texto: "10f20ad66b9061cddf897ae6aec92219859ac93701f53ad3b58ee2dc9a744bf8"
 baixado_em: "2026-10-16"
 ---
 
 # Lei Orgânica Municipal nº 1, de 01 de julho de 2008
+
+Nota de transcrição: esta edição oficial reúne trechos tachados e não tachados. Os trechos tachados foram preservados entre rótulos explícitos, com indicação da página da fonte; as notas de alteração, revogação e efeitos permanecem literais. A marcação reproduz a apresentação da fonte e não certifica vigência jurídica integral ou atualização posterior.
 
 ### TÍTULO I DISPOSIÇÕES PRELIMINARES
 
@@ -275,7 +277,7 @@ títulos ou direitos.
 
 **Art. 20º** - O Poder Legislativo é exercido pela Câmara Municipal, composta de Vereadores representantes do povo, eleitos pelo sistema proporcional em todo o território municipal para um mandato de 04 (quatro) anos.
 
-**Art. 21º** - O número de Vereadores será fixado pela Justiça Eleitoral, tendo em vista a população do Município, e observados os limites estabelecidos no artigo 29, IV da Constituição Federal.
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 8, grupo 1⟧Art. 21º** - O número de Vereadores será fixado pela Justiça Eleitoral, tendo em vista a população do Município, e observados os limites estabelecidos no artigo 29, IV da Constituição Federal.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **Art. 21º** - O número de Vereadores será fixado em 11 (onze), com efeitos a partir da Legislatura que se inicia em 2013 (dois mil e treze), em conformidade com o que determina o artigo 29, inciso IV, alínea “b” da Constituição Federal”.
 
@@ -523,7 +525,7 @@ III – Para desempenhar missões temporárias de caráter cultural ou de intere
 
 livro de presença até o início da Ordem do dia, participar dos trabalhos do Plenário e participar das votações.
 
-**Art. 42º** - As Sessões Legislativas anuais desenvolvem-se de 02 de fevereiro à 17 de julho e de 1º de agosto à 15 de dezembro.
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 16, grupo 1⟧Art. 42º** - As Sessões Legislativas anuais desenvolvem-se de 02 de fevereiro à 17 de julho e de 1º de agosto à 15 de dezembro.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **Art. 42º** - As Sessões Legislativas anuais desenvolvem-se de 15 (quinze) de fevereiro à 30 (trinta) de junho e de 1º (primeiro) de agosto à 15 (quinze) de dezembro.
 
@@ -565,7 +567,7 @@ livro de presença até o início da Ordem do dia, participar dos trabalhos do P
 
 **Art. 49º** - O mandato da Mesa Diretora será de 02 (dois) anos com direito à recondução para o mesmo cargo na eleição imediatamente subseqüente.
 
-**Art. 50º** - A Mesa Diretora da Câmara será composta de um Presidente, Vice- Presidente, 2º Vice –Presidente, 1º Secretário, 2º Secretário.
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 18, grupo 1⟧Art. 50º** - A Mesa Diretora da Câmara será composta de um Presidente, Vice- Presidente, 2º Vice –Presidente, 1º Secretário, 2º Secretário.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **Art. 50º** - A Mesa Diretora da Câmara Municipal será composta de Presidente, Primeiro Vice-Presidente, Segundo Vice–Presidente, Primeiro Secretário, Segundo Secretário e Terceiro Secretário”.
 
@@ -1441,7 +1443,7 @@ VI – o servidor público municipal inativo tem direito a participar do sindica
 
 VII – o servidor público municipal sindicalizado, a partir do registro da candidatura a cargo de direção sindical e, se eleito, ainda que suplente, não poderá ser exonerado, mesmo que em cumprimento de estágio probatório;
 
-VIII – o servidor ou empregado público municipal eleito para a diretoria de sua entidade sindical, nos cargos de Presidente, Secretário e Tesoureiro, poderá afastar-se de seu cargo, emprego ou função durante o período do mandato, sem prejuízo de seus salários e demais direitos;
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 46, grupo 1⟧VIII – o servidor ou empregado público municipal eleito para a diretoria de sua entidade sindical, nos cargos de Presidente, Secretário e Tesoureiro, poderá afastar-se de seu cargo, emprego ou função durante o período do mandato, sem prejuízo de seus salários e demais direitos;⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 “VIII – O servidor público municipal eleito para a diretoria de sua entidade sindical, no cargo de presidente, poderá afastar-se de seu cargo, emprego ou função durante o período do mandato, sem juízo de se salário”.
 
@@ -1731,7 +1733,7 @@ III – os orçamentos anuais.
 
 **§4º** - O Poder Executivo publicará, até 30 (trinta) dias após o encerramento de cada bimestre, relatório resumido da execução orçamentária.
 
-**Art. 168º** - O Projeto de Lei Orçamentária Anual deverá ser enviada à Câmara Municipal até 30 (trinta) de agosto de cada ano e compreenderá:
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 55, grupo 1⟧Art. 168º** - O Projeto de Lei Orçamentária Anual deverá ser enviada à Câmara Municipal até 30 (trinta) de agosto de cada ano e compreenderá:⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **Art. 168º** - O Projeto de Lei Orçamentária Anual deverá ser enviada a Câmara Municipal até 15 (quinze) de setembro de cada ano e compreenderá:
 
@@ -2333,9 +2335,9 @@ IV – a política tarifária.
 
 **Art. 237º** - Os veículos de propriedade do Município destinam-se ao uso exclusivo em serviço, cabendo a responsabilidade de seu uso ao chefe do Executivo, ao Secretário da área ou ao Presidente da Câmara Municipal.
 
-**Art. 238º** - É vedado o trafego de veículos públicos nos sábados, domingos e feriados, devendo os mesmos serem recolhidos à garagem municipal após o termino do expediente.
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 74, grupo 1⟧Art. 238º** - É vedado o trafego de veículos públicos nos sábados, domingos e feriados, devendo os mesmos serem recolhidos à garagem municipal após o termino do expediente.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
-**Parágrafo único** – Ficam excluídos do caput deste artigo os veículos da Secretaria Municipal de Saúde, do Gabinete do Prefeito, bem como os do Gabinete do Presidente da Câmara.
+**⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 75, grupo 1⟧Parágrafo único** – Ficam excluídos do caput deste artigo os veículos da Secretaria Municipal de Saúde, do Gabinete do Prefeito, bem como os do Gabinete do Presidente da Câmara.⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 **Art. 238º** - Com exceção dos veículos da Secretaria Municipal de Saúde, do Gabinete do Prefeito e do Gabinete do Presidente da Câmara Municipal, é vedado o tráfego de veículo públicos nos sábados, domingos e feriados, devendo os mesmos serem recolhidos à garagem municipal após o expediente.
 
@@ -2383,7 +2385,7 @@ Atualizada pelas Emendas:
 
 1. Emenda nº.001/2010 “Altera o caput do artigo 42 da Lei Orgânica do Município de São Francisco do Guaporé/RO”; 2. Emenda nº.002/2011 “Altera a redação do artigo 238 da Lei Orgânica do Município”; 3. Emenda nº.003/2011 “Dispõe sobre a alteração do art. 168 da Lei Orgânica Municipal e dá outras providências”; 4. Emenda nº.004/2011 “Altera o caput do artigo 21 da Lei Orgânica do Município de São Francisco do Guaporé/RO”; 5. Emenda nº.005/2012 “Altera a redação do artigo 50 da Lei Orgânica do Município”; 6. Emenda nº.006/2013 “Inclui o inciso IV e §3º ao artigo 168 da Lei Orgânica do Município de São Francisco do Guaporé/RO”;
 
-7. Emenda nº.007/2014 “Inclui a redação do caput do artigo 242 da Lei Orgânica do Município de São Francisco do Guaporé-RO”;
+⟦INÍCIO DO TRECHO TACHADO NA FONTE, página 77, grupo 1⟧7. Emenda nº.007/2014 “Inclui a redação do caput do artigo 242 da Lei Orgânica do Município de São Francisco do Guaporé-RO”;⟦FIM DO TRECHO TACHADO NA FONTE⟧
 
 8. Emenda nº.008/2016 “Dá nova redação ao inciso VIII do artigo 128 da Lei Orgânica Municipal”;
 
