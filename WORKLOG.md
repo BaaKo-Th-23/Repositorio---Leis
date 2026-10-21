@@ -1651,3 +1651,10 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Seleções 008 v3 e 009 v3 acrescentam 1.778 e 1.770 normas, respectivamente. As 151 promoções privadas só ocorreram após conferir fontes, candidatos e todas as preimagens. Identidades por URN e número completo/ano sem colisão com HEAD ou entre si.
 - Fontes HTML e metadados oficiais completos, com preimagens alteradas, preservados em dois arquivos primários gzip. Gates de anexos/modelos, visuais, notas de literalidade de fechos e fidelidade de pontuação/números em CommonMark aprovados nas seleções congeladas.
 - Auditoria de 3.548 documentos do index sem erros ou avisos; SHA e escopo dos 3.726 caminhos conferidos. Diffcheck integral passou sem dispensas. Metas mantidas.
+
+### Municipal: 771 textos articulados SAPL com replay independente
+
+- Seleção consolidada de 251 textos, um reparo privado e lotes de 114, 177 e 228 normas. Promoção explícita do reparo 29531 somente após conferir preimagem arquivada e candidato; alteração de delimitador Markdown conserva o texto normativo. Nenhuma norma já publicada incluída como nova.
+- ROOT repetiu os 29 testes e os 771 replays integrais contra a área ativa das fontes, preservando sinais, valores e contadores efetivos de listas. Gate após promoção: 771 aprovados, zero problemas. Fontes primárias, contextos, estados públicos, histórico de alterações, evidências de anexos e códigos congelados acompanhando o lote; datas reais das capturas preservadas.
+- Auditoria do index: 771 documentos sem erros ou avisos; auditoria municipal completa de 15.273 arquivos sem problemas ou avisos. Escopo e SHA dos 5.035 caminhos conferidos; quinze dependências já eram idênticas em HEAD.
+- Prova de whitespace verifica no index 1.072 hardbreaks exatos e 773 linhas finais vazias, incluindo candidatos textuais arquivados. Nenhum conteúdo foi aparado; as demais verificações de diffcheck passaram. Metas mantidas.
