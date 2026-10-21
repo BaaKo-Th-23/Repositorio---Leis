@@ -13,13 +13,18 @@ Texto: /sinj/Norma/{ch_norma}/{arquivo}, preferindo o texto compilado (ar_atuali
   python3 -I scripts/estados/df.py 50           # só as 50 normas mais recentes (teste)
 """
 import collections
+import gzip
+import hashlib
 import json
 import os
+import re
 import sys
 import urllib.parse
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
-from comum import RAIZ_ESTADUAIS, Rede, caminhos, documento_para_md, executar, gravar  # noqa: E402
+from comum import RAIZ_ESTADUAIS, Rede, caminhos, documento_para_md, extrair_texto, executar, gravar  # noqa: E402
+
+from sinj_tachados import converter_html_sinj  # noqa: E402
 
 UF = "DF"
 BASE = "https://www.sinj.df.gov.br/sinj"
@@ -136,7 +141,29 @@ def processar(s):
     st, bruto, ctype = rede.get(url, timeout=180)
     if st != 200 or not bruto:
         return "sem_texto", {"ch": s["ch_norma"], "url": url, "http": st}
-    corpo, motivo = documento_para_md(bruto, url, ctype, {"Texto Compilado", "Texto Original"})
+    parece_html = not bruto.startswith((b"%PDF", b"PK", b"\xd0\xcf\x11\xe0")) and (
+        "html" in ctype.lower() or bruto.lstrip().startswith(b"<"))
+    html, texto = extrair_texto(bruto, url, ctype) if parece_html else (None, None)
+    edicao = "compilada (SINJ-DF)" if compilado else "original"
+    if html is not None:
+        try:
+            corpo, edicao, prova_edicao = converter_html_sinj(html, compilado=compilado, situacao=s.get("nm_situacao") or "")
+            if prova_edicao["edicao"] == "sem tachado ativo":
+                corpo, motivo = documento_para_md(bruto, url, ctype, {"Texto Compilado", "Texto Original"})
+            elif len(re.sub(r"\W", "", corpo)) < 40:
+                corpo, motivo = None, "documento vazio"
+            else:
+                motivo = None
+        except ValueError as exc:
+            sha = hashlib.sha256(bruto).hexdigest()
+            evidencia = os.path.join(RAIZ_ESTADUAIS, UF, "_fonte", "auditorias", "css-nao-comprovado", f"{s['ch_norma']}-{sha}.html.gz")
+            os.makedirs(os.path.dirname(evidencia), exist_ok=True)
+            if not os.path.exists(evidencia):
+                with gzip.open(evidencia, "wb") as arq:
+                    arq.write(bruto)
+            return "sem_texto", {"ch": s["ch_norma"], "url": url, "motivo": str(exc), "cache": evidencia, "sha256_fonte": sha}
+    else:
+        corpo, motivo = documento_para_md(bruto, url, ctype, {"Texto Compilado", "Texto Original"})
     if corpo is None:
         return "sem_texto", {"ch": s["ch_norma"], "url": url, "motivo": motivo}
     corpo = corpo.replace("\x00", "")
@@ -150,8 +177,8 @@ def processar(s):
         ("data", f"{a}-{m}-{d}"),
         ("ementa", " ".join((s.get("ds_ementa") or "").split())),
         ("situacao", situacao),
-        ("revogada", situacao.lower().startswith("revogad")),
-        ("versao_texto", "compilada (SINJ-DF)" if compilado else "original"),
+        ("revogada", {"revogada": True, "revogado": True, "vigente": False, "em vigor": False}.get(situacao.strip().lower())),
+        ("versao_texto", edicao),
         ("fonte", f"{BASE}/Norma/{s['ch_norma']}/{nome_arq}"),
     ]
     gravar(md, fonte, bruto, meta, f"# {titulo}\n\n{corpo}")

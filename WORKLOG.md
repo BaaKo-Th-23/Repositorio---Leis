@@ -1461,3 +1461,10 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Substituições verificadas contra SHA anterior do HEAD: 187 no lote séries curtas001, quatro no complemento002 e duas leis delegadas com oito tabelas recuperadas. EC18 e EC28 deixam de trazer somente retificações.
 - Históricos comprimidos preservam integralmente as transcrições anteriores, capturas e metadados oficiais. Candidatos congelados ficam como evidência fora das pastas contadas; não são novas identidades normativas.
 - Texto visível, identidade, fecho, tabelas e ausência de visuais foram confrontados com a fonte. Cabeçalhos legados das leis delegadas não ganham certificação de vigência. Auditoria do index sem erros ou avisos; dez hardbreaks exatos provados.
+
+### DF: 17.327 novas normas e seis reparos constitucionais
+
+- Publicação reconstrói pacote final: 16.463 normas inalteradas, 863 corrigidas após confirmação de CSS tachado, mais Portaria69/1999 com anexosI/II conferidos visualmente no DODF. Evidências e SHA em scripts/dados/publicacao-df17327-reparos6-20261020.json.
+- Seis reparos publicados: cinco emendas com redações históricas/marcações restauradas; LODF conserva corpo compilado já correto. Metadados desconhecidos passam a null, sem inferir revogação de inconstitucionalidade, anulação ou risco gráfico.
+- Código SINJ mantém fluxo original quando não há tachado e exige prova CSS para filtrar edição. Sessenta e seis testes estaduais passaram. Diff integral do coletor revisado; alteração pré-existente compatível de metadados preservada.
+- Auditoria do index sem erros ou avisos; três hardbreaks exatos provados, demais verificações de whitespace passaram. Fontes e históricos anteriores preservados.
