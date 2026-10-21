@@ -1449,3 +1449,9 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Reunidos lotes restantes, duas continuações, recuperação offline e onze lacunas de medidas provisórias. Recibo e SHA em scripts/dados/publicacao-federal14790-20261020.json.
 - Removidos da seleção 434 documentos atingidos pelos overlays 001–003, sem apagar fontes ou alterar metas. Mantidos recibos e razões de retenção dos lotes originais.
 - Auditoria do index sem erros ou avisos; escopo e arquivos já idênticos ao HEAD reconferidos. Corpo e fontes preservados.
+
+### RS, MG e Bahia: 31.862 normas adicionais
+
+- Recibo scripts/dados/publicacao-estaduais31862-20261020.json: RS HTML 11.116, RS PDF 10.970, MG 6.036 e Bahia base 3.740. Lotes finais por SHA, com aliases e omissões retidos e fontes oficiais conferidas.
+- PDFs RS preservam camada textual, números e páginas; imagens extraídas foram confrontadas com os cinco logos decorativos revisados visualmente. HTML conserva tabelas e células normativas.
+- Auditoria do index sem erros ou avisos. Foram provados 145.116 hardbreaks exatos, inclusive 39.086 linhas vazias com dois espaços. Demais verificações de whitespace passaram sem modificar texto normativo.
