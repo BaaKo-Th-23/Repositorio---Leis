@@ -1710,3 +1710,14 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Aracaju preserva as 73 passagens tachadas com rótulos e todas as notas, como edição histórica identificada; sem inferir revogação de cada passagem ou vigência global. Páginas 70 e 107 inspecionadas visualmente pelo ROOT. Erechim Res. 1/1969: menções a outras cidades são autoria de propostas em dispositivos próprios; fonte, API de esfera M, Casa e IBGE comprovados individualmente, sem relaxar o detector geral.
 - Auditoria normativa no index: 1.349 arquivos, zero erros/avisos. Auditoria municipal de todos os 16.622 documentos do index: zero problemas/avisos. SHA/escopo dos 8.655 caminhos da integração conferidos; 90 já idênticos em HEAD.
 - Whitespace conferido sobre os bytes do index: somente quebras Markdown de dois espaços, linhas finais vazias e, especificamente em Aracaju, linhas vazias de espaços provenientes da transcrição integral do PDF. Prova por arquivo/SHA preservada; demais classes de erro continuam bloqueadas. Fontes e receipts anteriores preservados, metas inalteradas.
+
+### Reguladores: 8.592 atos DOU e SIJUT com fontes integrais
+
+- Lote 3b6f3b3e libera 4.666 atos SIJUT/Receita (4.651 diretos e 15 pela AST de contadores) e 3.926 DOU (3.896 diretos e 30 contextuais). Alertas restantes retidos; vigência não inferida da ausência de anotação. Cruzamento final por URL e identidade: zero coincidências entre seleções.
+- Fontes JSON SIJUT e HTML DOU arquivadas integralmente, ligadas por SHA a cada documento. Todos os caminhos antes ausentes do HEAD; corpos, identidades e provas CommonMark/GFM reconferidos. Auditoria normativa: 8.592 sem erros/avisos; SHA/escopo dos 8.605 caminhos, com três controles já idênticos, aprovados.
+- Prova de whitespace publicada com este lote subsequente: os 617 avisos capturados antes do commit anterior foram reconferidos contra seus blobs HEAD, todos quebras Markdown de exatamente dois espaços. Diffcheck das demais classes aprovado. Nenhuma diferença normativa dispensada.
+
+### Reguladores: mais 6.765 atos de fontes preservadas
+
+- Segunda seleção final libera 2.580 SIJUT (2.568 diretos e 12 contextuais) e 4.185 DOU (4.181 diretos e quatro contextuais). Demais alertas retidos; cruzamento adicional entre os lotes por URL e identidade sem colisões. Fontes primárias completas JSON/HTML arquivadas, sem reescrever os corpos.
+- Auditoria do index: 6.765 sem erros/avisos; SHA/escopo dos 6.779 caminhos preparados conferidos antes de acrescentar a própria prova final. Os 253 avisos de whitespace foram conferidos individualmente como quebras de exatamente dois espaços; outras classes passam diffcheck. Metas mantidas.
