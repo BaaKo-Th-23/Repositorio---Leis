@@ -1690,3 +1690,9 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Mais 485 atos da revisão de metadados têm corpo normativo byte a byte igual: revogação passa a desconhecida, com hash da fonte, sem alterar demais campos. Gates suplementares e CommonMark integral aprovados, sendo 484 diretos e um contextual. Fontes completas e todas as preimagens desses metadados arquivadas; documentos ainda divergentes permanecem retidos.
 - Novo cache de identidade lê diretamente os 154.732 blobs normativos do HEAD 606a8a1, preservando exatamente cinco campos e o vínculo path/OID. Nenhum cabeçalho omitido; baseline NUL, cache e gerador íntegros arquivados. Reduz releituras dos lotes antigos sem usar o worktree mutável ou truncar cabeçalhos extensos. Próximos lotes reservam somente adições posteriores qualificadas.
 - Auditoria do index: 2.901 documentos sem erros ou avisos. SHA e escopo dos 2.923 caminhos conferidos, três controles já idênticos em HEAD; diffcheck integral passou sem dispensas. Metas mantidas.
+
+### Deduplicação: treze cópias integralmente idênticas
+
+- Treze pares possuem bytes, URL oficial, órgão e edição idênticos em HEAD. Retiradas somente as cópias nas pastas genéricas presidência/conselhos/fazenda; conservados os textos existentes nas pastas específicas AGU, CFC e PGFN, conforme órgão literal. Nenhuma edição diferente ou republicação diferente retirada.
+- Todas as preimagens locais conferidas com HEAD antes de qualquer retirada; conteúdo completo, metadados e mapeamento canônico preservados em histórico gzip e Git. Não havia pendência de integralidade nesses caminhos.
+- Triagem apenas por número/data encontrou outros grupos, mas não autoriza deduplicação sem contexto. Este commit limita-se aos treze pares byte a byte iguais. Escopo do index e diffcheck conferidos; metas mantidas e cópias deixam de inflar o volume.
