@@ -1608,3 +1608,9 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Publicadas 115 lacunas adicionais: 112 do pacote nativo e três separadores literais. Completam o conjunto inicial de 11.900 e os 13.416 candidatos posteriores, sem colisão. Retenções dos relatórios anteriores permanecem como histórico, acompanhadas das provas posteriores.
 - ROOT reconferiu 229 corpos finais por CommonMark contextual, fonte e pontuação, além de preimagens HEAD e backups. Metadados e H1 preservados. Nativo v2 normaliza somente CRLF para LF; 176 backups v1 e fonte bruta conservados. Quinze espaços textuais finais são representados por entidades equivalentes, sem alterar dados.
 - Auditoria do index: 203 documentos, zero erros ou avisos. Diffcheck integral passou, sem dispensas de whitespace.
+
+### Reguladores: 7.978 novos e 17 readmissões contextuais
+
+- Lote 011 fornece 7.954 novos atos: 7.931 de igualdade direta e 23 com contadores efetivos comprovados por AST/HTML. Mais 24 atos retidos do lote 010 passam pela mesma prova contextual, totalizando 7.978 novos. Fontes, corpos e reservas reconferidos.
+- Dezessete dos vinte alertas publicados do lote 009 são readmitidos sem editar MD após prova dos contadores realmente renderizados, sem copiar números da fonte. Três seguem pendentes; registro global fica com 2.138. As 969 divergências remanescentes do lote 011 e seis do lote 010 não foram publicadas.
+- Auditoria dos 7.978 documentos do index sem erros ou avisos. Prova de whitespace conserva 1.114 hardbreaks exatos, incluindo 35 linhas vazias com dois espaços; demais verificações passaram. Código exato da prova contextual e hashes de suas dependências preservados.
