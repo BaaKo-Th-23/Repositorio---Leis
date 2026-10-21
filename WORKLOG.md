@@ -1575,3 +1575,9 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 
 - Lote 009: 4.414 DOU e 4.486 RFB, com fonte e corpo reconferidos por SHA e deduplicação contra baseline e três reservas anteriores. Dos dez mil candidatos dos controles iniciais, 1.100 ficam retidos para revisão.
 - Auditoria dos 8.900 documentos do index: zero erros ou avisos. Prova de whitespace conserva 3.059 hardbreaks exatos, doze linhas vazias com dois espaços e três ocorrências de EOF; demais verificações passaram.
+
+### Fortaleza: três notas oficiais antes omitidas
+
+- Acrescentadas literalmente as notas de inconstitucionalidade vinculadas ao art. 168 § 5º e art. 177 §§ 8º e 9º, com datas, autoria e referências informadas pelo portal. A numeração processual da fonte foi preservada; nenhum alcance judicial foi inferido.
+- Preimagem confirmada contra HEAD; remover as três inserções recompõe o corpo anterior byte a byte. Fonte completa, fragmentos e consultas judiciais preservados. Dois testes passaram, auditoria genérica sem erros ou avisos e municipal completa sem problemas ou avisos.
+- Atributo restrito conserva os três fragmentos HTML brutos com CRLF; prova de whitespace do backup confirma apenas uma linha vazia em EOF. Demais verificações passaram.

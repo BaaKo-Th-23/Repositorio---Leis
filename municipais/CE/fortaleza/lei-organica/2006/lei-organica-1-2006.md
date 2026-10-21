@@ -6,11 +6,11 @@ data: "2006-12-15"
 municipio: "Fortaleza"
 uf: "CE"
 codigo_ibge: "2304400"
-versao_texto: "compilação marcada no SAPL como atual, vigência a partir de 30/06/2025 dada pela Emenda25/2025; dispositivos desativados excluídos, marcadores de revogação preservados; não certifica atualização jurídica além do snapshot"
+versao_texto: "compilação do SAPL marcada como atual, vigência a partir de 30/06/2025 dada pela Emenda 25/2025; dispositivos desativados excluídos, marcadores de revogação e três notas literais de inconstitucionalidade da fonte municipal preservados; referências atribuídas ao portal, sem inferir alcance judicial ou certificar vigência integral"
 fonte: "https://sapl.fortaleza.ce.leg.br/norma/5257"
 fonte_texto: "https://sapl.fortaleza.ce.leg.br/ta/44/text"
 sha256_fonte: "a3770625ec2abf27f8fc85a7bf41c97865f7d1cca5f74a157df76b92eabb602d"
-sha256_texto: "0021284a2d91967ba6660e6cbab968111a58dbfa78b31d6fee63dd2d7ffb569a"
+sha256_texto: "4d719536361e688ec08fafa1a084a12a5f5bea456589aa09c66127642612e4a5"
 baixado_em: "2026-10-20"
 revogada: null
 ---
@@ -4172,6 +4172,12 @@ A lei determinará medidas para que os consumidores sejam esclarecidos acerca do
 
 _Nota editorial: a fonte contém redação tachada neste dispositivo; esse texto histórico foi omitido desta transcrição e permanece no HTML original._
 
+> Nota literal da fonte municipal, vinculada ao art. 168, § 5º:
+>
+> Nota de Inconstitucionalidade • Renara • 20 Mai 2024 Dispositivo declarado Inconstitucional pelo Tribunal de Justiça do Estado do Ceará. Processo: 0620174-36.2023.8.06.000.
+>
+> Referência informada pelo portal: [Diário da Justiça do TJCE](https://esaj.tjce.jus.br/cdje/consultaSimples.do?cdVolume=14&nuDiario=3309&cdCaderno=2&nuSeqpagina=6).
+
 § 6º
 
 Somente por motivos supervenientes e por casos de calamidade pública ou notória pobreza do contribuinte, conceder-se-á isenção e anistia de tributos municipais, devendo a lei que a autorize ser aprovada por maioria de dois terços dos membros da Câmara Municipal.
@@ -4492,12 +4498,24 @@ Inclusão feita pelo Art. 1º. - Emenda à Lei Orgânica nº 5, de 27 de outubro
 
 _Nota editorial: a fonte contém redação tachada neste dispositivo; esse texto histórico foi omitido desta transcrição e permanece no HTML original._
 
+> Nota literal da fonte municipal, vinculada ao art. 177, § 8º:
+>
+> Nota de Inconstitucionalidade • Renara • 08 Jan 2015 Dispositivo declarado Inconstitucional pelo Tribunal de Justiça do Estado do Ceará. Processo: 0010204-81.2011.8.06.0000.
+>
+> Referência informada pelo portal: [Diário da Justiça do TJCE](https://esaj.tjce.jus.br/cdje/consultaSimples.do?cdVolume=5&nuDiario=1122&cdCaderno=2&nuSeqpagina=4).
+
 § 9º
 
 Inclusão feita pelo Art. 1º. - Emenda à Lei Orgânica nº 5, de 27 de outubro de 2010.
 
 
 _Nota editorial: a fonte contém redação tachada neste dispositivo; esse texto histórico foi omitido desta transcrição e permanece no HTML original._
+
+> Nota literal da fonte municipal, vinculada ao art. 177, § 9º:
+>
+> Nota de Inconstitucionalidade • Renara • 08 Jan 2015 Dispositivo declarado Inconstitucional pelo Tribunal de Justiça do Estado do Ceará. Processo: 0010204-81.2011.8.06.0000.
+>
+> Referência informada pelo portal: [Diário da Justiça do TJCE](https://esaj.tjce.jus.br/cdje/consultaSimples.do?cdVolume=5&nuDiario=1122&cdCaderno=2&nuSeqpagina=4).
 
 Art. 178.
 

@@ -3,3 +3,4 @@
 /municipais/_fonte/**/*.html -text -whitespace
 /municipais/_fonte/**/*.bin -text -whitespace
 /municipais/_lotes/20261020-curitiba-lo/bloco-alterado.html -text -whitespace
+/municipais/_lotes/20261020-fortaleza-notas-constitucionalidade/dn*.html -text -whitespace
