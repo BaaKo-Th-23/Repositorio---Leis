@@ -1443,3 +1443,9 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Auditoria do index: 19.857 normas, zero erros e avisos. Código estadual: 48 testes; guard federal v4: 44 testes, com histórico dos controles anteriores preservado.
 - Foram conferidos 1.325 hardbreaks exatos, incluindo seis linhas vazias com dois espaços, sem alterar corpos.
 - Overlay federal 003 acrescenta 581 pendências publicadas verificadas por SHA de texto e fonte; registro passa de 678 para 1.259, sem apagar documentos ou inferir revogação.
+
+### Federal: 14.790 documentos adicionais filtrados
+
+- Reunidos lotes restantes, duas continuações, recuperação offline e onze lacunas de medidas provisórias. Recibo e SHA em scripts/dados/publicacao-federal14790-20261020.json.
+- Removidos da seleção 434 documentos atingidos pelos overlays 001–003, sem apagar fontes ou alterar metas. Mantidos recibos e razões de retenção dos lotes originais.
+- Auditoria do index sem erros ou avisos; escopo e arquivos já idênticos ao HEAD reconferidos. Corpo e fontes preservados.
