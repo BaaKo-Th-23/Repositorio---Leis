@@ -94,8 +94,17 @@ def processar(r):
     comp = f"-{r['Complemento']}" if r["Complemento"] else ""
     slug = f"{r['Tipo'].lower()}-{r['Numero']}{comp}-{r['Ano']}"
     md, fonte = caminhos(UF, pasta, r["Ano"], slug)
+    anterior_vazio = None
     if os.path.exists(md):
-        return "pulado", None
+        with open(md, encoding="utf-8") as f:
+            salvo = f.read()
+        # Coletas antigas gravaram somente cabeçalho/H1 para <p></p> da API.
+        # Um corpo existente, mesmo curto, não é substituído pela retomada.
+        partes = salvo.split("\n---\n", 1)
+        corpo_salvo = partes[1].lstrip().split("\n", 1) if len(partes) == 2 else []
+        if len(corpo_salvo) != 2 or corpo_salvo[1].strip():
+            return "pulado", None
+        anterior_vazio = salvo
     if bloqueado.is_set():
         return "fonte_bloqueada", None
     url = r["LinkTextoAtualizado"] or r["LinkTextoOriginal"]
@@ -120,7 +129,7 @@ def processar(r):
     except ET.ParseError:
         conteudo = ""
     # A página HTML oficial também serve o original; nunca trocar uma compilação por original.
-    if not conteudo.strip() and not r["LinkTextoAtualizado"]:
+    if len(re.sub(r"\W", "", html_para_md(conteudo))) < 20 and not r["LinkTextoAtualizado"]:
         url_html = f"https://www.almg.gov.br/legislacao-mineira/texto/{r['Tipo']}/{r['Numero']}/{r['Ano']}/"
         if r["Complemento"]:
             url_html += "?comp=" + urllib.parse.quote(r["Complemento"])
@@ -156,12 +165,19 @@ def processar(r):
         ("data", data),
         ("ementa", " ".join((r["Ementa"] or "").split())),
         ("situacao", situacao.capitalize()),
-        ("revogada", situacao.upper().startswith("REVOGAD")),
+        ("revogada", {"revogada": True, "revogado": True, "vigente": False, "em vigor": False}.get(situacao.strip().lower())),
         ("versao_texto", "atualizada" if r["LinkTextoAtualizado"] else "original"),
         ("fonte", url.replace("conteudo=true&", "")),
     ]
     if r["DataLegislacao"] and not data:
         meta.append(("data_na_fonte", r["DataLegislacao"]))
+    if anterior_vazio is not None:
+        backup = os.path.join(RAIZ_ESTADUAIS, UF, "_fonte", "auditorias", "reparos-vazios",
+                              f"{slug}.md.gz")
+        os.makedirs(os.path.dirname(backup), exist_ok=True)
+        if not os.path.exists(backup):
+            with gzip.open(backup, "wb") as f:
+                f.write(anterior_vazio.encode("utf-8"))
     gravar(md, fonte, conteudo, meta, f"# {titulo}\n\n{corpo}")
     return "ok", None
 

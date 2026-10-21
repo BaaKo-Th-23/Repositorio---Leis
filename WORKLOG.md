@@ -1437,3 +1437,9 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
   na verificação adicional. Whitespace: 767 hardbreaks exatos de dois espaços
   e uma ocorrência só de linhas vazias no EOF, conferidos por SHA e linha.
   Demais verificações de whitespace passaram, sem modificar texto normativo.
+### Bahia: 19.857 normas e preservação de tabelas
+
+- Lote final v2 confrontado por SHA, identidade e fonte; aliases e objetos/anexos sem representação comprovada ficaram retidos. Recibo em scripts/dados/publicacao-ba19857-20261020.json.
+- Auditoria do index: 19.857 normas, zero erros e avisos. Código estadual: 48 testes; guard federal v4: 44 testes, com histórico dos controles anteriores preservado.
+- Foram conferidos 1.325 hardbreaks exatos, incluindo seis linhas vazias com dois espaços, sem alterar corpos.
+- Overlay federal 003 acrescenta 581 pendências publicadas verificadas por SHA de texto e fonte; registro passa de 678 para 1.259, sem apagar documentos ou inferir revogação.

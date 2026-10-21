@@ -8,16 +8,26 @@ Uso:
 import collections
 import datetime as dt
 import hashlib
+import gzip
 import json
 import os
 from pathlib import Path
 import re
 import sys
+import subprocess
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 from comum import (  # noqa: E402
     RAIZ_ESTADUAIS, Rede, _ACENTOS, caminhos, canonico, documento_para_md, executar, gravar,
+    extrair_texto, html_para_md, imagem_bruta,
 )
+
+from integridade_texto import motivo_retencao
+from avisos_fonte import avisos_de_omissao
+from anexos_fonte import remissoes_sem_representacao
+from pdf_texto_fiel import conferir_visuais_pdf, extrair_camada_textual
+from visuais_fonte import exigir_sem_imagem_omitida
+
 
 HOSTS = {
     "AM": "sapl.al.am.leg.br",
@@ -190,6 +200,33 @@ def reconciliar(uf, aplicar=False):
     return pares
 
 
+def converter_anexo_sem_omissoes(bruto, url):
+    """Preserva números do PDF e retém conteúdo visual sem prova própria."""
+    try:
+        if bruto.startswith(b"%PDF"):
+            conferir_visuais_pdf(bruto)
+            corpo, _ = extrair_camada_textual(bruto)
+        elif imagem_bruta(bruto):
+            return None, "imagem normativa exige OCR e conferência de identidade próprios"
+        else:
+            html, texto = extrair_texto(bruto, url)
+            if html is None:
+                return None, "anexo sem HTML verificável; exige extração própria"
+            exigir_sem_imagem_omitida(html)
+            corpo = html_para_md(html)
+        if len(re.sub(r"\W", "", corpo)) < 80:
+            return None, "anexo sem texto normativo suficiente"
+        if motivo_retencao(corpo):
+            return None, motivo_retencao(corpo)
+        if avisos_de_omissao(corpo):
+            return None, "fonte declara material normativo não reproduzido"
+        if remissoes_sem_representacao(corpo):
+            return None, "remissão a anexo próprio sem representação identificável"
+        return corpo, None
+    except (ValueError, OSError, subprocess.SubprocessError) as exc:
+        return None, str(exc)
+
+
 def processar_factory(uf, tipos):
     def processar(n):
         bruto = tipos[str(n["tipo"])]
@@ -224,7 +261,28 @@ def processar_factory(uf, tipos):
         st, bruto, _ = rede.get(url)
         if st != 200 or not bruto:
             return "sem_texto", {"id": n["id"], "url": url, "http": st}
-        corpo, motivo = documento_para_md(bruto, url)
+        # Guardar também as fontes retidas evita redownload e permite recuperação posterior.
+        Path(fonte).parent.mkdir(parents=True, exist_ok=True)
+        if Path(fonte).exists():
+            try:
+                with gzip.open(fonte, "rb") as arquivo:
+                    anterior = arquivo.read()
+            except (OSError, EOFError):
+                anterior = None
+            if anterior != bruto:
+                divergente = Path(RAIZ_ESTADUAIS) / uf / "_fonte" / "auditorias" / "anexos-divergentes" / (slug + "-" + hashlib.sha256(bruto).hexdigest() + ".gz")
+                divergente.parent.mkdir(parents=True, exist_ok=True)
+                with gzip.open(divergente, "wb") as arquivo:
+                    arquivo.write(bruto)
+                return "sem_texto", {"id": n["id"], "url": url,
+                                     "motivo": ("cache anterior ilegível; candidato atual preservado separadamente"
+                                                if anterior is None else
+                                                "cache anterior diverge do anexo atual; ambos preservados"),
+                                     "nova_fonte": str(divergente)}
+        else:
+            with gzip.open(fonte, "wb") as arquivo:
+                arquivo.write(bruto)
+        corpo, motivo = converter_anexo_sem_omissoes(bruto, url)
         if corpo is None:
             return "sem_texto", {"id": n["id"], "url": url, "motivo": motivo}
         titulo = n["__str__"]
@@ -236,6 +294,7 @@ def processar_factory(uf, tipos):
             ("data", n.get("data") or ""),
             ("ementa", " ".join((n.get("ementa") or "").split())),
             ("publicacao", n.get("veiculo_publicacao") or ""),
+            ("revogada", None),
             ("versao_texto", "arquivo anexado ao SAPL; edição e compilação não verificadas"
              if pasta == "constituicao" else "original (arquivo anexado ao SAPL)"),
             ("fonte", f"https://{HOSTS[uf]}/norma/{n['id']}"),

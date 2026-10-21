@@ -5,10 +5,12 @@ Texto: M0100099.asp traz um iframe com o PDF da norma (filerepository/repLegis),
 """
 import html as htmllib
 import http.cookiejar
+from html.parser import HTMLParser
 import json
 import os
 import re
 import sys
+import subprocess
 import time
 import urllib.error
 import urllib.parse
@@ -18,6 +20,10 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."
 from comum import (  # noqa: E402
     RAIZ_ESTADUAIS, UA, Rede, caminhos, decodificar, documento_para_md, executar, gravar, html_para_md,
 )
+
+from avisos_fonte import avisos_de_omissao
+from pdf_texto_fiel import conferir_visuais_pdf, extrair_camada_textual
+from visuais_fonte import exigir_sem_imagem_omitida
 
 UF = "RS"
 B = "https://www.al.rs.gov.br/legis/M010/"
@@ -37,12 +43,70 @@ TIPOS = {
 }
 CABECALHO = {"Assembleia Legislativa do Estado do Rio Grande do Sul", "Sistema LEGIS - Texto da Norma",
              "Carregando a página. Aguarde...", "Carregando a página. Aguarde ..."}
+BRASOES_LEGIS_SHA256 = {
+    "3623056bc283f74acf9baff539fd64a3ea4525d0c4698b601099984ff0da5c1c",
+    "3f43a31003be03369ace78d9d98c08cfc1ef716928681365559f39dfac24fc85",
+    "8b4827fcf5ec584241668661f5e3b5e326659243f93dc2a41d4fb99a47e512dd",
+    "a0f97b976f0ff8a59e8bb2983a1ae64a95a263d0d516f339c9e6b786ff2061f5",
+    "d02ad5068bea8d90d536a4acb877100d4251286c0a1ba2cf48e6a0304ac84cac",
+}
+
 rede = Rede(rps=3)
 LINHA = re.compile(
     r'name="Hid_NumeroNorma\d+" value="([^"]*)".*?name="Hid_IdNorma\d+" value="(\d+)".*?'
     r'<td[^>]*class="TextoMenor2"[^>]*>\s*([\d/]+)\s*</td>\s*<td[^>]*class="TextoMenor2"[^>]*>(.*?)</td>',
     re.S,
 )
+
+
+class _CelulasTextoNorma(HTMLParser):
+    """O LEGIS antigo põe o cabeçalho e depois a norma em duas células próprias."""
+    def __init__(self, texto):
+        super().__init__(convert_charrefs=False)
+        self.texto = texto
+        self.linhas = [0] + [m.end() for m in re.finditer("\n", texto)]
+        self.profundidade = 0
+        self.inicio = None
+        self.nivel = None
+        self.celulas = []
+
+    def posicao(self):
+        linha, coluna = self.getpos()
+        return self.linhas[linha - 1] + coluna
+
+    def handle_starttag(self, tag, attrs):
+        if tag not in ("td", "th"):
+            return
+        self.profundidade += 1
+        attrs = dict(attrs)
+        if (self.inicio is None and tag == "td"
+                and (attrs.get("valign") or "").lower() == "top"
+                and attrs.get("colspan") == "2"):
+            self.inicio = self.posicao() + len(self.get_starttag_text())
+            self.nivel = self.profundidade
+
+    def handle_endtag(self, tag):
+        if tag not in ("td", "th"):
+            return
+        if self.inicio is not None and self.profundidade == self.nivel:
+            self.celulas.append(self.texto[self.inicio:self.posicao()])
+            self.inicio = self.nivel = None
+        self.profundidade -= 1
+
+
+def corpo_html_legis(texto):
+    """Extrai a última célula de texto da estrutura conhecida, preservando anexos.
+
+    O logo, a impressora e os botões estão fora dessa célula. Imagens e tabelas
+    normativas dentro dela permanecem, inclusive os seus rowspan/colspan.
+    """
+    if not re.search(r'class=["\'][^"\']*\bform-mais-info\b', texto, re.I):
+        return None
+    parser = _CelulasTextoNorma(texto)
+    parser.feed(texto)
+    if parser.inicio is not None or len(parser.celulas) < 2:
+        return None
+    return parser.celulas[-1]
 
 
 class SemRedirect(urllib.request.HTTPRedirectHandler):
@@ -133,9 +197,39 @@ def processar(it):
     else:  # normas antigas: o texto vem na própria página, em HTML
         url = f"{B}M0100099.asp?Hid_Tipo=TEXTO&Hid_TodasNormas={it['id']}&hTexto=&Hid_IDNorma={it['id']}"
         doc = bruto
-    corpo, motivo = documento_para_md(doc, url, ctype, CABECALHO)
+    documento_conversao = doc
+    html_legis = False
+    if not doc.startswith(b"%PDF"):
+        html = decodificar(doc, ctype)
+        if "form-mais-info" in html:
+            fragmento = corpo_html_legis(html)
+            if fragmento is None:
+                return "sem_texto", {"id": it["id"], "url": url,
+                                     "motivo": "campo normativo LEGIS sem fechamento comprovado"}
+            try:
+                exigir_sem_imagem_omitida(fragmento)
+            except ValueError as exc:
+                return "sem_texto", {"id": it["id"], "url": url, "motivo": str(exc)}
+            documento_conversao = fragmento.encode("utf-8")
+            html_legis = True
+    if doc.startswith(b"%PDF"):
+        try:
+            # Brasão 46×64 do cabeçalho LEGIS inspecionado; qualquer outra imagem requer revisão.
+            conferir_visuais_pdf(doc, dimensoes_interface={(46, 64)},
+                                 hashes_interface=BRASOES_LEGIS_SHA256)
+            corpo, _ = extrair_camada_textual(doc)
+            motivo = None
+        except (ValueError, OSError, subprocess.SubprocessError) as exc:
+            corpo, motivo = None, str(exc)
+    else:
+        corpo, motivo = documento_para_md(documento_conversao, url,
+                                         "text/html; charset=utf-8" if html_legis else ctype,
+                                         CABECALHO)
     if corpo is None:
         return "sem_texto", {"id": it["id"], "url": url, "motivo": motivo}
+    if avisos_de_omissao(corpo):
+        return "sem_texto", {"id": it["id"], "url": url,
+                             "motivo": "fonte declara material normativo não reproduzido"}
     numero_fmt = f"{int(it['numero']):,}".replace(",", ".") if it["numero"].isdigit() else it["numero"]
     titulo = f"{nome} nº {numero_fmt}, de {it['data']}"
     meta = [
@@ -145,7 +239,9 @@ def processar(it):
         ("numero", it["numero"]),
         ("data", f"{a}-{m}-{d}" if a else ""),
         ("ementa", it["ementa"]),
-        ("versao_texto", "PDF da Assembleia Legislativa (pode conter texto compilado)"),
+        ("revogada", None),
+        ("versao_texto", "HTML do Sistema LEGIS (edição e compilação não verificadas)"
+         if html_legis else "PDF da Assembleia Legislativa (pode conter texto compilado)"),
         ("fonte", f"{B}M0100018.asp?Hid_IdNorma={it['id']}&Texto=&Origem=1"),
         ("arquivo", url),
     ]
@@ -174,6 +270,7 @@ def constituicao():
         ("uf", UF),
         ("tipo", "Constituição Estadual"),
         ("data", "1989-10-03"),
+        ("revogada", None),
         ("versao_texto", "compilada (texto vigente)"),
         ("fonte", CONST_PAGINA),
         ("arquivo", CONST_URL),
