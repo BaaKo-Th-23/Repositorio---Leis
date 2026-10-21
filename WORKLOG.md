@@ -1521,4 +1521,12 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Do pacote final de 11.900 decretos, trinta com separadores literais de sinais de igual ficaram fora para prova e representacao Markdown fiel. Nenhum marcador foi apagado nem verificacao de conflito desabilitada. Recibo exato publicacao-pe-filtrado-20261020-002.json.
 - Nos candidatos aprovados, residuos tecnicos finais fora do campo fechado foram retirados com preimagem/backup, sem mudar texto normativo ou metadados. Fontes, tabelas, objetos e identidade conferidos; lotes disjuntos confrontados com o HEAD.
 - Os demais 20.387 candidatos do inventario ficaram retidos, sobretudo tabelas/celulas divergentes, avisos de anexos externos, tachados e imagens; nao foram contados pela existencia do arquivo.
-- Auditoria do index sem erros ou avisos. Vinte e oito hardbreaks exatos provados; demais verificacoes de whitespace passaram.
+- Auditoria do index: zero erros e dez avisos de data_publicacao ausente, sem inventar dados. Vinte e oito hardbreaks exatos provados; demais verificacoes de whitespace passaram.
+
+### Reguladores: mais 8.865 normas e gates reproduziveis
+
+- Recibo publicacao-reguladores8865-20261020.json: 4.512 DOU e 4.353 RFB. Fontes/MD reconferidos; gates publicados em scripts/gates_reguladores_cache.py, com sete testes e manifestov3 imutavel.
+- Origem API/HTML comprovada pelo registro, sem confundir atos DOU da Receita com JSON SIJUT por causa da pasta rfb. Identidades numericas incompletas ficam retidas para qualificacao; coincidencias com documentos ja rejeitados nao reservam identidade como se publicados fossem.
+- Confronto independente de 98.282 identidades do cache com objetos do HEAD: zero divergencias; recibo comprimido registra OIDs, metadados e commit. Suspeitas de objetos, visuais, remissoes e placeholders permanecem documentadas.
+- Auditoria do index sem erros ou avisos; 102 hardbreaks exatos, incluindo uma linha vazia com dois espacos, provados. Demais verificacoes de whitespace passaram.
+- Corrigida a descricao da auditoria PE anterior: zero erros, com dez avisos de campo data_publicacao ausente. Nenhuma data foi inventada.
