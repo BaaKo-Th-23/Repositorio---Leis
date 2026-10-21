@@ -1645,3 +1645,9 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 
 - Coletor RFB reconhece HTTP 429, além de 401/403, e encerra a fonte quando há recusa explícita. Classificação usa código HTTP ou mensagem de status, sem confundir o número de um ato com um erro.
 - Três testes passaram, cobrindo códigos, mensagens e identificadores sem recusa; diffcheck passou. Catálogo congelado e cache anterior preservados na retomada.
+
+### Federal: mais 3.548 decretos com provas integrais
+
+- Seleções 008 v3 e 009 v3 acrescentam 1.778 e 1.770 normas, respectivamente. As 151 promoções privadas só ocorreram após conferir fontes, candidatos e todas as preimagens. Identidades por URN e número completo/ano sem colisão com HEAD ou entre si.
+- Fontes HTML e metadados oficiais completos, com preimagens alteradas, preservados em dois arquivos primários gzip. Gates de anexos/modelos, visuais, notas de literalidade de fechos e fidelidade de pontuação/números em CommonMark aprovados nas seleções congeladas.
+- Auditoria de 3.548 documentos do index sem erros ou avisos; SHA e escopo dos 3.726 caminhos conferidos. Diffcheck integral passou sem dispensas. Metas mantidas.
