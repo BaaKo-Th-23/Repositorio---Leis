@@ -43,6 +43,20 @@ def anexo_proprio_ausente(corpo, parsed):
     fechamento = next((i for i, b in enumerate(blocks)
                         if re.match(r'^(?:brasilia|rio de janeiro|capital federal)(?:[-,\s]+d\.?f\.?)?[,.;\s]+(?:em\s*)?\d', b)), None)
     if fechamento is None:
+        # A terminal literal placeholder with a bibliographic pointer is not the
+        # promised own annex, even when the source omits the presidential date.
+        placeholder = re.search(r'(?:<<|«)\s*(?:anexo|tabela|quadro)s?\s*(?:>>|»)(.*)$', clean, re.S)
+        if placeholder and not parsed.structure:
+            pointer = placeholder[1].strip()
+            citation = not pointer or bool(re.fullmatch(r'(?:clbr|colecao das leis)\s*(?:(?:vol(?:ume)?|ano|pag(?:ina)?|tabela|anexo|quadro)[. ]*|\d+[. ,;:/–-]*)+', pointer))
+            articles = [b for b in blocks if re.match(r'^art(?:igo)?\.?\s*(?:\d|unico)', b)]
+            for article in articles:
+                own = re.search(r'\b(?:fica[m]?|sao|e)\s+aprovad[oa]s?\b', article) and re.search(r'\banex[oa]s?\b|que com est[ea] baixa', article)
+                external = re.search(r'anex[oa]s?\s+(?:ao|aos|do|dos)\s+(?:decretos?|leis?)\s+n', article)
+                if citation and own and not external:
+                    return {'motivo': 'Aprovação própria com placeholder terminal e nenhuma reprodução do suplemento; a indicação bibliográfica não é o conteúdo do anexo, mesmo sem fecho reconhecível.',
+                            'remissao': article, 'lacuna': placeholder[0], 'fecho': None,
+                            'estado': 'ausencia_na_transcricao'}
         return None
     principal = '\n'.join(blocks[:fechamento])
     explicit = re.search(r'que com est[ea] baixa[m]?|que a est[ea] acompanha|acompanha (?:este|o presente) decreto|anex[oa]s? a este decreto|anex[oa]s? ao presente decreto', principal)

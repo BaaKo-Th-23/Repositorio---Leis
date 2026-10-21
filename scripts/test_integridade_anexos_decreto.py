@@ -82,4 +82,14 @@ class Anexos(unittest.TestCase):
   text=MAIN.replace('Fica aprovado o Regimento que com êste baixa',
                     'Fica substituída pelo modelo anexo denominado Guia de Embarque a atual Guia')
   self.assertIsNone(gate(text+'\n\nANEXO\n\nGUIA DE EMBARQUE\n\nNome do exportador: ______ Endereço: ______ Quantidade: ______',P))
+ def test_anexo_bibliografico_sem_fecho_nao_e_conteudo(self):
+  text='DECRETO Nº 34.126\n\nArt. 1º Fica aprovada, na forma da relação anexa, a Tabela Numérica Especial.\n\nArt. 2º Este Decreto entra em vigor na data de sua publicação.'
+  for label in ['<<ANEXO>> CLBR Vol. 08 Ano 1953 Pág. 250 Tabela.', '&lt;&lt;ANEXO>>CLBR Vol. 08 Ano 1953 Pág. 250 Tabela.', '&amp;lt;&amp;lt;ANEXO&amp;gt;&amp;gt;']:
+   self.assertEqual(gate(text+'\n\n'+label,P)['estado'],'ausencia_na_transcricao')
+ def test_anexo_externo_sem_fecho_nao_retem(self):
+  text='Art. 1º Fica aprovada a utilização da relação anexa ao Decreto nº 10, de 1950.\n\n<<ANEXO>> CLBR Vol. 08 Ano 1953 Pág. 250 Tabela.'
+  self.assertIsNone(gate(text,P))
+ def test_tabela_reproduzida_sem_fecho_nao_retem(self):
+  text='Art. 1º Fica aprovada a tabela anexa.\n\n<table><tr><td>Cargo</td><td>10</td></tr></table>\n\n<<ANEXO>>'
+  self.assertIsNone(gate(text,SimpleNamespace(visual=[],structure=[('table',())])))
 if __name__=='__main__':unittest.main()

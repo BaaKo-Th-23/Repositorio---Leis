@@ -37276,30 +37276,6 @@
       }
     },
     {
-      "path": "federal/decretos/1991/dec-245-1991-10-28.md",
-      "sha256_md": "f667f6c69909c6c1f2dbe447e9a0436b0b623d32de87e84e69d99ede0717f038",
-      "estado": "modelo_proprio_ausente_na_transcricao",
-      "motivo": "Suplemento próprio referido pelo decreto ausente da transcrição: somente fecho, assinaturas, nota ou rótulo/link vazio, sem corpo do objeto.",
-      "evidencia": {
-        "manifesto": "federal/_overlay_modelos_proprios_anteriores_20261020_002.json",
-        "sha256_manifesto": "317ab68dcaf4934f2c1e2e07db1a19ca998eaa4f0235a5f0d588b7138743197a",
-        "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto:1991-10-28;245",
-        "sha256_fonte_html": "63f680221a16babbdce2716c09ffbee9587ccbbe270a84e974a7387c6904a6ce",
-        "trecho": {
-          "motivo": "Suplemento próprio referido pelo decreto ausente da transcrição: somente fecho, assinaturas, nota ou rótulo/link vazio, sem corpo do objeto.",
-          "remissao": "u da observacao cautelar de protecao do liberado; a falta de informacoes podera ser suprida por outro documento idoneo.\nart. 9° os orgaos centrais da administracao penitenciaria preencherao, ate 31 de janeiro de 1992, quadro de acordo com o modelo anexo, encaminhando-o ao departamento de assuntos penitenciarios da secretaria nacional dos direitos da cidadania e justica do ministerio da justica.\nart. 10. este decreto entra em vigor na data de sua publicacao.",
-          "fecho": "brasilia, 28 de outubro de 1991; 170° da independencia e 103° da republica.",
-          "apos_fecho": [
-            "fernando collor",
-            "jarbas passarinho",
-            "<<anexo>>",
-            "tabelas"
-          ],
-          "estado": "ausencia_na_transcricao"
-        }
-      }
-    },
-    {
       "path": "federal/decretos/1965/dec-55551-1965-01-12.md",
       "sha256_md": "6d5c25518a8cb5d55e9c53c561c52b9393c408880101d39e88e34fbef56a08d5",
       "estado": "modelo_proprio_ausente_na_transcricao",

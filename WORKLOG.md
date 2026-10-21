@@ -1664,3 +1664,10 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Do lote 012, cinco mil candidatos passaram pela íntegra da fonte; 3.966 passaram também pelos gates suplementares. Após comparar CommonMark/GFM integral, 3.537 têm igualdade direta e um tem contador efetivo de lista comprovado pela AST. Outros 428 continuam retidos por divergência, sem afirmar ausência material na publicação.
 - Reservas atualizadas para incluir todas as publicações anteriores e os 966 DOU em HTML nativo. Corpos, fontes e inexistência no HEAD reconferidos; HTML primário completo preservado em arquivo gzip de auditoria. Não houve alteração normativa.
 - Auditoria do index: 3.538 documentos sem erros ou avisos; SHA e escopo dos 3.548 caminhos conferidos, três controles já idênticos em HEAD. Diffcheck integral passou sem dispensas; metas mantidas.
+
+### Federal: 3.758 novos decretos e modelo de 1991 recuperado
+
+- Seleções 010 v3 e 011 v3 acrescentam 1.896 e 1.862 normas. As 181 promoções privadas (notas contextuais e escapes de markup comprovados) ocorreram após reconferir todas as preimagens e os candidatos. Identidades completas/URN sem colisão; HTML primário, metadados oficiais e preimagens alteradas arquivados integralmente.
+- Guard adicional reconhece aprovação de suplemento com placeholder terminal e indicação bibliográfica mesmo sem fecho reconhecível, sem confundir remissão externa ou anexo presente. Vinte e seis testes passaram. Caso 34.126/1953 continua retido, com fonte preservada.
+- Modelo do Decreto 245/1991 recuperado na CLBR oficial, p. 2428. Fac-símile inspecionado por ROOT; estrutura do cabeçalho, 25 linhas e 132 posições vazias preservadas, sem alegar divisórias verticais inexistentes. Corpo principal anterior byte a byte igual; retirado do registro por SHA exato após promoção. Pendências caem de 2.150 para 2.149; reparo não é norma nova.
+- Auditoria do index: 3.759 documentos, zero erros ou avisos. SHA e escopo dos 3.984 caminhos conferidos; PDFs do modelo tratados como binários por regra específica, sem alterar bytes. Diffcheck integral passou; metas mantidas.
