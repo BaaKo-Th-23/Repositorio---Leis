@@ -1,10 +1,10 @@
 # Progresso
 
-Gerado em 20/10/2026 21:03:14 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 20/10/2026 21:04:55 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Cada série contribui até sua própria meta. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**795.770 documentos · 769.981 / ~11.768.799 nas séries com meta (6.5%) · 25 sem meta**
+**809.740 documentos · 783.951 / ~11.768.799 nas séries com meta (6.7%) · 25 sem meta**
 
 ![progresso](progresso.svg)
 
@@ -91,7 +91,7 @@ Planalto, Senado, Câmara e assembleias.
 
 Diários oficiais e portais de órgãos e tribunais.
 
-373.786 documentos · 354.363 / ~861.320 nas séries com meta (41.1%) · 0 sem meta
+387.756 documentos · 368.333 / ~861.320 nas séries com meta (42.8%) · 0 sem meta
 
 ### Infralegal — tributário
 
@@ -268,17 +268,17 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal estadual
 
-289.533 documentos · 281.454 / ~577.054 nas séries com meta (48.8%) · 0 sem meta
+303.503 documentos · 295.424 / ~577.054 nas séries com meta (51.2%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Decretos dos governadores (27 UF) | 206.830 | 400.000 | `estaduais/*/decretos`, `estaduais/*/decretos-nao-numerados` | Casas Civis e diários oficiais estaduais |
+| 🟦 | Decretos dos governadores (27 UF) | 220.139 | 400.000 | `estaduais/*/decretos`, `estaduais/*/decretos-nao-numerados` | Casas Civis e diários oficiais estaduais |
 | ⬜️ | Regulamentos do ICMS (RICMS das 27 UF) | 0 | 27 | `estaduais/*/regulamentos` | Secretarias de Fazenda |
 | 🟦 | Instruções normativas e portarias das SEFAZ | 1.350 | 50.000 | `estaduais/*/instrucoes-normativas` | Secretarias de Fazenda |
 | ⬜️ | Resoluções e decisões normativas dos TCE | 0 | 10.000 | `estaduais/*/resolucoes-tce` | Tribunais de Contas estaduais |
 | ⬜️ | Resoluções e provimentos dos TJ e das Corregedorias | 0 | 8.000 | `estaduais/*/resolucoes-tj` | Tribunais de Justiça |
 | 🟦 | Regimentos internos das Assembleias | 18 | 27 | `estaduais/*/regimentos` | Assembleias |
-| 🟦 | Decretos legislativos estaduais | 15.339 | 20.000 | `estaduais/*/decretos-legislativos` | Assembleias (SAPL e sistemas próprios) |
+| 🟦 | Decretos legislativos estaduais | 16.000 | 20.000 | `estaduais/*/decretos-legislativos` | Assembleias (SAPL e sistemas próprios) |
 | ✅ | Resoluções das Assembleias | 33.079 | 25.000 | `estaduais/*/resolucoes` | Assembleias (SAPL e sistemas próprios) |
 | 🟦 | Portarias das administrações estaduais e distrital | 30.220 | 60.000 | `estaduais/*/portarias` | SINJ-DF, Legisla Goiás e sistemas equivalentes |
 | 🟦 | Deliberações, súmulas administrativas, provimentos e pareceres normativos | 2.697 | 4.000 | `estaduais/*/deliberacoes`, `estaduais/*/sumulas`, `estaduais/*/provimentos`, `estaduais/*/pareceres-normativos` | SINJ-DF, Legisla Goiás e sistemas equivalentes |

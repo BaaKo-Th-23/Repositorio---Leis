@@ -1369,3 +1369,14 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Auditoria do index: 20.000 documentos sem erros ou avisos. Foram preservados
   387.029 hardbreaks de dois espaços, com prova por SHA e linha; demais
   verificações de whitespace passaram.
+
+### São Paulo: conclusão da seleção v3 restante
+
+- Mais 13.970 normas inéditas, sem colisão com IDs do baseline ou dos lotes
+  anteriores; receipt individual em publicacao-sp-novos-002-20261020.json.
+- Dependências já publicadas foram descontadas por path e hash; nenhuma norma
+  histórica foi substituída. Os gates de imagens, anexo próprio e avisos
+  literais permanecem os mesmos da seleção v3 de 44.547 documentos.
+- Auditoria do index: 13.970 documentos sem erros ou avisos. Foram conferidos
+  199.430 hardbreaks de exatamente dois espaços, incluindo 6.152 linhas vazias;
+  corpo e hashes foram preservados. Demais verificações de whitespace passaram.
