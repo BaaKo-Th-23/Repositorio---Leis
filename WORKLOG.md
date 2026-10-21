@@ -1557,3 +1557,9 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - 1.816 normas ja publicadas estavam fora dos caminhos do plano: nomes historicos de tres ministerios e rubricas gerais do DOU. Orgao literal, fonte, OID e SHA dos documentos foram inventariados em escopos-historicos-reguladores-20261020.json. Nao sao novos documentos nem duplicacoes.
 - Quatro escopos de universo ainda desconhecido passam a ser discriminados separadamente, sem atribuir esses atos a metas estimadas de orgaos atuais. Todas as entradas anteriores foram comparadas por AST e permanecem intactas.
 - Soma das metas antes/depois:11.768.799. Dois testes de contagem, index, pendencias e teto por serie passaram; nenhum alvo foi reduzido e excesso de uma serie nao preenche outra.
+
+### Reguladores: 9.003 normas e controle visível de Pernambuco
+
+- Lote 008: 4.574 documentos DOU e 4.429 RFB aprovados contra fonte e identidade, com reservas dos lotes anteriores; 997 candidatos retidos. Corpos e fontes reconferidos por SHA antes da publicação.
+- Auditoria dos 9.003 documentos do index: zero erros ou avisos. Preservados e provados 1.594 hardbreaks exatos, nove linhas vazias com dois espaços e três avisos de EOF; demais verificações passaram.
+- Revisão mais estrita de Pernambuco registra 30 documentos publicados com falhas de apresentação, sem divergência numérica comprovada. Registro conservador passa a 2.166 pendências até reparo e nova prova contra fonte. Nenhuma meta foi reduzida.

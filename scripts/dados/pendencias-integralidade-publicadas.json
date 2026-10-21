@@ -37129,6 +37129,456 @@
         "fonte": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/dnn/dnn12932.htm",
         "sha256_fonte": "5c53acad8058553df72eb306e05b635284d77c4b9d46f5df69ae4887e891d0af"
       }
+    },
+    {
+      "path": "estaduais/PE/decretos/2013/dec-40127-2013-id14726.md",
+      "sha256_md": "7cd96dc86cbe56e3d45ea45877e8f26d98e10368ccbf1f712231e990a824ccad",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=14726&tipo=TEXTOATUALIZADO",
+        "sha256_fonte": "eacc2148ac7e353ccc6f4d0bc464f7aa484ed11ee48acbae17512d02e0ae6389",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2022/dec-52176-2022-id61502.md",
+      "sha256_md": "638d2b12341296455df05854f61a1ac5b3e5027fda269400786a3602f2d3596e",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=61502&tipo=TEXTOORIGINAL",
+        "sha256_fonte": "22d2f6595daa70c7a5a01e1b7360d2e21b968690d64fe00b5b93e8135c6b8b44",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2022/dec-52495-2022-id62355.md",
+      "sha256_md": "4c1582fd8c4b64cf3603fe33b123b35cc67a4b5899e132673f67ccaa0f1afb74",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=62355&tipo=TEXTOATUALIZADO",
+        "sha256_fonte": "f6419573dafb561af5faf42e155c77ce10918eaecfe1f67289413c8b6ad01fa5",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2022/dec-52183-2022-id61487.md",
+      "sha256_md": "6631833e6d1dbde6c5b1976bfd51a52569fb4e6a4fd9777040852579fb1737fe",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=61487&tipo=TEXTOORIGINAL",
+        "sha256_fonte": "9c80e0d274ea419af9f941722fe1caebd71588e871e1e4bb270694424d161548",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2022/dec-52643-2022-id62741.md",
+      "sha256_md": "0f9c4bb2c221812acb64718dbeb187910a2d28d16c470cdaed5dcf4ff9c185de",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=62741&tipo=TEXTOORIGINAL",
+        "sha256_fonte": "48f55f1d74fc9cc87760b1af0502ff7684cdd9a385da36751db8e3573eea002a",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2022/dec-52669-2022-id62765.md",
+      "sha256_md": "3538ec9c5fbfa47227d79733d14073b4625d41bcdda39cab7ed9474ec96088a3",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=62765&tipo=TEXTOORIGINAL",
+        "sha256_fonte": "91442ccbeda4c757b93f0b8a2b0e26b3a47a4698181219be3b45d2add8a90402",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2022/dec-52177-2022-id61503.md",
+      "sha256_md": "f6d8514775631a3dd4335ac8e08046a8cd7243a23309643264d34c792fd54539",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=61503&tipo=TEXTOORIGINAL",
+        "sha256_fonte": "bb8b4106f93e1cb5a77d059862329925dfde70f767bb360fbc6ead0d429c17fb",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2022/dec-52189-2022-id61509.md",
+      "sha256_md": "e03dea7275294c284097bd62e40dd9a1f00b4052ad75e1e11d0d24c85164c3a4",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=61509&tipo=TEXTOORIGINAL",
+        "sha256_fonte": "ad13161f6b096b9b4b3f9b74a0f3571fc9e510691cbfcf1acc7fffba9a782a04",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2022/dec-52178-2022-id61485.md",
+      "sha256_md": "48d1e9db7ccf53b4cdd4bce3a17bf5f2fab80e1aaccd74f6e1d150706dcbba83",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=61485&tipo=TEXTOORIGINAL",
+        "sha256_fonte": "7a13dcd1d8793310366bc799ab437ef3f2117c2aa27aa44cb28344ae6fb132d5",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2022/dec-53190-2022-id66923.md",
+      "sha256_md": "e13f5e601a8dee319ef1d8e453c6b16a814b039b5d6ccd37bc55dbd47abaa92a",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=66923&tipo=TEXTOORIGINAL",
+        "sha256_fonte": "58f383bdce3d36a9d421b81b69397c4dd980b6e56c49dab6b9bb4bb719ec6ff8",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2022/dec-52180-2022-id61504.md",
+      "sha256_md": "93021ae484bd14ebc023aa1dbba4e25c206e7882bcef45c3791bb81fb8f1ee78",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=61504&tipo=TEXTOORIGINAL",
+        "sha256_fonte": "c14e6130d8a7a3052bd0a91421a4730796881ea1b88a245c0bb5d17f2e154c61",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2022/dec-52185-2022-id61507.md",
+      "sha256_md": "f927565a933a29bb86b73bc6554444914316c733e04835acb090f5c43bc59f0a",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=61507&tipo=TEXTOORIGINAL",
+        "sha256_fonte": "04eac03c4ac1e5e583111d0095ac5aa0c467f7ec1f1f81914b155d54bc8b8241",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2022/dec-52726-2022-id62845.md",
+      "sha256_md": "0e2e45fb66476edb2bc801664c0df1c20d84d25b755e7339e69ffd64b9c8ce09",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=62845&tipo=TEXTOORIGINAL",
+        "sha256_fonte": "6016ca0b5993f7beb0391dc10fa1288eb197046ca62d8cc36482b93d1d4509f5",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2022/dec-52731-2022-id62850.md",
+      "sha256_md": "7766ffe57d5fb09aec5e3d884b9a888fc285f88432ddd8bea7c9ebe66372a1fa",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=62850&tipo=TEXTOORIGINAL",
+        "sha256_fonte": "2815fa44af488ab028a6ef4e20ce7ce977b718ea10d1a0280382a1aa6d0131b1",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2022/dec-52184-2022-id61506.md",
+      "sha256_md": "e5b9cb519511304096c065565a7073c79f08bcef6c351ec1b1aa5e7acb53aafd",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=61506&tipo=TEXTOORIGINAL",
+        "sha256_fonte": "b72727ff4cfe183b07e36629723485da0555b15ef8a22fd663c3766ff406fbd7",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2015/dec-41630-2015-id2884.md",
+      "sha256_md": "de7e9f6a9fe6afb642785950a4d4cc7c6b69469d441b0b88d7320f49ad817158",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=2884&tipo=TEXTOATUALIZADO",
+        "sha256_fonte": "7ff4f8ca55a7a1f7836651418a81fe78a1bc2367c73116a09dbccb275fe31aaf",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2012/dec-38543-2012-id16263.md",
+      "sha256_md": "bb0299c46e9a2310e1c2923b0369a64878db613d35a997b890432568f01b5ab3",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=16263&tipo=TEXTOATUALIZADO",
+        "sha256_fonte": "96a54c5dc1f4c3a8e15cc706c1aecb67c69ddc59a4a8ceb06670b05c2da2f39d",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2006/dec-28976-2006-id18468.md",
+      "sha256_md": "3f93dbe137168884b74270086e64f4493e9d3c3268b3dc66ba3a63aab8b09960",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=18468&tipo=TEXTOATUALIZADO",
+        "sha256_fonte": "86e5956c31fe06f3cf3b974e8addd743860ddc12f127f33335da0497a5279159",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2000/dec-22230-2000-id14664.md",
+      "sha256_md": "d48f251955f26dd4139d950b75d530f1fba455f7d8eebdfa7d9c10573bd4552e",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=14664&tipo=TEXTOATUALIZADO",
+        "sha256_fonte": "4b68515690f1bdc75f4e31a91da0c32cfb2f1f933521fc28419aeb92785ff3b8",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2009/dec-34270-2009-id670.md",
+      "sha256_md": "0c7a37e9c6912941734c32859c4fbc28a2a010cd532105faeda9128c937df1ee",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=670&tipo=TEXTOATUALIZADO",
+        "sha256_fonte": "21e2821f979a0b23c15b2212dd516a8f95b1cd0338246150d0e55820c20c64d9",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2009/dec-33102-2009-id24978.md",
+      "sha256_md": "abfbcb0e7d475e36b48b0fe10e9298b1a2ac0466a0cb170c243fe7b1fe6e06c7",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=24978&tipo=TEXTOATUALIZADO",
+        "sha256_fonte": "ce9cdf32d1cc6a36ee7370324db3652a8e92cdbd91e6cb89102f90a641f81466",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2010/dec-34727-2010-id23189.md",
+      "sha256_md": "db3b12688f60f8933bb198275bda59f9f6c7665cd50a29e71245dd3dcb1602d6",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=23189&tipo=TEXTOATUALIZADO",
+        "sha256_fonte": "f5dba0b4f5c20f909ae4a6702a9cfb3762dc1011a64b1c06750e1bfca9426896",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2010/dec-35802-2010-id21002.md",
+      "sha256_md": "1cc2ea80c27340d4b4b7a9f2ac09addd3ba4e6cc8f8b9c0fb673476335c293c1",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=21002&tipo=TEXTOATUALIZADO",
+        "sha256_fonte": "edf9d05ad05773638bc501eae3cd01e1969784649cf47466a5aa182cc236fbd2",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2021/dec-51027-2021-id56098.md",
+      "sha256_md": "5866604e98883331471c4930d7259176a9af10933a9be2aadb4806e544e934c6",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=56098&tipo=TEXTOORIGINAL",
+        "sha256_fonte": "77db6ccd08da1822ae58dbf8c848819b42192e0d1c2540ec7969c682c63c97cb",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2021/dec-50873-2021-id55768.md",
+      "sha256_md": "718cbb62aa2affdca272a8cbb970e13447682972e95fea145fc6ee59d08d5f9b",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=55768&tipo=TEXTOATUALIZADO",
+        "sha256_fonte": "e4ae21f65efafe8b7c81cafee19c9f61306980a3984f9ba26a4c14626110dbc6",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2021/dec-52001-2021-id61093.md",
+      "sha256_md": "0999cd401035fc21bff49f0ce45e8053b154faa9529edc5321695cde91e701b5",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=61093&tipo=TEXTOORIGINAL",
+        "sha256_fonte": "f61f29223d3b7df7025bfd4c67859aa5e73b5b7c636187de2be1f83601a68176",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2021/dec-51610-2021-id58315.md",
+      "sha256_md": "33d750cc701680161826a45071f92d996c420180348aca1cadb9bea0f2734005",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=58315&tipo=TEXTOORIGINAL",
+        "sha256_fonte": "791ca70c73d929d6113395ad77d2376a86d3da1a5ba486ec7dd4fbd0dd7b7b02",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2020/dec-49824-2020-id53539.md",
+      "sha256_md": "81d4bacb7084244e1f6e4781366c9395b9273f6c919f9583834cb1c0f19de695",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=53539&tipo=TEXTOORIGINAL",
+        "sha256_fonte": "d2fdc3372f55e19a40aa2ac66865366beb4d30fbed9d48cf38f10163b27b52f7",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/2011/dec-36297-2011-id19481.md",
+      "sha256_md": "d1e97ff7a00c2ed2978692190b0caa42b3b983cef27552ad1b7787584d35c8c6",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=19481&tipo=TEXTOATUALIZADO",
+        "sha256_fonte": "f54313aa3ff5114fcaf154c0b0bfcc2bbe0092891ab9cacee6f27886ded2fe8e",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
+    },
+    {
+      "path": "estaduais/PE/decretos/1998/dec-20837-1998-id22678.md",
+      "sha256_md": "fc6fb1296c9f1312ee0b182515c8d4d215ad966f3340ac0c005e165229341cbb",
+      "estado": "fidelidade_visivel_em_revisao",
+      "motivo": "Apresentacao Markdown diverge do HTML oficial; falha de formatacao, sem ausencia comprovada de norma/anexo ou divergencia numerica. Aguardar reparo com fonte e backup.",
+      "evidencia": {
+        "manifesto": "scripts/estados/manifestos/pe11900-fidelidade-visivel-v2-20261020-002.json",
+        "sha256_manifesto": "209f3fa0c90e3b42826ecb34adeef27c251df3b80003183b6ecbfade5f8ccc95",
+        "fonte": "https://legis.alepe.pe.gov.br/texto.aspx?id=22678&tipo=TEXTOATUALIZADO",
+        "sha256_fonte": "2e00accb89b064ca440465e41e46237bd383a9d6b2e323bd0155bc5a672ce244",
+        "problemas": [
+          "v2: texto visível diverge diretamente do HTML oficial, preservando pontuação"
+        ]
+      }
     }
   ]
 }
