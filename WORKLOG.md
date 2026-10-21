@@ -1824,3 +1824,9 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - ROOT leu o adaptador serial isolado e repetiu 225 replays completos e três testes. O resolvedor de identidade recebe apenas a prova específica; os demais gates PE de íntegra, fonte, visuais, tabelas e sinais continuam iguais. Fontes/candidatos integrais e cadeia de código congelados antes de criar os novos canônicos; nenhum coletor genérico ou pacote anterior alterado.
 - Confronto independente com 50.162 cabeçalhos inteiros lidos por OID: zero aliases por ID oficial e pasta/tipo/número/ano. Todos os 225 destinos ausentes; árvore PE permaneceu igual entre HEAD do inventário e HEAD da promoção. Fontes oficiais e situação atribuída à fonte preservadas.
 - SHA/escopo dos 704 caminhos preparados conferidos. Auditoria normativa: 225 sem erros/avisos; diffcheck integral sem exceções. Metas inalteradas.
+
+### Reguladores: 4.281 atos e baseline de 217.046 blobs
+
+- DOU024: 4.180 comparações diretas, 92 contadores AST comprovados e nove recuperações de HTML nativo integral, sem alterar metadados/H1/datas salvo campo explícito de representação. Fontes primárias inteiras, preimagens e candidatos arquivados antes das promoções. Os demais alertas de fonte, identidade, assinatura, visuais e estruturas continuam retidos.
+- Baseline v4 lê por OID os 217.046 cabeçalhos completos do HEAD a48926cd, sem omissões ou truncamento. Caminhos NUL, cache, vínculos path/OID e gerador exatos preservados. Confronto final dos 4.281 com essa baseline e entre componentes, por URL e identidade pasta/tipo/número/data, sem coincidências.
+- ROOT conferiu SHA/escopo dos 4.301 caminhos preparados, três controles idênticos em HEAD. Auditoria normativa: 4.281 sem erros/avisos. Diffcheck integral aprovado, sem dispensas. Arquivos primários em partes manejáveis, sem truncamento de registros. Metas inalteradas; não se infere vigência.
