@@ -1491,11 +1491,19 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 
 - Consolidado municipal129-v2: 109 adicionais, nove DOCX simples e Lei Organica de Joao Pessoa; dez reparos publicados (nove LOs e tributaria de SP), sem sobreposicao de caminhos. Fontes seletivas e 887 artefatos por SHA; controles do proprio consolidado incluidos.
 - Os 87 grupos tachados das LOs e dois trechos de SP foram conferidos visualmente. Todo texto/notas preservado e corpo anterior reversivel exatamente. Notas condicionais de efeitos tributarios nao foram convertidas em afirmacao de vigencia.
-- Overlay58-v2 corrige classificacao indevida de Arapongas4839; somente4841/4842 divergem de tipo/data. Dois casos de cor sem contexto tambem ficam pendentes. Quatro documentos publicados conferidos pelo HEAD foram acrescentados ao registro, total2.135, sem apagar corpos.
+- Overlay58-v2 corrige classificacao indevida de Arapongas 4839; somente 4841/4842 divergem de tipo/data. Dois casos de cor sem contexto tambem ficam pendentes. Quatro documentos publicados conferidos pelo HEAD foram acrescentados ao registro, total 2.135, sem apagar corpos.
 - Codigo revisado e 53 testes passaram. Auditoria generica129 sem erros/avisos e auditoria municipal completa sem problemas. 127 ocorrencias de EOF contem apenas linhas vazias, provadas no index; demais verificacoes de whitespace passaram.
 
 ### Reguladores: mais 8.806 normas
 
-- De 5.000 candidatos DOU e5.000 RFB aprovados nos controles de fonte,8.806 passam gates adicionais:4.193 DOU e4.613 RFB. Recibo scripts/dados/publicacao-reguladores8806-20261020.json, com fonte/cache/MD reconferidos.
+- De 5.000 candidatos DOU e 5.000 RFB aprovados nos controles de fonte, 8.806 passam gates adicionais: 4.193 DOU e 4.613 RFB. Recibo scripts/dados/publicacao-reguladores8806-20261020.json, com fonte/cache/MD reconferidos.
 - Identidades normalizadas por area/tipo/numero/data, remissoes externas, representacao de objetos aprovados e placeholders foram conferidos; retencoes preservadas com motivo, sem inferir ausencia definitiva.
-- Auditoria do index sem erros ou avisos e zero placeholders suspeitos.3.149 hardbreaks exatos, incluindo28linhas vazias com dois espacos, provados; demais verificacoes de whitespace passaram.
+- Auditoria do index sem erros ou avisos e zero placeholders suspeitos.3.149 hardbreaks exatos, incluindo 28 linhas vazias com dois espacos, provados; demais verificacoes de whitespace passaram.
+
+### Complementos: 103 reparos federais e quatro novas normas
+
+- Mais 102 recuperacoes de tabelas federais verificadas contra preimagem HEAD e fonte, preservando historicos; demais candidatos seguem em revisao, sem mascara automatica de ausencia.
+- MP124/2003 recupera corpo e dois anexos completos. Fecho oficial com junho permanece literal; nota explicita registra divergencia com epigrafe/indice e prova Diario da Camara23/7/2003. Nenhuma correcao de data inventada ou afirmacao sobre objeto da retificacao.
+- Novas RSF2/1948 e116/1981 comprovadas nas coletaneas oficiais, inclusive disposicoes sem rotulo Artigo e data de publicacao distinguida de assinatura.
+- DF Decretos20.877/1999 e20.878/1999 recuperados com ambos anexos, delimitados nas colunas da publicacao DODF e transcritos visualmente. Mesma edicao PDF compartilhada, sem baixar copia por norma.
+- Auditoria do index sem erros ou avisos;2.323 hardbreaks exatos, incluindo799linhas vazias com dois espacos, provados. Demais verificacoes de whitespace passaram.

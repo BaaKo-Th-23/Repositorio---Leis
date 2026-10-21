@@ -1,10 +1,10 @@
 # Progresso
 
-Gerado em 20/10/2026 22:14:04 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 20/10/2026 22:15:30 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Cada série contribui até sua própria meta. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**939.622 documentos · 902.691 / ~11.768.799 nas séries com meta (7.7%) · 174 sem meta**
+**939.626 documentos · 902.695 / ~11.768.799 nas séries com meta (7.7%) · 174 sem meta**
 
 ![progresso](progresso.svg)
 
@@ -14,7 +14,7 @@ Há 2.135 pendências de integralidade registradas em [registro auditável](scri
 
 Planalto, Senado, Câmara e assembleias.
 
-443.503 documentos · 437.160 / ~574.766 nas séries com meta (76.1%) · 0 sem meta
+443.505 documentos · 437.162 / ~574.766 nas séries com meta (76.1%) · 0 sem meta
 
 ### Constituição Federal
 
@@ -40,13 +40,13 @@ Planalto, Senado, Câmara e assembleias.
 
 ### Atos do Congresso
 
-37.800 documentos · 37.798 / ~38.248 nas séries com meta (98.8%) · 0 sem meta
+37.802 documentos · 37.800 / ~38.248 nas séries com meta (98.8%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
 | 🟦 | Decretos legislativos | 21.358 | 21.775 | `federal/decretos-legislativos` | normas.leg.br |
 | ✅ | Medidas provisórias (originais e reedições) | 7.499 | 7.497 | `federal/medidas-provisorias` | Planalto + normas.leg.br |
-| 🟦 | Resoluções do Senado Federal | 6.572 | 6.578 | `federal/resolucoes-senado` | normas.leg.br |
+| 🟦 | Resoluções do Senado Federal | 6.574 | 6.578 | `federal/resolucoes-senado` | normas.leg.br |
 | 🟦 | Resoluções da Câmara dos Deputados | 2.280 | 2.300 | `federal/resolucoes-camara` | camara.leg.br |
 | 🟦 | Resoluções do Congresso Nacional e da Revisão Constitucional | 88 | 95 | `federal/resolucoes-congresso` | normas.leg.br |
 | ✅ | Regimentos internos (Senado, Câmara, Congresso) | 3 | 3 | `federal/regimentos` | senado.leg.br, camara.leg.br |
@@ -91,7 +91,7 @@ Planalto, Senado, Câmara e assembleias.
 
 Diários oficiais e portais de órgãos e tribunais.
 
-481.654 documentos · 451.240 / ~861.320 nas séries com meta (52.4%) · 0 sem meta
+481.656 documentos · 451.242 / ~861.320 nas séries com meta (52.4%) · 0 sem meta
 
 ### Infralegal — tributário
 
@@ -268,11 +268,11 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal estadual
 
-371.677 documentos · 361.443 / ~577.054 nas séries com meta (62.6%) · 0 sem meta
+371.679 documentos · 361.445 / ~577.054 nas séries com meta (62.6%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Decretos dos governadores (27 UF) | 281.589 | 400.000 | `estaduais/*/decretos`, `estaduais/*/decretos-nao-numerados` | Casas Civis e diários oficiais estaduais |
+| 🟦 | Decretos dos governadores (27 UF) | 281.591 | 400.000 | `estaduais/*/decretos`, `estaduais/*/decretos-nao-numerados` | Casas Civis e diários oficiais estaduais |
 | ⬜️ | Regulamentos do ICMS (RICMS das 27 UF) | 0 | 27 | `estaduais/*/regulamentos` | Secretarias de Fazenda |
 | 🟦 | Instruções normativas e portarias das SEFAZ | 1.432 | 50.000 | `estaduais/*/instrucoes-normativas` | Secretarias de Fazenda |
 | ⬜️ | Resoluções e decisões normativas dos TCE | 0 | 10.000 | `estaduais/*/resolucoes-tce` | Tribunais de Contas estaduais |
