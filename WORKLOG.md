@@ -1507,3 +1507,11 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Novas RSF2/1948 e116/1981 comprovadas nas coletaneas oficiais, inclusive disposicoes sem rotulo Artigo e data de publicacao distinguida de assinatura.
 - DF Decretos20.877/1999 e20.878/1999 recuperados com ambos anexos, delimitados nas colunas da publicacao DODF e transcritos visualmente. Mesma edicao PDF compartilhada, sem baixar copia por norma.
 - Auditoria do index sem erros ou avisos;2.323 hardbreaks exatos, incluindo799linhas vazias com dois espacos, provados. Demais verificacoes de whitespace passaram.
+
+### Cinco lacunas estaduais e provas federais
+
+- BA: duas normas novas com sufixo A literal da epigrafe, nao inferido do slug. Campo Drupal omitia sufixo; titulo/numero/H1 corrigidos preservam corpo. QA especifico de fonte fechada, identidade, visuais, tabelas e objetos: zero colisao com numeros corrigidos.
+- GO: duas leis e um decreto oficiais de outubro de 2026, ausentes do acervo anterior. Indice/detalhe/epigrafe concordam; situacao literal Em Vigor registrada sem presumir estado desconhecido.
+- Coletor BA preserva HTML bruto completo, delimita campo fechado e retém numero conflitante. Diff integral revisado e seis testes de sufixos/estrutura passaram.
+- Diagnostico RSF registra projetos/versoes do indice sem fabricar normas nem reduzir metas. Auditoria LCT confirma os 21 textos integrais e preserva divergencia documental de data ja anotada na LCT4, sem certificacao de vigencia.
+- Auditoria do index: cinco normas, sem erros ou avisos. Tres hardbreaks exatos provados; demais verificacoes de whitespace passaram.

@@ -1,10 +1,10 @@
 # Progresso
 
-Gerado em 20/10/2026 22:15:30 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 20/10/2026 22:20:10 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Cada série contribui até sua própria meta. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**939.626 documentos · 902.695 / ~11.768.799 nas séries com meta (7.7%) · 174 sem meta**
+**939.631 documentos · 902.700 / ~11.768.799 nas séries com meta (7.7%) · 174 sem meta**
 
 ![progresso](progresso.svg)
 
@@ -14,7 +14,7 @@ Há 2.135 pendências de integralidade registradas em [registro auditável](scri
 
 Planalto, Senado, Câmara e assembleias.
 
-443.505 documentos · 437.162 / ~574.766 nas séries com meta (76.1%) · 0 sem meta
+443.507 documentos · 437.164 / ~574.766 nas séries com meta (76.1%) · 0 sem meta
 
 ### Constituição Federal
 
@@ -75,14 +75,14 @@ Planalto, Senado, Câmara e assembleias.
 
 ### Leis estaduais e distritais
 
-296.209 documentos · 289.879 / ~347.467 nas séries com meta (83.4%) · 0 sem meta
+296.211 documentos · 289.881 / ~347.467 nas séries com meta (83.4%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
 | ✅ | Constituições estaduais e Lei Orgânica do DF | 27 | 27 | `estaduais/*/constituicao`, `estaduais/*/lei-organica` | Assembleias e Casas Civis |
 | 🟦 | Constituições estaduais históricas | 9 | 40 | `estaduais/*/constituicoes-historicas` | Assembleias |
 | 🟦 | Emendas constitucionais estaduais | 2.023 | 2.200 | `estaduais/*/emendas-constitucionais` | Assembleias |
-| 🟦 | Leis ordinárias estaduais | 274.230 | 330.000 | `estaduais/*/leis-ordinarias` | 19 scripts, uma fonte por UF |
+| 🟦 | Leis ordinárias estaduais | 274.232 | 330.000 | `estaduais/*/leis-ordinarias` | 19 scripts, uma fonte por UF |
 | 🟦 | Leis complementares estaduais | 12.390 | 14.000 | `estaduais/*/leis-complementares` | 19 scripts, uma fonte por UF |
 | ✅ | Decretos-leis e leis delegadas estaduais | 6.676 | 600 | `estaduais/*/decretos-lei`, `estaduais/*/leis-delegadas`, `estaduais/*/decretos-lei-complementares` | Assembleias |
 | ✅ | Leis promulgadas, constitucionais e emendas à Lei Orgânica | 854 | 600 | `estaduais/*/leis-promulgadas`, `estaduais/*/leis-constitucionais`, `estaduais/*/emendas-lei-organica` | Assembleias |
@@ -91,7 +91,7 @@ Planalto, Senado, Câmara e assembleias.
 
 Diários oficiais e portais de órgãos e tribunais.
 
-481.656 documentos · 451.242 / ~861.320 nas séries com meta (52.4%) · 0 sem meta
+481.659 documentos · 451.245 / ~861.320 nas séries com meta (52.4%) · 0 sem meta
 
 ### Infralegal — tributário
 
@@ -268,11 +268,11 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal estadual
 
-371.679 documentos · 361.445 / ~577.054 nas séries com meta (62.6%) · 0 sem meta
+371.682 documentos · 361.448 / ~577.054 nas séries com meta (62.6%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Decretos dos governadores (27 UF) | 281.591 | 400.000 | `estaduais/*/decretos`, `estaduais/*/decretos-nao-numerados` | Casas Civis e diários oficiais estaduais |
+| 🟦 | Decretos dos governadores (27 UF) | 281.594 | 400.000 | `estaduais/*/decretos`, `estaduais/*/decretos-nao-numerados` | Casas Civis e diários oficiais estaduais |
 | ⬜️ | Regulamentos do ICMS (RICMS das 27 UF) | 0 | 27 | `estaduais/*/regulamentos` | Secretarias de Fazenda |
 | 🟦 | Instruções normativas e portarias das SEFAZ | 1.432 | 50.000 | `estaduais/*/instrucoes-normativas` | Secretarias de Fazenda |
 | ⬜️ | Resoluções e decisões normativas dos TCE | 0 | 10.000 | `estaduais/*/resolucoes-tce` | Tribunais de Contas estaduais |
@@ -311,5 +311,5 @@ Diários oficiais e portais de órgãos e tribunais.
 | Pasta | Arquivos |
 | --- | ---: |
 | `reguladores/editais-e-avisos/resolucoes` | 3 |
-| `reguladores/entidades-de-fiscalizacao-dos-profission/resolucoes` | 1 |
 | `reguladores/editais-e-avisos/portarias` | 1 |
+| `reguladores/entidades-de-fiscalizacao-dos-profission/resolucoes` | 1 |

@@ -3,11 +3,14 @@
 Índice: listagem /documentos?categoria[]=N&page=P (Drupal, 20 por página).
 Texto: campo body da página de cada documento.
 """
+import gzip
+import hashlib
 import html as htmllib
 import json
 import os
 import re
 import sys
+from html.parser import HTMLParser
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 from comum import RAIZ_ESTADUAIS, Rede, caminhos, decodificar, executar, gravar, html_para_md  # noqa: E402
@@ -73,16 +76,74 @@ def campo(html, nome):
     return htmllib.unescape(re.sub(r"<[^>]+>", " ", m.group(1))).strip() if m else ""
 
 
-def corpo_html(html):
-    ini = html.find("field--name-body")
-    if ini < 0:
-        return ""
-    ini = html.find(">", ini) + 1
-    fim = html.find("field--name-field-criado-por-arquivo", ini)
-    if fim < 0:
-        fim = html.find("</article>", ini)
-    return html[ini : fim if fim > 0 else None]
+class _LimiteCorpo(HTMLParser):
+    def __init__(self, html, fragmento):
+        super().__init__(convert_charrefs=False)
+        self.inicio = 0 if fragmento else None
+        self.fim = None
+        self.profundidade = 1 if fragmento else 0
+        self.linhas = [0] + [m.end() for m in re.finditer("\n", html)]
 
+    def posicao(self):
+        linha, coluna = self.getpos()
+        return self.linhas[linha - 1] + coluna
+
+    def handle_starttag(self, tag, attrs):
+        if self.fim is not None or tag != "div":
+            return
+        if self.inicio is None:
+            classes = dict(attrs).get("class", "").split()
+            if "field--name-body" in classes:
+                self.inicio = self.posicao() + len(self.get_starttag_text())
+                self.profundidade = 1
+        else:
+            self.profundidade += 1
+
+    def handle_startendtag(self, tag, attrs):
+        pass
+
+    def handle_endtag(self, tag):
+        if self.inicio is None or self.fim is not None or tag != "div":
+            return
+        self.profundidade -= 1
+        if self.profundidade == 0:
+            self.fim = self.posicao()
+
+
+def limites_corpo_html(html, fragmento=False):
+    """Fragmentos antigos perderam só a abertura do div do campo Drupal."""
+    limite = _LimiteCorpo(html, fragmento)
+    limite.feed(html)
+    if limite.inicio is None:
+        return None
+    if limite.fim is None:
+        raise ValueError("campo body sem fechamento comprovado; extração recusada")
+    return limite.inicio, limite.fim
+
+
+def corpo_html(html):
+    limites = limites_corpo_html(html)
+    return html[limites[0]:limites[1]] if limites else ""
+
+
+
+def conferir_numero_epigrafe(texto, numero):
+    """Conserva o sufixo literal da epígrafe quando o campo Drupal o omite."""
+    epigrafe = htmllib.unescape(re.sub(r"<[^>]+>", " ", texto))
+    m = re.search(
+        r"\b(?:DECRETO(?:\s+FINANCEIRO)?|LEI(?:\s+COMPLEMENTAR)?|PORTARIA|"
+        r"RESOLU[ÇC][ÃA]O|INSTRU[ÇC][ÃA]O\s+NORMATIVA)\s+N[.º°o\s]*"
+        r"([0-9][0-9.]*)\s*(?:[-–]\s*([A-Za-z])\b)?", epigrafe[:1200], re.I)
+    if not m:
+        return numero
+    literal = m.group(1) + ("-" + m.group(2).upper() if m.group(2) else "")
+    def chave(valor):
+        return re.sub(r"[^0-9a-z]", "", str(valor).casefold()).lstrip("0")
+    if chave(numero) == chave(literal):
+        return numero
+    if m.group(2) and chave(numero) == chave(m.group(1)):
+        return literal.replace(".", "")
+    raise ValueError(f"número do campo Drupal {numero!r} diverge da epígrafe literal {literal!r}")
 
 def processar(it):
     pasta, nome = CATEGORIAS[it["categoria"]]
@@ -103,7 +164,17 @@ def processar(it):
         return "sem_texto", {"url": url, "motivo": "corpo vazio"}
     dm = re.search(r'field--name-field-data-doc.*?datetime="(\d{4})-(\d{2})-(\d{2})', html, re.S)
     data = f"{dm.group(1)}-{dm.group(2)}-{dm.group(3)}" if dm else ""
-    numero = campo(html, "field-numero-doc")
+    try:
+        numero = conferir_numero_epigrafe(texto, campo(html, "field-numero-doc"))
+    except ValueError as exc:
+        sha = hashlib.sha256(bruto).hexdigest()
+        evidencia = fonte if not os.path.exists(fonte) else os.path.join(
+            RAIZ_ESTADUAIS, UF, "_fonte", "auditorias", "numero-divergente", f"{slug}-{sha}.gz")
+        os.makedirs(os.path.dirname(evidencia), exist_ok=True)
+        if not os.path.exists(evidencia):
+            with gzip.open(evidencia, "wb") as arq:
+                arq.write(bruto)
+        return "sem_texto", {"url": url, "motivo": str(exc), "cache": evidencia, "sha256_fonte": sha}
     if nome.startswith("Constituição"):
         titulo = f"Constituição do Estado da Bahia {nome[nome.find('('):]}"
     else:
@@ -116,10 +187,11 @@ def processar(it):
         ("data", data),
         ("ementa", " ".join(campo(html, "field-ementa").split())),
         ("publicacao", ("DOE " + campo(html, "field-data-de-publicacao-no-doe")).strip() if campo(html, "field-data-de-publicacao-no-doe") else ""),
+        ("revogada", None),
         ("versao_texto", "texto do Portal de Legislação da Bahia"),
         ("fonte", url),
     ]
-    gravar(md, fonte, corpo, meta, f"# {titulo}\n\n{texto}")
+    gravar(md, fonte, bruto, meta, f"# {titulo}\n\n{texto}")
     return "ok", None
 
 
