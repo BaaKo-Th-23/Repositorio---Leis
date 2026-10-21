@@ -1570,3 +1570,8 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Mais 28 atos SAPL aprovados de mil candidatos; 972 retidos. PDF nativo completo preservado em layout e reconferido por página contra palavras por coordenadas, incluindo todos os caracteres e pontuação. Identidades, sufixos, notas, anexos, imagens, cores e colunas têm controles próprios; nenhum OCR presumido integral.
 - Onze testes de estrutura e identidade passaram. Auditoria genérica dos 29 novos documentos sem erros ou avisos; auditoria municipal do index completo (14.502 documentos) sem problemas ou avisos.
 - Capturas brutas binárias e o fragmento HTML específico de Curitiba mantêm bytes e CRLF por atributos restritos; nenhum Markdown ou código tem validação de whitespace desativada globalmente. SHA de todos os 336 caminhos do pacote reconferido diretamente nos blobs do index.
+
+### Reguladores: mais 8.900 atos conferidos
+
+- Lote 009: 4.414 DOU e 4.486 RFB, com fonte e corpo reconferidos por SHA e deduplicação contra baseline e três reservas anteriores. Dos dez mil candidatos dos controles iniciais, 1.100 ficam retidos para revisão.
+- Auditoria dos 8.900 documentos do index: zero erros ou avisos. Prova de whitespace conserva 3.059 hardbreaks exatos, doze linhas vazias com dois espaços e três ocorrências de EOF; demais verificações passaram.
