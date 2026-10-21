@@ -76,6 +76,15 @@ def anexo_proprio_ausente(corpo, parsed):
         if not remissao and object_match and len(artigos) <= 5 and not inline and not re.search(r'anex[oa]s? ao decreto\s+n', artigo):
             document_only = True
             remissao = match
+    # A substituted model can be an own annex without an approval formula.
+    # A literal placeholder is evidence of a label, never of the promised model.
+    if not remissao and any(_rotulo_vazio(b) for b in blocks[fechamento + 1:]):
+        for _, artigo in artigos:
+            model = re.search(r'\bmodelos?\s+anex[oa]s?\b', artigo)
+            external = re.search(r'\bmodelos?\s+anex[oa]s?\s+(?:ao|aos|do|dos)\s+decretos?\s+n', artigo)
+            if model and not external:
+                remissao = re.search(re.escape(artigo), principal)
+                break
     if not remissao:
         return None
     # A table after the approval may be the object itself, including a table placed

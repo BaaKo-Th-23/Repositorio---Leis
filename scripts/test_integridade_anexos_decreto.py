@@ -67,4 +67,19 @@ class Anexos(unittest.TestCase):
  def test_eleicao_depois_de_aprovacao_futura_nao_retem(self):
   text=MAIN.replace('Artigo único. Fica aprovado o Regimento que com êste baixa','Art. 2º A eleição se realizará quinze dias depois e aprovado o novo Regimento do HSE')
   self.assertIsNone(gate(text,P))
+ def test_modelo_substituido_com_placeholder_nao_e_integral(self):
+  text=MAIN.replace('Fica aprovado o Regimento que com êste baixa',
+                    'Fica substituída pelo modêlo anexo denominado Guia de Embarque a atual Guia de Exportação')
+  for label in ['<<Anexo>>', '&lt;&lt;Anexo&gt;&gt;', '&lt;&lt;Anexo>>']:
+   result=gate(text+'\n\n'+label,P)
+   self.assertIsNotNone(result,label)
+   self.assertEqual(result['estado'],'ausencia_na_transcricao')
+ def test_modelo_de_outra_norma_nao_e_objeto_proprio(self):
+  text=MAIN.replace('Fica aprovado o Regimento que com êste baixa',
+                    'A repartição utilizará o modelo anexo ao Decreto nº 1.234 de 1960')
+  self.assertIsNone(gate(text+'\n\n<<Anexo>>',P))
+ def test_modelo_substituido_efetivamente_reproduzido(self):
+  text=MAIN.replace('Fica aprovado o Regimento que com êste baixa',
+                    'Fica substituída pelo modelo anexo denominado Guia de Embarque a atual Guia')
+  self.assertIsNone(gate(text+'\n\nANEXO\n\nGUIA DE EMBARQUE\n\nNome do exportador: ______ Endereço: ______ Quantidade: ______',P))
 if __name__=='__main__':unittest.main()

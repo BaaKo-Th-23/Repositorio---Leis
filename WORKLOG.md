@@ -1633,3 +1633,10 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Integração das seleções 005 v4, 006 v5 e 007 v4: 5.555 novas normas, sem colisão com HEAD por URN ou número completo/ano, incluindo sufixos literais. As 212 promoções privadas foram aplicadas somente após conferir todas as preimagens e os candidatos.
 - HTML primário, metadados oficiais e preimagens alteradas arquivados integralmente em três arquivos gzip. Notas de datas literais não emendam o corpo oficial. Gates cumulativos de anexos/modelos próprios, visuais, CommonMark, pontuação e contexto numérico reconferidos nas seleções congeladas.
 - Auditoria dos 5.555 documentos no index: zero erros e avisos. Escopo e SHA dos 5.804 caminhos conferidos. Diffcheck preserva somente um hardbreak Markdown comprovado de dois espaços; demais verificações passaram. Metas mantidas.
+
+### Modelos próprios: duas recuperações e doze pendências explícitas
+
+- Guard passa a reconhecer referência ao modelo próprio com rótulo final vazio, mantendo a distinção de remissões a outro decreto. Vinte e três testes passaram, incluindo modelos presentes, placeholders e referências externas.
+- Entre quatorze decretos publicados revistos, modelos dos Decretos 7.420/2010 e 7.648/2011 recuperados dos anexos oficiais Câmara/DOU. Fac-símiles inspecionados por ROOT; 22 linhas em cada modelo, respectivamente 79/76 células e 52/48 campos vazios. Estruturas distintas e quebra tipográfica de 2011 preservadas. Corpo principal anterior permanece byte a byte, com preimagens arquivadas.
+- Doze casos restantes entram no registro de integralidade pelo SHA exato de HEAD, sem declarar ausência na publicação original. Registro passa de 2.138 a 2.150; metas mantidas. Os dois reparos não são contados como novas normas.
+- Auditoria do index: dois documentos, zero erros e avisos; fontes, preimagens e SHA do escopo conferidos. PDFs oficiais tratados como binários por regras específicas, sem alterar bytes; diffcheck passou.
