@@ -1563,3 +1563,10 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Lote 008: 4.574 documentos DOU e 4.429 RFB aprovados contra fonte e identidade, com reservas dos lotes anteriores; 997 candidatos retidos. Corpos e fontes reconferidos por SHA antes da publicação.
 - Auditoria dos 9.003 documentos do index: zero erros ou avisos. Preservados e provados 1.594 hardbreaks exatos, nove linhas vazias com dois espaços e três avisos de EOF; demais verificações passaram.
 - Revisão mais estrita de Pernambuco registra 30 documentos publicados com falhas de apresentação, sem divergência numérica comprovada. Registro conservador passa a 2.166 pendências até reparo e nova prova contra fonte. Nenhuma meta foi reduzida.
+
+### Curitiba e 28 atos municipais com fonte integral
+
+- Lei Orgânica de Curitiba: opção oficial Texto alterado organizada em 983 parágrafos pelas quebras do HTML. Conferência independente preserva todos os caracteres ativos, inclusive pontuação e sinais, após normalizar apenas espaços. Sete trechos históricos tachados ficam identificados no controle e na fonte integral; marcadores Revogado e notas permanecem. Corte de atualização não declarado pelo portal.
+- Mais 28 atos SAPL aprovados de mil candidatos; 972 retidos. PDF nativo completo preservado em layout e reconferido por página contra palavras por coordenadas, incluindo todos os caracteres e pontuação. Identidades, sufixos, notas, anexos, imagens, cores e colunas têm controles próprios; nenhum OCR presumido integral.
+- Onze testes de estrutura e identidade passaram. Auditoria genérica dos 29 novos documentos sem erros ou avisos; auditoria municipal do index completo (14.502 documentos) sem problemas ou avisos.
+- Capturas brutas binárias e o fragmento HTML específico de Curitiba mantêm bytes e CRLF por atributos restritos; nenhum Markdown ou código tem validação de whitespace desativada globalmente. SHA de todos os 336 caminhos do pacote reconferido diretamente nos blobs do index.

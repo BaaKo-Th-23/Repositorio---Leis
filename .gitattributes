@@ -1,3 +1,5 @@
 # Snapshots oficiais: preservar bytes, codificação e quebras de linha para SHA-256.
 /fonte/*.htm -text -whitespace
 /municipais/_fonte/**/*.html -text -whitespace
+/municipais/_fonte/**/*.bin -text -whitespace
+/municipais/_lotes/20261020-curitiba-lo/bloco-alterado.html -text -whitespace
