@@ -31,35 +31,60 @@ def _rotulo_vazio(text):
     return bool(re.fullmatch(r'(?:anex[oa]s?|tabelas?|quadros?)(?:\s+[ivxlcdm\d .,–-]+)?\.?', text)) or bool(re.fullmatch(r'\\*final do documento\.?|\d+\s*/\s*\d+', text))
 
 
+
+def _placeholder_terminal(clean):
+    placeholder = re.search(r'(?:<<|«)\s*(?:anexo|tabela|quadro)s?\s*(?:>>|»)(.*)$', clean, re.S)
+    if not placeholder:
+        return None
+    pointer = placeholder[1].strip()
+    citation = not pointer or bool(re.fullmatch(r'(?:clbr|colecao das leis)\s*(?:(?:vol(?:ume)?|ano|pag(?:ina)?s?|tabelas?|anexos?|quadros?)[. ]*|\d+[. ,;:/–-]*|a\s+)+', pointer))
+    return placeholder if citation else None
+
+
 def anexo_proprio_ausente(corpo, parsed):
     if parsed.visual:
         return None  # Separate visual gate retains these; this helper proves no absence.
     clean = _limpar(corpo)
     blocks = [re.sub(r'\s+', ' ', b).strip() for b in clean.split('\n\n') if b.strip()]
+    # A bibliographic replacement of drawings is a separate question from a
+    # reproduced regulation or its text tables. It must survive the Art.1 shortcut.
+    picture_gap = re.search(r'(?:<<|«)\s*(?:anexo|tabela|quadro)s?\s*(?:>>|»)\s*(?:clbr|colecao das leis)[^\n]*(?:carimbos?|figuras?|simbolo|desenhos?)[^\n]*', clean)
+    own_regulation = re.search(r'\bfica[m]?\s+aprovad[oa]s?\b.{0,350}que com est[ea] baixa', clean)
+    if picture_gap and own_regulation:
+        return {'motivo': 'Objeto gráfico do regulamento próprio indicado apenas por placeholder bibliográfico; descrição textual ou outras tabelas não comprovam a reprodução dos desenhos, símbolos, carimbos ou figuras.',
+                'lacuna': picture_gap[0], 'estado': 'revisao_documental_necessaria'}
     # A regulation can precede its own final signature when the first presidential
     # date has an unusual layout. A second own Art.1 is actual content, not a label.
     if len(re.findall(r'^\s*art(?:igo)?\.?\s*(?:1[º°o.]?(?!\d)|unico\b)', clean, re.M)) > 1:
         return None
+    placeholder = _placeholder_terminal(clean)
+    if placeholder and not parsed.structure:
+        for article in blocks:
+            if not re.match(r'^art(?:igo)?\.?\s*(?:\d|unico)', article):
+                continue
+            commanded = re.search(r'\bfica[m]?\s+alterad[oa]s?\b.{0,100}\bna forma d[ao] (?:relacao|tabela|quadro)\b.{0,80}\banex[oa]s?\b', article)
+            external = re.search(r'anex[oa]s?\s+(?:ao|aos|do|dos)\s+(?:decretos?|leis?)\s+n', article)
+            if commanded and not external:
+                return {'motivo': 'Relação própria que determina a alteração da tabela pelo presente decreto substituída por placeholder terminal; referência bibliográfica não reproduz os nomes ou dados exigidos pelo comando.',
+                        'remissao': article, 'lacuna': placeholder[0],
+                        'estado': 'ausencia_na_transcricao'}
     fechamento = next((i for i, b in enumerate(blocks)
                         if re.match(r'^(?:brasilia|rio de janeiro|capital federal)(?:[-,\s]+d\.?f\.?)?[,.;\s]+(?:em\s*)?\d', b)), None)
     if fechamento is None:
         # A terminal literal placeholder with a bibliographic pointer is not the
         # promised own annex, even when the source omits the presidential date.
-        placeholder = re.search(r'(?:<<|«)\s*(?:anexo|tabela|quadro)s?\s*(?:>>|»)(.*)$', clean, re.S)
         if placeholder and not parsed.structure:
-            pointer = placeholder[1].strip()
-            citation = not pointer or bool(re.fullmatch(r'(?:clbr|colecao das leis)\s*(?:(?:vol(?:ume)?|ano|pag(?:ina)?|tabela|anexo|quadro)[. ]*|\d+[. ,;:/–-]*)+', pointer))
             articles = [b for b in blocks if re.match(r'^art(?:igo)?\.?\s*(?:\d|unico)', b)]
             for article in articles:
                 own = re.search(r'\b(?:fica[m]?|sao|e)\s+aprovad[oa]s?\b', article) and re.search(r'\banex[oa]s?\b|que com est[ea] baixa', article)
                 external = re.search(r'anex[oa]s?\s+(?:ao|aos|do|dos)\s+(?:decretos?|leis?)\s+n', article)
-                if citation and own and not external:
+                if own and not external:
                     return {'motivo': 'Aprovação própria com placeholder terminal e nenhuma reprodução do suplemento; a indicação bibliográfica não é o conteúdo do anexo, mesmo sem fecho reconhecível.',
                             'remissao': article, 'lacuna': placeholder[0], 'fecho': None,
                             'estado': 'ausencia_na_transcricao'}
         return None
     principal = '\n'.join(blocks[:fechamento])
-    explicit = re.search(r'que com est[ea] baixa[m]?|que a est[ea] acompanha|acompanha (?:este|o presente) decreto|anex[oa]s? a este decreto|anex[oa]s? ao presente decreto', principal)
+    explicit = re.search(r'que com est[ea] baixa[m]?|que a est[ea] acompanha|acompanha (?:este|o presente) decreto|anex[oa]s? a este decreto|anex[oa]s? ao presente decreto|anex[oa]s?(?:\s+[ivxlcdm\d]+(?:\s+e\s+[ivxlcdm\d]+)?)?\s+deste decreto', principal)
     artigos = [(i, b) for i, b in enumerate(blocks[:fechamento])
                if re.match(r'^art(?:igo)?\.?\s*(?:\d|unico)', b)]
     approvals = [(i, b, m) for i, b in artigos

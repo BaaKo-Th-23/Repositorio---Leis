@@ -92,4 +92,36 @@ class Anexos(unittest.TestCase):
  def test_tabela_reproduzida_sem_fecho_nao_retem(self):
   text='Art. 1º Fica aprovada a tabela anexa.\n\n<table><tr><td>Cargo</td><td>10</td></tr></table>\n\n<<ANEXO>>'
   self.assertIsNone(gate(text,SimpleNamespace(visual=[],structure=[('table',())])))
+ def test_relacao_nominal_alterada_sem_formula_de_aprovacao(self):
+  article='Art. 1º Fica alterada, na forma da relação anexa, a Tabela Única de Extranumerários-Mensalistas do Ministério da Aeronáutica.\n\nArt. 2º Este Decreto entra em vigor na data de sua publicação.'
+  for fecho in ['', '\n\nRio de Janeiro. em 19 de dezembro de 1950; 129º da Independência.\n\nEurico G. Dutra']:
+   text=article+fecho+'\n\n&lt;&lt;ANEXO>>CLBR Vol. 08 Ano 1950 Págs. 389 a 392 Tabelas.'
+   self.assertEqual(gate(text,P)['estado'],'ausencia_na_transcricao')
+ def test_relacao_nominal_de_outra_norma_nao_e_objeto_proprio(self):
+  text='Art. 1º Fica alterada, na forma da relação anexa ao Decreto nº 10, de 1950, a tabela de cargos.\n\n<<ANEXO>>'
+  self.assertIsNone(gate(text,P))
+ def test_relacao_nominal_efetivamente_representada(self):
+  text='Art. 1º Fica alterada, na forma da relação anexa, a Tabela Única de Extranumerários-Mensalistas do Ministério da Aeronáutica.\n\n<table><tr><td>Nome</td><td>Cargo</td></tr><tr><td>João</td><td>Professor</td></tr></table>\n\n<<ANEXO>>'
+  self.assertIsNone(gate(text,SimpleNamespace(visual=[],structure=[('table',())])))
+  self.assertIsNone(gate(text.split('<table>')[0]+'<<ANEXO>>\n\nNome: João. Cargo: Professor.',P))
+ def test_modelos_graficos_apos_regulamento_e_tabelas_exigem_revisao(self):
+  text=MAIN.replace('o Regimento que com êste baixa','o novo Regulamento que com êste baixa')+'\n\nREGULAMENTO\n\nArt. 1º Os estabelecimentos são regulados.\n\n<table><tr><td>Outro dado</td></tr></table>\n\nArt. 832. Os carimbos devem obedecer à descrição e aos modelos anexos.\n\n<<ANEXO>>CLBR Vol. 06 Ano 1952 Págs. 486 a 492 Carimbos.'
+  self.assertEqual(gate(text,SimpleNamespace(visual=[],structure=[('table',())]))['estado'],'revisao_documental_necessaria')
+ def test_figuras_do_proprio_regulamento_exigem_revisao(self):
+  text=MAIN+'\n\nREGIMENTO\n\nArt. 1º Os uniformes obedecem às figuras anexas.\n\n&lt;&lt;ANEXO>>CLBR Vol. 08 Ano 1951 Págs. 117 a 140 Figuras.'
+  self.assertIsNotNone(gate(text,P))
+ def test_figuras_com_representacao_ou_regulamento_externo(self):
+  text=MAIN+'\n\n<<ANEXO>>CLBR Vol. 08 Ano 1951 Págs. 117 a 140 Figuras.'
+  self.assertIsNone(gate(text,SimpleNamespace(visual=['img'],structure=[])))
+  external=text.replace('que com êste baixa','anexo ao Decreto nº 1.234 de 1960')
+  self.assertIsNone(gate(external,P))
+ def test_anexo_numerado_deste_decreto_sem_representacao(self):
+  text=MAIN.replace('Fica aprovado o Regimento que com êste baixa','Ficam extintas as funções constantes do Anexo I dêste decreto')
+  self.assertEqual(gate(text,P)['estado'],'ausencia_na_transcricao')
+ def test_anexos_numerados_reproduzidos_nao_retem(self):
+  text=MAIN.replace('Fica aprovado o Regimento que com êste baixa','Ficam extintas as funções constantes dos Anexos I e II dêste decreto')+'\n\nANEXO I\n\n<table><tr><td>Função</td><td>Professor</td></tr></table>\n\nANEXO II\n\n<table><tr><td>Função</td><td>Secretário</td></tr></table>'
+  self.assertIsNone(gate(text,SimpleNamespace(visual=[],structure=[('table',())])))
+ def test_anexo_numerado_do_decreto_externo_nao_retem(self):
+  text=MAIN.replace('Fica aprovado o Regimento que com êste baixa','Ficam extintas as funções constantes do Anexo I do Decreto nº 1.234 de 1960')
+  self.assertIsNone(gate(text,P))
 if __name__=='__main__':unittest.main()
