@@ -1,10 +1,10 @@
 # Progresso
 
-Gerado em 20/10/2026 22:20:10 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 20/10/2026 22:26:27 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Cada série contribui até sua própria meta. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**939.631 documentos · 902.700 / ~11.768.799 nas séries com meta (7.7%) · 174 sem meta**
+**951.501 documentos · 914.570 / ~11.768.799 nas séries com meta (7.8%) · 174 sem meta**
 
 ![progresso](progresso.svg)
 
@@ -91,7 +91,7 @@ Planalto, Senado, Câmara e assembleias.
 
 Diários oficiais e portais de órgãos e tribunais.
 
-481.659 documentos · 451.245 / ~861.320 nas séries com meta (52.4%) · 0 sem meta
+493.529 documentos · 463.115 / ~861.320 nas séries com meta (53.8%) · 0 sem meta
 
 ### Infralegal — tributário
 
@@ -268,11 +268,11 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal estadual
 
-371.682 documentos · 361.448 / ~577.054 nas séries com meta (62.6%) · 0 sem meta
+383.552 documentos · 373.318 / ~577.054 nas séries com meta (64.7%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Decretos dos governadores (27 UF) | 281.594 | 400.000 | `estaduais/*/decretos`, `estaduais/*/decretos-nao-numerados` | Casas Civis e diários oficiais estaduais |
+| 🟦 | Decretos dos governadores (27 UF) | 293.464 | 400.000 | `estaduais/*/decretos`, `estaduais/*/decretos-nao-numerados` | Casas Civis e diários oficiais estaduais |
 | ⬜️ | Regulamentos do ICMS (RICMS das 27 UF) | 0 | 27 | `estaduais/*/regulamentos` | Secretarias de Fazenda |
 | 🟦 | Instruções normativas e portarias das SEFAZ | 1.432 | 50.000 | `estaduais/*/instrucoes-normativas` | Secretarias de Fazenda |
 | ⬜️ | Resoluções e decisões normativas dos TCE | 0 | 10.000 | `estaduais/*/resolucoes-tce` | Tribunais de Contas estaduais |

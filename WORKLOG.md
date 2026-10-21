@@ -1515,3 +1515,10 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Coletor BA preserva HTML bruto completo, delimita campo fechado e retém numero conflitante. Diff integral revisado e seis testes de sufixos/estrutura passaram.
 - Diagnostico RSF registra projetos/versoes do indice sem fabricar normas nem reduzir metas. Auditoria LCT confirma os 21 textos integrais e preserva divergencia documental de data ja anotada na LCT4, sem certificacao de vigencia.
 - Auditoria do index: cinco normas, sem erros ou avisos. Tres hardbreaks exatos provados; demais verificacoes de whitespace passaram.
+
+### Pernambuco: 11.870 decretos novos
+
+- Do pacote final de 11.900 decretos, trinta com separadores literais de sinais de igual ficaram fora para prova e representacao Markdown fiel. Nenhum marcador foi apagado nem verificacao de conflito desabilitada. Recibo exato publicacao-pe-filtrado-20261020-002.json.
+- Nos candidatos aprovados, residuos tecnicos finais fora do campo fechado foram retirados com preimagem/backup, sem mudar texto normativo ou metadados. Fontes, tabelas, objetos e identidade conferidos; lotes disjuntos confrontados com o HEAD.
+- Os demais 20.387 candidatos do inventario ficaram retidos, sobretudo tabelas/celulas divergentes, avisos de anexos externos, tachados e imagens; nao foram contados pela existencia do arquivo.
+- Auditoria do index sem erros ou avisos. Vinte e oito hardbreaks exatos provados; demais verificacoes de whitespace passaram.
