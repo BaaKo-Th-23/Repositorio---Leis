@@ -26,7 +26,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from comum import AVISO_OCR, AVISO_SEM_TEXTO, extrair_texto, ocr_pdf, texto_pdf_para_md  # noqa: E402
 from html2md import convert  # noqa: E402
-from identidade_decreto import divergencia_epigrafe_decreto  # noqa: E402
+from integridade_html_federal import Visivel
+from integridade_anexos_decreto import anexo_proprio_ausente
+from identidade_decreto import divergencia_epigrafe_decreto, extrair_epigrafe_decreto  # noqa: E402
 
 RAIZ = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "federal")
 RAIZ = os.path.abspath(RAIZ)
@@ -247,9 +249,13 @@ def motivo_texto_parcial_decreto(tipo, corpo):
     if tipo != "DEC-n":
         return None
     limpo = re.sub(r"[*_`\\]", "", corpo)
-    if re.search(r"^\s*RETIFICA[ÇC][ÃA]O\s*$", limpo, re.I | re.M):
+    artigo = re.search(r"^\s*(?:Artigo|Art\.?)\s*[.º°o]*\s*(?:\d|[úu]nico)", limpo, re.I | re.M)
+    errata = re.search(r"^\s*RETIFICA[ÇC][ÃA]O\s*$", limpo, re.I | re.M)
+    # A errata pode estar anexada depois da norma completa. O problema é o
+    # documento que começa como retificação, mesmo quando cita um artigo inteiro.
+    if errata and (not artigo or errata.start() < artigo.start()):
         return "Documento de retificação avulsa; buscar a versão integral da norma"
-    if not re.search(r"^\s*(?:Artigo|Art\.?)\s*[.º°o]*\s*(?:\d|[úu]nico)", limpo, re.I | re.M):
+    if not artigo:
         return "Sem artigo normativo próprio; íntegra/comando decisório exige revisão específica"
     return None
 
@@ -258,7 +264,15 @@ def yaml_str(v):
     return json.dumps(v if v is not None else "", ensure_ascii=False)
 
 
-def processar(d):
+def processar(d, *, revisao_identidade=False):
+    """Exige epígrafe própria; modo de revisão só prepara material privado.
+
+    O modo explícito não invalida datas/números completos divergentes e marca
+    epígrafes inconclusivas como pendentes. Publicação continua dependente de
+    revisão documental complementar, registrada em manifesto separado.
+    """
+    if revisao_identidade and '_fonte/auditorias/' not in os.path.abspath(RAIZ).replace(os.sep, '/'):
+        raise ValueError('Revisão de identidade só pode gravar em área de auditoria, nunca na raiz publicável')
     info = montar(d)
     if os.path.exists(info["md"]):
         return "pulado", info["slug"], None
@@ -293,7 +307,16 @@ def processar(d):
         else:
             corpo = texto_pdf_para_md(texto)
     else:
-        corpo = convert(html.decode("utf-8", errors="replace"))
+        html_texto = html.decode("utf-8")
+        corpo = convert(html_texto)
+        if d["tipo"] == "DEC-n":
+            parsed = Visivel()
+            parsed.feed(html_texto)
+            ausente = anexo_proprio_ausente(corpo, parsed)
+            if parsed.visual or ausente:
+                return "sem_texto", info["slug"], {"id": d["id"], "norma": d["norma"], "urn": urn,
+                    "url": url, "motivo": "Conteúdo visual exige validação" if parsed.visual else "Anexo próprio ausente do HTML",
+                    "elementos_visuais": parsed.visual, "evidencia_anexo": ausente}
     if not corpo.strip() or "\x00" in corpo:
         return "sem_texto", info["slug"], {"id": d["id"], "norma": d["norma"], "urn": urn,
                                            "url": url, "motivo": "corpo vazio ou contém NUL; fonte preservada"}
@@ -301,6 +324,10 @@ def processar(d):
     if parcial:
         return "sem_texto", info["slug"], {"id": d["id"], "norma": d["norma"], "urn": urn,
                                            "url": url, "motivo": parcial}
+    epigrafe_pendente = d["tipo"] == "DEC-n" and not extrair_epigrafe_decreto(corpo)
+    if epigrafe_pendente and not revisao_identidade:
+        return "sem_texto", info["slug"], {"id": d["id"], "norma": d["norma"], "urn": urn,
+            "url": url, "motivo": "Epígrafe própria inconclusiva; identidade exige revisão documental explícita"}
     divergencia = divergencia_epigrafe_decreto(d["tipo"], numero_oficial(d), info["data"], corpo)
     if divergencia:
         return "sem_texto", info["slug"], {"id": d["id"], "norma": d["norma"], "urn": urn,
@@ -330,6 +357,8 @@ def processar(d):
         "---",
         "",
     ]
+    if epigrafe_pendente:
+        cab.insert(-2, 'identidade_pendente_revisao: true')
     os.makedirs(os.path.dirname(info["md"]), exist_ok=True)
     tmp = info["md"] + ".tmp"
     # o corpo começa pelo título em H1, como nos arquivos estaduais

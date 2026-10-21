@@ -7,7 +7,6 @@ import argparse
 import datetime as dt
 import gzip
 import hashlib
-from html.parser import HTMLParser
 import json
 from pathlib import Path
 import re
@@ -16,6 +15,8 @@ import unicodedata
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import auditar
+from integridade_html_federal import Visivel
+from integridade_anexos_decreto import anexo_proprio_ausente
 import baixar_federal as f
 from identidade_decreto import extrair_epigrafe_decreto, numero_normalizado
 
@@ -25,31 +26,6 @@ ROOT = Path(__file__).resolve().parent.parent
 def sha(raw):
     return hashlib.sha256(raw).hexdigest()
 
-
-class Visivel(HTMLParser):
-    def __init__(self):
-        super().__init__()
-        self.skip = 0
-        self.data = []
-        self.structure = []
-        self.visual = []
-
-    def handle_starttag(self, tag, attrs):
-        if tag in {'head', 'style', 'script', 'title', 'xml'}:
-            self.skip += 1
-        if not self.skip:
-            if tag in {'table', 'tr', 'td', 'th'}:
-                self.structure.append((tag, tuple(sorted((k, v) for k, v in attrs if k in {'rowspan', 'colspan'}))))
-            if tag in {'img', 'svg', 'object', 'embed', 'iframe', 'canvas', 'math'} or tag.startswith('v:'):
-                self.visual.append(tag)
-
-    def handle_endtag(self, tag):
-        if tag in {'head', 'style', 'script', 'title', 'xml'}:
-            self.skip = max(0, self.skip - 1)
-
-    def handle_data(self, data):
-        if not self.skip:
-            self.data.append(data)
 
 
 def visible(text, markdown=False):
@@ -104,10 +80,9 @@ def preparar(candidates, lote, registro):
                 raise ValueError('PDF em cache; exige validação específica')
             html = source.decode('utf8')
             corpo = f.convert(html)
-            if re.search(r'^\s*RETIFICA[ÇC][ÃA]O\s*$', re.sub(r'[*_`\\]', '', corpo), re.I | re.M):
-                raise ValueError('Documento-fonte de retificação avulsa; norma integral necessária')
-            if not re.search(r'^\s*(?:Artigo|Art\.?)\s*[.º°o]*\s*(?:\d|[úu]nico)', re.sub(r'[*_`\\]', '', corpo), re.I | re.M):
-                raise ValueError('Fonte sem artigo normativo identificável; revisão necessária')
+            parcial = f.motivo_texto_parcial_decreto('DEC-n', corpo)
+            if parcial:
+                raise ValueError(parcial)
             epigrafe = extrair_epigrafe_decreto(corpo)
             if not epigrafe:
                 raise ValueError('Epígrafe própria inconclusiva; requer revisão/fonte alternativa')
@@ -121,6 +96,9 @@ def preparar(candidates, lote, registro):
                 raise ValueError('Sequência de todo o texto visível não preservada pela conversão')
             if parsedsource.visual:
                 raise ValueError('Fonte contém conteúdo visual não validado: ' + str(parsedsource.visual))
+            ausente = anexo_proprio_ausente(corpo, parsedsource)
+            if ausente:
+                raise ValueError('Anexo próprio ausente: ' + json.dumps(ausente, ensure_ascii=False))
             if parsedsource.structure != parsedmd.structure:
                 raise ValueError('Estrutura de tabela não preservada')
             cab = re.sub(r'^revogada:.*$', 'revogada: null', cab, flags=re.M)

@@ -12,15 +12,15 @@ MESES = {nome: n for n, nome in enumerate(
      "AGOSTO", "SETEMBRO", "OUTUBRO", "NOVEMBRO", "DEZEMBRO"), 1)}
 EPIGRAFE = re.compile(
     r"^DECRETO\s+(?:N(?:UMERO)?[.º°O\s]*)?"
-    r"(?P<numero>\d[\d.]*(?:\s*[-–]\s*[A-Z])?)"
-    r"\s*[,;:.–—-]*\s*(?:DE\s+)?"
-    r"(?P<dia>\d{1,2})[º°]?\s+DE\s+(?P<mes>[A-Z]+)\s*[,;]?\s+DE\s+"
+    r"(?P<numero>\d[\d.,]*(?:\s*[-–]\s*[A-Z])?)"
+    r"\s*[,;:.–—-]*\s*(?:DE\s*)?"
+    r"(?P<dia>\d{1,2})[º°]?\s*(?:DE\s*)?(?P<mes>JANEIRO|FEVEREIRO|MARCO|ABRIL|MAIO|JUNHO|JULHO|AGOSTO|SETEMBRO|OUTUBRO|NOVEMBRO|DEZEMBRO)\s*[,;]?\s*(?:DE\s*)?"
     r"(?P<ano>[12]\.?\d{3})(?!\d)"
 )
 
 
 def numero_normalizado(numero):
-    return re.sub(r"[.\s]", "", str(numero)).replace("–", "-").upper()
+    return re.sub(r"[.,\s]", "", str(numero)).replace("–", "-").upper()
 
 
 def extrair_epigrafe_decreto(corpo):

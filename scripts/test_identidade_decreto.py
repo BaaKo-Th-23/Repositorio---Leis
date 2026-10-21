@@ -4,6 +4,8 @@ import hashlib
 import json
 from pathlib import Path
 import tempfile
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import unittest
 from unittest.mock import patch
 
@@ -34,6 +36,9 @@ class IdentidadeDecretoTest(unittest.TestCase):
             ("Decreto n° 1.234-A — de 1º de março de 1.945", "1234-A", "1945-03-01"),
             ("DECRETO N. 19.533-A – DE 30 DE AGÔSTO DE 1945", "19533-A", "1945-08-30"),
             ("DECRETO 123, DE 2 DE janeiro DE 2000", "123", "2000-01-02"),
+            ("DECRETO Nº 3.413, DE 14 ABRIL DE 2000.", "3413", "2000-04-14"),
+            ("DECRETO Nº20,194, DE13DEDEZEMBRODE1945", "20194", "1945-12-13"),
+            ("DECRETO Nº 20.110, DE 4DE DEZEMBRO DE 1945", "20110", "1945-12-04"),
         ]:
             with self.subTest(epigrafe=epigrafe):
                 extraida = extrair_epigrafe_decreto(epigrafe)

@@ -1380,3 +1380,17 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Auditoria do index: 13.970 documentos sem erros ou avisos. Foram conferidos
   199.430 hardbreaks de exatamente dois espaços, incluindo 6.152 linhas vazias;
   corpo e hashes foram preservados. Demais verificações de whitespace passaram.
+
+### Decretos federais: primeiro bloco restante de 20.000
+
+- Pacote exato em federal/_pacote_federal_restante_20261020_001.json,
+  com receipts gzip determinísticos de metadados oficiais, fonte e SHA.
+  As listas descontam baseline, 19.536 já publicados e duplicações internas;
+  manifests antigos permanecem como prova, sem autorizar sua soma integral.
+- Gates preservam epígrafe/fecho próprios, impedem promoção de retificação
+  avulsa, visuais/fórmulas e anexos próprios sem conteúdo representado.
+  Revisões de identidade ficam em área privada até prova explícita.
+- Treze scripts de coleta/revisão e auditoria foram integrados; 28 testes
+  passaram. Somente uma linha vazia de EOF em código foi normalizada.
+- Auditoria do index: 20.000 normas sem erros ou avisos. Prova de whitespace
+  registrou 0 hardbreaks de exatamente dois espaços; demais checks passaram.
