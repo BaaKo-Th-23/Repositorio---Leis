@@ -45,7 +45,7 @@ UA = "Mozilla/5.0 (compatible; constituicao-md/1.0)"
 TIPOS = {
     "LEI": 1808, "LCP": 1967, "LDL": 1962, "LCT": 1937, "DEL": 1937,
     "EMC": 1969, "EMR": 1994, "DEC": 1889, "DLG": 1891, "DPL": 1889,
-    "MPV": 1988, "RSF": 1826, "RCN": 1891, "RRC": 1994, "AILEI": 1889,
+    "MPV": 1988, "RSF": 1826, "RCN": 1891, "RRC": 1993, "AILEI": 1889,
 }
 
 
