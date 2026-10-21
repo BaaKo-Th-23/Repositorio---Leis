@@ -13,13 +13,14 @@ import os
 import re
 import sys
 import tempfile
+import threading
 import urllib.parse
 import urllib.request
 from html.parser import HTMLParser
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 from comum import RAIZ_ESTADUAIS, UA, Rede, caminhos, decodificar, executar, gravar, html_para_md  # noqa: E402
-from datas import data_do_texto
+from pe_identidade import identidade_do_texto, numero_indice
 
 UF = "PE"
 BASE = "https://legis.alepe.pe.gov.br"
@@ -32,8 +33,11 @@ TIPOS = {
     "1": ("leis-ordinarias", "Lei Ordinária", "lei"),
     "11": ("decretos-lei", "Decreto-Lei", "dl"),
     "6": ("decretos", "Decreto", "dec"),
+    "4": ("resolucoes", "Resolução", "res"),
+    "5": ("decretos-legislativos", "Decreto Legislativo", "dl"),
+    "8": ("portarias", "Portaria", "port"),
 }
-rede = Rede(rps=2)
+rede = Rede(rps=1)
 LINHA = re.compile(
     r"nome-norma\"><a href='texto\.aspx\?id=(\d+)[^>]*>([^<]+)</a></span>\s*<span class=\"publicacao\">([^<]*)</span>(.*?)</tr>",
     re.S,
@@ -144,15 +148,81 @@ def texto_html(html):
     return html[limites[0]:limites[1]] if limites else ""
 
 
+_ID_LOCK = threading.Lock()
+_ID_RAIZ = None
+_ID_PATHS = {}
+_KEY_PATHS = {}
+
+
+def _paths_id(ident):
+    global _ID_RAIZ, _ID_PATHS, _KEY_PATHS
+    raiz = os.path.join(RAIZ_ESTADUAIS, UF)
+    with _ID_LOCK:
+        if _ID_RAIZ != raiz:
+            encontrados = {}
+            chaves = {}
+            for base, dirs, files in os.walk(raiz):
+                dirs[:] = [d for d in dirs if not d.startswith("_")]
+                for arquivo in files:
+                    m = re.search(r"-id(\d+)\.md$", arquivo, re.I)
+                    if m:
+                        path = os.path.join(base, arquivo)
+                        encontrados.setdefault(m[1], []).append(path)
+                        key = re.match(r"(?:ec|lc|lei|dl|dec|res|port)-([\d.A-Za-z-]+)-(\d{4})-id\d+\.md$", arquivo)
+                        if key:
+                            folder = os.path.relpath(base, raiz).split(os.sep)[0]
+                            chaves.setdefault((folder, key[1].replace(".", "").lstrip("0").upper(), key[2]), []).append(path)
+            _ID_RAIZ, _ID_PATHS, _KEY_PATHS = raiz, encontrados, chaves
+        return list(_ID_PATHS.get(str(ident), []))
+
+
+def _existente(it, esperado):
+    paths = _paths_id(it["id"])
+    if not paths:
+        return None
+    divergencias = []
+    for path in paths:
+        try:
+            meta = {}
+            with open(path, encoding="utf-8") as f:
+                header = f.read().split("\n---\n", 1)[0]
+            for line in header.splitlines():
+                k, sep, v = line.partition(":")
+                if sep:
+                    try: meta[k] = json.loads(v.strip())
+                    except ValueError: meta[k] = v.strip()
+            url = urllib.parse.urlparse(meta.get("fonte", ""))
+            if url.netloc != urllib.parse.urlparse(BASE).netloc or url.path != "/texto.aspx" or urllib.parse.parse_qs(url.query).get("id") != [str(it["id"])]:
+                divergencias.append("fonte existente diverge do ID/portal oficial")
+            modo = "TEXTOATUALIZADO" if "TEXTOATUALIZADO" in it["textos"] else "TEXTOORIGINAL"
+            if urllib.parse.parse_qs(url.query).get("tipo") != [modo]:
+                divergencias.append("edição disponível no índice difere da fonte existente; revisão necessária")
+            if meta.get("publicacao") != it.get("publicacao"):
+                divergencias.append("publicação literal do índice mudou; revisão necessária")
+            normal = lambda n: re.sub(r"[.\s]", "", str(n)).upper().lstrip("0")
+            if meta.get("uf") != UF or meta.get("tipo") != TIPOS[it["tipo"]][1] or normal(meta.get("numero", "")) != normal(numero_indice(it)):
+                divergencias.append("tipo/UF/número existente diverge do índice")
+            if it.get("ano") and str(meta.get("ano", "")) != str(it["ano"]):
+                divergencias.append("ano existente difere do agrupamento do índice; requer auditoria")
+            if not meta.get("data") or not meta.get("ano"):
+                divergencias.append("data/ano existentes incompletos; requer auditoria")
+        except (OSError, ValueError, TypeError) as e:
+            divergencias.append("metadados existentes indisponíveis: " + str(e))
+    if len(paths) == 1 and os.path.abspath(paths[0]) == os.path.abspath(esperado) and not divergencias:
+        return "pulado", None
+    return "pulado", {"id": str(it["id"]), "motivo": "ID oficial já existente; não criar alias nem refazer download", "paths": paths, "divergencias": divergencias}
+
+
 def processar(it):
     pasta, nome, prefixo = TIPOS[it["tipo"]]
-    num = re.search(r"n[°º]\s*([\d.]+)", it["nome"])
+    num = re.search(r"n[°º]\s*([\d.]+(?:-[A-Za-z]+)?)", it["nome"])
     numero = num.group(1).replace(".", "") if num else "sn"
     ano = it.get("ano") or "sem-ano"
     slug = f"{prefixo}-{numero}-{ano}-id{it['id']}"
     md, fonte = caminhos(UF, pasta, ano, slug)
-    if os.path.exists(md):
-        return "pulado", None
+    existente = _existente(it, md)
+    if existente:
+        return existente
     tipo_txt = "TEXTOATUALIZADO" if "TEXTOATUALIZADO" in it["textos"] else "TEXTOORIGINAL"
     url = f"{BASE}/texto.aspx?id={it['id']}&tipo={tipo_txt}"
     st, bruto, ctype = rede.get(url, timeout=180)
@@ -187,13 +257,21 @@ def processar(it):
         except ValueError:
             pass
     titulo = it["nome"]
-    data_norma = data_do_texto(corpo, numero=numero) or ""
-    if data_norma:
-        try:
-            if dt.date.fromisoformat(data_norma) > dt.date.today():
-                data_norma = ""
-        except ValueError:
-            data_norma = ""
+    try:
+        _, data_norma, epigrafe = identidade_do_texto(it, corpo)
+    except (ValueError, KeyError) as e:
+        return "sem_texto", {"id": it["id"], "motivo": str(e), "captura": captura}
+    ano_indice = it.get("ano")
+    ano = data_norma[:4]
+    slug = f"{prefixo}-{numero}-{ano}-id{it['id']}"
+    md, fonte = caminhos(UF, pasta, ano, slug)
+    if os.path.exists(md):
+        return "pulado", {"id": it["id"], "motivo": "destino da epígrafe já existe; não sobrescrever", "path": md}
+    chave = (pasta, numero.lstrip("0").upper(), ano)
+    with _ID_LOCK:
+        colisoes = list(_KEY_PATHS.get(chave, []))
+    if colisoes:
+        return "sem_texto", {"id": it["id"], "motivo": "tipo/número/ano já existente com ID diferente; reconciliação necessária", "paths": colisoes, "captura": captura}
     meta = [
         ("titulo", titulo),
         ("uf", UF),
@@ -208,9 +286,14 @@ def processar(it):
         ("versao_texto", "atualizada" if tipo_txt == "TEXTOATUALIZADO" else "original"),
         ("fonte", url),
     ]
+    if ano_indice and str(ano_indice) != ano:
+        meta.append(("ano_indice", str(ano_indice)))
     if data and not data_publicacao:
         meta.append(("data_publicacao_na_fonte", "/".join(data.groups())))
     gravar(md, fonte, bruto, meta, f"# {titulo}\n\n{corpo}")
+    with _ID_LOCK:
+        _ID_PATHS.setdefault(str(it["id"]), []).append(md)
+        _KEY_PATHS.setdefault(chave, []).append(md)
     return "ok", None
 
 
@@ -221,4 +304,4 @@ if __name__ == "__main__":
     limite = [a for a in sys.argv[1:] if a.isdigit()]
     if limite:
         itens = itens[: int(limite[0])]
-    executar(UF, itens, processar, workers=2)
+    executar(UF, itens, processar, workers=1)
