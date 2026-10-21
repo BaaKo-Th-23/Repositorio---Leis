@@ -1,10 +1,10 @@
 # Progresso
 
-Gerado em 21/10/2026 06:43:08 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 21/10/2026 06:45:51 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Cada série contribui até sua própria meta. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**1.085.442 documentos · 1.010.427 / ~11.768.799 nas séries com meta (8.6%) · 2.560 sem meta**
+**1.094.647 documentos · 1.012.735 / ~11.768.799 nas séries com meta (8.6%) · 2.560 sem meta**
 
 ![progresso](progresso.svg)
 
@@ -91,7 +91,7 @@ Planalto, Senado, Câmara e assembleias.
 
 Diários oficiais e portais de órgãos e tribunais.
 
-609.737 documentos · 541.799 / ~861.320 nas séries com meta (62.9%) · 1.816 sem meta
+618.942 documentos · 544.107 / ~861.320 nas séries com meta (63.2%) · 1.816 sem meta
 
 ### Infralegal — tributário
 
@@ -108,14 +108,14 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal — trânsito e transportes
 
-15.914 documentos · 5.350 / ~12.857 nas séries com meta (41.6%) · 159 sem meta
+18.418 documentos · 7.658 / ~12.857 nas séries com meta (59.6%) · 159 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
 | 🟦 | CONTRAN: resoluções, deliberações e o Manual Brasileiro de Sinalização | 64 | 1.357 | `reguladores/contran` | Diário Oficial da União (in.gov.br) |
 | 🟦 | SENATRAN/DENATRAN: portarias | 1.274 | 1.500 | `reguladores/senatran` | Diário Oficial da União (in.gov.br) |
-| 🟦 | ANTT: resoluções | 1.828 | 6.000 | `reguladores/antt` | Diário Oficial da União (in.gov.br) |
-| ✅ | ANTAQ: resoluções | 2.523 | 500 | `reguladores/antaq` | Diário Oficial da União (in.gov.br) |
+| 🟦 | ANTT: resoluções | 4.136 | 6.000 | `reguladores/antt` | Diário Oficial da União (in.gov.br) |
+| ✅ | ANTAQ: resoluções | 2.719 | 500 | `reguladores/antaq` | Diário Oficial da União (in.gov.br) |
 | ✅ | ANAC: resoluções e RBAC | 9.082 | 700 | `reguladores/anac` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério dos Transportes: demais atos normativos | 684 | 2.000 | `reguladores/transportes` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério de Portos e Aeroportos | 300 | 800 | `reguladores/portos-aeroportos` | Diário Oficial da União (in.gov.br) |
@@ -123,11 +123,11 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal — saúde
 
-28.958 documentos · 15.469 / ~34.400 nas séries com meta (45.0%) · 0 sem meta
+35.659 documentos · 15.469 / ~34.400 nas séries com meta (45.0%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| ✅ | ANVISA: RDC, instruções normativas e portarias | 16.469 | 3.100 | `reguladores/anvisa` | Diário Oficial da União (in.gov.br) |
+| ✅ | ANVISA: RDC, instruções normativas e portarias | 23.170 | 3.100 | `reguladores/anvisa` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério da Saúde: portarias GM/MS e consolidadas | 11.659 | 30.000 | `reguladores/ms` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Conselho Nacional de Saúde: resoluções | 110 | 700 | `reguladores/cns` | Diário Oficial da União (in.gov.br) |
 | ✅ | ANS: resoluções normativas | 720 | 600 | `reguladores/ans` | Diário Oficial da União (in.gov.br) |
