@@ -37301,29 +37301,6 @@
       }
     },
     {
-      "path": "federal/decretos/1986/dec-92701-1986-05-21.md",
-      "sha256_md": "9b425217c20a5a805636fc9dc5c0da902a532509b3a7a4ea76afbf506e77a4ed",
-      "estado": "modelo_proprio_ausente_na_transcricao",
-      "motivo": "Suplemento próprio referido pelo decreto ausente da transcrição: somente fecho, assinaturas, nota ou rótulo/link vazio, sem corpo do objeto.",
-      "evidencia": {
-        "manifesto": "federal/_overlay_modelos_proprios_anteriores_20261020_002.json",
-        "sha256_manifesto": "317ab68dcaf4934f2c1e2e07db1a19ca998eaa4f0235a5f0d588b7138743197a",
-        "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto:1986-05-21;92701",
-        "sha256_fonte_html": "f8159571ae9e30466816ceb09e3783cb5fa5d7017345e52fa186b6cfc25066c1",
-        "trecho": {
-          "motivo": "Suplemento próprio referido pelo decreto ausente da transcrição: somente fecho, assinaturas, nota ou rótulo/link vazio, sem corpo do objeto.",
-          "remissao": "tante da ordem dos advogados do brasil - oab, indicado pela secao de sua area de atuacao.\ncapitulo ii\ndo reconhecimento\nart. 5º a associacao que satisfizer as exigencias deste decreto recebera uma ''carta de reconhecimento'', outorgada pela unidade junto a qual atuara, de acordo com o modelo anexo.\n§ 1º a concessao da ''carta de reconhecimento'', far-se-a a pedido da associacao interessada, mediante a apresentacao d",
-          "fecho": "brasilia, 21 de maio de 1986; 165º da independencia e 98º da republica.",
-          "apos_fecho": [
-            "jose sarney",
-            "raphael de almeida magalhaes",
-            "<<tabelas>>"
-          ],
-          "estado": "ausencia_na_transcricao"
-        }
-      }
-    },
-    {
       "path": "federal/decretos/1976/dec-77464-1976-04-20.md",
       "sha256_md": "5b8306fbac1fc7db7834ebd4ee123ebbec84af8ec2d02721f424da808fb84728",
       "estado": "modelo_proprio_ausente_na_transcricao",
@@ -37349,30 +37326,6 @@
       }
     },
     {
-      "path": "federal/decretos/1989/dec-97576-1989-03-15.md",
-      "sha256_md": "c8439f4ef247ce8900057f06bccbf0e29557fb966d805d27fa2066a5f12a7e52",
-      "estado": "modelo_proprio_ausente_na_transcricao",
-      "motivo": "Suplemento próprio referido pelo decreto ausente da transcrição: somente fecho, assinaturas, nota ou rótulo/link vazio, sem corpo do objeto.",
-      "evidencia": {
-        "manifesto": "federal/_overlay_modelos_proprios_anteriores_20261020_002.json",
-        "sha256_manifesto": "317ab68dcaf4934f2c1e2e07db1a19ca998eaa4f0235a5f0d588b7138743197a",
-        "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto:1989-03-15;97576",
-        "sha256_fonte_html": "b0837ce2d0b9fcbb873c6331b4d157c96c5ea2e86ca3295ec49827da861867ee",
-        "trecho": {
-          "motivo": "Suplemento próprio referido pelo decreto ausente da transcrição: somente fecho, assinaturas, nota ou rótulo/link vazio, sem corpo do objeto.",
-          "remissao": "autelar e protecao do liberado; na falta da entidade, tais informacoes poderao ser supridas por outro documento idoneo.\nart. 9° os orgaos centrais da administracao penitenciaria preencherao, ate 31 de julho de 1989, quadro de acordo com o modelo anexo, encaminhando-o a secretaria de justica e segu­ranca publica, do ministerio da justica.\nart. 10. este decreto entra em vigor na data de sua publicacao.",
-          "fecho": "brasilia, 15 de marco de 1989; 168° da independencia e 101° da republica.",
-          "apos_fecho": [
-            "jose sarney",
-            "oscar dias correa",
-            "<<anexo>>",
-            "tabelas"
-          ],
-          "estado": "ausencia_na_transcricao"
-        }
-      }
-    },
-    {
       "path": "federal/decretos/1988/dec-96035-1988-05-11.md",
       "sha256_md": "eb1c278e1ead445e68c3e75da8b7051585350e2f5c948ea4719206c66da7ae91",
       "estado": "modelo_proprio_ausente_na_transcricao",
@@ -37391,54 +37344,6 @@
             "paulo brossard",
             "<<anexos>>",
             "tabela."
-          ],
-          "estado": "ausencia_na_transcricao"
-        }
-      }
-    },
-    {
-      "path": "federal/decretos/1989/dec-98389-1989-11-13.md",
-      "sha256_md": "12e2369a5ffa2e976a731331aea51099503cb31e89bb6f33df279824072e5930",
-      "estado": "modelo_proprio_ausente_na_transcricao",
-      "motivo": "Suplemento próprio referido pelo decreto ausente da transcrição: somente fecho, assinaturas, nota ou rótulo/link vazio, sem corpo do objeto.",
-      "evidencia": {
-        "manifesto": "federal/_overlay_modelos_proprios_anteriores_20261020_002.json",
-        "sha256_manifesto": "317ab68dcaf4934f2c1e2e07db1a19ca998eaa4f0235a5f0d588b7138743197a",
-        "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto:1989-11-13;98389",
-        "sha256_fonte_html": "96fa1c1c3def27331fdeb4a28d953d782cf4adcdb5c5d6322c7cfeeecffdb326",
-        "trecho": {
-          "motivo": "Suplemento próprio referido pelo decreto ausente da transcrição: somente fecho, assinaturas, nota ou rótulo/link vazio, sem corpo do objeto.",
-          "remissao": "cautelar e protecao do liberado e, na falta da mesma, tais informacoes poderao ser supridas por outro documento idoneo.\nart. 11 - os orgaos centrais da administracao penitenciaria preencherao, ate 31 de janeiro de 1990, quadro de acordo com o modelo anexo, encaminhando-o a secretaria da justica e seguranca publica do ministerio da justica.\nart. 12 - este decreto entra em vigor na data de sua publicacao .",
-          "fecho": "brasilia, 13 de novembro de 1989; 168º da independencia e 101º da republica.",
-          "apos_fecho": [
-            "jose sarney",
-            "j. saulo ramos",
-            "<<anexo>>",
-            "tabela."
-          ],
-          "estado": "ausencia_na_transcricao"
-        }
-      }
-    },
-    {
-      "path": "federal/decretos/1988/dec-97164-1988-12-07.md",
-      "sha256_md": "b5369ca26216810792650b6f7d489b0d42bd7aa14f169116cd2df3a9b1ca05a4",
-      "estado": "modelo_proprio_ausente_na_transcricao",
-      "motivo": "Suplemento próprio referido pelo decreto ausente da transcrição: somente fecho, assinaturas, nota ou rótulo/link vazio, sem corpo do objeto.",
-      "evidencia": {
-        "manifesto": "federal/_overlay_modelos_proprios_anteriores_20261020_002.json",
-        "sha256_manifesto": "317ab68dcaf4934f2c1e2e07db1a19ca998eaa4f0235a5f0d588b7138743197a",
-        "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto:1988-12-07;97164",
-        "sha256_fonte_html": "8cbf9be903db1152d750e5efa658c7fcbd4c97eb04d5964063b012edc4aabdc7",
-        "trecho": {
-          "motivo": "Suplemento próprio referido pelo decreto ausente da transcrição: somente fecho, assinaturas, nota ou rótulo/link vazio, sem corpo do objeto.",
-          "remissao": "autelar e protecao do liberado. na falta da entidade, tais informacoes poderao ser supridas por outro documento idoneo.\nart. 9º - os orgaos centrais da administracao penitenciaria preencherao, ate 30 de abril de 1989, quadro de acordo com o modelo anexo, encaminhando-o a secretaria de justica e seguranca publica, do ministerio da justica.\nart. 10 - este decreto entra em vigor na data de sua publicacao.",
-          "fecho": "brasilia, 07 de dezembro de 1988; 167º da independencia e 100º da republica.",
-          "apos_fecho": [
-            "jose sarney",
-            "paulo brossard",
-            "<<anexo>>",
-            "(tabela)"
           ],
           "estado": "ausencia_na_transcricao"
         }
