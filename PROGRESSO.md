@@ -1,20 +1,20 @@
 # Progresso
 
-Gerado em 20/10/2026 20:47:34 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 20/10/2026 21:03:14 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Cada série contribui até sua própria meta. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**775.772 documentos · 749.983 / ~11.768.799 nas séries com meta (6.4%) · 25 sem meta**
+**795.770 documentos · 769.981 / ~11.768.799 nas séries com meta (6.5%) · 25 sem meta**
 
 ![progresso](progresso.svg)
 
-Há 369 pendências de integralidade registradas em [registro auditável](scripts/dados/pendencias-integralidade-publicadas.json). Esses documentos ficam fora da contagem até validação; seus textos e histórico são preservados.
+Há 371 pendências de integralidade registradas em [registro auditável](scripts/dados/pendencias-integralidade-publicadas.json). Esses documentos ficam fora da contagem até validação; seus textos e histórico são preservados.
 
 ## Fase 1 — legislação federal e leis estaduais
 
 Planalto, Senado, Câmara e assembleias.
 
-409.603 documentos · 403.262 / ~574.766 nas séries com meta (70.2%) · 0 sem meta
+409.601 documentos · 403.260 / ~574.766 nas séries com meta (70.2%) · 0 sem meta
 
 ### Constituição Federal
 
@@ -53,11 +53,11 @@ Planalto, Senado, Câmara e assembleias.
 
 ### Decretos do Executivo federal
 
-45.831 / ~153.657 documentos (29.8%)
+45.829 / ~153.657 documentos (29.8%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Decretos numerados (1889–hoje, as duas séries) | 31.304 | 139.127 | `federal/decretos` | normas.leg.br + Planalto |
+| 🟦 | Decretos numerados (1889–hoje, as duas séries) | 31.302 | 139.127 | `federal/decretos` | normas.leg.br + Planalto |
 | 🟦 | Decretos não numerados | 14.507 | 14.510 | `federal/decretos-nao-numerados` | Planalto |
 | ✅ | Regulamentos consolidados (RIR, RIPI, Aduaneiro, RPS, PAF) | 20 | 20 | `federal/regulamentos` | Planalto |
 
@@ -91,7 +91,7 @@ Planalto, Senado, Câmara e assembleias.
 
 Diários oficiais e portais de órgãos e tribunais.
 
-353.786 documentos · 334.363 / ~861.320 nas séries com meta (38.8%) · 0 sem meta
+373.786 documentos · 354.363 / ~861.320 nas séries com meta (41.1%) · 0 sem meta
 
 ### Infralegal — tributário
 
@@ -268,11 +268,11 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal estadual
 
-269.533 documentos · 261.454 / ~577.054 nas séries com meta (45.3%) · 0 sem meta
+289.533 documentos · 281.454 / ~577.054 nas séries com meta (48.8%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Decretos dos governadores (27 UF) | 186.830 | 400.000 | `estaduais/*/decretos`, `estaduais/*/decretos-nao-numerados` | Casas Civis e diários oficiais estaduais |
+| 🟦 | Decretos dos governadores (27 UF) | 206.830 | 400.000 | `estaduais/*/decretos`, `estaduais/*/decretos-nao-numerados` | Casas Civis e diários oficiais estaduais |
 | ⬜️ | Regulamentos do ICMS (RICMS das 27 UF) | 0 | 27 | `estaduais/*/regulamentos` | Secretarias de Fazenda |
 | 🟦 | Instruções normativas e portarias das SEFAZ | 1.350 | 50.000 | `estaduais/*/instrucoes-normativas` | Secretarias de Fazenda |
 | ⬜️ | Resoluções e decisões normativas dos TCE | 0 | 10.000 | `estaduais/*/resolucoes-tce` | Tribunais de Contas estaduais |
