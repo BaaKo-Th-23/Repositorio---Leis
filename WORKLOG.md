@@ -1791,3 +1791,9 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Inventário offline preservado: 11.316 paths/IDs de retenções históricas, zero outros elegíveis para esse modo. Entre 9.896 sem aceite de fonte conhecido, 6.362 têm anexos, 3.489 HTML/entidades, 42 âncoras e três estilo/tachado/agendamento. Aceite em recibo não significa publicação; não se extrapolam os três exemplos.
 - Também preservada triagem da varredura municipal ampla: cada um dos 233 problemas contém um publicado e um candidato privado, nenhum par de dois publicados; os 1.081 novos não estão envolvidos. Nada desses candidatos foi removido ou promovido.
 - SHA/escopo de 61 caminhos conferidos; três normas sem erros/avisos. Duas linhas vazias de contexto em patch histórico têm o espaço obrigatório do diff unificado: bytes e posições comprovados, demais classes passam diffcheck. Metas inalteradas.
+
+### Reguladores: 4.554 atos e baseline de 208.167 cabeçalhos reais
+
+- DOU022: 3.476 comparações diretas, cinco contadores AST comprovados e 1.073 recuperações HTML nativo integral. Fontes primárias completas, preimagens e candidatos preservados antes das promoções. Outros candidatos permanecem retidos pelas provas de fonte/identidade/assinatura/estrutura.
+- Confronto final adicional de todos os 4.554 contra 208.167 cabeçalhos de blobs reais do HEAD 45d2b7f3, por URL e identidade pasta/tipo/número/data, sem colisões. O gerador leu cabeçalhos inteiros por OID, sem truncar nem usar arquivos mutáveis do disco; zero omitidos. Baseline NUL, cache, vínculos path/OID e código congelados permitem reutilização nas próximas auditorias.
+- ROOT conferiu SHA/escopo dos 4.573 caminhos preparados, três controles já iguais em HEAD. Auditoria normativa: 4.554 sem erros/avisos; diffcheck integral sem exceções necessárias. Fontes completas em partes manejáveis, sem truncamento. Metas inalteradas; presença no catálogo ou ausência de alertas não certifica vigência jurídica.
