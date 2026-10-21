@@ -1,10 +1,10 @@
 # Progresso
 
-Gerado em 20/10/2026 23:49:11 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 21/10/2026 03:31:18 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Cada série contribui até sua própria meta. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**1.016.089 documentos · 962.985 / ~11.768.799 nas séries com meta (8.2%) · 2.005 sem meta**
+**1.017.055 documentos · 962.985 / ~11.768.799 nas séries com meta (8.2%) · 2.005 sem meta**
 
 ![progresso](progresso.svg)
 
@@ -91,7 +91,7 @@ Planalto, Senado, Câmara e assembleias.
 
 Diários oficiais e portais de órgãos e tribunais.
 
-558.077 documentos · 511.505 / ~861.320 nas séries com meta (59.4%) · 1.816 sem meta
+559.043 documentos · 511.505 / ~861.320 nas séries com meta (59.4%) · 1.816 sem meta
 
 ### Infralegal — tributário
 
@@ -123,11 +123,11 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal — saúde
 
-17.561 documentos · 10.325 / ~34.400 nas séries com meta (30.0%) · 0 sem meta
+18.515 documentos · 10.325 / ~34.400 nas séries com meta (30.0%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| ✅ | ANVISA: RDC, instruções normativas e portarias | 10.336 | 3.100 | `reguladores/anvisa` | Diário Oficial da União (in.gov.br) |
+| ✅ | ANVISA: RDC, instruções normativas e portarias | 11.290 | 3.100 | `reguladores/anvisa` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério da Saúde: portarias GM/MS e consolidadas | 6.748 | 30.000 | `reguladores/ms` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Conselho Nacional de Saúde: resoluções | 84 | 700 | `reguladores/cns` | Diário Oficial da União (in.gov.br) |
 | 🟦 | ANS: resoluções normativas | 393 | 600 | `reguladores/ans` | Diário Oficial da União (in.gov.br) |
@@ -145,7 +145,7 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal — meio ambiente
 
-8.393 documentos · 4.491 / ~10.720 nas séries com meta (41.9%) · 0 sem meta
+8.397 documentos · 4.491 / ~10.720 nas séries com meta (41.9%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -154,7 +154,7 @@ Diários oficiais e portais de órgãos e tribunais.
 | ✅ | ICMBio: instruções normativas | 461 | 400 | `reguladores/icmbio` | Diário Oficial da União (in.gov.br) |
 | 🟦 | ANA e CNRH: resoluções | 61 | 3.000 | `reguladores/ana` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Serviço Florestal Brasileiro: instruções normativas | 20 | 200 | `reguladores/sfb` | Diário Oficial da União (in.gov.br) |
-| ✅ | Ministério da Agricultura: instruções normativas | 6.521 | 3.000 | `reguladores/mapa` | Diário Oficial da União (in.gov.br) |
+| ✅ | Ministério da Agricultura: instruções normativas | 6.525 | 3.000 | `reguladores/mapa` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério do Meio Ambiente: demais atos normativos | 222 | 1.500 | `reguladores/mma` | Diário Oficial da União (in.gov.br) |
 | ✅ | Ministério da Pesca e Aquicultura | 920 | 600 | `reguladores/pesca` | Diário Oficial da União (in.gov.br) |
 
@@ -192,7 +192,7 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal — educação e cultura
 
-16.688 documentos · 8.960 / ~12.300 nas séries com meta (72.8%) · 0 sem meta
+16.696 documentos · 8.960 / ~12.300 nas séries com meta (72.8%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -204,7 +204,7 @@ Diários oficiais e portais de órgãos e tribunais.
 | ✅ | IPHAN: portarias e instruções normativas | 406 | 400 | `reguladores/iphan` | Diário Oficial da União (in.gov.br) |
 | ✅ | Ministério da Cultura | 3.722 | 1.200 | `reguladores/cultura` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério do Esporte | 237 | 400 | `reguladores/esporte` | Diário Oficial da União (in.gov.br) |
-| ✅ | Ministério do Turismo | 769 | 600 | `reguladores/turismo` | Diário Oficial da União (in.gov.br) |
+| ✅ | Ministério do Turismo | 777 | 600 | `reguladores/turismo` | Diário Oficial da União (in.gov.br) |
 | ✅ | Ministério da Ciência, Tecnologia e Inovação | 2.414 | 1.500 | `reguladores/mcti` | Diário Oficial da União (in.gov.br) |
 
 ### Infralegal — justiça e controle

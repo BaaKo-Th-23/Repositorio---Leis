@@ -46,6 +46,33 @@ class CacheDOU(unittest.TestCase):
     def conferir(self):
         return audit.conferir(self.path, set(), set(), dt.date(2026, 10, 20))
 
+    def usar_nativo(self, modo='html-nativo-texto-dou-v1'):
+        fonte = gzip.decompress(next((self.root / 'reguladores/_fonte/ans/2026').glob('*.gz')).read_bytes()).decode()
+        fragmento = re.search(r'<div[^>]+class="[^\"]*texto-dou[^\"]*".*?</div>\s*(?=<div|</section|</main)', fonte, re.S)[0]
+        cab, corpo = self.path.read_text().split('\n---\n', 1)
+        if modo == 'html-nativo-texto-dou-v1':
+            corpo = '# ' + self.title + '\n\n' + audit.representar_fragmento(fragmento, modo=modo)
+        self.path.write_text(cab + '\nrepresentacao_corpo: ' + json.dumps(modo) + '\n---\n' + corpo)
+
+    def test_html_nativo_explicitamente_provado_contra_fonte(self):
+        self.fixture('<p><em>Clavibacter</em>: -100,50; 0,5%; R$ 2,00.</p>')
+        self.usar_nativo()
+        _, meta = self.conferir()
+        self.assertEqual(meta['representacao_corpo'], 'html-nativo-texto-dou-v1')
+
+    def test_html_nativo_nao_aceita_alterar_decimal(self):
+        self.fixture('<p>Valor de referência: 0,5%.</p>')
+        self.usar_nativo()
+        self.path.write_text(self.path.read_text().replace('0,5%', '05%'))
+        with self.assertRaisesRegex(ValueError, 'corpo diverge'):
+            self.conferir()
+
+    def test_modo_desconhecido_nao_recai_no_conversor_legado(self):
+        self.fixture()
+        self.usar_nativo('desconhecido')
+        with self.assertRaisesRegex(ValueError, 'desconhecido'):
+            self.conferir()
+
     def test_texto_integral_e_publicacao_confirmados(self):
         self.fixture()
         registro, _ = self.conferir()

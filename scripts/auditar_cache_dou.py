@@ -21,6 +21,7 @@ from auditar import validar
 from baixar_dou import assinatura_do_ato, pendencia_integralidade
 from comum import normalizar_chave
 from html2md import convert
+from representacao_html_dou import representar_fragmento
 from metadados_lotes import carregar as carregar_headers
 
 RAIZ = Path(__file__).resolve().parent.parent
@@ -102,7 +103,9 @@ def conferir(path, existentes, urls, hoje, bruto_md=None, fonte_bytes=None):
     if re.match(r"^(retifica|despacho|extrato|aviso|edital|comunicado|apostila)", normalizar_chave(titulos[0])):
         raise ValueError("tipo fora do recorte normativo")
     convertido = convert(fragmento)
-    if corpo != "# " + meta["titulo"] + "\n\n" + convertido:
+    representado = (representar_fragmento(fragmento, modo=meta["representacao_corpo"])
+                   if "representacao_corpo" in meta else convertido)
+    if corpo != "# " + meta["titulo"] + "\n\n" + representado:
         raise ValueError("corpo diverge da reconversão integral do HTML")
     if pendencia_integralidade(convertido):
         raise ValueError("íntegra externa pendente")

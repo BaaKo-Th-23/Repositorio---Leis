@@ -1620,3 +1620,10 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - DPL 4.182 estava publicado sob 1919 embora a epígrafe, o fecho, o URL Planalto, Senado e Câmara identifiquem 1920. O corpo legado foi confrontado literalmente, arquivado integralmente e retirado do caminho incorreto no mesmo commit da identidade canônica de 1920. O índice legado errado permanece documentado; nenhuma segunda norma foi criada.
 - DPL 4.555/1922 incorpora 22 tabelas estruturadas e 22 escapes que preservam os rótulos numéricos literais em CommonMark. Duas preimagens locais anteriormente não publicadas também foram arquivadas antes das substituições. Ambos os textos passam pontuação, assinatura e contexto numéricos contra fonte, com renderizador independente.
 - Variação líquida: um documento, sem reduzir metas. Guard do coletor recusa divergência explícita de número/data da epígrafe; três testes passaram. Auditoria do index: dois documentos, sem erros ou avisos; diffcheck integral passou sem dispensas.
+
+### DOU: 966 atos recuperados com representação explícita
+
+- Fragmento normativo HTML preservado literalmente em modo html-nativo-texto-dou-v1, mantendo metadados e H1 e normalizando LF/espaços textuais finais por entidades equivalentes. Resolve delimitadores de ênfase interpretados incorretamente pelo Markdown, sem reconstruir palavras, sinais ou valores.
+- Auditor aceita o modo somente por campo explícito e igualdade exata com o helper; modo desconhecido falha. Conversor padrão e gates existentes de publicação, identidade, assinatura, íntegra, objetos e visuais permanecem aplicados. Dezessete testes passaram, incluindo corrupção de decimal e modo desconhecido.
+- ROOT validou as 966 preimagens, candidatos, fontes e duplicações antes de qualquer promoção. HTML primário e todas as preimagens completas arquivados em gzip; capturas anteriores mantêm sua data real. Replay independente CommonMark/números já aprovado individualmente.
+- Auditoria dos 966 documentos do index sem erros ou avisos; diffcheck integral passou sem dispensas. CSS externo não fornecido no fragmento não é presumido pelo helper.
