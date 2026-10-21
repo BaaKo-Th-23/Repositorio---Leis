@@ -1,10 +1,10 @@
 # Progresso
 
-Gerado em 21/10/2026 04:14:36 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 21/10/2026 04:22:50 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Cada série contribui até sua própria meta. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**1.034.214 documentos · 977.156 / ~11.768.799 nas séries com meta (8.3%) · 2.061 sem meta**
+**1.036.222 documentos · 979.164 / ~11.768.799 nas séries com meta (8.3%) · 2.061 sem meta**
 
 ![progresso](progresso.svg)
 
@@ -14,7 +14,7 @@ Há 2.149 pendências de integralidade registradas em [registro auditável](scri
 
 Planalto, Senado, Câmara e assembleias.
 
-456.364 documentos · 450.021 / ~574.766 nas séries com meta (78.3%) · 0 sem meta
+457.464 documentos · 451.121 / ~574.766 nas séries com meta (78.5%) · 0 sem meta
 
 ### Constituição Federal
 
@@ -75,14 +75,14 @@ Planalto, Senado, Câmara e assembleias.
 
 ### Leis estaduais e distritais
 
-296.211 documentos · 289.881 / ~347.467 nas séries com meta (83.4%) · 0 sem meta
+297.311 documentos · 290.981 / ~347.467 nas séries com meta (83.7%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
 | ✅ | Constituições estaduais e Lei Orgânica do DF | 27 | 27 | `estaduais/*/constituicao`, `estaduais/*/lei-organica` | Assembleias e Casas Civis |
 | 🟦 | Constituições estaduais históricas | 9 | 40 | `estaduais/*/constituicoes-historicas` | Assembleias |
 | 🟦 | Emendas constitucionais estaduais | 2.023 | 2.200 | `estaduais/*/emendas-constitucionais` | Assembleias |
-| 🟦 | Leis ordinárias estaduais | 274.232 | 330.000 | `estaduais/*/leis-ordinarias` | 19 scripts, uma fonte por UF |
+| 🟦 | Leis ordinárias estaduais | 275.332 | 330.000 | `estaduais/*/leis-ordinarias` | 19 scripts, uma fonte por UF |
 | 🟦 | Leis complementares estaduais | 12.390 | 14.000 | `estaduais/*/leis-complementares` | 19 scripts, uma fonte por UF |
 | ✅ | Decretos-leis e leis delegadas estaduais | 6.676 | 600 | `estaduais/*/decretos-lei`, `estaduais/*/leis-delegadas`, `estaduais/*/decretos-lei-complementares` | Assembleias |
 | ✅ | Leis promulgadas, constitucionais e emendas à Lei Orgânica | 854 | 600 | `estaduais/*/leis-promulgadas`, `estaduais/*/leis-constitucionais`, `estaduais/*/emendas-lei-organica` | Assembleias |
@@ -91,7 +91,7 @@ Planalto, Senado, Câmara e assembleias.
 
 Diários oficiais e portais de órgãos e tribunais.
 
-562.581 documentos · 512.111 / ~861.320 nas séries com meta (59.5%) · 1.816 sem meta
+563.489 documentos · 513.019 / ~861.320 nas séries com meta (59.6%) · 1.816 sem meta
 
 ### Infralegal — tributário
 
@@ -272,11 +272,11 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal estadual
 
-396.998 documentos · 386.764 / ~577.054 nas séries com meta (67.0%) · 0 sem meta
+397.906 documentos · 387.672 / ~577.054 nas séries com meta (67.2%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Decretos dos governadores (27 UF) | 306.910 | 400.000 | `estaduais/*/decretos`, `estaduais/*/decretos-nao-numerados` | Casas Civis e diários oficiais estaduais |
+| 🟦 | Decretos dos governadores (27 UF) | 307.818 | 400.000 | `estaduais/*/decretos`, `estaduais/*/decretos-nao-numerados` | Casas Civis e diários oficiais estaduais |
 | ⬜️ | Regulamentos do ICMS (RICMS das 27 UF) | 0 | 27 | `estaduais/*/regulamentos` | Secretarias de Fazenda |
 | 🟦 | Instruções normativas e portarias das SEFAZ | 1.432 | 50.000 | `estaduais/*/instrucoes-normativas` | Secretarias de Fazenda |
 | ⬜️ | Resoluções e decisões normativas dos TCE | 0 | 10.000 | `estaduais/*/resolucoes-tce` | Tribunais de Contas estaduais |
