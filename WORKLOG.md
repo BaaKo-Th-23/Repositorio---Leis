@@ -1394,3 +1394,29 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
   passaram. Somente uma linha vazia de EOF em código foi normalizada.
 - Auditoria do index: 20.000 normas sem erros ou avisos. Prova de whitespace
   registrou 0 hardbreaks de exatamente dois espaços; demais checks passaram.
+
+### Seleção municipal final: 1.967 documentos
+
+- Pacote exato em municipais/_lotes/20261020-pacote-final-1967/manifesto.json
+  e receipt de publicação individual. Listas antigas de 1.673/2.009 foram
+  substituídas após retenção de misturas em outras colunas, projetos, objetos
+  e identidades divergentes, municípios incorretos e 24 datas conflitantes.
+- Inclui cinco documentos de capitais e a alternativa individual assinada da
+  Emenda 52 de Cáceres; o diário contaminado ficou como prova histórica.
+  Datas de API sem epígrafe clara são atribuídas à API, sem confirmação inventada.
+- Trinta e sete testes passaram. Auditoria do index: 1.967 novas normas sem
+  erro/aviso; auditoria municipal de 14.350 documentos sem problema ou aviso.
+  Ausência de colisões também foi confrontada com o baseline de 12.383.
+- Fontes HTML preservam seus bytes e hash com atributos específicos; os
+  1.733 avisos restantes são apenas linhas vazias no EOF de Markdown,
+  conferidas no index. Nenhum corpo normativo foi ajustado para silenciá-los.
+
+### Revisão federal complementar de objetos aprovados
+
+- Overlays 001/002 verificam 53.123 documentos e identificam 501 retenções
+  (476 objetos não representados na transcrição e 25 ambiguidades), oito
+  já conhecidas. Rótulos como &lt;&lt;ANEXO>> e links não são o objeto aprovado.
+- Foram acrescentadas 307 pendências de documentos já publicados ao registro,
+  que passa de 371 a 678. Todos os SHA do index e HTML foram conferidos;
+  textos e histórico são preservados e ficam fora do progresso elegível.
+  Outras retenções atingem só lotes ainda não publicados, que serão filtrados.

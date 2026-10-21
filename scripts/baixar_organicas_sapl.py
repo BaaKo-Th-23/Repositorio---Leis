@@ -10,6 +10,7 @@ from urllib.parse import urlsplit
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from comum import Rede, documento_para_md, normalizar_chave, yaml_str
+from granularidade_sapl import alertas_multiplos_atos, alertas_outras_publicacoes
 
 RAIZ = Path(__file__).resolve().parent.parent / "municipais"
 FONTES = [("Lapa", "PR", "sapl.lapa.pr.leg.br"),
@@ -56,7 +57,9 @@ def categoria_norma(tipo, norma=None):
     t = normalizar_chave(tipo)
     if re.search(r"projeto|proposta|requerimento|indicacao|veto|mensagem|parecer", t):
         return None
-    if "organica" in t:
+    if re.search(r"\blei delegada\b", t):
+        return None  # tipo distinto; não rotular silenciosamente como lei ordinária
+    if "organica" in t or t == "loman" or t == "emenda a loman":
         return ("emendas-lei-organica", "Emenda à Lei Orgânica") if "emenda" in t else ("lei-organica", "Lei Orgânica")
     if "decreto legislativo" in t:
         return "decretos-legislativos", "Decreto legislativo"
@@ -81,6 +84,27 @@ def escrever(p, b):
     tmp = p.with_name(p.name + ".tmp")
     tmp.write_bytes(b)
     tmp.replace(p)
+
+
+def corpo_integral_reconhecivel(corpo, emenda=False):
+    if re.search(r"art(?:igo)?\.?\s*1(?:[º°o]|\b)", corpo, re.I):
+        return True
+    # Algumas emendas transcrevem primeiro o artigo que alteram; o próprio ato
+    # usa PROMULGA/PROMULGAM e traz sua cláusula de vigência, sem um Art. 1º.
+    # Não corrige nem adivinha numeração eventualmente reconhecida por OCR.
+    return bool(emenda and len(corpo) > 500
+                and re.search(r"\bpromulg(?:o|a|am|amos)\b", corpo, re.I)
+                and re.search(r"vigorar|vigor", corpo, re.I))
+
+
+def motivo_retencao(cache, identificador, bruto):
+    path = cache / "retidos-integralidade.json"
+    if not path.exists():
+        return None
+    registro = json.loads(path.read_text()).get(str(identificador))
+    if registro and registro.get("sha256_fonte") == hashlib.sha256(bruto).hexdigest():
+        return registro["motivo"]
+    return None
 
 
 def executar(fontes, rps, modo="organicas", max_documentos=0):
@@ -128,7 +152,8 @@ def executar(fontes, rps, modo="organicas", max_documentos=0):
                 d = api(f"norma/tiponormajuridica/?page_size=100&page={page}")
                 tipos_reais.extend(d["results"])
                 tipos += [t for t in d["results"] if categoria_norma(t["descricao"]) and
-                          (modo == "legislacao" or "organica" in normalizar_chave(t["descricao"]))]
+                          (modo == "legislacao" or categoria_norma(t["descricao"])[0] in
+                           ("lei-organica", "emendas-lei-organica"))]
                 if not d["pagination"].get("next_page"):
                     break
                 page += 1
@@ -137,6 +162,17 @@ def executar(fontes, rps, modo="organicas", max_documentos=0):
             eq_path = cache / "equivalencias.json"
             equivalencias = json.loads(eq_path.read_text()) if eq_path.exists() else {}
             pasta_municipio = RAIZ / uf / normalizar_chave(nome).replace(" ", "-")
+            # Índice local por município: evita reler todos os corpos a cada ato.
+            fontes_md = set()
+            hashes_md = {}
+            for existente in pasta_municipio.glob("**/*.md"):
+                texto_existente = existente.read_text()
+                m_fonte = re.search(r'^fonte: (".*")$', texto_existente, re.M)
+                m_hash = re.search(r'^sha256_texto: "([a-f0-9]{64})"$', texto_existente, re.M)
+                if m_fonte:
+                    fontes_md.add(json.loads(m_fonte[1]))
+                if m_hash:
+                    hashes_md.setdefault(m_hash[1], []).append(existente)
             for tipo in tipos:
                 page = 1
                 vistos = set()
@@ -151,8 +187,7 @@ def executar(fontes, rps, modo="organicas", max_documentos=0):
                             emenda = "emenda" in tipo["descricao"].lower()
                             categoria, tipo_canonico = categoria_norma(tipo["descricao"], n)
                             identity = f"https://{host}/norma/{n['id']}"
-                            existentes = list(pasta_municipio.glob("**/*.md"))
-                            if any(f"fonte: {yaml_str(identity)}\n" in x.read_text() for x in existentes):
+                            if identity in fontes_md:
                                 pulado += 1
                                 continue
                             if max_documentos and ok >= max_documentos:
@@ -164,16 +199,24 @@ def executar(fontes, rps, modo="organicas", max_documentos=0):
                                 url = "https://" + url.split("://", 1)[1]
                             fonte = RAIZ / "_fonte/organicas-sapl" / host / f"{n['id']}.bin"
                             b = obter(url, fonte)
+                            retencao = motivo_retencao(cache, n["id"], b)
+                            if retencao:
+                                raise RuntimeError("fonte retida para revisão de integralidade: " + retencao)
                             corpo, motivo = documento_para_md(b, url)
                             if motivo:
                                 raise RuntimeError(motivo)
-                            if not (re.search(r"art(?:igo)?\.?\s*1(?:[º°o]|\b)", corpo, re.I) or
-                                    (emenda and len(corpo) > 500 and re.search("promulgo", corpo, re.I) and
-                                     re.search(r"vigorar|vigor", corpo, re.I))):
+                            granularidade = alertas_multiplos_atos(corpo, tipo["descricao"], n["numero"])
+                            outras_publicacoes = alertas_outras_publicacoes(corpo)
+                            if outras_publicacoes:
+                                raise RuntimeError("possível aviso/extrato de outra publicação no anexo; revisar: " + json.dumps(outras_publicacoes, ensure_ascii=False))
+                            if granularidade:
+                                raise RuntimeError("anexo contém epígrafe de outra norma; revisar granularidade: " +
+                                                   json.dumps(granularidade, ensure_ascii=False))
+                            if not corpo_integral_reconhecivel(corpo, emenda):
                                 raise RuntimeError("texto sem artigo inicial reconhecível; revisar integralidade")
                             # Guarda versões iguais uma vez por município, preservando o índice original.
                             digest = hashlib.sha256(corpo.encode()).hexdigest()
-                            iguais = [x for x in existentes if f'sha256_texto: "{digest}"' in x.read_text()]
+                            iguais = hashes_md.get(digest, [])
                             if iguais:
                                 equivalencias[str(n["id"])] = {"arquivo": str(iguais[0].relative_to(RAIZ)),
                                     "fonte": identity, "fonte_texto": url, "sha256_texto": digest}
@@ -213,6 +256,8 @@ def executar(fontes, rps, modo="organicas", max_documentos=0):
                             cab = ["---"] + [f"{k}: {yaml_str(v)}" for k, v in meta.items()] + ["---", "", f"# {titulo}", "", corpo, ""]
                             arq = pasta_municipio / categoria / ano / f"{categoria}-{normalizar_chave(numero)}-{ano}-sapl-{n['id']}.md"
                             escrever(arq, "\n".join(cab).encode())
+                            fontes_md.add(identity)
+                            hashes_md.setdefault(digest, []).append(arq)
                             ok += 1
                         except Exception as e:
                             erros += 1
@@ -228,9 +273,7 @@ def executar(fontes, rps, modo="organicas", max_documentos=0):
             escrever(cache / ("indice.json" if modo == "organicas" else "indice-legislacao.json"), json.dumps({"fonte": f"https://{host}/api/norma/normajuridica/",
                      "municipio": nome, "uf": uf, "codigo_ibge": codigo, "modo": modo, "tipos_reais": tipos_reais, "tipos": tipos,
                      "normas": indice, "consultado_em": dt.date.today().isoformat()}, ensure_ascii=False).encode())
-            presentes = {n["id"] for n in indice if any(
-                "fonte: " + yaml_str("https://" + host + "/norma/" + str(n["id"])) + "\n" in x.read_text()
-                for x in pasta_municipio.glob("**/*sapl*.md"))}
+            presentes = {n["id"] for n in indice if "https://" + host + "/norma/" + str(n["id"]) in fontes_md}
             registro = json.loads(registro_path.read_text())
             registro[str(codigo)]["fontes"][host].setdefault(modo, {}).update({"estado": "índice de tipos normativos completo capturado", "limite_textos": max_documentos,
                 "registros": len(indice), "textos_md": len(presentes), "ids_equivalentes": list(equivalencias), "ids_sem_md": [n["id"] for n in indice if n["id"] not in presentes and str(n["id"]) not in equivalencias], "normas_distintas": len({(n["tipo"], n["numero"], n["ano"]) for n in indice}),
@@ -311,8 +354,8 @@ if __name__ == "__main__":
         for municipio in json.loads(registro_path.read_text()).values():
             fontes.extend((municipio["municipio"], municipio["uf"], host) for host in municipio["fontes"])
     if a.descobrir:
-        if not re.fullmatch(r"[a-z0-9.-]+\.leg\.br", a.descobrir):
-            ap.error("informe um host legislativo oficial .leg.br")
+        if not re.fullmatch(r"[a-z0-9.-]+\.(?:leg|gov)\.br", a.descobrir):
+            ap.error("informe um host oficial .leg.br ou .gov.br; identidade da casa será confrontada com IBGE")
         url = f"https://{a.descobrir}/api/base/casalegislativa/"
         st, bruto, _ = rede_host(a.descobrir, a.rps).get(url, tentativas=1)
         if st != 200:

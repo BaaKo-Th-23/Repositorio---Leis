@@ -26,7 +26,7 @@ def metadados(texto):
     cab = texto.split("\n---", 1)[0]
     meta = {}
     for linha in cab.splitlines():
-        m = re.match(r"^([a-z_]+):\s*(.*)$", linha)
+        m = re.match(r"^([a-z_][a-z0-9_]*):\s*(.*)$", linha)
         if m:
             try:
                 meta[m[1]] = json.loads(m[2])
@@ -62,8 +62,8 @@ def main():
                     yield a.raiz / nome, texto
             # O índice completo inclui documentos anteriores inalterados, adições e
             # modificações, mas exclui remoções: detecta duplicatas entre lotes.
-            dados = subprocess.check_output(["rtk", "proxy", "git", "ls-files", "--cached", "-z", "--", "municipais"], cwd=a.raiz)
-            processo = subprocess.Popen(["rtk", "proxy", "git", "cat-file", "--batch"], cwd=a.raiz,
+            dados = subprocess.check_output(["git", "ls-files", "--cached", "-z", "--", "municipais"], cwd=a.raiz)
+            processo = subprocess.Popen(["git", "cat-file", "--batch"], cwd=a.raiz,
                                         stdin=subprocess.PIPE, stdout=subprocess.PIPE)
             try:
                 for nome in sorted(set(dados.decode().split("\0")) - alterados):
