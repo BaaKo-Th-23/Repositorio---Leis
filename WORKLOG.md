@@ -1479,3 +1479,10 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 
 - Entre 2.438 sinais amplos, 1.484 apresentam objeto/clausulas proprias e 59 nao comprovam aprovacao propria pelo gate estrito. Nao foram declarados incompletos automaticamente.
 - Acrescentadas 872 pendencias por SHA do HEAD e HTML: 67 avisos explicitos de omissao textual e 805 suspeitas conservadoras sem representacao comprovada. Registro passa de 1.259 para 2.131; textos preservados, fora do progresso elegivel ate revisao.
+
+### Tabelas recuperadas em 1.320 normas federais
+
+- 1.234 medidas provisorias e 86 emendas constitucionais recuperam 14.250 tabelas antes perdidas. Texto visivel preservado e estrutura de tabelas/celulas confrontada com fonte oficial, identidade e fecho verificados.
+- Todos os SHA anteriores foram comparados ao HEAD antes de substituir; captura oficial e corpo anterior preservados no historico comprimido. Candidatos de evidencia fora das pastas contadas.
+- Outras 166 candidatas permanecem em revisao, sem declarar ausencia automaticamente; tres previamente reparadas nao foram sobrescritas.
+- Auditoria do index sem erros ou avisos; 23.281 hardbreaks exatos, incluindo 8.200 linhas vazias com dois espacos, provados por SHA e linha. Demais verificacoes de whitespace passaram.
