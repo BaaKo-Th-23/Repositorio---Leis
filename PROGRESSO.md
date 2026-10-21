@@ -1,14 +1,14 @@
 # Progresso
 
-Gerado em 20/10/2026 22:05:34 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 20/10/2026 22:06:50 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Cada série contribui até sua própria meta. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**931.578 documentos · 895.184 / ~11.768.799 nas séries com meta (7.6%) · 157 sem meta**
+**930.706 documentos · 895.080 / ~11.768.799 nas séries com meta (7.6%) · 157 sem meta**
 
 ![progresso](progresso.svg)
 
-Há 1.259 pendências de integralidade registradas em [registro auditável](scripts/dados/pendencias-integralidade-publicadas.json). Esses documentos ficam fora da contagem até validação; seus textos e histórico são preservados.
+Há 2.131 pendências de integralidade registradas em [registro auditável](scripts/dados/pendencias-integralidade-publicadas.json). Esses documentos ficam fora da contagem até validação; seus textos e histórico são preservados.
 
 ## Fase 1 — legislação federal e leis estaduais
 
@@ -91,7 +91,7 @@ Planalto, Senado, Câmara e assembleias.
 
 Diários oficiais e portais de órgãos e tribunais.
 
-473.725 documentos · 443.831 / ~861.320 nas séries com meta (51.5%) · 0 sem meta
+472.853 documentos · 443.727 / ~861.320 nas séries com meta (51.5%) · 0 sem meta
 
 ### Infralegal — tributário
 
@@ -268,20 +268,20 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal estadual
 
-372.549 documentos · 361.547 / ~577.054 nas séries com meta (62.7%) · 0 sem meta
+371.677 documentos · 361.443 / ~577.054 nas séries com meta (62.6%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Decretos dos governadores (27 UF) | 281.690 | 400.000 | `estaduais/*/decretos`, `estaduais/*/decretos-nao-numerados` | Casas Civis e diários oficiais estaduais |
+| 🟦 | Decretos dos governadores (27 UF) | 281.589 | 400.000 | `estaduais/*/decretos`, `estaduais/*/decretos-nao-numerados` | Casas Civis e diários oficiais estaduais |
 | ⬜️ | Regulamentos do ICMS (RICMS das 27 UF) | 0 | 27 | `estaduais/*/regulamentos` | Secretarias de Fazenda |
 | 🟦 | Instruções normativas e portarias das SEFAZ | 1.432 | 50.000 | `estaduais/*/instrucoes-normativas` | Secretarias de Fazenda |
 | ⬜️ | Resoluções e decisões normativas dos TCE | 0 | 10.000 | `estaduais/*/resolucoes-tce` | Tribunais de Contas estaduais |
 | ⬜️ | Resoluções e provimentos dos TJ e das Corregedorias | 0 | 8.000 | `estaduais/*/resolucoes-tj` | Tribunais de Justiça |
 | 🟦 | Regimentos internos das Assembleias | 18 | 27 | `estaduais/*/regimentos` | Assembleias |
 | 🟦 | Decretos legislativos estaduais | 17.148 | 20.000 | `estaduais/*/decretos-legislativos` | Assembleias (SAPL e sistemas próprios) |
-| ✅ | Resoluções das Assembleias | 36.002 | 25.000 | `estaduais/*/resolucoes` | Assembleias (SAPL e sistemas próprios) |
+| ✅ | Resoluções das Assembleias | 35.234 | 25.000 | `estaduais/*/resolucoes` | Assembleias (SAPL e sistemas próprios) |
 | 🟦 | Portarias das administrações estaduais e distrital | 33.503 | 60.000 | `estaduais/*/portarias` | SINJ-DF, Legisla Goiás e sistemas equivalentes |
-| 🟦 | Deliberações, súmulas administrativas, provimentos e pareceres normativos | 2.756 | 4.000 | `estaduais/*/deliberacoes`, `estaduais/*/sumulas`, `estaduais/*/provimentos`, `estaduais/*/pareceres-normativos` | SINJ-DF, Legisla Goiás e sistemas equivalentes |
+| 🟦 | Deliberações, súmulas administrativas, provimentos e pareceres normativos | 2.753 | 4.000 | `estaduais/*/deliberacoes`, `estaduais/*/sumulas`, `estaduais/*/provimentos`, `estaduais/*/pareceres-normativos` | SINJ-DF, Legisla Goiás e sistemas equivalentes |
 
 ## Fase 3 — direito municipal
 

@@ -1468,3 +1468,14 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Seis reparos publicados: cinco emendas com redações históricas/marcações restauradas; LODF conserva corpo compilado já correto. Metadados desconhecidos passam a null, sem inferir revogação de inconstitucionalidade, anulação ou risco gráfico.
 - Código SINJ mantém fluxo original quando não há tachado e exige prova CSS para filtrar edição. Sessenta e seis testes estaduais passaram. Diff integral do coletor revisado; alteração pré-existente compatível de metadados preservada.
 - Auditoria do index sem erros ou avisos; três hardbreaks exatos provados, demais verificações de whitespace passaram. Fontes e históricos anteriores preservados.
+
+### Recuperacao de onze MPVs e suplementos do Regimento do Congresso
+
+- Fontes oficiais alternativas restauram onze MPVs com anexos; uma segue retida por divergencia interna de data, sem correcao inventada. Preimagens publicadas e candidatos verificados por SHA antes da substituicao.
+- Regimento: corpo anterior preservado literalmente; 39 paginas oficiais de julho de 2025 incorporadas como reproducoes visuais de formularios, insignias, tabelas e quadros editoriais. Nao se declara transcricao tabular. Paginas e 39 links conferidos, amostra visual revisada.
+- Auditoria do index sem erros ou avisos; 62 hardbreaks exatos provados. Historicos e capturas oficiais mantidos.
+
+### MG: revisao contextual de objetos aprovados
+
+- Entre 2.438 sinais amplos, 1.484 apresentam objeto/clausulas proprias e 59 nao comprovam aprovacao propria pelo gate estrito. Nao foram declarados incompletos automaticamente.
+- Acrescentadas 872 pendencias por SHA do HEAD e HTML: 67 avisos explicitos de omissao textual e 805 suspeitas conservadoras sem representacao comprovada. Registro passa de 1.259 para 2.131; textos preservados, fora do progresso elegivel ate revisao.

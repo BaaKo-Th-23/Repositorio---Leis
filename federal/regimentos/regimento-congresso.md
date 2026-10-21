@@ -9,6 +9,9 @@ versao_texto: "compilada (edição da fonte)"
 fonte: "https://www25.senado.leg.br/documents/59501/97171143/RCCN.pdf/933b504d-a653-4df5-9329-d4f38c42f64f"
 baixado_em: 2026-10-15
 atualizado_ate: "2025-07"
+recuperacao_integralidade: "Páginas com formulários, insígnias e quadros do PDF oficial incorporadas como suplementos visuais literais; transcrição textual anterior preservada sem alterações. Edição atualizada até julho de 2025."
+sha256_pdf_fonte: "723077332d3f1f068093eee842ad4142c20ad5efcb5a57e9b9e50341f37cf856"
+sha256_md_historico: "3b1c57be13f69af9df53a8eb7e507f23061f5b78e10a014e0bb75e3c447ec3cf"
 ---
 
 # Regimento Comum do Congresso Nacional e normas conexas
@@ -6800,3 +6803,164 @@ Regimento Comum 287
 Índice Remissivo Índice Remissivo
 
 288 Regimento Comum
+
+
+## Suplementos visuais da fonte oficial
+
+As reproduções abaixo preservam a disposição dos formulários e quadros e os desenhos das insígnias que não aparecem na extração textual. A numeração identifica a página do arquivo PDF oficial, incluindo as páginas preliminares. Os quadros comparativos editoriais da edição também foram preservados.
+
+### Formulário normativo — página 123 do PDF
+
+![Formulário normativo — página 123 do PDF](anexos/regimento-congresso-2025/pagina-123.png)
+
+### Formulário normativo — página 124 do PDF
+
+![Formulário normativo — página 124 do PDF](anexos/regimento-congresso-2025/pagina-124.png)
+
+### Formulário normativo — página 125 do PDF
+
+![Formulário normativo — página 125 do PDF](anexos/regimento-congresso-2025/pagina-125.png)
+
+### Formulário normativo — página 126 do PDF
+
+![Formulário normativo — página 126 do PDF](anexos/regimento-congresso-2025/pagina-126.png)
+
+### Formulário normativo — página 127 do PDF
+
+![Formulário normativo — página 127 do PDF](anexos/regimento-congresso-2025/pagina-127.png)
+
+### Formulário normativo — página 128 do PDF
+
+![Formulário normativo — página 128 do PDF](anexos/regimento-congresso-2025/pagina-128.png)
+
+### Formulário normativo — página 129 do PDF
+
+![Formulário normativo — página 129 do PDF](anexos/regimento-congresso-2025/pagina-129.png)
+
+### Formulário normativo — página 130 do PDF
+
+![Formulário normativo — página 130 do PDF](anexos/regimento-congresso-2025/pagina-130.png)
+
+### Formulário normativo — página 131 do PDF
+
+![Formulário normativo — página 131 do PDF](anexos/regimento-congresso-2025/pagina-131.png)
+
+### Insígnias da Ordem do Congresso Nacional — página 195 do PDF
+
+![Insígnias da Ordem do Congresso Nacional — página 195 do PDF](anexos/regimento-congresso-2025/pagina-195.png)
+
+### Insígnias da Ordem do Congresso Nacional — página 196 do PDF
+
+![Insígnias da Ordem do Congresso Nacional — página 196 do PDF](anexos/regimento-congresso-2025/pagina-196.png)
+
+### Quadro normativo — página 198 do PDF
+
+![Quadro normativo — página 198 do PDF](anexos/regimento-congresso-2025/pagina-198.png)
+
+### Quadro normativo — página 199 do PDF
+
+![Quadro normativo — página 199 do PDF](anexos/regimento-congresso-2025/pagina-199.png)
+
+### Quadro normativo — página 200 do PDF
+
+![Quadro normativo — página 200 do PDF](anexos/regimento-congresso-2025/pagina-200.png)
+
+### Quadro comparativo editorial — página 250 do PDF
+
+![Quadro comparativo editorial — página 250 do PDF](anexos/regimento-congresso-2025/pagina-250.png)
+
+### Quadro comparativo editorial — página 251 do PDF
+
+![Quadro comparativo editorial — página 251 do PDF](anexos/regimento-congresso-2025/pagina-251.png)
+
+### Quadro comparativo editorial — página 252 do PDF
+
+![Quadro comparativo editorial — página 252 do PDF](anexos/regimento-congresso-2025/pagina-252.png)
+
+### Quadro comparativo editorial — página 253 do PDF
+
+![Quadro comparativo editorial — página 253 do PDF](anexos/regimento-congresso-2025/pagina-253.png)
+
+### Quadro comparativo editorial — página 254 do PDF
+
+![Quadro comparativo editorial — página 254 do PDF](anexos/regimento-congresso-2025/pagina-254.png)
+
+### Quadro comparativo editorial — página 255 do PDF
+
+![Quadro comparativo editorial — página 255 do PDF](anexos/regimento-congresso-2025/pagina-255.png)
+
+### Quadro comparativo editorial — página 256 do PDF
+
+![Quadro comparativo editorial — página 256 do PDF](anexos/regimento-congresso-2025/pagina-256.png)
+
+### Quadro comparativo editorial — página 257 do PDF
+
+![Quadro comparativo editorial — página 257 do PDF](anexos/regimento-congresso-2025/pagina-257.png)
+
+### Quadro comparativo editorial — página 258 do PDF
+
+![Quadro comparativo editorial — página 258 do PDF](anexos/regimento-congresso-2025/pagina-258.png)
+
+### Quadro comparativo editorial — página 259 do PDF
+
+![Quadro comparativo editorial — página 259 do PDF](anexos/regimento-congresso-2025/pagina-259.png)
+
+### Quadro comparativo editorial — página 260 do PDF
+
+![Quadro comparativo editorial — página 260 do PDF](anexos/regimento-congresso-2025/pagina-260.png)
+
+### Quadro comparativo editorial — página 261 do PDF
+
+![Quadro comparativo editorial — página 261 do PDF](anexos/regimento-congresso-2025/pagina-261.png)
+
+### Quadro comparativo editorial — página 262 do PDF
+
+![Quadro comparativo editorial — página 262 do PDF](anexos/regimento-congresso-2025/pagina-262.png)
+
+### Quadro comparativo editorial — página 263 do PDF
+
+![Quadro comparativo editorial — página 263 do PDF](anexos/regimento-congresso-2025/pagina-263.png)
+
+### Quadro comparativo editorial — página 264 do PDF
+
+![Quadro comparativo editorial — página 264 do PDF](anexos/regimento-congresso-2025/pagina-264.png)
+
+### Quadro comparativo editorial — página 265 do PDF
+
+![Quadro comparativo editorial — página 265 do PDF](anexos/regimento-congresso-2025/pagina-265.png)
+
+### Quadro comparativo editorial — página 266 do PDF
+
+![Quadro comparativo editorial — página 266 do PDF](anexos/regimento-congresso-2025/pagina-266.png)
+
+### Quadro comparativo editorial — página 267 do PDF
+
+![Quadro comparativo editorial — página 267 do PDF](anexos/regimento-congresso-2025/pagina-267.png)
+
+### Quadro comparativo editorial — página 268 do PDF
+
+![Quadro comparativo editorial — página 268 do PDF](anexos/regimento-congresso-2025/pagina-268.png)
+
+### Quadro comparativo editorial — página 269 do PDF
+
+![Quadro comparativo editorial — página 269 do PDF](anexos/regimento-congresso-2025/pagina-269.png)
+
+### Quadro comparativo editorial — página 270 do PDF
+
+![Quadro comparativo editorial — página 270 do PDF](anexos/regimento-congresso-2025/pagina-270.png)
+
+### Quadro comparativo editorial — página 271 do PDF
+
+![Quadro comparativo editorial — página 271 do PDF](anexos/regimento-congresso-2025/pagina-271.png)
+
+### Quadro comparativo editorial — página 272 do PDF
+
+![Quadro comparativo editorial — página 272 do PDF](anexos/regimento-congresso-2025/pagina-272.png)
+
+### Quadro comparativo editorial — página 273 do PDF
+
+![Quadro comparativo editorial — página 273 do PDF](anexos/regimento-congresso-2025/pagina-273.png)
+
+### Quadro comparativo editorial — página 274 do PDF
+
+![Quadro comparativo editorial — página 274 do PDF](anexos/regimento-congresso-2025/pagina-274.png)
