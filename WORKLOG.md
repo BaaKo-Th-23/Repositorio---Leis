@@ -1420,3 +1420,20 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
   que passa de 371 a 678. Todos os SHA do index e HTML foram conferidos;
   textos e histórico são preservados e ficam fora do progresso elegível.
   Outras retenções atingem só lotes ainda não publicados, que serão filtrados.
+
+### Reguladores: mais 16.923 normas documentadas
+
+- Publicação exata em scripts/dados/publicacao-reguladores16923-20261020.json.
+  SHA de Markdown e fonte reconferidos, com gates de corpo/tabelas do DOU e
+  JSON Sijut; mantido o catálogo oficial congelado e a distinção de versões.
+- Parte vem da recuperação de metadados DOU: 15.678 revisões aprovadas no
+  total, sem mudar corpos, com backups retomáveis. A publicação inclui apenas
+  o subconjunto que passou as demais verificações e não duplicou o acervo.
+- Visuais/PDFs sem QA, remissões e objetos aprovados sem representação
+  comprovada, inclusive construções passivas, ficaram retidos para contexto.
+  Chaves com número normalizado por área/data também foram confrontadas;
+  coincidências de subunidades diferentes não foram declaradas duplicatas.
+- Auditoria do index: 16.923 sem erros ou avisos; zero placeholders suspeitos
+  na verificação adicional. Whitespace: 767 hardbreaks exatos de dois espaços
+  e uma ocorrência só de linhas vazias no EOF, conferidos por SHA e linha.
+  Demais verificações de whitespace passaram, sem modificar texto normativo.
