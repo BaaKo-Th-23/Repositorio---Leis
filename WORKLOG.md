@@ -1601,3 +1601,10 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Dos 13.416 candidatos com tabelas/apresentação recuperadas, 13.331 passam por fonte, identidade, conteúdo, CommonMark e assinatura numérica; 85 sinais remanescentes ficam retidos. Nenhuma colisão com HEAD, IDs oficiais ou conjunto inicial de 11.900.
 - ROOT reconferiu todos os MD, fontes brutas/comprimidas, backups e preimagens por SHA. São 15.621 tabelas complexas conferidas; nenhuma norma, valor ou numeração foi inferida. Os seis casos de contadores efetivos têm prova por AST e HTML ol/start/li, sem copiar rótulos da fonte.
 - Auditoria genérica: 13.331 documentos, zero erros e sete avisos de data_publicacao ausente; nenhuma data foi inventada. Diffcheck integral passou, sem dispensas de whitespace. Suíte estadual completa do agente: 97 testes; cinco testes contextuais de listas também passaram no coordenador.
+
+### Pernambuco: 108 pendências resolvidas e 115 lacunas preenchidas
+
+- Oito dezenas e oito documentos publicados recebem reparo de apresentação: 24 ajustes delimitados e 64 corpos HTML nativos preservados literalmente. Outros vinte foram readmitidos sem edição, por prova de heading ou contadores efetivamente renderizados; todos os 108 casos registrados foram resolvidos individualmente. Registro global passa a 2.155.
+- Publicadas 115 lacunas adicionais: 112 do pacote nativo e três separadores literais. Completam o conjunto inicial de 11.900 e os 13.416 candidatos posteriores, sem colisão. Retenções dos relatórios anteriores permanecem como histórico, acompanhadas das provas posteriores.
+- ROOT reconferiu 229 corpos finais por CommonMark contextual, fonte e pontuação, além de preimagens HEAD e backups. Metadados e H1 preservados. Nativo v2 normaliza somente CRLF para LF; 176 backups v1 e fonte bruta conservados. Quinze espaços textuais finais são representados por entidades equivalentes, sem alterar dados.
+- Auditoria do index: 203 documentos, zero erros ou avisos. Diffcheck integral passou, sem dispensas de whitespace.
