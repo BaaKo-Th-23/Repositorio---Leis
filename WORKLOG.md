@@ -1640,3 +1640,8 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Entre quatorze decretos publicados revistos, modelos dos Decretos 7.420/2010 e 7.648/2011 recuperados dos anexos oficiais Câmara/DOU. Fac-símiles inspecionados por ROOT; 22 linhas em cada modelo, respectivamente 79/76 células e 52/48 campos vazios. Estruturas distintas e quebra tipográfica de 2011 preservadas. Corpo principal anterior permanece byte a byte, com preimagens arquivadas.
 - Doze casos restantes entram no registro de integralidade pelo SHA exato de HEAD, sem declarar ausência na publicação original. Registro passa de 2.138 a 2.150; metas mantidas. Os dois reparos não são contados como novas normas.
 - Auditoria do index: dois documentos, zero erros e avisos; fontes, preimagens e SHA do escopo conferidos. PDFs oficiais tratados como binários por regras específicas, sem alterar bytes; diffcheck passou.
+
+### SIJUT: interrupção explícita em limite de taxa
+
+- Coletor RFB reconhece HTTP 429, além de 401/403, e encerra a fonte quando há recusa explícita. Classificação usa código HTTP ou mensagem de status, sem confundir o número de um ato com um erro.
+- Três testes passaram, cobrindo códigos, mensagens e identificadores sem recusa; diffcheck passou. Catálogo congelado e cache anterior preservados na retomada.

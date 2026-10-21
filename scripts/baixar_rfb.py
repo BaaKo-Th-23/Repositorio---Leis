@@ -37,6 +37,12 @@ def salvar(path, dados):
     tmp.replace(path)
 
 
+def acesso_recusado(exc):
+    """Interrompe a fonte em recusas HTTP explícitas, incluindo limite de taxa."""
+    return (getattr(exc, "code", None) in {401, 403, 429}
+            or re.search(r"\bHTTP(?: Error)?\s+(?:401|403|429)\b", str(exc), re.I) is not None)
+
+
 def obter(rede, url, payload=None):
     chave = hashlib.sha256((url + (json.dumps(payload, sort_keys=True) if payload else "")).encode()).hexdigest()
     cache = RAIZ / "_fonte" / "sijut" / (chave + ".json.gz")
@@ -650,7 +656,7 @@ def main():
             with (RAIZ / "_falhas_sijut.jsonl").open("a") as f:
                 f.write(json.dumps({"fonte": "rfb-sijut", "idAto": item["idAto"], "erro": str(exc)}, ensure_ascii=False) + "\n")
             print("erro", item["idAto"], str(exc), flush=True)
-            if "403" in str(exc) or "401" in str(exc):
+            if acesso_recusado(exc):
                 return 1
         if args.limite and sum(contagem.values()) + erros >= args.limite:
             break
