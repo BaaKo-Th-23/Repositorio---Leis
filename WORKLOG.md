@@ -1658,3 +1658,9 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - ROOT repetiu os 29 testes e os 771 replays integrais contra a área ativa das fontes, preservando sinais, valores e contadores efetivos de listas. Gate após promoção: 771 aprovados, zero problemas. Fontes primárias, contextos, estados públicos, histórico de alterações, evidências de anexos e códigos congelados acompanhando o lote; datas reais das capturas preservadas.
 - Auditoria do index: 771 documentos sem erros ou avisos; auditoria municipal completa de 15.273 arquivos sem problemas ou avisos. Escopo e SHA dos 5.035 caminhos conferidos; quinze dependências já eram idênticas em HEAD.
 - Prova de whitespace verifica no index 1.072 hardbreaks exatos e 773 linhas finais vazias, incluindo candidatos textuais arquivados. Nenhum conteúdo foi aparado; as demais verificações de diffcheck passaram. Metas mantidas.
+
+### Reguladores: 3.538 novos atos com fontes completas
+
+- Do lote 012, cinco mil candidatos passaram pela íntegra da fonte; 3.966 passaram também pelos gates suplementares. Após comparar CommonMark/GFM integral, 3.537 têm igualdade direta e um tem contador efetivo de lista comprovado pela AST. Outros 428 continuam retidos por divergência, sem afirmar ausência material na publicação.
+- Reservas atualizadas para incluir todas as publicações anteriores e os 966 DOU em HTML nativo. Corpos, fontes e inexistência no HEAD reconferidos; HTML primário completo preservado em arquivo gzip de auditoria. Não houve alteração normativa.
+- Auditoria do index: 3.538 documentos sem erros ou avisos; SHA e escopo dos 3.548 caminhos conferidos, três controles já idênticos em HEAD. Diffcheck integral passou sem dispensas; metas mantidas.
