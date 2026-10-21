@@ -1544,3 +1544,10 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Lote007 aprovado nos gates reproduziveis: 4.306 DOU e 4.226 RFB. Recibo publicacao-reguladores8532-20261020.json, fontes e corpos reconferidos por SHA, reservas e baseline considerados na deduplicacao.
 - De dez mil candidatos dos controles iniciais, 1.468 ficam retidos para contexto; sem reduzir metas, apagar fontes ou substituir texto por ementa.
 - Auditoria do index sem erros ou avisos. Quatrocentos e cinquenta e quatro hardbreaks exatos, incluindo quatro linhas vazias com dois espacos, provados; demais verificacoes de whitespace passaram.
+
+### Campestre: quatro atos municipais completos
+
+- Dois atos complementares de2026 e duas leis de2015 publicados apos controles de PDF nativo integral, imagens/brasoes, anexos API completos, colunas/emissores, epigrafe/fecho, identidade e vetores.
+- LC82/2026 recupera sete colunas associadas as celulas vistas no PDF. Fonte e tabela tambem revistas visualmente pelo coordenador; quatro vagas, regime de carga e salarioR$3.800,00 preservados, com restante do corpo identico e backup completo.
+- Mil candidatos examinados: quatro aptos e996retidos; nenhum OCR promovido a integra apenas comparando extratores. Curitiba fica separada para revisao de estrutura, sem alterar o snapshot anterior.
+- Auditoria generica4 sem erros ou avisos; municipal completo sem problemas ou avisos. Cinco ocorrencias de EOF sao somente linhas vazias provadas no index; demais verificacoes de whitespace passaram.
