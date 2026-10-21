@@ -1721,3 +1721,9 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 
 - Segunda seleção final libera 2.580 SIJUT (2.568 diretos e 12 contextuais) e 4.185 DOU (4.181 diretos e quatro contextuais). Demais alertas retidos; cruzamento adicional entre os lotes por URL e identidade sem colisões. Fontes primárias completas JSON/HTML arquivadas, sem reescrever os corpos.
 - Auditoria do index: 6.765 sem erros/avisos; SHA/escopo dos 6.779 caminhos preparados conferidos antes de acrescentar a própria prova final. Os 253 avisos de whitespace foram conferidos individualmente como quebras de exatamente dois espaços; outras classes passam diffcheck. Metas mantidas.
+
+### Reguladores: mais 9.058 atos com igualdade integral
+
+- Seleção final de 4.645 SIJUT (4.631 diretos e 14 contadores comprovados) e 4.413 DOU por igualdade direta. Dois alertas SIJUT e doze DOU continuam retidos após revisão contextual; nenhuma flexibilização de conteúdo para atingir volume.
+- Todos os SHA dos MDs, JSON/HTML primários e relatórios conferidos; fontes primárias completas arquivadas. Cruzamento entre os lotes por URL e identidade normalizada não encontrou coincidências. Candidatos já publicados ou reservados em seleções qualificadas anteriores foram excluídos pelos gates.
+- Auditoria normativa no index: 9.058 sem erros/avisos. SHA/escopo dos 9.071 caminhos preparados conferidos, três controles idênticos em HEAD. Prova adicional registra 44 quebras Markdown de exatamente dois espaços, sem dispensar outras classes de erro. Metas e fontes históricas preservadas; sem certificação genérica de vigência.
