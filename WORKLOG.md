@@ -1696,3 +1696,10 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Treze pares possuem bytes, URL oficial, órgão e edição idênticos em HEAD. Retiradas somente as cópias nas pastas genéricas presidência/conselhos/fazenda; conservados os textos existentes nas pastas específicas AGU, CFC e PGFN, conforme órgão literal. Nenhuma edição diferente ou republicação diferente retirada.
 - Todas as preimagens locais conferidas com HEAD antes de qualquer retirada; conteúdo completo, metadados e mapeamento canônico preservados em histórico gzip e Git. Não havia pendência de integralidade nesses caminhos.
 - Triagem apenas por número/data encontrou outros grupos, mas não autoriza deduplicação sem contexto. Este commit limita-se aos treze pares byte a byte iguais. Escopo do index e diffcheck conferidos; metas mantidas e cópias deixam de inflar o volume.
+
+### Pernambuco: recuperação de 3.786 textos publicados
+
+- Reconstituídos 3.786 textos a partir dos bytes UTF-8 das fontes oficiais em cache. Replay independente ROOT aprovou todos, inclusive a igualdade do conteúdo efetivamente renderizado e das matrizes; seis testes passaram. Não se trata de normas novas nem de certificação geral de vigência.
+- Corrigidos 199 caminhos sem ano mediante identidade/data da própria fonte, em renames atômicos. Todos os textos anteriores conferidos com o OID real de HEAD antes da promoção. Fontes, corpos anteriores e candidatos preservados: 15.816 artefatos originais em arquivo imutável com bytes e SHA individuais.
+- Outros 224 textos publicados têm corrupção de representação comprovada individualmente no corpo renderizado e no campo oficial fechado, com transformação reversível. Acrescentadas somente essas pendências, de 2.145 para 2.369; duas propostas sem prova suficiente ficaram fora. Textos e histórico preservados, metas mantidas.
+- Index conferido por SHA e escopo: 7.596 caminhos preparados e 199 retiradas de caminhos antigos. Auditoria dos 3.786 reparos: zero erros, um aviso de data de publicação não informada, sem inventar a data. Diffcheck integral aprovado sem dispensas.
