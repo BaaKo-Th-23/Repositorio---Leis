@@ -44,6 +44,14 @@ def identidade(meta):
     return tuple(normalizar_chave(str(meta.get(k, ""))) for k in ("orgao", "tipo", "numero", "data"))
 
 
+def niveis_orgao(valor):
+    """Conserva nomes/ordem; só ignora espaços nas bordas do separador /."""
+    if not isinstance(valor, str):
+        return None
+    niveis = tuple(parte.strip() for parte in valor.split("/"))
+    return niveis if all(niveis) else None
+
+
 def campo_html(texto, classe):
     m = re.search(r'<span\b[^>]*class=["\']' + re.escape(classe) + r'["\'][^>]*>(.*?)</span>', texto, re.S)
     if not m:
@@ -82,7 +90,8 @@ def conferir(path, existentes, urls, hoje, bruto_md=None, fonte_bytes=None):
     pub = dt.datetime.strptime(campo_html(source, "publicado-dou-data"), "%d/%m/%Y").date().isoformat()
     if pub != meta.get("data_publicacao"):
         raise ValueError("publicação diverge do HTML")
-    if campo_html(source, "orgao-dou-data") != meta.get("orgao"):
+    orgao_html = campo_html(source, "orgao-dou-data")
+    if not niveis_orgao(orgao_html) or niveis_orgao(orgao_html) != niveis_orgao(meta.get("orgao")):
         raise ValueError("órgão diverge do HTML")
     if campo_html(source, "edicao-dou-data") != str(meta.get("edicao")):
         raise ValueError("edição diverge do HTML")
@@ -118,6 +127,8 @@ def conferir(path, existentes, urls, hoje, bruto_md=None, fonte_bytes=None):
         raise ValueError("assinatura inconclusiva exige revisão individual")
     return {"path": nome, "sha256_md": hashlib.sha256(bruto_md).hexdigest(),
             "fonte": meta["fonte"], "cache": str(cache.relative_to(RAIZ)),
+            "orgao_html": orgao_html, "orgao_metadados": meta["orgao"],
+            "criterio_orgao": "Nomes e ordem dos níveis idênticos; somente espaços nas bordas de / ignorados.",
             "sha256_html": sha, "data": assinatura, "publicacao": pub,
             "identidade": list(chave), "tabelas": convertido.count("<table"),
             "avisos_formato": avisos}, meta

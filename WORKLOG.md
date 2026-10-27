@@ -1924,3 +1924,7 @@ Integrado guard sucessor003 apos revisao ROOT dos vinculos atuais/externos; anex
 ### 2026-10-27 — 3.848 decretos federais com fontes integrais
 
 ROOT repetiu o cotejo portátil integral dos 3.848 documentos, sem divergências, e verificou ausência de colisões por caminho e número/ano no HEAD. Aplicou 191 correções privadas de representação somente após validar fontes, preimagens e candidatos; backups completos e recibos preservados. Onze dos doze corpos HTML nativos passaram no render oficial GitHub; o decreto 8.886/1942 ultrapassa o limite de 400 KB da API e teve o mesmo corpo integral conferido por CommonMark/HTML5 independente. Essa limitação permanece explícita, sem novas chamadas ou fragmentação. Formato dos 3.848 documentos sem erros ou avisos; três quebras Markdown de exatamente dois espaços comprovadas no índice. Fontes HTML/API completas arquivadas. Casos com anexos ausentes ou dúvidas continuam retidos; metas e registro de pendências inalterados.
+
+### 2026-10-27 — comparação da hierarquia de órgãos DOU
+
+O auditor compara os mesmos nomes na mesma ordem, ignorando somente espaços nas bordas do separador `/`. Preserva os valores HTML e metadata no relatório; unidades diferentes, ordem invertida e níveis vazios continuam retidos. ROOT repetiu 26 testes e a auditoria de 2.096 candidatos. Os mesmos 1.423 passaram: documentos cuja diferença de espaços foi resolvida continuam retidos por outros critérios de identidade. Nenhum corpo, metadata, pendência ou meta alterado. Preimagens e os dois relatórios congelados preservados.

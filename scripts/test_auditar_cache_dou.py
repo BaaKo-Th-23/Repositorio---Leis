@@ -23,19 +23,20 @@ class CacheDOU(unittest.TestCase):
         self.path = self.root / 'reguladores/ans/portarias/2026/portaria-1-123456789.md'
         self.title = 'PORTARIA Nº 1, DE 1 DE OUTUBRO DE 2026'
 
-    def fixture(self, extra='', publicacao='02/10/2026', corromper=False):
+    def fixture(self, extra='', publicacao='02/10/2026', corromper=False,
+                orgao_meta='ANS', orgao_html='ANS'):
         fragment = (f'<div class="texto-dou"><p class="identifica">{self.title}</p>'
                     '<p>Art. 1º Fica instituído o procedimento descrito nesta norma.</p>'
                     '<p>Art. 2º Esta portaria entra em vigor na data de sua publicação.</p>' + extra + '</div>')
         source = (f'<span class="publicado-dou-data">{publicacao}</span>'
-                  '<span class="orgao-dou-data">ANS</span><span class="edicao-dou-data">123</span>' +
+                  f'<span class="orgao-dou-data">{orgao_html}</span><span class="edicao-dou-data">123</span>' +
                   fragment + '<div>rodapé</div>').encode()
         sha = hashlib.sha256(source).hexdigest()
         cache = self.root / ('reguladores/_fonte/ans/2026/' + self.path.stem + '-' + sha + '.html.gz')
         cache.parent.mkdir(parents=True)
         cache.write_bytes(gzip.compress(source + (b' ' if corromper else b'')))
         meta = {'titulo': self.title, 'tipo': 'Portaria', 'numero': '1', 'data': '2026-10-01',
-                'orgao': 'ANS', 'revogada': None, 'versao_texto': 'publicação original',
+                'orgao': orgao_meta, 'revogada': None, 'versao_texto': 'publicação original',
                 'data_publicacao': '2026-10-02', 'edicao': '123',
                 'fonte': 'https://www.in.gov.br/web/dou/-/portaria-1-123456789',
                 'sha256_html_fonte': sha, 'baixado_em': '2026-10-20'}
@@ -45,6 +46,29 @@ class CacheDOU(unittest.TestCase):
 
     def conferir(self):
         return audit.conferir(self.path, set(), set(), dt.date(2026, 10, 20))
+
+    def test_hierarquia_espacos_preserva_valores_originais(self):
+        self.fixture(orgao_meta='ANS/Diretoria Normativa', orgao_html='ANS / Diretoria Normativa')
+        antes = self.path.read_bytes()
+        registro, _ = self.conferir()
+        self.assertEqual(registro['orgao_html'], 'ANS / Diretoria Normativa')
+        self.assertEqual(registro['orgao_metadados'], 'ANS/Diretoria Normativa')
+        self.assertEqual(self.path.read_bytes(), antes)
+
+    def test_hierarquia_departamento_diferente_retem(self):
+        self.fixture(orgao_meta='ANS/Diretoria Normativa', orgao_html='ANS / Diretoria Fiscal')
+        with self.assertRaisesRegex(ValueError, 'órgão diverge'):
+            self.conferir()
+
+    def test_hierarquia_ordem_diferente_retem(self):
+        self.fixture(orgao_meta='ANS/Diretoria Normativa', orgao_html='Diretoria Normativa / ANS')
+        with self.assertRaisesRegex(ValueError, 'órgão diverge'):
+            self.conferir()
+
+    def test_hierarquia_nivel_vazio_retem(self):
+        self.fixture(orgao_meta='ANS//Diretoria Normativa', orgao_html='ANS / / Diretoria Normativa')
+        with self.assertRaisesRegex(ValueError, 'órgão diverge'):
+            self.conferir()
 
     def usar_nativo(self, modo='html-nativo-texto-dou-v1'):
         fonte = gzip.decompress(next((self.root / 'reguladores/_fonte/ans/2026').glob('*.gz')).read_bytes()).decode()
