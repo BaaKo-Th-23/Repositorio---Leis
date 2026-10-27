@@ -1885,3 +1885,8 @@ Publicacao de3.905 corpos diretos/listas comprovadas,48 representacoes HTML v1 e
 ### 2026-10-27 — 679 normas municipais e baseline233252
 
 Agregados286/393:ROOT repetiu679 replays com zero problemas, conferiuSHA/bytes dos artefatos e679 destinos ausentes emHEAD. Tres documentos antigos sao fixtures HEAD identicas, sem incremento. Auditoria de formato do index:679 sem erros/avisos; quebras Markdown/finais vazios conferidos individualmente. Baselinev6 preserva233.252 cabecalhos completos de blobsHEAD para proximas selecoes. Releitura independente dos arquivos primarios do lote3954 confirmou3.905 fontes JSONL/CRC/SHA;49 fontes individuais foram conferidas nas promocoes. Metas e pendencias inalteradas.
+
+
+### 2026-10-27 — 603 normas municipais
+
+ROOT repetiu603 replays e verificou3.861 artefatos do pacote porSHA/bytes.603 destinos novos,zero colisoes contra baseline e entregas anteriores; tres fixtures de testes permanecem HEAD identicas,sem incremento. Foram retidos tres suspeitos de emissor e snapshots divergentes na selecao anterior. Index de formato603 sem erros/avisos;3.058 quebras de dois espacos e603 finais vazios conferidos individualmente. Metas, capturas originais e pendencias preservadas.
