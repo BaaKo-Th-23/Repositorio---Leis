@@ -1880,3 +1880,8 @@ Acrescentados lotes 020v3/021v3, com fontes HTML e metadados integrais, 3.608 re
 ### 2026-10-27 — 3.954 atos de reguladores
 
 Publicacao de3.905 corpos diretos/listas comprovadas,48 representacoes HTML v1 e uma v2 explicita. Fontes integrais, preimagens e candidatos preservados; zero colisoes contra225.465 cabecalhos de HEAD e3.833 adicoes posteriores. Todos3.954 revalidados pelo auditor integrado;22 testes passaram. O caso11.997/2020 preserva29.071 caracteres,numeros e quatro tabelas/2.584 celulas e mesclagens no GitHub, conforme parsingHTML5. O GitHub reconstitui tr malformado da fonte e remove67 alinhamentos centrais CSS/classes; limite documentado, sem afirmar DOM literal identico. Metas e pendencias inalteradas.
+
+
+### 2026-10-27 — 679 normas municipais e baseline233252
+
+Agregados286/393:ROOT repetiu679 replays com zero problemas, conferiuSHA/bytes dos artefatos e679 destinos ausentes emHEAD. Tres documentos antigos sao fixtures HEAD identicas, sem incremento. Auditoria de formato do index:679 sem erros/avisos; quebras Markdown/finais vazios conferidos individualmente. Baselinev6 preserva233.252 cabecalhos completos de blobsHEAD para proximas selecoes. Releitura independente dos arquivos primarios do lote3954 confirmou3.905 fontes JSONL/CRC/SHA;49 fontes individuais foram conferidas nas promocoes. Metas e pendencias inalteradas.
