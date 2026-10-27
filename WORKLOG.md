@@ -1895,3 +1895,8 @@ ROOT repetiu603 replays e verificou3.861 artefatos do pacote porSHA/bytes.603 de
 ### 2026-10-27 — 673 normas municipais
 
 ROOT conferiu4.207 artefatos porSHA/bytes e repetiu673 replays,zero problemas;673 caminhos novos e tres fixtures HEAD identicas sem incremento. Auditoria de formato do index673 sem erros/avisos;3.690 quebras de dois espacos e673 finais vazios conferidos individualmente. Fontes, capturas e retencoes preservadas; metas e pendencias inalteradas.
+
+
+### 2026-10-27 — 9.305 atos de reguladores, com prioridade nas lacunas
+
+Lotes028/029:9.306 qualificados preliminares; cruzamento final reteve uma coincidencia de identidade sem excluir fonte ou inferir equivalencia das edicoes.9.305 novos caminhos validados contra233.252 cabecalhos completos de blobsHEAD e entre quatro componentes. ROOT reexecutou o auditor integrado em todos9.305, sem divergencias, e conferiu todos9.579 artefatos no disco/index. Fontes primarias de9.234 diretos reabertas porCRC/SHA,incluindo retido;72 representacoes nativas promovidas somente por preimagem com fontes/backups. Auditoria suplementar13.139 diretos/9.852 tabelas dos lotes027/028/029:zero risco CSS/hidden/tachado explicito ou diferenca de matrizHTML5 no escopo;CSS externo nao fornecido permanece limite. Quatro testes e auditoria de formato9305 passaram,sem advertencias de whitespace. Fila prioriza series abaixo das metas,sem alterar metas ou descartar outras fontes. Recorte2019 encerrado com12.163 brutos/1.013 sem texto/zero erros; brutos aguardam auditoria e nao contam automaticamente.
