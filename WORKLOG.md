@@ -1890,3 +1890,8 @@ Agregados286/393:ROOT repetiu679 replays com zero problemas, conferiuSHA/bytes d
 ### 2026-10-27 — 603 normas municipais
 
 ROOT repetiu603 replays e verificou3.861 artefatos do pacote porSHA/bytes.603 destinos novos,zero colisoes contra baseline e entregas anteriores; tres fixtures de testes permanecem HEAD identicas,sem incremento. Foram retidos tres suspeitos de emissor e snapshots divergentes na selecao anterior. Index de formato603 sem erros/avisos;3.058 quebras de dois espacos e603 finais vazios conferidos individualmente. Metas, capturas originais e pendencias preservadas.
+
+
+### 2026-10-27 — 673 normas municipais
+
+ROOT conferiu4.207 artefatos porSHA/bytes e repetiu673 replays,zero problemas;673 caminhos novos e tres fixtures HEAD identicas sem incremento. Auditoria de formato do index673 sem erros/avisos;3.690 quebras de dois espacos e673 finais vazios conferidos individualmente. Fontes, capturas e retencoes preservadas; metas e pendencias inalteradas.
