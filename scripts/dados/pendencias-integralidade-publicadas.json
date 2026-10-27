@@ -162341,31 +162341,6 @@
       }
     },
     {
-      "path": "federal/decretos/1944/dec-16611-1944-09-18.md",
-      "sha256_md": "a241487d5c79ac87c1898dfcb222c9e04346d42fdfeee2f89b4e3aeea44dee52",
-      "estado": "anexo_ausente_na_fonte_textual",
-      "motivo": "Tabela ou relação própria determinada pelo decreto, representada somente pelo ponteiro bibliográfico; zero tabelas HTML/objetos visuais não substitui leitura do conteúdo inline.",
-      "evidencia": {
-        "manifesto": "federal/_fonte/auditorias/retomada_federal_20261027_004/overlay_placeholders_publicados12669_v2.json",
-        "sha256_manifesto": "254fa0c623171c71d8d838403d82fd69dd6f4ccef859d462911127634239032f",
-        "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto:1944-09-18;16611",
-        "sha256_HTML": "9ae4e46989987b134de52918ca8743d47cb163b6394f3dd994afda84546a0dce",
-        "sha256_metadados": "1df44bc5e4ed0fc7dafd6c1869602c76dc0a435161cb565dbc51f854382c19a3",
-        "OID_HEAD": "12faf9d8e75b48486adc0606179f81f009d0cfea",
-        "comando_proprio": [
-          "Art. 1º Ficam alteradas, na forma da relação anexa, as Tabelas Numéricas, Ordinária e Suplementar, de Extranumerário-mensalista do Serviço Federal de Águas e Esgotos, do Departamento Nacional de Saúde, do Ministério da Educação e Saúde."
-        ],
-        "ocorrencias": [
-          {
-            "literal": "<<ANEXO>>",
-            "offset_visivel": 790,
-            "contexto": "Art. 2º Êste Decreto entrará em vigor na data da sua publicação. Rio de Janeiro 18 de setembro de 1944, 123º da Independência e 56º da República. GETULIO VARGAS. Gustavo Capanema. <<ANEXO>>CLBR Vol. 06 Ano 1944 Págs. 577 e 578 Tabelas."
-          }
-        ],
-        "conclusao_contextual": "Comando próprio literal confrontado com a transcrição integral arquivada. Não é mera remissão a anexo de outra lei: o decreto cria, altera ou substitui a relação/tabela que o acompanha."
-      }
-    },
-    {
       "path": "federal/decretos/1944/dec-15960-1944-06-30.md",
       "sha256_md": "5e25597abd1a84b026fab03b7e730af1f31d2cfec77e10c90800cfd1f60bd17d",
       "estado": "anexo_ausente_na_fonte_textual",
@@ -162535,31 +162510,6 @@
             "literal": "<<ANEXO>>",
             "offset_visivel": 1028,
             "contexto": "Art. 3º Êste Decreto entrará em vigor na data de sua publicação. Rio de Janeiro, 9 de junho de 1944, 123º da Independência e 56º da República. GETULIO VARGAS. Eurico G. Dutra. <<ANEXO>>CLBR Vol. 04 Ano 1944 Págs. 18 e 19 Tabelas."
-          }
-        ],
-        "conclusao_contextual": "Comando próprio literal confrontado com a transcrição integral arquivada. Não é mera remissão a anexo de outra lei: o decreto cria, altera ou substitui a relação/tabela que o acompanha."
-      }
-    },
-    {
-      "path": "federal/decretos/1944/dec-15616-1944-05-19.md",
-      "sha256_md": "f1c67751c0f43490ae435c2723f660e5353bc7e23c66695c9452a16226dca607",
-      "estado": "anexo_ausente_na_fonte_textual",
-      "motivo": "Tabela ou relação própria determinada pelo decreto, representada somente pelo ponteiro bibliográfico; zero tabelas HTML/objetos visuais não substitui leitura do conteúdo inline.",
-      "evidencia": {
-        "manifesto": "federal/_fonte/auditorias/retomada_federal_20261027_004/overlay_placeholders_publicados12669_v2.json",
-        "sha256_manifesto": "254fa0c623171c71d8d838403d82fd69dd6f4ccef859d462911127634239032f",
-        "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto:1944-05-19;15616",
-        "sha256_HTML": "9fde5c43efc3406fde7df6cb92ffab631633d91201ea301efeebbc7b8589b130",
-        "sha256_metadados": "30e01b9a0a8495d705564294ca8e40435d43fb4e65c221e458282fb0ecacb013",
-        "OID_HEAD": "84a46ee2b76d0c2ef9a56be89f01dbbf5eb363d9",
-        "comando_proprio": [
-          "Art. 1º Ficam criadas, na forma da relação anexa, na Tabela Numérica Ordinária da Extranumerário-mensalista do Serviço de Meteorologia, do Ministério da Agricultura, para o Instituto Regional de Meteorologia de Recife; as séries funcionais de Calculista, Auxiliar de Escritório, Praticante de Escritório e Meteorologista."
-        ],
-        "ocorrencias": [
-          {
-            "literal": "<<ANEXO>>",
-            "offset_visivel": 1183,
-            "contexto": "Art. 3º Êste Decreto entrará em vigor na data de sua publicação. Rio de Janeiro, 19 de maio de 1944, 123º da Independência e 56º da República. Getulio Vargas. Apolonio Salles. <<ANEXO>>CLBR Vol. 04 Ano 1944 Pág. 342 Tabela."
           }
         ],
         "conclusao_contextual": "Comando próprio literal confrontado com a transcrição integral arquivada. Não é mera remissão a anexo de outra lei: o decreto cria, altera ou substitui a relação/tabela que o acompanha."
