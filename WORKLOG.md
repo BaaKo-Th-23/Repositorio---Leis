@@ -1915,3 +1915,8 @@ Revisao das12.669 fontes dos lotes9.061/3.608 encontrou65 ponteiros bibliografic
 ### 2026-10-27 — triagem bibliografica de anexos,74 testes
 
 Integrado guard sucessor003 apos revisao ROOT dos vinculos atuais/externos; anexo de outra norma nao dispensa relacao propria nova em outro dispositivo. Predicado56 anterior preservado integralmente porAST e chamado primeiro. Nova classe exige revisao documental de ponteiros CLBR isolados,sem concluir ausencia pelo marcador ou aplicar mascaras automaticamente. Replay privado12.669 mantem65 alertas do inventario;ROOT repetiu74 testes integrados,todos passaram. Uma normalizacao de espaco Python final fora de literal deixaASTidentica a proposta,que permanece preservada. Nenhum corpo/meta/registro alterado nesta integracao;retencao individual64 foi publicada antes.
+
+
+### 2026-10-27 — 582 normas estaduais/municipais
+
+144SE (13+131) e438municipais:ROOT repetiu582 replays,matrizesHTML5 dos13SE iniciais e6testesCSS;artefatos/fontes porSHA e index conferidos. SE deduplicado contra9.955blobsHEAD integrais porOID/NUL,com arquivos eIDs no namespace oficial e tipo/numero/ano;inclui seis nomes antigos comaspas omitidos da primeira triagem do agente. Overlay sucessor confirmazero aliases emSE13/SE131,sem alterar fontes/pacotes antigos. Corpo/metadadosdos144copiados atomicamente dos candidatos congelados. Compilados/divergenciasdatas/JSWord permaneceram retidos. Os438municipais usam baselineHEAD real e reservas qualificadas; tresfixturesHEAD identicas nao sao novas normas. Formato582 sem erros/avisos. Reparos metadataCSV antigo e sufixo8.494-A sao separados e nao geram normas novas. Metas/pendencias preservadas.

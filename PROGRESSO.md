@@ -1,10 +1,10 @@
 # Progresso
 
-Gerado em 27/10/2026 18:39:22 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 27/10/2026 19:26:43 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Cada série contribui até sua própria meta. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**1.144.500 documentos · 1.052.070 / ~11.768.799 nas séries com meta (8.9%) · 2.766 sem meta**
+**1.145.082 documentos · 1.052.618 / ~11.768.799 nas séries com meta (8.9%) · 2.800 sem meta**
 
 ![progresso](progresso.svg)
 
@@ -14,7 +14,7 @@ Há 7.608 pendências de integralidade registradas em [registro auditável](scri
 
 Planalto, Senado, Câmara e assembleias.
 
-470.250 documentos · 463.917 / ~574.766 nas séries com meta (80.7%) · 0 sem meta
+470.394 documentos · 464.061 / ~574.766 nas séries com meta (80.7%) · 0 sem meta
 
 ### Constituição Federal
 
@@ -75,15 +75,15 @@ Planalto, Senado, Câmara e assembleias.
 
 ### Leis estaduais e distritais
 
-297.289 documentos · 290.969 / ~347.467 nas séries com meta (83.7%) · 0 sem meta
+297.433 documentos · 291.113 / ~347.467 nas séries com meta (83.8%) · 0 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
 | ✅ | Constituições estaduais e Lei Orgânica do DF | 27 | 27 | `estaduais/*/constituicao`, `estaduais/*/lei-organica` | Assembleias e Casas Civis |
 | 🟦 | Constituições estaduais históricas | 9 | 40 | `estaduais/*/constituicoes-historicas` | Assembleias |
 | 🟦 | Emendas constitucionais estaduais | 2.023 | 2.200 | `estaduais/*/emendas-constitucionais` | Assembleias |
-| 🟦 | Leis ordinárias estaduais | 275.324 | 330.000 | `estaduais/*/leis-ordinarias` | 19 scripts, uma fonte por UF |
-| 🟦 | Leis complementares estaduais | 12.386 | 14.000 | `estaduais/*/leis-complementares` | 19 scripts, uma fonte por UF |
+| 🟦 | Leis ordinárias estaduais | 275.463 | 330.000 | `estaduais/*/leis-ordinarias` | 19 scripts, uma fonte por UF |
+| 🟦 | Leis complementares estaduais | 12.391 | 14.000 | `estaduais/*/leis-complementares` | 19 scripts, uma fonte por UF |
 | ✅ | Decretos-leis e leis delegadas estaduais | 6.666 | 600 | `estaduais/*/decretos-lei`, `estaduais/*/leis-delegadas`, `estaduais/*/decretos-lei-complementares` | Assembleias |
 | ✅ | Leis promulgadas, constitucionais e emendas à Lei Orgânica | 854 | 600 | `estaduais/*/leis-promulgadas`, `estaduais/*/leis-constitucionais`, `estaduais/*/emendas-lei-organica` | Assembleias |
 
@@ -291,11 +291,11 @@ Diários oficiais e portais de órgãos e tribunais.
 
 5.571 municípios no cadastro do IBGE, sem índice legislativo central.
 
-23.663 documentos · 22.717 / ~10.332.713 nas séries com meta (0.2%) · 946 sem meta
+24.101 documentos · 23.121 / ~10.332.713 nas séries com meta (0.2%) · 980 sem meta
 
 ### Legislação municipal
 
-23.663 documentos · 22.717 / ~10.332.713 nas séries com meta (0.2%) · 946 sem meta
+24.101 documentos · 23.121 / ~10.332.713 nas séries com meta (0.2%) · 980 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -303,9 +303,9 @@ Diários oficiais e portais de órgãos e tribunais.
 | ⬜️ | Planos diretores | 0 | 5.571 | `municipais/*/*/plano-diretor` | portais municipais |
 | 🟦 | Códigos tributários municipais | 3 | 5.571 | `municipais/*/*/codigo-tributario` | portais municipais |
 | 🟦 | Códigos de obras, posturas e zoneamento | 2 | 16.000 | `municipais/*/*/codigos` | portais municipais |
-| 🟦 | Leis ordinárias e complementares municipais (27 capitais primeiro) | 11.560 | 8.300.000 | `municipais/*/*/leis-ordinarias`, `municipais/*/*/leis-complementares` | Câmaras municipais |
-| — | Decretos legislativos municipais | 407 | desconhecida | `municipais/*/*/decretos-legislativos` | SAPL/Interlegis; universo nacional ainda desconhecido |
-| — | Resoluções municipais | 539 | desconhecida | `municipais/*/*/resolucoes` | SAPL/Interlegis; universo nacional ainda desconhecido |
+| 🟦 | Leis ordinárias e complementares municipais (27 capitais primeiro) | 11.964 | 8.300.000 | `municipais/*/*/leis-ordinarias`, `municipais/*/*/leis-complementares` | Câmaras municipais |
+| — | Decretos legislativos municipais | 434 | desconhecida | `municipais/*/*/decretos-legislativos` | SAPL/Interlegis; universo nacional ainda desconhecido |
+| — | Resoluções municipais | 546 | desconhecida | `municipais/*/*/resolucoes` | SAPL/Interlegis; universo nacional ainda desconhecido |
 | 🟦 | Decretos municipais | 9.091 | 2.000.000 | `municipais/*/*/decretos` | prefeituras e diários oficiais |
 
 ---
