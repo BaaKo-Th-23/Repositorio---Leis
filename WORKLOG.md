@@ -1928,3 +1928,7 @@ ROOT repetiu o cotejo portátil integral dos 3.848 documentos, sem divergências
 ### 2026-10-27 — comparação da hierarquia de órgãos DOU
 
 O auditor compara os mesmos nomes na mesma ordem, ignorando somente espaços nas bordas do separador `/`. Preserva os valores HTML e metadata no relatório; unidades diferentes, ordem invertida e níveis vazios continuam retidos. ROOT repetiu 26 testes e a auditoria de 2.096 candidatos. Os mesmos 1.423 passaram: documentos cuja diferença de espaços foi resolvida continuam retidos por outros critérios de identidade. Nenhum corpo, metadata, pendência ou meta alterado. Preimagens e os dois relatórios congelados preservados.
+
+### 2026-10-27 — reparos de identidade e metadados em 17 leis SE
+
+Dezesseis registros antigos continham campos deslocados pelo CSV: fonte com ID textual inválido, ementa truncada e situação/revogação indevidamente afirmadas. ROOT repetiu os replays e conferiu preimagens por OID/SHA no HEAD atual. Corrigiu somente fonte, ementa literal e estado desconhecido, preservando o corpo inteiro inclusive H1; nomes novos usam ID oficialmente observado ou hash da fonte. Em outro registro, a epígrafe e o índice confirmam 8.494-A: corrigidos número, título, H1 e nome, mantendo todo o restante do corpo e preservando a distinta 8.494 sem sufixo. Dezessete backups completos antes das trocas; formato sem erros/avisos; zero normas novas. Suplemento VML dos 144 SE identifica brasões equivalentes e não altera os pacotes anteriores. Nenhuma data, ID ou redação inferida.
