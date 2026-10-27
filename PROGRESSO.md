@@ -1,10 +1,10 @@
 # Progresso
 
-Gerado em 27/10/2026 20:14:46 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 27/10/2026 20:20:07 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Cada série contribui até sua própria meta. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**1.152.132 documentos · 1.059.393 / ~11.768.799 nas séries com meta (9.0%) · 2.800 sem meta**
+**1.154.865 documentos · 1.061.789 / ~11.768.799 nas séries com meta (9.0%) · 3.137 sem meta**
 
 ![progresso](progresso.svg)
 
@@ -291,22 +291,22 @@ Diários oficiais e portais de órgãos e tribunais.
 
 5.571 municípios no cadastro do IBGE, sem índice legislativo central.
 
-24.101 documentos · 23.121 / ~10.332.713 nas séries com meta (0.2%) · 980 sem meta
+26.834 documentos · 25.517 / ~10.332.713 nas séries com meta (0.2%) · 1.317 sem meta
 
 ### Legislação municipal
 
-24.101 documentos · 23.121 / ~10.332.713 nas séries com meta (0.2%) · 980 sem meta
+26.834 documentos · 25.517 / ~10.332.713 nas séries com meta (0.2%) · 1.317 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Leis orgânicas municipais e suas emendas | 2.061 | 5.571 | `municipais/*/*/lei-organica`, `municipais/*/*/emendas-lei-organica` | diários das associações estaduais de municípios |
-| ⬜️ | Planos diretores | 0 | 5.571 | `municipais/*/*/plano-diretor` | portais municipais |
+| 🟦 | Leis orgânicas municipais e suas emendas | 2.065 | 5.571 | `municipais/*/*/lei-organica`, `municipais/*/*/emendas-lei-organica` | diários das associações estaduais de municípios |
+| 🟦 | Planos diretores | 1 | 5.571 | `municipais/*/*/plano-diretor` | portais municipais |
 | 🟦 | Códigos tributários municipais | 3 | 5.571 | `municipais/*/*/codigo-tributario` | portais municipais |
-| 🟦 | Códigos de obras, posturas e zoneamento | 2 | 16.000 | `municipais/*/*/codigos` | portais municipais |
-| 🟦 | Leis ordinárias e complementares municipais (27 capitais primeiro) | 11.964 | 8.300.000 | `municipais/*/*/leis-ordinarias`, `municipais/*/*/leis-complementares` | Câmaras municipais |
-| — | Decretos legislativos municipais | 434 | desconhecida | `municipais/*/*/decretos-legislativos` | SAPL/Interlegis; universo nacional ainda desconhecido |
-| — | Resoluções municipais | 546 | desconhecida | `municipais/*/*/resolucoes` | SAPL/Interlegis; universo nacional ainda desconhecido |
-| 🟦 | Decretos municipais | 9.091 | 2.000.000 | `municipais/*/*/decretos` | prefeituras e diários oficiais |
+| 🟦 | Códigos de obras, posturas e zoneamento | 3 | 16.000 | `municipais/*/*/codigos` | portais municipais |
+| 🟦 | Leis ordinárias e complementares municipais (27 capitais primeiro) | 14.353 | 8.300.000 | `municipais/*/*/leis-ordinarias`, `municipais/*/*/leis-complementares` | Câmaras municipais |
+| — | Decretos legislativos municipais | 475 | desconhecida | `municipais/*/*/decretos-legislativos` | SAPL/Interlegis; universo nacional ainda desconhecido |
+| — | Resoluções municipais | 842 | desconhecida | `municipais/*/*/resolucoes` | SAPL/Interlegis; universo nacional ainda desconhecido |
+| 🟦 | Decretos municipais | 9.092 | 2.000.000 | `municipais/*/*/decretos` | prefeituras e diários oficiais |
 
 ---
 
