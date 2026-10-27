@@ -21,7 +21,7 @@ from auditar import validar
 from baixar_dou import assinatura_do_ato, pendencia_integralidade
 from comum import normalizar_chave
 from html2md import convert
-from representacao_html_dou import representar_fragmento
+from representacao_html_dou_v2 import representar_fragmento
 from metadados_lotes import carregar as carregar_headers
 
 RAIZ = Path(__file__).resolve().parent.parent
