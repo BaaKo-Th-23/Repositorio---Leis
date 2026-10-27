@@ -1936,3 +1936,7 @@ Dezesseis registros antigos continham campos deslocados pelo CSV: fonte com ID t
 ### 2026-10-27 — três anexos CLBR recuperados integralmente
 
 ROOT conferiu visualmente os principais e tabelas dos decretos 23.913, 24.107 e 24.136/1947 na mesma edição CLBR. O 24.107 usa fac-símiles completos, sem escolher por inferência a leitura ambígua de uma palavra; o 24.136 preserva a diferença literal entre epígrafe 28/11 e fecho 23/11, sem atribuir causa. Publicados quatro recursos visuais e o PDF anual oficial completo, permitindo reproduzir os recortes. Versões Normas anteriores e registro anterior preservados em backups completos. Só essas três pendências foram resolvidas: 7.608 para 7.605, zero normas novas. Formato dos três documentos sem erros ou avisos. Outros quadros com cortes na própria digitalização permanecem pendentes.
+
+### 2026-10-27 — epígrafe no layout antigo do DOU
+
+Auditor reconhece a epígrafe antiga somente como um único `h3.titulo-dou` imediatamente anterior ao campo `texto-dou`, na ausência de `p.identifica` interno. Nenhum título cadastrado ou URL substitui a epígrafe observada. ROOT repetiu 32 testes, incluindo título divergente, duplicado, não adjacente e ausente. Dos 521 retidos revisados, 158 passaram essa fase e ainda dependem dos demais gates; 363 continuam retidos. Conteúdo intermediário, incluindo ementa e subtítulo, permanece motivo de retenção para não omitir texto da fonte. Nenhum corpo ou metadata alterado; auditor e testes anteriores congelados com SHA para reproduzir a 031. Metas e pendências inalteradas.

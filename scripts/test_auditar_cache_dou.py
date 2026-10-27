@@ -47,6 +47,58 @@ class CacheDOU(unittest.TestCase):
     def conferir(self):
         return audit.conferir(self.path, set(), set(), dt.date(2026, 10, 20))
 
+    def layout_legado(self, titulo=None, repetido=False, intervalo=''):
+        self.fixture()
+        cache = next((self.root / 'reguladores/_fonte/ans/2026').glob('*.gz'))
+        source = gzip.decompress(cache.read_bytes()).decode()
+        old_sha = hashlib.sha256(source.encode()).hexdigest()
+        source = source.replace(f'<p class="identifica">{self.title}</p>', '')
+        heading = '<h3 class="titulo-dou"><span>' + (titulo or self.title) + '</span></h3>'
+        source = source.replace('<div class="texto-dou">', heading * (2 if repetido else 1) + intervalo + '<div class="texto-dou">')
+        fragmento = re.search(r'<div class="texto-dou">.*?</div>', source, re.S)[0]
+        new_sha = hashlib.sha256(source.encode()).hexdigest()
+        cache.unlink()
+        cache.with_name(cache.name.replace(old_sha, new_sha)).write_bytes(gzip.compress(source.encode()))
+        cab = self.path.read_text().split('\n---\n', 1)[0].replace(old_sha, new_sha)
+        self.path.write_text(cab + '\n---\n# ' + self.title + '\n\n' + audit.convert(fragmento))
+
+    def test_layout_legado_epigrafe_propria_adjacente(self):
+        self.layout_legado(intervalo='\n\n')
+        antes = self.path.read_bytes()
+        registro, _ = self.conferir()
+        self.assertEqual(registro['epigrafe_html'], self.title)
+        self.assertIn('h3.titulo-dou', registro['origem_epigrafe'])
+        self.assertEqual(self.path.read_bytes(), antes)
+
+    def test_layout_legado_titulo_divergente_retem(self):
+        self.layout_legado(titulo='PORTARIA Nº 2, DE 1 DE OUTUBRO DE 2026')
+        with self.assertRaisesRegex(ValueError, 'epígrafe própria diverge'):
+            self.conferir()
+
+    def test_layout_legado_dois_titulos_externos_retem(self):
+        self.layout_legado(repetido=True)
+        with self.assertRaisesRegex(ValueError, 'múltiplas/ausentes'):
+            self.conferir()
+
+    def test_layout_legado_titulo_nao_adjacente_retem(self):
+        self.layout_legado(intervalo='<p>Outro documento</p>')
+        with self.assertRaisesRegex(ValueError, 'múltiplas/ausentes'):
+            self.conferir()
+
+    def test_layout_legado_sem_epigrafe_na_fonte_retem(self):
+        self.layout_legado()
+        source = '<div class="texto-dou"><p>Corpo sem título</p></div>'
+        with self.assertRaisesRegex(ValueError, 'múltiplas/ausentes'):
+            audit.epigrafe_do_ato(source, source, 0)
+
+    def test_epigrafe_interna_divergente_nao_cede_ao_titulo_externo(self):
+        self.fixture()
+        fragmento = '<div class="texto-dou"><p class="identifica">PORTARIA Nº 2</p></div>'
+        prefixo = f'<h3 class="titulo-dou">{self.title}</h3>'
+        titulo, origem = audit.epigrafe_do_ato(prefixo + fragmento, fragmento, len(prefixo))
+        self.assertEqual(titulo, 'PORTARIA Nº 2')
+        self.assertIn('p.identifica', origem)
+
     def test_hierarquia_espacos_preserva_valores_originais(self):
         self.fixture(orgao_meta='ANS/Diretoria Normativa', orgao_html='ANS / Diretoria Normativa')
         antes = self.path.read_bytes()

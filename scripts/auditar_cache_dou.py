@@ -59,6 +59,23 @@ def campo_html(texto, classe):
     return html.unescape(re.sub(r"<[^>]+>", "", m[1])).strip()
 
 
+def epigrafe_do_ato(source, fragmento, inicio_fragmento):
+    titulos = re.findall(r'<p\b[^>]*class=["\']identifica["\'][^>]*>(.*?)</p>', fragmento, re.S)
+    origem = "p.identifica no campo texto-dou"
+    if not titulos:
+        # O layout antigo publica a epígrafe imediatamente antes do campo.
+        # Só esse vínculo explícito autoriza usar o título externo; o título
+        # cadastrado ou a URL nunca substituem a epígrafe da própria fonte.
+        prefixo = source[:inicio_fragmento]
+        externos = list(re.finditer(r'<h3\b[^>]*class=["\']titulo-dou["\'][^>]*>(.*?)</h3>', prefixo, re.S))
+        if len(externos) == 1 and not prefixo[externos[0].end():].strip():
+            titulos = [externos[0][1]]
+            origem = "h3.titulo-dou único imediatamente anterior ao campo texto-dou"
+    if len(titulos) != 1:
+        raise ValueError("epígrafes próprias múltiplas/ausentes: " + str(len(titulos)))
+    return html.unescape(re.sub(r"<[^>]+>", "", titulos[0])).strip(), origem
+
+
 def conferir(path, existentes, urls, hoje, bruto_md=None, fonte_bytes=None):
     # Permite validar uma proposta em memória antes de substituir um arquivo.
     if bruto_md is None:
@@ -103,13 +120,10 @@ def conferir(path, existentes, urls, hoje, bruto_md=None, fonte_bytes=None):
         raise ValueError('bloco texto-dou não fechado; possível truncamento exige revisão estrutural')
     if re.search(r"<(?:img|svg|canvas|object|embed|iframe|math|v:\w+|m:oMath)\b", fragmento, re.I):
         raise ValueError("elemento visual exige revisão")
-    titulos = re.findall(r'<p\b[^>]*class=["\']identifica["\'][^>]*>(.*?)</p>', fragmento, re.S)
-    titulos = [html.unescape(re.sub(r"<[^>]+>", "", t)).strip() for t in titulos]
-    if len(titulos) != 1:
-        raise ValueError("epígrafes próprias múltiplas/ausentes: " + str(len(titulos)))
-    if normalizar_chave(titulos[0]) != normalizar_chave(meta["titulo"]):
+    epigrafe, origem_epigrafe = epigrafe_do_ato(source, fragmento, m.start())
+    if normalizar_chave(epigrafe) != normalizar_chave(meta["titulo"]):
         raise ValueError("epígrafe própria diverge do título cadastrado")
-    if re.match(r"^(retifica|despacho|extrato|aviso|edital|comunicado|apostila)", normalizar_chave(titulos[0])):
+    if re.match(r"^(retifica|despacho|extrato|aviso|edital|comunicado|apostila)", normalizar_chave(epigrafe)):
         raise ValueError("tipo fora do recorte normativo")
     convertido = convert(fragmento)
     representado = (representar_fragmento(fragmento, modo=meta["representacao_corpo"])
@@ -129,6 +143,7 @@ def conferir(path, existentes, urls, hoje, bruto_md=None, fonte_bytes=None):
             "fonte": meta["fonte"], "cache": str(cache.relative_to(RAIZ)),
             "orgao_html": orgao_html, "orgao_metadados": meta["orgao"],
             "criterio_orgao": "Nomes e ordem dos níveis idênticos; somente espaços nas bordas de / ignorados.",
+            "epigrafe_html": epigrafe, "origem_epigrafe": origem_epigrafe,
             "sha256_html": sha, "data": assinatura, "publicacao": pub,
             "identidade": list(chave), "tabelas": convertido.count("<table"),
             "avisos_formato": avisos}, meta
