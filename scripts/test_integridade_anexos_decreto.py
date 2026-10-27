@@ -2,7 +2,7 @@ from pathlib import Path
 import sys, unittest
 from types import SimpleNamespace
 sys.path.insert(0,str(Path(__file__).resolve().parent))
-from integridade_anexos_decreto import anexo_proprio_ausente as gate
+from integridade_anexos_decreto import anexo_proprio_ausente as gate, _ponteiro_bibliografico_para_revisao, _limpar
 
 P=SimpleNamespace(visual=[],structure=[])
 MAIN='DECRETO Nº 52.677\n\nArtigo único. Fica aprovado o Regimento que com êste baixa.\n\nBrasília, 14 de outubro de 1963; 142º da Independência.\n\nJOÃO GOULART\n\nPaulo de Tarso'
@@ -181,5 +181,76 @@ class PrecisaoDeReferentes(unittest.TestCase):
  def test_regulamento_futuro_no_mesmo_artigo_de_outro_objeto_nao_dispensa(self):
   text='Art. 2º As insígnias obedecerão às características dos desenhos anexos ao regulamento aprovado por este decreto; o regulamento das cerimônias será aprovado posteriormente.'
   self.assertIsNotNone(gate(text,P))
+
+class Bibliografia(unittest.TestCase):
+ def test_quadro_substituido_real24799(self):
+  r=gate('Art. 1º Os quadros ficam substituídos pelos quadros que acompanham o presente decreto.\n\n<<ANEXO>>CLBR Vol. 04 Ano 1948 Pág. 54 Tabela.',P)
+  self.assertEqual(r['classe'],'ponteiro_bibliografico_nao_certifica_integralidade')
+  self.assertFalse(r['ausencia_propria_demonstrada'])
+ def test_placeholder_intermediario_real24140(self):
+  t='Art. 2º Fica aprovada a lotação com a seguinte distribuição:\n\n<<ANEXO>>CLBR Vol. 08 Ano 1947 Págs. 386 e 387 Tabelas.\n\nArt. 3º Fica aprovada a distribuição na forma da relação anexa.'
+  self.assertIsNotNone(gate(t,P))
+ def test_substituicao_anexo_alheio_cria_relacao_propria_real24142(self):
+  t='Art. 1º As tabelas que acompanharam o Decreto nº 23.405 passam a vigorar com as alterações constantes da relação anexa.\n\n<<ANEXO>>CLBR Vol. 08 Ano 1947 Págs. 397 a 400 Tabelas.'
+  self.assertIsNotNone(gate(t,P))
+ def test_lista_inline_real18735_exige_revisao_sem_declarar_ausencia(self):
+  t='Art. 1º A relação nominal fica alterada de acordo com a relação anexa.\n\nRELAÇÃO NOMINAL\n\n1. Antônio de Oliveira Paiva.\n\n19. Vago.\n\n<<ANEXO>>CLBR Vol. 04 Ano 1945 Págs. 585 a 587 Tabelas.'
+  self.assertFalse(gate(t,P)['ausencia_propria_demonstrada'])
+ def test_regulamento_art1_nao_oculta_ponteiro_real11451(self):
+  t='Art. 1º Fica aprovado o Regulamento.\n\nREGULAMENTO\n\nArt. 1º Organização.\n\nArt. 54 Organiza um mapa dos efetivos (Anexo n. 2).\n\n<<ANEXO>>CLBR Vol. 02 Ano 1943 Pág. 241 Tabela.'
+  self.assertIsNotNone(gate(t,P))
+ def test_outra_tabela_nao_resolve_ponteiro(self):
+  t='Art. 1º Ficam aprovadas as tabelas anexas.\n\n<table><tr><td>Escala salarial</td><td>100</td></tr></table>\n\n<<ANEXO>>CLBR Vol. 04 Ano 1944 Pág. 252 Tabelas.'
+  self.assertIsNotNone(gate(t,SimpleNamespace(visual=[],structure=[('table',())])))
+ def test_html_nativo_e_duplo_escape(self):
+  for marker in ['&lt;&lt;ANEXO&gt;&gt;','&amp;lt;&amp;lt;ANEXO&amp;gt;&amp;gt;','<<ANEXO>>']:
+   self.assertIsNotNone(gate('<p><span>'+marker+'CLBR Vol. 08 Ano 1942 Pág. 488. Mapa 1.</span></p>',P))
+ def test_remissao_simples_a_outra_norma_nao_retem(self):
+  self.assertIsNone(gate('Art. 1º Aplicam-se os valores do anexo ao Decreto nº 2 de 1940.',P))
+ def test_placeholder_citado_dentro_de_artigo_nao_prova_omissao(self):
+  self.assertIsNone(gate('Art. 1º No catálogo, a expressão <<ANEXO>>CLBR Vol. 08 Ano 1942 Pág. 488 significa remissão bibliográfica.',P))
+ def test_modelo_efetivamente_presente_sem_ponteiro(self):
+  self.assertIsNone(gate('Art. 1º Fica aprovada a relação seguinte:\n\n1. José da Silva\n\n2. Maria dos Santos',P))
+ def test_rotulo_anexo_em_frase_nao_e_endereco_isolado(self):
+  self.assertIsNone(gate('Art. 1º Empregar a expressão <<ANEXO>> nos formulários.',P))
+ def test_endereco_bibliografico_sem_placeholder_nao_retem(self):
+  self.assertIsNone(gate('Art. 1º Consultar a CLBR Vol. 04 Ano 1945 Págs. 585 a 587 para estudo histórico.',P))
+
+class VinculoBibliografico(unittest.TestCase):
+ def test_substituta_propria_antes_de_tabela_antiga_real23913(self):
+  text='Art. 1º Fica substituída, pela que acompanha o presente Decreto, a tabela anexa ao Decreto nº 22.499, de 1947.\n\n<<ANEXO>>CLBR Vol. 08 Ano 1947 Pág. 99 Tabela.'
+  r=_ponteiro_bibliografico_para_revisao(_limpar(text))
+  self.assertIsNotNone(r)
+  self.assertEqual([v['vinculo_externo_explicito'] for v in r['vinculos_das_remissoes']],[True,False])
+ def test_alteracoes_constantes_da_relacao_nova_nao_sao_anexo_antigo(self):
+  text='Art. 1º Aplicam-se os critérios da relação anexa ao Decreto nº 10, de 1950.\n\nArt. 2º Ficam estabelecidas as alterações constantes da relação anexa.\n\n<<ANEXO>>CLBR Vol. 08 Ano 1953 Pág. 250 Tabela.'
+  r=_ponteiro_bibliografico_para_revisao(_limpar(text))
+  self.assertIsNotNone(r)
+  self.assertEqual([v['vinculo_externo_explicito'] for v in r['vinculos_das_remissoes']],[True,False])
+  self.assertIsNotNone(gate(text,P))
+ def test_funcoes_indicadas_em_relacao_nova_nao_sao_anexo_antigo(self):
+  text='Art. 1º Mantém-se a tabela anexa ao Decreto nº 10, de 1950.\n\nArt. 2º Ficam criadas as funções indicadas na relação anexa.\n\n<<ANEXO>>CLBR Vol. 08 Ano 1953 Pág. 250 Tabela.'
+  r=_ponteiro_bibliografico_para_revisao(_limpar(text))
+  self.assertIsNotNone(r)
+  self.assertEqual([v['vinculo_externo_explicito'] for v in r['vinculos_das_remissoes']],[True,False])
+  self.assertIsNotNone(gate(text,P))
+
+class ObjetoAtualBibliografico(unittest.TestCase):
+ def check_current(self,own):
+  text='Art. 1º Mantém-se a relação anexa ao Decreto nº 10, de 1950.\n\nArt. 2º '+own+'\n\n<<ANEXO>>CLBR Vol. 04 Ano 1948 Pág. 54 Tabela.'
+  r=_ponteiro_bibliografico_para_revisao(_limpar(text))
+  self.assertIsNotNone(r)
+  self.assertTrue(any(v.get('vinculo_atual_explicito') for v in r['vinculos_das_remissoes']))
+  self.assertFalse(r['ausencia_propria_demonstrada'])
+  self.assertIsNotNone(gate(text,P))
+ def test_quadros_atuais_real24799_apos_anexo_antigo(self):
+  for expr in ['Os quadros ficam substituídos pelos quadros que acompanham o presente decreto.', 'Os quadros ficam substituídos pelos quadros que acompanham este decreto.']:
+   self.check_current(expr)
+ def test_regulamento_que_com_este_baixa_apos_anexo_antigo(self):
+  for expr in ['Fica aprovado o regulamento que com este baixa.', 'Ficam aprovados os quadros que com êste baixam.']:
+   self.check_current(expr)
+ def test_relacao_que_a_este_acompanha_apos_anexo_antigo(self):
+  for expr in ['Fica aprovada a relação que a este acompanha.', 'Ficam aprovadas as tabelas que a êste acompanham.']:
+   self.check_current(expr)
 
 if __name__=='__main__':unittest.main()
