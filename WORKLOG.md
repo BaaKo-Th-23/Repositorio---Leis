@@ -1972,3 +1972,7 @@ Da fila congelada, 2.367 candidatos foram efetivamente examinados nesta janela: 
 ### 2026-10-27 — 2.733 normas municipais
 
 Lote fechado de 917 + 1.008 + 808. ROOT repetiu todos os 2.733 replays, conferiu 16.855 artefatos e confrontou conjuntamente candidatos e 24.105 blobs municipais integrais do HEAD por OID: zero colisões por URL oficial ou IBGE/rota/tipo/número/ano. Destinos novos ausentes em HEAD; referências de QA já presentes não contam como novas normas. O agregado 749 é subconjunto do 808 e foi excluído como lote separado. Snapshots anteriores, fontes e retenções preservados; nenhum novo candidato anexado depois do fechamento. Formato dos 2.733 sem erros/avisos. Comprovadas no índice 3.902 quebras Markdown de exatamente dois espaços e 2.733 finais vazios; nenhuma outra classe de whitespace dispensada. Metas, datas originais de captura e estado de vigência preservados.
+
+### 2026-10-27 — correção bibliográfica do decreto 15.616/1944
+
+A recuperação foi publicada com volume VI em três referências editoriais copiadas da receita de outro ato. ROOT conferiu a folha de rosto da seção, página PDF 770: volume IV, decretos abril–junho, primeira parte. Corrigidas somente a versão no YAML e duas legendas; páginas/imagens do ato, texto normativo, datas e links permanecem idênticos. O PDF anual completo está vinculado por SHA/OID às páginas 1161–1162 (impressas 341–342). Preimagem publicada e recibos anteriores preservados. Zero normas novas, sem alteração de contagem ou pendências. Formato sem erros/avisos.
