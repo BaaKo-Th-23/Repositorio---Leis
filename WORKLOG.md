@@ -1870,3 +1870,8 @@ separadamente. Falhas de fonte permanecem como lacunas, avançando outras frente
 - Integrado guard56 com preimagens do guard35 e dos testes preservadas. Marcadores editoriais parentéticos de ilegível e remissões próprias a desenhos sem representação passam a exigir revisão documental. Uso literal definido do rótulo e regulamentos futuros vinculados à própria remissão não são confundidos com lacunas presentes; outras normas citadas não provam desenhos próprios.
 - ROOT revisou a proposta e repetiu56 testes integrados, incluindo35 anteriores e regressões de lacunas, citações, formulários, gráficos e regulamentação futura. Cinco controles reais e replay privado9.064 sem deltas preservados na proposta,sem aplicar decisões de máscara ao baseline.
 - Alteração realizada na janela sem coletor federal, após término024 e antes do novo diagnóstico/cliente, registrando a versão correta carregada. Registro de7.544 pendências e metas inalterados; nenhum texto normativo foi emendado por esse gate.
+
+
+### 2026-10-27 — 3.608 decretos federais
+
+Acrescentados lotes 020v3/021v3, com fontes HTML e metadados integrais, 3.608 replays e dois casos adicionais conferidos no render oficial GitHub. ROOT validou e promoveu 116 candidatos privados somente após preservar preimagens e conferir identidade/caminho contra HEAD. Casos truncados, datas contraditorias e desenhos ausentes permaneceram retidos; metas e pendencias inalteradas. Uma quebra Markdown de dois espacos conferida individualmente.
