@@ -1,20 +1,20 @@
 # Progresso
 
-Gerado em 27/10/2026 19:45:03 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 27/10/2026 19:48:09 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Cada série contribui até sua própria meta. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**1.148.930 documentos · 1.056.466 / ~11.768.799 nas séries com meta (9.0%) · 2.800 sem meta**
+**1.148.933 documentos · 1.056.469 / ~11.768.799 nas séries com meta (9.0%) · 2.800 sem meta**
 
 ![progresso](progresso.svg)
 
-Há 7.608 pendências de integralidade registradas em [registro auditável](scripts/dados/pendencias-integralidade-publicadas.json). Esses documentos ficam fora da contagem até validação; seus textos e histórico são preservados.
+Há 7.605 pendências de integralidade registradas em [registro auditável](scripts/dados/pendencias-integralidade-publicadas.json). Esses documentos ficam fora da contagem até validação; seus textos e histórico são preservados.
 
 ## Fase 1 — legislação federal e leis estaduais
 
 Planalto, Senado, Câmara e assembleias.
 
-474.242 documentos · 467.909 / ~574.766 nas séries com meta (81.4%) · 0 sem meta
+474.245 documentos · 467.912 / ~574.766 nas séries com meta (81.4%) · 0 sem meta
 
 ### Constituição Federal
 
@@ -53,11 +53,11 @@ Planalto, Senado, Câmara e assembleias.
 
 ### Decretos do Executivo federal
 
-109.229 / ~153.657 documentos (71.1%)
+109.232 / ~153.657 documentos (71.1%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Decretos numerados (1889–hoje, as duas séries) | 94.699 | 139.127 | `federal/decretos` | normas.leg.br + Planalto |
+| 🟦 | Decretos numerados (1889–hoje, as duas séries) | 94.702 | 139.127 | `federal/decretos` | normas.leg.br + Planalto |
 | ✅ | Decretos não numerados | 14.510 | 14.510 | `federal/decretos-nao-numerados` | Planalto |
 | ✅ | Regulamentos consolidados (RIR, RIPI, Aduaneiro, RPS, PAF) | 20 | 20 | `federal/regulamentos` | Planalto |
 

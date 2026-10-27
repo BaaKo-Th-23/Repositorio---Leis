@@ -161613,31 +161613,6 @@
       }
     },
     {
-      "path": "federal/decretos/1947/dec-24136-1947-11-28.md",
-      "sha256_md": "eeec67bb46944ffb34bd621b698e2eea90d2841a825dc058651c851fc2ddeba3",
-      "estado": "anexo_ausente_na_fonte_textual",
-      "motivo": "Tabela ou relação própria determinada pelo decreto, representada somente pelo ponteiro bibliográfico; zero tabelas HTML/objetos visuais não substitui leitura do conteúdo inline.",
-      "evidencia": {
-        "manifesto": "federal/_fonte/auditorias/retomada_federal_20261027_004/overlay_placeholders_publicados12669_v2.json",
-        "sha256_manifesto": "254fa0c623171c71d8d838403d82fd69dd6f4ccef859d462911127634239032f",
-        "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto:1947-11-28;24136",
-        "sha256_HTML": "c10656c4fc9a70131ef4aea19957bda7188971c094048a95886171c0b0d10932",
-        "sha256_metadados": "f2af2754320ff745ed1c37c0b4ee8fff43b44f1a6eb438d4216fb3d93b5c8d64",
-        "OID_HEAD": "e95ff926e780d1339d0939264693cdc537c59630",
-        "comando_proprio": [
-          "Art. 1º Ficam criadas, na forma da relação anexa, as Tabelas Numéricas, Ordinária e Suplementar, de Extranumerário-mensalista, do Departamento de Esportes da Marinha, mediante a transferência de funções de idênticas tabelas do Centro de Instrução \"Almirante Wandenkolk\"."
-        ],
-        "ocorrencias": [
-          {
-            "literal": "<<ANEXO>>",
-            "offset_visivel": 961,
-            "contexto": "Art. 3º Revogam-se as disposições em contrário. Rio de Janeiro, em 28 de novembro de 1947, 126º da Independência e 59º da República. EURICO G. DUTRA. Sylvio de Noronha. <<ANEXO>>CLBR Vol. 08 Ano 1947 Pág. 383 Tabelas."
-          }
-        ],
-        "conclusao_contextual": "Comando próprio literal confrontado com a transcrição integral arquivada. Não é mera remissão a anexo de outra lei: o decreto cria, altera ou substitui a relação/tabela que o acompanha."
-      }
-    },
-    {
       "path": "federal/decretos/1947/dec-24131-1947-11-27.md",
       "sha256_md": "93a9f84689c91a87b68bc1d4a4a250f6e494b49a111a3539adbfb808f4b2969b",
       "estado": "anexo_ausente_na_fonte_textual",
@@ -161662,31 +161637,6 @@
             "literal": "<<ANEXO>>",
             "offset_visivel": 3040,
             "contexto": "Art. 6º Revogam-se as disposições em contrário. Rio de Janeiro, em 27 de Novembro de 1947, 126º da Independência e 59º da República. Clementino Mariani. Eurico G. Dutra. Lotação numérica das repartições atendidas pelos Quadros Permanentes e Suplementares do Ministério da Educação e Saúde, a que se refere o art. 3º do Decreto nº 24.131, de 27 de novembro de 1947. <<ANEXO>>CLBR Ano 1947 Vol. 08 Págs. 329 a 382 Tabelas."
-          }
-        ],
-        "conclusao_contextual": "Comando próprio literal confrontado com a transcrição integral arquivada. Não é mera remissão a anexo de outra lei: o decreto cria, altera ou substitui a relação/tabela que o acompanha."
-      }
-    },
-    {
-      "path": "federal/decretos/1947/dec-24107-1947-11-25.md",
-      "sha256_md": "2729ab0bebc5e515c7b0513f3228b5c1b383d47df051e05d887f9fea4617d0f5",
-      "estado": "anexo_ausente_na_fonte_textual",
-      "motivo": "Tabela ou relação própria determinada pelo decreto, representada somente pelo ponteiro bibliográfico; zero tabelas HTML/objetos visuais não substitui leitura do conteúdo inline.",
-      "evidencia": {
-        "manifesto": "federal/_fonte/auditorias/retomada_federal_20261027_004/overlay_placeholders_publicados12669_v2.json",
-        "sha256_manifesto": "254fa0c623171c71d8d838403d82fd69dd6f4ccef859d462911127634239032f",
-        "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto:1947-11-25;24107",
-        "sha256_HTML": "ae61bf6ef6c6006f2e136b729793325160e6489bdccfa32334a5a0379f530910",
-        "sha256_metadados": "eb791832b7354fd224ce6ed78535ff4e2374f1b3dd5f4b9c07acc163d9f028ee",
-        "OID_HEAD": "a89c462355b1308e510bbf731931220d1c3152c3",
-        "comando_proprio": [
-          "Art. 1º Fica alterada, na norma da relação anexa, a Tabela Numérica Ordinária de Extranumerário-Mensalista do Departamento Nacional de Obras Contra as Sêcas do Ministério da Viação e Obras Públicas."
-        ],
-        "ocorrencias": [
-          {
-            "literal": "<<ANEXO>>",
-            "offset_visivel": 798,
-            "contexto": "Art. 3º Revogam-se as disposições em contrário. Rio de Janeiro, em 25 de novembro de 1947; 126º da Independência e 59º da República. EURICO G. DUTRA. Clovis Pestana. <<ANEXO>>CLBR Vol. 08 Ano 1947 Pág. 317 Tabela."
           }
         ],
         "conclusao_contextual": "Comando próprio literal confrontado com a transcrição integral arquivada. Não é mera remissão a anexo de outra lei: o decreto cria, altera ou substitui a relação/tabela que o acompanha."
@@ -161848,31 +161798,6 @@
             "literal": "<<ANEXO>>",
             "offset_visivel": 662,
             "contexto": "Art. 3º Revogam-se as disposições em contrário. Rio de Janeiro, 22 de outubro de 1947, 126º da Independência e 59º da República. Eurico G. Dutra. Canrobert P. da Costa. <<ANEXO>>CLBR Vol. 08 Ano 1947 Pág. 90 Tabela."
-          }
-        ],
-        "conclusao_contextual": "Comando próprio literal confrontado com a transcrição integral arquivada. Não é mera remissão a anexo de outra lei: o decreto cria, altera ou substitui a relação/tabela que o acompanha."
-      }
-    },
-    {
-      "path": "federal/decretos/1947/dec-23913-1947-10-22.md",
-      "sha256_md": "009aecfa20d2fbf395b9808d8ac973a982904049522ac4415fd8370e460b5650",
-      "estado": "anexo_ausente_na_fonte_textual",
-      "motivo": "Tabela ou relação própria determinada pelo decreto, representada somente pelo ponteiro bibliográfico; zero tabelas HTML/objetos visuais não substitui leitura do conteúdo inline.",
-      "evidencia": {
-        "manifesto": "federal/_fonte/auditorias/retomada_federal_20261027_004/overlay_placeholders_publicados12669_v2.json",
-        "sha256_manifesto": "254fa0c623171c71d8d838403d82fd69dd6f4ccef859d462911127634239032f",
-        "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto:1947-10-22;23913",
-        "sha256_HTML": "bcb3f6e568cf8b47c58ace2d66fdeee3590ea86b0eb652cda59ece5111998957",
-        "sha256_metadados": "18f86497366a2119cd4cfbbf405e75b7220025d2a0514040c67182078ec7a904",
-        "OID_HEAD": "4c6c8cbc8c60a1a5fe75a50364accaa381eca4bd",
-        "comando_proprio": [
-          "Art. 1º Fica substituída, pela que acompanha o presente Decreto, a tabela anexa ao Decreto nº 22.499, de 22 de janeiro de 1947, que alterou a Tabela Numérica Ordinária de Extranumerário-mensalista, da Procuradoria da República do Distrito Federal do Ministério da Justiça e Negócios Interiores."
-        ],
-        "ocorrencias": [
-          {
-            "literal": "<<ANEXO>>",
-            "offset_visivel": 799,
-            "contexto": "Art. 3º Revogam-se as disposições em contrário. Rio de Janeiro, em 22 de outubro de 1947, 126º da Independência e 59º da República. Eurico G. Dutra. Benedito Costa Neto. <<ANEXO>>CLBR Vol. 08 Ano 1947 Pág. 99 Tabela."
           }
         ],
         "conclusao_contextual": "Comando próprio literal confrontado com a transcrição integral arquivada. Não é mera remissão a anexo de outra lei: o decreto cria, altera ou substitui a relação/tabela que o acompanha."
