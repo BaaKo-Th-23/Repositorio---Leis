@@ -124,4 +124,62 @@ class Anexos(unittest.TestCase):
  def test_anexo_numerado_do_decreto_externo_nao_retem(self):
   text=MAIN.replace('Fica aprovado o Regimento que com êste baixa','Ficam extintas as funções constantes do Anexo I do Decreto nº 1.234 de 1960')
   self.assertIsNone(gate(text,P))
+class LacunasGraficasEEditoriais(unittest.TestCase):
+ def test_parte_rasgada_no_dispositivo_retem(self):
+  self.assertEqual(gate('Art. 2º As subcomissões prestarão seu concurso (**Ilegível** parte rasgada no livro.).',P)['estado'],'revisao_documental_necessaria')
+ def test_lacunas_nomes_objeto_e_alinea_retem(self):
+  for text in ['Art. 1º Vagos em virtude da aposentadoria de Francisco, (ilegível) Marcos Pinheiro.', 'Art. 3º XVI – Recuperação e consertos de peças e móveis (ilegivel).', 'Art. 4º Candidatos sem observância do nº(ilegível).', 'Art. 6º Diploma a que se refere a alínea (ilegivel) do art. 23.']:
+   self.assertIsNotNone(gate(text,P),text)
+ def test_ilegivel_legitimo_no_servico_postal_nao_retem(self):
+  self.assertIsNone(gate('Art. 1º Não será aceita remessa que traga ilegível o nome do destinatário.',P))
+ def test_ilegivel_legitimo_no_cancelamento_nao_retem(self):
+  self.assertIsNone(gate('Art. 1º A nota é riscada em cruz sem a tornar ilegível; quando a praça fôr desligada, a nota será tornada ilegível.',P))
+ def test_definicao_explicita_de_rotulo_nao_retem(self):
+  self.assertIsNone(gate('Art. 1º Usar a expressão (ilegível) para classificar documentos sem leitura possível.',P))
+ def test_desenhos_medalha_propria_com_placeholder_retem(self):
+  text='Art. 1º A Medalha tem as seguintes características, elucidadas nos desenhos anexos.\n\nRio de Janeiro, 22 de outubro de 1947.\n\nAssinatura\n\n&lt;&lt;ANEXO>> CLBR Vol. 08 Ano 1947 Pág. 91 Desenhos.'
+  self.assertIn('desenhos anexos',gate(text,P)['remissao'])
+ def test_formulario_de_proposta_nao_prova_desenhos_insignias(self):
+  text=MAIN+'\n\nREGULAMENTO\n\nArt. 1º A Ordem possui cinco graus.\n\nArt. 3º As insígnias terão as dimensões e características consignadas nas explicações e desenhos anexos.\n\nArt. 29. As propostas seguirão o anexo.\n\nANEXO\n\nNome do candidato ....\n\nGrau ....'
+  self.assertIn('art. 3',gate(text,P)['remissao'])
+ def test_descricao_uniforme_sem_desenhos_retem(self):
+  self.assertIsNotNone(gate('Art. 13. Para a distinção de categorias, serão colocados na gola do uniforme bordados dourados de acordo com os desenhos anexos.',P))
+ def test_desenhos_de_norma_externa_nao_retem(self):
+  self.assertIsNone(gate('Art. 1º A medalha obedecerá às características dos desenhos anexos ao Decreto nº 123 de 1930.',P))
+ def test_alteracao_citada_sem_novo_desenho_nao_retem(self):
+  self.assertIsNone(gate('Art. 1º O art. 3º do Decreto nº 123 passa a vigorar com a seguinte redação: As insígnias obedecem às características dos desenhos anexos.',P))
+ def test_visual_presente_nao_e_declarado_ausente(self):
+  self.assertIsNone(gate('Art. 3º As insígnias terão as dimensões consignadas nos desenhos anexos.',SimpleNamespace(visual=['svg'],structure=[])))
+
+class RegulamentosFuturos(unittest.TestCase):
+ def test_desenhos_da_regulamentacao_a_ser_baixada_nao_retem(self):
+  for text in ['Art. 2º A Ordem constará de quatro graus, cujas insígnias obedecerão a desenhos anexos à regulamentação a ser baixada pelo Ministro.', 'Art. 2º As insígnias da Ordem obedecerão a desenhos anexos ao regulamento a ser baixado.']:
+   self.assertIsNone(gate(text,P))
+ def test_futuro_expresso_em_outro_artigo_da_mesma_ordem_nao_retem(self):
+  text='Art. 2º As insígnias obedecerão aos desenhos anexos ao regulamento da ordem.\n\nArt. 7º O Regulamento da Ordem Nacional será aprovado pelo Presidente, mediante proposta do Conselho.'
+  self.assertIsNone(gate(text,P))
+ def test_regulamento_futuro_de_outro_objeto_nao_apaga_desenho_proprio(self):
+  text='Art. 1º A Medalha terá as características indicadas nos desenhos anexos.\n\nArt. 3º O regulamento das cerimônias será aprovado posteriormente.'
+  self.assertIsNotNone(gate(text,P))
+
+
+class PrecisaoDeReferentes(unittest.TestCase):
+ def test_termo_com_lacuna_nao_e_definicao(self):
+  self.assertIsNotNone(gate('Art. 1º O termo de (ilegível) será lavrado.',P))
+ def test_rubrica_com_lacuna_nao_e_definicao(self):
+  self.assertIsNotNone(gate('Art. 2º A rubrica do (ilegível) figurará no certificado.',P))
+ def test_definicao_com_significado_explicito_nao_retem(self):
+  self.assertIsNone(gate('Art. 1º A expressão (ilegível) significa documento sem leitura possível.',P))
+ def test_rotulo_legitimo_nao_oculta_segunda_lacuna(self):
+  self.assertIsNotNone(gate('Art. 1º Usar a expressão (ilegível) para classificação.\n\nArt. 2º O termo de (ilegível) será lavrado.',P))
+ def test_aprovacao_propria_nao_e_dispensada_por_cerimonias_futuras(self):
+  text='Art. 2º As insígnias obedecerão às características dos desenhos anexos ao regulamento aprovado por este decreto.\n\nArt. 7º O regulamento das cerimônias será aprovado posteriormente.'
+  self.assertIsNotNone(gate(text,P))
+ def test_regulamento_nomeado_atual_nao_e_dispensado_por_outro_futuro(self):
+  text='Art. 1º Fica aprovado o Regulamento da Ordem.\n\nArt. 2º As insígnias obedecerão às características dos desenhos anexos ao regulamento da ordem.\n\nArt. 7º O regulamento das cerimônias será aprovado posteriormente.'
+  self.assertIsNotNone(gate(text,P))
+ def test_regulamento_futuro_no_mesmo_artigo_de_outro_objeto_nao_dispensa(self):
+  text='Art. 2º As insígnias obedecerão às características dos desenhos anexos ao regulamento aprovado por este decreto; o regulamento das cerimônias será aprovado posteriormente.'
+  self.assertIsNotNone(gate(text,P))
+
 if __name__=='__main__':unittest.main()
