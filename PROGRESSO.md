@@ -1,10 +1,10 @@
 # Progresso
 
-Gerado em 27/10/2026 21:28:12 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 27/10/2026 21:33:03 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Cada série contribui até sua própria meta. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**1.161.074 documentos · 1.067.457 / ~11.768.799 nas séries com meta (9.1%) · 3.191 sem meta**
+**1.161.542 documentos · 1.067.457 / ~11.768.799 nas séries com meta (9.1%) · 3.659 sem meta**
 
 ![progresso](progresso.svg)
 
@@ -91,7 +91,7 @@ Planalto, Senado, Câmara e assembleias.
 
 Diários oficiais e portais de órgãos e tribunais.
 
-658.547 documentos · 572.634 / ~861.320 nas séries com meta (66.5%) · 1.820 sem meta
+659.015 documentos · 572.634 / ~861.320 nas séries com meta (66.5%) · 2.288 sem meta
 
 ### Infralegal — tributário
 
@@ -108,7 +108,7 @@ Diários oficiais e portais de órgãos e tribunais.
 
 ### Infralegal — trânsito e transportes
 
-21.397 documentos · 10.105 / ~12.857 nas séries com meta (78.6%) · 159 sem meta
+21.865 documentos · 10.105 / ~12.857 nas séries com meta (78.6%) · 627 sem meta
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
@@ -119,7 +119,7 @@ Diários oficiais e portais de órgãos e tribunais.
 | ✅ | ANAC: resoluções e RBAC | 9.082 | 700 | `reguladores/anac` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério dos Transportes: demais atos normativos | 919 | 2.000 | `reguladores/transportes` | Diário Oficial da União (in.gov.br) |
 | 🟦 | Ministério de Portos e Aeroportos | 300 | 800 | `reguladores/portos-aeroportos` | Diário Oficial da União (in.gov.br) |
-| — | Ministério da Infraestrutura (denominação histórica) | 159 | desconhecida | `reguladores/ministerio-da-infraestrutura` | Diário Oficial da União (órgão literal da publicação) |
+| — | Ministério da Infraestrutura (denominação histórica) | 627 | desconhecida | `reguladores/ministerio-da-infraestrutura` | Diário Oficial da União (órgão literal da publicação) |
 
 ### Infralegal — saúde
 
@@ -314,12 +314,20 @@ Diários oficiais e portais de órgãos e tribunais.
 
 | Pasta | Arquivos |
 | --- | ---: |
-| `reguladores/ministerio-da-economia/portarias` | 2.306 |
-| `reguladores/ministerio-da-cidadania/portarias` | 1.731 |
+| `reguladores/ministerio-da-economia/portarias` | 4.531 |
+| `reguladores/ministerio-da-cidadania/portarias` | 2.200 |
+| `reguladores/ministerio-da-economia/resolucoes` | 1.036 |
 | `reguladores/ministerio-da-cidadania/deliberacoes` | 321 |
-| `reguladores/ministerio-da-economia/resolucoes` | 165 |
-| `reguladores/ministerio-da-economia/circulares` | 129 |
-| `reguladores/ministerio-da-cidadania/resolucoes` | 101 |
-| `reguladores/ministerio-da-economia/instrucoes-normativas` | 88 |
+| `reguladores/ministerio-da-industria-comercio-exterio/portarias` | 281 |
+| `reguladores/ministerio-da-economia/circulares` | 218 |
+| `reguladores/ministerio-da-cidadania/resolucoes` | 161 |
+| `reguladores/ministerio-da-economia/instrucoes-normativas` | 137 |
+| `reguladores/ministerio-da-industria-comercio-exterio/circulares` | 38 |
 | `reguladores/ministerio-da-cidadania/instrucoes-normativas` | 29 |
+| `reguladores/ministerio-da-industria-comercio-exterio/resolucoes` | 22 |
+| `reguladores/ministerio-da-economia/provimentos` | 11 |
+| `reguladores/ministerio-da-industria-comercio-exterio/instrucoes-normativas` | 10 |
 | `reguladores/atos-do-poder-executivo/deliberacoes` | 9 |
+| `reguladores/ministerio-da-economia/sumulas` | 4 |
+| `reguladores/ministerio-da-economia/recomendacoes` | 2 |
+| `reguladores/ministerio-da-economia/atos-normativos` | 1 |

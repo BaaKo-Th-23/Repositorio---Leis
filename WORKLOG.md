@@ -2008,3 +2008,7 @@ Congelados os cinco campos de identidade/proveniência dos 248.033 Markdown regu
 ### 2026-10-27 — 3.322 normas DOU adicionais
 
 Dos 6.000 candidatos inéditos da primeira fatia priorizada, 4.046 passaram na fonte e 1.954 ficaram retidos; os gates suplementares retiveram outros 724. ROOT conferiu 3.231 diretos e 91 candidatos HTML nativos com fontes integrais, preimagens e promoção por SHA. Revalidação integral dos 3.322 contra os 248.033 cabeçalhos atuais, sem alteração normativa desde a baseline v9 e sem colisões. Nos diretos, 2.915 tabelas HTML5 sem divergência estrutural ou riscos explícitos de ocultação/tachado; 451 diagnósticos brutos ligados aos controles literais anteriores, incluindo quatro contadores AST. Nenhum tipo primário Lei/Decreto/MP nesta seleção. Formato sem erros/avisos; metas e pendências preservadas.
+
+### 2026-10-27 — 4.600 normas DOU adicionais
+
+Segunda fatia priorizada: 6.000 examinados, 5.635 aprovados na fonte e 365 retidos; outros 1.035 retidos pelos gates suplementares. ROOT revalidou os 4.600 integralmente contra 251.355 cabeçalhos atuais, com os 3.322 blobs posteriores à baseline v9 relidos por SHA. Confronto final sem colisões. São 4.570 diretos e 30 HTML nativos com preimagens/fontes completas e promoção atômica. Conferidas 6.237 tabelas HTML5, sem divergência estrutural ou riscos explícitos; 438 diagnósticos brutos ligados aos controles literais anteriores, incluindo dez contadores AST. Nenhum tipo primário Lei/Decreto/MP nesta seleção. Formato sem erros/avisos, metas e pendências inalteradas.
