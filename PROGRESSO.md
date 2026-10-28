@@ -1,20 +1,20 @@
 # Progresso
 
-Gerado em 27/10/2026 22:22:40 (America/Recife). Escopo: `scripts/plano.py`.
+Gerado em 27/10/2026 22:57:58 (America/Recife). Escopo: `scripts/plano.py`.
 
 Percentuais usam somente documentos e metas das séries com universo estimado ou contado. Séries sem meta ficam fora do cálculo. Cada série contribui até sua própria meta. Volume não comprova integralidade das fontes ou qualidade das conversões.
 
-**1.170.529 documentos · 1.068.258 / ~11.768.799 nas séries com meta (9.1%) · 7.940 sem meta**
+**1.170.500 documentos · 1.068.229 / ~11.768.799 nas séries com meta (9.1%) · 7.940 sem meta**
 
 ![progresso](progresso.svg)
 
-Há 7.602 pendências de integralidade registradas em [registro auditável](scripts/dados/pendencias-integralidade-publicadas.json). Esses documentos ficam fora da contagem até validação; seus textos e histórico são preservados.
+Há 7.631 pendências de integralidade registradas em [registro auditável](scripts/dados/pendencias-integralidade-publicadas.json). Esses documentos ficam fora da contagem até validação; seus textos e histórico são preservados.
 
 ## Fase 1 — legislação federal e leis estaduais
 
 Planalto, Senado, Câmara e assembleias.
 
-475.722 documentos · 469.389 / ~574.766 nas séries com meta (81.7%) · 0 sem meta
+475.693 documentos · 469.360 / ~574.766 nas séries com meta (81.7%) · 0 sem meta
 
 ### Constituição Federal
 
@@ -53,11 +53,11 @@ Planalto, Senado, Câmara e assembleias.
 
 ### Decretos do Executivo federal
 
-109.930 / ~153.657 documentos (71.5%)
+109.901 / ~153.657 documentos (71.5%)
 
 | | Tipo de norma | Tem | Meta | Pasta | Fonte |
 | :-: | --- | ---: | ---: | --- | --- |
-| 🟦 | Decretos numerados (1889–hoje, as duas séries) | 95.400 | 139.127 | `federal/decretos` | normas.leg.br + Planalto |
+| 🟦 | Decretos numerados (1889–hoje, as duas séries) | 95.371 | 139.127 | `federal/decretos` | normas.leg.br + Planalto |
 | ✅ | Decretos não numerados | 14.510 | 14.510 | `federal/decretos-nao-numerados` | Planalto |
 | ✅ | Regulamentos consolidados (RIR, RIPI, Aduaneiro, RPS, PAF) | 20 | 20 | `federal/regulamentos` | Planalto |
 
@@ -335,7 +335,7 @@ Diários oficiais e portais de órgãos e tribunais.
 | `reguladores/ministerio-da-seguranca-publica/resolucoes` | 5 |
 | `reguladores/ministerio-da-economia/sumulas` | 4 |
 | `reguladores/ministerio-da-economia/recomendacoes` | 2 |
-| `reguladores/secretaria-especial-da-cultura/portarias` | 2 |
 | `reguladores/ministerio-extraordinario-da-seguranca-p/resolucoes` | 2 |
+| `reguladores/secretaria-especial-da-cultura/portarias` | 2 |
 | `reguladores/ministerio-da-economia/atos-normativos` | 1 |
 | `reguladores/ministerio-da-seguranca-publica/instrucoes-normativas` | 1 |
