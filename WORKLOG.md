@@ -1992,3 +1992,7 @@ Examinados todos os 3.338 restantes da fila anterior: 2.925 passaram na fonte, 4
 ### 2026-10-27 — 467 leis de Sergipe adicionais
 
 ROOT repetiu os 467 replays, 40 testes do pacote e nove do promotor, conferiu fontes, identidades e destinos contra 10.411 blobs SE do HEAD e promoveu por criação exclusiva. Das 567 fontes, 100 permaneceram retidas, incluindo divergências de edição, contexto, tabelas e anexos sem representação completa. Manifesto e recibo final congelados, fontes, candidatos, controles, backups e registros de aplicação preservados. Formato sem erros ou avisos; nenhum ajuste de metas ou inferência global de vigência.
+
+### 2026-10-27 — recuperação integral do Decreto 15.911/1944
+
+ROOT conferiu visualmente a folha de rosto do volume IV, segunda parte, e os recortes completos do principal e da tabela da Pagadoria Central da FEB nas páginas impressas 104–105. Preservados PDF anual oficial, páginas integrais, recibos e preimagem. Aplicação com SHA exato do HEAD e backups; somente esta pendência foi resolvida, de 7.603 para 7.602. Zero normas novas, sem inferência de vigência. Formato sem erros ou avisos.
