@@ -1988,3 +1988,7 @@ Uma norma nova, sem alias contra 10.410 blobs SE integrais do HEAD. ROOT repetiu
 ### 2026-10-27 — 2.576 normas DOU adicionais
 
 Examinados todos os 3.338 restantes da fila anterior: 2.925 passaram na fonte, 413 ficaram retidos; os gates suplementares mantiveram mais 349 fora do lote. Publicados 2.503 diretos (2.499 render literal e quatro contadores de listas ligados à AST) e 73 HTML nativos com preimagens preservadas e promoção atômica. ROOT revalidou os 2.576 integralmente contra 245.457 cabeçalhos atuais: baseline v8 mais 1.741 blobs posteriores relidos do HEAD, sem outras diferenças normativas. Confronto final sem colisões, incluindo os 110 CONFAZ qualificados. Suplemento dos diretos: 2.547 tabelas, zero riscos explícitos ou divergências HTML5; 171 diagnósticos brutos vinculados aos controles literais anteriores, sem normalização adicional. Metadados de tipo concordam com o prefixo próprio dos 2.576 títulos. Fontes completas arquivadas; formato sem erros/avisos. Metas e pendências preservadas.
+
+### 2026-10-27 — 467 leis de Sergipe adicionais
+
+ROOT repetiu os 467 replays, 40 testes do pacote e nove do promotor, conferiu fontes, identidades e destinos contra 10.411 blobs SE do HEAD e promoveu por criação exclusiva. Das 567 fontes, 100 permaneceram retidas, incluindo divergências de edição, contexto, tabelas e anexos sem representação completa. Manifesto e recibo final congelados, fontes, candidatos, controles, backups e registros de aplicação preservados. Formato sem erros ou avisos; nenhum ajuste de metas ou inferência global de vigência.
