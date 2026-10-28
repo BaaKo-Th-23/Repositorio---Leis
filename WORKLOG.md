@@ -2004,3 +2004,7 @@ ROOT conferiu 4.018 artefatos e repetiu todos os 570 replays, sem problemas. Con
 ### 2026-10-27 — baseline regulatório v9 e nova fila
 
 Congelados os cinco campos de identidade/proveniência dos 248.033 Markdown regulatórios diretamente dos blobs integrais do HEAD, por OID e árvore NUL, sem cabeçalhos omitidos. Preservados cache, caminhos e gerador por SHA. A nova enumeração separa 76.026 candidatos DOU ainda não processados; fontes anteriormente retidas não retornam como inéditas. A fila prioriza séries abaixo das metas, sem alterar denominadores ou declarar completude pela contagem.
+
+### 2026-10-27 — 3.322 normas DOU adicionais
+
+Dos 6.000 candidatos inéditos da primeira fatia priorizada, 4.046 passaram na fonte e 1.954 ficaram retidos; os gates suplementares retiveram outros 724. ROOT conferiu 3.231 diretos e 91 candidatos HTML nativos com fontes integrais, preimagens e promoção por SHA. Revalidação integral dos 3.322 contra os 248.033 cabeçalhos atuais, sem alteração normativa desde a baseline v9 e sem colisões. Nos diretos, 2.915 tabelas HTML5 sem divergência estrutural ou riscos explícitos de ocultação/tachado; 451 diagnósticos brutos ligados aos controles literais anteriores, incluindo quatro contadores AST. Nenhum tipo primário Lei/Decreto/MP nesta seleção. Formato sem erros/avisos; metas e pendências preservadas.
