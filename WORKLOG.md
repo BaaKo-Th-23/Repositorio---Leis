@@ -2012,3 +2012,7 @@ Dos 6.000 candidatos inéditos da primeira fatia priorizada, 4.046 passaram na f
 ### 2026-10-27 — 4.600 normas DOU adicionais
 
 Segunda fatia priorizada: 6.000 examinados, 5.635 aprovados na fonte e 365 retidos; outros 1.035 retidos pelos gates suplementares. ROOT revalidou os 4.600 integralmente contra 251.355 cabeçalhos atuais, com os 3.322 blobs posteriores à baseline v9 relidos por SHA. Confronto final sem colisões. São 4.570 diretos e 30 HTML nativos com preimagens/fontes completas e promoção atômica. Conferidas 6.237 tabelas HTML5, sem divergência estrutural ou riscos explícitos; 438 diagnósticos brutos ligados aos controles literais anteriores, incluindo dez contadores AST. Nenhum tipo primário Lei/Decreto/MP nesta seleção. Formato sem erros/avisos, metas e pendências inalteradas.
+
+### 2026-10-27 — 4.956 normas DOU adicionais
+
+Terceira fatia priorizada: 6.000 examinados, 5.410 aprovados na fonte e 590 retidos; os gates suplementares retiveram outros 454. ROOT revalidou 4.956 integralmente contra 255.955 cabeçalhos atuais, com os 7.922 blobs posteriores à baseline v9 relidos por SHA. Confronto final sem colisões. São 4.955 diretos e um HTML nativo com preimagem/fonte completa e promoção atômica. Nos diretos, 1.715 tabelas HTML5 sem divergência estrutural ou riscos explícitos; 204 diagnósticos brutos ligados aos controles literais anteriores, incluindo cinco contadores AST. Nenhum tipo primário Lei/Decreto/MP nesta seleção. Formato sem erros/avisos; metas e pendências preservadas.
