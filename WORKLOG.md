@@ -2024,3 +2024,7 @@ Seis candidatos anteriores ainda não publicados recuperados por escape de crase
 ### 2026-10-27 — 3.709 normas DOU e baseline v10
 
 Quarta fatia priorizada: 6.000 examinados, 4.037 aprovados na fonte e 1.963 retidos; os gates suplementares retiveram outros 328. São 3.695 diretos e 14 HTML nativos com preimagens e fontes completas. ROOT revalidou todos os 3.709 contra a baseline v10: 260.911 cabeçalhos integrais lidos por OID, zero omitidos e nenhuma alteração normativa posterior no escopo. Confronto final sem colisões, incluindo os lotes anteriores. Nos diretos, 1.184 tabelas HTML5 sem divergência estrutural ou riscos explícitos; 202 diagnósticos brutos ligados aos controles literais anteriores e um contador AST. Nenhum tipo primário Lei/Decreto/MP nesta seleção. Formato sem erros/avisos. Baseline/caminhos/gerador completos preservados por SHA, sem modificar metas ou pendências.
+
+### 2026-10-27 — 212 normas municipais adicionais com índice coerente
+
+ROOT conferiu 1.762 artefatos e repetiu os 212 replays integrais, sem problemas. Confronto por URLs e identidade municipal contra 27.414 blobs do HEAD, incluindo as seis recuperações anteriores, sem colisões. Três fixtures idênticos ao HEAD permanecem referências sem incremento; subconjuntos anteriores não são somados novamente. Manifesto congelado por SHA e contexto original das capturas preservados. Formato sem erros/avisos; whitespace limitado por prova do índice a quebras Markdown de dois espaços e finais vazios. Nenhuma alteração de metas, vigência ou arquivos já publicados.
