@@ -2000,3 +2000,7 @@ ROOT conferiu visualmente a folha de rosto do volume IV, segunda parte, e os rec
 ### 2026-10-27 — 570 normas municipais adicionais
 
 ROOT conferiu 4.018 artefatos e repetiu todos os 570 replays, sem problemas. Confronto conjunto contra 26.838 blobs integrais do HEAD, por OID e metadados completos, sem colisões por URL ou identidade municipal. Lote fechado de 314 + nove + 247, sem contar subconjuntos ou três fixtures idênticos a HEAD. Snapshot coerente de índice, fontes e sucessor isolado do materializador preservados. Formato sem erros/avisos; comprovadas no índice 2.026 quebras de exatamente dois espaços e 570 finais vazios, sem dispensar outras classes de whitespace. Nenhuma alteração de metas, de documentos existentes ou inferência de vigência.
+
+### 2026-10-27 — baseline regulatório v9 e nova fila
+
+Congelados os cinco campos de identidade/proveniência dos 248.033 Markdown regulatórios diretamente dos blobs integrais do HEAD, por OID e árvore NUL, sem cabeçalhos omitidos. Preservados cache, caminhos e gerador por SHA. A nova enumeração separa 76.026 candidatos DOU ainda não processados; fontes anteriormente retidas não retornam como inéditas. A fila prioriza séries abaixo das metas, sem alterar denominadores ou declarar completude pela contagem.
