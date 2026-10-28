@@ -1996,3 +1996,7 @@ ROOT repetiu os 467 replays, 40 testes do pacote e nove do promotor, conferiu fo
 ### 2026-10-27 — recuperação integral do Decreto 15.911/1944
 
 ROOT conferiu visualmente a folha de rosto do volume IV, segunda parte, e os recortes completos do principal e da tabela da Pagadoria Central da FEB nas páginas impressas 104–105. Preservados PDF anual oficial, páginas integrais, recibos e preimagem. Aplicação com SHA exato do HEAD e backups; somente esta pendência foi resolvida, de 7.603 para 7.602. Zero normas novas, sem inferência de vigência. Formato sem erros ou avisos.
+
+### 2026-10-27 — 570 normas municipais adicionais
+
+ROOT conferiu 4.018 artefatos e repetiu todos os 570 replays, sem problemas. Confronto conjunto contra 26.838 blobs integrais do HEAD, por OID e metadados completos, sem colisões por URL ou identidade municipal. Lote fechado de 314 + nove + 247, sem contar subconjuntos ou três fixtures idênticos a HEAD. Snapshot coerente de índice, fontes e sucessor isolado do materializador preservados. Formato sem erros/avisos; comprovadas no índice 2.026 quebras de exatamente dois espaços e 570 finais vazios, sem dispensar outras classes de whitespace. Nenhuma alteração de metas, de documentos existentes ou inferência de vigência.
